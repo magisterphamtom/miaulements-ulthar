@@ -1,0 +1,383 @@
+{
+ "_id": "vPizfwMeRcUaVjCx",
+ "name": "Races des Chats",
+ "pages": [
+  {
+   "_id": "MHTdH3z0i82ni2jm",
+   "name": "RACES DES CHATS",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Il existe une grande variété de races de chats, chacune apportant ses propres caractéristiques et aptitudes uniques. Pour enrichir vos aventures et vous offrir une expérience de jeu diversifiée, ce livre vous propose dix races distinctes de chats. Ces races ont été soigneusement sélectionnées pour leur potentiel narratif et ludique, permettant de créer des personnages aux capacités spéciales et aux personnalités variées.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!vPizfwMeRcUaVjCx.MHTdH3z0i82ni2jm"
+  },
+  {
+   "_id": "ZdaqxQfKmDAGSCKq",
+   "name": "Bengal",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Attribut qualité : Agilité Attribut défaut : Discrétion</p>\n<h3>Physique</h3>\n<p>Les Bengals sont des créatures d'une beauté exotique, avec un pelage luxueux aux motifs tachetés rappelant la robe des léopards sauvages. Leur allure élancée et athlétique témoigne de leur agilité extraordinaire. Leurs muscles puissants et leur constitution robuste leur confèrent une endurance impressionnante. Leurs yeux perçants, d'un vert étincelant, reflètent leur intelligence vive.</p>\n<h3>Caractère</h3>\n<p>Les Bengals sont des félins audacieux et intrépides, dotés d'une curiosité insatiable qui les pousse à explorer chaque recoin du monde. Leur agilité exceptionnelle leur permet d'accomplir des sauts acrobatiques et des mouvements gracieux, faisant d'eux d'excellents chasseurs. Ils sont réputés pour leur intelligence vive et leur capacité à résoudre les énigmes les plus complexes. Les Bengals sont également des compagnons loyaux et indépendants, prêts à se battre pour protéger ceux qu'ils aiment.</p>\n<h3>Historique</h3>\n<p>Dans les contrées reculées des déserts de Mojave, aux États-Unis, les Bengals sont connus comme les descendants des félins célestes. Selon la légende, ces chats spectaculaires étaient les compagnons des dieux et des déesses de l'ancien monde. Leur pelage tacheté et doré aurait été un cadeau des étoiles, symbole de leur lien sacré avec les puissances célestes. Les Bengals sont considérés comme des gardiens des secrets ancestraux et des connaissances mystiques.</p>\n<h3>Pouvoirs magiques innés</h3>\n<p>Ombre envoûtante : les Bengals ont la capacité de modifier et se fondre dans les ombres environnantes pour devenir pratiquement invisibles. ou Téléportation courte : le chat peut se déplacer instantanément d’un endroit visible à un autre en passant par une ombre.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!vPizfwMeRcUaVjCx.ZdaqxQfKmDAGSCKq"
+  },
+  {
+   "_id": "umEifewaahCY0aCr",
+   "name": "Chat de gouttière",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Attribut qualité : +5 &lt;au choix&gt; Attribut défaut : -5 &lt;au choix&gt;</p>\n<h3>Physique</h3>\n<p>Les chats de gouttière arborent une variété de couleurs de pelage, reflétant la diversité des environnements urbains. Leur pelage est souvent ébouriffé et résistant, leur permettant protection contre les éléments urbains et les aventures citadines. Leurs yeux pétillent d'une lueur vive, signe de leur curiosité incessante et de leur capacité à repérer les moindres détails dans le paysage urbain.</p>\n<h3>Caractère</h3>\n<p>Les chats de gouttière sont indépendants. Ils sont agiles et rusés, capables de se faufiler là où d'autres ne pourraient pas. Leur endurance leur permet de s'adapter à toutes sortes de situations. Leur intelligence vive les aide à déjouer les pièges et à résoudre les mystères des rues qu'ils parcourent. Cependant, leur nature solitaire peut les rendre méfiants envers les étrangers, bien que leur charisme naturel puisse parfois les aider à gagner la confiance de ceux qu'ils rencontrent.</p>\n<h3>Historique</h3>\n<p>Les ruelles labyrinthiques des villes anciennes cachent bien des mystères et les chats de gouttière en sont les gardiens silencieux. Selon les récits des anciennes légendes, ces félins urbains sont nés des ténèbres de la nuit et des éclats de lune, conférant à leur pelage un éclat argenté. On dit que ces chats de gouttière ont été choisis par les étoiles elles-mêmes pour être les témoins des secrets oubliés et des fragments d'histoires urbaines dissimulées dans les recoins sombres et les ruelles sinueuses.</p>\n<h3>Pouvoirs magiques innés</h3>\n<p>Aubaine incroyable : les chats de gouttière ont une intuition innée pour trouver des opportunités inattendues dans les endroits les plus improbables. Ce don mystique souligne leur talent pour s'adapter et survivre dans les environnements urbains risqués. ou Sixième sens : les chats de gouttières possèdent une capacité surnaturelle à anticiper les dangers avant qu'ils ne se produisent. Ce pouvoir leur permet de sentir les menaces imminentes.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!vPizfwMeRcUaVjCx.umEifewaahCY0aCr"
+  },
+  {
+   "_id": "uvUe4biWYK9Kt6xc",
+   "name": "Cornish Rex",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Attribut qualité : Discrétion Attribut défaut : Précision</p>\n<h3>Physique</h3>\n<p>Les Cornish Rex sont reconnaissables grâce à leur pelage court, doux et ondulé, qui rappelle les vagues de l'océan. Leur corps est mince et élancé, doté de muscles puissants malgré une apparence gracile. Leurs grandes oreilles pointues et leurs yeux perçants témoignent de leur curiosité insatiable. Les Cornish Rex possèdent une discrétion exceptionnelle et une souplesse hors du commun, ce qui leur permet d'explorer les recoins les plus secrets et de se faufiler avec aisance dans les endroits les plus inaccessibles.</p>\n<h3>Caractère</h3>\n<p>Les Cornish Rex sont des compagnons pleins d'énergie et de vivacité. Leur intelligence aiguisée et leur esprit vif font d'eux des compagnons faciles à éduquer et à divertir. Ils sont connus pour leur personnalité joyeuse, leur affinité avec les humains et leur amour du jeu. Les Cornish Rex sont également très curieux et intrépides, prêts à explorer chaque recoin de leur environnement. Leur nature sociale et amicale en fait d'excellents compagnons pour les aventuriers en quête de découvertes.</p>\n<h3>Historique</h3>\n<p>L'origine des Cornish Rex remonte à une légende ancienne, racontée par les anciens druides des terres d’Écosse. Selon la légende, les premiers Cornish Rex sont nés d'une rencontre mystique entre un chat et une fée des bois. Les fées, touchées par la grâce et la légèreté du chat, ont béni sa descendance avec une fourrure unique et bouclée, symbole de leur connexion magique avec le royaume féerique. Ainsi, les Cornish Rex sont considérés comme les messagers des fées, apportant des rêves et des présages à ceux qui les croisent sur leur chemin.</p>\n<h3>Pouvoirs magiques innés</h3>\n<p>Illusion féerique : les Cornish Rex ont la capacité de créer des illusions subtiles et envoûtantes, qui troublent les sens et trompent les esprits. ou Ombre enveloppante : ces chats ont la capacité d'envelopper une cible dans une aura d'ombre protectrice. Ce pouvoir leur permet de réduire les dégâts par deux infligés à la cible.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!vPizfwMeRcUaVjCx.uvUe4biWYK9Kt6xc"
+  },
+  {
+   "_id": "GB37VJl38DEu2vBk",
+   "name": "Maine Coon",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Attribut qualité : Physique Attribut défaut : Perception</p>\n<h3>Physique</h3>\n<p>Les Maine Coons sont de véritables géants parmi les chats, avec leur corps massif et musclé. Leur pelage épais et soyeux, souvent dans des tons de roux et de brun, les distingue des autres races. Leurs oreilles sont ornées de touffes de poils caractéristiques, donnant l'impression d'une couronne naturelle. Leurs grandes pattes sont dotées de griffes rétractables, témoignant de leur agilité et de leur force.</p>\n<h3>Caractère</h3>\n<p>Les Maine Coons sont réputés pour leur nature douce, leur intelligence aiguisée et leur esprit joueur. Ils sont dotés d'une endurance incroyable, capables de parcourir de longues distances et de résister aux éléments les plus rudes. Les Maine Coons sont de fidèles compagnons affectueux, prêts à veiller sur leurs compagnons humains avec une dévotion sans faille. Leur nature sociable et leur charisme inné leur permettent de se lier facilement avec d'autres créatures, qu'elles soient humaines ou animales. Cependant, leur grande taille peut parfois les rendre maladroits dans des espaces restreints et leur besoin d'espace peut les rendre moins adaptés à la vie en intérieur.</p>\n<h3>Historique</h3>\n<p>Dans les légendes anciennes d’Afrique, les Maine Coons occupent une place spéciale. On dit que ces félins magnifiques sont les descendants des lions légendaires des terres africaines. Selon les récits, ces lions avaient été ensorcelés par une puissante sorcière qui souhaitait créer une race de félins extraordinaires, mêlant la puissance et la noblesse des lions à la grâce et à l'agilité des chats. Ainsi, les Maine Coons sont nés, porteurs d'une aura royale et d'une nature sauvage empreinte de mystère.</p>\n<h3>Pouvoirs magiques innés</h3>\n<p>Force légendaire : les Maine Coons possèdent une puissance physique qui leur permet d'infliger des blessures profondes. Grâce à ses griffes et à sa force, le chat inflige le double de dégâts. ou Guérison accélérée : le chat bénéficie d'un métabolisme surpuissant qui accélère sa guérison et lui permet de récupérer rapidement de ses blessures et de la fatigue. Il se régénère d’1D6 par heure.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!vPizfwMeRcUaVjCx.GB37VJl38DEu2vBk"
+  },
+  {
+   "_id": "s8qgMJxUaox3qzXW",
+   "name": "Norvégien",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Attribut qualité : Physique Attribut défaut : Intelligence</p>\n<h3>Physique</h3>\n<p>Les Norvégiens sont des félins de grande taille, à l'allure robuste et puissante. Leur pelage épais et luxuriant, parsemé de couleurs et de motifs variés, les protège de la rigueur du climat froid. Leurs oreilles pointues, surmontées de plumeaux de poils, accentuent leur apparence sauvage et mystique. Leurs yeux perçants, empreints de sagesse, révèlent leur connexion profonde avec les énergies magiques de leur environnement.</p>\n<h3>Caractère</h3>\n<p>Les Norvégiens sont réputés pour leur caractère équilibré et leur nature indépendante. Ils sont dotés d'une grande sérénité et d'une patience infinie, leur permettant d'observer attentivement leur environnement avant d'agir. Leur intelligence vive et leur esprit observateur en font d'excellents chasseurs et traqueurs. Les Norvégiens sont également connus pour leur loyauté envers leurs compagnons humains, développant des liens profonds et durables. Ils sont des protecteurs naturels et des guides spirituels, toujours prêts à offrir leur soutien et leur sagesse.</p>\n<h3>Historique</h3>\n<p>Selon les légendes ancestrales transmises de génération en génération, les Norvégiens sont les descendants des félins sacrés de la grande forêt boréale. Ces chats majestueux étaient les compagnons des sages druides et des gardiens des terres mystiques. Leur présence était vénérée et respectée. Les Norvégiens portent en eux l'héritage des anciens protecteurs de la nature, liés aux forces mystiques et à la sagesse profonde.</p>\n<h3>Pouvoirs magiques innés</h3>\n<p>Peau de cuir : les Norvégiens possèdent une endurance extraordinaire. Naturellement, leur peau se cicatrise rapidement quelles que soient les blessures. [ Sur un Jet de Physique réussi, le chat divise par deux ses dégâts. Il encaisse toujours au minimum 1 pt dégât ]. ou Bond extraordinaire : les chats Norvégiens possèdent une force dans leurs pattes arrière qui leur permet de bondir à des hauteurs et des distances extraordinaires.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!vPizfwMeRcUaVjCx.s8qgMJxUaox3qzXW"
+  },
+  {
+   "_id": "3K5Hokgf40fGvGcP",
+   "name": "Persan",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Attribut qualité : Charisme Attribut défaut : Physique</p>\n<h3>Physique</h3>\n<p>Les Persans sont des créatures d'une beauté incomparable. Leur long pelage, soyeux et abondant, évoque les étoffes royales. Leurs grands yeux en amande, d'une couleur intense et envoûtante, semblent capables de percer les mystères les plus obscurs. Leur démarche gracieuse et leur allure noble témoignent de leur statut prestigieux dans le monde félin.</p>\n<h3>Caractère</h3>\n<p>Les Persans sont réputés pour leur calme et leur tranquillité. Ils sont connus pour leur nature douce et posée, faisant preuve d'une patience infinie. Leur tempérament affectueux et dévoué envers leurs compagnons en fait des compagnons loyaux et réconfortants. Les Persans sont également dotés d'une intelligence subtile, leur permettant de percevoir les moindres détails et de résoudre les énigmes les plus complexes.</p>\n<h3>Historique</h3>\n<p>Les Persans sont originaires des terres enchantées de l’ancienne Perse antique, un royaume caché au-delà des montagnes célestes. Selon la légende, ils sont les descendants des chats sacrés vénérés par les dieux félins eux-mêmes. Dotés d'une beauté et d'une élégance inégalées, les Persans étaient autrefois les gardiens des connaissances ancestrales et des secrets mystiques du royaume. Leur présence apaisante et leur aura de sagesse en font des compagnons prisés par les mages et les chercheurs de vérité.</p>\n<h3>Pouvoirs magiques innés</h3>\n<p>Charme délicat : les Persans possèdent la capacité d'amadouer, de charmer leurs interlocuteurs. Avec ce pouvoir, les Persans peuvent influencer leur entourage. ou Lien émotionnel : les chats ont la capacité de créer un lien empathique avec ceux qu'ils choisissent. Ce pouvoir leur permet de ressentir et de comprendre profondément les émotions de leur interlocuteur.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 700000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!vPizfwMeRcUaVjCx.3K5Hokgf40fGvGcP"
+  },
+  {
+   "_id": "LHLtlCD2llXGdNe2",
+   "name": "Savannah",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Attribut qualité : Précision Attribut défaut : Charisme</p>\n<h3>Physique</h3>\n<p>Les Savannahs sont des chats de grande taille, puissants et athlétiques. Leur pelage court est marqué de motifs tachetés rappelant les motifs des léopards et des guépards, évoquant leur héritage sauvage. Leurs muscles puissants leur confèrent une précision et une vitesse exceptionnelles, leur permettant de bondir et de chasser avec une précision redoutable. Leurs yeux perçants reflètent leur intelligence et leur connexion avec les forces mystiques de la nature.</p>\n<h3>Caractère</h3>\n<p>Les Savannahs sont des félins dotés d'une grande confiance en eux et d'un esprit indépendant. Ils sont réputés pour leur curiosité insatiable et leur volonté d'explorer les moindres recoins de leur environnement. Leur intelligence vive et leur capacité à s'adapter rapidement en font des compagnons agiles et astucieux. Les Savannahs sont également connus pour leur côté joueur et leur esprit compétitif, toujours en quête de défis à relever. Malgré leur caractère fort, ils peuvent aussi être doux et affectueux envers leurs compagnons humains, formant des liens forts et durables.</p>\n<h3>Historique</h3>\n<p>Les origines des Savannahs sont enveloppées de mystère et de légendes anciennes. Selon les récits des anciens gardiens des terres sauvages, les premiers Savannahs sont nés des rencontres entre les félins des plaines et les esprits des grandes forêts. Les esprits, impressionnés par la grâce et la puissance des félins, ont béni leur progéniture avec d’agilité et d’une force supérieure, faisant des Savannahs des prédateurs redoutables. Ils sont les gardiens des secrets de la nature et des terres sauvages, protégeant les équilibres fragiles entre les mondes.</p>\n<h3>Pouvoirs magiques innés</h3>\n<p>Camouflage naturel : les Savannah ont la capacité de se fondre dans leur environnement naturel grâce à un pouvoir mystique. Ils peuvent dissimuler leur présence et devenir quasiment invisibles quelque soit l'environnement. ou Flèche lumineuse : ces chats ont la capacité de canaliser la lumière pour créer des projectiles [ 1d6 dégâts ]</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 800000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!vPizfwMeRcUaVjCx.LHLtlCD2llXGdNe2"
+  },
+  {
+   "_id": "vvG4vfg0WawH1FGT",
+   "name": "Scottish Fold",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Attribut qualité : Intelligence Attribut défaut : Agilité</p>\n<h3>Physique</h3>\n<p>Les Scottish Folds se distinguent par leurs oreilles pliées vers l'avant, leur conférant une apparence unique et adorable. Leur pelage soyeux, dans une variété de couleurs et de motifs, les pare d'une élégance naturelle. Leur silhouette est svelte, témoignant de leur agilité remarquable. Leurs grands yeux ronds et expressifs, dans des nuances de couleur captivantes, révèlent leur intelligence et leur profonde compréhension du monde.</p>\n<h3>Caractère</h3>\n<p>Les Scottish Folds sont réputés pour leur nature douce et paisible, en harmonie avec leur environnement. Ils sont dotés d'une intelligence vive et d'un esprit curieux, toujours prêts à explorer le monde qui les entoure. Les Scottish Folds sont également connus pour leur grande sensibilité et leur capacité à ressentir les énergies et les émotions qui les entourent, ce qui en fait d'excellents compagnons intuitifs.</p>\n<h3>Historique</h3>\n<p>Dans les terres mystiques d'Écosse, les Scottish Folds sont considérés comme des créatures bénies par les esprits de la nature. Selon la légende, ces félins charmants ont été créés par une déesse bienveillante qui souhaitait offrir aux humains une compagnie féline dotée d'un charme et d'une douceur sans égal. Ainsi, les Scottish Folds sont nés avec leurs oreilles délicatement repliées vers l'avant, signe de leur lien étroit avec le monde magique.</p>\n<h3>Pouvoirs magiques innés</h3>\n<p>Guérison réconfortante : les Scottish Folds possèdent le don de canaliser l'énergie curative de la nature. Ils sont capables de détecter la souffrance et d'apaiser les maux physiques et émotionnels des autres êtres vivants. Leur simple présence suffit à calmer les esprits agités et à restaurer la vitalité. Il soigne 1D6 pts santé pour un individu autre que lui. ou Marche de velours : le chat peut se déplacer sans laisser la moindre trace, ses pas ne faisant aucun bruit et ne laissant aucune empreinte.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 900000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!vPizfwMeRcUaVjCx.vvG4vfg0WawH1FGT"
+  },
+  {
+   "_id": "3MeNr4YZMhNl0Hdk",
+   "name": "Siamois",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Attribut qualité : Perception Attribut défaut : Charisme</p>\n<h3>Physique</h3>\n<p>Les Siamois possèdent un pelage court et soyeux, marqué de motifs élégants et contrastés. Leurs yeux en amande, d'un bleu intense et pénétrant, reflètent la sagesse et la profondeur de leur nature spirituelle. Leur allure gracieuse et leur démarche élancée témoignent de leur agilité innée et de leur élégance. Ils sont souvent décrits comme des créatures aux traits fins, évoquant l'élégance des dieux félins.</p>\n<h3>Caractère</h3>\n<p>Les Siamois sont des compagnons au tempérament complexe et expressif. Ils sont connus pour leur intelligence supérieure, leur curiosité insatiable et leur voix mélodieuse, utilisée pour communiquer leurs pensées et leurs émotions. Les Siamois sont des observateurs attentifs, capables de détecter les subtilités de leur environnement et de lire les intentions des autres. Leur nature sociale et aimante envers leurs proches en fait des compagnons dévoués, prêts à les guider dans les mystères du monde.</p>\n<h3>Historique</h3>\n<p>Les Siamois sont originaires des terres lointaines des pays d’Asie, un royaume enveloppé de brumes enchantées. Selon la légende, ces félins gracieux sont les gardiens des portails présents entre les dimensions. Ils sont capables de voyager à travers les mondes connus et inconnus. Ils sont nés de l'union entre les esprits félin et humain, ce qui leur confère une nature unique et mystérieuse. Les Siamois sont vénérés comme des messagers des royaumes célestes, apportant des présages et des prophéties aux âmes aventureuses.</p>\n<h3>Pouvoirs magiques innés</h3>\n<p>Écoute perçante : les Siamois ont la capacité d'entendre les sons non perceptibles par la plupart des êtres vivants. ou Vision à travers : ces chats peuvent voir à travers les objets solides. Cela leur permet de percevoir ce qui se cache derrière les murs, les portes et autres obstacles physiques.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 1000000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!vPizfwMeRcUaVjCx.3MeNr4YZMhNl0Hdk"
+  },
+  {
+   "_id": "q8JkUtNtjJhvCdfU",
+   "name": "Sphynx",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Attribut qualité : Intelligence Attribut défaut : Physique</p>\n<h3>Physique</h3>\n<p>Les Sphynx sont des créatures étonnantes, dépourvues de poil, révélant ainsi leur peau douce et veloutée. Leur corps élégant et svelte est sculpté avec grâce, soulignant leur agilité et leur flexibilité. Leur tête est ornée de grandes oreilles pointues qui leur permettent de capter les moindres sons qui les entourent. Leurs yeux perçants, d'une couleur envoûtante, semblent refléter les secrets de l'univers.</p>\n<h3>Caractère</h3>\n<p>Les Sphynx possèdent un caractère envoûtant, mêlant intelligence, curiosité et charme. Leurs esprits vifs leur permettent de saisir rapidement les subtilités de l'environnement. Ils sont de nature intrépide et aventureuse, toujours prêts à explorer les recoins les plus sombres. Les Sphynx sont également dotés d'un charisme naturel qui les rend captivants et irrésistibles pour ceux qui croisent leur chemin. Cependant, leur sensibilité accrue peut parfois les rendre vulnérables aux forces obscures, ce qui les pousse à se méfier et à se tenir sur leurs gardes.</p>\n<h3>Historique</h3>\n<p>Dans les annales de l'antique royaume d’Égypte, une légende se dessine autour des Sphynx. Selon les écrits des scribes, ces félins mystérieux étaient autrefois les compagnons des prêtres et des sorciers des anciens temples sacrés. Ils étaient considérés comme les gardiens des connaissances magiques et les protecteurs des portails vers les royaumes mystiques. On dit que les Sphynx ont été créés par une puissante déesse féline qui les a dotés d'une apparence sans poils afin de symboliser leur pureté spirituelle. Depuis lors, les Sphynx sont vénérés comme des êtres divins, capables de percer les mystères les plus profonds de l'univers.</p>\n<h3>Pouvoirs magiques innés</h3>\n<p>Analyse situationnelle : le chat peut instantanément analyser tous les aspects d'une situation complexe, en identifiant clairement les faits objectifs, les parties prenantes, les enjeux, les causes, les contraintes. ou Vision des conséquences : le chat est capable de simuler mentalement les différents scénarios possibles découlant d'un choix ou d'une action, lui permettant d'anticiper les résultats à long terme. Le maitre de jeu répond à la question du joueur du type « Si je fais ... que va-t-il se passer ? »</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 1100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!vPizfwMeRcUaVjCx.q8JkUtNtjJhvCdfU"
+  }
+ ],
+ "folder": null,
+ "sort": 300000,
+ "ownership": {
+  "default": 2
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!vPizfwMeRcUaVjCx"
+}

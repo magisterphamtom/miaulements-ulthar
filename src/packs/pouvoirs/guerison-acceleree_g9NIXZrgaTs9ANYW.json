@@ -1,0 +1,28 @@
+{
+ "_id": "g9NIXZrgaTs9ANYW",
+ "name": "Guérison accélérée",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "race",
+  "attribut": "",
+  "description": "<p>(Maine Coon) Métabolisme surpuissant : le Chat récupère vite de ses blessures et de la fatigue. Il régénère 1D6 par heure.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "WG4lMQcfRb3JUelh",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!g9NIXZrgaTs9ANYW"
+}

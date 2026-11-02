@@ -1,0 +1,47 @@
+{
+ "_id": "xjN5aArmt4Qchj72",
+ "name": "Roi Jaune",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Mains spectrales",
+    "pct": 75,
+    "degats": "2d8+5"
+   }
+  ],
+  "pouvoir": "vision de folie ou terreur",
+  "capacite": "",
+  "pv": {
+   "value": 30,
+   "max": 30
+  },
+  "description": "<p>Nommé aussi Hastu, cette entité est le roi de la folie et des cauchemars. Il réside dans la ville maudite de Carcosa, dans la contrée du rêve. Il attire les âmes folles dans sa cité interdite, promettant des visions enivrantes tout en les condamnant à une éternité de tourments.</p><blockquote><p>Un artiste jusqu'alors inconnu commence à attirer l'attention. Il a créé une série de peintures en utilisant des pigments rares qu'il a découverts dans un marché antique. Chaque œuvre semble capturer l'essence de la terreur et ceux qui les regardent trop longtemps ressentent une angoisse grandissante</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Roi Jaune",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!xjN5aArmt4Qchj72"
+}

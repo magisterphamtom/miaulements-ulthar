@@ -1,0 +1,47 @@
+{
+ "_id": "g3YcvEaXWZMbmTd0",
+ "name": "Mafieu",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Arme",
+    "pct": 60,
+    "degats": "1d8"
+   }
+  ],
+  "pouvoir": "",
+  "capacite": "informateur",
+  "pv": {
+   "value": 12,
+   "max": 12
+  },
+  "description": "<p>Membre d'une organisation criminelle, le mafieux est fréquemment impliqué dans des activités illégales, telles que le trafic de drogue et l'extorsion. Il sert également d'intermédiaire pour des cultes obscurs, utilisant ses connexions pour orchestrer des enlèvements ou des vols au service de ces groupes clandestins.</p><p><strong>Capacité :</strong> informateur</p><blockquote><p>Trois hommes liés à des activités de contrebande d'alcool ont disparu près des docks, suscitant l'inquiétude des autorités qui craignent un lien avec des règlements de comptes mafieux. Ce matin, le corps de l'un d'eux a été retrouvé, présentant de larges griffures anormalement profondes, ajoutant une dimension troublante à cette affaire</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Mafieu",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!g3YcvEaXWZMbmTd0"
+}

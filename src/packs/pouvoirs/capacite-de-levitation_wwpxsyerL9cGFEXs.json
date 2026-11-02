@@ -1,0 +1,28 @@
+{
+ "_id": "wwpxsyerL9cGFEXs",
+ "name": "Capacité de lévitation",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "temporaire",
+  "attribut": "",
+  "description": "<p>Le Chat flotte dans les airs sur de courtes distances. Il ne peut pas porter plus de 10 kg.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "ZmNoEX04AcYhbu9V",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!wwpxsyerL9cGFEXs"
+}

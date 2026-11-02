@@ -124,7 +124,7 @@ export function calculer(form) {
   const final = (k) => Math.max(0, attrs[k].base + attrs[k].race + attrs[k].handicap);
   const resume = {
     pv: pvDepuisTable(final("phy") + final("agi")),
-    pf: Math.floor((final("per") + final("cha")) / 2),
+    pf: Math.round((final("per") + final("cha")) / 2),
     pm: final("int")
   };
   return { data, attrs, final, erreurs, resume, handicap, choisis, attendus };
@@ -250,14 +250,16 @@ export async function assistantCreation(actor) {
 }
 
 /** Début d'aventure : le Chat lape l'eau enchantée et reçoit deux pouvoirs temporaires au hasard. */
-export async function tirerPouvoirsTemporaires(actor) {
+export async function tirerPouvoirsTemporaires(actor, { confirmer = true } = {}) {
   const anciens = actor.items.filter((i) => i.type === "pouvoir" && i.system.categorie === "temporaire");
   if (anciens.length) {
-    const ok = await DialogV2.confirm({
-      window: { title: "Nouveaux pouvoirs temporaires" },
-      content: "<p>Les pouvoirs temporaires actuels seront remplacés par deux nouveaux tirages.</p>"
-    });
-    if (!ok) return;
+    if (confirmer) {
+      const ok = await DialogV2.confirm({
+        window: { title: "Nouveaux pouvoirs temporaires" },
+        content: "<p>Les pouvoirs temporaires actuels seront remplacés par deux nouveaux tirages.</p>"
+      });
+      if (!ok) return;
+    }
     await actor.deleteEmbeddedDocuments("Item", anciens.map((i) => i.id));
   }
   const tires = [];

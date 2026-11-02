@@ -1,0 +1,47 @@
+{
+ "_id": "8ZtHncK4MvMLmcrZ",
+ "name": "Profond",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Mâchoire",
+    "pct": 70,
+    "degats": "2d10"
+   }
+  ],
+  "pouvoir": "communication avec les autres profonds",
+  "capacite": "",
+  "pv": {
+   "value": 35,
+   "max": 35
+  },
+  "description": "<p>Les Profonds sont des créatures aquatiques humanoïdes, mihommes mi-poissons. Ils vénèrent Dagon. Ils sont très dangereux pour les Chats d'Ulthar.</p><blockquote><p>Au cœur des marais autour d'Arkham, des disparitions énigmatiques troublent la tranquillité des habitants. La famille Grismard offre une récompense généreuse pour retrouver leur fille disparue depuis deux jours. L'enquête prend une tournure étrange, car la seule piste de la police est un sans-abri qui affirme avoir aperçu d'énormes poissons</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Profond",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!8ZtHncK4MvMLmcrZ"
+}

@@ -1,0 +1,218 @@
+{
+ "_id": "ZbN938AX7JfiFCv7",
+ "name": "La bibliothèque de Pnakotus (scénario 3)",
+ "pages": [
+  {
+   "_id": "ARn0umpkBLNOVrHV",
+   "name": "Intrigue générale",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>La bibliothèque de Pnakotus (scénario 3)</h3>\n<p>Scénario 3 : e u q é h t o l b</p>\n<p>B de Pnakotus</p>\n<p>Pour résoudre ce mystère, Ester va envoyer les Chats dans une bibliothèque particulière : la bibliothèque de Pnakotus. Détentrice du Livre des Savoirs, il souhaite en apprendre plus sur les Protecteurs d'Ulthar et la Clef Interdite. Ce voyage est périlleux et mettra en danger non seulement le corps mais aussi l'esprit des Gardiens d'Ulthar. Au cours de leur périple, les joueurs exploreront les profondeurs les plus obscures de la bibliothèque d'Ulthar et de Pnakotus. Àla toute fin, ils devront affronter les Dévoreurs de Souvenirs pour accéder aux livres des Savoirs et comprendre ce qui se cache derrière cet étrange artefact: la Clef Interdite.</p>\n<p>Note : La bibliothèque de Pnakotus est un lieu mythique dans les Contrées du Rêve. Elle est réputée pour abriter les livres les plus anciens et les plus mystérieux de l'univers. Voyager dans cette bibliothèque est cependant une épreuve dangereuse et terrifiante où la frontière entre la connaissance et la folie se frôle...</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ZbN938AX7JfiFCv7.ARn0umpkBLNOVrHV"
+  },
+  {
+   "_id": "7mZFLysFAG9nt05N",
+   "name": "Début à Ulthar",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Texte à lire :</h3>\n<p>Après une soirée passée à discuter de la triste nouvelle et de la menace croissante, Ester confie qu’il est désormais indispensable de saisir les fonctionnements précis de la Clef Interdite. Ces informations existent ! Elles sont conservées en un lieu redoutable : la Bibliothèque de Pnakotus. Vous devez comprendre que la vile d'Ulthar n’a pas été choisie au hasard pour accueillir les Gardiens, explique Ester. Il existe ici un lieu précieux et singulier : la Bibliothèque d’Ulthar, porte d'entrée de toutes les autres... à condition d’en trouver le passage. Vous allez devoir y pénétrer, la traverser et trouver le chemin vers la Bibliothèque de Pnakotus, où vous pourrez peut-être consulter les Livres du Savoir. Que faites-vous ? ...\"</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ZbN938AX7JfiFCv7.7mZFLysFAG9nt05N"
+  },
+  {
+   "_id": "apqtLiEAs8orv7MM",
+   "name": "Lieux",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Bibliothèque d'Ulthar Tags: #couloirs-sans-fin-anciens, #livres-poussiéreux, #ombres-inquiétantes La Bibliothèque d'Ulthar a la particularité de mener, si l'on connaît le chemin, à toutes les autres bibliothèques du monde du rêve ou du monde réel. Elle est beaucoup plus vaste à l'intérieur qu'à l'extérieur. Les allées sont profondes et sombres, créant une ambiance mystérieuse. Une femme de petite taille, nommée Flora est chargée d'assister les visiteurs et de les guider vers les allées principales et autres sections. □ Passage de la Bibliothèque d'Ulthar à la Bibliothèque de Pnakotus Le passage se manifeste sous la forme d'un corridor en spirale dont les murs sont constitués d'étagères déformées et mouvantes. Lorsque les Chats se déplacent, les étagères s'animent, créant l'illusion que les murs avancent tandis que les Chats semblent rester immobiles.</p>\n<p>□ Bibliothèque de Pnakotus Tags: #rayonnages-anormaux, #atmosphère-onirique, #passages-cachés La bibliothèque de Pnakotus est un espace multidimensionnel où les étagères s'étendent dans plusieurs directions simultanément. Les livres sont disposés sur des rayonnages qui se croisent et se recoupent, créant des angles impossibles et des projections déformées. Chaque étagère offre une perspective unique sur les connaissances. Les livres changent de contenu en fonction du moment et de la position du lecteur, révélant de nouvelles informations à chaque interaction.</p>\n<p>Exemple : 1D10 donne 4. L'allée est éclairée de lumière qui vacillent, tremblent à chaque pas.</p>\n<p>Note: Lors de la description de la Bibliothèque d’Ulthar et de celle de Pnakotus, je vous conseille de leur attribuer un teinte propre à chacune. Les tableaux ci-contre peuvent vous aider à générer aléatoirement des allées, des rayonnages ou des thématiques. Par exemple, vous pouvez imaginer la Bibliothèque d’Ulthar faite de bois, tandis que celle de Pnakotus pourrait être sculptée dans une roche froide.</p>\n<p>Exemple : 2D10 donne 5 et 9. Un rayon de livres d'histoire autour des langages runiques</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ZbN938AX7JfiFCv7.apqtLiEAs8orv7MM"
+  },
+  {
+   "_id": "c5xz7271gILYOJdO",
+   "name": "Personnages de l'aventure (PNJ)",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Le chroniqueur des souvenirs : Tags : #livre-ouvert, #plume-volante, #papier-jauni, #sentiment-nostalgie Un étrange personnage plaçé à l'entrée de la Bibliothèque. Avant de laisser pénétrer les visiteurs, il recueille leurs souvenirs les plus personnels puis les note soigneusement, à l’aide d’une plume qui semble écrire seule, dans les pages d'un livre épais. Note : Les joueurs doivent noter au dos de leur feuille de personnage un nombre de souvenirs égal à leurs Points de Vie (PV). Ces souvenirs représentent leur essence et leur identité. Ils pourront être absorbés en fin de scénario par les dévoreurs de souvenirs.</p>\n<p>□ L'archiviste éthéré : Tags : #forme-spectrale, #yeux-lumineux, #respect-solennel Un être spectral chargé de maintenir l'ordre parmi les livres. Il traverse les étagères à la recherche d’ouvrages mal rangés. □ Bibliothécaire multidimensionnel : Tags : #versions-superposées, #odeur-de-livres-anciens Un homme qui se déplace dans toutes les bibliothèques car il est composé de plusieurs versions de lui-même superposées. Il offre des conseils riches et pertinents sur les livres les plus rares de la Bibliothèque. □ Visiteur barbu : Tags : #barbe-blanche, #lunettes-rondes, #robe-sombre, #odeur-de-cuir Un vieil homme qui, depuis 150 ans, explore et collecte des écrits de plus en plus anciens. □ Groupe d'aventuriers médiévaux : Tags : #carte-de-navigation, #sac-à-dos, #suspicieux, #aventuriers Al’aide d’une carte erronée, ils recherchent un livre sur le Graal. Leurs sacs à dos sont remplis d'écrits et de documents. □ Fantômes lecteurs : Tags :#formes-dans-pénombre, #poils-qui-s'herrissent, #souffle-léger-froid Des esprits du passé murmurent leurs lectures.</p>\n<p>□ Ombres vivantes : Tags : #bruit-immatériel Des formes devant les étagères prennent vie et murmurent de venir avec eux. □ Visiteur d’Alexandrie : Tags : #souliers-anciens, #odeur-inconnue, #encre-sur-les-mains Erudit de la bibliothèque d'Alexandrie, en quête de manuscrits perdus sur les rituels de résurrection. □ Les larves des livres : Tags : #pages-rongées, #morsures-mystérieuses De minuscules larves aux dents acérées se dissimulent dans les livres. Leurs morsures laissent des marques étranges sur la peau. □ Les ombres errantes : Des formes sombres et informes flottent entre les rayonnages. Elles semblent chercher quelque chose, laissant derrière elles une aura de peur. Tags : #silence, #présence-froide, #anxiété Note: Ce scénario est peut-être le plus délicat à initier notamment en raison de son cadre particulier : les deux bibliothèques. Il est essentiel de garder à l’esprit que ces lieux ne répondent ni aux lois du temps, ni à celles de l’espace. L’étrangeté doit s’installer progressivement, et le danger monter lentement... comme un rêve qui glisse insensiblement vers le cauchemar. Imprégnez-vous des rencontres et des événements proposés. Laissez-vous guider par le hasard et faites confiance aux tirages pour générer les descriptions des rayonnages. Utilisez les deux tables fournies pour définir la forme et le contenu de chaque allée. Commencez simplement : de longues galeries silencieuses, des rayons immobiles... puis introduisez peu à peu des éléments plus troublants. Alternez rencontres et événements pour maintenir une dynamique d’exploration. Dans mes propres parties, j'introduis les premières rencontres issues de la liste à partir seulement de la sixième ou septième allée. Les premières rencontres sont généralement de simples habitants ou voyageurs d’Ulthar, ce qui permet de doser l’étrangeté et de construire la montée en tension.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ZbN938AX7JfiFCv7.c5xz7271gILYOJdO"
+  },
+  {
+   "_id": "nh9FL7W28WupMbjR",
+   "name": "Événements dans les rayonnages",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Etagères normales : Tags : #poussière, #odeur-bois-sec, #nombreux-livres Etagères en bois massif recouvertes de livres poussiéreux. □ Rayonnages infinis : Tags : #parois-hautes, #chemin-sans-fin, #répétion-des- livres Les rayonnages semblent s'étendre à l'infini. La navigation est déroutante. □ Livres mouvants : Tags : #objets-vivants, #frémissements-brusques, #mouvements-soudains Les livres se déplacent seuls pour changer d’étagères. □ Les rayonnages mouvants : Tags : #bruits-grinçants, #étagères-en-mouvement, #labyrinthe Les rayonnages changent constamment de place, créant un dédale en perpétuel mouvement où s'orienter devient une véritable épreuve. □ Tempête de livres : Tags : #vents-tranchants, #chocs, #livres-en-furie Un rayonnage éclate libérant une tempête furieuse de livres volants. □ Rayon de sable : Tags : #grains-sable, #sol-instable, #odeur-chaude Une zone de la bibliothèque révèle un sol couvert de sable. Il provient des livres, rendant chaque pas glissant et incertain.</p>\n<p>□ Effondrement soudain : Tags : #chute-bruyante, #vide-dangereux Une partie du sol s'effondre brusquement, révélant un passage vers des archives encore plus anciennes. □ Salle temporelle : Tags : #désorientation, #courant-d-air-inversé, #vertigineux Un rayonnage contient des livres aux pages qui tournent sans cesse, créant l'illusion de mouvements perpétuels, désordonnés et contradictoires : entrer dans la pièce vous fait sortir tandis que reculer vous fait avancer. L'expérience est profondément désorientante et confuse.</p>\n<p>Note: Les événements permettent de faire monter progressivement l’étrangeté. En fonction de la durée de la session, n’hésitez pas à en ajouter ou à en retirer. Comme toujours, il n’est pas nécessaire d’utiliser tous les événements proposés : ils sont là pour vous guider et enrichir votre narration. Dans mes parties, ces éléments interviennent souvent à des moments où les joueurs hésitent, rebroussent chemin ou explorent un autre passage. N’hésitez pas à réutiliser un même événement trois ou quatre allées plus loin, en modifiant simplement le « décor » des rayonnages pour le rendre différent. Ce scénario repose davantage sur une gestion du rythme, des rencontres et des événements que sur une intrigue à proprement parler.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ZbN938AX7JfiFCv7.nh9FL7W28WupMbjR"
+  },
+  {
+   "_id": "m8Ri2CTUCvbmUtYw",
+   "name": "Fin possible",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Tags: #atmosphère-vide, #zone-d-oubli Après avoir exploré les profondeurs des bibliothèques, les Chats découvrent enfin le rayonnage où repose le livre des Savoirs en lien avec la Clef Interdite: un document met enfin toute la lumière sur cet artefact inconnu ( Cf page suivant) Sur place, des Dévoreurs de souvenirs attendent, prêts à s'emparer des souvenirs des voyageurs égarés. Àleurs pieds, des imprudents, hébétés, errent sans but. Le Dévoreur de Souvenirs: Tags : #formeÉ-éthérée, #yeux-froids, #odeur-de-vide, #sentiment-de-peur Une créature éthérée qui se nourrit des souvenirs de quiconque ose s'approcher d’eux. Plus un aventurier résiste, plus ses souvenirs sont absorbés définitivement par la créature. Nombre de Dévoreurs: 5</p>\n<p>Dévoreur souvenirs Absorbe un souvenir qui devient définitivement oublié si son attaque réussie. Lorsqu'un joueur est privé de tous ses souvenirs, il ne meurt pas mais perd toute expression, tout sentiment et tout objectif. Le personnage devient injouable. Vie: 30 PV / Att [50%] / Absorbe un souvenir</p>\n<p>La conclusion de ce scénario permet aux Chats de comprendre enfin les mystères et les enjeux qui entourent les Clefs Interdites. Ester tient à les féliciter pour leur courage et réussite mais il ajoute : « La bataille n'est pas terminée ! Les artefacts ne sont plus en sécurité et le Dr Corbius connaît leurs secrets ! Le temps est maintenant compté pour la sécurité de tous ! ... En route compagnons !...»</p>\n<h3>Livre des Savoirs, Les Clefs Interdites</h3>\n<p>Il y a bien longtemps, une guerre contre des êtres effroyables ravagea la Contrée du Rêve. Trop puissantes pour être vaincus, ces créatures nécessitèrent la création d’un artefact, une clef magique, capable d’ouvrir un passage vers une dimension où elles pourraient être emprisonnées, loin du monde réel et de la Contrée du Rêve. Cet artefact était si puissant qu’il était impensable de le laisser entre de mauvaises mains. Deux copies parfaites de cette clef furent alors fabriquées mais dotées de pièges :</p>\n<ul><li>Quiconque tenterait d'utiliser une des copies de la Clef Interdite serait projeté dans une dimension obscure et sans vie,</li><li>Seule la possession des trois artefacts permettrait d' éliminer par comparaison les deux copies mortelles. Pour garantir leur sécurité, les trois artefacts, sans que leurs véritables natures soit révélées, furent confiés à différentes communautés : les Protecteurs d’Ulthar, le Gouverneur de l'ÎIe aux Quatre Colonnes et les Hommes des Monts Perdus.....</li></ul>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ZbN938AX7JfiFCv7.m8Ri2CTUCvbmUtYw"
+  }
+ ],
+ "folder": null,
+ "sort": 800000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!ZbN938AX7JfiFCv7"
+}

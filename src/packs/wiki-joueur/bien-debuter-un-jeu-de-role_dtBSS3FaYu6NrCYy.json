@@ -1,0 +1,86 @@
+{
+ "_id": "dtBSS3FaYu6NrCYy",
+ "name": "Bien débuter un jeu de rôle",
+ "pages": [
+  {
+   "_id": "w0oN5bnCrpjrbwWJ",
+   "name": "Bien débuter un jeu de rôle ?",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Bien débuter un jeu de rôle</h3>\n<p>Bienvenue dans le monde des jeux de rôle ! Si vous n'avez jamais joué à un jeu de rôle, ce chapitre est fait pour vous. En tout premier, savez-vous ce qu'est un jeu de rôle ? Un Jeu de Rôle (JDR) est une activité ludique où les participants se plongent dans un univers imaginaire et interagissent avec l'environnement à travers leur Personnage Joueur (PJ). C'est un moyen unique de vivre des aventures extraordinaires, de créer des histoires passionnantes et d'explorer des mondes fantastiques. Dans un jeu de rôle, vous ne serez pas un simple spectateur mais l'acteur principal. Vous aurez la liberté de créer et de développer votre propre personnage en lui donnant vie à travers vos choix et vos actions. Vous serez confrontés à des défis, des énigmes et des obstacles à surmonter. Vous collaborerez avec les autres joueurs pour atteindre des objectifs communs. Le jeu de rôle repose sur l'imagination et l'interaction. Vous pourrez vous exprimer, improviser et prendre des décisions qui influenceront le cours de l'histoire. Vous serez guidés par un Maître de Jeu (MJ) qui sera responsable de décrire les environnements, les Personnages Non Joueurs (PNJ) et de mettre en place les différentes situations.</p>\n<h3>Petit lexique</h3>\n<p>Campagne : une série de scénarios interconnectés qui raconte une histoire plus vaste. JdR : Jeu de Rôle. MJ : Meneur de Jeu, le joueur qui guide et anime la partie. PJ : Personnage Joueur, personnage qu'un joueur interprète. PNJ : Personnage Non Joueur, personnages gérés et interprétés par le MJ. Prétirés : feuille de personnage prédéfinie par le MJ, disponible pour les joueurs qui souhaitent commencer à jouer sans passer par la création d’un personnage. Pouvoir Mystique : pouvoir magique inné ou temporaire des Chats d'Ulthar. Scénario : une trame narrative proposant une série de situations auxquelles les PJ sont confrontés.</p>\n<p>L'essence même du jeu de rôle est de s'amuser, d'explorer des mondes fantastiques, de résoudre des énigmes, de vivre des moments palpitants et de créer des souvenirs inoubliables. Que vous soyez débutants ou expérimentés, jeunes ou moins jeunes, le jeu de rôle offre une expérience immersive et captivante à partager entre amis. Alors, préparez votre imagination, ouvrez votre esprit à l'aventure et plongez dans l'univers incroyable des jeux de rôle.</p>\n<p>Que votre aventure commence !</p>\n<h3>Pour jouer au jeu de rôle, vous aurez besoin de :</h3>\n<ul><li>Un groupe d'amis de deux à six joueurs.</li><li>Ce livre qui vous expliquera comment jouer.</li><li>Des dés.</li><li>Des Crayons à papier et des gommes.</li><li>Un lieu pour jouer.</li><li>Environ deux ou trois heures de temps libre.</li></ul>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!dtBSS3FaYu6NrCYy.w0oN5bnCrpjrbwWJ"
+  },
+  {
+   "_id": "4KHLMdpq6039Tz5W",
+   "name": "Mais que font les joueurs et le meneur de jeu ?",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Dans le cadre d'un jeu de rôle, il existe deux rôles majeurs : les joueurs, qui endossent leur personnage et prennent des décisions dans l'histoire, et le maître de jeu qui guide et anime l'univers du jeu. Les joueurs apportent leur créativité et leur interprétation pour donner vie à leur personnage, tandis que le maître de jeu fournit les scénarios, les défis et les interactions avec les PNJ. Ensemble, joueurs et maître de jeu collaborent pour vivre une aventure, une histoire.</p>\n<p>devront rester invisibles aux yeux des humains ! En tant que maître de jeu au sein des Miaulement d’Ulthar, tenez compte du fait que les joueurs incarnent des chats avec les facilités et les freins que cela sous-tend. Votre rôle sera de créer un environnement convivial, adapté à tous les joueurs, quel que soit leur âge ou leur niveau d'expérience. Soyez souple et bienveillant. Tenez compte des spécificités de jouer en tant que chat et adaptez-vous aux idées et aux actions des joueurs. Encouragez-les à explorer et à tester les limites de leur personnage félin tout en maintenant une ambiance respectueuse.</p>\n<p>En ce qui concerne le jeu de rôle que vous avez entre les mains, « les Miaulements d'Ulthar », vous aurez le privilège d’incarner des chats prestigieux, gardiens de la ville d’Ulthar, ville de la Contrée du Rêve. Votre rôle en tant que Chat gardien d'Ulthar sera d’être :</p>\n<ul><li>curieux afin de résoudre des énigmes,</li><li>efficace pour maintenir l’équilibre entre La Contrée du Rêve et le monde réel.</li><li>et enfin, discret, car... dans le monde réel, vos compétences</li></ul>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!dtBSS3FaYu6NrCYy.4KHLMdpq6039Tz5W"
+  }
+ ],
+ "folder": null,
+ "sort": 100000,
+ "ownership": {
+  "default": 2
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!dtBSS3FaYu6NrCYy"
+}

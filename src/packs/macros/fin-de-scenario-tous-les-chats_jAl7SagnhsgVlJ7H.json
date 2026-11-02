@@ -1,0 +1,23 @@
+{
+ "_id": "jAl7SagnhsgVlJ7H",
+ "name": "Fin de scénario : tous les Chats",
+ "type": "script",
+ "author": null,
+ "img": "icons/svg/sleep.svg",
+ "scope": "global",
+ "command": "game.miaulementsUlthar.finDeScenarioGroupe();",
+ "folder": null,
+ "sort": 100000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!macros!jAl7SagnhsgVlJ7H"
+}

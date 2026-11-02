@@ -1,0 +1,227 @@
+{
+ "_id": "7h9dBvKRT8IyctzX",
+ "name": "Filou",
+ "type": "chat",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "race": "gouttiere",
+  "description": "<p>Filou est un chat discret et voleur dans l'âme.</p>",
+  "handicap": "",
+  "attributs": {
+   "chn": {
+    "base": 40,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "phy": {
+    "base": 55,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "cha": {
+    "base": 30,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "agi": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "int": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "dis": {
+    "base": 70,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "per": {
+    "base": 45,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "pre": {
+    "base": 60,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   }
+  },
+  "pv": {
+   "value": 4
+  },
+  "pm": {
+   "value": 50
+  },
+  "pf": {
+   "value": 38
+  },
+  "vies": {
+   "value": 3
+  },
+  "xp": 0,
+  "achats": {
+   "pm": 0,
+   "pv": 0,
+   "vies": 0
+  },
+  "cartesFolie": [],
+  "notes": ""
+ },
+ "prototypeToken": {
+  "name": "Filou",
+  "actorLink": true,
+  "disposition": 1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [
+  {
+   "_id": "9jOzoL5wMYQ31AzM",
+   "name": "Comprendre et lire l'humain",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Tous les Chats lisent et comprennent les êtres humains, quelle que soit leur langue (0 PM). Les langues anciennes demandent un jet d'Intelligence avec un malus selon le degré d'oubli de la langue. Ce pouvoir ne permet pas de parler aux humains.</p>",
+    "degats": "",
+    "gratuit": true
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!7h9dBvKRT8IyctzX.9jOzoL5wMYQ31AzM"
+  },
+  {
+   "_id": "GpBeN920U2fZ5DKm",
+   "name": "Sixième sens",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "race",
+    "attribut": "",
+    "description": "<p>Capacité surnaturelle à anticiper les dangers avant qu'ils ne se produisent et à sentir les menaces imminentes.</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!7h9dBvKRT8IyctzX.GpBeN920U2fZ5DKm"
+  },
+  {
+   "_id": "aY0rnbvr2bFRHSB4",
+   "name": "Griffes précises",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Les griffes sont utilisées avec une grande précision et ont la fonctionnalité des doigts. Le Chat peut détecter les fluides magiques qui l'entourent ou qui émanent d'un objet.</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!7h9dBvKRT8IyctzX.aY0rnbvr2bFRHSB4"
+  },
+  {
+   "_id": "X1NuceHx3RDGJvd4",
+   "name": "Langage animal",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Le Chat comprend et parle le langage des autres animaux.</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!7h9dBvKRT8IyctzX.X1NuceHx3RDGJvd4"
+  }
+ ],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!7h9dBvKRT8IyctzX"
+}

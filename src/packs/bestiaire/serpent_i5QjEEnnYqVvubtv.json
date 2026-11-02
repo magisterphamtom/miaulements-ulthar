@@ -1,0 +1,47 @@
+{
+ "_id": "i5QjEEnnYqVvubtv",
+ "name": "Serpent",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Mâchoire",
+    "pct": 60,
+    "degats": "1d6"
+   }
+  ],
+  "pouvoir": "",
+  "capacite": "Venin paralysant",
+  "pv": {
+   "value": 6,
+   "max": 6
+  },
+  "description": "<p>Reptile carnivore sans membres, il se caractérise par un corps allongé et cylindrique, une langue bifide, des yeux dépourvus de paupières. Il a la capacité de se déplacer par ondulations. Il tue ses victimes par strangulation ou par injection de venin.</p><p><strong>Capacité :</strong> Venin paralysant</p><blockquote><p>Les soignants affirment que les membres du culte croyaient que ces morsures étaient des épreuves divines destinées à prouver leur foi. La réalité a conduit à une vague de blessures graves</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Serpent",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!i5QjEEnnYqVvubtv"
+}

@@ -1,0 +1,47 @@
+{
+ "_id": "SymKTCdx0lnfJy22",
+ "name": "Corbeau",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Bec",
+    "pct": 40,
+    "degats": "1d4"
+   }
+  ],
+  "pouvoir": "",
+  "capacite": "En groupe",
+  "pv": {
+   "value": 4,
+   "max": 4
+  },
+  "description": "<p>Les corbeaux sont des oiseaux noirs aux plumes luisantes, connus pour leur intelligence remarquable et leur capacité à résoudre des problèmes complexes. Ils vivent et agissent souvent en groupes.</p><p><strong>Capacité :</strong> En groupe</p><blockquote><p>Des résidents ont signalé que des corbeaux se rassemblent chaque soir dans le parc public d'Arkham. Ils apportent des carcasses fraîchement mortes qu'ils déposent devant un vieil arbre. Ce comportement étrange suscite l'inquiétude parmi les habitants pour leurs jeunes enfants</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Corbeau",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!SymKTCdx0lnfJy22"
+}

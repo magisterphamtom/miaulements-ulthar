@@ -1,0 +1,53 @@
+{
+ "_id": "MV2MQkNtjLSuPAT3",
+ "name": "Aide-mémoire du joueur",
+ "pages": [
+  {
+   "_id": "KxOURNUYPyPEHlU5",
+   "name": "Aide-mémoire",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h2>Un jet</h2><p>D100 : réussite si le résultat est inférieur ou égal à l'attribut. Réussite critique : 5 ou moins (10 en mode Pulp). Échec critique : 96 ou plus (91 en mode Pulp).</p><h2>Difficulté (ajoutée au dé)</h2><table><thead><tr><th>Difficulté</th><th>Modificateur</th></tr></thead><tbody><tr><td>Très facile</td><td>−40</td></tr><tr><td>Facile</td><td>−20</td></tr><tr><td>Normal</td><td>0</td></tr><tr><td>Difficile</td><td>+20</td></tr><tr><td>Très difficile</td><td>+40</td></tr></tbody></table><h2>Valeurs calculées</h2><ul><li><strong>Santé</strong> : selon Physique + Agilité (voir tableau).</li><li><strong>Folie</strong> : (Perception + Charisme) / 2, arrondi à l'entier supérieur.</li><li><strong>Magie</strong> : Intelligence.</li><li><strong>Vies de Chat</strong> : 3.</li></ul><table><thead><tr><th>Physique + Agilité</th><th>Points de Santé</th></tr></thead><tbody><tr><td>0 à 39</td><td>1</td></tr><tr><td>40 à 59</td><td>2</td></tr><tr><td>60 à 89</td><td>3</td></tr><tr><td>90 à 109</td><td>4</td></tr><tr><td>110 à 119</td><td>5</td></tr><tr><td>120 à 139</td><td>6</td></tr><tr><td>140 à 200</td><td>7</td></tr></tbody></table><h2>Dégâts courants</h2><table><thead><tr><th>Source</th><th>Dégâts</th></tr></thead><tbody><tr><td>Coup de griffe</td><td>1D4</td></tr><tr><td>Chute</td><td>1D4 par étage (max 6D4)</td></tr><tr><td>Objet tranchant</td><td>1D6</td></tr><tr><td>Pistolet</td><td>1D6+1</td></tr><tr><td>Fusil</td><td>2D6</td></tr><tr><td>Explosion</td><td>4D6</td></tr><tr><td>Feu</td><td>2D6 par tour</td></tr><tr><td>Choc par véhicule</td><td>1D6</td></tr></tbody></table><h2>Progression</h2><p>Chaque échec à un jet d'attribut coche une case (6 par attribut). Toutes les cases cochées : +1D10 à l'attribut. En fin de scénario : 2 XP (2 XP = +10 PM ou +1 Santé ; 4 XP = pouvoir temporaire permanent ou +1 vie de Chat).</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!MV2MQkNtjLSuPAT3.KxOURNUYPyPEHlU5"
+  }
+ ],
+ "folder": null,
+ "sort": 800000,
+ "ownership": {
+  "default": 2
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!MV2MQkNtjLSuPAT3"
+}

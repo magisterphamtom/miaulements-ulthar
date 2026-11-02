@@ -1,0 +1,28 @@
+{
+ "_id": "laG14RiPp720ay60",
+ "name": "Télépathie",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "temporaire",
+  "attribut": "",
+  "description": "<p>Le Chat communique par la pensée et établit un lien mental pour partager des informations ou coordonner des actions.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "ZmNoEX04AcYhbu9V",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!laG14RiPp720ay60"
+}

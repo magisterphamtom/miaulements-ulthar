@@ -1,0 +1,284 @@
+{
+ "_id": "CY6aNsIBIvlfBVRo",
+ "name": "L'affrontement final (scénario 5)",
+ "pages": [
+  {
+   "_id": "5BbcbvRHwJVSlrxV",
+   "name": "Intrigue générale",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>L'affrontement final (scénario 5)</h3>\n<p>Scénario 5 :</p>\n<p>a n f t n t L’affron</p>\n<p>Le Dr Corbius a profité du chaos causé par l'attaque des Profonds sur l'ile pour embarquer sur un bateau réservé aux rescapés. Il a ainsi regagner le Port de Rathia. Il cherche désormais à rejoindre la zone désertique, derrière la forêt de Pang où il prévoit d'activer le portail. En sa possession, il ne détient que deux artefacts sur les trois nécessaires. Malgré cela, il est prêt à prendre le risque d'utiliser les clefs, même au prix de sa vie ! Les Chats parviendront-ils à l’arrêter ou prendront-ils le risque de laisser sortir du portail des créatures monstrueuses? Note : Ce dernier scénario constitue le point d’orgue de la campagne. Les Chats vont devoir retrouver la trace de Corbius, le poursuivre dans le désert jusqu'au lieu de cérémonie où il compte activer le portail. Cependant, encouragez les spéculations et les débats entre les joueurs. Glissez des indices contradictoires suggérant qu’il est prêt à tenter l’impossible et d’autres laissant penser qu’il n’osera pas franchir le pas. Enfin, soulignez dès que possible que l’affrontement direct avec Corbius et ses mercenaires représente un danger extrême. Il est prêt à tout pour mener son projet à bien.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!CY6aNsIBIvlfBVRo.5BbcbvRHwJVSlrxV"
+  },
+  {
+   "_id": "1wsoRMdHiM19rTV8",
+   "name": "Début à Ulthar",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Pour jouer la scène d’introduction, veuillez vous référer dans un premier temps à La Cérémonie sacrée, livre de règles, chapitre : \"Guide du maître du jeu\". Vous trouverez ci-dessous le texte à y inclure.</p>\n<h3>Texte à lire :</h3>\n<p>Vous savez désormais que le Dr Corbius détient au minimum deux Clefs Interdites et peut être trois !?....D'après le gouverneur, son objectif semble clair : ouvrir le portail afin d'explorer de nouveaux territoires mais en libérant alors des entités emprisonnées depuis des siècles. Avec deux clefs seulement, il risque d'en mourir...Est-il prêt à cela ? Peu importe, il faut recueillir des informations sur la trace de Corbius et son lieu de cérémonie dans le désert! Ester est loin d'ici, l'action que vous menerez là-bas reposera entièrement sur vous !\"</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!CY6aNsIBIvlfBVRo.1wsoRMdHiM19rTV8"
+  },
+  {
+   "_id": "vQnUa7hmtkwZmy4J",
+   "name": "Lieux",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Le Port de Rathia Tags: #ville-en-agitation, #port-marchand, #navires-volants □ Rue sombre du port Tags : #ombres-menaçantes, #mercenaires Présence d'un groupe de mercenaires pour protéger Corbius avant son départ vers le désert. □ Forêt de Pang Tags : #humide, #bruits-effrayants, #animaux- sauvages Forêt tropicale, riche en biodiversité mais dangereuse. □ Désert Tags : #sable-doré, #vent-cinglant Le désert s’étend à l’infini et des collines se dessinent au loin. Une tempête semble se former près de ces collines.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!CY6aNsIBIvlfBVRo.vQnUa7hmtkwZmy4J"
+  },
+  {
+   "_id": "IXula1wkWSSGnips",
+   "name": "Personnages de l'aventure (PNJ)",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Alaric : marin Tags : #vêtements-usés, #tatouages, #sifflement-mélancolique □ Timon : garde Tags : #casque-ébréché, #regard-suspicieux, #posture-droite □ Agathe : habitante Tags : #cheveux-grisonnants, #mains-tremblantes, #sourde □ Bastien : habitant Tags : #chapeau-troué, #visage-marqué-par-le-soleil, #odeur-iris □ Clara : habitante Tags : #tablier-tâché, #rieuse, #généreuse □ Mathis : commerçant Tags : #bagues-éclatantes, #parfum-fort, #flair- pour-les-affaires □ Renaud : ivrogne Tags : #nez-rouge, #odeur-vin, #veste- râpée □ Mistral : chat Tags : #pelage-noir, #yeux-dorés, #marche- silencieuse □ Brume : chien Tags : #oreilles-tombantes, #cicatrice-sur-le- flanc, #loyal-mais-prudent</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!CY6aNsIBIvlfBVRo.IXula1wkWSSGnips"
+  },
+  {
+   "_id": "GJsNcCEYPmnGhpTP",
+   "name": "Indices & Événements",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Une vieille femme prétend avoir vu une ombre gigantesque traverser le ciel en direction du désert. □ Une explosion mystérieuse secoue un entrepôt, sans explication claire ni responsables identifiés. □ Une violente tempête de sable se lève brutalement, perturbant toutes les routes vers le désert. □ Un marchand vend des fragments d’artefacts qui proviennent d’une fouille au cœur du désert. □ Une étoile inhabituelle brille plus fort que les autres. □ Un navire au pavillon inconnu entre au Port sans aucun membre à son bord. □ Un groupe de survivants est arrivé au port la veille. □ Un groupe d’homme a cherché activement une caravane pour rejoindre le désert. □ Un groupe a quitté le port en direction du désert, laissant derrière eux quelques dettes avec des marchands. □ Des traces sont visibles sur le chemin menant au désert, attestant du passage récent d’une caravane. □ Le propriétaire de la caravane est découvert sans vie près de la route empruntée, avec des signes de lutte violente. □ Dans le désert, des éclairs illuminent une colline, évoquant une activité magique.</p>\n<p>Note : Lors des trois parties de test que j’ai menées, les joueurs ont toujours eu envie de progresser rapidement pour affronter le Dr Corbius. Ma première partie comportait une enquête trop longue pour découvrir le lieu final, ce qui a freiné la tension. En revanche, pour les deux suivantes, l’ajout d’éléments inexpliqués et intrigants a très bien fonctionné pour faire monter la tension et orienter naturellement les joueurs vers le lieu final.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!CY6aNsIBIvlfBVRo.GJsNcCEYPmnGhpTP"
+  },
+  {
+   "_id": "vL0dZO29fWuyTEsF",
+   "name": "Mise en place de la scéne finale",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Sur une colline isolée au cœur du désert, des mercenaires montent la garde, protégeant farouchement la zone. Ils sont prêts à se battre ! La zone semble infranchissable avec des silhouettes innombrables qui se dessinent. Leurs visages sont déterminés et les épées déjà dénudées de leurs fourreaux. C'est un duel âpre et sans merci qui se prépare ici en cas d'attaque ... Au sommet de la colline, un petit campement a été établi. Depuis leur arrivée, les mercenaires s’activent à préparer le rituel d’ouverture de la dimension. La zone est emplie de bougies et deux mercenaires s’efforcent de les rallumer sans cesse pour maintenir le rituel. Le rituel déjà entamé plonge artificiellement la région sous un ciel sombre, ponctué d’éclairs assourdissants qui illuminent les environs. Le Dr Corbius est en possession de deux artefacts sur les trois nécessaires. Il sait qu’il prend un risque en tentant l’activation mais le temps presse ! Dans une tension palpable, le Dr Corbius ne cesse de réfléchir sur quel artefact choisir ? Il les observe attentivement, prenant l’un, pour le reposer et réexaminer l’autre.</p>\n<p>Mercenaires Dangereux et nombreux, ils obéissent au Dr Corbius. En situation extrême, ils ont 40 % de chances de s’enfuir. Vie: 12 PV</p>\n<p>Att [60%] / Epée 1D6</p>\n<p>Dr Corbius Il fera tout pour réussir et n'hésitera pas à sacrifier un des mercenaires pour déclencher le portail. Vie: 8 PV</p>\n<p>Att [50%] / poing 1D3</p>\n<p>Sa décision est imminente et l’activation du portail sera faite dans quelques minutes (6 tours). Son choix impactera donc le sort des mondes . Nombre de tour avant utilisation de l’artefact : 6</p>\n<h3>Utilisation de l’artefact : lancez 1D6</h3>\n<p>Résultat [1-2] : Le bon artefact Une déchirure se forme dans le ciel, accompagnée d’un vent terrifiant et de formes tourbillonnantes. Des éclairs éclatent de toutes parts, illuminant la scène. Un être gigantesque commence à se matérialiser et sort du portail, plongeant les lieux dans un chaos apocalyptique. Résultat [3-6] : Le mauvais artefact Une déchirure s’ouvre sur la colline générant une tornade. Une force d’aspiration tente d’emporter chaque personne présente sur la colline : mercenaires, Docteur ou Chats. Chacun de ces personnages doit réussir un jet de CON/2 pour éviter d’être emporté par cette force destructrice. Si le Docteur survit, il tentera d’utiliser le deuxième artefact. Cependant, cette fois-ci, il aura une chance sur deux (résultat [1-3] ou [4-6]) d’activer le bon artefact.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!CY6aNsIBIvlfBVRo.vL0dZO29fWuyTEsF"
+  },
+  {
+   "_id": "AGQy1t261ZaHVYqD",
+   "name": "Fin tragique possible",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Si l'aventure mène vos joueurs vers une fin sombre où l’équipe périt ou s’enfuit en laissant le chaos s’installer, lisez le passage suivant : À Ulthar, Ester, d’un ton grave et empreint de tristesse, s’adresse aux Chats restés à Ulthar : \"Je crains que nos compagnons n’aient échoué. Tout semble indiquer qu'ils ont affronté une adversité plus forte qu'eux ...\" Alors qu’il finit à peine sa phrase, le ciel s’assombrit et des nuages noirs recouvrent les soleils. \"Des heures sombres sont à prévoir mes félins, pour nous et le monde réel. Mais ... nous trouverons une solution, je vous le promets ! \"</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 700000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!CY6aNsIBIvlfBVRo.AGQy1t261ZaHVYqD"
+  },
+  {
+   "_id": "Hm9HXwSpSA4qJSFs",
+   "name": "Fin victorieuse possible",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Si l'aventure mène vos joueurs vers la victoire où les Chats permettent de rétablir le calme et la quiétude , lisez le passage suivant: Alors que le portail se referme, emportant les derniers cris du Dr Corbius et des mercenaires, l’ouragan se dissipe peu à peu. Les rayons des soleils chassent les nuages pour éclairer à nouveau la colline et la région. Vous ressentez un profond soulagement : vous avez réussi à sauver la Contrée du Rêve ! Quelques jours plus tard, au petit matin, Ester se tient devant votre équipe. Dans ses yeux brille une lueur de fierté et de gratitude. Sa voix, d’ordinaire tremblante, résonne avec force et émotion : \"Les Clefs devront à nouveau être mises hors de portée des rêveurs imprudents mais, votre courage et votre détermination nous ont tous sauvés ! Je suis persuadé que la Déesse Bast murmurera vos noms aux oreilles des jeunes Gardiens pour l’éternité ! . Grâce à vous, grâce aux Gardiens d’Ulthar, la Contrée et le monde réel peuvent connaître un véritable moment de répit !\"</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 800000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!CY6aNsIBIvlfBVRo.Hm9HXwSpSA4qJSFs"
+  }
+ ],
+ "folder": null,
+ "sort": 1000000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!CY6aNsIBIvlfBVRo"
+}

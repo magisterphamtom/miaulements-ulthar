@@ -1,0 +1,223 @@
+{
+ "_id": "YiNS7egvgMlTkyf9",
+ "name": "Réactions humaines",
+ "img": "icons/svg/d20-grey.svg",
+ "description": "<p>Écran du MJ.</p>",
+ "results": [
+  {
+   "_id": "CXJ0FuOCus1TIwCa",
+   "type": "text",
+   "text": "Ignore le chat",
+   "img": null,
+   "description": "",
+   "range": [
+    1,
+    2
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!YiNS7egvgMlTkyf9.CXJ0FuOCus1TIwCa"
+  },
+  {
+   "_id": "EjNVA2kT4L8NrsxZ",
+   "type": "text",
+   "text": "Caresse le chat",
+   "img": null,
+   "description": "",
+   "range": [
+    3,
+    3
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!YiNS7egvgMlTkyf9.EjNVA2kT4L8NrsxZ"
+  },
+  {
+   "_id": "SICisk33voe21hW4",
+   "type": "text",
+   "text": "Joue avec le chat",
+   "img": null,
+   "description": "",
+   "range": [
+    4,
+    4
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!YiNS7egvgMlTkyf9.SICisk33voe21hW4"
+  },
+  {
+   "_id": "IidYJ0zm7W14UGue",
+   "type": "text",
+   "text": "Alimente le chat",
+   "img": null,
+   "description": "",
+   "range": [
+    5,
+    5
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!YiNS7egvgMlTkyf9.IidYJ0zm7W14UGue"
+  },
+  {
+   "_id": "CnKEgkROXijQHq0R",
+   "type": "text",
+   "text": "Prend le chat dans les bras",
+   "img": null,
+   "description": "",
+   "range": [
+    6,
+    6
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!YiNS7egvgMlTkyf9.CnKEgkROXijQHq0R"
+  },
+  {
+   "_id": "ivZ25Y8NA1SWwEkb",
+   "type": "text",
+   "text": "Tente de chasser le chat",
+   "img": null,
+   "description": "",
+   "range": [
+    7,
+    7
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!YiNS7egvgMlTkyf9.ivZ25Y8NA1SWwEkb"
+  },
+  {
+   "_id": "M5VfkA9z8ZmeE2TV",
+   "type": "text",
+   "text": "Intimide le chat",
+   "img": null,
+   "description": "",
+   "range": [
+    8,
+    8
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!YiNS7egvgMlTkyf9.M5VfkA9z8ZmeE2TV"
+  },
+  {
+   "_id": "mQDpo6lmJfYljRvu",
+   "type": "text",
+   "text": "Lance des objets au chat",
+   "img": null,
+   "description": "",
+   "range": [
+    9,
+    9
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!YiNS7egvgMlTkyf9.mQDpo6lmJfYljRvu"
+  },
+  {
+   "_id": "zSwXjbXU4xyWXlE1",
+   "type": "text",
+   "text": "Maltraite le chat",
+   "img": null,
+   "description": "",
+   "range": [
+    10,
+    10
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!YiNS7egvgMlTkyf9.zSwXjbXU4xyWXlE1"
+  }
+ ],
+ "formula": "1d10",
+ "replacement": true,
+ "displayRoll": true,
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!tables!YiNS7egvgMlTkyf9"
+}

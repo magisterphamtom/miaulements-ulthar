@@ -2,7 +2,7 @@
   "id": "miaulements-ulthar",
   "title": "Les Miaulements d'Ulthar",
   "description": "Système de jeu Foundry VTT pour « Les Miaulements d'Ulthar » (jeu de rôle de Xaviiiier) : des Chats d'Ulthar face à l'horreur lovecraftienne. Publié avec l'autorisation de l'auteur ; le livre de règles est nécessaire pour jouer.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "compatibility": {
     "minimum": "13",
     "verified": "14.368"
@@ -34,14 +34,103 @@
       "pouvoir": {}
     }
   },
-  "packs": [],
+  "packs": [
+    {
+      "name": "wiki-joueur",
+      "label": "Wiki des joueurs",
+      "path": "packs/wiki-joueur",
+      "type": "JournalEntry",
+      "system": "miaulements-ulthar",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "wiki-mj",
+      "label": "Wiki du Gardien",
+      "path": "packs/wiki-mj",
+      "type": "JournalEntry",
+      "system": "miaulements-ulthar",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "scenarios",
+      "label": "Scénarios",
+      "path": "packs/scenarios",
+      "type": "JournalEntry",
+      "system": "miaulements-ulthar",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "pouvoirs",
+      "label": "Pouvoirs",
+      "path": "packs/pouvoirs",
+      "type": "Item",
+      "system": "miaulements-ulthar",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "pretires",
+      "label": "Prétirés",
+      "path": "packs/pretires",
+      "type": "Actor",
+      "system": "miaulements-ulthar",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "bestiaire",
+      "label": "Bestiaire",
+      "path": "packs/bestiaire",
+      "type": "Actor",
+      "system": "miaulements-ulthar",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "tables",
+      "label": "Tables",
+      "path": "packs/tables",
+      "type": "RollTable",
+      "system": "miaulements-ulthar",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macros",
+      "label": "Macros du Gardien",
+      "path": "packs/macros",
+      "type": "Macro",
+      "system": "miaulements-ulthar",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
   "grid": {
     "distance": 1,
     "units": "m"
   },
   "primaryTokenAttribute": "pv",
-  "socket": false,
+  "socket": true,
   "url": "https://github.com/magisterphamtom/miaulements-ulthar",
   "manifest": "https://github.com/magisterphamtom/miaulements-ulthar/releases/latest/download/system.json",
-  "download": "https://github.com/magisterphamtom/miaulements-ulthar/releases/download/v0.2.0/miaulements-ulthar.zip"
+  "download": "https://github.com/magisterphamtom/miaulements-ulthar/releases/download/v0.3.0/miaulements-ulthar.zip"
 }

@@ -1,0 +1,28 @@
+{
+ "_id": "50tEZGAgEmA3hIv3",
+ "name": "Ordre prononcé",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "inne",
+  "attribut": "",
+  "description": "<p>Le Chat donne un ordre mental simple (trois mots au maximum) à une créature. L'injonction dure un tour. Exemples : « Arrête-toi immédiatement », « Fuis », « Protège-moi ».</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "9a2jRIFqgKKDpai2",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!50tEZGAgEmA3hIv3"
+}

@@ -1,0 +1,218 @@
+{
+ "_id": "l9rZLtyFqjaW89OU",
+ "name": "Scénario d'initiation : les chiens dimensionnels",
+ "pages": [
+  {
+   "_id": "FTyTzczIWvV7DppB",
+   "name": "Intrigue générale",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Les chiens dimensionnels</h3>\n<p>Scénario :</p>\n<p>e n n o n e m</p>\n<p>D Les Chiens</p>\n<p>Une série de meurtres sauvages secoue la communauté scientifique d'Arkham. Depuis plusieurs mois, quatre chercheurs (Dr Blackwood, Dr Davis, Dr Pierce, Dr Carter) se consacrent à déchiffrer un vieux grimoire colombien. Après de nombreuses discussions, ils décident de tenter l’une des invocations, mais une erreur de traduction conduit à un désastre : deux créatures terrifiantes, deux chiens de Dimensionnels, surgissent et démembrent le professeur Blackwood. Affolés, ses collègues prennent la fuite. Aujourd'hui, chacun d'eux est traqué par les chiens et tente désespérément de trouver une solution pour échapper à ces monstres. Les Gardiens d'Ulthar sont envoyés pour enquêter sur cette série de meurtres étranges et tenter de résoudre le mystère. Parallèlement, un des scientifiques survivants engage des investigateurs pour retrouver le grimoire afin de relancer un rituel de renvoie.</p>\n<p>Note : Les Chiens Dimensionnels, appelés aussi Tindalos, sont des prédateurs capables de voyager à travers l'espace en utilisant les angles des pièces. Une fois une proie repérée, ils la poursuivent sans relâche jusqu'à sa mort (Lovecraft, 1931, \"Celui qui chuchotait dans les ténèbres\")</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!l9rZLtyFqjaW89OU.FTyTzczIWvV7DppB"
+  },
+  {
+   "_id": "7cj4fvcjwNoya5Zr",
+   "name": "La cérémonie de Bast",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>La mission des Chats Gardiens d'Ulthar commence généralement dans la Contrée des Rêves lors d'une cérémonie solennelle au cours de laquelle les anciens de la communauté envoient les Chats en mission dans le monde réel.</p>\n<h3>Texte à lire :</h3>\n<p>Dans la Contrée des rêves, coincée entre la forêt enchantée, la rivière de Minh et la route menant à Kadath, se trouve le village d'Ulthar. À Ulthar les Chats sont rois. Il est formellement interdit de les blesser ou de les tuer .... mais ça, c'est une vieille histoire. Alors que la nuit tombe et que les ombres se lèvent, les volets des maisons de la ville d'Ulthar se ferment les uns après les autres. La nuit, les villageois savent que les dangers peuvent surgir de partout et qu'il n'est pas bon de croiser un Chat... Àl'extérieur du village, au croisement de cinq chemins, une statue étrange se dresse. Elle n'a pas de visage identifiable et en fonction des heures de la journée, elle n'a pas toujours la même forme. Des ombres silencieuses issues des recoins des bois ou des chemins émergent et se dirigent vers la statue. Dans un silence solennel, les Chats se rassemblent en petits groupes distincts dirigés par vieux Chat, protecteur et garant des coutumes. Les plus anciens remarqueraient que chaque groupe représente une race spécifique de félins. Tous les groupes vénèrent la déesse Bast, déesse protectrice des chats, des hommes et des mondes. Soudain, le silence est rompu par le miaulement des Chats qui résonnent à travers toute la vallée.</p>\n<p>Le silence revient quand un vieux Chat s'avance et prend la parole : Mes chers félins, des Chats d'Ulthar qui espionnaient des humains nous ont rapporté un fait divers étrange : un scientifique, le professeur Henry Blackwood, a été sauvagement tué. Cet homme faisait partie d'un petit groupe de scientifiques étudiant le paranormal et d'anciennes légendes. Depuis hier, à leur tour, le Dr Samuel Davis et le Dr Edward Pierce ont disparu. Le Dr Olivia Carter a fait appel à des investigateurs privés, Paul Stalker et Miriame Palter d'Enquête &amp; Mystère Associés, pour retrouver ses collègues. Cette situation alarmante nécessite notre intervention.</p>\n<h3>Introduction des joueurs à l’aventure :</h3>\n<p>Ya-t-il parmi vous des volontaires prêts à élucider ce mystère et à y mettre un terme ? Note: C'est à ce moment que vous invitez vos joueurs à se manifester et à décrire leurs personnages.</p>\n<h3>La bénédiction de Bast :</h3>\n<p>Comme le veut la tradition, avant de partir, les chats se dirigent vers la statue de Bast et lapent l'eau qui coule de la fontaine. Une énergie mystique remplit leur être, leur accordant temporairement des pouvoirs supplémentaires. Note : deux pouvoirs temporaires sont tirés au hasard. Référez- vous au chapitre des pouvoirs temporaires.</p>\n<h3>Le départ :</h3>\n<p>Pour rejoindre le monde réel, les chats ont le pouvoir d'emprunter les ombres les plus sombres, les plus noires. Sous le pont, juste à côté, l'obscurité est particulièrement sombre. Peu à peu, la terre laisse place aux pavés et le chant des oiseaux est remplacé par les klaxons de voiture. Vous voilà Note: lieu à la discrétion du maître du maintenant à Arkham. jeu. Personnellement, près du bureau des investigateurs.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!l9rZLtyFqjaW89OU.7cj4fvcjwNoya5Zr"
+  },
+  {
+   "_id": "qppg74Q174fyuTnS",
+   "name": "Personnages dans l'aventure",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Voici une description rapide des personnages que les joueurs peuvent rencontrer ou observer sur Arkham pour cette aventure.</p>\n<p>Note: les tags sont les éléments de description.</p>\n<p>Prof Henry Blackwood : #odeur-tabac, #vieux- pantalon, #autoritaire, #collectionneur-de-pipes. Retrouvé mort et démembré chez lui, son corps est désormais à la morgue. Il était le responsable d'un département de recherche à l'université d'Arkham, où il dirigeait des études sur le paranormal et les anciennes légendes. Dr Samuel Davis : #ordeur- encre, #chaussettes- dépareillées, #nerveux, #crayon- mâchouillé. Il a disparu à la suite de l'invocation. Connu pour être nerveux et souvent peu sûr de lui, il était l'un des scientifiques travaillant avec le professeur Blackwood. Il s'est réfugié chez sa soeur, dans le quartier. Il pourra être retrouvé mort en milieu de partie.</p>\n<p>Dr Edward Pierce : #odeur- after-shave, #chaussures- cirées, #méthodique, #montre- gousset. Disparu et terrifié, il s'est enfui face à l'apparition du Chien de Tindalos. La folie l'a envahi. On peut le retrouver non loin de chez lui, dans un bar, où l'alcool lui permet de tenir le coup. Dr Olivia Carter : #odeur- lavande, #jupe-droite, #autoritaire, #stylo-plume. Dr. Olivia Carter sait qu'il est crucial de renvoyer ces bêtes monstrueuses. Elle engage des investigateurs pour retrouver l'un de ses collègues qui a pris le grimoire. Déterminée à résoudre la situation, elle mettra tout en œuvre pour renvoyer les chiens de Tindalos. Groupe d'investigateurs : Paul Stalker : #odeur- transpiration, #pantalon- froissé, #maladroit, [ carac : 50% ]. Miriame Palter : #parfum- fleuri, #escarpins-vernis, #déterminée, #carnet-usé [ carac : 55% ]. .</p>\n<p>Autres personnages : Amelia Hawthorne : #odeur-cuir, #pantalon-uniforme, #vigilante, #badge Tom Kipper : #odeur-formol, #pantalon-taché, #curieux, #scalpel. Victoria Grant : #ordeur-désinfectant, #chaussures-blanches, #attentionnée, #stéthoscope. Tatoueur Julian Hartwick : #odeur-encre, #jean-déchiré, #créatif. Bouquiniste Samuel Trigo : #odeur-vieux-livres, #pantoufles, #érudit, #lunettes-lecture. Chien dimensionnel : #odeur-soufre, #pattes- decharnées, #prédateur, #crocs-acérés. PV : 60 Griffes : deux attaques à 75% / 2d6+1 Pouvoir : Voyage à travers les angles du temps et espace.</p>\n<p>MORT MYSTÉRIEUSE s d, spécialiste de Le Dr. Henry Blackwoo nes, a été retrouvé légendes précolombien ent verrouillé, sans mort dans son appartem griffes au sol et effraction. D'étranges concertent la police, inscriptions murales dé disparition de ses qui n'a aucune piste. La l Davis et Edward collègues, les Dr. Samue ire. Le chef de la Pierce, complique l'affa et une enquête police d'Arkham prom approfondie.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!l9rZLtyFqjaW89OU.qppg74Q174fyuTnS"
+  },
+  {
+   "_id": "HXcA4LwViindKEEe",
+   "name": "Lieux,Indices et évenements",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Bureau \"Enquête &amp; Mystère associés\" de Paul Stalker et Miriame Palter</h3>\n<p>Tags : #odeur-papier-poussiéreux, #fauteuil-grifféconfortable, #souris-cachées-murs.</p>\n<h3>Description :</h3>\n<p>Une salle d’attente exiguë précède le bureau des enquêteurs. Lorsque les Chats arrivent, ils entendent les enquêteurs discuter de l’affaire des scientifiques.</p>\n<h3>Indices :</h3>\n<p>□ Chèque : un chèque d'avance de 50 $ émis par le Dr Carter traîne sur l’un des bureaux. □ Enveloppe et lettre : une enveloppe contenant une lettre d'explication de la demande du Dr Carter. Elle souhaite retrouver le Dr Davis et le Dr Pierce ainsi qu’un livre lui appartenant. L'adresse du Dr Carter est inscrite sur l'enveloppe. □ Article de journal : un article de journal décrivant la mort étrange du professeur (cf annexe) □ Lettres de relance : trois lettres de relance pour des loyers impayés concernant le local des enquêteurs. □ Début de notes d'enquête : adresses des différents docteurs.</p>\n<h3>Événements :</h3>\n<p>□ Discussion entre les enquêteurs : les deux enquêteurs échangent sur la situation précaire de l’agence et sur la nouvelle enquête que le Dr Carter leur a confiée. Ils savent que s’ils ne résolvent pas la demande du Dr Carter, ils risquent de se retrouver dans une impasse financière. Pour débuter l’enquête, ils ne sont pas d’accord sur le lieu à explorer en premier : la morgue, le bureau du Professeur Blackwood ou son habitation. □ Maladresse de Paul : Paul, dans sa maladresse habituelle, fait tomber ses clés et des papiers à plusieurs reprises. □ Panne d'électricité soudaine : Une panne d'électricité survient sans explication, plongeant le bureau dans l'obscurité pendant quelques secondes.</p>\n<h3>Maison du Pr Henry Blackwood Tags : #pelouse-entretenu, #rideaux-épais, #odeur-chien-irritante. Description :</h3>\n<p>Coincée entre des immeubles, une maison luxueuse se dresse avec un petit jardin menant à l'entrée. La porte est scellée par un ruban jaune de la police. Àl'intérieur, de lourds rideaux filtrent la lumière, créant une atmosphère sombre. Une odeur de chien désagréable flotte dans l'air. Pieces : Entrée, Cuisine, Salon, 2 chambres, 1 bureau</p>\n<h3>Indices :</h3>\n<p>□ Livres et objets antiques : des objets anciens décorent plusieurs pièces. Un jet d'intelligence permet de déterminer qu’ils proviennent d’Amérique latine, en particulier de l’époque des Incas. □ Scène de lutte violente dans le salon : des éclats de verre et des éclaboussures de sang sont visibles, témoignant d'une violente altercation. Cartons étranges : un carton rempli de bougies, d'encens et de poterie précolombienne est posé dans un coin du salon. Un jet de Perception permet de comprendre qu’il s’agit d’accessoires de cérémonie utilisés récemment. □ Coin noirci dans le salon : un coin d’un mur du salon est noirci, les veines du bois sont anormalement déformées. Les Chats ressentent un sentiment de danger s’ils s'approchent. S'ils insistent, un jet de folie peut être requis pour éviter une carte folie. □ Journal intime : caché dans l’un des tiroirs de la chambre, ce journal décrit l'inquiétude croissante du professeur. Il a l’impression d’être observé la nuit et mentionne avoir vu une forme dans le coin de sa chambre deux nuits avant sa mort. □ Photo des scientifiques : une photo montre les quatre scientifiques devant un ancien temple (jet d’intelligence pour déterminer qu’il s’agit d’un temple Inca de la cordillère des Andes). Au dos, les prénoms des quatre chercheurs ainsi que la date de l’année dernière. □ Traductions incomplètes : de nombreux essais de traduction, peu compréhensibles, font référence à la justice divine des Incas. Les « coupables » doivent incanter une cérémonie avant de quitter le village. Billets et factures : plusieurs documents attestent des voyages en Colombie effectués par le professeur cette année.</p>\n<h3>Événements :</h3>\n<p>□ Une découverte inattendue : le chien Dr Blackwood est caché et effrayé depuis la mort de son maître. En voyant les Chats, il s'enfuit et se cache ailleurs. Attrapé et rassuré, il pourra décrire un monstre qui est apparu de nulle part et a attaqué son maître. □ Arrivée des investigateurs : les deux investigateurs tentent d’entrer dans la maison. Ils rencontrent des difficultés pour crocheter la porte scellée par la police. □ Témoin oculaire : en cas d’enquête de voisinage, un voisin confie à sa femme avoir vu deux ombres mouvantes et déformées près de la maison, hier, ainsi que le jour de la mort du Professeur Blackwood.</p>\n<h3>Studio du Dr Samuel Davis</h3>\n<p>Tags : #poussière, #tapis-effiloché-à-griffer, #odeurmoisissure.</p>\n<h3>Description :</h3>\n<p>Le studio est délabré, mal entretenu et une poussière ambiante titille les moustaches des Chats. Le scientifique est parti chez sa sœur, Emilie Davis qui travaille pour la police. C'est elle qui possède le grimoire. Elle habite dans le même immeuble au dernier étage.</p>\n<h3>Indices :</h3>\n<p>□ Vêtements : des vêtements et des affaires de toilette éparpillés montrent que le Dr Davis est parti précipitamment et très récemment. □ Badge université Arkham : un badge nominatif d'entrée pour le laboratoire de recherche des 'Légendes Anciennes' à l'université de Miskatonic. □ Photo d'anniversaire : une photo d'anniversaire montre le Dr Davis et une femme. Au dos, un petit mot d'anniversaire est signé Emilie D. □ Une caisse floquée Université de Miskatonic : cette petite caisse contenait le grimoire. Avec un jet de Perception réussi, les Chats peuvent sentir une odeur de très vieux papier. □ Adresse d’Émilie Davis : deux boîtes aux lettres au nom de Davis, plusieurs lettres mal distribuées entre eux.</p>\n<h3>Appartement du Dr Edward Pierce</h3>\n<p>Tags : #rebords-fenêtres-étroits, #bruits-eau-duport, #odeur-poisson.</p>\n<h3>Description :</h3>\n<p>Dans le quartier des docks, l’appartement de Pierce donne sur la rue. L’appartement était coquet, mais il est maintenant encombré de nombreuses bouteilles, dégageant une forte odeur d'alcool. Le désordre règne, avec des objets éparpillés partout. Les angles des murs sont cloués avec des planches. Un jet Perception permet aux Chats de sentir que le Dr Pierce était présent il y a peu de temps.</p>\n<h3>Indices :</h3>\n<p>□ Inscriptions sur le mur : des inscriptions frénétiques de rituels sont visibles sur toutes les faces des murs. Un jet Intelligence réussi indique qu'il s'agit de rituels de protection contre des êtres venus d'ailleurs. □ Témoignages de voisins : en sondant, utilisation des pouvoirs, il est facile d’apprendre que Piece est devenu fou et qu’il passe ses journées dans le bar des ‘pêcheurs perdus’. □ Proche des planches : un malaise s'installe près des planches (jet Folie). □ Enlever une planche : si les Chats retirent une planche, un chien dimensionnel la traverse pour arriver (cf fin potentiel).</p>\n<h3>Bar aux Pécheurs perdus, Présence du Dr Edward Pierce Tags : #fumée, #bruits-ambiants, #odeur-poisson.</h3>\n<p>Ivre et terrifié, il répète avoir vu un chien noir nuageux sortir du mur et tuer le Professeur Blackwood. Lors de l'interrogatoire, il précise qu'il ne fallait pas utiliser le livre, car il n'était pas correctement traduit. Aujourd’hui, il sait qu’il est condamné par la bête qui va pénétrer chez lui à travers les murs. Il n’a plus d’espoir. L’une des protections contre ces créatures consiste à bloquer les angles qui leur permettent de voyager entre les dimensions. Pierce est conscient que le Dr. Davis est parti avec le grimoire et qu'il s'est rendu chez sa sœur.</p>\n<h3>Appartement du Dr Oliva Carter Tags : #tuyaux, #beaucoup-de-recoins, #confortable. Description :</h3>\n<p>L'ambiance de l’appartement est à la fois cosy et confortable. Cet espace est le royaume d'une chatte nommée Diamant. Autant malicieuse que prétentieuse, elle connaît tous les secrets de sa maitresse, mais ne comprend pas leurs portés et leurs importances. Les murs sont couverts de brouillons et de tentatives de traduction. Épuisée, le Dr. Carter s'est endormie sur ses documents. Àcôté d'elle, des médicaments destinés à la maintenir éveillée témoignent de sa lutte contre la fatigue. Après trois jours sans dormir, le sommeil l'a finalement emportée profondément. L’une des dernières traductions indique que les Incas faisaient invoquer des chiens de Tindalos par les prisonniers comme punition. Ces chiens, venus d’une autre dimension, pourchassaient les invocateurs inlassablement jusqu’à la mort. Le Dr. Carter sait également que pour renvoyer ces chiens, il faut d'abord les attirer et lancer un nouveau rituel de renvoi. Pour elle le grimoire a été emporté par ses deux collègues.</p>\n<h3>Université / Bureau des chercheurs</h3>\n<p>Tags : #étagères-hautes, #papiers-froisséspartout, #odeur-vieux-livres.</p>\n<h3>Description :</h3>\n<p>Au dernier étage d'un bâtiment de l'université, se trouve un bureau dédié aux scientifiques du secteur d'études sur le paranormal et les anciennes légendes. Cet espace sert à regrouper toutes leurs recherches et documents. Le bureau est rempli d'étagères chargées de livres et de papiers. Les murs sont couverts de tableaux présentant diverses tentatives de décodage et d'analyses.</p>\n<h3>Indices :</h3>\n<p>□ Tentative de décodage : des notes de tentative de traduction d'un texte recopié inca. □ Dessin des chiens de Tindalos : un croquis détaillé d'une créature ressemblant à un chien monstrueux, aux formes anormales. □ Manuscrit ancien : un grimoire décrivant des chiens de Tindalos traversant les dimensions à la recherche de proies. □ Enregistrement audio : un cylindre phonographique marqué \"Cérémonie d'invocation - Échec\", contenant des sons terrifiants et le désaccord des chercheurs pour aller plus loin.</p>\n<h3>Morgue Tags : #draps-blancs, #bips-machines-agaçants, #odeur-désinfectant-dérangeante.</h3>\n<p>Le corps du Professeur est marqué de griffures et de traces de morsures étranges. Un mélange de brûlures et de coupures nécrosées est visible sur sa peau.</p>\n<h3>Magasin de tatouage \"L'Encre Éthérée\" Tags : #flacons-colorés-brillants, #bruit-bourdonnant, #odeur-encre-piquante.</h3>\n<p>\"Dans une ruelle obscure, le magasin du tatoueur mêle les effluves d'encres et d'encens. Les murs sont ornés de symboles anciens et ésotériques.</p>\n<h3>Bibliothèque d'Arkham</h3>\n<p>Tags : #rayons-labyrinthiques, #fauteuilsmoelleux, #silence-oppressant. cf chapitre d'Arkham du livre des règles. Note : L’enquête a été conçue pour rester souple : les indices et les lieux peuvent être adaptés librement. N’hésitez pas à récompenser les bonnes idées des joueurs en leur fournissant des indices en accord avec leurs intuitions. Par exemple : une recherche de noms dans un annuaire, la découverte d’adresses sur des factures oubliées, ou des interactions magiques avec le voisinage.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!l9rZLtyFqjaW89OU.HXcA4LwViindKEEe"
+  },
+  {
+   "_id": "xbVdouCRJs7h1ArZ",
+   "name": "Fin possible",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>La solution pour résoudre l'aventure consiste à refaire le rituel afin de renvoyer les deux chiens dimensionnels dans leur dimension. L'appartement du Pr Blackwood ou studio Dr Edward Pierce s'avère être les lieux les plus appropriés pour attirer les chiens. Les Chats ont la possibilité d'effectuer eux-mêmes le rituel, bien que leur nature ne leur permette pas d'agir simplement. Cependant, rien n'est impossible. Ils peuvent aussi guider ou orienter les enquêteurs et/ou le Dr Carter pour qu'ils agissent à leur place.</p>\n<h3>Etapes du rituel de renvoi des chiens dimensionnels</h3>\n<p>Attirer les chiens : enlever les planches, s'approcher des coins noirs, miauler à proximité pour attirer les chiens dimensionnels. Arrivée des chiens : à l’arrivée des chiens, les coins s'assombrissent, la température diminue, les lumières vacillent dans la pièce. Les pattes, puis le corps des chiens sortent du coin du mur sombre. Leur arrivée est très impressionnante. Un jet de Folie doit être réussi pour éviter une nouvelle carte Folie. Les chiens vont attaquer l'invocateur ou un adversaire entre lui et l'invocateur. Le Rituel : Pour mener à bien l'invocateur, celui-ci doit se concentrer et se lancer dans la lecture du grimoire. Divers composants sont alternativement versés sur le livre ou soufflés vers les chiens. Affrontement : cette phase durera huit tours, pendant lesquels les Chats devront protéger l'invocateur ou le grimoire. Les chiens jouent en dernier. Si toutes leurs attaques ont été bloquées, ils ne peuvent agir sur l'invocateur. Celui-ci avance alors dans le rituel et le D8 diminue d'un point. Si l'invocateur est touché ou blessé par les chiens, le tour est perdu et le D8 ne diminue pas. Les Chats doivent trouver des astuces pour empêcher les chiens d'agir. Chaque réussite bloque le chien dans sa Note: mettez un D8 qui tentative sur l'invocateur ou le grimoire. commence à huit et diminue à la fin Àchaque tour, les jets des joueurs subissent de chaque tour réussit pour un malus de -5% symbolisant leur fatigue et la l’invocateur. Il permet d’augmenter la rage croissante des chiens. tension du rituel.</p>\n<p>Lorsque le D8 arrive à zéro, le rituel réussit. Les éléments et objets de la pièce se mettent à tournoyer dans un courant d'air infernal. Les chiens hurlent d'un cri assourdissant. Peu à peu, ils sont aspirés dans le portail. Lorsqu'ils sont dans le portail, celui-ci se referme et un silence étrange emplit la pièce. Le danger a été vaincu. Reste à savoir maintenant que faire du grimoire. S'ils partent sans l'avoir détruit, celui-ci fera sûrement à nouveau parler de lui dans une autre aventure.</p>\n<h3>Retour dans la contrée du rêve</h3>\n<p>Lisez le texte suivant : De la même manière que vous étiez arrivés dans le monde réel, vous percevez un espace noir qui marque le passage. Au loin, vous entendez, des bruits familiers comme les oiseaux d'Ulthar qui chantent de véritables chansons. Lorsque vous vous engagez, peu à peu le sol laisse place au sable de la Contrée du Rêve. Les lumières s'estompent pour faire place aux soleils qui éclairent ce royaume des rêves. Comme si seulement quelques secondes s'étaient écoulées, vous vous retrouvez près de la statue. Ester est là, attendant votre rapport sur la mission. Et de la même manière que les chats étaient venus, vous repartez vers Ulthar pour votre reposer avant une prochaine aventure.</p>\n<p>Chien dimensionnel : #odeur-soufre, #pattes-decharnées, #prédateur, #crocs-acérés. PV : 60 Griffes : deux attaques à 75% / 2d6+1 Pouvoir : Voyage à travers les angles du temps et espace.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!l9rZLtyFqjaW89OU.xbVdouCRJs7h1ArZ"
+  },
+  {
+   "_id": "8EeOiklpVYWszm5e",
+   "name": "Continuer l'aventure",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Envie de poursuivre l'aventure des Miaulements d'Ulthar ? Suivez nos prochaines sorties sur les réseaux sociaux site web : https://www.xaviiiier.com facebook : https://www.facebook.com/xaviiiierjdr instagram : https://www.instagram.com/xaviiiierjdr twitter : https://twitter.com/xaviiiierjdr</p>\n<h3>Miaouci et à miaoutôt Xaviiiier</h3>\n<p>xaviiiier.com ISBN : 978-2-9582546-8-1 Dépôt légal : Septembre 2025 v20250217 upscal de la couverture a5 &gt; filtre polyrize 78c Attention aux 2 ISBN A5/A4 et aux codes base UNIQUEMENT POUR LE PDF</p>\n<p>Plongez dans l'univers mystique d'Ulthar.</p>\n<p>Préparez-vous à vivre une expérience de jeu de rôle unique et envoûtante où les chats sont les héros de l'aventure. Dans un monde où le réel et les rêves se croisent, incarnez un chat doté de pouvoirs mystiques et partez en quête de vérités cachées. Êtes-vous prêts à répondre à l'appel des Miaulements d'Ulthar ?</p>\n<p>www.xaviiiier.com 2023 Tous droits réservés Les Miaulements d'Ulthar est un jeu de Xavier Laporte [Xaviiiier]</p>\n<p>20€</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!l9rZLtyFqjaW89OU.8EeOiklpVYWszm5e"
+  }
+ ],
+ "folder": null,
+ "sort": 300000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!l9rZLtyFqjaW89OU"
+}

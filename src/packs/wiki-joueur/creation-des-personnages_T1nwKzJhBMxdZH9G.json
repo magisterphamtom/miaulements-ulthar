@@ -1,0 +1,317 @@
+{
+ "_id": "T1nwKzJhBMxdZH9G",
+ "name": "Création des personnages",
+ "pages": [
+  {
+   "_id": "qeNjjZaaYKB7dEDX",
+   "name": "Création des personnages",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Création des personnages</h3>\n<p>Avant de débuter la partie, il est essentiel que chaque joueur crée son Chat. Si le temps est limité, vous pouvez proposer des personnages prétirés disponibles en fin de livret. Cependant, si vous disposez de suffisamment de temps ou si les joueurs sont motivés, vous pouvez entamer la création des personnages. Cette étape permettra de définir plus précisément le Chat imaginé par chaque joueur. La création d'un personnage est une collaboration entre le Meneur de Jeu (MJ) et le joueur concerné. Un chat est défini par plusieurs éléments : surnom, attributs, race, handicap ou non, pouvoirs innés, points santé, points magies et points folie et une courte description de son apparence.</p>\n<p>Attributs</p>\n<p>{</p>\n<p>Points Santé, Magie, Folie ...</p>\n<p>{</p>\n<p>Pouvoirs</p>\n<p>{</p>\n<p>Note : Les noms communs tels que Chat, Gardien, etc., commenceront par une majuscule lorsqu'ils feront référence à ceux venant d’Ulthar. En revanche, les termes en minuscule, comme chat, désigneront un chat ordinaire sans pouvoir spécifique.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!T1nwKzJhBMxdZH9G.qeNjjZaaYKB7dEDX"
+  },
+  {
+   "_id": "glqZZzLo6GEAPKSB",
+   "name": "Surnom",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Voici une sélection de surnoms pour les Chats. Inventez-en un ou aidez-vous de la liste suivante et notez-le sur votre feuille de personnage.</p>\n<h4>Exemple de création</h4>\n<p>Comme, je suis une joueuse débutante, je me sens plus à l'aise de prendre le nom de mon chat : Mimolette.</p>\n<p>Mimolette</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!T1nwKzJhBMxdZH9G.glqZZzLo6GEAPKSB"
+  },
+  {
+   "_id": "oy3vAQEGEQ8AN81M",
+   "name": "Attributs",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Les attributs suivants définissent votre chat : Physique, Agilité, Discrétion, Précision, Perception, Intelligence, Charisme et Chance. Chaque attribut sera utilisé en fonction du type d'action que vous allez entreprendre. Agilité : désigne la dextérité et la souplesse du chat qui affectent ses mouvements ou sa capacité à esquiver. Chance : une situation peut parfois basculer positivement ou négativement ! Cet attribut est fait pour ça ! Charisme : représente le charme et l'influence sociale du chat qui impactent ses interactions et sa capacité à convaincre.</p>\n<p>Discrétion : représente la capacité du chat à se déplacer et à agir de manière furtive et silencieuse. Intelligence : reflète la capacité de raisonnement du chat, sa capacité à résoudre des énigmes et à comprendre des informations complexes. Perception : représente le sens aiguisé du chat, sa vigilance et sa capacité à détecter des détails subtils de l'environnement. Physique : représente la force physique du chat, sa capacité à se battre, à encaisser les blessures, à maintenir un effort prolongé ou à porter des charges. Précision : représente la capacité du chat à effectuer des actions avec une grande finesse ou délicatesse.</p>\n<h3>Suite de la création</h3>\n<p>Physique : 50% Agilité : 50% Discrétion : 50% Précision : 50% Perception : 50% Intelligence : 50% Charisme : 50% Chance : 50% Je souhaite renforcer l'Agilité, la Perception en utilisant les bonus +20% et +10%. J'annule le +5% et -5%. Je rends mon Chat plus faible en Chance et Charisme. Mes attributs sont maintenant les suivants : Physique : 50% Agilité : 70% Discrétion : 50% Précision : 50% Perception : 60% Intelligence : 50% Charisme : 40% Chance : 30%</p>\n<p>Tous les attributs commencent à 50%.</p>\n<h3>Personnalisation des Attributs</h3>\n<p>Je les reporte sur ma feuille de personnage.</p>\n<p>Mimolette</p>\n<p>Vous devez ajuster ces valeurs en utilisant les modificateurs suivants : -20%, -10%, -5%, +5%, +10%, +20%</p>\n<p>Note : Il est possible d'annuler les modificateurs entre eux pour rester à 50%. Par exemple, -20% et +20%. Les attributs ne peuvent pas dépasser 70% ni être inférieurs à 30%.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!T1nwKzJhBMxdZH9G.oy3vAQEGEQ8AN81M"
+  },
+  {
+   "_id": "b95CkZsk0ILy0LYL",
+   "name": "Choisissez votre race de Chat",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Il est temps de choisir la race de votre chat. Prenez le temps de parcourir les différentes races de chats disponibles. Reportez-vous au chapitre sur les races des chats pour avoir plus de détails. Sélectionnez celle qui vous attire le plus. Chaque race possède des caractéristiques uniques qui influenceront votre style de jeu. Une fois votre choix fait, notez le nom de la race. Chaque race de chat bénéficie d'un bonus et d'un malus attribués à deux attributs spécifiques. Reportez un modificateur à vos attributs : +10% ou -10%. De manière similaire, chaque espèce ou lignée dispose d'un pouvoir racial unique lié à sa race.</p>\n<h3>Suite de la création</h3>\n<p>J'ai une préférence pour la race du Persan, ce qui m'apporte un bonus de +10% en Charisme, mais un malus de -10% en Physique. Je modifie donc ces caractéristiques sur ma feuille de personnage. Je choisis également le pouvoir de race \"Charme Délicat\", qui me permettra d'influencer subtilement les adversaires potentiels durant la partie.</p>\n<p>Mimolette Persan note : cf chapitre races des Chats pour une description précise des races et de leurs pouvoirs de race.</p>\n<ul><li>Charme délicat</li></ul>\n<h3>Bengal</h3>\n<h3>Chat gouttière</h3>\n<p>Agilité +10% Discrétion -10% au choix +5% au choix -5%</p>\n<p>Ombre envoûtante ou Téléportation courte</p>\n<p>Aubaine incroyable ou Sixième sens</p>\n<p>Cornish Rex</p>\n<p>Maine coon</p>\n<p>Discrétion +10% Précision -10%</p>\n<p>Physique +10% Perception -10%</p>\n<p>Illusion féerique ou Ombre enveloppante</p>\n<p>Force légendaire ou Guérison accélérée</p>\n<p>Norvégien</p>\n<p>Persan</p>\n<p>Physique +10% Intelligence -10%</p>\n<p>Charisme +10% Physique -10%</p>\n<p>Peau de cuir ou Bond extraordinaire</p>\n<p>Charme délicat ou Lien émotionnel</p>\n<p>Savannah</p>\n<p>Scottish Fold</p>\n<p>Précision +10% Charisme -10%</p>\n<p>Intelligence +10% Agilité -10%</p>\n<p>Camouflage nature ou Flèche lumineuse</p>\n<p>Guérison réconfortante ou Marche de velours</p>\n<p>Siamois</p>\n<p>Sphynx</p>\n<p>Perception +10% Discrétion -10%</p>\n<p>Intelligence +10% Physique -10%</p>\n<p>Écoute perçante ou Vision à travers</p>\n<p>Analyse situationnelle ou Vision des conséquences</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!T1nwKzJhBMxdZH9G.b95CkZsk0ILy0LYL"
+  },
+  {
+   "_id": "lF2qqvxGZIQZBq6r",
+   "name": "Pouvoirs innés des Chats",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Les joueurs incarnent des chats dotés de pouvoirs magiques. Vous devez choisir 2 pouvoirs pour personnaliser votre Chat. Reportez les pouvoirs sur votre feuille de personnage. Note : tous les personnages reçoivent le pouvoir « Comprendre et lire l’humain » en cadeau.</p>\n<p>Cauchemar mental*** : le chat peut créer le souvenir d’un cauchemar et provoquer une angoisse ou une peur immédiate. Charme félin : le chat a un charme naturel qui lui permet d'influencer les autres personnages, humains ou non, en les séduisant ou en les apaisant. Comprendre et lire l’humain (0 PM)* : tous les chats possèdent la capacité innée de lire et de comprendre les êtres humains, indépendamment de la langue qu'ils parlent. Les langues anciennes requièrent un jet d’Intelligence, modifié par un malus variable selon le degré d’oubli de la langue. Ce pouvoir ne permet pas de parler aux humains. Discrétion incroyable : grâce à sa nature silencieuse et à sa capacité à se fondre dans son environnement, le Chat peut se déplacer discrètement et passer inaperçu lorsqu'il le souhaite. Distorsion onirique*** : le chat peut projeter dans l’esprit d’un être une vision altérée de la réalité. Griffes précises : le chat utilise ses griffes avec une grande précision, leur donnant la fonctionnalité des doigts. Le chat peut détecter les fluides magiques qui l’entourent ou qui émanent d’un objet. Grimpeur habile : le chat est un grimpeur habile, capable de gravir des surfaces verticales et de se déplacer avec aisance dans les hauteurs. Cela lui permet d'accéder à des zones inaccessibles pour d'autres. Langage animal : le chat peut comprendre et parler le langage des autres 18animaux.</p>\n<p>Lire les pensées : le chat peut se connecter à l’esprit d’un être par le biais d'une connexion télépathique afin d’entendre ce que pense un humain ou un animal. Pour échanger mentalement avec l’animal ou l’humain, il faut le pouvoir « Langage animal » ou « Parler humain » en plus. Manipulation d’un souvenir*** : le chat peut manipuler et modifier les souvenirs passés d'un être. Neuf vies** : les légendes racontent que certains chats ont neuf vies, leur offrant une chance supplémentaire de survivre à des situations potentiellement mortelles. Règle : modifiez le nombre de vies à neuf quel que soit le scénario. Ordre prononcé : le chat peut donner un ordre mental simple à une créature. L'ordre est exprimé avec au maximum trois mots. L’injonction dure un tour. Exemples : « Arrête-toi immédiatement », « Fuis », « Protège-moi ». Parler humain : le chat a la capacité de communiquer vocalement avec les humains. Perception accrue : un sens développé, tel que l'ouïe fine et la vision nocturne, permet au chat de détecter le moindre bruit et mouvement. Recherche d’un souvenir*** : le chat peut rechercher un souvenir passé d'un être. Réponse immédiate : Le chat peut obtenir une réponse instantanée d'un être humain en lui posant une question mentale simple de trois mots maximums. L'humain répond oralement sans se rendre compte de la source de la question. Exemples : « Donne la sortie ? », « Es-tu honnête ? », « Donne le code ». Vision des fluides magiques : le chat peut détecter les fluides magiques qui l’entourent ou qui émanent d’un objet ou d'un être.</p>\n<p>* Utilisation : zéro point de pouvoir. ** Uniquement pour les campagnes. *** Voir chapitre sur les pouvoirs mentaux et oniriques.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!T1nwKzJhBMxdZH9G.lF2qqvxGZIQZBq6r"
+  },
+  {
+   "_id": "7Wbpg2s67ZJpP4rJ",
+   "name": "Handicap (optionnel)",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Suite de la création</h3>\n<p>Lors de la conception de votre personnage, vous avez la liberté de lui assigner un handicap, ce qui lui apporte richesse et nuance. Opter pour un handicap entraîne une réduction de 20 % de l'attribut associé.</p>\n<p>Après concertation avec les autres joueurs, je décide de maximiser nos chances en sélectionnant deux pouvoirs innés suivants : \"Lire les Pensées\" et \"Griffes Précises\".</p>\n<p>Par exemple, si vous choisissez le handicap \"Patte blessée\", votre Physique subira une réduction de 20 % lors des actions nécessitant la force physique. En échange, vous pouvez sélectionner un pouvoir inné supplémentaire. Exemples de handicaps : mauvaise coordination (Agilité), anxiété (Charisme), malchance (Chance), poil long et encombrant (Agilité), amnésie (Intelligence), surdité (Perception), patte blessée (Physique), tremblement (Précision) ...</p>\n<p>\"Lire les Pensées\" me donnera la capacité de percevoir les pensées des PNJ, tandis que \"Griffes Précises\" rendront mes griffes aussi précisent que des mains. Enfin, pour faciliter la prise en main de mon personnage Chat, je choisis de ne prendre aucun handicap.</p>\n<p>Mimolette Persan</p>\n<ul><li>Charme délicat</li><li>Griffes Précises</li><li>Lire les Pensées</li></ul>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!T1nwKzJhBMxdZH9G.7Wbpg2s67ZJpP4rJ"
+  },
+  {
+   "_id": "lWIo4fs39Q6BQGM5",
+   "name": "Calcul des Points de Vie, Points de Folie et Points de Magie",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Les Points de Vie (PV) représentent votre résistance physique et sont calculés en additionnant les valeurs du Physique et de l'Agilité puis en vous reportant au tableau suivant. Exemple : Physique [60] , Agilité [50] Pour calculer tes Points de Vie (PV), nous allons ajouter les valeurs des attributs : 60 (Physique) + 50 (Endurance) = 110. Le score de 110 correspond à 5 PV.</p>\n<p>Les Points de Folie (PF) reflètent votre niveau de peur ou de folie et sont déterminés en additionnant les valeurs de Perception et de Charisme, puis en divisant le total par 2. Exemple : Perception [60] et Charisme [40] Pour calculer tes Points de Folie (PV), nous allons ajouter les valeurs des attributs : 60 (de Perception) + 40 (de Charisme) = 10. Ensuite, nous divisons ce total par 2 : 100 ÷ 2 = 50 PF. Les Points de Magie (PM) quantifient votre potentiel magique et sont calculés en prenant la valeur de votre Intelligence. Exemple : Intelligence [70], soit 70 Points de Magie. Vies du chat : les chats ont la capacité de survivre à de multiples situations dangereuses grâce à leur agilité et à leur résilience. Le nombre de « Vies du Chat » dépend de chaque scénario. Un scénario avec beaucoup de vies pourra indiquer un risque maximal. En temps normal, reportez trois vies de chat.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 700000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!T1nwKzJhBMxdZH9G.lWIo4fs39Q6BQGM5"
+  },
+  {
+   "_id": "gJjrJl2IN6nfxHEO",
+   "name": "Pouvoirs mystiques temporaires",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Suite de la création</h3>\n<p>Pour terminer mon personnage, voici les calculs finaux :</p>\n<ul><li>Vie de chat : 3</li><li>Points de vie : (40 [PHY] + 70 [AGI] = 110) soit 5 PV</li><li>Points de folie : 60 [PER] + 40 [CHA] ÷ 2 = 50</li><li>Points de magie [INT] : 50</li></ul>\n<p>Cette section sera complétée en début d’aventure, lors de la phase de présentation de la mission. Les félins intrépides seront invités à s'approcher d'une fontaine scintillante et à y laper son eau enchantée. Àcet instant, des énergies mystiques s'entrelaceront avec leur être, leur conférant deux pouvoirs choisis aléatoirement pour toute l'aventure. Le joueur tirera au sort deux pouvoirs dans la liste des pouvoirs temporaires.</p>\n<p>Mimolette Persan</p>\n<ul><li>Charme délicat</li><li>Griffes Précises</li><li>Lire les Pensées</li></ul>\n<p>-</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 800000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!T1nwKzJhBMxdZH9G.gJjrJl2IN6nfxHEO"
+  },
+  {
+   "_id": "V9pJEQLUe8B8yBuh",
+   "name": "Les races en un coup d'œil",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Chaque race donne un bonus et un malus à deux attributs, et un pouvoir de race à choisir parmi deux.</p><table><thead><tr><th>Race</th><th>Bonus</th><th>Malus</th><th>Pouvoir de race (un au choix)</th></tr></thead><tbody><tr><td>Bengal</td><td>Agilité +10 %</td><td>Discrétion −10 %</td><td>Ombre envoûtante / Téléportation courte</td></tr><tr><td>Chat de gouttière</td><td>+5 au choix</td><td>−5 au choix</td><td>Aubaine incroyable / Sixième sens</td></tr><tr><td>Cornish Rex</td><td>Discrétion +10 %</td><td>Précision −10 %</td><td>Illusion féerique / Ombre enveloppante</td></tr><tr><td>Maine Coon</td><td>Physique +10 %</td><td>Perception −10 %</td><td>Force légendaire / Guérison accélérée</td></tr><tr><td>Norvégien</td><td>Physique +10 %</td><td>Intelligence −10 %</td><td>Peau de cuir / Bond extraordinaire</td></tr><tr><td>Persan</td><td>Charisme +10 %</td><td>Physique −10 %</td><td>Charme délicat / Lien émotionnel</td></tr><tr><td>Savannah</td><td>Précision +10 %</td><td>Charisme −10 %</td><td>Camouflage naturel / Flèche lumineuse</td></tr><tr><td>Scottish Fold</td><td>Intelligence +10 %</td><td>Agilité −10 %</td><td>Guérison réconfortante / Marche de velours</td></tr><tr><td>Siamois</td><td>Perception +10 %</td><td>Discrétion −10 %</td><td>Écoute perçante / Vision à travers</td></tr><tr><td>Sphynx</td><td>Intelligence +10 %</td><td>Physique −10 %</td><td>Analyse situationnelle / Vision des conséquences</td></tr></tbody></table>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 900000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!T1nwKzJhBMxdZH9G.V9pJEQLUe8B8yBuh"
+  }
+ ],
+ "folder": null,
+ "sort": 200000,
+ "ownership": {
+  "default": 2
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!T1nwKzJhBMxdZH9G"
+}

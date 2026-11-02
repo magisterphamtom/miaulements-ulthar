@@ -1,0 +1,28 @@
+{
+ "_id": "AniFzuFwnT7zmYNN",
+ "name": "Charme félin",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "inne",
+  "attribut": "",
+  "description": "<p>Charme naturel qui permet d'influencer les autres personnages, humains ou non, en les séduisant ou en les apaisant.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "9a2jRIFqgKKDpai2",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!AniFzuFwnT7zmYNN"
+}

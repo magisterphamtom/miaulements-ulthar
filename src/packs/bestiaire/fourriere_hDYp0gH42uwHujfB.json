@@ -1,0 +1,52 @@
+{
+ "_id": "hDYp0gH42uwHujfB",
+ "name": "Fourrière",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Filet (jet de Dextérité, malus 20 %)",
+    "pct": 65,
+    "degats": ""
+   },
+   {
+    "nom": "Anesthésiant (jet de Constitution, malus 40 %)",
+    "pct": 50,
+    "degats": ""
+   }
+  ],
+  "pouvoir": "",
+  "capacite": "",
+  "pv": {
+   "value": 12,
+   "max": 12
+  },
+  "description": "<p>La fourrière parcourt la ville, scrutant chaque recoin à la recherche de chiens et de chats sauvages ou errants. Elle utilise principalement des filets ou des anesthésiques pour capturer ces animaux.</p><blockquote><p>Plusieurs employés de la fourrière d'Arkham rapportent que certains animaux capturés semblent communiquer entre eux dans une langue inconnue. Fait troublant, deux de ces employés ont été retrouvés morts ce matin dans le parc municipal. Le véhicule de la fourrière, découvert à proximité, présentait des traces de griffes anormalement grandes.</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Fourrière",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!hDYp0gH42uwHujfB"
+}

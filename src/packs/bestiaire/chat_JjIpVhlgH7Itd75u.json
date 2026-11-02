@@ -1,0 +1,47 @@
+{
+ "_id": "JjIpVhlgH7Itd75u",
+ "name": "Chat",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Griffes",
+    "pct": 50,
+    "degats": "1d4"
+   }
+  ],
+  "pouvoir": "",
+  "capacite": "Vision nocturne",
+  "pv": {
+   "value": 5,
+   "max": 5
+  },
+  "description": "<p>Le chat domestique est un petit félin agile et naturellement discret. Il aime chasser, jouer et est d'une curiosité innée, appréciant l'exploration de son environnement.</p><p><strong>Capacité :</strong> Vision nocturne</p><blockquote><p>Drôle de récit, Miss Berno, résidente du quartier, soutient que ses quatre chats, Isidore, Igor, Mathius et Momie, l'ont sauvée en faisant fuir des voleurs. Selon elle, ils auraient même réussi à appeler la police et les services d'urgence pour demander de l'aide</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Chat",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!JjIpVhlgH7Itd75u"
+}

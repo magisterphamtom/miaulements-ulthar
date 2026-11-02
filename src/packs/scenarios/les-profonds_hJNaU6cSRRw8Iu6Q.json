@@ -1,0 +1,251 @@
+{
+ "_id": "hJNaU6cSRRw8Iu6Q",
+ "name": "Les Profonds",
+ "pages": [
+  {
+   "_id": "SAs7K3FBEB8ZEf7t",
+   "name": "Intrigue générale",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Les Profonds</h3>\n<p>Scénario : Les Profonds</p>\n<p>Il y a une décennie, M. Blanc, un riche armateur, fit une découverte qui bouleversa sa vie : l'existence des Profonds ! La rencontre avec ces créatures mi-humaines, mi-aquatiques déclencha en lui une obsession dévorante. Depuis lors, il s'est lancé dans une quête frénétique afin d' invoquer Dagon, le père de tous les profonds ! Ses recherches l'ont mené à pouvoir capturer trois profonds et obtenir un artefact ancien lui permettant de contrôler ces êtres marins. Aujourd'hui son projet macabre atteint son paroxysme : il compte utiliser l'artefact et les profonds capturés afin qu'ils invoquent la venue de Dagon en personne ! Acet fin, il va embarqué les trois profonds dans son navire pour quitter le port d'Arkham vers une île isolée à deux jours de navigation. Cependant, la présence des créatures captives dans les docks d'Arkham ont provoqué des comportements étranges chez les animaux de la ville, attirant l'attention des Chats d'Ulthar. Note : Dagon est une entité marine vénérée par les Profonds. Cette divinité exerce un pouvoir terrifiant en corrompant les esprits. Ses adorateurs lui offrent souvent des sacrifices dans des rituels pour glorifier son règne (Lovecraft, 1919, Dagon).</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.SAs7K3FBEB8ZEf7t"
+  },
+  {
+   "_id": "wPGDG5BhbYV0TbWw",
+   "name": "Début à Ulthar",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Pour jouer la scène d’introduction, veuillez vous référer dans un premier temps à La Cérémonie sacrée , livre de règles , chapitre : \"Guide du maître du jeu\". Vous trouverez ci-dessous le texte à y inclure.</p>\n<h3>Texte à lire :</h3>\n<p>D'une démarche feutrée mais tremblante, Ester, un vieux Gardien d'Ulthar, s'approche des Chats présents. Sa voix grinçante s'élève alors qu'il prend la parole : \"Mes chers félins, depuis quelques jours, un malaise étrange s’est installé à Arkham. Le comportement des animaux de la ville est devenu des plus inquiétants. Les chiens hurlent à la mort sans raison apparente, nos congénères se terrent dans les recoins les plus sombres et même les rats fuient les ruelles en masse ! Une présence invisible semble s'être installée dans la ville... Cette situation alarmante nécessite notre intervention ! Ya-t-il parmi vous des volontaires prêts à élucider ce mystère ?...\"</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.wPGDG5BhbYV0TbWw"
+  },
+  {
+   "_id": "CFyal5rTL7lxK8m0",
+   "name": "Personnages de l'aventure (PNJ)",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ M. Blanc Tags : #sans-odeur, #costume-blanc, #mains-raides, #dégage-sentiment- de-danger. Riche armateur obsédé par les Profonds. Il est prêt à tout pour les contrôler et invoquer Dagon. C'est le principal antagoniste du scénario.</p>\n<p>□ Capitaine Elias Marsh Tags : #odeur-café-fort, #pantalon- impeccable, #barbe-grisonnante, #regard-perçant. Capitaine expérimenté du navire marchand. Il perçoit quelque chose d'anormale dans les activités de M. Blanc. Il est prêt à protéger son équipage et son navire. Note: les tags sont les éléments pour vous aider à description.</p>\n<p>□ Sergent Thomas O'Malley Tags : #odeur-poudre-à-canon, #uniforme-de-police, #moustache- fournie, #démarche-assurée. Policier local consciencieux, il est chargé de maintenir l'ordre au port et de suivre les ordres de son supérieur. □ Mme Esmeralda Hawkins Tags : #odeur-parfum-sucré, #foulard-coloré, #adore-les-chats, #panier-en-osier. Commère locale au courant de tout ce qui se passe au port. Elle adore les chats et a un faible pour les potins croustillants. □ Jack dit \"L'alcoolique\" Tags : #odeur-whisky, #vêtements- usés, #dents-jaunies. Vagabond du port vivant de petits larcins, il a vu des choses étranges liées au navire de M. Blanc et cherche à en tirer profit. □ Le rat dit \"La Ruse\" Tags : #odeur-poisson, #pelage-hirsute, #cicatrice-sur- museau. Rat rusé du port, il a survécu à mille dangers en se faufilant partout. Il connaît chaque cachette, chaque entrepôt des docks.</p>\n<p>□ Le Chat dit \"Capitaine Moustache\" Tags : #odeur-sel #pelage-ébouriffé, #griffes-usées. Ce vieux chat de matelot a écumé les mers en compagnie des marins du navire. Son pelage usé témoigne de batailles contre les rats. Il ne miaule jamais sans raison.</p>\n<p>□ Les Profonds Tags : #odeur-de-musc, #dangereux, #puissants, #immenses. Créatures marines hybrides capturées par M. Blanc. Elles seront utilisées comme instruments pour son rituel. Elles cherchent à se libérer de leur captivité, à retourner dans les profondeurs et se venger des humains. □ Personnages supplémentaires : Archibald Whitmore, Vivian Blackwood, Cornelius Vanderbilt , Millicent Fairfax</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.CFyal5rTL7lxK8m0"
+  },
+  {
+   "_id": "KVkR4tQpmW9d00iP",
+   "name": "Lieux",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Le port d'Arkham Tags : #odeur-de-poisson-pourri, #brouillard- épais, #clapotis-inquiétant. Epicentre de la première partie de l'intrigue, point d'amarrage du navire de M. Blanc. □ La taverne du Borgne Tags : #odeur-de-rhum-rance, #fumée-épaisse, #murmures-secrets, #ombres-dansantes, #plancher-poisseux. Repère des marins et source d'informations. □ L'entrepôt 13 Tags : #odeur-de-sel-et-rouille, #caisses- mystérieuses, #graffitis-ésotériques. Cachette secrète de M. Blanc pour ses artefacts et créatures capturées. □ La ruelle des chats Tags : #odeur-de-poubelles-nauséabondes, #murs-étroits, #yeux-brillants-dans-l’ombre. Refuge de chats terrifiés, effrayés et potentiellement dangereux. □ Le pont supérieur Tags : #odeur-d'air-marin-salé, #vent-glacial- hurlant. Point d'observation principal du navire, offrant une vue panoramique.</p>\n<p>Note: Tous les lieux proposés ne sont pas obligatoires. Ils servent de repères pour enrichir votre narration et soutenir votre improvisation. N’hésitez pas à les adapter, en supprimer certains ou en ajouter d’autres. Personnellement, dans la plupart de mes parties, l'entrepôt et la salle des machines ne servent pas. Il m'arrive souvent d'ajouter un studio qui héberge un journaliste qui enquête sur le navire.</p>\n<p>□ La salle des machines Tags : #odeur-d’huile-brûlée, #bruit-métallique-assourdissant, #chaleur- étouffante. Salle centrale du navire où les marins travaillent. □ La cabine de M. Blanc Tags : #odeur-de-parfum-entêtant, #livres-ésotériques-poussiéreux, #lumière-vacillante. Sanctuaire personnel de M. Blanc, rempli d'indices sur ses plans funestes. □ La soute Tags : #odeur-de-poisson-faisandé, #caisses-empilées-grinçantes, #bruits- étranges, #humidité-oppressante. Lieu de stockage des cargaisons, incluant Les Profonds, une fois chargés sur le bateau, enfermés dans des caisses.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.KVkR4tQpmW9d00iP"
+  },
+  {
+   "_id": "IOWc8pexusMTiFQZ",
+   "name": "Indices",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Articles de journaux locaux rapportant une série de disparitions mystérieuses de pêcheurs et de marins survenues depuis une semaine. □ Rumeurs circulant dans la taverne du port à propos d’un riche armateur obsédé par des légendes marines obscures. □ Comportement étrange et agressif des chiens errants sur le port, particulièrement près du quai où est amarré le navire de M. Blanc. □ Vieil antiquaire du coin qui se souvient avoir rencontré M. Blanc il y a quelques années alors qu’il cherchait de vieilles cartes marines. □ Témoignages de résidents locaux rapportant des bruits étranges venant de l’entrepôt 13 au niveau des docks. □ Camions débarquant de grosses caisses sous haute surveillance vers le navire.</p>\n<h3>Entrepôt n°13 ou navire</h3>\n<p>□ Traces de substances visqueuses et phosphorescentes. □ Carte maritime annotée, marquant l’emplacement d’une île isolée et ses coordonnées. □ Liste d’achats récents de M. Blanc, incluant de grandes quantités de sel marin, de chaînes en argent et d'herbes exotiques rares. □ Discussion de membres de l’équipage concernant la disparition de l’ancien équipage.</p>\n<h3>Cabine de M. Blanc</h3>\n<p>□ Croquis détaillés de créatures marines hybrides, mêlés à des notes frénétiques sur leur anatomie et leur comportement. □ Artefact ancien (une pierre allongée), émettant une faible lueur verdâtre et couvert de symboles marins inconnus. □ Livre ancien sur les mythes marins, avec des passages sur Dagon surlignés et des notes dans les marges faisant référence à \"l'appel de ses enfants\". □ Journal intime de M. Blanc, caché dans sa cabine, détaillant ses rencontres avec les Profonds et son obsession grandissante.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.IOWc8pexusMTiFQZ"
+  },
+  {
+   "_id": "Qkl5fdS9TbFUYEzr",
+   "name": "Événements",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Vague de panique chez les animaux de la ville, en particulier les chats, qui semblent fuir quelque chose d’invisible et menaçant. □ La police repousse les curieux loin du navire. □ Eclairs violents et silencieux qui déchirent l’horizon. □ Deux marins terrifiés refusent de continuer à travailler. □ Le bruit étrange des vagues qui frappent le navire. □ Les Rats se battent violemment entre eux jusqu’à la mort. □ Trois caisses de l'entrepôt n°13 sont déplacées des docks vers les cales du navire , avec précaution et sous haute surveillance.</p>\n<h3>Sur le navire</h3>\n<p>□ Départ du navire précipité. Feuille de calcul à la main, M. Blanc veut appareiller immédiatement. □ Odeur étrange et nauséabonde qui imprègne certaines parties du bateau. □ Marins violents et agressifs envers les autres membres de l’équipage sans raison apparente. □ Bruits de grattements étranges qui s'échappent des trois caisses montées à bord du navire. □ Membres d’équipage qui disparaissent mystérieusement, laissant derrière eux des traces de lutte. □ Etrange brouillard opaque. □ Des chants étranges qui viennent de la brume. □ Mer de plus en plus agitée à l'approche du récif.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.Qkl5fdS9TbFUYEzr"
+  },
+  {
+   "_id": "TzpHmEAIzgzLQjsg",
+   "name": "Fin possible",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Où : #sur-le-navire, #en-mer, #sur-l'île-d'invocation. Quoi faire : #empécher-rituel, #détruire-artefact, #libérer-profonds. Les Chats d’Ulthar disposent de plusieurs moyens pour mettre fin aux ambitions de M. Note: Attention, M. Blanc a sombré dans la Blanc. Ils peuvent se glisser furtivement dans folie. Il n'hésitera pas à sacrifier sa cabine afin de détruire le manuscrit ses propres hommes pour ancien, pièce maîtresse du rituel d’invocation. mener son plan à terme, même Ils peuvent s’attaquer directement à l’artefact s’il devait perdre le grimoire ou l’artefact. qui permet le contrôle des Profonds, privant ainsi M. Blanc de son pouvoir sur eux. Ils peuvent aussi saboter le navire de l’intérieur, déclencher un incendie ou provoquer un naufrage en dirigeant le bateau vers les côtes... Si rien n’est fait, M. Blanc réussira à soumettre les Profonds et à appeler Dagon. Son arrivée sera apocalyptique : la mer et le climat entreront en furie, les vagues se déchaîneront et le bateau finira englouti. Les Chats ne survivront pas à cette mer capricieuse ... Suite à cela, la dernière scène se déroulera à Ulthar. Ester, inquiet, expliquera qu’il n’a reçu aucune nouvelle de la mission des Chats et que le navire a quitté le port. L’angoisse le gagne : il craint pour leur vie. Quelle que soit la stratégie employée, une seule chose importe : empêcher M. Blanc d'accomplir son sinistre dessein et protéger Arkham des Profonds et de Dagon.</p>\n<p>Note: toutes mes parties ont eu une fin différente. J’ai toujours laissé le plan de M. Blanc se dérouler et s’empirer. Les Chats d’Ulthar ont toujours trouvé naturellement une solution. Je vous invite à laisser faire afin d'observer l'ingéniosité dont vos joueurs seront capables !</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 700000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.TzpHmEAIzgzLQjsg"
+  }
+ ],
+ "folder": null,
+ "sort": 200000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!hJNaU6cSRRw8Iu6Q"
+}

@@ -1,0 +1,28 @@
+{
+ "_id": "ATJq8Sb29JLHxG3j",
+ "name": "Lien émotionnel",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "race",
+  "attribut": "",
+  "description": "<p>(Persan) Le Chat crée un lien empathique avec ceux qu'il choisit : il ressent et comprend profondément les émotions de son interlocuteur.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "WG4lMQcfRb3JUelh",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!ATJq8Sb29JLHxG3j"
+}

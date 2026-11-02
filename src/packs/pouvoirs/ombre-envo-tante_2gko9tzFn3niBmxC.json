@@ -1,0 +1,28 @@
+{
+ "_id": "2gko9tzFn3niBmxC",
+ "name": "Ombre envoûtante",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "race",
+  "attribut": "",
+  "description": "<p>(Bengal) Le Bengal modifie les ombres et s'y fond pour devenir pratiquement invisible.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "WG4lMQcfRb3JUelh",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!2gko9tzFn3niBmxC"
+}

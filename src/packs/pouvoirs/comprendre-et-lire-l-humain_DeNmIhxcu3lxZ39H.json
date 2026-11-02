@@ -1,0 +1,28 @@
+{
+ "_id": "DeNmIhxcu3lxZ39H",
+ "name": "Comprendre et lire l'humain",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "inne",
+  "attribut": "",
+  "description": "<p>Tous les Chats lisent et comprennent les êtres humains, quelle que soit leur langue (0 PM). Les langues anciennes demandent un jet d'Intelligence avec un malus selon le degré d'oubli de la langue. Ce pouvoir ne permet pas de parler aux humains.</p>",
+  "degats": "",
+  "gratuit": true
+ },
+ "effects": [],
+ "folder": "9a2jRIFqgKKDpai2",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!DeNmIhxcu3lxZ39H"
+}

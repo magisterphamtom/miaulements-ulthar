@@ -1,0 +1,1125 @@
+{
+ "_id": "oPJ2wvwGwPJWZdDp",
+ "name": "Pouvoirs temporaires",
+ "img": "icons/svg/d20-grey.svg",
+ "description": "<p>Deux tirages au début de l'aventure ; doublon = relance (p.60-64).</p>",
+ "results": [
+  {
+   "_id": "n5OfCBbMiVDJNLVv",
+   "type": "text",
+   "text": "Accélération physique — Le Chat augmente temporairement sa vitesse et sa réactivité : il effectue son action en premier.",
+   "img": null,
+   "description": "",
+   "range": [
+    1,
+    2
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.n5OfCBbMiVDJNLVv"
+  },
+  {
+   "_id": "GbtnbVERhmzZs5n8",
+   "type": "text",
+   "text": "Agilité féline — Le Chat est incroyablement agile : sauts et mouvements acrobatiques spectaculaires.",
+   "img": null,
+   "description": "",
+   "range": [
+    3,
+    4
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.GbtnbVERhmzZs5n8"
+  },
+  {
+   "_id": "8F7em8W1IgOWLSOy",
+   "type": "text",
+   "text": "Appel des insectes — Le Chat invoque un essaim d'insectes pour distraire ou attaquer des adversaires. Jet réussi : 2 dégâts pendant 1D6 tours.",
+   "img": null,
+   "description": "",
+   "range": [
+    5,
+    6
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.8F7em8W1IgOWLSOy"
+  },
+  {
+   "_id": "aA99QX9vsd8qv4am",
+   "type": "text",
+   "text": "Aura apaisante — Une aura de calme et de sérénité apaise les esprits agités et réduit l'agressivité des adversaires.",
+   "img": null,
+   "description": "",
+   "range": [
+    7,
+    8
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.aA99QX9vsd8qv4am"
+  },
+  {
+   "_id": "peRipkNB3EkuDU8g",
+   "type": "text",
+   "text": "Aura curative — Une aura de guérison soigne les blessures d'une autre personne.",
+   "img": null,
+   "description": "",
+   "range": [
+    9,
+    10
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.peRipkNB3EkuDU8g"
+  },
+  {
+   "_id": "8HsyDzVGGBREPbbO",
+   "type": "text",
+   "text": "Aura protectrice — Une aura de protection réduit les dégâts subis par le Chat ou ses alliés.",
+   "img": null,
+   "description": "",
+   "range": [
+    11,
+    12
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.8HsyDzVGGBREPbbO"
+  },
+  {
+   "_id": "NR1tBBi9X4hOwmOK",
+   "type": "text",
+   "text": "Bouclier psychique — Un bouclier psychique protège des attaques mentales ou empêche les autres de lire les pensées du Chat.",
+   "img": null,
+   "description": "",
+   "range": [
+    13,
+    14
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.NR1tBBi9X4hOwmOK"
+  },
+  {
+   "_id": "hJyhtBeMWdZZYUf8",
+   "type": "text",
+   "text": "Bouclier thermique — Un bouclier thermique protège des températures extrêmes.",
+   "img": null,
+   "description": "",
+   "range": [
+    15,
+    16
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.hJyhtBeMWdZZYUf8"
+  },
+  {
+   "_id": "AlsG0neqHTXa9Yo2",
+   "type": "text",
+   "text": "Bouclier végétal — Le Chat crée autour de lui un bouclier protecteur de plantes et de feuilles.",
+   "img": null,
+   "description": "",
+   "range": [
+    17,
+    18
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.AlsG0neqHTXa9Yo2"
+  },
+  {
+   "_id": "t7KqWJGMKVP3Yk0H",
+   "type": "text",
+   "text": "Camouflage chromatique — Le Chat change la couleur de son pelage pour se fondre dans son environnement, presque invisible.",
+   "img": null,
+   "description": "",
+   "range": [
+    19,
+    20
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.t7KqWJGMKVP3Yk0H"
+  },
+  {
+   "_id": "JhcEmpzVWck7puEN",
+   "type": "text",
+   "text": "Capacité de lévitation — Le Chat flotte dans les airs sur de courtes distances. Il ne peut pas porter plus de 10 kg.",
+   "img": null,
+   "description": "",
+   "range": [
+    21,
+    22
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.JhcEmpzVWck7puEN"
+  },
+  {
+   "_id": "ZGQov9cHWSRuk2gV",
+   "type": "text",
+   "text": "Charme animal — Le Chat influence le comportement des animaux autour de lui en les ralliant à sa cause ou en les apaisant.",
+   "img": null,
+   "description": "",
+   "range": [
+    23,
+    24
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.ZGQov9cHWSRuk2gV"
+  },
+  {
+   "_id": "ayZqaKgHjlX6ffar",
+   "type": "text",
+   "text": "Charme humain — Un charme irrésistible permet de manipuler les émotions.",
+   "img": null,
+   "description": "",
+   "range": [
+    25,
+    26
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.ayZqaKgHjlX6ffar"
+  },
+  {
+   "_id": "NraRPhGepdsfEZYY",
+   "type": "text",
+   "text": "Communication animale — Le Chat communique avec les animaux et les comprend : ils coopèrent et s'entraident.",
+   "img": null,
+   "description": "",
+   "range": [
+    27,
+    28
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.NraRPhGepdsfEZYY"
+  },
+  {
+   "_id": "rT1IRuaf1ctA0eR4",
+   "type": "text",
+   "text": "Contrôle climatique — Le Chat influence les conditions climatiques : pluie, nuages ou brouillard.",
+   "img": null,
+   "description": "",
+   "range": [
+    29,
+    30
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.rT1IRuaf1ctA0eR4"
+  },
+  {
+   "_id": "pPhTokiwdxIBnwoC",
+   "type": "text",
+   "text": "Contrôle de la nature — Le Chat obtient l'aide des éléments de la nature.",
+   "img": null,
+   "description": "",
+   "range": [
+    31,
+    32
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.pPhTokiwdxIBnwoC"
+  },
+  {
+   "_id": "BQZMMKjAKjwXzl85",
+   "type": "text",
+   "text": "Contrôle de la température — Le Chat modifie la température ambiante : zones de chaleur suffocante ou de froid glacial. Jet réussi : jusqu'à 1D6 dégâts.",
+   "img": null,
+   "description": "",
+   "range": [
+    33,
+    34
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.BQZMMKjAKjwXzl85"
+  },
+  {
+   "_id": "wntQsjgjPWiZEKZU",
+   "type": "text",
+   "text": "Contrôle élémentaire — Le Chat manipule l'eau, le feu, la terre ou l'air (au choix).",
+   "img": null,
+   "description": "",
+   "range": [
+    35,
+    36
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.wntQsjgjPWiZEKZU"
+  },
+  {
+   "_id": "awAG2M2tvkRbUz9u",
+   "type": "text",
+   "text": "Cri assourdissant — Des ondes sonores puissantes désorientent les ennemis ou brisent des obstacles. Jet réussi : jusqu'à 1D6 dégâts.",
+   "img": null,
+   "description": "",
+   "range": [
+    37,
+    38
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.awAG2M2tvkRbUz9u"
+  },
+  {
+   "_id": "hQabgAyAW0kyd1KV",
+   "type": "text",
+   "text": "Déplacement instantané — Le Chat se téléporte sur de courtes distances pour échapper aux attaques ou attaquer par surprise.",
+   "img": null,
+   "description": "",
+   "range": [
+    39,
+    40
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.hQabgAyAW0kyd1KV"
+  },
+  {
+   "_id": "PJCzyIFC9K4rkDBd",
+   "type": "text",
+   "text": "Flexibilité extrême — Le Chat se tord et se plie dans des positions impossibles pour se faufiler dans les endroits les plus étroits.",
+   "img": null,
+   "description": "",
+   "range": [
+    41,
+    42
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.PJCzyIFC9K4rkDBd"
+  },
+  {
+   "_id": "wZks0RFcK0KoiKQ8",
+   "type": "text",
+   "text": "Force colossale — Force extraordinaire : le Chat pousse des objets massifs, jusqu'à une tonne.",
+   "img": null,
+   "description": "",
+   "range": [
+    43,
+    44
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.wZks0RFcK0KoiKQ8"
+  },
+  {
+   "_id": "rVxhAW6Qe7Izqs0H",
+   "type": "text",
+   "text": "Génération de flammes — Le Chat génère et contrôle les flammes : boules de feu ou murs de flammes. Jet réussi : jusqu'à 1D6 dégâts.",
+   "img": null,
+   "description": "",
+   "range": [
+    45,
+    46
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.rVxhAW6Qe7Izqs0H"
+  },
+  {
+   "_id": "h0OhOhruI8IKyWdJ",
+   "type": "text",
+   "text": "Hypnose vocale — Le Chat hypnotise un animal ou un humain avec sa voix et influence ses actions.",
+   "img": null,
+   "description": "",
+   "range": [
+    47,
+    48
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.h0OhOhruI8IKyWdJ"
+  },
+  {
+   "_id": "MU0CeMLoQ38kDYKJ",
+   "type": "text",
+   "text": "Illusion mentale — Le Chat projette des illusions directement dans l'esprit des autres, qui vivent des expériences sensorielles trompeuses.",
+   "img": null,
+   "description": "",
+   "range": [
+    49,
+    50
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.MU0CeMLoQ38kDYKJ"
+  },
+  {
+   "_id": "6mvu1CwWNzwCPplM",
+   "type": "text",
+   "text": "Instinct de chasseur — Un instinct de chasseur infaillible permet de repérer les proies.",
+   "img": null,
+   "description": "",
+   "range": [
+    51,
+    52
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.6mvu1CwWNzwCPplM"
+  },
+  {
+   "_id": "XJHG5Bhnhat27yAM",
+   "type": "text",
+   "text": "Intangibilité corporelle — Le corps du Chat devient intangible : il traverse les objets solides.",
+   "img": null,
+   "description": "",
+   "range": [
+    53,
+    54
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.XJHG5Bhnhat27yAM"
+  },
+  {
+   "_id": "ZxvtW7nTyeRXUoxc",
+   "type": "text",
+   "text": "Manipulation de l'électricité — Le Chat contrôle l'énergie électrique : éclairs et décharges. Jet réussi : jusqu'à 1D6 dégâts.",
+   "img": null,
+   "description": "",
+   "range": [
+    55,
+    56
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.ZxvtW7nTyeRXUoxc"
+  },
+  {
+   "_id": "4V4oMLx4NKXFWrWi",
+   "type": "text",
+   "text": "Manipulation de la mémoire — Le Chat altère les souvenirs des autres : il efface des événements ou implante de fausses informations.",
+   "img": null,
+   "description": "",
+   "range": [
+    57,
+    58
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.4V4oMLx4NKXFWrWi"
+  },
+  {
+   "_id": "vmGQYgyIu7710vXv",
+   "type": "text",
+   "text": "Manipulation des ombres — Le Chat se fond et se déplace à travers les ombres pour se cacher ou se déplacer furtivement.",
+   "img": null,
+   "description": "",
+   "range": [
+    59,
+    60
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.vmGQYgyIu7710vXv"
+  },
+  {
+   "_id": "KWd2ao8At6RyJPJH",
+   "type": "text",
+   "text": "Manipulation du temps — Le Chat ralentit ou accélère le temps dans une zone restreinte. Jet réussi : il agit 2 fois.",
+   "img": null,
+   "description": "",
+   "range": [
+    61,
+    62
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.KWd2ao8At6RyJPJH"
+  },
+  {
+   "_id": "vrJkNhdnymc3FiCq",
+   "type": "text",
+   "text": "Marche silencieuse — Le Chat se déplace sans faire aucun bruit, pratiquement inaudible pour ses ennemis.",
+   "img": null,
+   "description": "",
+   "range": [
+    63,
+    64
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.vrJkNhdnymc3FiCq"
+  },
+  {
+   "_id": "q2p0RLza1D7umqLb",
+   "type": "text",
+   "text": "Maîtrise des griffes — Les griffes sont utilisées avec une précision mortelle. Jet réussi : jusqu'à 1D6 dégâts.",
+   "img": null,
+   "description": "",
+   "range": [
+    65,
+    66
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.q2p0RLza1D7umqLb"
+  },
+  {
+   "_id": "sbpb0MngEmiUOKSy",
+   "type": "text",
+   "text": "Métamorphose animale — Le Chat se transforme en différentes créatures animales, avec leurs caractéristiques et capacités. Jet réussi : transformation pendant 1D6 minutes.",
+   "img": null,
+   "description": "",
+   "range": [
+    67,
+    68
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.sbpb0MngEmiUOKSy"
+  },
+  {
+   "_id": "g51DixD9T0h2dElQ",
+   "type": "text",
+   "text": "Perception des émotions — Le Chat ressent les émotions des autres : il détecte les mensonges et reconnaît les intentions.",
+   "img": null,
+   "description": "",
+   "range": [
+    69,
+    70
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.g51DixD9T0h2dElQ"
+  },
+  {
+   "_id": "HJcU1zYCvg7aJzsG",
+   "type": "text",
+   "text": "Perception du passé — Le Chat voit les souvenirs et les événements passés en touchant des objets ou en se tenant dans des lieux chargés d'histoire.",
+   "img": null,
+   "description": "",
+   "range": [
+    71,
+    72
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.HJcU1zYCvg7aJzsG"
+  },
+  {
+   "_id": "gorKSxpRk2FgViJz",
+   "type": "text",
+   "text": "Perception magnétique — Le Chat détecte les champs magnétiques et s'oriente à travers eux.",
+   "img": null,
+   "description": "",
+   "range": [
+    73,
+    74
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.gorKSxpRk2FgViJz"
+  },
+  {
+   "_id": "03tybkoAObCiRjaG",
+   "type": "text",
+   "text": "Perception surnaturelle — Une perception au-delà des capacités normales détecte indices et présences invisibles.",
+   "img": null,
+   "description": "",
+   "range": [
+    75,
+    76
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.03tybkoAObCiRjaG"
+  },
+  {
+   "_id": "qmlIZ8m3leJ7Nmip",
+   "type": "text",
+   "text": "Perception thermique — Le Chat détecte les sources de chaleur à distance : proies, objets cachés.",
+   "img": null,
+   "description": "",
+   "range": [
+    77,
+    78
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.qmlIZ8m3leJ7Nmip"
+  },
+  {
+   "_id": "s9yYRhqbuH5qmKrZ",
+   "type": "text",
+   "text": "Prémonition féline — Une intuition puissante permet de prévoir les événements futurs qui risquent de se produire.",
+   "img": null,
+   "description": "",
+   "range": [
+    79,
+    80
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.s9yYRhqbuH5qmKrZ"
+  },
+  {
+   "_id": "gRyGFm6OPYiZT4px",
+   "type": "text",
+   "text": "Régénération accélérée — Le Chat guérit rapidement blessures et maladies. Jet réussi : il se soigne de 1D6 PV.",
+   "img": null,
+   "description": "",
+   "range": [
+    81,
+    82
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.gRyGFm6OPYiZT4px"
+  },
+  {
+   "_id": "rWZSezujMZ9oceR0",
+   "type": "text",
+   "text": "Résistance aux poisons — Le Chat est naturellement immunisé contre la plupart des poisons, qu'il neutralise vite.",
+   "img": null,
+   "description": "",
+   "range": [
+    83,
+    84
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.rWZSezujMZ9oceR0"
+  },
+  {
+   "_id": "LC10H1KaXEF1Kepp",
+   "type": "text",
+   "text": "Rugissement intimidant — Un rugissement puissant terrifie les ennemis et peut les paralyser de peur. Jet réussi : un adversaire est terrorisé 1D6 rounds.",
+   "img": null,
+   "description": "",
+   "range": [
+    85,
+    86
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.LC10H1KaXEF1Kepp"
+  },
+  {
+   "_id": "H1z0EDEE3wuIEyAg",
+   "type": "text",
+   "text": "Sens aiguisés — Ouïe et vision exceptionnelles : les sons et mouvements les plus subtils sont détectés.",
+   "img": null,
+   "description": "",
+   "range": [
+    87,
+    88
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.H1z0EDEE3wuIEyAg"
+  },
+  {
+   "_id": "QRLPE1jONlaW7LAl",
+   "type": "text",
+   "text": "Sensibilité émotionnelle — Le Chat ressent les émotions des autres à un niveau profond et lit leurs intentions et motivations.",
+   "img": null,
+   "description": "",
+   "range": [
+    89,
+    90
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.QRLPE1jONlaW7LAl"
+  },
+  {
+   "_id": "EqbAp5qfVFZnsQd8",
+   "type": "text",
+   "text": "Souffle de noir — Le Chat projette une étrange brume noire des abysses qui plonge un adversaire dans une terreur incontrôlable. Jet réussi : l'adversaire est apeuré 1D6 tour(s).",
+   "img": null,
+   "description": "",
+   "range": [
+    91,
+    92
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.EqbAp5qfVFZnsQd8"
+  },
+  {
+   "_id": "et1ElyoRGa2zzXfh",
+   "type": "text",
+   "text": "Télépathie — Le Chat communique par la pensée et établit un lien mental pour partager des informations ou coordonner des actions.",
+   "img": null,
+   "description": "",
+   "range": [
+    93,
+    94
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.et1ElyoRGa2zzXfh"
+  },
+  {
+   "_id": "C11Nj2l8h7Embrqo",
+   "type": "text",
+   "text": "Vision infrarouge — Le Chat voit dans l'obscurité totale en détectant les émissions de chaleur.",
+   "img": null,
+   "description": "",
+   "range": [
+    95,
+    96
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.C11Nj2l8h7Embrqo"
+  },
+  {
+   "_id": "XNwRe08RH1Dg4411",
+   "type": "text",
+   "text": "Visée parfaite — Une précision exceptionnelle permet de viser les points faibles. Jet réussi : les dégâts sont doublés.",
+   "img": null,
+   "description": "",
+   "range": [
+    97,
+    98
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.XNwRe08RH1Dg4411"
+  },
+  {
+   "_id": "XiWOC6KCFUZWNVGG",
+   "type": "text",
+   "text": "Volonté de fer — Une volonté inébranlable résiste aux tentatives de manipulation mentale ou de contrôle.",
+   "img": null,
+   "description": "",
+   "range": [
+    99,
+    100
+   ],
+   "weight": 2,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!oPJ2wvwGwPJWZdDp.XiWOC6KCFUZWNVGG"
+  }
+ ],
+ "formula": "1d100",
+ "replacement": true,
+ "displayRoll": true,
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!tables!oPJ2wvwGwPJWZdDp"
+}

@@ -1,0 +1,53 @@
+{
+ "_id": "J90QJuIkEau9P4Wx",
+ "name": "Écran du MJ",
+ "pages": [
+  {
+   "_id": "7HFgcNZTtpkwGIPn",
+   "name": "Écran du Maître de Jeu",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h2>Création d'un Chat</h2><p>1. Surnom · 2. Attributs (50 % + ajustements) · 3. Race (bonus/malus, pouvoir de race) · 4. Deux pouvoirs innés · 5. Calculs · 6. Vies de Chat : 3.</p><h2>Difficulté</h2><table><thead><tr><th>Difficulté</th><th>Modificateur</th></tr></thead><tbody><tr><td>Très difficile</td><td>+40</td></tr><tr><td>Difficile</td><td>+20</td></tr><tr><td>Normal</td><td>0</td></tr><tr><td>Facile</td><td>−20</td></tr><tr><td>Très facile</td><td>−40</td></tr></tbody></table><h2>Dégâts</h2><table><thead><tr><th>Source</th><th>Dégâts</th></tr></thead><tbody><tr><td>Coup de griffe</td><td>1D4</td></tr><tr><td>Chute</td><td>1D4 par étage</td></tr><tr><td>Objet tranchant</td><td>1D6</td></tr><tr><td>Pistolet</td><td>1D6+1</td></tr><tr><td>Fusil</td><td>2D6</td></tr><tr><td>Explosion</td><td>4D6</td></tr><tr><td>Feu</td><td>2D6 par tour</td></tr><tr><td>Choc par véhicule</td><td>1D6</td></tr></tbody></table><h2>Étapes oniriques</h2><ol><li>Connexion mentale avec le sujet.</li><li>Définition de l'objectif par le lanceur.</li><li>Établissement de la scène onirique initiale dans l'esprit du sujet.</li><li>Phases d'altération (deux réussites ou deux échecs terminent la bulle).</li><li>État final de la cible.</li></ol><h2>Comportements</h2><ul><li>Langage corporel : queue, oreilles, yeux, pattes.</li><li>Vocalisations : miaulements, ronronnements, gémissements.</li><li>Comportement : chasseur, joueur, territoire, indifférent, peur.</li><li>Expressions d'affection : frottements, câlins, ronronnements, clignements des yeux, offrandes, léchouilles.</li></ul><h2>Tables</h2><p>Les tables de l'écran (événements en ville, réactions humaines, réactions des animaux, surnoms, cartes Folie, pouvoirs temporaires) sont dans le compendium « Tables » : clic droit › Lancer.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!J90QJuIkEau9P4Wx.7HFgcNZTtpkwGIPn"
+  }
+ ],
+ "folder": null,
+ "sort": 400000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!J90QJuIkEau9P4Wx"
+}

@@ -13,9 +13,9 @@ export const ATTRIBUTS = {
   pre: { label: "Précision", abbr: "PRE" }
 };
 
-// Nombre de cases d'échec à cocher avant de monter un attribut.
-// À VÉRIFIER sur la fiche papier / le livre (p.65) : valeur provisoire.
-export const CASES_ECHEC = 5;
+// Nombre de cases d'échec à cocher avant de monter un attribut : 6 petites cases autour de chaque
+// cercle d'attribut sur la fiche papier officielle (comptées sur l'image).
+export const CASES_ECHEC = 6;
 
 // Modificateur de difficulté ajouté au jet de dé.
 export const DIFFICULTES = {
@@ -95,4 +95,305 @@ export const ACHATS_XP = {
   pm: { cout: 2, gain: 10, label: "+10 Points de Magie" },
   pv: { cout: 2, gain: 1, label: "+1 Point de Santé" },
   vies: { cout: 4, gain: 1, label: "+1 Vie de chat" }
+};
+
+// Coordonnées (en pixels de l'image officielle de la fiche, 1716 × 2492) pour poser les champs sur la fiche papier.
+export const FICHE = {
+  "largeur": 1716,
+  "hauteur": 2492,
+  "image": "systems/miaulements-ulthar/assets/fiche-chat.png",
+  "cercles": {
+    "chn": {
+      "x": 559,
+      "y": 828,
+      "cases": [
+        [
+          495,
+          755
+        ],
+        [
+          470,
+          773
+        ],
+        [
+          452,
+          796
+        ],
+        [
+          447,
+          826
+        ],
+        [
+          452,
+          856
+        ],
+        [
+          468,
+          879
+        ]
+      ]
+    },
+    "phy": {
+      "x": 1185,
+      "y": 828,
+      "cases": [
+        [
+          1249,
+          755
+        ],
+        [
+          1274,
+          773
+        ],
+        [
+          1292,
+          796
+        ],
+        [
+          1297,
+          826
+        ],
+        [
+          1292,
+          856
+        ],
+        [
+          1276,
+          879
+        ]
+      ]
+    },
+    "cha": {
+      "x": 532,
+      "y": 993,
+      "cases": [
+        [
+          450,
+          932
+        ],
+        [
+          432,
+          954
+        ],
+        [
+          420,
+          986
+        ],
+        [
+          422,
+          1016
+        ],
+        [
+          434,
+          1044
+        ],
+        [
+          455,
+          1064
+        ]
+      ]
+    },
+    "agi": {
+      "x": 1212,
+      "y": 993,
+      "cases": [
+        [
+          1294,
+          932
+        ],
+        [
+          1312,
+          954
+        ],
+        [
+          1324,
+          986
+        ],
+        [
+          1322,
+          1016
+        ],
+        [
+          1310,
+          1044
+        ],
+        [
+          1289,
+          1064
+        ]
+      ]
+    },
+    "int": {
+      "x": 595,
+      "y": 1152,
+      "cases": [
+        [
+          503,
+          1108
+        ],
+        [
+          490,
+          1134
+        ],
+        [
+          484,
+          1168
+        ],
+        [
+          494,
+          1198
+        ],
+        [
+          510,
+          1222
+        ],
+        [
+          534,
+          1238
+        ]
+      ]
+    },
+    "dis": {
+      "x": 1149,
+      "y": 1152,
+      "cases": [
+        [
+          1241,
+          1108
+        ],
+        [
+          1254,
+          1134
+        ],
+        [
+          1260,
+          1168
+        ],
+        [
+          1250,
+          1198
+        ],
+        [
+          1234,
+          1222
+        ],
+        [
+          1210,
+          1238
+        ]
+      ]
+    },
+    "per": {
+      "x": 742,
+      "y": 1263,
+      "cases": [
+        [
+          639,
+          1272
+        ],
+        [
+          641,
+          1303
+        ],
+        [
+          655,
+          1335
+        ],
+        [
+          678,
+          1355
+        ],
+        [
+          704,
+          1368
+        ],
+        [
+          732,
+          1368
+        ]
+      ]
+    },
+    "pre": {
+      "x": 1002,
+      "y": 1263,
+      "cases": [
+        [
+          1105,
+          1272
+        ],
+        [
+          1103,
+          1303
+        ],
+        [
+          1089,
+          1335
+        ],
+        [
+          1066,
+          1355
+        ],
+        [
+          1040,
+          1368
+        ],
+        [
+          1012,
+          1368
+        ]
+      ]
+    }
+  },
+  "champs": {
+    "surnom": [
+      250,
+      505,
+      545,
+      555
+    ],
+    "race": [
+      200,
+      615,
+      545,
+      665
+    ],
+    "description": [
+      1200,
+      562,
+      1632,
+      668
+    ],
+    "pv": [
+      286,
+      1548
+    ],
+    "vies": [
+      426,
+      1548
+    ],
+    "pm": [
+      870,
+      1552
+    ],
+    "pf": [
+      1206,
+      1552
+    ],
+    "xp": [
+      1540,
+      1552
+    ],
+    "innes": [
+      100,
+      1768,
+      750,
+      2215
+    ],
+    "temporaires": [
+      975,
+      1768,
+      1630,
+      2215
+    ]
+  }
 };

@@ -1,0 +1,52 @@
+{
+ "_id": "qvU0aSFuhgDFcSZZ",
+ "name": "Rhan-Tegoth",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Bras",
+    "pct": 80,
+    "degats": "2d10"
+   },
+   {
+    "nom": "Essaim (6 PV)",
+    "pct": 60,
+    "degats": "2d4"
+   }
+  ],
+  "pouvoir": "Contrôle les essaims",
+  "capacite": "",
+  "pv": {
+   "value": 70,
+   "max": 70
+  },
+  "description": "<p>Créature amphibie de trois mètres de haut, le RhanTegoth possède une apparence insectoïde, avec une carapace brillante et des pinces acérées. Il se nourrit de l'énergie vitale de ses victimes. En essaim, ces créatures se déplacent comme une seule entité, rendant leur approche presque inévitable.</p><blockquote><p>Les habitants d'une ferme isolée ont tous disparu sans laisser de trace, à l'exception d'une note énigmatique faisant mention d'un essaim cauchemardesque dévorant tout sur son passage</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Rhan-Tegoth",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!qvU0aSFuhgDFcSZZ"
+}

@@ -1,0 +1,52 @@
+{
+ "_id": "PqcTPptshc2RneEq",
+ "name": "Bokrug",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Griffes",
+    "pct": 60,
+    "degats": "2d6"
+   },
+   {
+    "nom": "Crachat acide",
+    "pct": 60,
+    "degats": "1d6"
+   }
+  ],
+  "pouvoir": "Contrôle les courants, la vase et les marécages",
+  "capacite": "",
+  "pv": {
+   "value": 50,
+   "max": 50
+  },
+  "description": "<p>Bokrug, également connu sous le nom de \"Gardien du Marais\", est une divinité amphibie vénérée par les habitants de la cité engloutie d'Ib. Souvent confondu avec un gros lézard, il est en réalité bien plus intelligent. Principalement vénéré dans la contrée du rêve et en Amérique du sud.</p><blockquote><p>Des touristes intrigués signalent d'étranges célébrations païennes dans les villages autour de Lima. Selon leurs témoignages, ces fêtes impliqueraient des offrandes de poulets vivants à de mystérieux \"gros lézards\". Les autorités locales ont ouvert une enquête pour vérifier ces allégations insolites et déterminer l'origine de ces pratiques non conventionnelles</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Bokrug",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!PqcTPptshc2RneEq"
+}

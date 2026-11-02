@@ -1,0 +1,152 @@
+{
+ "_id": "9rVm5mxFkDmO4YaC",
+ "name": "Les Chats d'Ulthar",
+ "pages": [
+  {
+   "_id": "aP1EUnzU4EOSKDOJ",
+   "name": "La légende des Chats l'Ulthar",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Les Chats d'Ulthar</h3>\n<p>La nouvelle \"Les Chats d'Ulthar\" est un récit horrifique écrit par l’américain H.P. Lovecraft et publié pour la première fois en 1920. L'histoire se déroule dans la contrée du Rêve et dans la mystérieuse ville d'Ulthar. Il y a bien longtemps, à Ulthar, habitait un couple de paysans cruels, connus pour aimer capturer et tuer les chats des environs. Les habitants de la ville, bien que mécontents de cette cruauté, n'osaient pas intervenir par peur de représailles. Un jour, un groupe de voyageurs traversa Ulthar. Parmi eux se trouvait un jeune garçon orphelin nommé Menés, accompagné d'un chat noir. Les voyageurs restèrent quelques jours dans la ville, mais un soir, le chat de Menés disparut. Le garçon, en pleurs, expliqua à ses compagnons voyageurs sa grande tristesse. La nuit, à l'abri des regards, le groupe de voyageurs se mit à prier dans une langue inconnue.</p>\n<p>La nuit suivante, les habitants d'Ulthar virent des formes étranges autour de la maison des paysans cruels. Au matin, les paysans avaient disparu sans laisser de trace. On ne retrouva que quelques ossements dans leur maison. Àla suite de cet événement, les habitants d'Ulthar adoptèrent une loi interdisant de maltraiter ou de tuer les chats. Cette décision fut motivée par peur des représailles félines.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!9rVm5mxFkDmO4YaC.aP1EUnzU4EOSKDOJ"
+  },
+  {
+   "_id": "pE97kM0Y0e13YovT",
+   "name": "La déesse Bast",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Dans les contrés du Rêve, il existe une déesse redoutée qui protège des félins sacrés. Son influence s'étend sur tous les mondes dans lesquels les chats sont présents. Bast, au-delà de son apparence féline, incarne l'esprit et la force des félins d'Ulthar. Les histoires la décrivent comme une entité céleste, possédant une sagesse millénaire et des pouvoirs divins. Elle est la gardienne des lois mystiques et de l'équilibre entre les mondes. Les chats, considérés comme les gardiens d'Ulthar, sont ses émissaires et des protecteurs dévoués. Bast confère à ces félins une intelligence supérieure, une agilité surnaturelle et une perception au-delà des sens humains. Grâce à eux, elle veille sur la frontière subtile qui sépare le monde réel des territoires sombres et insondables de la Contrée du Rêve. Bast a résidé parmi les êtres humains à l'époque de l'Égypte ancienne. Bien que son repos soit éternel à présent, sa présence demeure tangible dans la contrée du Rêve. N'apparaissant que rarement, elle inspire un mélange de respect et de crainte parmi les habitants d'Ulthar. Sa présence est invoquée lors de cérémonies secrètes et de rituels mystiques, où les fidèles lui rendent hommage et cherchent sa protection. On raconte que ceux qui offensent les chats d'Ulthar attirent l'attention de Bast, déclenche parfois sa colère implacable. Certains murmurent que ceux qui ont le malheur de croiser son regard sont condamnés à errer pour l'éternité dans la Contrée du Rêve, hantés par des visions</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!9rVm5mxFkDmO4YaC.pE97kM0Y0e13YovT"
+  },
+  {
+   "_id": "wmkVBlSLUXRRlU45",
+   "name": "Les gardiens d'Ulthar",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Les gardiens occupent une place unique. Contrairement à ce que l'on pourrait imaginer, ce ne sont pas les humains, mais les félins qui portent une noble responsabilité. Ils sont les gardiens désignés par Bast pour préserver l'équilibre entre les mondes et protéger l'humanité des Grands Anciens. Ces félins sacrés, dotés d'une conscience supérieure et d'une sagesse ancestrale, ont la capacité de se déplacer entre le monde réel et la Contrée du Rêve. Leurs sens aiguisés et leur intuition innée leur permettent de détecter les signes avant-coureurs des forces obscures qui cherchent à s'infiltrer dans les deux mondes. Chaque gardien d'Ulthar appartient à une lignée raciale ancestrale. Les vieux Chats de chaque lignée jouent un rôle crucial au sein des gardiens. En tant qu’anciens, ils sont détenteurs de connaissances ancestrales et d’une sagesse incommensurable. Ils guident les Chats dans leurs combats contre les forces obscures. Leurs rôles sont multiples : Surveillance et détection : les gardiens possèdent des sens aiguisés, une intuition innée et une capacité à détecter les signes avant-coureurs des perturbations et des menaces émanant des Grands Anciens ou d'autres forces obscures. Ils sont constamment en alerte, surveillant les moindres recoins dans les 2 mondes. Enquête et compréhension : lorsqu'ils détectent des anomalies ou des signes de déséquilibre, les gardiens mènent des enquêtes approfondies pour identifier la source du problème. Cela peut impliquer de suivre des pistes mystérieuses, d'interagir avec d'autres entités de la Contrée du Rêve ou de rassembler des informations pour comprendre la nature de la menace. Intervention et protection : en cas de menace imminente ou de déséquilibre critique, les gardiens interviennent. Cela peut prendre différentes formes, de la dissuasion des intrusions à l'arrêt des rituels occultes ou à la neutralisation de créatures malveillantes. Transfert des savoirs : les anciens de chaque lignée jouent un rôle crucial en partageant leurs connaissances. La transmission des informations et des connaissances est d'une importance capitale pour la protection des mondes.</p>\n<p>Préservation de l'équilibre : en fin de compte, le but ultime des gardiens est de préserver l'équilibre fragile entre la Contrée du Rêve et le monde réel. Leur dévouement à cette tâche est sans faille, car l'avenir de ces deux mondes en dépend.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!9rVm5mxFkDmO4YaC.wmkVBlSLUXRRlU45"
+  },
+  {
+   "_id": "2wp9y3bpyeG4Mp6X",
+   "name": "Les ennemis des gardiens",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Au cours de leurs enquêtes, les gardiens sont susceptibles de croiser de nombreux adversaires. Certains ne seront que de simples obstacles, cherchant à les ralentir dans leur quête. D’autres représenteront une menace bien plus grave, mettant leur vie en péril. La prudence est de mise, car chaque rencontre peut les conduire à une issue funeste. Mais heureusement, les chats possèdent plusieurs vies.</p>\n<h3>L'environnement urbain</h3>\n<p>Le premier risque pour les chats est l’environnement. Dans l'effervescence de la ville, chaque déplacement pour un chat est semé d'embûches. La circulation dense, les prédateurs urbains, les déchets toxiques, les risques d'enlèvement, les hauteurs vertigineuses, les maladies, le bruit stressant rendent leur quête périlleuse. Seul un chat prudent peut naviguer avec sécurité dans cet environnement hostile. Circulation dense : les routes fréquentées et la circulation automobile peuvent être dangereuses pour les chats distraits ou fougueux. Prédateurs urbains : les chiens errants, les rongeurs agressifs et autres animaux sauvages peuvent menacer la sécurité des chats.</p>\n<p>Produits chimiques domestiques : les chats</p>\n<h3>Note:</h3>\n<p>pourraient être exposés à des produits C'est le moment clé où vous chimiques ménagers dangereux tels que les devez revisiter et ajuster vos nettoyants, les désherbants ou les insecticides. anciens scénarios pour les aligner avec le nouveau type Enlèvements et maltraitance : certains individus d’enquêteur que sont les malintentionnés ou payés par les autorités chats. Nous aborderons ce processus plus en détail cherchent à capturer les chats. ultérieurement dans le livre.</p>\n<p>Chutes : les chats escaladent souvent des structures instables en hauteur dans les villes. Bruit et stress : l'environnement urbain peut être bruyant et stressant pour les chats, ce qui peut avoir des effets négatifs sur leur attention. Navigation : le déplacement ou le repérage sont parfois complexes pour un animal dans une ville adaptée aux humains. Les territoires : la présence d'autres animaux qui protègent leur territoire, tels que les chiens errants ou les chats de gouttière agressifs, peut représenter un défi supplémentaire. Accès aux bâtiments : les joueurs félins doivent également faire face à des lieux interdits ou gardés par des humains (magasins, bars, bibliothèques ...). Ils doivent ruser et trouver des moyens détournés pour entrer ou s'infiltrer.</p>\n<h3>Les animaux</h3>\n<p>En ville, les Chats peuvent rencontrer des chiens, d'autres chats, des oiseaux, des souris, des rats et divers autres rongeurs domestiques. En campagne, les animaux de la ferme comme les vaches, les chevaux et les poules côtoient assez facilement les chats. Par contre, des animaux sauvages tels que les renards, les loups, les chiens errants, les chats sauvages sont plus agressifs envers les félins. Les différents animaux peuvent être à la fois des alliés précieux ou des obstacles redoutables. Les animaux, qu'ils soient domestiques ou sauvages, ont leur propre langage et leur propre logique. Les joueurs félins devront apprendre à comprendre et à communiquer avec ces êtres aux motivations parfois étranges.</p>\n<p>Amitié : dans certains cas, l’animal peut se lier d'amitié avec le chat, en jouant ou en se reposant ensemble. Curieux : l’animal peut montrer de la curiosité envers le chat, en l'observant de loin ou en s'approchant prudemment pour entrer en contact. Dominant : l’animal peut adopter un comportement territorial et afficher sa dominance envers le chat. Fuite : face à un chat plus grand ou perçu comme dangereux, l’animal peut choisir de fuir pour éviter un conflit. Hostilité : certains animaux peuvent réagir de manière agressive envers un autre animal, notamment s'ils se sentent menacés ou dérangés. Ignore : L’animal peut choisir d'ignorer complètement le chat, surtout s'il ne le perçoit pas comme une menace. Jeu : l’animal peut interagir avec le chat en jouant, en poursuivant ou en se chassant mutuellement. Se cache : certains animaux peuvent se montrer peureux et se cacher pour éviter la confrontation. Soumission : si le chat est plus grand ou plus dominant, l’animal peut adopter une posture soumise pour apaiser la situation.</p>\n<h3>Les humains</h3>\n<p>En temps normal, le premier risque pour les chats sont les humains qu’ils croisent sur leur route. Les humains, souvent pressés et absorbés par leurs propres préoccupations, ne feront pas toujours attention aux chats qui se trouvent à proximité. Cela peut entraîner des rencontres inattendues où les humains risquent de les percuter ou de les emprisonner dans des pièces. En outre, certains humains peuvent ne pas être très sensibles envers les chats et les chasseront plus ou moins violemment. En dehors des villes, le chat est encore moins considéré. Un chasseur, un fermier, aura le coup de fusil facile sur un groupe de chats qui s’aventurent dans ses hangars.</p>\n<h3>Cultistes et conspirations</h3>\n<p>Dans l'univers de Lovecraft, le monde réel est infesté de cultistes et de conspirations liés aux forces de l'ombre. Les cultistes vouent un culte déviant aux anciennes divinités et cherchent à invoquer leur pouvoir ou à s'attirer leurs faveurs. Ces fanatiques dérangés se cachent souvent parmi la population ordinaire, opérant secrètement dans des lieux reculés, des caves sombres ou des repaires occultes. Leurs rituels macabres et leurs offrandes sanglantes sont destinés à attirer l'attention des Grands Anciens et à ouvrir des portails vers des dimensions impies. Certains cultistes connaissent l’existence des Gardiens d'Ulthar. Ils seront encore plus dangereux envers eux. Les Chats devront démêler leurs plans diaboliques et stopper leurs machinations avant qu'ils ne parviennent à accomplir leurs sombres desseins. Cette tâche périlleuse exige astuce et discrétion, car les cultistes sont vigilants et protègent farouchement leurs plans.</p>\n<h3>Le surnaturel</h3>\n<p>D'autres risques importants sont bien sûr liés au surnaturel. Les créatures du mythe, telles que les Profonds, les Shoggoths, les Goules, les Chiens de Tindalos... errent dans les coins les plus sombres de la réalité. Ces créatures sont souvent indifférentes à l'humanité et peuvent être impitoyables quand on les croise. Les sortilèges et les incantations oubliées, provenant de grimoires interdits, attirent et libèrent ces forces surnaturelles.</p>\n<h3>Les Grands Anciens</h3>\n<p>Tout en haut de l'échelle, il y a les Grands Anciens. Ce sont des entités d'une puissance incommensurable. Ces êtres ancestraux, issus des profondeurs insondables de l'univers, défient toute compréhension humaine et féline. Leur simple présence est capable de faire vaciller les fondations de la réalité, déchirant les voiles qui séparent les dimensions connues. Chaque Grand Ancien possède ses propres attributs et motivations, représentant une facette unique de l'horreur cosmique. Certains, comme Cthulhu, le sombre seigneur des abîmes, émergent des océans pour réclamer son règne sur le monde. D'autres, tels que Nyarlathotep, l'infâme messager des Grands Anciens, prennent des multiples formes pour semer la confusion et la terreur parmi les mortels. Affronter un Grand Ancien est une entreprise périlleuse qui ne peut mener qu'à la folie ou à la mort en cas d'affrontement direct.</p>\n<h3>Chat de Saturne</h3>\n<p>Les Chats de Saturne sont des créatures presque immatérielles, dont le corps est formé de tubes aux couleurs éclatantes. Bien qu'il soit capable de voyager entre les planètes, il reste principalement sur Saturne et la face cachée de la Lune. Ils sont liés par un traité mystérieux aux redoutables Bêtes Lunaires. Agressifs et belliqueux, ils prennent plaisir à épier et à attaquer leurs proies. En tant qu'ennemis des Chats d'Ulthar, ces félins cosmiques incarnent la menace la plus sérieuse à affronter.</p>\n<h3>La folie</h3>\n<p>Dans l'univers de Lovecraft, la folie finit par guetter les intrépides félins. Les horreurs auxquelles ils sont confrontés peuvent briser l'esprit félin le plus résistant. Si les Chats se retrouvent confrontés à des visions cauchemardesques, à des révélations perturbantes sur la véritable nature de l'ordre cosmique, ils seront attirés dans un abîme de démence et de désespoir. Cependant, la folie peut aussi révéler des vérités cachées et débloquer des capacités mystérieuses. Certains personnages félins pourront puiser dans les recoins obscurs de leur esprit perturbé pour trouver des réponses et des solutions aux mystères qui les entourent. Mais il faudra être prudent, car chaque pas dans la folie pourrait mener à une descente irréversible dans l'abîme de l'oubli.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!9rVm5mxFkDmO4YaC.2wp9y3bpyeG4Mp6X"
+  }
+ ],
+ "folder": null,
+ "sort": 500000,
+ "ownership": {
+  "default": 2
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!9rVm5mxFkDmO4YaC"
+}

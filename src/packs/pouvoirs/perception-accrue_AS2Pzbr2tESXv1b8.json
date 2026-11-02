@@ -1,0 +1,28 @@
+{
+ "_id": "AS2Pzbr2tESXv1b8",
+ "name": "Perception accrue",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "inne",
+  "attribut": "",
+  "description": "<p>Un sens développé, comme l'ouïe fine et la vision nocturne, détecte le moindre bruit et mouvement.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "9a2jRIFqgKKDpai2",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!AS2Pzbr2tESXv1b8"
+}

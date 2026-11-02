@@ -1,0 +1,23 @@
+{
+ "_id": "sTkNERQXWYuObUw2",
+ "name": "Jet de Folie du groupe",
+ "type": "script",
+ "author": null,
+ "img": "icons/svg/terror.svg",
+ "scope": "global",
+ "command": "game.miaulementsUlthar.folieDuGroupe(\"Un événement troublant frappe le groupe\");",
+ "folder": null,
+ "sort": 200000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!macros!sTkNERQXWYuObUw2"
+}

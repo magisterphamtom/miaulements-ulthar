@@ -1,0 +1,28 @@
+{
+ "_id": "pEj46OE2ju6Eyf2P",
+ "name": "Hypnose vocale",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "temporaire",
+  "attribut": "",
+  "description": "<p>Le Chat hypnotise un animal ou un humain avec sa voix et influence ses actions.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "ZmNoEX04AcYhbu9V",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!pEj46OE2ju6Eyf2P"
+}

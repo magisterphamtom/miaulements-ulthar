@@ -1,0 +1,47 @@
+{
+ "_id": "Crdw6o8dsp9uBp9P",
+ "name": "Sorcière",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Ongles",
+    "pct": 65,
+    "degats": "1d8"
+   }
+  ],
+  "pouvoir": "Manipulation mentale",
+  "capacite": "",
+  "pv": {
+   "value": 10,
+   "max": 10
+  },
+  "description": "<p>Elle utilise la magie noire et invoque des forces obscures pour assouvir sa soif de pouvoir. La sorcière puise sa puissance dans des rituels anciens et des pactes avec des entités démoniaques.</p><blockquote><p>Après plus de 6 mois d'enquête, je suis persuadé que des pratiques de sorcellerie impliquent des notables d'Arkham. Àplusieurs reprises, j'ai observé des cérémonies mystérieuses au manoir de la famille White, où des personnes masquées se réunissaient</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Sorcière",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!Crdw6o8dsp9uBp9P"
+}

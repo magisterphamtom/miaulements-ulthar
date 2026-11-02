@@ -1,0 +1,245 @@
+{
+ "_id": "O3K8tpBnR6cODMBn",
+ "name": "Réactions des animaux",
+ "img": "icons/svg/d20-grey.svg",
+ "description": "<p>Écran du MJ : animal rencontré en ville ou à la campagne, et sa réaction.</p>",
+ "results": [
+  {
+   "_id": "5wAoXLaY4sUYvRK1",
+   "type": "text",
+   "text": "Ville : Chat · Campagne : Chat → Ignore",
+   "img": null,
+   "description": "",
+   "range": [
+    1,
+    1
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!O3K8tpBnR6cODMBn.5wAoXLaY4sUYvRK1"
+  },
+  {
+   "_id": "Qdax15cfJsSQSME1",
+   "type": "text",
+   "text": "Ville : Chat · Campagne : Chien → Curieux",
+   "img": null,
+   "description": "",
+   "range": [
+    2,
+    2
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!O3K8tpBnR6cODMBn.Qdax15cfJsSQSME1"
+  },
+  {
+   "_id": "uA9UwaUBWKuqZXNK",
+   "type": "text",
+   "text": "Ville : Chien · Campagne : Rongeur → Amitié",
+   "img": null,
+   "description": "",
+   "range": [
+    3,
+    3
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!O3K8tpBnR6cODMBn.uA9UwaUBWKuqZXNK"
+  },
+  {
+   "_id": "rxXSiY40auEUKVUU",
+   "type": "text",
+   "text": "Ville : Chien · Campagne : Oiseau → Dominant",
+   "img": null,
+   "description": "",
+   "range": [
+    4,
+    4
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!O3K8tpBnR6cODMBn.rxXSiY40auEUKVUU"
+  },
+  {
+   "_id": "tMf6NQ4RX6nGKwzc",
+   "type": "text",
+   "text": "Ville : Rongeur · Campagne : Loup / Renard → Fuite",
+   "img": null,
+   "description": "",
+   "range": [
+    5,
+    5
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!O3K8tpBnR6cODMBn.tMf6NQ4RX6nGKwzc"
+  },
+  {
+   "_id": "kSIVrgh9sH4fjNuQ",
+   "type": "text",
+   "text": "Ville : Rongeur · Campagne : Chèvre / Mouton → Hostile",
+   "img": null,
+   "description": "",
+   "range": [
+    6,
+    6
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!O3K8tpBnR6cODMBn.kSIVrgh9sH4fjNuQ"
+  },
+  {
+   "_id": "ap5tbq3OSS61nXzT",
+   "type": "text",
+   "text": "Ville : Oiseau · Campagne : Cochon → Soumission",
+   "img": null,
+   "description": "",
+   "range": [
+    7,
+    7
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!O3K8tpBnR6cODMBn.ap5tbq3OSS61nXzT"
+  },
+  {
+   "_id": "CA5NVhD6gKdvPl7b",
+   "type": "text",
+   "text": "Ville : Oiseau · Campagne : Vache / Cheval → Jeu",
+   "img": null,
+   "description": "",
+   "range": [
+    8,
+    8
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!O3K8tpBnR6cODMBn.CA5NVhD6gKdvPl7b"
+  },
+  {
+   "_id": "uWReCVOOfcxgDwxp",
+   "type": "text",
+   "text": "Ville : Insecte · Campagne : Insecte → Se cache",
+   "img": null,
+   "description": "",
+   "range": [
+    9,
+    9
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!O3K8tpBnR6cODMBn.uWReCVOOfcxgDwxp"
+  },
+  {
+   "_id": "WLzVunpYVvWBXsgm",
+   "type": "text",
+   "text": "Ville : Insecte · Campagne : Sanglier → Ignore",
+   "img": null,
+   "description": "",
+   "range": [
+    10,
+    10
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!O3K8tpBnR6cODMBn.WLzVunpYVvWBXsgm"
+  }
+ ],
+ "formula": "1d10",
+ "replacement": true,
+ "displayRoll": true,
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!tables!O3K8tpBnR6cODMBn"
+}

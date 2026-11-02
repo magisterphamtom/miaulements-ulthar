@@ -1,0 +1,185 @@
+{
+ "_id": "RFMAV9zhzzcc4LdE",
+ "name": "Guide du maître de jeu",
+ "pages": [
+  {
+   "_id": "HhSPG8ef0JVtZU2Z",
+   "name": "L’Horreur",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Guide du maître du jeu</h3>\n<p>L'horreur dans cet univers va au-delà des manifestations physiques de créatures terrifiantes ; c'est une confrontation avec l'inconnu, l'inconcevable et l'impensable. En tant que maître de jeu, votre rôle est de créer une ambiance étrange qui plongera les joueurs dans un état d’incompréhension ou de méfiance. L'horreur réside souvent dans ce qui est dissimulé. Cultivez l'art du mystère et des énigmes, afin de laisser les félins découvrir progressivement l'étendue des forces cosmiques qui les entourent. Utilisez par petites touches des symboles ésotériques, des écrits étranges et des lieux délabrés pour suggérer l'existence d'une horreur plus profonde.</p>\n<h4>Exemples :</h4>\n<ul><li>Les bâtiments semblent plus hauts, les rues plus longues que prévu.</li><li>Des symboles cabalistiques marquent certains panneaux.</li><li>D’étranges statues ornent le haut de bâtiments à Arkham.</li><li>Les lumières de rues clignotent au passage des Chats.</li><li>Al’approche d’un ennemi surnaturel, les rats se sauvent, la brume se lève, la température change.</li><li>Un groupe d’hommes, avec un tatouage de pieuvre, semble suivre un enquêteur dans la rue.</li><li>Une vieille maison, coincée entre deux bâtiments, semble être le refuge de corbeaux.</li></ul>\n<p>Les chats sont sensibles aux perceptions surnaturelles. Jouez sur leurs sens aiguisés pour créer des hallucinations, des cauchemars et des visions qui brouillent la frontière entre la réalité et l'imaginaire. Introduisez des cultistes dévoués aux entités cosmiques. Ces ennemis implacables seront une source de dangers pour les félins. Des endroits tels que des ruines antiques, des cryptes obscures et des maisons abandonnées doivent regorger de mystères et de terribles secrets. Ces lieux maudits exercent une influence malsaine sur les félins et peuvent les confronter à des épreuves psychologiques.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!RFMAV9zhzzcc4LdE.HhSPG8ef0JVtZU2Z"
+  },
+  {
+   "_id": "WCTKopTSgrHBIg33",
+   "name": "Comment jouer ?",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Ce chapitre vous aide à explorer les différentes façons de jouer aux Miaulements d'Ulthar. Vous pouvez orienter le style de jeu vers des aventures palpitantes de type pulp ou opter pour une approche plus sérieuse avec une atmosphère sombre et réaliste. Il est également possible de mener une enquête aux côtés d'un groupe d'investigateurs humains. Quel que soit votre niveau ou vos préférences, laissez-vous tenter par l'aventure qui vous convient le mieux.</p>\n<h3>Le style pulp</h3>\n<p>Le style pulp est adapté aux Miaulements d'Ulthar en vous proposant un monde d'action inspiré des récits de la littérature d’aventure rocambolesque (type Indiana Jones, Avengers ...) Ce style de jeu est particulièrement adapté pour les débutants et aux joueurs en quête de parties plus funs et dynamiques.Vous devez aborder les scénarios de manière plus trépidante où les chats plus intrépides se lancent dans des péripéties épiques, affrontant des antagonistes redoutables.</p>\n<h3>Adaptations des règles :</h3>\n<ul><li>Les réussites critiques [0-9] et les échecs critiques [91-00] passent à 10 %.</li><li>Un autre joueur peut tenter de rattraper un échec critique.</li><li>Les pouvoirs pour le même chat peuvent s’enchaîner comme un combo de jeu vidéo.</li><li>Un échec indique uniquement la non-réussite, le joueur peut retenter, mais cette fois l’échec sera flagrant.</li><li>La montée d’expérience permet d’augmenter l’attribut d’1d10,</li><li>Le maître du jeu provoque régulièrement des tests de folie pour déclencher l’instinct des Chats.</li></ul>\n<h3>Conseils et explications :</h3>\n<p>Actions et péripéties : les scènes doivent proposer des actions palpitantes et des péripéties incroyables. Vos félins seront intrépides et se retrouveront souvent pourchassés par d'innombrables ennemis. Pour survivre, ils devront escalader, sauter, esquiver des pièges mortels, sauver des compagnons en détresse... Laissez libre cours à votre imagination et vivez des aventures hors du commun où l'action et l'adrénaline sont prioritaires ! Atmosphères mystérieuses : transportez vos joueurs dans des lieux mystérieux, cachés et étranges. Ils pourront explorer des tunnels, des cryptes, de vieilles ruines oubliées, où les pièges mortels seront cachés derrière chaque porte et chaque couloir. Antagonistes redoutables : confrontez les Chats à un maître du crime rusé et charismatique qui a l'intention de libérer un être maléfique ancien. Il n’apparait jamais et envoie toujours ses redoutables sbires à sa place. Événements surnaturels : faites vos joueurs rencontrer les monstres du bestiaire. Les Chats pourront découvrir d’anciens grimoires magiques qui révéleront l'emplacement d’artefacts légendaires capables de contrôler les éléments et de les sauver.</p>\n<p>chaque coin de rue. Lors d'une course-poursuite effrénée, le Chat agile saute d'un balcon à l'autre, évitant de justesse les balles des ennemis, créant une ambiance électrisante. Moments épiques : imaginez une scène finale époustouflante où les chats font face à l'antagoniste principal dans un duel à couper le souffle et où leur courage et leur ingéniosité les mènent à la victoire. En conclusion, le style de jeu Pulp des Miaulements d'Ulthar est véritablement adapté aux débutants, à l'initiation au jeu de rôle, ainsi qu'aux soirées sans complexes entre amis. Il offre une expérience de jeu dynamique et exaltante, où l'action est omniprésente et les péripéties sont rocamb olesq ues.</p>\n<p>Sensation de danger : les joueurs doivent sentir le danger rôder à</p>\n<h3>Le style serious cat</h3>\n<p>Dans ce style de jeu, les Miaulements d'Ulthar prennent une tournure plus sombre et mystérieuse, mettant en avant l'horreur et l'ambiance oppressante. Les joueurs seront immergés dans un univers où les secrets les plus obscurs se cachent dans l'ombre et où les enquêtes sont plus complexes, dangereuses et intrigantes. Pour optimiser l'enquête, les chats ont tout intérêt à choisir des pouvoirs oniriques, de manipulation mentale et de discrétion mieux adaptés à ce genre d'aventure (cf. les pouvoirs innés).</p>\n<p>Enquêtes complexes : proposez des enquêtes intrigantes et pleines de rebondissements. Les joueurs devront faire preuve de logique et de déduction pour résoudre les mystères qui se présentent à eux.</p>\n<h3>Adaptations des règles :</h3>\n<p>Pensez à intégrer des indices subtils</p>\n<ul><li>Les réussites critiques [0-5] et et des fausses pistes pour pimenter échecs critiques [96-00] sont à 5%. l'enquête.</li><li>Un échec critique est lourd de conséquences. Rencontres énigmatiques :</li><li>La montée d’expérience permet introduisez des personnages d’augmenter l’attribut d’1d6. énigmatiques et inquiétants dans</li><li>Les tests de folie interviennent l'histoire. Les joueurs pourront être contre le mythe et leur peur confrontés à des alliés ambigus, des uniquement. ennemis insaisissables et des créatures surnaturelles qui testeront</li></ul>\n<h3>Conseils et explications :</h3>\n<p>leur courage et leur intelligence. Atmosphère oppressante : créez une ambiance sombre et mystérieuse en utilisant des descriptions détaillées, des musiques d'ambiance et des effets sonores pour immerger les joueurs dans l'horreur de l'enquête. Jouez sur les sensations et les émotions que les Chats perçoivent sans les nommer réellement.</p>\n<p>Révélation progressive : dévoilez les secrets et les horreurs de l'enquête de manière progressive en maintenant le suspense jusqu'à un dénouement époustouflant. Créez des moments de tension et de révélation pour captiver l'attention des joueurs.</p>\n<p>Sensibilité des thèmes : assurez-vous que les thèmes abordés dans le jeu sont adaptés à la sensibilité des joueurs. L'horreur et l'ambiance oppressante peuvent être intenses. Soyez attentifs aux émotions de chacun et ajustez l'intensité du jeu en conséquence. N’hésitez pas à utiliser des outils émotionnels comme la carte X.</p>\n<p>autres jeux se déroulant dans l'univers du mythe de Cthulhu. Les enquêtes félines les entraîneront dans une quête où ils devront faire face aux ténèbres, percer les mystères et révéler les horreurs qui se cachent dans l'obscurité d'Arkham. Une expérience empreinte d'ambiance et de frissons vous attend dans ce style de jeu !</p>\n<p>En résumé, le style de jeu \"Serious Cat\" des Miaulements d'Ulthar est conçu pour les joueurs en quête d'une approche plus proche des</p>\n<h3>Le style « co-investigation »</h3>\n<p>Le mode de jeu \"co-investigation\" vous propose une expérience immersive unique, vous permettant d'explorer une même aventure à travers deux perspectives radicalement différentes. L'essence de ce concept repose sur l'alternance des sessions entre un investigateur humain et un chat d'Ulthar. Àchaque nouvelle session, vous changez de rôle : votre personnage humain devient un PNJ tandis que votre chat d'Ulthar prend le statut de PJ, et vice versa. Le changement de personnage offre aux joueurs la possibilité de vivre la même aventure de manière radicalement différente. Les sessions avec les chats d'Ulthar mettent l'accent sur l'infiltration et la discrétion, tandis que celles avec les humains privilégient les interactions sociales et une approche plus directe. note : Lors des phases de jeu en tant que chat d'Ulthar, les joueurs doivent garder à l'esprit la nature secrète de leurs actions. Leur rôle consiste à subtilement aider et influencer leur alter ego humain, le guidant à travers les obstacles et les mystères rencontrés.</p>\n<p>Pour optimiser l'enquête, les chats ont tout intérêt à choisir des pouvoirs oniriques, de discrétion et de manipulation mentale mieux adaptés à ce genre d'aventure (cf. les pouvoirs innés).</p>\n<p>Dans ce style de jeu, les joueurs ont le privilège de collaborer en secret avec les investigateurs humains, guidant discrètement leurs actions tout en préservant le mystère de leur présence. Les interactions subtiles entre les félins et les</p>\n<h3>Adaptations des règles :</h3>\n<p>humains offrent des moments</p>\n<ul><li>Les réussites critiques [0-5] et les inédits et intrigants qui enrichissent échecs critiques [96-00] sont à 5%. la campagne.</li><li>Un échec critique est lourd de conséquences. N'hésitez pas à intégrer une ou deux</li><li>La montée d’expérience permet sessions dans vos campagnes en d’augmenter l’attribut d’1d6. incarnant les chats à la place de vos</li><li>La création du personnage humain investigateurs ou vice versa. Ce style se fait de la même manière qu'un de jeu nécessite une connaissance chat sans les pouvoirs. préalable du jeu classique du Mythe</li><li>Les points de vie sont à multiplier de Cthulhu et s'adresse par trois. principalement aux joueurs ayant</li><li>Il n'y a pas de vie de Chat. déjà une certaine expérience.</li><li>Les tests de folie, pour les humains, interviennent pour le mythe et la peur.</li></ul>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!RFMAV9zhzzcc4LdE.WCTKopTSgrHBIg33"
+  },
+  {
+   "_id": "NIFRSrhKtbBPRlKl",
+   "name": "La cérémonie sacrée",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>La mission des Chats gardiens d'Ulthar commence généralement dans la Contrée du Rêve lors d'une cérémonie solennelle au cours de laquelle les anciens de la communauté exposent et envoient les Chats en mission. Afin d’installer l’ambiance du jeu et de démarrer la partie, je vous invite à mettre une musique et à suivre ces étapes et les textes ci-dessous.</p>\n<h3>Début de la cérémonie :</h3>\n<p>Dans la Contrée du Rêve, coincée entre la forêt enchantée, la rivière de Minh et la route menant à Kadath, se trouve le village d'Ulthar. À Ulthar les Chats sont rois. Il est formellement interdit de les blesser ou de les tuer !... Alors que la nuit tombe et que les ombres se lèvent, les volets des maisons de la ville d'Ulthar se ferment les uns après les autres. La nuit, les villageois savent que les dangers peuvent surgir de partout et qu'il n'est pas bon de croiser un Chat... Àl'extérieur du village, au croisement de cinq chemins, une statue étrange se dresse. Elle n'a pas de visage identifiable et en fonction des heures de la journée, elle n'a pas toujours la même forme. Des ombres silencieuses, issues des recoins des bois ou des chemins, émergent et se dirigent vers la statue. Dans un silence solennel, les Chats se rassemblent en petits groupes distincts dirigés par de vieux Chats, protecteurs et garants des coutumes. Les plus anciens remarqueraient que chaque groupe représente une race spécifique de félins. Tous les groupes vénèrent la déesse Bast, déesse protectrice des chats, des hommes et des mondes. Soudain, le silence est rompu par le miaulement rauque des Chats qui résonnent à travers toute la vallée. « Miaaaaaaaaouuuuuu ..... »</p>\n<h3>Présentation de l'aventure :</h3>\n<p>C'est alors qu'un vieux chat s'avance. Il se nomme Vif-Épine et commence à vous parler... Note : C’est le moment d’exposer le début de l'aventure, les événements qui font que des Chats vont être envoyés en mission. Avez-vous remarqué le changement d'énergie qui plane sur Arkham ces derniers jours ? » ou « Des informateurs nous ont remonté qu’un chercheur est mort dans d’étranges conditions ...»</p>\n<h3>Introduction des joueurs à l’aventure :</h3>\n<p>Àce stade, Vif-Épine demande : « Ya-t-il parmi vous des chats prêts à prendre part à cette mission ? ». C'est à ce moment que vous invitez vos joueurs à se manifester et à décrire leurs personnages.</p>\n<h3>La bénédiction de Bast :</h3>\n<p>Comme le veut la tradition, avant de partir, les chats se dirigent vers la statue de Bast et lapent l'eau qui coule de la fontaine. Une énergie mystique remplit leur être, leur accordant temporairement des pouvoirs supplémentaires. Note : un pouvoir temporaire est tiré au hasard. Référez-vous au chapitre des pouvoirs temporaires.</p>\n<h3>Le départ :</h3>\n<p>Pour rejoindre le monde réel, les chats ont le pouvoir d'emprunter les ombres les plus sombres, les plus profondes. Sous le pont, juste à côté, l'obscurité est particulièrement profonde. Peu à peu, la terre laisse place aux pavés et le chant des oiseaux est remplacé par les klaxons de voiture. Vous voilà maintenant à Arkham.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!RFMAV9zhzzcc4LdE.NIFRSrhKtbBPRlKl"
+  },
+  {
+   "_id": "E1kd5uI35nzY2fB1",
+   "name": "Ressortez vos vieux scénarios",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>En plus de jouer des Chats dans l'univers de Lovecraft, l'idée originale des Miaulements d’Ulthar était de réutiliser mes anciens scénarios de Casus laissés au placard et pourtant si palpitants. Après quelques tests, nous avons rapidement constaté qu'il était très simple de reprendre l'intrigue et l’univers tout en donnant les rôles principaux à des chats. Les parties étaient à la fois amusantes et rafraîchissantes. La relecture de la nouvelle des Chats d’Ulthar a donné une cohérence dans cette proposition. Les paragraphes suivants détailleront les adaptations nécessaires pour transformer un scénario traditionnel en une aventure féline réaliste et cela suivant différents axes :</p>\n<ul><li>la trame de l’histoire,</li><li>l’introduction des joueurs dans le scénario,</li><li>les interactions avec les PNJ humains,</li><li>les voyages,</li><li>la recherche d’indices, et enfin, la fin du scénario.</li></ul>\n<h3>Trame du scénario</h3>\n<p>La trame de l'histoire doit rester inchangée, tout comme les personnages principaux, les lieux et les événements clés. La grande différence réside dans le fait que vos joueurs incarneront désormais des chats extraordinaires. Ils posséderont des pouvoirs magiques et des capacités incroyables cachées aux humains. Ces pouvoirs, bien utilisés, leur permettront d'interagir avec leur environnement et les personnages non-joueurs. Par exemple, bien qu'ils ne puissent pas dialoguer directement avec les témoins, ils pourront les écouter, se connecter à leur esprit pour découvrir ce qu'ils savent ou cachent.</p>\n<h3>Début du scénario</h3>\n<p>Le véritable changement consiste à préserver l'esprit original du scénario tout en apportant des ajustements pour introduire l'intrigue. Habituellement, les scénarios de l'Appel de Cthulhu commencent par une invitation d'un ancien ami, la demande d'enquête, la mort d'un ami ou la confrontation directe d'un événement étrange à eux.</p>\n<p>Pour transformer un scénario traditionnel pour l'univers des Miaulements d'Ulthar, vous pouvez utiliser plusieurs approches tout en conservant l'accroche originale : Le Conseil des Chats d'Ulthar : la cérémonie, dirigée par le vieux sage Vif Épine, joue un rôle central dans le lancement de l'aventure. Vif Épine informe les Chats d'un événement étrange qui nécessite leur attention. Cela peut être basé sur un rapport alarmant d'un espion Chat, ou un article de journal qui a piqué sa curiosité. Il sollicite alors l'aide des Chats pour enquêter et résoudre ce problème potentiel, soulignant l'importance de leur mission en tant que protecteurs d'Ulthar.</p>\n<p>L'arrivée d'une péripétie : les Chats, en quête de repos dans un manoir ou chez des investigateurs humains, se retrouvent soudainement au cœur d'une nouvelle intrigue. Ils assistent à une rencontre ou à un événement inhabituel qui nécessite une enquête plus approfondie. En tant que gardiens d'Ulthar, ils sont naturellement enclins à explorer tout ce qui pourrait être lié aux mythes ou à l'étrange. Ces approches permettent d'intégrer les Chats dans l'intrigue de manière fluide et naturelle en gardant la proposition initiale.</p>\n<p>uments c o d x u a e r u o La c yables &amp; o r e e r u n e v a (supplément : x Descartes, 1984) études, Jeu s par un certain sont contacté rs u te ga sti ve in que tiale : le tion initia té cambriolée et é Propositio it a n o is a m sa semble que lés. ... Il a vo té é n ie Thomas Kimball. Il a e cl n to rés de son défun fé ré p re liv q n ci les besoin d’aide... appris que a r a h lt ’Ud r e st Eien on : le vieu gard tio c ti u d o r n à la mort de i e e it e v su u ru No a p is d n o ires liés au mythe o im gr trouver ces n e re ci r n u a o p q cin at h C le décide d’envoyer Il ll. a b im K a gl u Do e mauvaises main d e tr n e n e b m to ne livres avant qu’ils d’algues u e u q li e o fi ra</p>\n<p>Yach r 1993) ie v n ja , i e Bs u s (Ca de reçoivent une lettre d’un PJ s Le , e br em pt se tiale : tion initia Propositio insworthy. leurs amis, Charles D. Wvenue depuis la de es tu e qu ce op s ne sais pa « Chère vieille chose, je tions, viens me pa cu oc s te nt ie so e uelles qu dernière fois ... / ... Qille le 12 au matin ... » re pa ap Il e. tti He Le ch rejoindre sur mon ya ion difficile, sont iss m e un s rè ap s, at tion : Les Ch Nouvelle introductio grande demeure e un ns da ée in em ch e près d’un tranquillement allongés it une curieuse ço re oi an m du ire ta proprié de la ville d’Arkham. Le lui-ci l’invité pour Ce th or sw in W D. s le i : Char invitation, d’un vieil am cide de partir avec dé il s, at ch s se er rd ga t faire une croisière. Ne pouvan eux.</p>\n<p>Les Masques de Ny arlathotep (Scénario New York , Jeux Descartes, 19 99) Proposition in initiale : début janvier 19 25, les investigateurs re curieux télégramme : çoivent un « Possède information s concernant expédition Carlyle – stop – cherche groupe investigateur – st op – arrive New York 15 janvier – stop – signé Ja ckson Elias » Nouvelle introduction : Un espion Chat d’Ulthar , qui surveillait un groupe d'investigateurs, est tom bé sur un télégramme qu i a attiré son attention. Le vieil Vif Epine, qui su ivait de loin l'affaire Ca rlyle depuis un momen souhaite que des Chat s gardiens d'Ulthar enqu êtent sur ces étranges informations. Note : les Chats croisero nt les investigateurs tout au long de la campagne.</p>\n<p>Interaction avec des PNJ</p>\n<h4>Exemple :</h4>\n<p>Lorsque les Chats interagissent avec des témoins, ils sont perçus comme de simples chats ordinaires. Cela signifie qu'ils doivent faire preuve de ruse et de subtilité pour obtenir les informations dont ils ont besoin. Bien qu'ils ne puissent pas interroger directement les témoins comme le feraient des humains, ils ont d'autres moyens à leur disposition. Les Chats peuvent écouter attentivement et comprendre les conversations humaines qui se déroulent autour d'eux, captant des indices précieux. De plus, ils peuvent utiliser leurs pouvoirs spéciaux pour influencer les événements de manière subtile et indirecte. Par exemple, un Chat pourrait attirer l'attention d'un homme en utilisant sa télékinésie sur un objet important et lire ses pensées pour en apprendre plus sur cet objet.</p>\n<p>Un Chat d’Ulthar se faufile dans la maison d'un voisin soupçonné de comportements étranges. Utilisant son pouvoir d'influence subtile, le Chat émet des vibrations apaisantes qui le détendent, l’apaisent et le rendent plus enclin à parler à haute voix même s'il est seul.</p>\n<h4>Exemple : Voyages et déplacements</h4>\n<p>Les déplacements ne posent généralement pas de problème. Les chats peuvent se faufiler aisément dans les trains, les camions, les bus, voire les avions. Si un déplacement rapide est nécessaire, rappelez-vous que des pouvoirs spéciaux, comme ceux offerts par la déesse Bast, peuvent permettre de voyager à travers les ombres magiques pour atteindre instantanément une nouvelle destination.</p>\n<p>Bien que je n'aie pas entièrement testé Les Masques de Nyarlathotep avec les Chats, j'imagine qu'il serait assez facile d'intégrer cette dynamique. Entre chaque scénario, les Chats pourraient retourner dans la Contrée du Rêve pour informer Vif Épine de leurs découvertes. Celui-ci accepterait alors de les renvoyer, à travers des ombres profondes, vers les différents continents.</p>\n<p>Recherche d'informations La collecte d'informations par la lecture d’archives ou de documents découverts est totalement possible pour les Chats d’Ulthar. N'oubliez pas que les Chats d’Ulthar comprennent et lisent toutes les langues.</p>\n<p>Exemple : Pour entrer dans la bibliothèque de nuit, les chats peuvent altérer la réalité en faisant apparaître un oiseau qui tournoie au-dessus du gardien et de son chien, détournant ainsi leur attention.</p>\n<p>Les Chats peuvent entrer et se faufile facilement dans la plupart des lieux. Par exemple, ils peuvent utiliser un soupirail laissé ouvert la nuit pour pénétrer discrètement dans la bibliothèque. Puis grâce à leur capacité d'escalade, ils atteignent le livre recherché qui était en haut d'une étagère pratiquement inaccessible. Tout l'intérêt et la difficulté sont d'utiliser d'autres subterfuges ou astuces pour accéder aux différents lieux pour trouver les indices.</p>\n<h3>Clôture du scénario</h3>\n<p>La fin est souvent plus nuancée et astucieuse. Les chats, étant relativement faibles, ils ne peuvent que rarement attaquer de front. Cependant, ils possèdent des capacités remarquables à influencer les situations ou à manipuler la réalité. Ils peuvent facilement influencer les autorités pour obtenir une intervention décisive, protéger des investigateurs qui sont en train d'agir.</p>\n<p>Leurs actions se distinguent généralement par leur finesse et leur subtilité, contrastant avec celles des investigateurs, habituellement lourdement armés.</p>\n<p>Par exemple, les Chats sont sur le point de récupérer un artefact convoité. Ils décident d’utiliser leur pouvoir « Parler aux humains » pour téléphoner anonymement à la police et signaler une activité criminelle. Pendant que les policiers interviennent pour arrêter les suspects, une fusillade éclate. Les chats profitent du chaos pour s'emparer discrètement de l'artefact sans combattre.</p>\n<h3>Idées de scénarios</h3>\n<p>Que ce soit à travers d'anciens</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!RFMAV9zhzzcc4LdE.E1kd5uI35nzY2fB1"
+  },
+  {
+   "_id": "gsUkG0RXKqlZutsi",
+   "name": "scénarios",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>ou campagnes commerciales ou gratuites, l'univers est très vaste, offrant de nombreuses possibilités d'aventures. Voici quelques exemples inventés :</p>\n<h3>La malédiction des Anciens</h3>\n<p>Intrigue : des étudiants de l'université Miskatonic commencent à manifester des pouvoirs étranges. Les Chats doivent enquêter sur une vieille malédiction liée à un manuscrit ancien qu’ils ont découvert.</p>\n<h3>Les harmonies de Dagon</h3>\n<p>Intrigue : une série de décès ébranle la ville d’Arkham. Les Chats doivent comprendre pourquoi une étrange partition de musique attire les habitants d’Arkham vers les falaises pour s’y jeter.</p>\n<h3>La prophétie des étoiles noires</h3>\n<p>Intrigue : une prophétie antique prédit le retour imminent d'Azathoth. Les Chats doivent rassembler des artefacts pour contrecarrer la prophétie, mais une secte dévouée fait tout pour les arrêter.</p>\n<h3>Le masque de la folie</h3>\n<p>Intrigue : des masques anciens exercent une emprise malsaine sur ceux qui les portent, les poussant à des actes de folie. Les investigateurs doivent suivre la piste de ces artefacts maudits.</p>\n<h3>Les voyageurs égarés des rêves</h3>\n<p>Intrigue : des voyageurs arrivent accidentellement dans la Contrée du Rêve. Les Chats doivent les aider à retrouver leur chemin tout en découvrant comment ils se sont retrouvés ici.</p>\n<h3>Le vol des couleurs</h3>\n<p>Intrigue : les couleurs disparaissent de la Contrée du Rêve laissant un monde en noir et blanc. Les personnages doivent voyager à travers des rêves pour récupérer les couleurs volées.</p>\n<h3>Les voyageurs égarés des rêves</h3>\n<p>Intrigue : des voyageurs arrivent accidentellement dans la Contrée du Rêve. Les Chats doivent les aider à retrouver leur chemin tout en découvrant comment ils se sont retrouvés ici.</p>\n<h3>Le vol des couleurs</h3>\n<p>Intrigue : les couleurs disparaissent de la Contrée du Rêve laissant un monde en noir et blanc. Les personnages doivent voyager à travers des rêves pour récupérer les couleurs volées.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!RFMAV9zhzzcc4LdE.gsUkG0RXKqlZutsi"
+  }
+ ],
+ "folder": null,
+ "sort": 100000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!RFMAV9zhzzcc4LdE"
+}

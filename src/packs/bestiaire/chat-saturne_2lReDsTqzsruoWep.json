@@ -1,0 +1,52 @@
+{
+ "_id": "2lReDsTqzsruoWep",
+ "name": "Chat Saturne",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Griffes",
+    "pct": 60,
+    "degats": "1d6+1"
+   },
+   {
+    "nom": "Morsure",
+    "pct": 70,
+    "degats": "1d6"
+   }
+  ],
+  "pouvoir": "Télépathie",
+  "capacite": "",
+  "pv": {
+   "value": 8,
+   "max": 8
+  },
+  "description": "<p>Les Chats de Saturne sont des créatures éthérées aux formes fluides et luminescentes, capables de se déplacer entre les dimensions de Saturne et la Contrée du Rêve. Considérés comme les ennemis les plus redoutables des chats d'Ulthar, ils sont décrits dans les légendes comme d'anciens chats de la déesse Bast, corrompus par de puissants Anciens.</p><blockquote><p>Plusieurs sans-abris affirment avec conviction avoir aperçu un groupe de chats à trois yeux. Bien qu'ils étaient sous l'influence de l'alcool, ils soutiennent fermement que ces chats manipulaient les ombres et traversaient les murs de certains bâtiments. En réaction à ces déclarations, la mairie a demandé aux habitants de ne plus offrir d'alcool aux sans-abris</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Chat Saturne",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!2lReDsTqzsruoWep"
+}

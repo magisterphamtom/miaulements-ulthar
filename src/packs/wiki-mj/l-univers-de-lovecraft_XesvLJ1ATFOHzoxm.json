@@ -1,0 +1,251 @@
+{
+ "_id": "XesvLJ1ATFOHzoxm",
+ "name": "L'univers de Lovecraft",
+ "pages": [
+  {
+   "_id": "0UcyRcCZFTivkUI4",
+   "name": "L'univers de Lovecraft",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>L'univers de Lovecraft</h3>\n<p>Comme mentionné en début d’ouvrage, je ne vais pas entrer dans les détails de l’univers de Lovecraft. Mon objectif est de vous fournir les bases, une vision d’ensemble et un vocabulaire propre à cet univers. Malgré tout, pour les passionnés, si vous souhaitez jouer dans un lieu ou à une époque précise, je vous recommande de consulter ou d'acquérir des ouvrages plus détaillés des autres éditeurs. Les Miaulements d'Ulthar vous offrent avant tout un cadre de jeu axé sur l'expérience féline. Pour les débutants, les chapitres suivants vous aideront à mieux vous familiariser avec l’univers de Lovecraft. Je vous encourage à ne pas chercher</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!XesvLJ1ATFOHzoxm.0UcyRcCZFTivkUI4"
+  },
+  {
+   "_id": "tJSovKaor9N2SQKT",
+   "name": "La mythologie de Cthulhu",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>L'univers de Lovecraft est imprégné d'une mythologie complexe, fascinante et terrifiante. Les héros sont souvent confrontés à des entités cosmiques, à des forces occultes et dangereuses. La mythologie de Cthulhu est centrée autour des Grands Anciens, des divinités d'un autre temps et d'autres espaces. Leurs pouvoirs dépassent toujours l'entendement humain. Ces entités, telles que Cthulhu lui-même, Yog-Sothoth, Azathoth... , résident dans des lieux oubliés ou dans les dimensions étrangères aux hommes. Ils n’attendent qu'un signe pour envahir la Terre. Des écrits interdits et des textes maudits jouent un rôle important dans la mythologie de Cthulhu. Le plus célèbre d'entre eux est le Necronomicon, un livre interdit qui renferme des connaissances obscures et des incantations magiques capables d'invoquer ces Grands Anciens. La quête de ces connaissances interdites est souvent le moteur des protagonistes de l’univers lovecraftien, mais ils découvrent rapidement que la vérité peut être aussi effrayante que les horreurs qu'elle révèle. Les rituels et les cultes dédiés aux divinités de Cthulhu sont également des éléments importants de la mythologie. Des cultistes vénèrent ces entités, invoquant leur pouvoir et se livrant à des pratiques sombres dans l'espoir de gagner une faveur ou d'échapper à leur courroux dévastateur. C'est dans cet univers dangereux que nos fidèles Chats évolueront pour protéger l'équilibre fragile entre les mondes. Leurs aventures empreintes de mystère et de danger les conduiront vers des machinations diaboliques et des rencontres effrayantes. Que leur courage les guide à travers ces épreuves, car leurs ennemis seront redoutables.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!XesvLJ1ATFOHzoxm.tJSovKaor9N2SQKT"
+  },
+  {
+   "_id": "iHYvUox4ywSvqEg6",
+   "name": "Le monde réel",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Le livre décrira principalement des aventures se déroulant à Arkham ou ses alentours. Cependant, n'hésitez pas à concevoir des aventures dans des lieux exotiques et énigmatiques à travers tous les continents. Vos Chats intrépides pourront se lancer dans des quêtes épiques aux quatre coins du monde. Chaque recoin de la planète peut abriter des secrets obscurs et des rencontres terrifiantes.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!XesvLJ1ATFOHzoxm.iHYvUox4ywSvqEg6"
+  },
+  {
+   "_id": "H5RImg6Kp3ZLevc9",
+   "name": "Les mystères de",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>la NouvelleAngleterre Dans les sinistres recoins de la Nouvelle-Angleterre, aux alentours d'Arkham, les Chats, gardiens d'Ulthar, ne sont pas à l'abri des dangers. La région de la Nouvelle- Angleterre est un terreau fertile pour les mystères et les légendes liés à l'univers de Lovecraft. Les recoins de cette région sont remplis d'histoires et de folklore où les vérités cachées peuvent être dangereuses. Les villages pittoresques et isolés disséminés à travers la Nouvelle- Angleterre abritent souvent des secrets profondément enfouis. Des légendes locales parlent de cultes anciens, de créatures mythiques et de phénomènes surnaturels qui ont façonné les lieux. Des endroits tels qu'Innsmouth, Kingsport et Dunwich ont leur part de récits terrifiants, liés à la présence insidieuse des divinités cosmiques. Les habitants de la Nouvelle-Angleterre sont souvent les gardiens de traditions séculaires et de secrets ancestraux. Certains clans familiaux portent en eux des connaissances interdites depuis des générations et entretiennent des rituels et des pratiques mystiques qui les relient à des forces obscures. La nature sauvage, les forêts denses, les montagnes escarpées et les côtes accidentées sont des environnements hostiles aux Chats. Au détour d'un sentier, une rencontre avec un animal peut rapidement se transformer en des affrontements sauvages et dangereux. Seuls les Chats les plus agiles et les plus rusés survivront à ces rencontres dangereuses.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!XesvLJ1ATFOHzoxm.H5RImg6Kp3ZLevc9"
+  },
+  {
+   "_id": "kwVMBLJqerJr5TEP",
+   "name": "Arkham la mystérieuse",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>La ville</h3>\n<p>La ville d'Arkham est un véritable bastion de l'horreur dans l'univers de Lovecraft. Nichée dans l'État du Massachusetts, dans la région de la Nouvelle-Angleterre, Arkham est un lieu emblématique où le réel et l'irréel se côtoient, créant une atmosphère oppressante et sinistre. Avec une population d'environ 30 habitants, cette ville énigmatique dévoile un charme captivant et une histoire d'une richesse exceptionnelle. En vous promenant dans ses ruelles pittoresques, vous serez transportés dans un passé révolu. Le centre-ville historique d'Arkham vous accueille avec ses rues pavées, où l'architecture victorienne se marie harmonieusement avec des éléments d'influence gothique. Les bâtiments majestueux, témoins d'un glorieux héritage, vous fascineront par leurs détails sculptés, révélant les vestiges d'une époque prospère et florissante. Mais lorsque la nuit s'étend sur Arkham, l'atmosphère se charge d'une tension oppressante, comme si le voile entre les mondes s'amincissait ici plus qu'ailleurs. Des phénomènes étranges et des événements inexpliqués viennent troubler la quiétude apparente. Les rues serpentent à travers des quartiers à l'architecture à la fois magnifique et inquiétante. Les maisons victoriennes, autrefois fières et élégantes, dissimulent désormais des secrets obscurs derrière leurs volets clos. Des murmures énigmatiques et des bruissements étranges s'échappent des recoins sombres, éveillant une curiosité mêlée d'appréhension.</p>\n<h3>Les lieux importants L'université de Miskatonic</h3>\n<p>Ce haut lieu du savoir renferme des bibliothèques immenses où des textes anciens et ésotériques sont conservés. Les étudiants et les chercheurs s'y plongent dans l'étude des mystères interdits, risquant leur santé mentale pour percer les secrets des univers impies. Professeur Robert Harrington, chercheur en folklore Expert en folklore et mythes anciens, le professeur Harrington est reconnu pour ses vastes connaissances sur les légendes occultes. Son bureau regorge de parchemins et d'artefacts énigmatiques. Il est toujours ouvert à conseiller des étudiants courageux qui oseront s’aventurer dans des domaines inexplorés.</p>\n<p>Dr. Amelia Blackwood, archiviste réservée Travaillant dans l'ombre des rayonnages de la bibliothèque, le Dr. Blackwood est une source de savoir ancien. Ses yeux perçants observent chaque étudiant qui franchit les portes et elle peut avoir des informations cruciales pour ceux qui savent poser les bonnes questions.</p>\n<p>Mimi, vielle chatte Mimi est une chatte grise aux yeux perçants, très sourde et bien âgée. Elle vit dans une l'université, où elle a passé ses journées à observer les étudiants.</p>\n<h3>L’asile Elizabeth Arkham</h3>\n<p>L’asile est un établissement sinistre qui a vu défiler d'innombrables âmes tourmentées. Ses murs décrépits et ses couloirs sombres racontent des histoires de folie et d'horreur indicible. L'asile est le symbole des horreurs cachées d'Arkham, où le voile entre la réalité et l'insanité se déchire.</p>\n<p>Docteur Victor Thornfield, psychiatre énigmatique Le Docteur Thornfield est le directeur de l'asile d'Arkham. Àl'apparence calme et posée, il cache une obsession secrète pour les mystères de l'esprit humain et les sombres vérités qu'il peut révéler. Ses méthodes de traitement inhabituelles peuvent provoquer la méfiance, mais c’est pourtant un expert dans la compréhension des mystères de l'esprit !</p>\n<p>Emily Marsh, patiente troublée Emily est une patiente énigmatique de l'asile, tourmentée par des visions et des cauchemars. Son regard perçant semble voir au-delà des réalités et ses paroles sont sources d'une sagesse inattendue. Est-elle victime de sa propre folie ou simule-t-elle simplement ?</p>\n<h3>Le manoir de la famille Whiston</h3>\n<p>Dressé sur une colline, à la lisière d'Arkham, ce manoir vétuste s'élève telle une sinistre sentinelle. Il est célèbre pour abriter une lignée maudite, perdue depuis longtemps dans la déchéance. Les brumes environnantes cachent les sombres secrets de cette famille qui jouent avec des forces surnaturelles. La rumeur court et suscite des frissons chez les voisins. Tout le monde sait qu’il se passe des choses terribles derrière les murs impénétrables du manoir. Lady Eleanora Whiston, matriarche mystérieuse Lady Eleanora est la matriarche de la famille Whiston. Son visage est constamment voilé et son sourire cache des intentions insondables. Elle règne d'une main de fer sur le manoir, orchestrant des rituels étranges et des cérémonies ésotériques. Les rumeurs circulent à propos de sa longévité anormale.</p>\n<p>Lord Nathaniel Whiston, héritier tumultueux Lord Nathaniel est l'héritier de la famille Whiston mais sa réputation fait écho à une décadence sans nom. Il erre souvent dans les couloirs du manoir, murmurant des mots incompréhensibles. Il tient des conversations auprès de personnes inexistantes.</p>\n<p>Duchesse, la seconde matriache autoritaire Duchesse est une chatte au pelage soyeux et aux yeux perçants, qui règne d'une main de fer sur le manoir. Elle n'aime pas les visiteurs et ceux qui entre sur son territoire. Elle dirige avec fermeté les trois Yorkshire du manoir, leur assignant des tâches et s'assurant qu'ils obéissent à ses ordres.</p>\n<h3>La place de la Chèvre Noire</h3>\n<p>C’est une petite place en centre-ville d'Arkham où trône une statue énigmatique représentant une chèvre à l'apparence démoniaque. Les légendes locales parlent de cultes occultes et de rituels sinistres qui s’y déroulaient certains soirs de pleine lune il y a une centaine d'années. Charlie, chien errant Charlie est un petit chien errant au pelage ébouriffé. Il passe son temps dans les rues à la recherche de nourriture, d'affection et de nouveaux amis.</p>\n<p>Rex, chien fou et dangereux Rex est un grand chien au pelage ébouriffé, dont le comportement imprévisible inspire la crainte. Ses aboiements frénétiques et ses mouvements erratiques font de lui un adversaire redoutable.</p>\n<h3>La mairie d'Arkham</h3>\n<p>La mairie trône au cœur de la ville. Elle se dresse fièrement, tel un sanctuaire imposant de pouvoir et de mystère. Son architecture néoclassique inspire une aura dérangeante. Àl’intérieur, des portraits de maires, plus anciens les uns que les autres, décorent les longs couloirs. Horatio Blackwood, maire d’Arkham M. Blackwood est l'homme à la tête de la mairie, un individu charismatique et éloquent qui semble être le pilier de la ville. Il incarne la stabilité et l'ordre de la ville. Il est prêt à tout pour préserver l'apparence de normalité auprès de ses concitoyens, même si cela implique des compromis douteux.</p>\n<p>Fiona Hawthorne, archiviste passionné Mme. Fiona Hawthorne est l'archiviste de la mairie, une femme curieuse et avide de connaissances. Passionnée par l'histoire de la ville, elle est considérée comme excentrique par les autres employés.</p>\n<p>Les plumes, groupe de pigeons voleurs Ce groupe de pigeons aux plumes grises et blanches est discret et observateur. Ils se perchent sur les toits pour surveiller le quartier. Ils cherchent à volerl es petits objets laissés sans surveillance.</p>\n<h3>Le journal d’Arkham : la voix d’Arkham</h3>\n<p>\"La Voix d'Arkham\" est le journal incontournable de la ville, informant les citoyens de l'actualité locale, des événements à venir et des développements communautaires. Ses pages reflètent le quotidien d'Arkham tout en présentant parfois quelques faits divers mystérieux et s urnaturels. Eleanor Sinclair, rédactrice en chef Une femme énergique et déterminée, Eleanor est la force motrice derrière \"La Voix d'Arkham\". Elle possède un flair journalistique inégalé et un esprit vif qui lui permettent de dénicher les histoires les plus captivantes pour son journal.</p>\n<p>Scooty, journaliste intrépide Jeune et courageux, Scooty est toujours à la recherche de la vérité, même si cela signifie plonger dans les recoins obscurs d'Arkham. Son zèle l'entraîne fréquemment dans des situations dangereuses pour lui ou les autres.</p>\n<p>Squeaky, souris chapardeuse Squeaky est une petite souris grise qui vit dans les recoins du journal d'Arkham. Bien qu'elle soit négligée, elle est incroyablement observatrice et a un malin plaisir à voler les notes des journalistes.</p>\n<h3>Le théâtre d'Arkham : Théâtre d’Etheria</h3>\n<p>Niché dans les ruelles sombres de la ville, ce lieu centenaire est sinistre, lugubre et inquiétant. Ses murs et ses rideaux ternis racontent des histoires de spectacles autrefois grandioses, mais aujourd'hui oubliés. Des représentations étranges ou décalées s’y déroulent à présent. Les acteurs semblent parfois possédés par des forces mystérieuses qui transportent le public dans des cauchemars éveillés. Nombreux sont ceux qui fuient le théâtre avec horreur. Isabella Thorne, directrice énigmatique Mme Thorne est une directrice compétente et silencieuse qui travaille en coulisse pour faire en sorte que chaque représentation se déroule sans accroc. Elle est déterminée à offrir des productions artistiques uniques qui défient les conventions.</p>\n<p>Théodore Harrington, dramaturge tourmenté Dramaturge talentueux, mais hanté par des démons intérieurs, Théodore est responsable de l'écriture de nombreuses pièces de théâtre. Son esprit torturé le pousse à explorer des thèmes sombres et mystérieux.</p>\n<h3>Le musée d’Arkham - Musée Miskatonic</h3>\n<p>Le musée d'Arkham s'élève au nord de la ville. Ses imposants escaliers conduisent à un hall central desservant les différents étages et galeries. Àl'intérieur, des allées sombres abritent une collection variée d'objets anciens, tandis qu'en sous-sol, plusieurs pièces servent d'entrepôts pour des objets les plus étranges les uns que les autres. Étudiants et visiteurs parcourent régulièrement les différentes galeries, que ce soit pour des recherches académiques ou par simple plaisir. Dr. Eliza Whitmore, conservatrice érudite Dr. Whitmore est une conservatrice passionnée par l'histoire et l'archéologie. Son expertise dans l'identification et la préservation d'objets anciens en fait une figure respectée au musée. Elle est connue pour sa détermination à démystifier les artefacts énigmatiques et à découvrir les vérités cachées derrière les légendes locales.</p>\n<p>Lucas Chambers, archiviste obsessionnel Lucas est l'archiviste du musée, dévoué à la tâche de cataloguer et d'organiser les vastes collections du musée. Sa personnalité obsessionnelle le pousse à rechercher des indices et des liens entre les objets. Son sens aigu de l'observation le conduit à remarquer des détails que d'autres négligents.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!XesvLJ1ATFOHzoxm.kwVMBLJqerJr5TEP"
+  },
+  {
+   "_id": "DM9qU8RWuj44PqI3",
+   "name": "La Contrée du Rêve",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Un royaume</h3>\n<p>La Contrée du Rêve est un lieu où les rêveurs côtoient à la fois de vastes paysages enchanteresses et des terres cauchemardesques. Les étendues oniriques se déploient à l'infini. Ils sont constitués de royaumes, de cités, de forêts et de tous autres lieux étranges et inexplorés. Chaque recoin de ce monde est empreint d'une ambiance unique, allant de l'éblouissement magique à l'horreur terrifiante. Dans ce royaume étrange coexistent divers peuples et créatures, certains amicaux et accueillants, d'autres sinistres et hostiles. Ce royaume ressemble à un monde médiéval dépourvu de technologie moderne. De hautes tours se dressent fièrement au-dessus des ruelles pavées des cités fortifiées. C'est un monde aux règles où les lois de la physique et du temps sont changeantes. Les paysages y sont à la fois familiers et étranges. Les océans y sont démesurés et des montagnes abruptes se perdent dans les cieux lunaires... Au milieu de ce monde étrange, les Grands Anciens, entités anciennes et puissantes, cherchent à étendre leur influence et à s'emparer de ses secrets.</p>\n<h3>Les portes vers la Contrée du Rêve</h3>\n<p>Selon Lovecraft, il existe plusieurs moyens de pénétrer dans la Contrée du Rêve. Voici les principales portes utilisées par les rêveurs pour accéder à ce royaume onirique : Le sommeil profond : le moyen le plus courant et naturel pour accéder à la Contrée du Rêve est de plonger dans un sommeil profond et de laisser son esprit se libérer des contraintes du monde physique. Durant son sommeil, l'esprit du rêveur accède alors à la caverne aux flammes*. L'usage de substances : des substances spéciales, des drogues ou des herbes hallucinogènes peuvent faciliter l'accès à la Contrée du Rêve. Ces substances permettent au rêveur de se plonger plus rapidement vers la caverne aux flammes*. La projection astrale : certains individus pratiquent la projection astrale, une technique ésotérique qui consiste à détacher son esprit de son corps physique pour explorer d'autres plans de réalité, comme la Contrée du Rêve. Les portails et les portes secrètes : au sein de la Contrée du Rêve elle-même, il existe des portails, des portes secrètes et des lieux sacrés qui permettent aux voyageurs de passer d'un endroit à un autre et de voyager entre les mondes. Le pouvoir des Grands Anciens : dans certaines circonstances exceptionnelles, les Grands Anciens, des entités divines et cosmiques, peuvent influencer les rêves des mortels et les emmener dans la Contrée du Rêve pour des desseins mystérieux.</p>\n<h3>Note:</h3>\n<p>Dans l'univers des Miaulements d'Ulthar, les chats possèdent une méthode singulière pour passer du monde du Rêve au monde réel. Lors du mystérieux Rituel de la Fontaine, les gardiens s'abreuvent de l'eau bénie par la puissante déesse Bast. En fin de cérémonie, la coutume veut qu'ils s'enfoncent courageusement dans les ombres plus noires qui se profilent devant eux, transcendant les frontières des mondes pour émerger dans la réalité du monde réel.</p>\n<p>La caverne aux flammes*</p>\n<p>Note:</p>\n<p>prunter un Pour y parvenir, le rêveur doit em marches, chemin particulier, constitué de 70 frontières dans un état de sommeil léger où les lent peu à entre la réalité et le rêve se brouil dans une peu. Le rêveur débouchera alors s gemmes immense caverne souterraine où de naturelle. scintillantes émettent une lueur sur r éternel, Son centre est illuminé par un brasie ante et projetant une lueur rougeoy man-Thah, inquiétante. Les prêtres Nasht et Ka Contrée du gardiens d'un des passages pour la à leur don Rêve, jouent un rôle crucial. Grâce révéler les de lecture des esprits, ils peuvent urs de la souvenirs les plus enfouis des visite poursuivre caverne et décider qui peut ou non ne, il devra le voyage. Si le rêveur est jugé dig mentaires alors parcourir 900 marches supplé Forêt aux qui le conduiront à la mystérieuse Murmures de la Contrée du Rêve.</p>\n<p>l est important de noter que la Contrée du Rêve est un lieu éthéré et complexe où les lois de la réalité sont souvent altérées. Les moyens d'y accéder peuvent varier selon les histoires et les interprétations de l'univers lovecraftien.</p>\n<h3>Les Habitants de la Contrée du Rêve Les rêveurs</h3>\n<p>Dans la Contrée du Rêve de Lovecraft, aux côtés de créatures et d'habitants mystérieux, résident des humains aux vies ordinaires. Certains mènent des commerces colorés, proposant des marchandises exotiques provenant de rêves lointains. D’autres créent des objets envoûtants, captivant les esprits pendant que des chercheurs et des érudits explorent les mystères de ce royaume étrange, partageant théories et connaissances. Enfin, d’autres aventuriers s’éloignent des villages pour explorer les contrées lointaines et les paysages étranges, bravant tous les dangers pour découvrir des secrets oubliés.</p>\n<h3>Les créatures des Rêves</h3>\n<p>Le mythe de Lovecraft se distingue par la présence d'êtres cosmiques terrifiants, véritables incarnations de l'horreur indicible et de l'incompréhensible. Chaque créature dépasse toute compréhension pour un humain sain d’esprit. Les joueurs félins feront face à un assortiment d'êtres maléfiques et dangereux qui hantent les contrées oniriques. Voici une liste de créatures du bestiaire de Lovecraft :</p>\n<p>Abhoth Entité informe qui dégage une odeur de mort et putréfaction.</p>\n<p>Les ennemis les plus redoutables des chats d'Ulthar.</p>\n<p>Vie: 60 PV Att: 60% / 2d8</p>\n<p>Vie: 8 PV Att: 70% / 1d6</p>\n<h3>Etre antique</h3>\n<p>Chat saturne</p>\n<h3>Ghatanothoa</h3>\n<p>Ancien aux connaissances ancestrales.</p>\n<p>Avec une force colossale, il garde les nécropoles.</p>\n<p>Vie: 90 PV Att: 70% / 10d6</p>\n<p>Vie: 80 PV Att: 70% / 3d8</p>\n<p>GnophKeh</p>\n<p>Goule</p>\n<p>Vit exclusiment dans les environnements glacés et foids.</p>\n<p>Créature morte et assoifée de chair en décomposition.</p>\n<p>Vie: 50 PV Att: 70% / 2d6+3</p>\n<p>Vie: 13 PV Att: 65% / 1d8</p>\n<h3>Loup garou</h3>\n<h3>Migo</h3>\n<p>Sort durant les phases de pleine lune.</p>\n<p>créatures extraterrestres insectoïdes ailés</p>\n<p>Vie: 35 PV Att: 75% / 2d8+2</p>\n<p>Vie: 8 PV Att: 70% / 1d6</p>\n<h3>Profond</h3>\n<h3>Rhan-Tegoth</h3>\n<p>Créature aquatique humanoîde. Il vénèrent Dagon.</p>\n<p>Se nourrit exclusivement de l'énergie de ses victimes.</p>\n<p>Vie: 35 PV Att: 70% / 2d10</p>\n<p>Vie: 70 PV Att: 80% / 2d10</p>\n<p>Chien Dimensionnel</p>\n<h3>Zoog</h3>\n<p>Chasseur, il traverse les dimensions à la recherche d'une proie.</p>\n<p>Créatures vivants dans la contrée du rêve.</p>\n<p>Vie: 60 PV Att: 75% / 2d6+3</p>\n<p>Vie: 5 PV Att: 30% / 1d4</p>\n<p>Ces êtres maléfiques reflètent les cauchemars les plus profonds et les angoisses les plus enfouies, rendant chaque pas dans ce royaume onirique imprévisible et dangereux. Pour survivre dans ce monde obscur, les joueurs devront user de leur intelligence féline, de leur agilité et de leur capacité à surmonter leurs propres peurs pour affronter ces créatures sinistres et préserver l'équilibre entre les mondes.</p>\n<h3>Les lieux mythiques de la Contrée du Rêve</h3>\n<p>La Contrée du Rêve regorge de nombreux lieux légendaires qui plongeront les Chats dans des aventures palpitantes. Ces endroits mystiques marieront le merveilleux à l'obscur et l'émerveillement à la peur.</p>\n<h3>La cité de Celephaïs</h3>\n<p>Aussi appelée la cité du Rêve éternel, elle est située dans la vallée du fleuve Oukranos. Le rêveur Kuranes est à l'origine de la création de cette cité magnifique et paisible. Celephaïs est réputée pour ses splendides palais en marbre, ses jardins luxuriants et ses joyaux étincelants. Les voyageurs intrépides et les rêveurs chanceux peuvent se rendre dans cette cité enchanteresse où ils découvriront un havre de paix et de beauté, loin des horreurs cosmiques.</p>\n<h3>Le plateau de Leng</h3>\n<p>Dans une région éloignée et inaccessible de la Contrée du Rêve, le plateau de Leng est un lieu énigmatique et mystérieux. Les rares témoignages des voyageurs qui ont prétendu l'avoir vu décrivent un paysage étrange et désolé, perché sur un plateau isolé et entouré de montagnes escarpées. Là-bas y habitent des créatures énigmatiques et d'une grande sagesse. L'architecture du plateau de Leng est tout aussi singulière avec des constructions énigmatiques. Les édifices semblent sculptés à même la pierre du plateau, évoquant une harmonie entre la nature et l'architecture. Ils témoignent d'une civilisation ancienne et avancée.</p>\n<h3>La cité d'Inquanok</h3>\n<p>Inquanok est une cité mythique réputée pour sa mystérieuse configuration, perdue dans les contrées les plus reculées du monde. Les rares témoignages des voyageurs évoquent une cité labyrinthique aux édifices anciens, riche d'une civilisation avancée et disparue depuis longtemps. Les constructions semblent être taillées dans une pierre sombre et inconnue, ornées de sculptures aux symboles ésotériques et effrayants. La cité d'Inquanok est entourée de mythes tourmentés, alimentant l'imagination des chercheurs de vérité et des aventuriers intrépides. Le recueil, \"Les légendes perdues d'Inquanok\", présent à la bibliotheque d'Ulthar, rassemble les récits anciens de voyageurs ayant osé explorer les ruines ensorcelées de la cité.</p>\n<h3>La mer Onirique</h3>\n<p>La mer Onirique est un océan sans fin qui entoure la Contrée du Rêve, une étendue onirique d'une beauté et d'une étrangeté insaisissable. Les eaux de cette mer sont d'un bleu éthéré, illuminées par des reflets chatoyants provenant des astres des cieux. Les rivages de la Mer Onirique sont bordés de plages de sable argenté, de falaises abruptes et de récifs coralliens scintillants. Cependant, ses profondeurs insondables fascinent et terrifient à la fois. Elles abritent des créatures marines fantastiques, aussi énigmatiques que dangereuses. Dans ces eaux inconnues, des créatures oniriques, aux formes changeantes et aux mouvements hypnotiques errent sans bruit. Des sirènes aux chants envoûtants, des Léviathans immenses et d'autres êtres marins évoluent dans ces abîmes inexplorés, attirant les voyageurs insouciants dans leurs illusions trompeuses. Naviguer sur la Mer Onirique est une aventure audacieuse et périlleuse, car les courants et les marées obéissent à des lois mystérieuses, défiant toute logique terrestre. Les voyageurs doivent être prêts à affronter les tourments émotionnels de la mer. Les eaux semblent d’elles-mêmes sonder les esprits des êtres qui osent s'y aventurer.</p>\n<h3>Le port de Dylath-Leen</h3>\n<p>Dylath-Leen est une ville portuaire aux multiples facettes qui sert de carrefour pour les voyageurs du Rêve venus des quatre coins de la Contrée du Rêve. Elle se dresse telle une sentinelle mystérieuse au bord des océans inconnus. Ce port est un véritable carrefour cosmopolite, attirant des voyageurs, des aventuriers et des marchands. Ses rues étroites et tortueuses serpentent à travers un dédale de bâtiments anciens où se mêlent des structures variées témoignant des diverses cultures passées. Le port de Dylath-Leen est le centre névralgique de l'activité, animé par le va-et-vient incessant des navires venus de contrées lointaines. Les quais sont encombrés de marchandises exotiques, d'épices envoûtantes, de bijoux étincelants et d'objets énigmatiques provenant des horizons lointains.</p>\n<h3>La montagne de Ngranek</h3>\n<p>C’est une majestueuse et sinistre montagne située au centre de la contrée. Son sommet se perd dans les nuages, donnant l'impression d'une présence surnaturelle et inquiétante. La montagne de Ngranek est entourée de légendes obscures et de récits terrifiants. On dit que des cultes impies et des rituels sombres ont été pratiqués en ses flancs escarpés, afin d’invoquer des puissances cosmiques. Les habitants des régions avoisinantes évitent de s'approcher de cette montagne, la considérant comme maudite et habitée par des forces démoniaques. Les pentes de Ngranek sont inhospitalières et arides, parsemées de gorges profondes et de cavernes mystérieuses. Les voyageurs intrépides qui osent s'aventurer dans ces terres hostiles risquent de se perdre dans les méandres d'un paysage étrange et terrifiant.</p>\n<p>Au sommet de la montagne de Ngranek se trouve un sanctuaire mystérieux dont l'accès est réservé à ceux qui osent affronter les épreuves et les dangers du voyage.</p>\n<h3>La cité des Portes</h3>\n<p>Il est dit que la cité des Portes est un endroit légendaire dont la localisation exacte reste inconnue. Cette cité ancienne est souvent évoquée dans les textes ésotériques et les récits mystérieux, nourrissant l'imagination des chercheurs de vérité. Des cultes obscurs opèrent dans l'ombre, cherchant à percer ses mystères et ses portails interdits. Elle sert de carrefour entre les différents mondes et leurs rêves. La cité est le point de convergence de multiples dimensions et de réalités. C’est un lieu où les frontières entre les mondes s'estompent. Les portes de la cité sont interdimensionnelles, de véritables passages vers des royaumes connus et inconnus.</p>\n<h3>La forêt des songes éternels</h3>\n<p>C’est une forêt dense et ténébreuse où les arbres semblent chuchoter des mystères aux visiteurs nocturnes. Parmi les ombres, un petit insecte appelé \"lumignat\" suit constamment les voyageurs. Sa lueur douce et scintillante les guide à travers l'obscurité. Cependant, si les rêveurs se laissent captiver par ces murmures insidieux, le risque est alors de se perdre à jamais au sein de ce dédale obscur.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!XesvLJ1ATFOHzoxm.DM9qU8RWuj44PqI3"
+  },
+  {
+   "_id": "bP3kLOzba6mksS94",
+   "name": "Ulthar, la cité des Chats",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Au cœur de la Contrée du Rêve, se dresse une cité légendaire : Ulthar. Elle est renommée pour être le domaine sacré des chats, gardiens mystérieux de ce royaume. Les récits ancestraux avertissent que ceux qui maltraitent ces félins protecteurs subiront des conséquences terribles. Aujourd'hui, il est formellement interdit de porter atteinte à ces créatures vénérées. Àpremière vue, Ulthar semble être une cité paisible, aux ruelles pavées et aux toits pointus, exhalant une atmosphère de douceur. Dans ses rues règne un équilibre délicat entre chaleur humaine et bienveillance. Les habitants d'Ulthar, qu'ils soient humains ou félins, accueillent avec sympathie les rêveurs respectueux des gardiens à quatre pattes. Àla sortie de la ville, une statue étrange trône. La légende raconte qu’elle fut offerte par la déesse Bast, afin de conférer des pouvoirs surnaturels aux chats et marquer ainsi sa présence sacrée sur toute la ville. De nombreux édifices et icônes vénèrent ces gardiens divins, rappelant leur rôle essentiel dans la préservation de l'équilibre onirique. Cependant, lorsque la nuit s'installe, la cité se métamorphose en un paysage sombre et étrange. Une atmosphère inquiétante s'installe et les habitants se réfugient chez eux, craignant les miaulements qui résonnent dans toute la vallée. Les rues se vident et l'ambiance devient teintée d'appréhension... Un contraste saisissant pour des rêveurs inconscients.</p>\n<h3>Bienvenue à Ulthar</h3>\n<p>Àvotre arrivée, dans les rues pavées d'Ulthar, vous serez accueillis par une scène captivante : des chats majestueux se prélassent sous le soleil tandis que d'autres s'amusent avec les enfants du coin. Ici, les félins sont traités avec un respect particulier car une légende ancestrale prétend qu'ils possèdent des pouvoirs et peuvent se remémorer de leurs vies passées. Le jour, Ulthar est une paisible petite bourgade, abritant une centaine de maisons et tire sa subsistance du commerce avec les contrées avoisinantes. Un grand marché, trois fois par semaine, sur la place centrale, véritable cœur battant de la cité, attire des marchands de toutes sortes. La ville est gouvernée par une mairesse, élue tous les vingt ans, Mme Sélène, connue pour sa vigilance envers ses concitoyens et son attachement aux lois locales. Les résidents vivent au gré des saisons, appréciant des hivers doux et des étés tempérés. Quelques saltimbanques, sous l'œil émerveillé des enfants, y narrent des récits d'aventuriers sillonnant la Contrée du Rêve. Les incidents sont rares dans cette communauté où l'ordre règne. Le shérif Morrigan assisté de deux adjoints sont fréquemment présents à l’auberge du Chat Heureux, située sur la place du marché. Voici quelques lieux importants à Ulthar:</p>\n<h3>Le Temple de Bast</h3>\n<p>Dans le cœur de la ville, un temple dédié à la déesse Bast protectrice des chats, se dresse avec fierté. Les colonnes majestueuses de ce temple arborent des hiéroglyphes anciens, un hommage à la lointaine Égypte et à la présence de Bast aux côtés des pharaons. C’est un lieu sacré non affilié à une religion formelle. Les villageois s’y rassemblent pour exprimer leur profond respect envers la déesse. Les félins profitent de cet espace pour se reposer ou se nourrir des offrandes.</p>\n<h3>La Place du Chat noir</h3>\n<p>Cette place vibrante est le point central de rassemblement pour les résidents d'Ulthar, un véritable carrefour de l'animation. Ici, vous découvrirez une multitude de commerçants, d'artistes de rue, de musiciens et même d'habitués à quatre pattes, les chats, se promenant en toute liberté. Cette place incarne l'épicentre de la vie dans la ville, lieu de toutes les festivités et les événements marquants. Tout autour de cette place animée, vous trouverez une profusion d'auberges, de tavernes et de boutiques qui accueillent chaleureusement les voyageurs à toute heure du jour. Cependant, à la tombée de la nuit, seules les auberges demeurent ouvertes, offrant un lieu de sécurité dans cette ville.</p>\n<h3>L’auberge du Pain blanc</h3>\n<p>L'auberge du Pain blanc est sans conteste l'établissement le plus réputé d'Ulthar et de ses alentours. Son propriétaire, Caelius Marche-Rêves, porte un amour prononcé pour les récits de voyages extraordinaires dans la Contrée du Rêve. En gage de gratitude envers ceux qui partagent ces histoires, il leur offre gracieusement un repas. Le soir venu, et bien souvent jusqu'à des heures tardives de la nuit, cette auberge devient un lieu de rassemblement pour les curieux qui viennent y savourer une boisson tout en écoutant ces contes incroyables.</p>\n<h3>La taverne du Chat Éveillé</h3>\n<p>Ici, un lieu véritablement étrange et extraordinaire s'offre à vous ! La taverne, plongée dans une semi- obscurité, est enfumée, ce qui rend difficile la distinction des personnes présentes. On y propose une variété de boissons et de lait parfumés, alcoolisés ou non. Une petite porte discrète permet aux chats d'aller et venir à leur guise. L'atmosphère chargée de l'endroit peut rapidement donner le vertige aux visiteurs et c'est l'un des rares lieux où les chats conversent librement avec les humains. Ils partagent des récits énigmatiques du monde réel et de la Contrée du Rêve. En sortant, persiste toujours un doute sur la nature de notre interlocuteur : était-ce un chat ou bien un humain ?</p>\n<h3>La librairie Caligo</h3>\n<p>Le propriétaire, un homme nommé Caligo, est un érudit passionné par les mystères du monde, qu'ils proviennent du monde réel ou de la Contrée du Rêve. Il connaît chaque recoin de sa librairie, chaque ouvrage. Il est toujours prêt à discuter avec les visiteurs curieux. La librairie est un lieu de rendez-vous pour les chercheurs de vérité et les rêveurs curieux de mystères.</p>\n<h3>La fontaine de Bast</h3>\n<p>Lorsque vous quittez le village, en traversant un vieux pont de pierre et à l’intersection de plusieurs chemins, une étrange statue surgit devant vous. En fonction des heures du jour, sa forme semble changer et son visage fixe différentes directions. Les locaux racontent qu'elle a été offerte par la déesse Bast elle-même. Les chats paraissent particulièrement attirés par elle. Àtoute heure du jour, quelques-uns d'entre eux se trouvent allongés à ses pieds, contemplant son visage pendant des heures. La nuit, les villageois prétendent que les chats se rassemblent là pour des discussions mystérieuses. Cependant, personne n'ose les déranger, craignant des conséquences sombres en cas d'interférence.</p>\n<h3>Le pont de l’aube</h3>\n<p>Au-delà des limites d'Ulthar, près de la fontaine de Bast, existe un vieux pont de pierre qui enjambe la mystérieuse rivière de Skai Il y a toujours quelques chats solitaires qui trônent ou dorment sur les parapets de pierre. Lorsque des voyageurs passent sur le pont, des bruits étouffés semblent venir du dessous du pont. Néanmoins, mis à part une ombre imposante, rien n’est perceptible sous le pont. Les habitants de la ville racontent que ce pont relie le monde du Rêve à tous les autres.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 700000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!XesvLJ1ATFOHzoxm.bP3kLOzba6mksS94"
+  }
+ ],
+ "folder": null,
+ "sort": 200000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!XesvLJ1ATFOHzoxm"
+}

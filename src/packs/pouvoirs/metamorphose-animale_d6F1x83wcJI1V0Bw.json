@@ -1,0 +1,28 @@
+{
+ "_id": "d6F1x83wcJI1V0Bw",
+ "name": "Métamorphose animale",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "temporaire",
+  "attribut": "",
+  "description": "<p>Le Chat se transforme en différentes créatures animales, avec leurs caractéristiques et capacités. Jet réussi : transformation pendant 1D6 minutes.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "ZmNoEX04AcYhbu9V",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!d6F1x83wcJI1V0Bw"
+}

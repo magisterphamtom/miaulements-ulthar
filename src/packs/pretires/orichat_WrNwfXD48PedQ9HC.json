@@ -1,0 +1,227 @@
+{
+ "_id": "WrNwfXD48PedQ9HC",
+ "name": "Orichat",
+ "type": "chat",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "race": "bengal",
+  "description": "<p>Orichat excelle dans les mouvements acrobatiques et sa discrétion.</p>",
+  "handicap": "",
+  "attributs": {
+   "chn": {
+    "base": 45,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "phy": {
+    "base": 30,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "cha": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "agi": {
+    "base": 60,
+    "race": 10,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "int": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "dis": {
+    "base": 70,
+    "race": -10,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "per": {
+    "base": 55,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "pre": {
+    "base": 40,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   }
+  },
+  "pv": {
+   "value": 4
+  },
+  "pm": {
+   "value": 50
+  },
+  "pf": {
+   "value": 53
+  },
+  "vies": {
+   "value": 3
+  },
+  "xp": 0,
+  "achats": {
+   "pm": 0,
+   "pv": 0,
+   "vies": 0
+  },
+  "cartesFolie": [],
+  "notes": ""
+ },
+ "prototypeToken": {
+  "name": "Orichat",
+  "actorLink": true,
+  "disposition": 1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [
+  {
+   "_id": "9jOzoL5wMYQ31AzM",
+   "name": "Comprendre et lire l'humain",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Tous les Chats lisent et comprennent les êtres humains, quelle que soit leur langue (0 PM). Les langues anciennes demandent un jet d'Intelligence avec un malus selon le degré d'oubli de la langue. Ce pouvoir ne permet pas de parler aux humains.</p>",
+    "degats": "",
+    "gratuit": true
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!WrNwfXD48PedQ9HC.9jOzoL5wMYQ31AzM"
+  },
+  {
+   "_id": "nmafaypdr8nMraeG",
+   "name": "Guérison réconfortante",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "race",
+    "attribut": "",
+    "description": "<p>Le Chat canalise l'énergie curative de la nature, détecte la souffrance et apaise les maux physiques et émotionnels. Sa présence calme les esprits agités. Il soigne 1D6 points de santé à un individu autre que lui.</p>",
+    "degats": "1d6",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!WrNwfXD48PedQ9HC.nmafaypdr8nMraeG"
+  },
+  {
+   "_id": "zoEluXowUFp98Qty",
+   "name": "Grimpeur habile",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Le Chat gravit les surfaces verticales et se déplace avec aisance dans les hauteurs, ce qui lui ouvre des zones inaccessibles aux autres.</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!WrNwfXD48PedQ9HC.zoEluXowUFp98Qty"
+  },
+  {
+   "_id": "70phT3wQpAdB8X1k",
+   "name": "Ordre prononcé",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Le Chat donne un ordre mental simple (trois mots au maximum) à une créature. L'injonction dure un tour. Exemples : « Arrête-toi immédiatement », « Fuis », « Protège-moi ».</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!WrNwfXD48PedQ9HC.70phT3wQpAdB8X1k"
+  }
+ ],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!WrNwfXD48PedQ9HC"
+}

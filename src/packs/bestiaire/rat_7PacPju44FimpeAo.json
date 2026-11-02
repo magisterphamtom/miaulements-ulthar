@@ -1,0 +1,47 @@
+{
+ "_id": "7PacPju44FimpeAo",
+ "name": "Rat",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Dents / Griffes",
+    "pct": 50,
+    "degats": "1d4"
+   }
+  ],
+  "pouvoir": "",
+  "capacite": "rassemblement en groupe",
+  "pv": {
+   "value": 3,
+   "max": 3
+  },
+  "description": "<p>connu pour son intelligence, sa curiosité et sa capacité à s'adapter. Souvent considéré comme un nuisible, le rat se faufile dans toutes les lieux à travers les canalisations ou divers petits passages.</p><p><strong>Capacité :</strong> rassemblement en groupe</p><blockquote><p>Des habitants ont signalé avoir observé des groupes de rats se rassemblant en cercle autour d'un vieux puits, émettant des cris étranges et semblant communiquer entre eux dans une sorte de langage incompréhensible</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Rat",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!7PacPju44FimpeAo"
+}

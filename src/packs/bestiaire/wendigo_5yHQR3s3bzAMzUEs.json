@@ -1,0 +1,47 @@
+{
+ "_id": "5yHQR3s3bzAMzUEs",
+ "name": "Wendigo",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Griffes",
+    "pct": 70,
+    "degats": "2d8"
+   }
+  ],
+  "pouvoir": "peur paralysante",
+  "capacite": "",
+  "pv": {
+   "value": 40,
+   "max": 40
+  },
+  "description": "<p>Le Wendigo est une entité gigantesque et humanoïde, souvent décrite comme étant à la fois squelettique et décharnée. Sa peau, d'un gris cendreux, est tendue sur des os apparents. Ses yeux, enfoncés dans leurs orbites, hypnotisent ses cibles.</p><blockquote><p>Dans le petit village d'Isobar, situé à quelques kilomètres d'Arkham, plusieurs habitants affirment avoir aperçu une silhouette gigantesque rôdant près des maisons la nuit. Les villageois évoquent une malédiction ancestrale liée à une créature qui se nourrit de la peur et de la chair humaine</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Wendigo",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!5yHQR3s3bzAMzUEs"
+}

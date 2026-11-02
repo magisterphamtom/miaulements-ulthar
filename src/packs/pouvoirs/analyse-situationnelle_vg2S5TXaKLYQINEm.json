@@ -1,0 +1,28 @@
+{
+ "_id": "vg2S5TXaKLYQINEm",
+ "name": "Analyse situationnelle",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "race",
+  "attribut": "",
+  "description": "<p>(Sphynx) Le Chat analyse instantanément tous les aspects d'une situation complexe : faits objectifs, parties prenantes, enjeux, causes, contraintes.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "WG4lMQcfRb3JUelh",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!vg2S5TXaKLYQINEm"
+}

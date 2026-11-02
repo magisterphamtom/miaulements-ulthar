@@ -1,0 +1,53 @@
+{
+ "_id": "BYxuDmseullWNs16",
+ "name": "Les Clefs Interdites (campagne)",
+ "pages": [
+  {
+   "_id": "snKH6o2fGBN4IQS4",
+   "name": "Intrigue générale",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Les Clefs Interdites (campagne)</h3>\n<p>Campagne : s e t d r e t n s f Le s Cl e e a in k il S ri a c -s o C</p>\n<p>Le vieux Ester missionne les Chats d’Ulthar afin de retrouver un gardien très spécial nommé Yvian, disparu depuis un mois sans laisser de trace. Yvian appartient à une branche secrète des Gardiens d'Ulthar: les Protecteurs d’Ulthar, chargés de veiller sur des artefacts aux pouvoirs dangereux. Corbius, un vieux medecin de la Contrée du Rêve, est un rêveur aguerri , passionné par les livres anciens. Il n'a de cesse d'explorer les régions les plus reculées, en quête d'enigmes, de zones interdites et d’artefacts rares. Récemment, il a découvert l’existence de l'un d'entre-eux : la Clef Interdite ! Cet artefact lui donnerait la possibilité de pénétrer des univers interdits ! Cette histoire est organisée sous la forme d'une campagne composée de cinq scénarios. C'est une course contre la montre qui vous attend, au travers d'une contrée étrange, illogique afin d’empêcher le Dr Corbius de commettre l’irréparable. Dans cet univers, les Chats découvriront qu’il n’existe pas un seul artefact mais bien trois ! Réussiront-ils à les retrouver à temps pour éviter le pire ?...</p>\n<h3>Note d’intention pour la campagne</h3>\n<p>Cette campagne vous invite à explorer les Contrées du Rêve : un espace à la fois merveilleux et dérangeant, où l’étrange est la norme et où l’inattendu surgit à chaque détour. Dans le commerce, peu de scénarios se déroulent dans ces contrées. C'est une occasion unique d’immerger vos joueurs dans un monde où la logique vacille, les décors déconcertent et les rencontres surprennent.</p>\n<p>sur une roulotte en forme de tonneau, tirée par deux autruches aux plumes bleu éclatantes. Il vendait des nouvelles heureuses : plus le prix était élevé, plus la révélation concernait intimement les joueurs. Un moment absurde, tendre et magique... comme seuls les rêves peuvent en offrir. N’ayez pas peur d’en faire trop : dans les Contrées, c’est le trop qui devient la norme !</p>\n<p>Je vous encourage vivement à soigner vos descriptions et à user sans retenue d’adjectifs chatoyants, d’images extraordinaires et de détails déroutants. Donnez à vos joueurs l’impression de vivre à l’intérieur d’un tableau mouvant et onirique. Je me souviens d’une scène marquante, totalement improvisée : un PNJ sans importance, colporteur de bonnes nouvelles, apparaissant</p>\n<p>Découvrez la vidéo de co-création de cette campagne réalisée avec Silkinael, ainsi que sa chaîne entièrement dédiée au JdR. Un immense merci à toi pour ces moments partagés et ton enthousiasme contagieux ! Video : www.youtube.com/watch?v=T39F6p3V4us Instagram : www.instagram.com/silkinaeltv</p>\n<h3>Présentation des scénarios</h3>\n<p>Scénario 1 : Le Sanctuaire aux Crabes Les Chats se rendent au sanctuaire aux Crabes pour enquêter sur la disparition du Chat Yvian. Scénario 2 : Ala recherche d'Ester Les joueurs vont devoir retrouver Ester qui semble introuvable. Scénario 3 : La Bibliothéque de Pnakotus Les Chats explorent les recoins les plus dangereux de la bibliothèque de Pnakotus afin de découvrir le secret des Clefs et comprendre les risques qu’elles renferment. Scénario 4: L'ile aux Quatre Colonnes Les Chats se rendent sur l'Ile aux quatre colonnes et découvrent que les Profonds l'ont attaquée et envahie. Son gouverneur et Yvian y sont emprisonnés. Scénario 5 : L'affrontement final Les Chats affrontent le Docteur Corbius dans le désert où il tente d’activer un portail dimensionnel avec seulement deux des trois Clefs. Note : La Clef Interdite est un artéfact magique qui ressemble à une tablette égyptienne. La lecture du rituel gravé dessus permet d’ouvrir un passage vers une dimension où vivent d'anciens êtres maléfiques qui ont été bannis. Pour empêcher son utilisation abusive, la Clef interdite a été copiée en deux versions supplémentaires erronées. L'utilisation des mauvaises clefs entraîne la mort. Seules les trois clefs ensemble permettent de déduire laquelle est authentique.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!BYxuDmseullWNs16.snKH6o2fGBN4IQS4"
+  }
+ ],
+ "folder": null,
+ "sort": 500000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!BYxuDmseullWNs16"
+}

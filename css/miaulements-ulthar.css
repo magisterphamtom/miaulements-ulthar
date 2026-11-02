@@ -84,3 +84,52 @@
 .mu-nom-pouvoir { cursor: pointer; }
 .mu-item section { margin: 6px 0; }
 .mu-item textarea { width: 100%; }
+
+/* Fiche papier : tous les champs sont posés sur l'image officielle (positions en %). */
+.miaulements-ulthar.sheet.chat .window-content { overflow-y: auto; }
+.mu-page { position: relative; width: 100%; aspect-ratio: 1716 / 2492; container-type: inline-size; background: #fff; border-radius: 6px; overflow: hidden; }
+.mu-fond { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; user-select: none; }
+.mu-page .mu-champ, .mu-page .mu-rond, .mu-page .mu-attr, .mu-page .mu-liste, .mu-page .mu-case-echec { position: absolute; box-sizing: border-box; }
+.mu-page input, .mu-page select, .mu-page textarea, .mu-page button { background: transparent; border: none; color: #111; box-shadow: none; }
+.mu-page .mu-texte { width: 100%; font-family: "Georgia", "Times New Roman", serif; font-size: 3.1cqw; font-weight: bold; color: #1a1a1a; padding: 0 1cqw; outline: none; }
+.mu-page .mu-texte.mu-petit { font-size: 1.9cqw; font-weight: normal; resize: none; line-height: 1.15; }
+.mu-page .mu-texte:focus, .mu-page .mu-rond input:focus { background: rgba(217, 179, 74, 0.18); }
+.mu-page .mu-texte::placeholder { color: rgba(0, 0, 0, 0.25); font-weight: normal; }
+
+.mu-page .mu-attr { display: flex; align-items: center; justify-content: center; }
+.mu-page .mu-attr-jet { width: 100%; height: 100%; border-radius: 50%; font-family: "Georgia", serif; font-size: 6.2cqw; font-weight: bold; color: #151515; cursor: pointer; line-height: 1; padding: 0; }
+.mu-page .mu-attr-jet:hover { background: rgba(217, 179, 74, 0.28); }
+.mu-page .mu-attr-monter { position: absolute; right: -1.2cqw; top: -1.2cqw; width: 4.2cqw; height: 4.2cqw; border-radius: 50%; background: #d9b34a; color: #111; font-size: 2.6cqw; cursor: pointer; padding: 0; line-height: 1; animation: mu-pulse 1.4s infinite; }
+@keyframes mu-pulse { 50% { transform: scale(1.18); } }
+.mu-page .mu-case-echec { border-radius: 50%; cursor: pointer; padding: 0; }
+.mu-page .mu-case-echec:hover { background: rgba(217, 179, 74, 0.35); }
+.mu-page .mu-case-echec.cochee { background: radial-gradient(circle, #8f1d1d 0 62%, transparent 66%); }
+
+.mu-page .mu-rond { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.mu-page .mu-rond input { width: 100%; text-align: center; font-family: "Georgia", serif; font-size: 4.2cqw; font-weight: bold; color: #151515; padding: 0; height: auto; -moz-appearance: textfield; }
+.mu-page .mu-rond input::-webkit-inner-spin-button, .mu-page .mu-rond input::-webkit-outer-spin-button { -webkit-appearance: none; }
+.mu-page .mu-max { position: absolute; bottom: -2.6cqw; font-size: 1.7cqw; color: #333; font-weight: bold; white-space: nowrap; }
+
+.mu-page .mu-liste { overflow-y: auto; padding: 0.4cqw 0.6cqw; }
+.mu-page .mu-liste ul { list-style: none; margin: 0; padding: 0; }
+.mu-page .mu-liste li { display: flex; justify-content: space-between; align-items: baseline; font-family: "Georgia", serif; font-size: 2.3cqw; color: #151515; border-bottom: 1px dotted rgba(0, 0, 0, 0.25); padding: 0.3cqw 0; }
+.mu-page .mu-liste .mu-nom-pouvoir { color: #151515; cursor: pointer; font-weight: bold; }
+.mu-page .mu-liste .mu-nom-pouvoir:hover { color: #7a1f1f; }
+.mu-page .mu-liste .mu-outils a { color: #555; margin-left: 0.8cqw; cursor: pointer; }
+.mu-page .mu-liste small { font-weight: normal; color: #555; }
+
+.mu-details { background: var(--mu-fond2); border: 1px solid var(--mu-bord); border-radius: 6px; padding: 4px 8px; }
+.mu-details summary { cursor: pointer; color: var(--mu-accent); }
+.mu-tableau { display: flex; flex-direction: column; gap: 2px; margin: 6px 0; }
+.mu-ligne-t { display: grid; grid-template-columns: 1.4fr repeat(4, 1fr) 0.8fr; gap: 4px; align-items: center; }
+.mu-ligne-t input { width: 100%; text-align: center; }
+.mu-entete-t { opacity: 0.7; font-size: 0.85em; text-align: center; }
+
+/* Fiche d'adversaire */
+.mu-pnj section { margin: 6px 0; }
+.mu-pnj label { display: flex; gap: 6px; align-items: center; margin: 2px 0; }
+.mu-pnj label input[type="text"] { flex: 1; }
+.mu-pnj label input[type="number"] { width: 60px; text-align: center; }
+.mu-attaque { display: grid; grid-template-columns: 32px 1fr 56px 14px 90px 18px; gap: 4px; align-items: center; margin: 2px 0; }
+.mu-attaque input { width: 100%; }
+.mu-attaque a { cursor: pointer; opacity: 0.7; }

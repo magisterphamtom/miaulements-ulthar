@@ -1,0 +1,53 @@
+{
+ "_id": "o88InCYLClzB3HpV",
+ "name": "Index des scénarios",
+ "pages": [
+  {
+   "_id": "jWTvdWeJsBJuBeQz",
+   "name": "Index",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Livre des scénarios des Miaulements d'Ulthar : cinq scénarios en « enquête émergente guidée », la campagne « Les Clefs Interdites » et les aides de jeu. Le texte est repris du PDF : les tableaux et encadrés en colonnes peuvent perdre un peu de leur mise en page.</p><ul><li>@UUID[Compendium.miaulements-ulthar.scenarios.JournalEntry.zs2TXxSgCRr5amDK]{Enquête émergente guidée (EEG)}</li><li>@UUID[Compendium.miaulements-ulthar.scenarios.JournalEntry.hJNaU6cSRRw8Iu6Q]{Les Profonds}</li><li>@UUID[Compendium.miaulements-ulthar.scenarios.JournalEntry.ceb9wOsoMWY2vYqv]{Les peintures maudites}</li><li>@UUID[Compendium.miaulements-ulthar.scenarios.JournalEntry.tkKB6c44sGR9ZPES]{Étranges souvenirs}</li><li>@UUID[Compendium.miaulements-ulthar.scenarios.JournalEntry.BYxuDmseullWNs16]{Les Clefs Interdites (campagne)}</li><li>@UUID[Compendium.miaulements-ulthar.scenarios.JournalEntry.gtfcABRU36HnYENz]{Le Sanctuaire aux Crabes (scénario 1)}</li><li>@UUID[Compendium.miaulements-ulthar.scenarios.JournalEntry.HSFd00G0guqgHsK9]{À la recherche d'Ester (scénario 2)}</li><li>@UUID[Compendium.miaulements-ulthar.scenarios.JournalEntry.ZbN938AX7JfiFCv7]{La bibliothèque de Pnakotus (scénario 3)}</li><li>@UUID[Compendium.miaulements-ulthar.scenarios.JournalEntry.LMJrwG0JvrPQJ9RB]{L'Île aux Quatre Colonnes (scénario 4)}</li><li>@UUID[Compendium.miaulements-ulthar.scenarios.JournalEntry.CY6aNsIBIvlfBVRo]{L'affrontement final (scénario 5)}</li><li>@UUID[Compendium.miaulements-ulthar.scenarios.JournalEntry.2A30CrKy1XrrogGz]{Aides de jeu}</li><li>@UUID[Compendium.miaulements-ulthar.scenarios.JournalEntry.Z1oVFCkTF5XYoiWM]{Sommilius (scénario)}</li></ul>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!o88InCYLClzB3HpV.jWTvdWeJsBJuBeQz"
+  }
+ ],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!o88InCYLClzB3HpV"
+}

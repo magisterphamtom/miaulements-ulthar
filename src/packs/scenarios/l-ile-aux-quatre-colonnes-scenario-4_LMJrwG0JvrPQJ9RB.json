@@ -1,0 +1,218 @@
+{
+ "_id": "LMJrwG0JvrPQJ9RB",
+ "name": "L'Île aux Quatre Colonnes (scénario 4)",
+ "pages": [
+  {
+   "_id": "wSaL891FZeZ1qBJj",
+   "name": "Intrigue générale",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>L'Île aux Quatre Colonnes (scénario 4)</h3>\n<p>Scénario 4 : s e n n o</p>\n<p>Ce r t a u L’Ile aux Q</p>\n<p>Cette fois, les Chats doivent trouver un moyen de se rendre sur l'Ile aux Quatre Colonnes et le Port de Rathia en sera une étape. Sur cette île, le Dr Corbius a conclu un pacte avec Les Profonds qui souhaitent l'envahir: ses mercenaires en renfort pour, en échange, l'octroi d'un objet détenu par le gouverneur. Àl’arrivée des joueurs, le Dr Corbius a quitté les lieux. L'ile est aux mains des Profonds. Le gouverneur et Yvian sont pris en otage. Ils sont les seuls en possession d'informations essentielles pour les Chats. Les joueurs devront donc libérer Yvian et le gouverneur pour comprendre la situation et repartir à la poursuite de Corbius en vue de l’ultime confrontation.</p>\n<p>Note : J'aime commencer ce scénario dans l’une des auberges d’Ulthar où Ester, les joueurs et quelques Gardiens débattent vivement afin de trouver une solution. Tous les Chats ne sont pas d’accord. Invitez les joueurs à prendre part activement à cette discussion.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!LMJrwG0JvrPQJ9RB.wSaL891FZeZ1qBJj"
+  },
+  {
+   "_id": "XbSHSO4ygqEKPp6x",
+   "name": "Début à Ulthar",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Pour jouer la scène d’introduction, veuillez vous référer dans un premier temps à La Cérémonie sacrée, livre de règles, chapitre : \"Guide du maître du jeu\". Vous trouverez ci-dessous le texte à y inclure.</p>\n<h3>Texte à lire :</h3>\n<p>Ester et les Chats ont à présent connaissance de l'existence de trois clefs magiques et du projet de Corbius à les récupérer afin de procéder à l’ouverture d'un portail. Le peuple des Quatre Colonnes, qui vit sur une île dans les mers du Sud, en possède une. Ester n’y a jamais mis les pattes mais connaît le port commercial à proximité: le Port de Rathia. Là- bas, il faudra trouver un moyen de se rendre sur l’île puis une fois débarqué, informer le gouverneur des risques encourus en espérant qu'il n'est pas trop tard...</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!LMJrwG0JvrPQJ9RB.XbSHSO4ygqEKPp6x"
+  },
+  {
+   "_id": "Nj2kYVm6u6EWcwKM",
+   "name": "Lieux",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Port de Rathia Tags: #ville-en-agitation, #port-marchand #navires-volants Un port habituellement calme où de simples bateaux côtoient des navires défiant les lois de la gravité. Ces étranges embarcations flottent majestueusement à quelques mètres de l’eau. Les navires volants sont spécialisés dans des voyages lointains qui peuvent durer des dizaines d’années.Les petits bateaux, quant à eux, sont spécialisés dans les trajets plus courts. Amarés, ils sont secoués dans tous les sens par la houle et également traqués par des \"pirates\" qui cherchent à s'en emparer provoquant une certaine effervescence dans le port. Ala sortie du port, dans la baie, d’immenses ombres se déplacent à la lisière de l’eau suggèrant la présence de gigantesques monstres. □ L'Île aux Quatre Colonnes Tags: #jungle-envahissante, #profonds-sur-l-ile L’île est coiffée par quatre imposantes colonnes de pierre noire, gravées de symboles étranges qui, la nuit, illuminent le ciel de lueurs étranges. L’île est entourée d’une végétation luxuriante où se cachent de nombreux animaux sauvages et dangereux. Au centre, une cité ancienne abrite ses habitants.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!LMJrwG0JvrPQJ9RB.Nj2kYVm6u6EWcwKM"
+  },
+  {
+   "_id": "tLvx697cQj5IPoaL",
+   "name": "Personnages de l'aventure (PNJ)",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Grimoit : habitant Tags: #vêtements-usés, #accent-local, #vie-dure Il s’est installé à Rathia pour trouver un travail et n’est jamais reparti. □ Flore : commerçante du Port Tags: #gants-blancs, #sourire-commercial, #bavarde Toujours prête à donner son avis, Flore aime papoter avec ses clients. Elle connaît beaucoup de petits secrets du quartier. □ Kilian : représentant de l’autorité du Port Tags: #uniforme-strict, #voix-autoritaire, #regard-froid Il est chargé d’assurer la sécurité et la régulation des embarcations. Kilian est méfiant et intraitable, surtout envers les étrangers. □ Chef des Profonds Tags: #peau-humide, #odeur-poisson, #voix-grave Un chef imposant qui donne des ordres à ses troupes avec calme et autorité. Sa démarche lourde et son silence imposent le respect. □ Gardes Profonds #Tags: #imposants, #yeux-globuleux, #puissants Obéissants et d'une force extraordinaire, ils sont devoués à leur commandant quelle que soit sa requête.</p>\n<p>Chef des Profonds</p>\n<p>Gardes Profonds</p>\n<p>Enfin victorieux contre les humains, il veut garder l'île pour les Profonds !</p>\n<p>Ils sont à l'affût des intrus, suivent les ordres et aiment bousculer les prisonniers.</p>\n<p>Vie: 70 PV Att [60%] / griffe 1D6 deg augmente de +1 à chaque tour (max +5)</p>\n<p>Vie: 30 PV Att [60%] / griffe 1D6 deg / Perception [60%]</p>\n<p>□ Gouverneur de l’Ile aux Quatre Colonnes Tags : #vieux, #marques-bijoux-arrachés, #inquiet Élu depuis 30 ans, il sait qu’il vient de faillir à l’une de ses tâches. Il pense que le secret a été découvert lorsque ses gardes ont démasqué un espion qui s’était fait passer pour l’un d’eux il y a deux ans. □ Yvian : Protecteur d'Ulthar Tags: #fatigué, #maltraité, #sale Yvian, le Protecteur d’Ulthar, sait tout du plan de Corbius. Il sait que ce dernier ne possède que deux des trois artefacts. Il se morfond d’avoir échoué dans sa mission.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!LMJrwG0JvrPQJ9RB.tLvx697cQj5IPoaL"
+  },
+  {
+   "_id": "E6VttHO6OS8oTdPx",
+   "name": "Indices & Événements",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Au Port de Ruthia</h3>\n<p>□ Une femme mystérieuse observe et suit discrètement les Chats depuis un coin sombre du port. □ Des rumeurs circulent sur une prétendue activité de contrebande à la sortie du port. □ Un bateau amarré au port montre des signes évidents d’un affrontement récent, sa coque est endommagée et ses voiles déchirées. □ Un marchand local, visiblement préoccupé, parle à voix basse d’un groupe suspect qui aurait récemment quitté le Port en direction de l’Ile aux Quatre Colonnes. □ Un habitant a aperçu un chat blessé qui semblait retenu par des hommes. □ Un groupe de navires a quitté le port en toute discrétion, sous le couvert de la nuit, évitant les regards indiscrets. □ Des pêcheurs mentionnent avoir aperçu des Profonds lors de leurs sorties en mer mais leurs récits sont flous. □ Des voyageurs évoquent une bataille récente qui aurait éclaté sur l’Ile aux Quatre Colonnes. □ Un groupe d’hommes armés aurait embarqué pour l’île, sans donner d’explications sur leur objectif.</p>\n<h3>Sur l'Ile aux Quatre Colonnes</h3>\n<p>□ Traces de combat : l’île porte les marques de violents affrontements avec des débris éparpillés et des signes évidents de combat. □ Patrouilles de Profond : des gardes Profonds circulent sur l’île, surveillant chaque recoin avec vigilance. □ Ville en flamme: plusieurs bâtiments de l’île aux Quatre Colonnes sont ravagés par le feu donnant une atmosphère de chaos. □ Habitants en fuite : des habitants terrifiés, blessés et paniqués, sont aperçus tentant d’échapper aux Profonds. □ Résidents retenus : des habitants sont enfermés dans leurs maisons par les Profonds, réduits à une impuissance totale. □ Yvian, prisonnier: Yvian est vivant. Il est enfermé dans une prison. □ Gouverneur, prisonnier : le Gouverneur de l’île est détenu par les Profonds. Ils semblent attendre des ordres avant de décider de son sort. □ Rumeurs d’un vol : des rumeurs évoquent le vol d'un ancien artefact par des Profonds remis ensuite à un groupe de mercenaires.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!LMJrwG0JvrPQJ9RB.E6VttHO6OS8oTdPx"
+  },
+  {
+   "_id": "XdtnDFlYZeZxUhtd",
+   "name": "Fin possible",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Les Chats, rusés et organisés, se sont infiltrés discrètement sur l'IIe aux Quatre Colonnes. Ils ont évité les dangers représentés par les Profonds et libéré le Gouverneur ainsi qu'Yvian. Immédiatement, il leur révèlera deux informations cruciales : d'une part, la confirmation du vol d'une seconde Clef par le Dr Corbius, et d'autre part, la fuite de ce dernier vers le désert afin de déclencher l'apparition du portail, d'ici quelques jours !</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!LMJrwG0JvrPQJ9RB.XdtnDFlYZeZxUhtd"
+  }
+ ],
+ "folder": null,
+ "sort": 900000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!LMJrwG0JvrPQJ9RB"
+}

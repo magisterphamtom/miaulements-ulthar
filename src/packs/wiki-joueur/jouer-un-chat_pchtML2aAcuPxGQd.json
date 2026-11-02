@@ -1,0 +1,284 @@
+{
+ "_id": "pchtML2aAcuPxGQd",
+ "name": "Jouer un Chat",
+ "pages": [
+  {
+   "_id": "QPhLTKBrPVwo32rZ",
+   "name": "Jouer un chat",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Vous allez maintenant jouer en tant que chat en explorant le monde avec agilité, en ronronnant pour exprimer vos émotions, en miaulant pour communiquer et en suivant vos instincts félins. Il existe trois façons d'inclure le comportement des chats dans le jeu :</p>\n<ul><li>Par l'interprétation : encouragez-les à intégrer des comportements félins dans leurs descriptions. N'hésitez pas à les guider si nécessaire.</li><li>Àtravers les rencontres avec d'autres chats ou animaux : utilisez ces interactions pour enrichir l'expérience de jeu.</li><li>Pour les joueurs moins actifs pendant une scène : j'ai tendance à interpréter le comportement du chat pour réintégrer un joueur qui ne participe pas activement à une scène. Cela permet à la fois de le réengager et d'ajouter une \"touche féline\" à l'action.</li></ul>\n<h4>Exemple:</h4>\n<p>Les chats réfléchissent à la manière d'ouvrir une porte, et l'un des joueurs ne participe pas à la discussion. Je lui indique alors que ses oreilles se tournent vers un petit trou à gauche de la porte. Il perçoit un léger bruit, probablement un rongeur... Que fais-tu ?</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!pchtML2aAcuPxGQd.QPhLTKBrPVwo32rZ"
+  },
+  {
+   "_id": "vA4qQa9mN77ghdsg",
+   "name": "Le langage corporel",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Interpréter un chat, c'est jouer avec le langage corporel du félin. Les chats sont des créatures expressives et leur comportement physique offre des indices précieux sur leurs émotions et leurs intentions. La queue : la position de la queue du chat peut en dire long sur son état émotionnel. Une queue dressée en l'air indique généralement que le chat est heureux et confiant. En revanche, une queue basse peut signifier qu'il se sent méfiant ou mécontent.</p>\n<p>Une queue qui fouette rapidement peut être un signe d'irritation ou d'agacement. Les oreilles : l'orientation des oreilles du chat est également un indicateur important de son humeur. Des oreilles dressées en avant traduisent de l'intérêt ou de la curiosité. Des oreilles plaquées sur la tête peuvent signifier qu'il se sent menacé ou agressé. Les yeux : les yeux du chat sont le miroir de ses émotions. Des yeux larges et dilatés indiquent de la peur ou de l'excitation. Des yeux mi-clos signifient qu'il est détendu ou en train de se reposer. Un regard fixe peut être un signe d'agressivité ou d'attention intense. La position du corps : lorsque vous observez un chat, prenez en compte la position de son corps. Un chat qui se tient debout et qui bombe le dos peut être en posture d'intimidation ou de défense. Un chat qui s'étire et se roule sur le dos peut être dans une attitude de soumission ou d'invitation au jeu. Les pattes : les pattes du chat peuvent également être révélatrices. Des pattes tendues en avant peuvent indiquer qu'il est en mode chasseur, prêt à bondir sur sa proie. Des pattes recroquevillées sous le corps peuvent signifier qu'il se sent vulnérable ou anxieux.</p>\n<h4>Exemple:</h4>\n<p>Pantoufle, le chat de famille du manoir, vous regarde avec ses gros yeux puis se retourne sur le dos pour vous indiquer qu’il ne veut pas d’ennui.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!pchtML2aAcuPxGQd.vA4qQa9mN77ghdsg"
+  },
+  {
+   "_id": "VttAVEuRwtABIJcj",
+   "name": "Miaulements, ronronnements et autres vocalises",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Note :</h3>\n<p>N'hésitez pas à utiliser les vocalisations pour illustrer aux joueurs les intentions des autres chats qu'ils Dans le monde des chats, les vocalisations sont rencontrent.</p>\n<p>un moyen essentiel de communication. Comprendre les différents miaulements et ronronnements des félins est crucial pour une immersion réussie dans votre jeu de rôle. Ce chapitre vous enseignera l'art d'interpréter les vocalisations du chat, vous permettant ainsi de répondre adéquatement à ses besoins et émotions.</p>\n<h4>Exemple :</h4>\n<p>Dans une petite ruelle, une odeur de matou assez forte vient à vos narines. Vous entendez un miaulement aigu et strident qui vient des ombres formées par les poubelles : \"Approchez, si vous l'osez.\"</p>\n<p>Les miaulements : les miaulements sont l'une des formes les plus communes de communication chez les chats. Un miaulement court et doux indique un salut amical ou une demande d'attention. Un miaulement fort et prolongé peut exprimer la faim, l'ennui ou le désir de sortir. Les miaulements stridents et insistants signalent de la détresse ou de l'inconfort. Les ronronnements : le ronronnement est un son apaisant émis par les chats dans diverses situations. Un chat qui ronronne peut-être détendu, heureux ou se préparant à s'endormir. Les chats peuvent également ronronner pour se rassurer dans des situations stressantes ou pour solliciter des caresses et des câlins. Les cris, gémissements et feulements : en dehors des miaulements, les chats peuvent émettre des feulements ou des gémissements lorsqu'ils sont douloureux, en colère, ou à la recherche d'une proie lors de leurs chasses.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!pchtML2aAcuPxGQd.VttAVEuRwtABIJcj"
+  },
+  {
+   "_id": "cyJwt3YatyGR5i4C",
+   "name": "Instinct de chasseur",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Les chats sont des chasseurs innés, dotés d'instincts aiguisés et de comportements prédateurs. Lorsque vous décrivez l'environnement perçu, les envies des joueurs ou les réactions des rencontres, prenez en considération cette facette profondément enracinée dans la nature des chats. N'hésitez pas à leur faire lancer un petit jet de folie pour « stimuler » leur instinct primaire. Plus la partie est pulp, plus leurs instincts prendront le dessus sur leurs actions. L'instinct de chasseur : les chats ont une prédisposition naturelle à chasser et à traquer leur proie. Ce comportement est ancré dans leurs gènes et peut se manifester même chez les chats domestiques. Ils utilisent leur agilité, leur patience et leur intelligence pour traquer et attraper leurs cibles, qu'il s'agisse de jouets, d'insectes ou d'autres animaux. Le jeu et l'apprentissage : les chatons apprennent les bases de la chasse en jouant avec leurs frères et sœurs. Ces séances de jeu leur permettent de développer leurs compétences de chasseur tout en renforçant les liens sociaux avec leurs compagnons de portée. Le territoire et la chasse : les chats sont également très territoriaux et peuvent défendre leur espace vital avec détermination. Lorsqu'un chat perçoit un autre animal comme une menace pour son territoire, il peut adopter un comportement agressif ou chasser l'intrus.</p>\n<h4>Exemple:</h4>\n<p>Les joueurs interrogent une souris qui semble avoir vu un événement important pour l'enquête. Faites lancer un jet de Folie (instinct chasseur) au joueur qui ne parle pas durant cette scène.S'il échoue à son jet, il bondit dessus et l'attaque. Son instinct chasseur a pris le dessus.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!pchtML2aAcuPxGQd.cyJwt3YatyGR5i4C"
+  },
+  {
+   "_id": "kFXUWNDqLq2DaY84",
+   "name": "Les signes d’affections",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>La compréhension des expressions d'affection revêt une importance capitale dans les interactions entre les félins et les autres créatures, notamment les humains. Cela permet de renforcer les liens entre les joueurs et l'univers, offrant ainsi une expérience immersive et riche.</p>\n<h4>Exemple:</h4>\n<p>En pénétrant dans cette vieille pièce, vous remarquez ces barreaux de chaise qui vous invitent à vous frotter dessus. Le bois est doux et agréable pour votre dos.</p>\n<p>Les câlins et les frottements : lorsqu'un chat se frotte contre vous ou vous donne des câlins, cela démontre une marque d'affection et de proximité. Ces gestes peuvent aussi être une façon pour les chats de marquer leur territoire, vous incluant ainsi dans leur espace social. Le ronronnement : le ronronnement est un signe emblématique d'affection chez les chats. C'est un son apaisant qu'ils émettent lorsqu'ils sont détendus, heureux, ou qu'ils cherchent à exprimer leur contentement. Les clignements des yeux : un clin d'œil lent et doux de la part d'un chat est considéré comme un signe de confiance et d'amitié. Quand votre félin cligne des yeux à votre égard, cela témoigne de la bonne relation qu'il entretient avec vous. Les offrandes : lorsque les chats rapportent des objets ou des proies à leurs propriétaires, il s'agit d'un comportement affectueux et attentionné. Cette offrande est un moyen pour eux de montrer leur affection et leur attachement humains.</p>\n<p>envers leurs compagnons</p>\n<p>La position du corps : un chat qui se tourne sur le dos en exposant son ventre est en général un signe de confiance et de vulnérabilité. Cela indique qu'il se sent en sécurité en votre présence.</p>\n<h4>Exemple:</h4>\n<p>Un joueur souhaite intimider un chien qui bloque le passage. Il se met de profil, bombe le torse et effectue de petits sauts pour paraître plus impressionnant. Le MJ peut accorder un bonus de 20% au jet de Charisme pour cette action.</p>\n<p>Les léchouilles : les léchouilles sont un geste d'affection et de toilettage social chez les chats. Si votre félin vous lèche doucement, c'est une manière pour lui de vous montrer son attachement. Incitez vos joueurs à interagir de cette façon avec les autres personnages félins pour renforcer les liens. Décrivez les éléments qui attirent leurs instincts félins.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!pchtML2aAcuPxGQd.kFXUWNDqLq2DaY84"
+  },
+  {
+   "_id": "ps2Tt1nj2YqIcPs0",
+   "name": "Les interactions sociales",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Les interactions sociales jouent un rôle primordial dans le quotidien des chats. Comprendre comment les félins interagissent avec d'autres animaux et les humains est essentiel pour une immersion réussie. Les rencontres félines : lorsque les chats se rencontrent, leur comportement peut varier selon leur personnalité, leur âge et leur statut social. Ils peuvent manifester de la curiosité, de l'agressivité ou de l'amitié envers d'autres chats.</p>\n<h4>Exemple :</h4>\n<p>En entrant dans le studio de Miss Carter, vous ressentez une tristesse ambiante. Un parfum fruité titille vos moustaches. Une personne est assise sur un lit. Vous percevez les bottines brillantes et le début d'une robe sombre. L'atmosphère est emplie de tristesse, vous entendez qu'elle pleure.</p>\n<p>L'interaction avec les autres animaux : les chats peuvent réagir de différentes façons en présence d'animaux tels que les chiens, les oiseaux ou les rongeurs. Certains chats peuvent être tolérants et jouer avec eux, tandis que d'autres peuvent les considérer comme des proies potentielles ou un danger. Les liens avec les humains : les chats ont une relation unique avec les humains, oscillant entre indépendance et attachement. Certains chats sont très affectueux et recherchent la compagnie humaine, tandis que d'autres préfèrent garder leurs distances. Les réactions face à l’inconnu : les chats peuvent être méfiants envers les situations inconnues ou les nouveaux visages. Ils peuvent se montrer prudents ou curieux en explorant leur environnement et en découvrant de nouvelles personnes ou créatures. L'empathie féline : les chats peuvent également réagir de manière empathique envers les émotions des humains. Ils peuvent consoler leurs propriétaires en ronronnant ou en restant à leur côté lorsqu'ils sont tristes ou malades. Les relations de territoire : le concept de territoire est crucial pour les chats et cela peut influencer leurs réactions envers d'autres animaux ou les humains. Ils peuvent défendre leur espace vital avec fermeté ou partager harmonieusement leur territoire avec des congénères ou des compagnons humains. Ayez un parti pris dans votre description de lieu ou lors d'une rencontre en fonction de l'interaction que vous souhaitez donner à la scène pour renforcer l'immersion des joueurs.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!pchtML2aAcuPxGQd.ps2Tt1nj2YqIcPs0"
+  },
+  {
+   "_id": "tC9s41kC7NExYUDV",
+   "name": "L'agilité féline",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>L'agilité est un trait distinctif du félin. Les mouvements surnaturels des chats, leur souplesse et leur rapidité déconcertantes en font des créatures à part dans le monde animal. N’hésitez pas à les faire sauter, grimper et se faufiler pendant les scénarios. La grâce féline : les chats se déplacent avec une élégance remarquable, leurs mouvements gracieux et harmonieux captivant l'attention de tous les observateurs. Ils peuvent se faufiler silencieusement, se dresser sur leurs pattes arrière avec aisance et bondir avec une précision déconcertante. L'art de l'équilibre : les félins sont des experts de l'équilibre, capables de marcher le long de rebords étroits, de se percher sur des hauteurs vertigineuses et de réaliser des sauts prodigieux sans effort apparent. Leur capacité à garder leur équilibre dans des situations acrobatiques est tout simplement stupéfiante.</p>\n<h3>Note :</h3>\n<p>Les pouvoirs permettent d'exacerber cette agilité. N'hésitez pas à leur faire sauter des distances ou des hauteurs surnaturelles s'ils réussissent leur jet de dés.</p>\n<p>La rapidité éclair : les chats peuvent se déplacer avec une vitesse fulgurante. Leurs sprints soudains, leurs changements de direction rapides et leurs réflexes éclairs en font des créatures redoutables lorsqu'ils sont en mode chasseur. L'agilité au combat : lorsque les félins entrent en action, leur agilité devient leur plus grand atout. Ils peuvent esquiver habilement les attaques, sauter sur leurs adversaires avec précision et utiliser leur agilité naturelle pour se sortir de situations périlleuses. Les sauts prodigieux : les chats sont capables de réaliser des sauts impressionnants, leur permettant de franchir des distances étonnantes en un seul bond. Leurs capacités acrobatiques leur offrent une grande liberté de mouvement et des opportunités d'exploration vertigineuses.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 700000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!pchtML2aAcuPxGQd.tC9s41kC7NExYUDV"
+  },
+  {
+   "_id": "QULQzhOP29WuxbjX",
+   "name": "Face à l'inconnu",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>L'une des facettes les plus intrigantes du comportement félin et la manière dont les chats font face à l'inconnu et réagissent dans de nouvelles situations. Les chats, en tant</p>\n<h4>Exemple :</h4>\n<p>Sur un joueur passif dans la recherche d'indices dans une pièce, je lui dis que depuis quelques minutes, il regarde un livre qui dépasse de la bibliothèque. S'il échoue à son jet de folie, il ne pense qu'à monter pour le faire tomber.</p>\n<p>qu'êtres curieux et indépendants, sont constamment confrontés à des environnements changeants et à des rencontres inédites, ce qui les pousse à développer des réactions uniques et fascinantes. L'éveil de la curiosité : les chats font preuve d'une curiosité sans fin face aux changements qui les entourent. Leurs sens aiguisés leur permettent de percevoir le monde avec une acuité surprenante, les incitant à explorer tout ce qui éveille leur intérêt. L'approche prudente : lorsque les chats sont confrontés à de nouvelles situations, ils peuvent adopter une approche prudente, prenant leur temps pour observer et évaluer les éléments inconnus avant de s'y aventurer. Les réactions d’inquiétude : certains chats peuvent manifester de l'inquiétude ou de l'appréhension face à l'inconnu. Ils peuvent se retirer ou se cacher pour se protéger, exprimant ainsi leur besoin de sécurité. L'adaptation agile : les félins font preuve d'une incroyable capacité d'adaptation pour naviguer dans des environnements inconnus. Leur agilité et leur intuition les aident à surmonter rapidement les obstacles qui se dressent sur leur chemin. L'exploration intrépide : certains chats sont audacieux et intrépides, se lançant sans hésiter dans de nouvelles aventures. Leur courage et leur confiance en eux les amènent à découvrir de nouvelles facettes de leur monde. L'expression de la curiosité : les chats émettent des signes de curiosité, tels que leurs oreilles dressées, leurs yeux écarquillés et leurs mouvements intéressés lorsqu'ils découvrent quelque chose de nouveau.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 800000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!pchtML2aAcuPxGQd.QULQzhOP29WuxbjX"
+  }
+ ],
+ "folder": null,
+ "sort": 600000,
+ "ownership": {
+  "default": 2
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!pchtML2aAcuPxGQd"
+}

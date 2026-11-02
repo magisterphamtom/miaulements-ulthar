@@ -1,0 +1,227 @@
+{
+ "_id": "AYWMsf3yA0E67vct",
+ "name": "Chiffon",
+ "type": "chat",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "race": "gouttiere",
+  "description": "<p>Chiffon est astucieux, avec une indépendance farouche et une curiosité insatiable.</p>",
+  "handicap": "",
+  "attributs": {
+   "chn": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "phy": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "cha": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "agi": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "int": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "dis": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "per": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "pre": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   }
+  },
+  "pv": {
+   "value": 4
+  },
+  "pm": {
+   "value": 50
+  },
+  "pf": {
+   "value": 50
+  },
+  "vies": {
+   "value": 3
+  },
+  "xp": 0,
+  "achats": {
+   "pm": 0,
+   "pv": 0,
+   "vies": 0
+  },
+  "cartesFolie": [],
+  "notes": ""
+ },
+ "prototypeToken": {
+  "name": "Chiffon",
+  "actorLink": true,
+  "disposition": 1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [
+  {
+   "_id": "9jOzoL5wMYQ31AzM",
+   "name": "Comprendre et lire l'humain",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Tous les Chats lisent et comprennent les êtres humains, quelle que soit leur langue (0 PM). Les langues anciennes demandent un jet d'Intelligence avec un malus selon le degré d'oubli de la langue. Ce pouvoir ne permet pas de parler aux humains.</p>",
+    "degats": "",
+    "gratuit": true
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!AYWMsf3yA0E67vct.9jOzoL5wMYQ31AzM"
+  },
+  {
+   "_id": "FOjGxgh90hu5I7xp",
+   "name": "Aubaine incroyable",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "race",
+    "attribut": "",
+    "description": "<p>Intuition innée pour trouver des opportunités inattendues dans les endroits les plus improbables.</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!AYWMsf3yA0E67vct.FOjGxgh90hu5I7xp"
+  },
+  {
+   "_id": "aY0rnbvr2bFRHSB4",
+   "name": "Griffes précises",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Les griffes sont utilisées avec une grande précision et ont la fonctionnalité des doigts. Le Chat peut détecter les fluides magiques qui l'entourent ou qui émanent d'un objet.</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!AYWMsf3yA0E67vct.aY0rnbvr2bFRHSB4"
+  },
+  {
+   "_id": "LLFCnbO5ReE6tO4u",
+   "name": "Parler humain",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Le Chat communique vocalement avec les humains.</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!AYWMsf3yA0E67vct.LLFCnbO5ReE6tO4u"
+  }
+ ],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!AYWMsf3yA0E67vct"
+}

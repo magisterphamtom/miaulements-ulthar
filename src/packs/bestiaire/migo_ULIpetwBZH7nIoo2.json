@@ -1,0 +1,47 @@
+{
+ "_id": "ULIpetwBZH7nIoo2",
+ "name": "Migo",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Appendices tranchants",
+    "pct": 70,
+    "degats": "2d6"
+   }
+  ],
+  "pouvoir": "",
+  "capacite": "3 attaques par tour",
+  "pv": {
+   "value": 55,
+   "max": 55
+  },
+  "description": "<p>Les Migo sont des créatures extraterrestres de forme insectoïdes ailés, qui vivent sur la planète Yuggoth (Pluton) et sont connus pour leur capacité à transporter des êtres vivants à travers l'espace pour les étudier ou les utiliser dans des expériences scientifiques.</p><p><strong>Capacité :</strong> 3 attaques par tour</p><blockquote><p>Des archéologues ont signalé avoir découvert des symboles étranges gravés dans une grotte située à quelques kilomètres d'Arkham. Ces inscriptions sont inconnues et indécodables. L'université d'Arkham propose une récompense de 100$ à toute personne pouvant aider à résoudre ce mystère</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Migo",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!ULIpetwBZH7nIoo2"
+}

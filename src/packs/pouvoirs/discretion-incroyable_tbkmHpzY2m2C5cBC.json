@@ -1,0 +1,28 @@
+{
+ "_id": "tbkmHpzY2m2C5cBC",
+ "name": "Discrétion incroyable",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "inne",
+  "attribut": "",
+  "description": "<p>Grâce à sa nature silencieuse et à sa capacité à se fondre dans son environnement, le Chat se déplace discrètement et passe inaperçu quand il le souhaite.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "9a2jRIFqgKKDpai2",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!tbkmHpzY2m2C5cBC"
+}

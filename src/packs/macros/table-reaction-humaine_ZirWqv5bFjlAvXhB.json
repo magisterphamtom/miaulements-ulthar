@@ -1,0 +1,23 @@
+{
+ "_id": "ZirWqv5bFjlAvXhB",
+ "name": "Table : réaction humaine",
+ "type": "script",
+ "author": null,
+ "img": "icons/svg/mystery-man.svg",
+ "scope": "global",
+ "command": "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Réactions humaines')._id).then(t => t.draw());",
+ "folder": null,
+ "sort": 400000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!macros!ZirWqv5bFjlAvXhB"
+}

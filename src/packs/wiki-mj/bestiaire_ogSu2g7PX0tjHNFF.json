@@ -1,0 +1,977 @@
+{
+ "_id": "ogSu2g7PX0tjHNFF",
+ "name": "Bestiaire",
+ "pages": [
+  {
+   "_id": "egYMrNoJRoTdJfBC",
+   "name": "Abhoth",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 60</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.rDpTwDlKxXNcsSun]{Fiche de Abhoth (Acteur)}</p><ul><li>Tentacule : 60 % / 2d8</li></ul><p><strong>Pouvoir :</strong> créer des répliques d'ellemême à partir de son corps</p><p>Abhoth, souvent appelé le \"Fléau primordial\", est une entité informe et grouillante qui dégage une odeur de putréfaction et de mort. Capable de se diviser en plusieurs morceaux autonomes. Elle tente d'ingérer ses adversaires dès qu'elle en a l'occasion.</p><blockquote><p>Ce matin, des archéologues ont fait une découverte surprenante : une sculpture aux traits étranges et indescriptibles. L'affaire a pris une tournure surréaliste lorsque, à ses pieds, ils ont trouvé des restes humains récents</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.egYMrNoJRoTdJfBC"
+  },
+  {
+   "_id": "swXULoNxlxltG3bF",
+   "name": "Bokrug",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 50</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.PqcTPptshc2RneEq]{Fiche de Bokrug (Acteur)}</p><ul><li>Griffes : 60 % / 2d6</li><li>Crachat acide : 60 % / 1d6</li></ul><p><strong>Pouvoir :</strong> Contrôle les courants, la vase et les marécages</p><p>Bokrug, également connu sous le nom de \"Gardien du Marais\", est une divinité amphibie vénérée par les habitants de la cité engloutie d'Ib. Souvent confondu avec un gros lézard, il est en réalité bien plus intelligent. Principalement vénéré dans la contrée du rêve et en Amérique du sud.</p><blockquote><p>Des touristes intrigués signalent d'étranges célébrations païennes dans les villages autour de Lima. Selon leurs témoignages, ces fêtes impliqueraient des offrandes de poulets vivants à de mystérieux \"gros lézards\". Les autorités locales ont ouvert une enquête pour vérifier ces allégations insolites et déterminer l'origine de ces pratiques non conventionnelles</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.swXULoNxlxltG3bF"
+  },
+  {
+   "_id": "P7VnyKhyL1p8hZaw",
+   "name": "Byahkee",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 40</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.zi2e6OUOXCyZFqcB]{Fiche de Byahkee (Acteur)}</p><ul><li>Griffes : 70 % / 1d10</li></ul><p><strong>Pouvoir :</strong> Vol instantané sur une cible</p><p>Le Byakhee est une créature interdimensionnelle ressemblant à une immense créature aux ailes de chauvesouris. Il émet des cris stridents et terrifiants pour effrayer ses cibles (jet de folie, malus de 20 %). Il saisit ses proies pour se nourrir de leur sang.</p><blockquote><p>Une exposition sur les créatures mythologiques a captivé le public. Mickael Parker, un artiste, y présente une sculpture réaliste d'une créature ailée, inspirée de ses cauchemars, qu'il décrit comme étant contagieux</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.P7VnyKhyL1p8hZaw"
+  },
+  {
+   "_id": "K7INYastQR0BdFbL",
+   "name": "Chat",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 5</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.JjIpVhlgH7Itd75u]{Fiche de Chat (Acteur)}</p><ul><li>Griffes : 50 % / 1d4</li></ul><p><strong>Capacité :</strong> Vision nocturne</p><p>Le chat domestique est un petit félin agile et naturellement discret. Il aime chasser, jouer et est d'une curiosité innée, appréciant l'exploration de son environnement.</p><blockquote><p>Drôle de récit, Miss Berno, résidente du quartier, soutient que ses quatre chats, Isidore, Igor, Mathius et Momie, l'ont sauvée en faisant fuir des voleurs. Selon elle, ils auraient même réussi à appeler la police et les services d'urgence pour demander de l'aide</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.K7INYastQR0BdFbL"
+  },
+  {
+   "_id": "H4oxhKSeDSrgE7PX",
+   "name": "Chat Saturne",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 8</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.2lReDsTqzsruoWep]{Fiche de Chat Saturne (Acteur)}</p><ul><li>Griffes : 60 % / 1d6+1</li><li>Morsure : 70 % / 1d6</li></ul><p><strong>Pouvoir :</strong> Télépathie</p><p>Les Chats de Saturne sont des créatures éthérées aux formes fluides et luminescentes, capables de se déplacer entre les dimensions de Saturne et la Contrée du Rêve. Considérés comme les ennemis les plus redoutables des chats d'Ulthar, ils sont décrits dans les légendes comme d'anciens chats de la déesse Bast, corrompus par de puissants Anciens.</p><blockquote><p>Plusieurs sans-abris affirment avec conviction avoir aperçu un groupe de chats à trois yeux. Bien qu'ils étaient sous l'influence de l'alcool, ils soutiennent fermement que ces chats manipulaient les ombres et traversaient les murs de certains bâtiments. En réaction à ces déclarations, la mairie a demandé aux habitants de ne plus offrir d'alcool aux sans-abris</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.H4oxhKSeDSrgE7PX"
+  },
+  {
+   "_id": "4smsK8wIxs5qblMg",
+   "name": "Chien",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 10</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.RrtMXyH22gfslcIl]{Fiche de Chien (Acteur)}</p><ul><li>Mâchoires : 60 % / 1d6</li></ul><p><strong>Capacité :</strong> Impressionnant</p><p>Le chien domestique est un compagnon fidèle et affectueux pour les humains. Bien qu'il soit moins intelligent que les chats, ses réactions peuvent être imprévisibles. Parfois amical, parfois dangereux, les Chats doivent donc se méfier de tout contact avec lui.</p><blockquote><p>Dans le quartier nord du musée d'Arkham, un phénomène étrange se produit : les chiens semblent devenir fous. Depuis une semaine, un nombre anormal de morsures a été signalé. Pour des raisons inconnues, la plupart des chiens se montrent très agressifs envers leurs maîtres</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.4smsK8wIxs5qblMg"
+  },
+  {
+   "_id": "GxJTfCtrzEXMqOHU",
+   "name": "Chien Dimensionnel",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 60</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.G3ZxV0nhxXaneA9s]{Fiche de Chien Dimensionnel (Acteur)}</p><ul><li>Griffes : 75 % / 2d6+3</li></ul><p><strong>Pouvoir :</strong> Voyage à travers les angles du temps et espace</p><p>Créature interdimentionnelle avec la capacité à se déplacer à travers les angles du temps et de l'espace, le Chien Dimentionnel est un prédateur implacable. Une fois une personne prise pour cible, il ne cesse de la poursuivre, apparaissant dans les recoins sombres de la réalité. Sa présence est souvent précédée de nuages de vapeur s'élevant des angles, annonçant son arrivé.</p><blockquote><p>Dans une maison abandonnée, trois corps ont été découverts dans une pièce fermée, leurs visages figés dans une expression de terreur. Les murs de la pièce étaient marqués par des angles noircis. Les enquêteurs n'ont trouvé aucune explication à leur mort, laissant les voisins dans l'effroi</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 700000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.GxJTfCtrzEXMqOHU"
+  },
+  {
+   "_id": "icwgP3LZHuoxn1O0",
+   "name": "Corbeau",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 4</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.SymKTCdx0lnfJy22]{Fiche de Corbeau (Acteur)}</p><ul><li>Bec : 40 % / 1d4</li></ul><p><strong>Capacité :</strong> En groupe</p><p>Les corbeaux sont des oiseaux noirs aux plumes luisantes, connus pour leur intelligence remarquable et leur capacité à résoudre des problèmes complexes. Ils vivent et agissent souvent en groupes.</p><blockquote><p>Des résidents ont signalé que des corbeaux se rassemblent chaque soir dans le parc public d'Arkham. Ils apportent des carcasses fraîchement mortes qu'ils déposent devant un vieil arbre. Ce comportement étrange suscite l'inquiétude parmi les habitants pour leurs jeunes enfants</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 800000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.icwgP3LZHuoxn1O0"
+  },
+  {
+   "_id": "rUaWYj04Qb3okWpR",
+   "name": "Fourrière",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 12</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.hDYp0gH42uwHujfB]{Fiche de Fourrière (Acteur)}</p><ul><li>Filet (jet de Dextérité, malus 20 %) : 65 %</li><li>Anesthésiant (jet de Constitution, malus 40 %) : 50 %</li></ul><p>La fourrière parcourt la ville, scrutant chaque recoin à la recherche de chiens et de chats sauvages ou errants. Elle utilise principalement des filets ou des anesthésiques pour capturer ces animaux.</p><blockquote><p>Plusieurs employés de la fourrière d'Arkham rapportent que certains animaux capturés semblent communiquer entre eux dans une langue inconnue. Fait troublant, deux de ces employés ont été retrouvés morts ce matin dans le parc municipal. Le véhicule de la fourrière, découvert à proximité, présentait des traces de griffes anormalement grandes.</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 900000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.rUaWYj04Qb3okWpR"
+  },
+  {
+   "_id": "Vi3QvxU6gRlb51fS",
+   "name": "Ghatanothoa",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 80</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.vlRf6NwSzScAP83j]{Fiche de Ghatanothoa (Acteur)}</p><ul><li>Bras surpuissants : 70 % / 3d8</li></ul><p><strong>Capacité :</strong> Jet de force pour ce libérer ou 2D6 dégâts en plus</p><p>Le \"Veilleur de la Nécropole\" est un colosse imposant, redouté pour sa force capable de broyer quiconque croise son chemin. Cette créature habite principalement sous terre, dans des grottes où abondent corps et ossements. Elle ne s'aventure que rarement vers les villages, préférant la solitude de son domaine souterrain.</p><blockquote><p>Le cimetière d'Arkham a été vandalisé pendant la nuit. Plus de 30 tombes ont été ouvertes et leurs corps ont disparu, sans laisser aucune trace. Les autorités sont perplexes face à l'absence de preuves matérielles. Quelques habitants voisins affirment avoir entendu des bruits sourds et inquiétants provenant du sous-sol</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 1000000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.Vi3QvxU6gRlb51fS"
+  },
+  {
+   "_id": "Mh1LiR7y11IDgyv5",
+   "name": "Gnoph-Keh",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 50</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.WcRcJxB2QlYY9ftj]{Fiche de Gnoph-Keh (Acteur)}</p><ul><li>Griffes : 70 % / 2d6+3</li></ul><p><strong>Pouvoir :</strong> Contrôle de la glace et de la neige</p><p>Les Gnoph-Keh sont de gigantesques créatures à six membres, recouvertes d'une épaisse fourrure grisâtre et dotées de cornes. Connues pour leur agressivité, elles vivent exclusivement dans les environnements glacés et froids. Ces êtres imposants, de la taille d'un ours polaire, possèdent des griffes tranchantes et de nombreuses dents acérées.</p><blockquote><p>Lors d'une mission de cartographie au Groenland, menée par le capitaine Ejnar Mikkelsen, celui-ci rapporte avoir aperçu une énorme créature à six pattes dans le blizzard. L'expédition aurait été suivie pendant plus de 10 jours. Durant cette période, cinq matelots ont disparu sans laisser de trace</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 1100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.Mh1LiR7y11IDgyv5"
+  },
+  {
+   "_id": "RujXG37C0D3dTrtp",
+   "name": "Goule",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 13</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.10qOSGGH9omMO60m]{Fiche de Goule (Acteur)}</p><ul><li>Mâchoire : 65 % / 1d8</li></ul><p><strong>Capacité :</strong> dégâts / 2</p><p>Les Goules, créatures voraces des ténèbres, sont des êtres mi-cadavres mi-humains qui rôdent principalement dans les cimetières et autres lieux de sépulture. Elles se nourrissent de chair en décomposition, mais ne dédaignent pas la chair fraîche lorsque l'occasion se présente.</p><blockquote><p>À Providence, le mystère des tombes profanées persiste. Ce week-end, une nouvelle sépulture a été profanée, à peine quelques jours après l'enterrement de M. Kinghash. Ce matin, le gardien a découvert une tombe vide.</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 1200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.RujXG37C0D3dTrtp"
+  },
+  {
+   "_id": "txCGWuqdBXgxd81u",
+   "name": "Loup",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 10</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.OqZVk1p7pR9CQ0BM]{Fiche de Loup (Acteur)}</p><ul><li>Mâchoire : 60 % / 1d6</li></ul><p><strong>Capacité :</strong> bonus d'attaque en groupe</p><p>Le loup sauvage est un mammifère carnivore hautement social qui vit en meute dans divers environnements, notamment la campagne. Sa structure sociale complexe repose sur une hiérarchie précise, dirigée par un couple dominant appelé \"alpha\".</p><blockquote><p>Un loup a été aperçu près du centre-ville, dans un quartier résidentiel, semant le trouble parmi les habitants. Un témoin rapporte avoir croisé un animal gris et blanc, nullement effrayé par la présence humaine, se déplaçant comme s'il cherchait quelque chose de précis</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 1300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.txCGWuqdBXgxd81u"
+  },
+  {
+   "_id": "kFp0R2GpfSbqI6zh",
+   "name": "Loup-Garou",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 35</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.4X4YkpgSa0AhuIFc]{Fiche de Loup-Garou (Acteur)}</p><ul><li>Crocs : 75 % / 2d8+2</li></ul><p><strong>Pouvoir :</strong> Transformation en humain</p><p>Le loup-garou est une créature mythique décrite comme un homme capable de se transformer en loup lors des nuits de pleine lune. Durant cette phase, il devient une bête incontrôlable, animée par un instinct primal et une rage dévastatrice.</p><blockquote><p>Des habitants de la périphérie d'Arkham signalent des hurlements inquiétants provenant des bois chaque nuit, alimentant les rumeurs d'un loupgarou rôdant dans la région. L'inquiétude grandit depuis la disparition d'un deuxième randonneur, laissant les résidents dans l'angoisse face à cette mystérieuse menace</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 1400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.kFp0R2GpfSbqI6zh"
+  },
+  {
+   "_id": "09jUzRJaYnyXnGu6",
+   "name": "Mafieu",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 12</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.g3YcvEaXWZMbmTd0]{Fiche de Mafieu (Acteur)}</p><ul><li>Arme : 60 % / 1d8</li></ul><p><strong>Capacité :</strong> informateur</p><p>Membre d'une organisation criminelle, le mafieux est fréquemment impliqué dans des activités illégales, telles que le trafic de drogue et l'extorsion. Il sert également d'intermédiaire pour des cultes obscurs, utilisant ses connexions pour orchestrer des enlèvements ou des vols au service de ces groupes clandestins.</p><blockquote><p>Trois hommes liés à des activités de contrebande d'alcool ont disparu près des docks, suscitant l'inquiétude des autorités qui craignent un lien avec des règlements de comptes mafieux. Ce matin, le corps de l'un d'eux a été retrouvé, présentant de larges griffures anormalement profondes, ajoutant une dimension troublante à cette affaire</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 1500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.09jUzRJaYnyXnGu6"
+  },
+  {
+   "_id": "e3ozojDdHu6gGVEp",
+   "name": "Maigre Bête",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 35</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.sZjJA9Q5MIDUtMgM]{Fiche de Maigre Bête (Acteur)}</p><ul><li>Griffes : 70 % / 1d10</li></ul><p><strong>Pouvoir :</strong> Invisibilité temporaire</p><p>Les Maigre bête sont des êtres noirs, sans visage, dotés de grandes ailes membranées et de cornes, qui errent dans la contrée du rêve. Leur apparence inquiétante est accentuée par leur capacité à se déplacer silencieusement et dans les ombres.</p><blockquote><p>Plusieurs gardiens de nuit du musée ont déclaré avoir entendu à plusieurs reprises des bruits d'ailes imposantes battant dans l'obscurité, accompagnés de frissons inexplicables. Depuis une semaine, les chiens des gardiens refusent de sortir pour leurs rondes à l'extérieur</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 1600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.e3ozojDdHu6gGVEp"
+  },
+  {
+   "_id": "Ney36YtUl11ZUTz2",
+   "name": "Migo",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 55</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.ULIpetwBZH7nIoo2]{Fiche de Migo (Acteur)}</p><ul><li>Appendices tranchants : 70 % / 2d6</li></ul><p><strong>Capacité :</strong> 3 attaques par tour</p><p>Les Migo sont des créatures extraterrestres de forme insectoïdes ailés, qui vivent sur la planète Yuggoth (Pluton) et sont connus pour leur capacité à transporter des êtres vivants à travers l'espace pour les étudier ou les utiliser dans des expériences scientifiques.</p><blockquote><p>Des archéologues ont signalé avoir découvert des symboles étranges gravés dans une grotte située à quelques kilomètres d'Arkham. Ces inscriptions sont inconnues et indécodables. L'université d'Arkham propose une récompense de 100$ à toute personne pouvant aider à résoudre ce mystère</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 1700000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.Ney36YtUl11ZUTz2"
+  },
+  {
+   "_id": "LDZDXoHyCuD4E8ku",
+   "name": "Profond",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 35</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.8ZtHncK4MvMLmcrZ]{Fiche de Profond (Acteur)}</p><ul><li>Mâchoire : 70 % / 2d10</li></ul><p><strong>Pouvoir :</strong> communication avec les autres profonds</p><p>Les Profonds sont des créatures aquatiques humanoïdes, mihommes mi-poissons. Ils vénèrent Dagon. Ils sont très dangereux pour les Chats d'Ulthar.</p><blockquote><p>Au cœur des marais autour d'Arkham, des disparitions énigmatiques troublent la tranquillité des habitants. La famille Grismard offre une récompense généreuse pour retrouver leur fille disparue depuis deux jours. L'enquête prend une tournure étrange, car la seule piste de la police est un sans-abri qui affirme avoir aperçu d'énormes poissons</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 1800000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.LDZDXoHyCuD4E8ku"
+  },
+  {
+   "_id": "DERW12sQ2NKCRBVW",
+   "name": "Rat",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 3</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.7PacPju44FimpeAo]{Fiche de Rat (Acteur)}</p><ul><li>Dents / Griffes : 50 % / 1d4</li></ul><p><strong>Capacité :</strong> rassemblement en groupe</p><p>connu pour son intelligence, sa curiosité et sa capacité à s'adapter. Souvent considéré comme un nuisible, le rat se faufile dans toutes les lieux à travers les canalisations ou divers petits passages.</p><blockquote><p>Des habitants ont signalé avoir observé des groupes de rats se rassemblant en cercle autour d'un vieux puits, émettant des cris étranges et semblant communiquer entre eux dans une sorte de langage incompréhensible</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 1900000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.DERW12sQ2NKCRBVW"
+  },
+  {
+   "_id": "VvqLplNIPEFQUKwz",
+   "name": "Rhan-Tegoth",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 70</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.qvU0aSFuhgDFcSZZ]{Fiche de Rhan-Tegoth (Acteur)}</p><ul><li>Bras : 80 % / 2d10</li><li>Essaim (6 PV) : 60 % / 2d4</li></ul><p><strong>Pouvoir :</strong> Contrôle les essaims</p><p>Créature amphibie de trois mètres de haut, le RhanTegoth possède une apparence insectoïde, avec une carapace brillante et des pinces acérées. Il se nourrit de l'énergie vitale de ses victimes. En essaim, ces créatures se déplacent comme une seule entité, rendant leur approche presque inévitable.</p><blockquote><p>Les habitants d'une ferme isolée ont tous disparu sans laisser de trace, à l'exception d'une note énigmatique faisant mention d'un essaim cauchemardesque dévorant tout sur son passage</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 2000000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.VvqLplNIPEFQUKwz"
+  },
+  {
+   "_id": "yWN7HYPrUMLiOHoJ",
+   "name": "Roi Jaune",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 30</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.xjN5aArmt4Qchj72]{Fiche de Roi Jaune (Acteur)}</p><ul><li>Mains spectrales : 75 % / 2d8+5</li></ul><p><strong>Pouvoir :</strong> vision de folie ou terreur</p><p>Nommé aussi Hastu, cette entité est le roi de la folie et des cauchemars. Il réside dans la ville maudite de Carcosa, dans la contrée du rêve. Il attire les âmes folles dans sa cité interdite, promettant des visions enivrantes tout en les condamnant à une éternité de tourments.</p><blockquote><p>Un artiste jusqu'alors inconnu commence à attirer l'attention. Il a créé une série de peintures en utilisant des pigments rares qu'il a découverts dans un marché antique. Chaque œuvre semble capturer l'essence de la terreur et ceux qui les regardent trop longtemps ressentent une angoisse grandissante</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 2100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.yWN7HYPrUMLiOHoJ"
+  },
+  {
+   "_id": "MvMyRm2erOp7j6kz",
+   "name": "Serpent",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 6</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.i5QjEEnnYqVvubtv]{Fiche de Serpent (Acteur)}</p><ul><li>Mâchoire : 60 % / 1d6</li></ul><p><strong>Capacité :</strong> Venin paralysant</p><p>Reptile carnivore sans membres, il se caractérise par un corps allongé et cylindrique, une langue bifide, des yeux dépourvus de paupières. Il a la capacité de se déplacer par ondulations. Il tue ses victimes par strangulation ou par injection de venin.</p><blockquote><p>Les soignants affirment que les membres du culte croyaient que ces morsures étaient des épreuves divines destinées à prouver leur foi. La réalité a conduit à une vague de blessures graves</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 2200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.MvMyRm2erOp7j6kz"
+  },
+  {
+   "_id": "IJbqyCrRs2O9tYea",
+   "name": "Sorcière",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 10</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.Crdw6o8dsp9uBp9P]{Fiche de Sorcière (Acteur)}</p><ul><li>Ongles : 65 % / 1d8</li></ul><p><strong>Pouvoir :</strong> Manipulation mentale</p><p>Elle utilise la magie noire et invoque des forces obscures pour assouvir sa soif de pouvoir. La sorcière puise sa puissance dans des rituels anciens et des pactes avec des entités démoniaques.</p><blockquote><p>Après plus de 6 mois d'enquête, je suis persuadé que des pratiques de sorcellerie impliquent des notables d'Arkham. Àplusieurs reprises, j'ai observé des cérémonies mystérieuses au manoir de la famille White, où des personnes masquées se réunissaient</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 2300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.IJbqyCrRs2O9tYea"
+  },
+  {
+   "_id": "0RLOh3spuBrQorYD",
+   "name": "Tsathoggua",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 50</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.r7Xmk2RhxKgryt6A]{Fiche de Tsathoggua (Acteur)}</p><ul><li>Langue acide : 50 % / 3d6</li></ul><p><strong>Pouvoir :</strong> appel d’autres amphibiens</p><p>Aussi appelé Zhothaqquah, c'est une entité surnaturelle décrite comme un dieu obèse à tête de crapaud, souvent associée à la paresse et à des rituels sacrificiels. Il connaît de nombreux sortilèges. Ses morsures lui permettent d'absorber 1D6 de la constitution de son adversaire.</p><blockquote><p>Des inscriptions étranges et des tags ont récemment refait leur apparition dans plusieurs quartiers d'Arkham</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 2400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.0RLOh3spuBrQorYD"
+  },
+  {
+   "_id": "IhepZYsfd1VNZQMY",
+   "name": "Ubbosathla",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 90</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.BLzmcTcTj2wlgHLG]{Fiche de Ubbosathla (Acteur)}</p><ul><li>Jet vase acide : 70 % / 2d12</li></ul><p><strong>Pouvoir :</strong> régénération 1d6 / round</p><p>Ubbo-Sathla est une entité souvent décrite comme une masse informe reposant dans la boue et les vapeurs. Immunisé aux dégâts traditionnels, elle essaie avec ses pseudopodes d'empoigner et absorber ses victimes.</p><blockquote><p>Des randonneurs ont découvert des corps à moitié digérés dans les marais du parc de la Vieille Forêt</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 2500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.IhepZYsfd1VNZQMY"
+  },
+  {
+   "_id": "oen4nDEGAUEftkln",
+   "name": "Wendigo",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 40</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.5yHQR3s3bzAMzUEs]{Fiche de Wendigo (Acteur)}</p><ul><li>Griffes : 70 % / 2d8</li></ul><p><strong>Pouvoir :</strong> peur paralysante</p><p>Le Wendigo est une entité gigantesque et humanoïde, souvent décrite comme étant à la fois squelettique et décharnée. Sa peau, d'un gris cendreux, est tendue sur des os apparents. Ses yeux, enfoncés dans leurs orbites, hypnotisent ses cibles.</p><blockquote><p>Dans le petit village d'Isobar, situé à quelques kilomètres d'Arkham, plusieurs habitants affirment avoir aperçu une silhouette gigantesque rôdant près des maisons la nuit. Les villageois évoquent une malédiction ancestrale liée à une créature qui se nourrit de la peur et de la chair humaine</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 2600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.oen4nDEGAUEftkln"
+  },
+  {
+   "_id": "s4MRbFfTT2saL6UG",
+   "name": "Yith",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 40</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.Oq2qvPDIPVdd387C]{Fiche de Yith (Acteur)}</p><ul><li>Appendice : 70 % / 2d8</li><li>Rayon destructeur : 60 % / 4d10</li></ul><p><strong>Capacité :</strong> Outils technologiques venus de l’espace</p><p>Les Yith sont une race extraterrestre d'une intelligence prodigieuse. Ils mesurent environ trois mètres de haut. Dotés de puissants pouvoirs psychiques, ils peuvent transférer leur conscience dans le corps d'autres espèces à travers le temps et l'espace. Ils recherchent la connaissance de tous les savoirs.</p><blockquote><p>Dans les environs d'Arkham, plusieurs habitants ont mystérieusement disparu cette année, plongeant la communauté dans l'inquiétude. Des témoins rapportent avoir observé des lumières étranges dans le ciel et entendu des bruits inhabituels la nuit précédant chaque disparition. Les autorités ont ouvert une enquête pour tenter de résoudre ce mystère troublant</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 2700000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.s4MRbFfTT2saL6UG"
+  },
+  {
+   "_id": "v7AJOWMs2bCYb74A",
+   "name": "Zoog",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 5</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.mkaIpfJlFS9nELiV]{Fiche de Zoog (Acteur)}</p><ul><li>Morsure : 30 % / 1d4</li></ul><p><strong>Pouvoir :</strong> perte d’orientation</p><p>Les Zoogs sont des créatures ressemblant à de petits animaux rongeurs dotés de tentacules préhensiles sur leur museau. Mesurant environ 50 cm, ils possèdent une intelligence rusée et vivent en meutes dans les forêts.</p><blockquote><p>Dans plusieurs quartiers résidentiels, les jardins ont été saccagés du jour au lendemain, avec des plantes arrachées et des légumes disparus. Les propriétaires affirment avoir vu de petites ombres se faufiler entre les buissons</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 2800000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.v7AJOWMs2bCYb74A"
+  },
+  {
+   "_id": "Gff0qMbZq5P1ziYt",
+   "name": "Être antique",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p><strong>PV : 90</strong> · @UUID[Compendium.miaulements-ulthar.bestiaire.Actor.gze6Z1gRS1p7HXH5]{Fiche de Être antique (Acteur)}</p><ul><li>2 attaques aux tentacules : 70 % / 10d6</li></ul><p><strong>Pouvoir :</strong> Connaissance ancestrale</p><p>Les Êtres antiques, également connus sous le nom d'Anciens, sont des créatures extraterrestres très anciennes. Ils sont souvent décrits comme ayant des corps en forme d'étoile, des tentacules, et des yeux pédonculés.</p><blockquote><p>Des archéologues ont découvert des ruines anciennes dans une région isolée de l'Antarctique. Les structures cyclopéennes et les artefacts étranges suggèrent une civilisation avancée inconnue. Les chercheurs sont perplexes et appellent à une enquête plus approfondie</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 2900000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ogSu2g7PX0tjHNFF.Gff0qMbZq5P1ziYt"
+  }
+ ],
+ "folder": null,
+ "sort": 500000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!ogSu2g7PX0tjHNFF"
+}

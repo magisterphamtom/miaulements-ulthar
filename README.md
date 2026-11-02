@@ -15,5 +15,10 @@ Dans Foundry : *Systèmes de jeu* › *Installer un système* › coller le lien
 
 `https://github.com/magisterphamtom/miaulements-ulthar/releases/latest/download/system.json`
 
+## Contenu
+- Fiche de Chat fidèle à la fiche papier, assistant de création, jets D100, Folie, progression, combat automatisé, pouvoirs et bulle onirique.
+- Compendiums : pouvoirs, tables, bestiaire (29 adversaires), 7 prétirés, scénarios, macros du Gardien.
+- Deux wikis qui s'ouvrent tout seuls : joueurs et Gardien.
+
 ## État
-Voir [ETAT.md](ETAT.md). Version 0.1.0 : fiche de Chat, jets D100, Folie, progression. Non testé dans Foundry à ce stade.
+Voir [ETAT.md](ETAT.md). Version 0.3.0, pas encore testée dans Foundry.

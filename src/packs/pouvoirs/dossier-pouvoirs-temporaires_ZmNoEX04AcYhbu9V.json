@@ -1,0 +1,19 @@
+{
+ "_id": "ZmNoEX04AcYhbu9V",
+ "name": "Pouvoirs temporaires",
+ "type": "Item",
+ "folder": null,
+ "sorting": "a",
+ "sort": 300000,
+ "color": null,
+ "flags": {},
+ "description": "",
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!folders!ZmNoEX04AcYhbu9V"
+}

@@ -1,0 +1,47 @@
+{
+ "_id": "OqZVk1p7pR9CQ0BM",
+ "name": "Loup",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Mâchoire",
+    "pct": 60,
+    "degats": "1d6"
+   }
+  ],
+  "pouvoir": "",
+  "capacite": "bonus d'attaque en groupe",
+  "pv": {
+   "value": 10,
+   "max": 10
+  },
+  "description": "<p>Le loup sauvage est un mammifère carnivore hautement social qui vit en meute dans divers environnements, notamment la campagne. Sa structure sociale complexe repose sur une hiérarchie précise, dirigée par un couple dominant appelé \"alpha\".</p><p><strong>Capacité :</strong> bonus d'attaque en groupe</p><blockquote><p>Un loup a été aperçu près du centre-ville, dans un quartier résidentiel, semant le trouble parmi les habitants. Un témoin rapporte avoir croisé un animal gris et blanc, nullement effrayé par la présence humaine, se déplaçant comme s'il cherchait quelque chose de précis</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Loup",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!OqZVk1p7pR9CQ0BM"
+}

@@ -1,0 +1,28 @@
+{
+ "_id": "Dc7W6c88S9GVLeOf",
+ "name": "Charme humain",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "temporaire",
+  "attribut": "",
+  "description": "<p>Un charme irrésistible permet de manipuler les émotions.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "ZmNoEX04AcYhbu9V",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!Dc7W6c88S9GVLeOf"
+}

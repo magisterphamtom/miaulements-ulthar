@@ -1,0 +1,47 @@
+{
+ "_id": "WcRcJxB2QlYY9ftj",
+ "name": "Gnoph-Keh",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Griffes",
+    "pct": 70,
+    "degats": "2d6+3"
+   }
+  ],
+  "pouvoir": "Contrôle de la glace et de la neige",
+  "capacite": "",
+  "pv": {
+   "value": 50,
+   "max": 50
+  },
+  "description": "<p>Les Gnoph-Keh sont de gigantesques créatures à six membres, recouvertes d'une épaisse fourrure grisâtre et dotées de cornes. Connues pour leur agressivité, elles vivent exclusivement dans les environnements glacés et froids. Ces êtres imposants, de la taille d'un ours polaire, possèdent des griffes tranchantes et de nombreuses dents acérées.</p><blockquote><p>Lors d'une mission de cartographie au Groenland, menée par le capitaine Ejnar Mikkelsen, celui-ci rapporte avoir aperçu une énorme créature à six pattes dans le blizzard. L'expédition aurait été suivie pendant plus de 10 jours. Durant cette période, cinq matelots ont disparu sans laisser de trace</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Gnoph-Keh",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!WcRcJxB2QlYY9ftj"
+}

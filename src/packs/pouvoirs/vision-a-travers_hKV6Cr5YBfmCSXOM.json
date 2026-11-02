@@ -1,0 +1,28 @@
+{
+ "_id": "hKV6Cr5YBfmCSXOM",
+ "name": "Vision à travers",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "race",
+  "attribut": "",
+  "description": "<p>(Siamois) Le Chat voit à travers les objets solides et perçoit ce qui se cache derrière les murs, les portes et autres obstacles.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "WG4lMQcfRb3JUelh",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!hKV6Cr5YBfmCSXOM"
+}

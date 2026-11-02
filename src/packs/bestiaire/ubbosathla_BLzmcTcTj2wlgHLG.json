@@ -1,0 +1,47 @@
+{
+ "_id": "BLzmcTcTj2wlgHLG",
+ "name": "Ubbosathla",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Jet vase acide",
+    "pct": 70,
+    "degats": "2d12"
+   }
+  ],
+  "pouvoir": "régénération 1d6 / round",
+  "capacite": "",
+  "pv": {
+   "value": 90,
+   "max": 90
+  },
+  "description": "<p>Ubbo-Sathla est une entité souvent décrite comme une masse informe reposant dans la boue et les vapeurs. Immunisé aux dégâts traditionnels, elle essaie avec ses pseudopodes d'empoigner et absorber ses victimes.</p><blockquote><p>Des randonneurs ont découvert des corps à moitié digérés dans les marais du parc de la Vieille Forêt</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Ubbosathla",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!BLzmcTcTj2wlgHLG"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "miaulements-ulthar-outils",
+  "private": true,
+  "type": "module",
+  "description": "Outils de construction des compendiums (hors du zip du système).",
+  "dependencies": { "@foundryvtt/foundryvtt-cli": "^3.0.0" }
+}

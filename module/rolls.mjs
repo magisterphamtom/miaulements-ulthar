@@ -7,12 +7,11 @@ export function modeCourant() {
   return MODES[cle] ?? MODES.pulp;
 }
 
-function esc(texte) {
-  return foundry.utils.escapeHTML(String(texte));
-}
+export const esc = (texte) => foundry.utils.escapeHTML(String(texte ?? ""));
 
-async function demanderJet(titre, { pouvoirPossible = true } = {}) {
-  const options = Object.entries(DIFFICULTES)
+/** Fenêtre de jet : difficulté, et pouvoir si le jet en autorise un. */
+export async function demanderJet(titre, { pouvoirPossible = true, options = "" } = {}) {
+  const diff = Object.entries(DIFFICULTES)
     .map(([v, l]) => `<option value="${v}" ${v === "0" ? "selected" : ""}>${l}</option>`)
     .join("");
   const pouvoir = pouvoirPossible
@@ -20,27 +19,36 @@ async function demanderJet(titre, { pouvoirPossible = true } = {}) {
     : "";
   return DialogV2.prompt({
     window: { title: titre },
-    content: `<div class="form-group"><label>Difficulté</label><select name="difficulte">${options}</select></div>${pouvoir}`,
+    content: `${options}<div class="form-group"><label>Difficulté</label><select name="difficulte">${diff}</select></div>${pouvoir}`,
     ok: {
       label: "Lancer",
       icon: "fa-solid fa-dice-d20",
       callback: (event, button) => {
-        const data = new foundry.applications.ux.FormDataExtended(button.form).object;
-        return { difficulte: Number(data.difficulte ?? 0), pouvoir: Boolean(data.pouvoir) };
+        const f = button.form;
+        const val = (n) => f.querySelector(`[name="${n}"]`);
+        return {
+          difficulte: Number(val("difficulte")?.value ?? 0),
+          pouvoir: Boolean(val("pouvoir")?.checked),
+          attribut: val("attribut")?.value,
+          degats: val("degats")?.value
+        };
       }
     },
     rejectClose: false
   });
 }
 
-/** Jet d'attribut : D100 <= valeur, difficulté ajoutée au dé, pouvoir −20 au dé et perte de PM. */
-export async function jetAttribut(actor, cle, { rapide = false } = {}) {
+/**
+ * Jet d'attribut : D100 <= valeur, difficulté ajoutée au dé, pouvoir −20 au dé et perte de PM.
+ * options : { rapide, difficulte, pouvoir, gratuit, titre, note } ; renvoie le résultat (ou null si annulé).
+ */
+export async function jetAttribut(actor, cle, options = {}) {
   const attr = actor.system.attributs[cle];
-  if (!attr) return;
-  let choix = { difficulte: 0, pouvoir: false };
-  if (!rapide) {
+  if (!attr) return null;
+  let choix = { difficulte: options.difficulte ?? 0, pouvoir: options.pouvoir ?? false };
+  if (!options.rapide && options.difficulte === undefined) {
     choix = await demanderJet(`${actor.name} — ${ATTRIBUTS[cle].label}`);
-    if (!choix) return;
+    if (!choix) return null;
   }
   const mode = modeCourant();
   const roll = await new Roll("1d100").evaluate();
@@ -52,40 +60,42 @@ export async function jetAttribut(actor, cle, { rapide = false } = {}) {
 
   // Pouvoir : les unités du dé = PM perdus (0 = aucune perte), que le jet réussisse ou non.
   let perte = 0;
-  if (choix.pouvoir) {
+  if (choix.pouvoir && !options.gratuit) {
     perte = brut % 10;
-    const pm = Math.max(0, actor.system.pm.value - perte);
-    await actor.update({ "system.pm.value": pm });
+    await actor.update({ "system.pm.value": Math.max(0, actor.system.pm.value - perte) });
   }
 
   // Échec : une case cochée sur l'attribut.
   let coche = false;
-  if (!reussite && game.settings.get(SYSTEM_ID, "cocherAuto")) {
-    await actor.update({ [`system.attributs.${cle}.echecs`]: attr.echecs + 1 });
+  if (!reussite && game.settings.get(SYSTEM_ID, "cocherAuto") && actor.type === "chat") {
+    await actor.update({ [`system.attributs.${cle}.echecs`]: Math.min(CASES_ECHEC, attr.echecs + 1) });
     coche = true;
   }
 
   const verdict = critReussite ? "Réussite critique !" : critEchec ? "Échec critique !" : reussite ? "Réussite" : "Échec";
-  const classe = reussite ? "reussite" : "echec";
   const detail = [
     `Dé <strong>${brut}</strong>`,
     choix.difficulte ? `difficulté ${choix.difficulte > 0 ? "+" : ""}${choix.difficulte}` : "",
     choix.pouvoir ? "pouvoir −20" : "",
     `= <strong>${modifie}</strong> contre ${attr.value} %`
   ].filter(Boolean).join(" · ");
-  const extra = [
-    choix.pouvoir ? `<p class="mu-note">Pouvoir : −${perte} PM</p>` : "",
-    coche ? `<p class="mu-note">Case d'échec cochée (${Math.min(attr.echecs + 1, CASES_ECHEC)}/${CASES_ECHEC})</p>` : ""
+  const notes = [
+    choix.pouvoir ? `<p class="mu-note">${options.gratuit ? "Pouvoir gratuit (0 PM)" : `Pouvoir : −${perte} PM`}</p>` : "",
+    coche ? `<p class="mu-note">Case d'échec cochée (${Math.min(attr.echecs + 1, CASES_ECHEC)}/${CASES_ECHEC})</p>` : "",
+    critEchec && mode === MODES.pulp ? `<p class="mu-note">Pulp : un autre joueur peut tenter de rattraper cet échec critique.</p>` : "",
+    !reussite && !critEchec && mode === MODES.pulp ? `<p class="mu-note">Pulp : le joueur peut retenter, mais cette fois l'échec sera flagrant.</p>` : "",
+    options.note ?? ""
   ].join("");
 
   await ChatMessage.create({
     speaker: ChatMessage.getSpeaker({ actor }),
     rolls: [roll],
-    content: `<div class="mu-carte ${classe}">
-      <header>${esc(ATTRIBUTS[cle].label)} <span class="mu-pourcent">${attr.value} %</span></header>
+    content: `<div class="mu-carte ${reussite ? "reussite" : "echec"}">
+      <header>${esc(options.titre ?? ATTRIBUTS[cle].label)} <span class="mu-pourcent">${attr.value} %</span></header>
       <p class="mu-verdict">${verdict}</p>
-      <p class="mu-detail">${detail}</p>${extra}</div>`
+      <p class="mu-detail">${detail}</p>${notes}</div>`
   });
+  return { reussite, critReussite, critEchec, brut, modifie, perte, pouvoir: choix.pouvoir };
 }
 
 /** Jet de Folie : D100 <= PF. Échec : une carte Folie est tirée. */
@@ -128,19 +138,5 @@ export async function monterAttribut(actor, cle) {
     content: `<div class="mu-carte reussite"><header>${esc(ATTRIBUTS[cle].label)} progresse</header>
       <p class="mu-verdict">+${roll.total} (${attr.value} → ${attr.value + roll.total} %)</p>
       <p class="mu-note">Les PV, PF et PM maximum sont recalculés.</p></div>`
-  });
-}
-
-/** Branche les boutons des cartes de chat. */
-export function brancherCartes(message, html) {
-  html.querySelectorAll("[data-mu='garder-folie']").forEach((bouton) => {
-    bouton.addEventListener("click", async () => {
-      const actor = await fromUuid(bouton.dataset.actor);
-      if (!actor?.isOwner) return ui.notifications.warn("Vous n'êtes pas propriétaire de ce Chat.");
-      const cartes = [...actor.system.cartesFolie, bouton.dataset.carte];
-      await actor.update({ "system.cartesFolie": cartes });
-      bouton.disabled = true;
-      bouton.textContent = "Carte gardée";
-    });
   });
 }

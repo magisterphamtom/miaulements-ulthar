@@ -1,0 +1,119 @@
+{
+ "_id": "2A30CrKy1XrrogGz",
+ "name": "Aides de jeu",
+ "pages": [
+  {
+   "_id": "9vEHhbM0Bl7ZloRK",
+   "name": "Aides de jeu",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Aides de jeu Pour vous aider à vivre pleinement vos campagnes, plusieurs outils pratiques sont à votre disposition : fiche de suivi de campagne, fiche de suivi des personnages et cartes des lieux. Les aventures émergentes invitent le maître de jeu à garder en mémoire les choix, les conséquences et les événements marquants. Ces ressources sont conçues pour vous accompagner dans la gestion et la cohérence votre histoire.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!2A30CrKy1XrrogGz.9vEHhbM0Bl7ZloRK"
+  },
+  {
+   "_id": "1KYIPWk4TypHCB14",
+   "name": "Fiche de suivi des PERSONNAGES",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Cette fiche de suivi, conçue pour les campagnes, vous permettra de consigner des éléments concernant chaque personnage. Elle sert à conserver toutes les informations susceptibles d’influencer la suite de l’aventure.</p>\n<p>Joueur : Surnom : Notes :</p>\n<p>Joueur : Surnom : Notes :</p>\n<p>Joueur : Surnom : Notes :</p>\n<p>Joueur : Surnom : Notes :</p>\n<h3>Fiche de suivi de la CAMPAGNE</h3>\n<p>Cette fiche de suivi de campagne, à l’usage du meneur de jeu, permet de consigner l’évolution de l’intrigue et les événements majeurs impactant l’ensemble du groupe ou la campagne.</p>\n<p>Episode : Notes :</p>\n<p>Episode : Notes :</p>\n<p>Episode : Notes :</p>\n<p>Episode : Notes :</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!2A30CrKy1XrrogGz.1KYIPWk4TypHCB14"
+  },
+  {
+   "_id": "sk0VuxUSjsT492ip",
+   "name": "Continuer l'aventure",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Envie de poursuivre l'aventure des Miaulements d'Ulthar ? Suivez nos prochaines sorties sur les réseaux sociaux site web : https://www.xaviiiier.com facebook : https://www.facebook.com/xaviiiierjdr instagram : https://www.instagram.com/xaviiiierjdr twitter : https://twitter.com/xaviiiierjdr</p>\n<h3>Miaourci et à miaoutôt ! Xaviiiier</h3>\n<p>xaviiiier.com ISBN : 978-2-9582546-8-1 Dépôt légal : Septembre 2025 v20250803</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!2A30CrKy1XrrogGz.sk0VuxUSjsT492ip"
+  }
+ ],
+ "folder": null,
+ "sort": 1100000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!2A30CrKy1XrrogGz"
+}

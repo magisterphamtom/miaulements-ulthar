@@ -1,0 +1,47 @@
+{
+ "_id": "sZjJA9Q5MIDUtMgM",
+ "name": "Maigre Bête",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Griffes",
+    "pct": 70,
+    "degats": "1d10"
+   }
+  ],
+  "pouvoir": "Invisibilité temporaire",
+  "capacite": "",
+  "pv": {
+   "value": 35,
+   "max": 35
+  },
+  "description": "<p>Les Maigre bête sont des êtres noirs, sans visage, dotés de grandes ailes membranées et de cornes, qui errent dans la contrée du rêve. Leur apparence inquiétante est accentuée par leur capacité à se déplacer silencieusement et dans les ombres.</p><blockquote><p>Plusieurs gardiens de nuit du musée ont déclaré avoir entendu à plusieurs reprises des bruits d'ailes imposantes battant dans l'obscurité, accompagnés de frissons inexplicables. Depuis une semaine, les chiens des gardiens refusent de sortir pour leurs rondes à l'extérieur</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Maigre Bête",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!sZjJA9Q5MIDUtMgM"
+}

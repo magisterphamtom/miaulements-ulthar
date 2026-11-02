@@ -1,0 +1,23 @@
+{
+ "_id": "8SXdBGWqOIbynBeh",
+ "name": "Table : événement en ville",
+ "type": "script",
+ "author": null,
+ "img": "icons/svg/city.svg",
+ "scope": "global",
+ "command": "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Événements en ville')._id).then(t => t.draw());",
+ "folder": null,
+ "sort": 300000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!macros!8SXdBGWqOIbynBeh"
+}

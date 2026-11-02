@@ -1,0 +1,47 @@
+{
+ "_id": "vlRf6NwSzScAP83j",
+ "name": "Ghatanothoa",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Bras surpuissants",
+    "pct": 70,
+    "degats": "3d8"
+   }
+  ],
+  "pouvoir": "",
+  "capacite": "Jet de force pour ce libérer ou 2D6 dégâts en plus",
+  "pv": {
+   "value": 80,
+   "max": 80
+  },
+  "description": "<p>Le \"Veilleur de la Nécropole\" est un colosse imposant, redouté pour sa force capable de broyer quiconque croise son chemin. Cette créature habite principalement sous terre, dans des grottes où abondent corps et ossements. Elle ne s'aventure que rarement vers les villages, préférant la solitude de son domaine souterrain.</p><p><strong>Capacité :</strong> Jet de force pour ce libérer ou 2D6 dégâts en plus</p><blockquote><p>Le cimetière d'Arkham a été vandalisé pendant la nuit. Plus de 30 tombes ont été ouvertes et leurs corps ont disparu, sans laisser aucune trace. Les autorités sont perplexes face à l'absence de preuves matérielles. Quelques habitants voisins affirment avoir entendu des bruits sourds et inquiétants provenant du sous-sol</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Ghatanothoa",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!vlRf6NwSzScAP83j"
+}

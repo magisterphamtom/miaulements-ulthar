@@ -1,0 +1,47 @@
+{
+ "_id": "RrtMXyH22gfslcIl",
+ "name": "Chien",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Mâchoires",
+    "pct": 60,
+    "degats": "1d6"
+   }
+  ],
+  "pouvoir": "",
+  "capacite": "Impressionnant",
+  "pv": {
+   "value": 10,
+   "max": 10
+  },
+  "description": "<p>Le chien domestique est un compagnon fidèle et affectueux pour les humains. Bien qu'il soit moins intelligent que les chats, ses réactions peuvent être imprévisibles. Parfois amical, parfois dangereux, les Chats doivent donc se méfier de tout contact avec lui.</p><p><strong>Capacité :</strong> Impressionnant</p><blockquote><p>Dans le quartier nord du musée d'Arkham, un phénomène étrange se produit : les chiens semblent devenir fous. Depuis une semaine, un nombre anormal de morsures a été signalé. Pour des raisons inconnues, la plupart des chiens se montrent très agressifs envers leurs maîtres</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Chien",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!RrtMXyH22gfslcIl"
+}

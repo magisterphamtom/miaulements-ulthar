@@ -1,0 +1,227 @@
+{
+ "_id": "XFwzozlSOf6iDJpe",
+ "name": "Ator",
+ "type": "chat",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "race": "mainecoon",
+  "description": "<p>Ator, avec une prestance physique imposante, incarne la force brute.</p>",
+  "handicap": "",
+  "attributs": {
+   "chn": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "phy": {
+    "base": 60,
+    "race": 10,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "cha": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "agi": {
+    "base": 40,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "int": {
+    "base": 30,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "dis": {
+    "base": 45,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "per": {
+    "base": 65,
+    "race": -10,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "pre": {
+    "base": 60,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   }
+  },
+  "pv": {
+   "value": 5
+  },
+  "pm": {
+   "value": 30
+  },
+  "pf": {
+   "value": 53
+  },
+  "vies": {
+   "value": 9
+  },
+  "xp": 0,
+  "achats": {
+   "pm": 0,
+   "pv": 0,
+   "vies": 0
+  },
+  "cartesFolie": [],
+  "notes": ""
+ },
+ "prototypeToken": {
+  "name": "Ator",
+  "actorLink": true,
+  "disposition": 1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [
+  {
+   "_id": "9jOzoL5wMYQ31AzM",
+   "name": "Comprendre et lire l'humain",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Tous les Chats lisent et comprennent les êtres humains, quelle que soit leur langue (0 PM). Les langues anciennes demandent un jet d'Intelligence avec un malus selon le degré d'oubli de la langue. Ce pouvoir ne permet pas de parler aux humains.</p>",
+    "degats": "",
+    "gratuit": true
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!XFwzozlSOf6iDJpe.9jOzoL5wMYQ31AzM"
+  },
+  {
+   "_id": "AOAHSFZe1J1EEX9j",
+   "name": "Force légendaire",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "race",
+    "attribut": "",
+    "description": "<p>Puissance physique qui inflige des blessures profondes : grâce à ses griffes et à sa force, le Chat inflige le double de dégâts.</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!XFwzozlSOf6iDJpe.AOAHSFZe1J1EEX9j"
+  },
+  {
+   "_id": "xHRnFjkSO68ZBwTE",
+   "name": "Neuf vies",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Certains Chats ont neuf vies. Règle : le nombre de vies passe à neuf quel que soit le scénario. Uniquement pour les campagnes.</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!XFwzozlSOf6iDJpe.xHRnFjkSO68ZBwTE"
+  },
+  {
+   "_id": "sWbou1LDYJ1MBu8X",
+   "name": "Cauchemar mental",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Le Chat peut créer le souvenir d'un cauchemar et provoquer une angoisse ou une peur immédiate.</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!XFwzozlSOf6iDJpe.sWbou1LDYJ1MBu8X"
+  }
+ ],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!XFwzozlSOf6iDJpe"
+}

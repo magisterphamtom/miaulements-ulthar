@@ -1,0 +1,47 @@
+{
+ "_id": "zi2e6OUOXCyZFqcB",
+ "name": "Byahkee",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Griffes",
+    "pct": 70,
+    "degats": "1d10"
+   }
+  ],
+  "pouvoir": "Vol instantané sur une cible",
+  "capacite": "",
+  "pv": {
+   "value": 40,
+   "max": 40
+  },
+  "description": "<p>Le Byakhee est une créature interdimensionnelle ressemblant à une immense créature aux ailes de chauvesouris. Il émet des cris stridents et terrifiants pour effrayer ses cibles (jet de folie, malus de 20 %). Il saisit ses proies pour se nourrir de leur sang.</p><blockquote><p>Une exposition sur les créatures mythologiques a captivé le public. Mickael Parker, un artiste, y présente une sculpture réaliste d'une créature ailée, inspirée de ses cauchemars, qu'il décrit comme étant contagieux</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Byahkee",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!zi2e6OUOXCyZFqcB"
+}

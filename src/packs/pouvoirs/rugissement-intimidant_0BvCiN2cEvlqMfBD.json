@@ -1,0 +1,28 @@
+{
+ "_id": "0BvCiN2cEvlqMfBD",
+ "name": "Rugissement intimidant",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "temporaire",
+  "attribut": "",
+  "description": "<p>Un rugissement puissant terrifie les ennemis et peut les paralyser de peur. Jet réussi : un adversaire est terrorisé 1D6 rounds.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "ZmNoEX04AcYhbu9V",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!0BvCiN2cEvlqMfBD"
+}

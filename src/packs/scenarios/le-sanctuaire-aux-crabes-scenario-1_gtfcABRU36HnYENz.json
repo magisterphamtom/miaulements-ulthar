@@ -1,0 +1,251 @@
+{
+ "_id": "gtfcABRU36HnYENz",
+ "name": "Le Sanctuaire aux Crabes (scénario 1)",
+ "pages": [
+  {
+   "_id": "0I8I6j0BMZkWWjAO",
+   "name": "Intrigue générale",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Le Sanctuaire aux Crabes (scénario 1)</h3>\n<p>Scénario 1 : s e b a r Cx u a e r a Le Sanctu</p>\n<p>Ce scénario entraîne les joueurs dans un périlleux voyage vers une ile où siège le Sanctuaire des Chats Protecteurs d'Ulthar: le Sanctuaire aux Crabes. Ester, qui a demandé votre aide face à la disparition subite d'Yvian, ne sait que peu de choses, hormis qu'il appartient à cette élite. Les Chats doivent donc se rendre au Sanctuaire, sur l'Ile aux Crabes. Pour cela, ils vont se rendre à la Ville aux Deux Ports puis naviguer sur la Mer aux Crabes. Cette mer de sable est redoutée par la plupart des marins qui préfèrent longer ses côtes plutôt que de s'y aventurer. Arrivé sur l'Ile, ils découvriront, au Sanctuaire, qu'Yvian y a été emprisonné et qu'un artefact a disparu.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!gtfcABRU36HnYENz.0I8I6j0BMZkWWjAO"
+  },
+  {
+   "_id": "njmsmRJpELLDnMf2",
+   "name": "Début à Ulthar",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Pour jouer la scène d’introduction, veuillez vous référer dans un premier temps à La Cérémonie sacrée, livre de règles, chapitre : \"Guide du maître du jeu\". Vous trouverez ci-dessous le texte à y inclure.</p>\n<h3>Texte à lire :</h3>\n<p>D'une démarche feutrée mais tremblante, Ester, un vieux Gardien d'Ulthar, s'approche des Chats présents. Sa voix grinçante s'élève alors qu'il prend la parole : « Mes chers félins, j'ai une affaire qui me préoccupe. Un vieil ami, Yvian, un Gardien comme nous, n'a pas donné signe de vie depuis plus d'un mois. Yvian est un Chat très maniaque et toujours ponctuel. Il a pour habitude de nous rendre visite à Ulthar chaque mois, sans jamais manquer ce rendez-vous à la minute près, depuis plus de vingt ans. Mais cette fois, il n'est pas venu. Je m'inquiète pour lui et je vous demande de l'aide. Y-a-t-ils des volontaires ? »</p>\n<p>Note : Ester ne sait pas grand-chose sur les activités d'Yvian. Il sait seulement qu'Yvian appartient à une branche spéciale des Gardiens : les Protecteurs d’Ulthar. Yvian a toujours été très discret sur son rôle. Ester n’en dira pas plus avant leur retour.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!gtfcABRU36HnYENz.njmsmRJpELLDnMf2"
+  },
+  {
+   "_id": "D3VX5wAWNSuICFkj",
+   "name": "Grandes étapes possibles",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<ul><li>Préparer le départ</li><li>Se rendre à La Ville aux Deux Ports</li><li>Trouver une embarcation</li><li>Naviguer sur la Mer aux Crabes vers le Sanctuaire</li><li>Enquêter sur le Sanctuaire aux Crabes</li></ul>\n<p>Note : Les étapes proposées servent uniquement à structurer le scénario. Laissez-vous guider par les choix des joueurs car ce sont leurs décisions qui priment.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!gtfcABRU36HnYENz.D3VX5wAWNSuICFkj"
+  },
+  {
+   "_id": "CKdqDxocyPUZ7152",
+   "name": "Lieux",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Ulthar Tags: #familié, #sécurité, #petites-maisons, #rues-sinueuses Avant leur départ, les Chats peuvent rassembler tout le matériel nécessaire pour le voyage de quatre jours jusqu’à La ville aux deux ports. Ulthar, avec ses nombreuses échoppes, permet de trouver facilement tout l’équipement souhaité. □ La Ville aux Deux Ports Tags: #activité-commerciale, #diversité-culturelle, #bateaux-de-pêche, #quais-animés Belle ville marchande prospère où les biens transitent de diverses régions. Elle offre un passage unique entre la Mer aux Crabes et les rivières de la Contrée du Rêve. □ La Mer aux Crabes Tags: #danger, #inquiétude, #sables-mouvants, #crabes-errants Sur la Mer aux Crabes, les bateaux naviguent sur une mer de sable. Les vagues et les courants y sont violents, générés par le déplacement de crabes. Cela nécessite une maintenance des coques régulièrement endommagées. Le voyage est dangereux également en raison des pinces acérées des crabes qui ne cessent de déchiqueter les coques des bateaux. Il n'est pas rare de croiser des épaves ou des navires en perdition. Parfois, de plus gros crabes tentent d'arracher des morceaux entiers de navires. Plus les crabes sont agités, plus les remous et vagues de sable sont importantes. Bien que l'on puisse marcher sur le sable, les crabes sont agressifs et représentent un vrai danger pour les imprudents. □ Le Sanctuaire aux Crabes Tags: #isolé, #silence-perturbant, #vieux-monument Le sanctuaire se trouve sur un ile au centre de la Mer aux Crabes. Il faut compter deux jours de bateau pour y arriver. Les crabes ne semblent pas s'y approcher. L'entrée discrète est décorée de symboles qui rappellent les Gardiens d'Ulthar, ornée de fresques en rapport avec des artefacts et leurs dangers.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!gtfcABRU36HnYENz.CKdqDxocyPUZ7152"
+  },
+  {
+   "_id": "ojuBj4ZCZjr60txd",
+   "name": "Personnages de l'aventure (PNJ)",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Capitaine Tabart Tags: #barbe-grise, #voix-ferme, #affabulateur,#carte-de-navigation-usée Capitaine habitué à inventer des récits extraordinaires. Il navigue régulièrement sur la Mer aux Crabes. Sa vraie force vient des trois marins fidèles qu'il a à ses côtés depuis des années. □ Marins Goriam, Thib et Suzielle Tags: #tatouages, #vêtements-usés, #regard-inquiet, #superstitieux Marins superstitieux. Ils ont vécu de nombreuses aventures sur la mer avec leur capitaine qu’ils apprécient sincèrement. Ils sont toujours prudents face aux dangers. □ Bibliothécaire Adélaïde Tags: #lunettes-verres-épais, #cheveux-blancs, #voix-calme, #souriante Érudite qui possède une grande connaissance des légendes locales. Elle est toujours prête à aider ceux qui cherchent des réponses dans les livres. □ Tavernier Cédric Tags: #tablier-sale, #chauve, #odeur-bière Propriétaire d'une taverne animée où les marins viennent se reposer. Il est très bien informé sur les rumeurs locales. □ Petits crabes : Att 40% / 3 PV / pince 1d2 Tags: #carapace-brune, #pinces-rapides, #yeux-perçants, #mouvements- agiles, #danger-caché Ils sont agiles et rapides. Ils peuvent surprendre par leurs apparitions soudaines et se déplacent en nombre. □ Gros crabes : Att 60% / 15 PV / pince 1d6+1 Tags: #carapace-épaisse, #pinces-puissantes, #regard-menaçant, #mouvements-lents Crabe géant et puissant qui inspire la peur rien que par sa simple présence.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!gtfcABRU36HnYENz.ojuBj4ZCZjr60txd"
+  },
+  {
+   "_id": "4Dgtbgd9Od0G9WJa",
+   "name": "Indices & Événements",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Durant le voyage</h3>\n<p>□ Porte-bonheur :un colporteur, nommé Vesper, propose aux Chats des porte-bonheur censés leur apporter chance et protection. □ Paysages changeants : sous l'effet des trois soleils, les paysages environnants changent de couleur en fonction des heures de la journée, créant un spectacle éblouissant et constamment renouvelé. □ Cartographe nommé Aubin: accompagné de son fidèle poney, il parcourt le monde pour cartographier des terres inconnues. En échange de secrets ou d'informations précieuses, il répond à toutes les questions des aventuriers.</p>\n<h3>Dans La ville aux deux ports</h3>\n<p>□ Des humains sont déjà passés il y a quelques semaines et ont posé les mêmes questions. □ Deux bateaux ont été apprêtés pour une expédition vers la Mer aux Crabes. □ Des chats d'Ulthar venaient parfois en ville pour acheter des denrées. Ils étaient au nombre de cinq. L’un d’entre eux s’appelait Yvian. □ Un homme avec le visage balafré s'est interposé lors d'une altercation entre un marin et des Chats. □ Des nombreux bateaux sont en réparations dus aux attaques des crabes en mer. □ Du soufre brûlé indique qu'un sort a été lancé. □ Un vieux chien, embauché par Dr Corbius, surveille les aventuriers.</p>\n<h3>Sur La mer aux Crabes</h3>\n<p>□ Le bruit des crabes qui grignotent la coque du bateau rappelle constamment le danger qui menace. □ Un craquement soudain indique que quelque chose a percuté la coque du bateau, plongeant les matelots dans l'inquiétude. □ Un crabe géant surgit pour attaquer le bateau. L'attaque est brutale et exige une réaction immédiate. □ La coque d'un bateau est détruite par des crabes. □ L'approche de l'ile est dangereuse. De nombreux rochers demandent des manœuvres délicates.</p>\n<h3>Dans le Sanctuaire au Crabes</h3>\n<p>□ Des morceaux de papier brûlé sont présents sur le pas de la porte. □ Un llvre déchiré relate la puissance d'un artefact et prévient contre son utilisation. □ Des fresques décrivent l’ouverture d’un portail magique vers une dimension sombre et noire. □ Des peintures représentent des monstres effrayants qui sortent de portails. □ Des écrits font référence à la \"Clef interdite\". □ Un message d'Yvian caché par la magie indique :\" Urgent, informez Ester: Danger Corbius Clefs Interdites\". □ Trois Chats d’Ulthar sont découverts sans vie . □ Un autre Chat ainsi qu'Yvian restent introuvables. □ Des traces de combats d'armes tranchantes sont perceptibles.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!gtfcABRU36HnYENz.4Dgtbgd9Od0G9WJa"
+  },
+  {
+   "_id": "E5yd7ESXykHIiQQ8",
+   "name": "Fin possible",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Où : #sanctuaire. Quoi faire : #recueillir-informations-pour-Ester Il est probable que les joueurs atteignent le Sanctuaire au Crabes. Sur place, une observation attentive révèle que cinq Chats vivaient ici. Trois corps sans vie sont découverts. La scène porte les marques d’un affrontement brutal, où la magie a manifestement été utilisée. Les deux autres Chats restent introuvables. Des traces de griffes dans la poussière suggèrent qu’un corps félin a été traîné vers l’extérieur (Yvian). Le cinquième Chat survivant tente désespérément de s’échapper d’un sable mouvant mais sa lutte est brutalement interrompue par un gigantesque crabe qui surgit des flots du sable. Juste avant d’être happé par les profondeurs, il hurle: « La fin est proche ! Ils savaient tout ! Ils ont Yvian et la Clef interdite ! Prévenez les Gardiens d’Ulthar ! » Dans le Sanctuaire aux Crabes, un autel de pierre a été fracturé et ses objets dérobés. Al'intérieur, des marques d’usure intense ont fissuré la pierre, comme si un artefact d’une puissance considérable l'avait lentement rongée.</p>\n<p>Note : Ala fin du premier scénario, aucune révélation majeure n’est donnée. L’objectif ici est de poser les bases de la campagne: la seule perspective immédiate pour les joueurs consiste à retourner voir Ester et lui raconter ce qu’ils ont vu.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 700000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!gtfcABRU36HnYENz.E5yd7ESXykHIiQQ8"
+  }
+ ],
+ "folder": null,
+ "sort": 600000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!gtfcABRU36HnYENz"
+}

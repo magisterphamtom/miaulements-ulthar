@@ -1,0 +1,47 @@
+{
+ "_id": "G3ZxV0nhxXaneA9s",
+ "name": "Chien Dimensionnel",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Griffes",
+    "pct": 75,
+    "degats": "2d6+3"
+   }
+  ],
+  "pouvoir": "Voyage à travers les angles du temps et espace",
+  "capacite": "",
+  "pv": {
+   "value": 60,
+   "max": 60
+  },
+  "description": "<p>Créature interdimentionnelle avec la capacité à se déplacer à travers les angles du temps et de l'espace, le Chien Dimentionnel est un prédateur implacable. Une fois une personne prise pour cible, il ne cesse de la poursuivre, apparaissant dans les recoins sombres de la réalité. Sa présence est souvent précédée de nuages de vapeur s'élevant des angles, annonçant son arrivé.</p><blockquote><p>Dans une maison abandonnée, trois corps ont été découverts dans une pièce fermée, leurs visages figés dans une expression de terreur. Les murs de la pièce étaient marqués par des angles noircis. Les enquêteurs n'ont trouvé aucune explication à leur mort, laissant les voisins dans l'effroi</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Chien Dimensionnel",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!G3ZxV0nhxXaneA9s"
+}

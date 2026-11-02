@@ -1,0 +1,47 @@
+{
+ "_id": "gze6Z1gRS1p7HXH5",
+ "name": "Être antique",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "2 attaques aux tentacules",
+    "pct": 70,
+    "degats": "10d6"
+   }
+  ],
+  "pouvoir": "Connaissance ancestrale",
+  "capacite": "",
+  "pv": {
+   "value": 90,
+   "max": 90
+  },
+  "description": "<p>Les Êtres antiques, également connus sous le nom d'Anciens, sont des créatures extraterrestres très anciennes. Ils sont souvent décrits comme ayant des corps en forme d'étoile, des tentacules, et des yeux pédonculés.</p><blockquote><p>Des archéologues ont découvert des ruines anciennes dans une région isolée de l'Antarctique. Les structures cyclopéennes et les artefacts étranges suggèrent une civilisation avancée inconnue. Les chercheurs sont perplexes et appellent à une enquête plus approfondie</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Être antique",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!gze6Z1gRS1p7HXH5"
+}

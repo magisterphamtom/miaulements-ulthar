@@ -1,0 +1,29 @@
+<form class="mu-fiche mu-pnj" autocomplete="off">
+  <header class="mu-entete">
+    <img class="mu-portrait" src="{{actor.img}}" data-edit="img" alt="">
+    <div class="mu-identite">
+      <label>Nom <input type="text" name="name" value="{{actor.name}}"></label>
+      <label>PV <input type="number" name="system.pv.value" value="{{system.pv.value}}"> / <input type="number" name="system.pv.max" value="{{system.pv.max}}"></label>
+    </div>
+  </header>
+  <section>
+    <h3>Attaques <button type="button" data-action="ajouterAttaque" title="Ajouter une attaque">＋</button></h3>
+    {{#each attaques}}
+    <div class="mu-attaque">
+      <button type="button" data-action="attaquerPnj" data-index="{{index}}" title="Attaquer">⚔</button>
+      <input type="text" name="system.attaques.{{index}}.nom" value="{{nom}}">
+      <input type="number" name="system.attaques.{{index}}.pct" value="{{pct}}"> %
+      <input type="text" name="system.attaques.{{index}}.degats" value="{{degats}}" placeholder="dégâts">
+      <a data-action="supprimerAttaque" data-index="{{index}}" title="Supprimer">✕</a>
+    </div>
+    {{/each}}
+  </section>
+  <section>
+    <label>Pouvoir <input type="text" name="system.pouvoir" value="{{system.pouvoir}}"></label>
+    <label>Capacité <input type="text" name="system.capacite" value="{{system.capacite}}"></label>
+  </section>
+  <section class="mu-notes">
+    <h3>Description</h3>
+    <textarea name="system.description" rows="8">{{system.description}}</textarea>
+  </section>
+</form>

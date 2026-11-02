@@ -1,0 +1,47 @@
+{
+ "_id": "4X4YkpgSa0AhuIFc",
+ "name": "Loup-Garou",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Crocs",
+    "pct": 75,
+    "degats": "2d8+2"
+   }
+  ],
+  "pouvoir": "Transformation en humain",
+  "capacite": "",
+  "pv": {
+   "value": 35,
+   "max": 35
+  },
+  "description": "<p>Le loup-garou est une créature mythique décrite comme un homme capable de se transformer en loup lors des nuits de pleine lune. Durant cette phase, il devient une bête incontrôlable, animée par un instinct primal et une rage dévastatrice.</p><blockquote><p>Des habitants de la périphérie d'Arkham signalent des hurlements inquiétants provenant des bois chaque nuit, alimentant les rumeurs d'un loupgarou rôdant dans la région. L'inquiétude grandit depuis la disparition d'un deuxième randonneur, laissant les résidents dans l'angoisse face à cette mystérieuse menace</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Loup-Garou",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!4X4YkpgSa0AhuIFc"
+}

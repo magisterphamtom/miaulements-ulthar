@@ -1,0 +1,227 @@
+{
+ "_id": "PFYW4C3JeQ2Zw36k",
+ "name": "Léonard",
+ "type": "chat",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "race": "gouttiere",
+  "description": "<p>Léonard est un chat qui aime savoir et comprendre. Cela le met parfois dans quelques ennuis.</p>",
+  "handicap": "",
+  "attributs": {
+   "chn": {
+    "base": 45,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "phy": {
+    "base": 30,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "cha": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "agi": {
+    "base": 40,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "int": {
+    "base": 70,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "dis": {
+    "base": 50,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "per": {
+    "base": 60,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   },
+   "pre": {
+    "base": 55,
+    "race": 0,
+    "handicap": 0,
+    "progres": 0,
+    "echecs": 0
+   }
+  },
+  "pv": {
+   "value": 3
+  },
+  "pm": {
+   "value": 70
+  },
+  "pf": {
+   "value": 55
+  },
+  "vies": {
+   "value": 3
+  },
+  "xp": 0,
+  "achats": {
+   "pm": 0,
+   "pv": 0,
+   "vies": 0
+  },
+  "cartesFolie": [],
+  "notes": ""
+ },
+ "prototypeToken": {
+  "name": "Léonard",
+  "actorLink": true,
+  "disposition": 1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [
+  {
+   "_id": "9jOzoL5wMYQ31AzM",
+   "name": "Comprendre et lire l'humain",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Tous les Chats lisent et comprennent les êtres humains, quelle que soit leur langue (0 PM). Les langues anciennes demandent un jet d'Intelligence avec un malus selon le degré d'oubli de la langue. Ce pouvoir ne permet pas de parler aux humains.</p>",
+    "degats": "",
+    "gratuit": true
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!PFYW4C3JeQ2Zw36k.9jOzoL5wMYQ31AzM"
+  },
+  {
+   "_id": "FOjGxgh90hu5I7xp",
+   "name": "Aubaine incroyable",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "race",
+    "attribut": "",
+    "description": "<p>Intuition innée pour trouver des opportunités inattendues dans les endroits les plus improbables.</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!PFYW4C3JeQ2Zw36k.FOjGxgh90hu5I7xp"
+  },
+  {
+   "_id": "X1NuceHx3RDGJvd4",
+   "name": "Langage animal",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Le Chat comprend et parle le langage des autres animaux.</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!PFYW4C3JeQ2Zw36k.X1NuceHx3RDGJvd4"
+  },
+  {
+   "_id": "6kbEfd62IPM5bbmM",
+   "name": "Réponse immédiate",
+   "type": "pouvoir",
+   "img": "icons/svg/aura.svg",
+   "system": {
+    "categorie": "inne",
+    "attribut": "",
+    "description": "<p>Le Chat obtient une réponse instantanée d'un humain en lui posant une question mentale de trois mots maximum. L'humain répond oralement sans en connaître la source. Exemples : « Donne la sortie ? », « Es-tu honnête ? », « Donne le code ».</p>",
+    "degats": "",
+    "gratuit": false
+   },
+   "effects": [],
+   "folder": null,
+   "sort": 0,
+   "ownership": {
+    "default": 0
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!actors.items!PFYW4C3JeQ2Zw36k.6kbEfd62IPM5bbmM"
+  }
+ ],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!PFYW4C3JeQ2Zw36k"
+}

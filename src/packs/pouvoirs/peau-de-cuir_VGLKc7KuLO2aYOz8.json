@@ -1,0 +1,28 @@
+{
+ "_id": "VGLKc7KuLO2aYOz8",
+ "name": "Peau de cuir",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "race",
+  "attribut": "",
+  "description": "<p>(Norvégien) Endurance extraordinaire : la peau cicatrise vite. Sur un jet de Physique réussi, le Chat divise ses dégâts par deux (il encaisse toujours au moins 1 point).</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "WG4lMQcfRb3JUelh",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!VGLKc7KuLO2aYOz8"
+}

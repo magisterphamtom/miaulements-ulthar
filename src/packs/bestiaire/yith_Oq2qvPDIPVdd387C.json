@@ -1,0 +1,52 @@
+{
+ "_id": "Oq2qvPDIPVdd387C",
+ "name": "Yith",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Appendice",
+    "pct": 70,
+    "degats": "2d8"
+   },
+   {
+    "nom": "Rayon destructeur",
+    "pct": 60,
+    "degats": "4d10"
+   }
+  ],
+  "pouvoir": "",
+  "capacite": "Outils technologiques venus de l’espace",
+  "pv": {
+   "value": 40,
+   "max": 40
+  },
+  "description": "<p>Les Yith sont une race extraterrestre d'une intelligence prodigieuse. Ils mesurent environ trois mètres de haut. Dotés de puissants pouvoirs psychiques, ils peuvent transférer leur conscience dans le corps d'autres espèces à travers le temps et l'espace. Ils recherchent la connaissance de tous les savoirs.</p><p><strong>Capacité :</strong> Outils technologiques venus de l’espace</p><blockquote><p>Dans les environs d'Arkham, plusieurs habitants ont mystérieusement disparu cette année, plongeant la communauté dans l'inquiétude. Des témoins rapportent avoir observé des lumières étranges dans le ciel et entendu des bruits inhabituels la nuit précédant chaque disparition. Les autorités ont ouvert une enquête pour tenter de résoudre ce mystère troublant</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Yith",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!Oq2qvPDIPVdd387C"
+}

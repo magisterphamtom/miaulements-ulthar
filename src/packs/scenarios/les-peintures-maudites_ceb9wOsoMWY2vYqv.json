@@ -1,0 +1,251 @@
+{
+ "_id": "ceb9wOsoMWY2vYqv",
+ "name": "Les peintures maudites",
+ "pages": [
+  {
+   "_id": "SYQHQ7LqBDfx0mFd",
+   "name": "Intrigue générale",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Les peintures maudites</h3>\n<p>Scénario : s e t d u a m s e r u t Les pein</p>\n<p>Arkham, Massachusetts, au début de l'année 1922, les Chats se retrouvent plongés dans un mystère oppressant autour d’Ezekiel Blackwood, un peintre sur le déclin. Sa vie bascule brusquement lorsqu’une palette de peinture maudite est déposée devant sa porte, l’inspirant à créer des œuvres effrayantes. Les tableaux cauchemardesques de Blackwood relancent son succès, attirant l’engouement de riches collectionneurs d’Arkham qui ensuite ... disparaissent les uns après les autres !.. Ces toiles, apparemment ordinaires, sont en réalité et à l'insu de leurs propriétaires, des portails de la Contrée du Rêve vers le monde réel permettant aux plus terribles de venir s'emparer d'humains à des fins de sacrifice envers un être hideux, puissant et maléfique: un Rhan-Tegoth ! Note : créature amphibie de quinze pieds de haut, le Rhan-Tegoth possède une apparence insectoïde, avec une carapace brillante et des pinces acérées. Il se nourrit de l'énergie vitale de ses victimes. (Lovecraft, 1933, \"L'Horreur dans le musée\")</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ceb9wOsoMWY2vYqv.SYQHQ7LqBDfx0mFd"
+  },
+  {
+   "_id": "58PCu25gL9rRHG5p",
+   "name": "Début à Ulthar",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Pour jouer la scène d’introduction, veuillez vous référer dans un premier temps à La Cérémonie sacrée , livre de règles , chapitre : \"Guide du maître du jeu\". Vous trouverez ci-dessous le texte à y inclure.</p>\n<h3>Texte à lire :</h3>\n<p>D'une démarche feutrée, un vieux Gardien d'Ulthar, nommé Ester, fait glisser avec ses pattes un article de journal (cf Arkham Gazette #1). D'une voix grinçante, il annonce : \"Quatre disparitions en quelques jours... Des indices qui prouvent une incursion surnaturelle... Cet article est paru dernierement dans le journal La voix d'Arkham. Et...nous avons retrouvé dans notre Contrée l'un des disparus : Monsieur William Montmery, hébété, terrorisé et gravement blessé à l'abdomen !\" Ester se retourne vers Vif Poil, également Gardien, et lui demande : \"Projette-nous une bulle de souvenir ! \" Quelques instants plus tard, une bulle de souvenir apparait dans l’esprit des Chats. Un homme à moitié nu, apparemment fou, apeuré se frappe le visage. Un chat s'approche de lui pour en savoir plus mais ses paroles sont incohérentes. Il répète en boucle quelques phrases : \"Du sable dans mon salon, orange vif ! Des ombres ! Elles venaient pour moi, pour me prendre!...\" Ester reprend la parole : \"Très bien, il nous faut des volontaires pour élucider et résoudre cette situation !\"</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ceb9wOsoMWY2vYqv.58PCu25gL9rRHG5p"
+  },
+  {
+   "_id": "wjDgGuvblE8eUPmV",
+   "name": "Personnages de l'aventure (PNJ)",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Le peintre : Ezekiel Blackwood Tags : #odeur-huile, #cheveux-en-bataille, #regard-fiévreux. Un peintre sans talent, tombé dans l'oubli, trouve une palette maudite qui lui donne une nouvelle inspiration. Il en crée des œuvres sombres, étranges et connaît enfin le succès. L'homme voue maintenant un culte au Rhan- Tegoth, créatures de la contrée des rêves. Dément, c 'est à présent un artiste fou qui peint nuit et jour.</p>\n<h3>Investigateurs</h3>\n<p>□ Paul Stalker Tags : #costume-défraîchi, #lunettes- épaisses, #calepin-plein-de- gribouillis. Détective malhabile, constamment indécis dans ses choix. □ Miriame Palter Tags : #parfum-cuir , #montre-à- gousset, #regard-analytique, #mémoire-phénoménale. Enquêtrice à l’esprit vif, dotée d’une mémoire impressionnante.</p>\n<h3>Acheteurs disparus</h3>\n<p>□ William Mongmery (notaire) Victime des tableaux cauchemardesques, retrouvé dément et hébété dans la contrée du rêve. □ Emily Parker (conseillère du maire) Première conseillère du maire d’Arkham. Disparue. Fascinée par la beauté angoissante des œuvres de Blackwood. □ Benjamin Anderson (assistant du directeur de l'Université d'Arkham) Historien de formation. Disparu. Captivé par les légendes obscures.</p>\n<h3>Autres PNJ</h3>\n<p>□ Miss Palson (voisine) Tags : #odeur-thé, #écharpe-tricotée- trop-longue, #voix-douce. Vieille voisine attentive et toujours au courant des rumeurs locales. □ Scooty Fermat ( journaliste) Tags : #odeur-tabac-froid, #appareil- photo-usé, #regard-observateur Chroniqueur au journal d'Arkham, ambitieux et connaissant les secrets des Gardiens d’Ulthar. □ Michael Chental (psychiatre) Tags : #costume-blanc-propre, #voix- monotone, #calme Psychanalyste malsain et fasciné par la folie. □ Lord Paw , chat : #silencieux, #rêveur. Lord Paw est chat noir élégant aux yeux verts perçants. □ Cornelius, chien : #odeur- tabac. Chien joueur qui ne prend rien au sérieux □ Millecent, pigeon : #parfum-lavande, #réservé. Se prend pour un aigle royal.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ceb9wOsoMWY2vYqv.wjDgGuvblE8eUPmV"
+  },
+  {
+   "_id": "BjZT9PtXrUFJK3ja",
+   "name": "Lieux",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Bureau \"Mystères &amp; Investigations\" Tags : #bureau-encombré, #piles-de-dossiers, #documents-éparpillés. La salle d’attente et le bureau sont envahis par des piles de dossiers non classés débordant des étagères. Les meubles sont dépareillés et usés. □ Appartement luxueux Tags : #parfum-léger, #lustres-brillants, #parquet-lustré. Appartement immense avec de nombreux tapis persans. Un piano à queue, noir, laqué, reflète la lumière dans la pièce principale. Les murs sont ornés de tableaux originaux et de moulures dorées. □ Petite maison de ville Tags : #odeur-gâteau, #meubles-vintages, #ambiance-chaleureuse Un rocking-chair usé trône près d’un poêle en fonte. Un peu partout, de petites plantes dans des pots artisanaux décorent la maison. Une grande fenêtre laisse entrer la lumière. □ Appartement en demi-sous-sol Tags : #humidité-légère, #lumière-faible, #mobilier-simpliste L'appartement est humide avec un plafond bas et une odeur de chien mouillé qui emplit tout l'espace. Youki, un Yorkshire habituellement fougueux, est tapi sous un fauteuil,</p>\n<p>Note: Pour ce scénario, j’ai utilisé la carte d’Ulthar au centre de la table et j’ai créé les lieux au fur et à mesure que les joueurs choisissaient les rues de la ville à explorer. J’ai alterné entre des événements , la découverte d’indices et des moments où aucune situation anormale ne se manifestait. L’idée était de maintenir une tension constante durant leur recherche.</p>\n<p>□ Studio de Miss Palson Tags : #odeur-soupe, #rideaux-brodés. Toujours en préparation d'un bon repas, Miss Palson vit dans un petit studio qui donne directement sur les galeries d’Ezekiel Blackwood. De nombreuses photos de famille décorent le studio. □ Atelier public d’Ezekiel Blackwood Tags : #odeur-peinture-basique, #tableaux-insipides, #lumière-blafarde Des tableaux sans âme sont alignés contre les murs. Dans une arrière-salle, une pièce en désordre sert d’espace de vie rudimentaire. □ Atelier secret d’Ezekiel Blackwood Tags : #parfum-de-putréfaction, #ombres-menaçantes Dans cette galerie privée et secrète, la lumière vacillante d'un lustre en cristal projette des ombres mouvantes sur les murs ornés de peintures sombres. De grandes toiles, soigneusement alignées sur leurs présentoirs, donnent l’étrange impression d’être constamment observées. Note: Chaque habitation renferme des éléments, des indices étranges qui laissent penser que quelque chose d’anormal s'est déroulé.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ceb9wOsoMWY2vYqv.BjZT9PtXrUFJK3ja"
+  },
+  {
+   "_id": "CpwP2BCv0ckSMf8V",
+   "name": "Événements",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Voisin appeuré: un voisin est effrayé par les bruits étranges provennant de chez sa voisine et surpris par l'abondance de sable orange présent sur son paillasson. □ Intervention des investigateurs :les deux investigateurs interviennent sur les lieux liés aux disparitions en même temps que les Chats. □ Faux témoin : un témoin se révèle être un imposteur. Il répand de fausses informations afin de toucher une prime offerte par la police.</p>\n<p>□ Cauchemars : les Chats, après avoir observé les peintures, sont tourmentés par des visions nocturnes épouvantables : du sable s’écoule des murs et une ombre envahit la pièce... Ils se réveillent en sursaut, pris d’effroi. □ Parution d'un article dans le journal d'ArkhamI: le journaliste Scoty Fermat évoque des évènements étranges et inhabituels.</p>\n<p>USES DISPARITIONS MYSTÉRIE aritions secouent De mystérieuses disp en émoi après la Arkham. La ville est de trois figures disparition inexpliquée unauté : le notaire influentes de la comm la conseillère de William Montgomery, rker et l'assistant du Mme la Maire Emily Pa d'Arkham Benjamin directeur de l'Université Anderson. rités, c'est l'absence ments Ce qui intrigue les auto si que la présence d'élé ain les ici m do rs leu ns de toute effraction da tas de sable ?... inhabituels tels que des ague, les circonstances bl e un é ag vis en d or ab d' arté ces Si la police d'Arkham a s ont rapidement éc on iti ar sp di s ce t an gence étranges entour quêtrice privée de l'a en r, lte Pa e am iri Mant hypothèses. Mme une menace dépass r su rte ale », es êt « Mystères &amp; Enqu on. Une force terrifiante pti rru co la e ss pa dé e affair l'entendement: « Cette claré. ude, est en jeu ! » a-t-elle dé habitants dans l'inquiét les nt ge on pl ux rie té ys en Ces événements m nses. Une question reste po ré s de e iss go an ec av tandis qu'ils attendent énomène troublant ? suspens : que cache ce ph Scotty Fermat</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ceb9wOsoMWY2vYqv.CpwP2BCv0ckSMf8V"
+  },
+  {
+   "_id": "AEXOTK2nIK9Z1E76",
+   "name": "Indices",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Facture d'achat mentionnant Ezekiel Blackwood comme vendeur et datant de quelques jours avant la disparition de l'acheteur. □ Lettre non envoyée, troublante, adressée à un psychanalyste concernant des cauchemars « si réels ». □ Tableau angoissant soigneusement encadré et accroché au mur diffusant une aura oppressante. □ Rune \"maudite\" au dos d'une toile qui semble s'effacer avec le temps. □ Ticket pour une exposition privée indiquant une adresse qui se situe à proximité immédiate de l’atelier de Blackwood. □ Carnet de croquis rempli de dessins troublants réalisés par Ezekiel Blackwood. □ Témoins d'allées et venues de personnes allant vers une entrée secrète qui conduit à une galerie cachée appartenant à Ezekiel. □ Journal caché d’Ezekiel contenant des détails sur la découverte de la palette maudite. Ezekiel mentionne aussi ses inspirations murmurées durant ses rêves. □ Palette maudite cachée dans l’atelier d’Ezekiel Blackwood.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ceb9wOsoMWY2vYqv.AEXOTK2nIK9Z1E76"
+  },
+  {
+   "_id": "nd7UuVXoqNs5Hjgl",
+   "name": "Fin possible",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>La destruction de la palette de peinture ou d'un tableau dévoile un portail ouvrant sur une scène d'horreur avec un désert submergé d'os et de sable à la couleur orange comme le feu ... Àl'horizon, s'élève une tour imposante, défiant toute logique architecturale. Des spectres, sinistres gardiens adossés à leurs ombres fidèles, conduisent des âmes perdues jusqu'au sommet de la tour pour les précipiter dans son abîme centrale. En haut, un Rhan-Tegoth contemple avec avidité ce rituel macabre. Parmi la procession funèbre, les Chats d'Ulthar discernent l'un des riches collectionneurs portés disparus. Le nombre d'âmes est si important qu'il est impossible de toutes les sauver. Les spectres protègent leur sombre moisson et repoussent quiconque s'interposera!... Les Chats ont alors plusieurs options :</p>\n<ul><li>Chercher un rituel pour bannir ou détruire le Rhan-Tegoth.</li><li>Affronter la créature et tenter de la précipiter dans l'abîme.</li><li>Manipuler les âmes pour attaquer le Rhan-Tegoth.</li><li>Trouver le point faible des Rhan-Tegoth afin de leur donner un avantage.</li></ul>\n<p>Rhan-Tegoth Se nourrit exclusivement de l'énergie de ses victimes. Vie: 70 PV</p>\n<p>Att [60%] / griffe 1D6 degats augmentent de +1 à chaque tour (max +5)</p>\n<p>Gardien Spectre Guide les âmes vers le haut de la tour. 1D6 spectres vers les personnes qui s'interposent. Vie: 5 PV</p>\n<p>Att [50%] / effroi cardiaque 1D4</p>\n<p>Note: Ce scénario est assez ouvert et la fin peut varier selon le temps dont vous disposez. Personnellement, à deux reprises et pour des parties courtes, la destruction des tableaux et de la palette de peinture a suffi à fermer le portail et à écarter le danger. Des conditions simples pour un scénario simple. Acontrario, lors d'une version longue, j’ai accepté la chute de Rhan-Tegoth avec plus d'exigences: les joueurs ont du faire preuve d'un véritable plan pour le renverser jusqu'à le faire sombrer dans l'âbime centrale de la tour. Un scénario plus long et bien plus palpitant !</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 700000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!ceb9wOsoMWY2vYqv.nd7UuVXoqNs5Hjgl"
+  }
+ ],
+ "folder": null,
+ "sort": 300000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!ceb9wOsoMWY2vYqv"
+}

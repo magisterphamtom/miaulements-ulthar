@@ -1,6 +1,8 @@
-import { ATTRIBUTS, RACES, CASES_ECHEC, ACHATS_XP, CATEGORIES_POUVOIR, SYSTEM_ID } from "./config.mjs";
+import { ATTRIBUTS, RACES, CASES_ECHEC, ACHATS_XP, CATEGORIES_POUVOIR, FICHE, SYSTEM_ID } from "./config.mjs";
 import { jetAttribut, jetFolie, monterAttribut } from "./rolls.mjs";
 import { assistantCreation, tirerPouvoirsTemporaires } from "./creation.mjs";
+import { attaquerChat, attaquerPnj, lancerPouvoir } from "./combat.mjs";
+import { finDeScenario } from "./outils.mjs";
 
 const { HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
@@ -8,11 +10,14 @@ const { ActorSheetV2 } = foundry.applications.sheets;
 export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
     classes: ["miaulements-ulthar", "sheet", "actor", "chat"],
-    position: { width: 760, height: 860 },
+    position: { width: 760, height: 900 },
     window: { resizable: true },
     form: { submitOnChange: true },
     actions: {
       jetAttribut: FeuilleChat.#jetAttribut,
+      cocher: FeuilleChat.#cocher,
+      attaquer: FeuilleChat.#attaquer,
+      lancerPouvoir: FeuilleChat.#lancerPouvoir,
       jetFolie: FeuilleChat.#jetFolie,
       monterAttribut: FeuilleChat.#monterAttribut,
       ouvrirItem: FeuilleChat.#ouvrirItem,
@@ -41,9 +46,35 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
     ctx.system = sys;
     ctx.editable = this.isEditable;
     ctx.races = Object.entries(RACES).map(([cle, r]) => ({ cle, label: r.label, selected: sys.race === cle }));
+    const L = FICHE.largeur;
+    const H = FICHE.hauteur;
+    const pctX = (x) => `${((x / L) * 100).toFixed(3)}%`;
+    const pctY = (y) => `${((y / H) * 100).toFixed(3)}%`;
+    const boite = ([x1, y1, x2, y2]) => `left:${pctX(x1)};top:${pctY(y1)};width:${pctX(x2 - x1)};height:${pctY(y2 - y1)};`;
+    const rond = ([x, y], d = 96) => `left:${pctX(x - d / 2)};top:${pctY(y - d / 2)};width:${pctX(d)};height:${((d / H) * 100).toFixed(3)}%;`;
+    ctx.fiche = {
+      image: FICHE.image,
+      surnom: boite(FICHE.champs.surnom),
+      race: boite(FICHE.champs.race),
+      description: boite(FICHE.champs.description),
+      innes: boite(FICHE.champs.innes),
+      temporaires: boite(FICHE.champs.temporaires),
+      pv: rond(FICHE.champs.pv),
+      vies: rond(FICHE.champs.vies),
+      pm: rond(FICHE.champs.pm),
+      pf: rond(FICHE.champs.pf),
+      xp: rond(FICHE.champs.xp)
+    };
     ctx.attributs = Object.entries(ATTRIBUTS).map(([cle, def]) => {
       const a = sys.attributs[cle];
+      const cercle = FICHE.cercles[cle];
       return {
+        position: `left:${pctX(cercle.x - 70)};top:${pctY(cercle.y - 66)};width:${pctX(140)};height:${((132 / H) * 100).toFixed(3)}%;`,
+        casesPos: cercle.cases.map(([x, y], i) => ({
+          index: i,
+          cochee: i < a.echecs,
+          style: `left:${pctX(x - 15)};top:${pctY(y - 15)};width:${pctX(30)};height:${((30 / H) * 100).toFixed(3)}%;`
+        })),
         cle,
         label: def.label,
         abbr: def.abbr,
@@ -53,7 +84,6 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
         handicap: a.handicap,
         progres: a.progres,
         echecs: a.echecs,
-        cases: Array.from({ length: CASES_ECHEC }, (_, i) => ({ cochee: i < a.echecs })),
         peutMonter: a.echecs >= CASES_ECHEC
       };
     });
@@ -70,6 +100,24 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #jetAttribut(event, target) {
     return jetAttribut(this.actor, target.dataset.attribut, { rapide: event.shiftKey });
+  }
+
+  /** Clic sur une petite case d'échec : on coche jusqu'à elle (re-clic sur la dernière cochée = on la décoche). */
+  static async #cocher(event, target) {
+    const cle = target.dataset.attribut;
+    const i = Number(target.dataset.index);
+    const actuel = this.actor.system.attributs[cle].echecs;
+    const nouveau = actuel === i + 1 ? i : i + 1;
+    await this.actor.update({ [`system.attributs.${cle}.echecs`]: Math.max(0, Math.min(CASES_ECHEC, nouveau)) });
+  }
+
+  static async #attaquer() {
+    return attaquerChat(this.actor);
+  }
+
+  static async #lancerPouvoir(event, target) {
+    const item = this.actor.items.get(target.dataset.itemId);
+    if (item) return lancerPouvoir(this.actor, item);
   }
 
   static async #creation() {
@@ -121,26 +169,9 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
     });
   }
 
-  /** Fin de scénario : +2 XP, PV/PM/vies remis au maximum, −10 PF par carte Folie non jouée. */
+  /** Fin de scénario : +2 XP, PV/PM/vies au maximum, −10 PF par carte Folie non jouée. */
   static async #finScenario() {
-    const sys = this.actor.system;
-    const perte = sys.cartesFolie.length * 10;
-    const ok = await DialogV2.confirm({
-      window: { title: "Fin de scénario" },
-      content: `<p>+2 XP, PV, PM et vies de chat remis au maximum. ${perte ? `Cartes Folie non jouées : −${perte} PF.` : ""}</p>`
-    });
-    if (!ok) return;
-    await this.actor.update({
-      "system.xp": sys.xp + 2,
-      "system.pv.value": sys.pv.max,
-      "system.pm.value": sys.pm.max,
-      "system.vies.value": sys.vies.max,
-      "system.pf.value": Math.max(0, sys.pf.value - perte),
-      "system.cartesFolie": []
-    });
-    if (sys.pf.value - perte < 20) {
-      ui.notifications.warn(`${this.actor.name} : Folie sous 20 — le Chat devient injouable.`);
-    }
+    return finDeScenario(this.actor);
   }
 
   static async #acheter(event, target) {
@@ -152,5 +183,51 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
       "system.xp": sys.xp - def.cout,
       [`system.achats.${cle}`]: sys.achats[cle] + def.gain
     });
+  }
+}
+
+
+/** Fiche d'adversaire : PV, attaques cliquables, pouvoir et capacité, description. */
+export class FichePnj extends HandlebarsApplicationMixin(ActorSheetV2) {
+  static DEFAULT_OPTIONS = {
+    classes: ["miaulements-ulthar", "sheet", "actor", "pnj"],
+    position: { width: 480, height: 560 },
+    window: { resizable: true },
+    form: { submitOnChange: true },
+    actions: {
+      attaquerPnj: FichePnj.#attaquer,
+      ajouterAttaque: FichePnj.#ajouter,
+      supprimerAttaque: FichePnj.#supprimer
+    }
+  };
+
+  static PARTS = { corps: { template: `systems/${SYSTEM_ID}/templates/actor-pnj.hbs` } };
+
+  get title() {
+    return `${this.actor.name} — Adversaire`;
+  }
+
+  async _prepareContext(options) {
+    const ctx = await super._prepareContext(options);
+    ctx.actor = this.actor;
+    ctx.system = this.actor.system;
+    ctx.attaques = this.actor.system.attaques.map((a, index) => ({ ...a, index }));
+    return ctx;
+  }
+
+  static async #attaquer(event, target) {
+    return attaquerPnj(this.actor, Number(target.dataset.index));
+  }
+
+  static async #ajouter() {
+    const att = foundry.utils.deepClone(this.actor.system.toObject().attaques);
+    att.push({ nom: "Attaque", pct: 50, degats: "1d4" });
+    await this.actor.update({ "system.attaques": att });
+  }
+
+  static async #supprimer(event, target) {
+    const att = foundry.utils.deepClone(this.actor.system.toObject().attaques);
+    att.splice(Number(target.dataset.index), 1);
+    await this.actor.update({ "system.attaques": att });
   }
 }

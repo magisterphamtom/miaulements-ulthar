@@ -1,0 +1,47 @@
+{
+ "_id": "rDpTwDlKxXNcsSun",
+ "name": "Abhoth",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Tentacule",
+    "pct": 60,
+    "degats": "2d8"
+   }
+  ],
+  "pouvoir": "créer des répliques d'ellemême à partir de son corps",
+  "capacite": "",
+  "pv": {
+   "value": 60,
+   "max": 60
+  },
+  "description": "<p>Abhoth, souvent appelé le \"Fléau primordial\", est une entité informe et grouillante qui dégage une odeur de putréfaction et de mort. Capable de se diviser en plusieurs morceaux autonomes. Elle tente d'ingérer ses adversaires dès qu'elle en a l'occasion.</p><blockquote><p>Ce matin, des archéologues ont fait une découverte surprenante : une sculpture aux traits étranges et indescriptibles. L'affaire a pris une tournure surréaliste lorsque, à ses pieds, ils ont trouvé des restes humains récents</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Abhoth",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!rDpTwDlKxXNcsSun"
+}

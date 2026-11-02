@@ -1,0 +1,47 @@
+{
+ "_id": "r7Xmk2RhxKgryt6A",
+ "name": "Tsathoggua",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Langue acide",
+    "pct": 50,
+    "degats": "3d6"
+   }
+  ],
+  "pouvoir": "appel d’autres amphibiens",
+  "capacite": "",
+  "pv": {
+   "value": 50,
+   "max": 50
+  },
+  "description": "<p>Aussi appelé Zhothaqquah, c'est une entité surnaturelle décrite comme un dieu obèse à tête de crapaud, souvent associée à la paresse et à des rituels sacrificiels. Il connaît de nombreux sortilèges. Ses morsures lui permettent d'absorber 1D6 de la constitution de son adversaire.</p><blockquote><p>Des inscriptions étranges et des tags ont récemment refait leur apparition dans plusieurs quartiers d'Arkham</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Tsathoggua",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!r7Xmk2RhxKgryt6A"
+}

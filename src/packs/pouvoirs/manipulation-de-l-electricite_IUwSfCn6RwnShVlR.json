@@ -1,0 +1,28 @@
+{
+ "_id": "IUwSfCn6RwnShVlR",
+ "name": "Manipulation de l'électricité",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "temporaire",
+  "attribut": "",
+  "description": "<p>Le Chat contrôle l'énergie électrique : éclairs et décharges. Jet réussi : jusqu'à 1D6 dégâts.</p>",
+  "degats": "1d6",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "ZmNoEX04AcYhbu9V",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!IUwSfCn6RwnShVlR"
+}

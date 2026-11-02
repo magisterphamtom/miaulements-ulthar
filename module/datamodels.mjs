@@ -54,18 +54,25 @@ export class ChatData extends foundry.abstract.TypeDataModel {
     }
     const a = this.attributs;
     this.pv.max = pvDepuisTable(a.phy.value + a.agi.value) + this.achats.pv;
-    this.pf.max = Math.floor((a.per.value + a.cha.value) / 2);
+    this.pf.max = Math.round((a.per.value + a.cha.value) / 2); // 52,5 -> 53 comme sur les fiches prétirées
     this.pm.max = a.int.value + this.achats.pm;
     this.vies.max = 3 + this.achats.vies;
   }
 }
 
-// PNJ / adversaires : format de l'écran du MJ (Attaque % / dégâts / PV).
+// PNJ / adversaires : attaques (nom, % de réussite, dégâts), PV, pouvoir et capacité (bestiaire, écran du MJ).
 export class PnjData extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
-      attaque: nombre(50, { min: 0 }),
-      degats: new fields.StringField({ initial: "1d4" }),
+      attaques: new fields.ArrayField(
+        new fields.SchemaField({
+          nom: new fields.StringField({ initial: "Attaque" }),
+          pct: nombre(50, { min: 0 }),
+          degats: new fields.StringField({ initial: "1d4", blank: true })
+        })
+      ),
+      pouvoir: new fields.StringField({ initial: "", blank: true }),
+      capacite: new fields.StringField({ initial: "", blank: true }),
       pv: new fields.SchemaField({ value: nombre(5, { min: 0 }), max: nombre(5, { min: 0 }) }),
       description: new fields.HTMLField({ initial: "" })
     };

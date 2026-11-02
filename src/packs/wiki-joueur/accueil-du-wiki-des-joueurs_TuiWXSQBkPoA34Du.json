@@ -1,0 +1,53 @@
+{
+ "_id": "TuiWXSQBkPoA34Du",
+ "name": "Accueil du wiki des joueurs",
+ "pages": [
+  {
+   "_id": "pH2vfC3OWT1NF87X",
+   "name": "Accueil",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Bienvenue dans <strong>Les Miaulements d'Ulthar</strong>, un jeu de rôle de Xaviiiier où vous incarnez des Chats d'Ulthar, dotés de pouvoirs mystiques par la déesse Bast, face à l'horreur lovecraftienne.</p><p>Ce wiki est celui des joueurs. Il suit le livre des règles ; le Gardien (meneur de jeu) a son propre wiki.</p><ul><li>@UUID[Compendium.miaulements-ulthar.wiki-joueur.JournalEntry.dtBSS3FaYu6NrCYy]{Bien débuter un jeu de rôle}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-joueur.JournalEntry.T1nwKzJhBMxdZH9G]{Création des personnages}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-joueur.JournalEntry.vPizfwMeRcUaVjCx]{Races des Chats}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-joueur.JournalEntry.9e5vCTMFhONva2Dr]{Système de jeu}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-joueur.JournalEntry.9rVm5mxFkDmO4YaC]{Les Chats d'Ulthar}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-joueur.JournalEntry.pchtML2aAcuPxGQd]{Jouer un Chat}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-joueur.JournalEntry.uDuFYBg1npN05D0E]{Lecture : la nouvelle des Chats d'Ulthar}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-joueur.JournalEntry.MV2MQkNtjLSuPAT3]{Aide-mémoire du joueur}</li></ul><h2>Sur la fiche de Chat</h2><ul><li>Bouton « Création du Chat » : l'assistant vous guide pas à pas.</li><li>Clic sur un attribut : jet (Maj = jet rapide). Clic sur une petite case : coche un échec.</li><li>Clic sur le nom d'un pouvoir : il est montré à la table.</li></ul>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!TuiWXSQBkPoA34Du.pH2vfC3OWT1NF87X"
+  }
+ ],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 2
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!TuiWXSQBkPoA34Du"
+}

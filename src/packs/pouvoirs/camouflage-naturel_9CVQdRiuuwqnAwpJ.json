@@ -1,0 +1,28 @@
+{
+ "_id": "9CVQdRiuuwqnAwpJ",
+ "name": "Camouflage naturel",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "race",
+  "attribut": "",
+  "description": "<p>(Savannah) Le Chat se fond dans son environnement naturel et dissimule sa présence : il devient quasiment invisible, quel que soit l'environnement.</p>",
+  "degats": "",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "WG4lMQcfRb3JUelh",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!9CVQdRiuuwqnAwpJ"
+}

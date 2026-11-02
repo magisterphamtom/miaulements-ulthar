@@ -1,0 +1,218 @@
+{
+ "_id": "tkKB6c44sGR9ZPES",
+ "name": "Étranges souvenirs",
+ "pages": [
+  {
+   "_id": "bvQPIogc2CUu12GN",
+   "name": "Intrigue générale",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Étranges souvenirs</h3>\n<p>Scénario : s r n e v u e Etrang</p>\n<p>Sans que personne ne s’inquiète réellement, depuis deux semaines, certains habitants d’Ulthar sont frappés par un mal étrange : ils semblent changer brutalement de personnalité et perdent la mémoire de façon fulgurante pendant plusieurs heures, voire quelques jours. Pendant ce temps, à l’asile d’Arkham, le Dr Elias Whitby mène en secret des expériences sur le sommeil profond de patients atteints de démence. Il leur injecte une drogue qu’il a découverte au Pérou, les plongeant dans un état de sommeil profond. Mais... sans même le savoir, il les fait basculer aux portes de la Contrée du Rêve... Alors, certains patients, après avoir passé l’épreuve des Gardiens des rêves, voient leurs esprits dériver vers Ulthar: leurs états de sommeil étant instables, leurs psychés cherchent désespérément à retrouver un équilibre et rentrer en résonance avec l’esprit d’un habitant d’Ulthar. C 'est alors que les deux esprits s’inversent: l’habitant de la Contrée du Rêve se réveille dans le monde réel, prenant possession du corps du patient, tandis que le patient se retrouve piégé dans le corps de son interlocuteur dans la Contrée des rêves !</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!tkKB6c44sGR9ZPES.bvQPIogc2CUu12GN"
+  },
+  {
+   "_id": "aCi2V2YibwNu3oop",
+   "name": "Début à l'auberge",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Pour jouer la scène d’introduction, veuillez vous référer dans un premier temps à La Cérémonie sacrée , livre de règles , chapitre : \"Guide du maître du jeu\". Vous trouverez ci-dessous le texte à y inclure.</p>\n<h3>Texte à lire :</h3>\n<p>Dans la chaleureuse auberge du Pain Blanc à Ulthar, vous savourez un moment de quiétude autour d’un lait parfumé. L'atmosphère est joyeuse et sereine. Alors que vous échangez des anecdotes sur vos récentes péripéties, , l'aubergiste, Thalor Le Jovial, s'approche de votre table. Il vous propose de vous offrir une nouvelle tournée après, bien sûr, lui avoir conter une histoire croustillante venue tout droit du monde réel des humains. Son visage s'illumine rien qu'à l'idée d'entendre cette nouvelle histoire !...\" Faites jouer cette scène par un des joueurs □ Thalor l'aubergiste : #jovial #odeur-de-pain-frais #voix-grave #corpulent \"Alors que Thalor revient les mains chargées des commandes promises, celui-ci se fige soudainement! Le plateau qu'il tient glisse de ses pattes et les choppes tombent dans un fracas assourdissant. Son regard, habituellement pétillant de malice, devient vitreux et confus. Il scrute la salle comme s'il la découvrait pour la première fois, désorienté et perdu. Lorsque ses yeux se posent sur vous, la terreur déforme les traits de son visage et un hurlement puissant sort de sa gorge! Puis, il renverse violemment la table, envoyant verres et assiettes valser dans les airs et pris de panique, il quitte l’auberge en courant !... Alors, chacun s'interroge et les langues se delient. Certains clients prétendent que ce n’est pas le seul à avoir eu ce comportement étrange ... Cette situation remontée jusqu'au fines oreilles du vieux Chat Ester lui semble trés alarmante. Celui-ci décide de faire appel aux gardiens d'Ulthar afin de résoudre ce mystère touchant plus d'une vingtaine d’habitants de la ville !\"</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!tkKB6c44sGR9ZPES.aCi2V2YibwNu3oop"
+  },
+  {
+   "_id": "BABbvIPi7Z6uRWQo",
+   "name": "Personnages de l'aventure (PNJ)",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>PNJ d'Ulthar / Asile d'Arkham: les inversés</h3>\n<p>Dans cette aventure, à chaque fois que les Chats vont poser une question à un \"inversé\", celui-ci évolue pour progressivement retrouver son état normal sans avoir aucun souvenir de ce qui vient de se passer. Ainsi, à partir de la deuxième question, utilisez le tableau suivant avec 1D10+&lt;nombre de questions&gt;:</p>\n<p>Les PNJ, dits les \"inversés\", sont présentés ci-dessous sous leurs deux identités : la première est celle de la Contrée du Rêve (habitant d’Ulthar ) et la seconde est celle du monde réel (patient dément). Leur état de santé psychiatrique est également décrit lorsqu’il évolue dans le monde réel. □ Thalor (tavernier) / Isabelle Igras (mère de famille) Habitant d’Ulthar : # jovial #odeur-de-pain-frais #voix-grave #corpulent Patient dément : Phobie Animal, \"Les chats parlent !!!\" □ Eloran (tisserand) / Leonard Harris (cireur de chaussures) Habitant d’Ulthar : #odeur-lavande, #chapeau-multicolore Patient dément : Hallucinations auditives, \"Ah! Ce bruit miaulement !!!\" □ Sélvor (voyant) / Walter Blake (barbier) Habitant d’Ulthar : #odeur-encens, #cape-étoilée Patient dément : Manipulateur excessif □ Malley (voyageur) / Ben Curtis (affuteur-remouleur) Habitant d’Ulthar : #odeur-sable-chaud, #veste-multiples-poches Patient dément : Kleptomanie incontrôlée</p>\n<p>□ Whiskerton (bibliothécaire) / Charles Bennett ( jeune adolescent) Habitant d’Ulthar : #odeur-vieux-livres, #lunettes-chaînette Patient dément : Multiples personnalités □ Grim (fossoyeur) / Henry Foster (bouilleur de Cru) Habitant d’Ulthar : #odeur-terre-humide, #taciturne Patient dément : Mélancolie chronique □ Felar (herboriste) / Alfred Cooper (crieur de journaux ) Habitant d’Ulthar : #odeur-menthe, #pantalon-motifs-feuilles, #excentrique Patient dément : Troubles obsessionnels compulsifs</p>\n<p>Note : Les personnalités de l'asile n'ont pas conscience de leur folie ni du fait qu'elles sont des patients de l'asile d'Arkham. Àleurs yeux, leurs peurs et leurs pensées délirantes sont parfaitement cohérentes. Elles ignorent totalement qu'elles sont enfermées. La vérité doit se révéler progressivement, à travers des indices subtils et des réactions étranges qui sèment le doute peu à peu.</p>\n<h3>PNJ d'Arkham</h3>\n<p>□ Dr. Elias Whitby : psychiatre de l'asile d'Arkham Tags : #odeur-tabac-froid, #pantalon-noir, #montre-gousset-argent Persuadé d'avoir découvert un traitement révolutionnaire, le Dr Elias Whitby devient obsédé par les nouvelles personnalités de ses patients et les souvenirs qu'ils semblent partager d'un lieu commun. Aveuglé par son ambition et sa soif de savoir, il choisit d'intensifier ses expériences, quitte à mettre en danger la vie de ses patients. □ Agatha Blackwood : infirmière à l'asile d'Arkham Tags : #odeur-parfum-lavande, #uniforme-impeccable, #autoritaire, #trousseau-clés □ Ezra Graves : gardien à l'asile d'Arkham Tags : #odeur-sueur, #uniforme-froissé, #taciturne, #matraque-bois</p>\n<p>□ Dr. Henrietta Pym : neurologue Tags : #odeur-antiseptique, #blouse-tachée, #stéthoscope □ Clarence Fitzgerald : Tags : #odeur-eau-de-cologne, #chaussures-en-cuir, #distinguée □ Mabel Hawthorne : Tags : #odeur-poudre-de-riz, #bas-de-soie, #discrète □ Reginald Thornton : Tags : #odeur-cigare-cubain, #chaussures-bicolores, #pompeux</p>\n<p>□ Chat Sinclair : #parfum-de-violette, #médaillon-vert, #audacieux</p>\n<p>□ Chien Grifou : #odeur-sale, #collier-cou, #bagarreur</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!tkKB6c44sGR9ZPES.BABbvIPi7Z6uRWQo"
+  },
+  {
+   "_id": "Pcf5RVELggmtgL9f",
+   "name": "Lieux",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>La Contré du rêve</h3>\n<p>Pour donner plus de teinte à la contrée du rêve, voici une liste d’éléments descriptifs : □ Trois soleils gravitent dans le ciel. □ Les couleurs de l'environnement changent selon la position des soleils. □ L'herbe de couleur orange, violette et bleue bouge de façon étrange, comme si elle était vivante. □ Une cariole tirée par des zèbres aux rayures bleues et blanches arrive, conduite par de petits insectes parlants. □ Les habitants éternuent parfois des fleurs. □ Des objets bizarres aux angles impossibles servent de décorations. □ Les fruits et légumes sont étranges et inconnus.</p>\n<p>Note: Lors du premier test de ce scénario, l’environnement manquait de nuances pour donner de la couleur et de la profondeur à la Contrée du Rêve. L’atmosphère était trop neutre. Les descriptions et les rencontres nécessitent des détails supplémentaires pour rendre l’expérience plus déconcertante et immersive. N’hésitez pas à exploiter toute l’étrangeté que la Contrée peut offrir.</p>\n<h3>Ville d'Ulthar</h3>\n<p>□ Place du marché : #odeur-herbes-fraîches, #pieds-d'étals-en-bois, #flaques-entre-les- pavés □ Temple en pierre : #odeur-encens, #bas-de- porte-en-chêne, #poussière-sous-les-bancs □ Forge : #odeur-métal-brûlant, #copeaux-de- métal-au-sol, #pieds-d'enclume-massifs</p>\n<p>Note: Pour ce scénario, je pose la carte d’Ulthar au centre de la table et indique un lieu précis avivé d'une population anormalement énervée et un autre lieu, siège d'une altercation entre un « transformé » et un habitant. La question «Où allez-vous ? »</p>\n<p>□ Taverne : #odeur-bière-et-pain, #pieds-de- tabourets-usés, #paille-éparpillée □ Moulin à eau : #odeur-farine-et-grain, #farine-répandue-au-sol, #tas-de-sacs-empilés □ Maison : #odeur-cuisine, #rchaussures-au- sol, #bas-d'étagères-encombrées □ Puit central : #odeur-eau-fraîche, #flaques- autour-du-puit, #mousse-sur-les-pierres □ Cabane tanneur : #odeur-cuir, #morceaux- de-cuir-tombés, #bas-de-cuves-en-bois □ Verger communal : #odeur-pommes-mûres, #pommes-tombées-au-sol, #racines-d'arbres- apparentes</p>\n<p>Note: Tous les lieux mentionnés ne sont pas indispensables. Ils servent à soutenir votre improvisation.</p>\n<h3>Asile d'Arkham</h3>\n<p>□ Jardin intérieur : #odeur-terre-humide, #fracas-pot-de-terre, #feuilles-mortes □ Couloir principal : #odeur-chlore, #plinthes- écaillées, #traces-de-chaussures □ Salle de traitement : #odeur-désinfectant, #pieds-de-table-métalliques, #fils-électriques □ Cellule d'isolement : #odeur-moisissure, #bas-de-porte-griffée, #flaques-d'eau- stagnante □ Bureau Docteur : #odeur-tabac, #pieds-de- fauteuil-en-bois, #tapis-oriental-usé □ Infirmerie : #odeur-antiseptique, #roulettes-de-lit, #boîtes-de-gants □ Salle commune : #odeur-sueur, #pieds- chaise-écaillés, #miettes-de-nourriture</p>\n<p>Note: Pour apporter une ambiance déconcertante au fil de l'histoire, l’asile d’Arkham doit devenir progressivement de plus en plus étrange, sans qu’aucune explication ne soit donnée à vos joueurs. Laissez les joueurs interpréter et inventer leurs explications: la folie commence .... Pour vous guider, par exemple, tout peut commencer par des détails anodins : de la poussière omniprésente, des vieux panneaux d’indication qui indiquent ensuite des contre sens puis des horloges qui tournent à l'envers, une pièce qui paraît différente de ce qu’elle était l'instant d'avant, des couloirs qui deviennent infinis et des échos perpétuels... La folie doit gagner en intensité peu à peu et selon le temps dont vous disposez .</p>\n<p>□ Archives : #odeur-vieux-papier, #bas- d'étagères-poussiéreuses, #boîtes-en-carton- empilées □ Réfectoire : #odeur-nourriture-fade, #pieds-de-table-en-métal, #restes-de-repas- sol □ Salle de thérapie : #odeur-craie, #pieds-de- chaise-en-plastique, #papiers-froissés</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 400000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!tkKB6c44sGR9ZPES.Pcf5RVELggmtgL9f"
+  },
+  {
+   "_id": "LVqA6KAgCvPfPeJl",
+   "name": "Indices",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>□ Un témoin affirme avoir vu un homme verser un liquide dans le puit (fausse piste). □ Les habitants atteints par ce mal expriment, avant leur transformation, la sensation oppressante d’être observés. □ Seuls les hommes subissent ce phénomène étrange. □ La plupart d'entre-eux présentent des signes de folie. □ Un habitant change de personnalité aux yeux de tous (3 fois maximum). □ Les animaux agissent de façon étrange autour des inversés. □ Un étrange reflet dans l’eau montre des formes flottantes au-dessus des victimes juste avant leur transformation. □ Les victimes se rappellent de deux jumeaux dans une caverne obscure. □ Tous les hommes affectés semblent parler de la Forêt enchantée et du Passage entre les deux mondes (cf livre des règles). □ Les victimes parlent de leur passage dans la ville d'Arkham sans la nommer. □ Des enfants ont trouvé des plumes noires autour du puit central (fausse piste). □ Les souvenirs avant la transformation restent flous et incomplets . □ Un chat d’Ulthar aurait été vu en train de parler avec un homme en transe (fausse piste). □ Une vieille femme affirme avoir vu des ombres se déplacer à distance de leurs propriétaires. □ Les victimes se sont vues flotter au-dessus du village. □ Les inversés évoquent des rendez-vous avec des blouses blanches. □ L'asile d'Arkham est régulièrement cité par les patients atteints. □ Les inversés ont tous le même psychiatre, le docteur Elias Whitby.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!tkKB6c44sGR9ZPES.LVqA6KAgCvPfPeJl"
+  },
+  {
+   "_id": "RTLkGNQOruDQR1Z2",
+   "name": "Fin possible",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Où : #Asile-d’Arkham. Quoi faire : #trouver-docteur, #arrêter-ses-expériences Les chats d'Ulthar ont plusieurs options pour rétablir la situation avant qu'elle ne devienne incontrôlable. Fin possible dans la Contrée du Rêve : Si les joueurs choisissent de ne pas aller dans le monde réel, les incursions dans le monde du rêve deviennent de plus en plus fréquentes. Le Dr. Whitby commence alors à envoyer dans la Contrée du Rêve des patients dangereux et complètement fous, rendant la situation encore plus instable. Finalement, poussé par son obsession, le docteur décide de s’injecter lui- même le sérum pour l'expérimenter directement. Cependant, le mal est déjà fait : le chaos s’est installé. Les joueurs doivent convaincre le docteur de créer un contre-sérum pour expulser les esprits intrus et rétablir l’ordre. Fin possible à l’asile d’Arkham : Si les joueurs optent pour une incursion dans le monde réel, ils doivent se rendre à l’asile d’Arkham où le professeur prévoit de verser sa concoction dans la nourriture destinée à une centaine de patients. Les joueurs doivent l’arrêter avant qu’il ne contamine tout l’asile. Pour éliminer définitivement le danger, ils doivent trouver un moyen de détruire le grimoire contenant la recette de cette dangereuse drogue. Dans les deux cas, la tâche des joueurs est cruciale : empêcher les agissements du docteur et restaurer l’équilibre entre les deux mondes.</p>\n<p>Note : Après six ou sept tests de ce scénario, seuls deux se sont achevés dans la Contrée du Rêve. Mes joueurs ont tenté de persuader le Dr de recréer une drogue permettant de renvoyer définitivement les patients dans le monde réel. J'ai adoré !</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!tkKB6c44sGR9ZPES.RTLkGNQOruDQR1Z2"
+  }
+ ],
+ "folder": null,
+ "sort": 400000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!tkKB6c44sGR9ZPES"
+}

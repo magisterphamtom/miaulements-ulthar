@@ -1,0 +1,465 @@
+{
+ "_id": "kFYZWVDha6zh9Hcx",
+ "name": "Cartes Folie",
+ "img": "icons/svg/d20-grey.svg",
+ "description": "<p>Carte tirée à chaque échec d'un jet de Folie (p.52).</p>",
+ "results": [
+  {
+   "_id": "R9yrzwwLGHNNXsMB",
+   "type": "text",
+   "text": "Chasser une ombre inexistante.",
+   "img": null,
+   "description": "",
+   "range": [
+    1,
+    1
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.R9yrzwwLGHNNXsMB"
+  },
+  {
+   "_id": "vWkg11ONYRmG5mzX",
+   "type": "text",
+   "text": "Fixer intensément un mur blanc comme s'il y avait quelque chose.",
+   "img": null,
+   "description": "",
+   "range": [
+    2,
+    2
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.vWkg11ONYRmG5mzX"
+  },
+  {
+   "_id": "xG7HTa1oY5qiXQQ0",
+   "type": "text",
+   "text": "Courir frénétiquement d'une pièce à l'autre sans raison apparente.",
+   "img": null,
+   "description": "",
+   "range": [
+    3,
+    3
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.xG7HTa1oY5qiXQQ0"
+  },
+  {
+   "_id": "kDxtmtqcWN85hEOg",
+   "type": "text",
+   "text": "Sursauter brusquement en réaction à un son imperceptible pour les autres.",
+   "img": null,
+   "description": "",
+   "range": [
+    4,
+    4
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.kDxtmtqcWN85hEOg"
+  },
+  {
+   "_id": "99uk2GrELlOXOvMx",
+   "type": "text",
+   "text": "Se cacher dans des endroits insolites comme des boîtes trop petites.",
+   "img": null,
+   "description": "",
+   "range": [
+    5,
+    5
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.99uk2GrELlOXOvMx"
+  },
+  {
+   "_id": "WYNHb2onWLVn9r61",
+   "type": "text",
+   "text": "Miauler de manière excessive sans aucune provocation.",
+   "img": null,
+   "description": "",
+   "range": [
+    6,
+    6
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.WYNHb2onWLVn9r61"
+  },
+  {
+   "_id": "jespVGxlLkywaZJt",
+   "type": "text",
+   "text": "Avaler des objets non comestibles, comme des élastiques ou des bouts de plastique.",
+   "img": null,
+   "description": "",
+   "range": [
+    7,
+    7
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.jespVGxlLkywaZJt"
+  },
+  {
+   "_id": "qTh32o2f4C9obTNr",
+   "type": "text",
+   "text": "Essayer de grimper sur un mur lisse frénétiquement.",
+   "img": null,
+   "description": "",
+   "range": [
+    8,
+    8
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.qTh32o2f4C9obTNr"
+  },
+  {
+   "_id": "H1xn9FfvNlje2cbb",
+   "type": "text",
+   "text": "Gratter frénétiquement un objet.",
+   "img": null,
+   "description": "",
+   "range": [
+    9,
+    9
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.H1xn9FfvNlje2cbb"
+  },
+  {
+   "_id": "BGngfyo3JlAAxRCl",
+   "type": "text",
+   "text": "Se toiletter de manière excessive.",
+   "img": null,
+   "description": "",
+   "range": [
+    10,
+    10
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.BGngfyo3JlAAxRCl"
+  },
+  {
+   "_id": "WkzYPGSMYLZ070sO",
+   "type": "text",
+   "text": "Se mettre en position de chasse et feindre une attaque contre des objets.",
+   "img": null,
+   "description": "",
+   "range": [
+    11,
+    11
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.WkzYPGSMYLZ070sO"
+  },
+  {
+   "_id": "XiNCQ5k9OhqxlK7Y",
+   "type": "text",
+   "text": "Fixer longuement son propre reflet dans un miroir.",
+   "img": null,
+   "description": "",
+   "range": [
+    12,
+    12
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.XiNCQ5k9OhqxlK7Y"
+  },
+  {
+   "_id": "HdUF2NKrMuIvaIB4",
+   "type": "text",
+   "text": "Se coucher sur le dos et se comporter comme s'il était mort.",
+   "img": null,
+   "description": "",
+   "range": [
+    13,
+    13
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.HdUF2NKrMuIvaIB4"
+  },
+  {
+   "_id": "ikKiuA8ZjZVQSd3a",
+   "type": "text",
+   "text": "Agir agressivement envers d'autres chats.",
+   "img": null,
+   "description": "",
+   "range": [
+    14,
+    14
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.ikKiuA8ZjZVQSd3a"
+  },
+  {
+   "_id": "ZnFwoVL8p32CXAMx",
+   "type": "text",
+   "text": "Courir en rond en poursuivant sa propre queue.",
+   "img": null,
+   "description": "",
+   "range": [
+    15,
+    15
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.ZnFwoVL8p32CXAMx"
+  },
+  {
+   "_id": "S2UsxgS14KevidU1",
+   "type": "text",
+   "text": "Attraper et jouer avec des proies imaginaires.",
+   "img": null,
+   "description": "",
+   "range": [
+    16,
+    16
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.S2UsxgS14KevidU1"
+  },
+  {
+   "_id": "40cdGMqRgnsZ6xZ8",
+   "type": "text",
+   "text": "Refuser catégoriquement de marcher sur certaines surfaces comme les tapis, le carrelage…",
+   "img": null,
+   "description": "",
+   "range": [
+    17,
+    17
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.40cdGMqRgnsZ6xZ8"
+  },
+  {
+   "_id": "tr0C6IIOtbHTnzBD",
+   "type": "text",
+   "text": "Chercher frénétiquement quelque chose de perdu qui n'existe pas.",
+   "img": null,
+   "description": "",
+   "range": [
+    18,
+    18
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.tr0C6IIOtbHTnzBD"
+  },
+  {
+   "_id": "jbTX5xfBc5om2O45",
+   "type": "text",
+   "text": "Passer de la joie à la terreur sans raison apparente.",
+   "img": null,
+   "description": "",
+   "range": [
+    19,
+    19
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.jbTX5xfBc5om2O45"
+  },
+  {
+   "_id": "jLTZjGvmZFGC3hIG",
+   "type": "text",
+   "text": "Communiquer avec des entités invisibles.",
+   "img": null,
+   "description": "",
+   "range": [
+    20,
+    20
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!kFYZWVDha6zh9Hcx.jLTZjGvmZFGC3hIG"
+  }
+ ],
+ "formula": "1d20",
+ "replacement": true,
+ "displayRoll": true,
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!tables!kFYZWVDha6zh9Hcx"
+}

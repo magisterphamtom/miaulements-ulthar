@@ -1,0 +1,28 @@
+{
+ "_id": "Wwb2MsXJqTMNLJfO",
+ "name": "Cri assourdissant",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "temporaire",
+  "attribut": "",
+  "description": "<p>Des ondes sonores puissantes désorientent les ennemis ou brisent des obstacles. Jet réussi : jusqu'à 1D6 dégâts.</p>",
+  "degats": "1d6",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "ZmNoEX04AcYhbu9V",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!Wwb2MsXJqTMNLJfO"
+}

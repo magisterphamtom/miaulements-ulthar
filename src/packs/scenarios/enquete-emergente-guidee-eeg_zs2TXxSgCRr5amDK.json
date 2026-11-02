@@ -1,0 +1,119 @@
+{
+ "_id": "zs2TXxSgCRr5amDK",
+ "name": "Enquête émergente guidée (EEG)",
+ "pages": [
+  {
+   "_id": "TTIGXK3xc9b867m8",
+   "name": "Comprendre l'EEG",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Enquête Emergente Guidée</h3>\n<p>Dans Les Miaulements d'Ulthar, les scénarios sont présentés sous une forme que j'appelle \"Enquête Émergente Guidée\" ou EEG. Contrairement aux scénarios traditionnels linéaires, les scénarios EEG offrent une plus grande liberté d'improvisations et de réactions face aux différentes initiatives ou envies des joueurs et du maître de jeu. Un scénario EEG se présente sous un ensemble de textes, de listes, de tableaux qui permettent au maître de jeu de dérouler l'aventure et d'aider les joueurs à résoudre le mystère de manière non linéaire. Contrairement à un scénario traditionnel où les scènes et les révélations sont prédéfinies, une enquête émergente guidée offre aux joueurs une multitude de chemins possibles pour recueillir les indices et faire face aux événements . Le maître de jeu doit lui veiller à ce que les joueurs progressent de manière fluide et naturelle vers la compréhension des enjeux et la résolution de l'aventure. Achaque fois que les joueurs explorent ou interrogent des éléments de l'environnement liés à l'enquête, le maître de jeu leur fournit le ou les indices qui semblent les plus cohérents et pertinents selon le stade où en est l'histoire. Ainsi, le caractère imprévisible de la survenue d'indices ou d'événements ne doit rester qu'une apparence.</p>\n<p>Note: Du début de la partie et jusqu'à la fin, il est important, pour le maître de jeu, d'être discret quant à la manière dont il introduit les indices et les événements dans le scénario. En informer les joueurs risquerait de ternir leur expérience de jeu, leur faire croire, à tort, que l’histoire était artificielle ou manipulée, réduisant ainsi leur sentiment de prise de décisions au sein de cette aventure.</p>\n<p>Ainsi, en cherchant par eux-mêmes des éléments qui les rapprochent de la vérité., les joueurs avancent peu à peu, à leur rythme et grâce à leurs découvertes . Par exemple, lors de l'exploration d'une bibliothèque, le maître de jeu peut choisir parmi l'éventail d'indices dont il dispose et décider d'en révéler un ou deux : «la page arrachée d'un ancien grimoire » ou «la trace de poussière fraîchement déplacées ». Les joueurs, après analyse, en déduiront peut être la possibilité d'une présence récente dans cette pièçe. Le maître de jeu peut choisir aussi de garder certains indices, comme « la page du grimoire », pour les introduire ultérieurement. Cette stratégie de révélations permet de maintenir le rythme, d'éviter l'effet indice oublié ou passé inaperçu tout en guidant subtilement les joueurs vers la résolution de l'énigme. Afin de faciliter la mise en place d'un scénario EEG, celui-ci se déroule selon un shéma réccurent. La première partie appelée \"Résumé de l'intrigue\" est réservée au MJ et lui présente l'enjeu central de l'histoire. Le deuxième partie \"Début à Ulthar\" est l'introduction des joueurs dans l'aventure. Ici, Ester, le vieux Gardien, transmet aux joueurs les éléments de son inquiètude et de la mission à réaliser. Les joueurs s'engagent alors et se présentent à leurs compagnons d'aventure. Enfin, ils sont pourvus de pouvoirs supplémentaires: c'est la Bénédiction de Bast. La troisième partie se compose de données narratives afin de guider le maître du jeu dans le scénario. Ces informations sont listées dans des rubriques tels que:</p>\n<ul><li>\"Personnages de l'aventure \"(PNJ) que les joueurs peuvent rencontrer.</li><li>\"Lieux\" d'exploration en lien avec l’aventure.</li><li>\"Indices \"à faire découvrir durant les phases de recherche.</li><li>\"Evénements\" pour animer le scénario.</li><li>\"Atmosphères\" afin de donner une teinte à l'ambiance Chaque rubrique contient des informations ordonnées par ordre croissant d'importance narrrative ainsi que des tags afin de compléter la description ( ex: #odeur, #aspect, #caractère, etc...°</li></ul>\n<p>Le maître de jeu a tout loisir d'ajouter ou de déplacer des données narratives pour aider les joueurs durant l'enquête. De la même façon, les idées des joueurs doivent toujours être récompensées par la découverte d'un indice ou le déclenchement d'un événement. Enfin, la dernière et quatrième partie est une proposition de dénouement pour conclure l’aventure appelée \" Fin possible \". Aprésent, afin de comprendre en pratique l'approche EEG, voici à titre d'exemple, un scénario classique de l’univers de Cthulhu que nous allons parcourir ensemble et pas à pas.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 100000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!zs2TXxSgCRr5amDK.TTIGXK3xc9b867m8"
+  },
+  {
+   "_id": "xstbIzi39iFf3myt",
+   "name": "La maison hantée",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<h3>Résumé de l'intrigue</h3>\n<p>Près d’Arkham, dans une sombre et sinistre maison abandonnée, un groupe d'enfants curieux découvre de vieux livres mystérieux dissimulés dans une pièce secrète. Par jeu, ils tentent de décoder les livres qu’ils ne comprennent pas. En fin de soirée, par inadvertance, l'un des enfants renverse une bougie et déclenche alors un rituel maléfique : un démon s'empare de leur esprit, envoutant les enfants vers de sombres ténèbres !... Le rôle des Chats va être de comprendre la situation, détruire le démon et sauver les enfants.</p>\n<p>Note: Le résumé de l'intrigue est un élément essentiel pour le maître de jeu afin d'appréhender globalement l'enjeu de l'aventure. Il s'agit d'un condensé clair et concis des éléments principaux de l'histoire. Ce résumé peut inclure les objectifs, les antagonistes, les lieux clés et les enjeux majeurs auxquels les joueurs seront confrontés pour résoudre le mystère.</p>\n<h3>Début à Ulthar</h3>\n<p>Je vous invite à débuter les aventures toujours de la même manière, la scène d’introduction décrivant la ville d'Ulthar et le début du rassemblement des Chats. Cette introduction permet d’immerger rapidement les joueurs dans l’aventure.</p>\n<p>Note: C’est à la suite de cette introduction que les joueurs se désignent pour participer à cette aventure. Invitez-les à se décrire et se présenter aux autres Chats de l'aventure.</p>\n<p>Pour jouer la scène d’introduction, veuillez vous référer dans un premier temps à La Cérémonie sacrée , livre de règles , chapitre : \"Guide du maître du jeu\". Vous trouverez ci-dessous le texte à y inclure.</p>\n<h3>Texte à lire :</h3>\n<p>Hummm, il y a quelques jours, j’ai ressenti une présence maléfique qui émanait d’une vieille demeure à Arkham. Inquiet, j’ai envoyé un chat aguerri pour enquêter sur place et obtenir des informations cruciales. Cependant, aucun signe ni rapport ne me sont revenus. Je suis inquiet de sa disparition. J’ai besoin de quelques Chats pour cette mission. Ya-t-il des volontaires ? \"</p>\n<h3>Personnages de l'aventure (PNJ)</h3>\n<p>□ Émilie : enfant envouté, environ 12 ans, la cheffe de la bande. Tags: #odeur-cigarette, #short, #baskets-vertes</p>\n<p>Note: Après cette introduction viennent ensuite les éléments narratifs pour animer l’aventure. Ils doivent être dévoilés progressivement et mis en scène en fonction des actions et de l'avancement des joueurs. Les informations contenues dans chaque liste sont classées de la moins importante à la plus importante.</p>\n<p>□ Victor : enfant envouté, environ 10 ans, le suiveur. Tags: #odeur-parfum-sucré, #jeans, #baskets- blanches-sales □ Ethan: enfant envouté, environ 10 ans, l’impulsif. Tags: #sans-odeur, #pantalon-noir</p>\n<p>□ Boule: un rat futé caché et terrorisé, le peureux. Tags : #odeur-forte, #bicolore, #moustaches-- brulées</p>\n<p>Note: Cette liste présente les personnages principaux. Pour chacun d'entre eux, vous trouverez des éléments de description et de caractère pour vous aider à les faire vivre de manière authentique. Par exemple, si les joueurs rencontrent le rat Boule, le MJ pourra s'appuyer des tags : #odeur-forte, #moustaches-brulées afin d'enrichir sa description. Ainsi,Les Chats sentent déjà une odeur forte désagreable puis un vieux rat aux moustaches brullées les salue.</p>\n<p>□ Le démon : une entité terrifiante aux intentions malveillantes. Tags : #Electrique, #Froid, #Effrayant Attributs (forme immatérielle) : Att : 60 % / Agilité : 70 % / 1D6+1 dégâts / 30 PV d’énergie. Devient physique au bout de 12 tours. Attributs (forme physique) : Physique : 60 % / Agilité : 70 % / Griffes : 3D6 dégâts / 30 PV □ Personnages secondaires : Alice Vicont, Paul Dermer, Karl Money.</p>\n<h3>Lieux</h3>\n<p>□ Vieille maison abandonnée. Tags : #Sombre, #Délabrée, #Mélancolique □ Jardin envahi par la végétation depuis très longtemps. Tags : #Sauvage, #Humide □ Grenier sombre rempli d'objets abandonnés et de toiles d'araignée. Tags : #Poussiéreux, #Sombre, #Effrayant □ Cave humide et lugubre. Tags : #Humide, #Sombre □ Couloirs labyrinthiques aux murs lézardés et aux portes grinçantes. Tags : #Abîmés, #Egarant, #Inquiétant □ Chambre secrète dissimulée derrière une bibliothèque poussiéreuse.</p>\n<p>Note: Cette liste répertorie simplement les différents lieux, qu'ils soient importants ou secondaires, que les chats pourront découvrir et traverser au cours de leur aventure. Par exemple, vous pouvez choisir d'introduire la chambre secrète où vous le souhaitez en fonction de l'avancée de vos chats.</p>\n<h3>Atmosphères</h3>\n<p>□ Obscurité étouffante et sensation de présence. □ Température anormalement froide et courants d'air inexplicables. □ Odeur nauséabonde de soufre et de pourriture. □ Impression de désorientation. □ Chuchotements qui semblent provenir des murs. □ Échos de rires démoniaques résonnant dans les couloirs. □ Objets qui se déplacent d'eux-mêmes.</p>\n<h3>Indices</h3>\n<p>□ Traces de passages dans les herbes. □ Tentative d’effraction avortée au niveau de la porte d’entrée. □ Fenêtre cassée au premier étage. □ Sacs des enfants abandonnés depuis quelques jours. □ Pages déchirées d'un vieux grimoire renfermant des incantations. □ Dessins macabres représentant des rituels sanglants. □ Écrits cryptiques contenant des indications sur la manière de briser le lien démoniaque. □ Marques laissées par une bougie renversée.</p>\n<p>Note: Cette liste d'éléments d'atmosphère doit être utilisée de manière progressive à chaque changement de lieu ou de pièce, afin de créer une ambiance de plus en plus intense et oppressante. Par exemple, lorsque les joueurs pénètrent pour la première fois dans la maison, vous pouvez utiliser les « chuchotements » ou la « température anormalement froide » pour apporter un sentiment d'étrangeté et leur suggérer une présence malveillante dissimulée.</p>\n<p>Note: Cette liste d'indices est essentielle pour aider les Chats à comprendre les événements. En explorant les pièces, révélez des indices comme « Sacs des enfants » ou « Pages déchirées ». Par exemple, un sac abandonné au pied de l'escalier pourrait contenir des pages de grimoire abîmées. En disséminant ces indices, les joueurs comprendront peu à peu le mystère.</p>\n<h3>Événements</h3>\n<p>□ Corbeau s’envolant avec fracas à l’approche de la maison. □ Voix d’enfants chuchotant dans l’air. □ Confrontation avec les esprits maléfiques des enfants dans la maison hantée. □ Découverte d'un passage secret menant à une vieille pièce. □ Affrontement final avec le démon « fantomatique » qui tente de prendre des vies pour devenir réel (cf paragraphe suivant).</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!zs2TXxSgCRr5amDK.xstbIzi39iFf3myt"
+  },
+  {
+   "_id": "EfIyJJ08nPk5LALw",
+   "name": "Fin possible",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Les Chats découvrent la salle secrète contenant un grimoire et des bougies où des enfants, apparemment inconscients, sont disposés en cercle rituel. Une lueur maléfique enveloppe leurs corps en lévitation. Un démon immatériel tente d'absorber leur énergie vitale pour s'incarner dans le monde physique. Dès que les Chats l'attaquent, il essaie également de les tuer pour absorber leur vitalité. Demon : Att : 60% / Deg 1D6+1 / 30 PV. Àl’issue de douze tours, il est victorieux et peut s'incarner. Il déclenche une immense explosion détruisant une partie de son environnement avant de s’échapper. Son départ marque la fin de l’aventure. Ci-dessous une proposition de fin:</p>\n<p>Note: La \"Fin possible\" proposée n'est qu'une suggestion pour conclure l'aventure. Gardez à l'esprit que cette solution n'est pas obligatoire et que le dénouement final peut varier en fonction de l'approche adoptée par les Chats au cours du scénario. Lors d'une des parties de test, les joueurs ont préféré, grâce à leurs pouvoirs appeler la police pour arrêter le démon. Une fin plus « débrouillarde » que « combative » es tout aussi valable.</p>\n<p>A Ulthar, le vieux Ester semble pensif. Il sait que la mission vient d’échouer. D’un ton triste et accablé, il murmure : Nous avons laissé filer quelque chose qui ne devrait pas exister... et nous en paierons bientôt le prix. »</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!zs2TXxSgCRr5amDK.EfIyJJ08nPk5LALw"
+  }
+ ],
+ "folder": null,
+ "sort": 100000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!journal!zs2TXxSgCRr5amDK"
+}

@@ -1,0 +1,28 @@
+{
+ "_id": "jX97Rj2JUVGW6vjo",
+ "name": "Guérison réconfortante",
+ "type": "pouvoir",
+ "img": "icons/svg/aura.svg",
+ "system": {
+  "categorie": "race",
+  "attribut": "",
+  "description": "<p>(Scottish Fold) Le Chat canalise l'énergie curative de la nature, détecte la souffrance et apaise les maux physiques et émotionnels. Sa présence calme les esprits agités. Il soigne 1D6 points de santé à un individu autre que lui.</p>",
+  "degats": "1d6",
+  "gratuit": false
+ },
+ "effects": [],
+ "folder": "WG4lMQcfRb3JUelh",
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!items!jX97Rj2JUVGW6vjo"
+}

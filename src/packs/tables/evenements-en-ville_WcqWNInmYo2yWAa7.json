@@ -1,0 +1,245 @@
+{
+ "_id": "WcqWNInmYo2yWAa7",
+ "name": "Événements en ville",
+ "img": "icons/svg/d20-grey.svg",
+ "description": "<p>Écran du MJ.</p>",
+ "results": [
+  {
+   "_id": "YrV2vtpMRrhgjw4P",
+   "type": "text",
+   "text": "Circulation automobile dense",
+   "img": null,
+   "description": "",
+   "range": [
+    1,
+    1
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!WcqWNInmYo2yWAa7.YrV2vtpMRrhgjw4P"
+  },
+  {
+   "_id": "N6zmQ8B78l0itnj3",
+   "type": "text",
+   "text": "Animaux errants agressifs",
+   "img": null,
+   "description": "",
+   "range": [
+    2,
+    2
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!WcqWNInmYo2yWAa7.N6zmQ8B78l0itnj3"
+  },
+  {
+   "_id": "WFF61OSbcDyGMQmL",
+   "type": "text",
+   "text": "Déchets dangereux",
+   "img": null,
+   "description": "",
+   "range": [
+    3,
+    3
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!WcqWNInmYo2yWAa7.WFF61OSbcDyGMQmL"
+  },
+  {
+   "_id": "0tUsptseUtyjDF0a",
+   "type": "text",
+   "text": "Chasseurs de chats",
+   "img": null,
+   "description": "",
+   "range": [
+    4,
+    4
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!WcqWNInmYo2yWAa7.0tUsptseUtyjDF0a"
+  },
+  {
+   "_id": "a1oyMpfI9ZWwHxQ3",
+   "type": "text",
+   "text": "Pièges à rongeurs empoisonnés",
+   "img": null,
+   "description": "",
+   "range": [
+    5,
+    5
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!WcqWNInmYo2yWAa7.a1oyMpfI9ZWwHxQ3"
+  },
+  {
+   "_id": "UoFjjFPdynUbord0",
+   "type": "text",
+   "text": "Bouche d'aération qui expulse de la vapeur",
+   "img": null,
+   "description": "",
+   "range": [
+    6,
+    6
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!WcqWNInmYo2yWAa7.UoFjjFPdynUbord0"
+  },
+  {
+   "_id": "SaJmmcjyQ7CvgT3S",
+   "type": "text",
+   "text": "Personnes hostiles",
+   "img": null,
+   "description": "",
+   "range": [
+    7,
+    7
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!WcqWNInmYo2yWAa7.SaJmmcjyQ7CvgT3S"
+  },
+  {
+   "_id": "ITR4UjF1gEAQWKiA",
+   "type": "text",
+   "text": "Pollution sonore",
+   "img": null,
+   "description": "",
+   "range": [
+    8,
+    8
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!WcqWNInmYo2yWAa7.ITR4UjF1gEAQWKiA"
+  },
+  {
+   "_id": "3yHhqomvnBIzxuGi",
+   "type": "text",
+   "text": "Fourrière",
+   "img": null,
+   "description": "",
+   "range": [
+    9,
+    9
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!WcqWNInmYo2yWAa7.3yHhqomvnBIzxuGi"
+  },
+  {
+   "_id": "gTEt96bP69nk2JGE",
+   "type": "text",
+   "text": "Mauvaises conditions météorologiques",
+   "img": null,
+   "description": "",
+   "range": [
+    10,
+    10
+   ],
+   "weight": 1,
+   "drawn": false,
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.3.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!tables.results!WcqWNInmYo2yWAa7.gTEt96bP69nk2JGE"
+  }
+ ],
+ "formula": "1d10",
+ "replacement": true,
+ "displayRoll": true,
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!tables!WcqWNInmYo2yWAa7"
+}

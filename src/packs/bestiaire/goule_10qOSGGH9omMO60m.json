@@ -1,0 +1,47 @@
+{
+ "_id": "10qOSGGH9omMO60m",
+ "name": "Goule",
+ "type": "pnj",
+ "img": "icons/svg/mystery-man.svg",
+ "system": {
+  "attaques": [
+   {
+    "nom": "Mâchoire",
+    "pct": 65,
+    "degats": "1d8"
+   }
+  ],
+  "pouvoir": "",
+  "capacite": "dégâts / 2",
+  "pv": {
+   "value": 13,
+   "max": 13
+  },
+  "description": "<p>Les Goules, créatures voraces des ténèbres, sont des êtres mi-cadavres mi-humains qui rôdent principalement dans les cimetières et autres lieux de sépulture. Elles se nourrissent de chair en décomposition, mais ne dédaignent pas la chair fraîche lorsque l'occasion se présente.</p><p><strong>Capacité :</strong> dégâts / 2</p><blockquote><p>À Providence, le mystère des tombes profanées persiste. Ce week-end, une nouvelle sépulture a été profanée, à peine quelques jours après l'enterrement de M. Kinghash. Ce matin, le gardien a découvert une tombe vide.</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+ },
+ "prototypeToken": {
+  "name": "Goule",
+  "actorLink": false,
+  "disposition": -1,
+  "displayBars": 40,
+  "bar1": {
+   "attribute": "pv"
+  }
+ },
+ "items": [],
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!actors!10qOSGGH9omMO60m"
+}
