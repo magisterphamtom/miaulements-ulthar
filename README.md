@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/banner.png" alt="Les Miaulements d'Ulthar — système Foundry VTT" width="100%"></p>
+
 # Les Miaulements d'Ulthar — système Foundry VTT
 
 Système de jeu non officiel pour **Foundry VTT v13/v14** (vérifié sur 14.368) adapté du jeu de rôle
@@ -9,7 +11,9 @@ Système de jeu non officiel pour **Foundry VTT v13/v14** (vérifié sur 14.368)
 - Code du système : magisterphamtom.
 
 ## Installation
-Décompresser le zip dans `Data/systems/` (dossier `miaulements-ulthar`), ou installer via l'URL du manifeste d'une release.
+Dans Foundry : *Systèmes de jeu* › *Installer un système* › coller le lien manifeste :
+
+`https://github.com/magisterphamtom/miaulements-ulthar/releases/latest/download/system.json`
 
 ## État
 Voir [ETAT.md](ETAT.md). Version 0.1.0 : fiche de Chat, jets D100, Folie, progression. Non testé dans Foundry à ce stade.

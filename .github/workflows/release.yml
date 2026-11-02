@@ -1,0 +1,27 @@
+name: Release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Version et URL de téléchargement d'après le tag
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          jq --arg v "$VERSION" --arg d "https://github.com/${{ github.repository }}/releases/download/${GITHUB_REF_NAME}/miaulements-ulthar.zip" \
+            '.version=$v | .download=$d' system.json > s.json && mv s.json system.json
+      - name: Zip (dossier miaulements-ulthar/)
+        run: |
+          mkdir -p /tmp/pack/miaulements-ulthar
+          cp -r system.json module templates css lang README.md ETAT.md /tmp/pack/miaulements-ulthar/
+          [ -d packs ] && cp -r packs /tmp/pack/miaulements-ulthar/ || true
+          [ -d assets ] && cp -r assets /tmp/pack/miaulements-ulthar/ || true
+          (cd /tmp/pack && zip -qr "$GITHUB_WORKSPACE/miaulements-ulthar.zip" miaulements-ulthar)
+      - name: Publier la release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" miaulements-ulthar.zip system.json --title "$GITHUB_REF_NAME" --generate-notes
