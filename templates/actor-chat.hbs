@@ -1,0 +1,91 @@
+<form class="mu-fiche" autocomplete="off">
+  <header class="mu-entete">
+    <img class="mu-portrait" src="{{actor.img}}" data-edit="img" alt="">
+    <div class="mu-identite">
+      <label>Surnom <input type="text" name="name" value="{{actor.name}}"></label>
+      <label>Race
+        <select name="system.race">
+          <option value="">—</option>
+          {{#each races}}<option value="{{cle}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}
+        </select>
+      </label>
+      <label>Handicap <input type="text" name="system.handicap" value="{{system.handicap}}" placeholder="optionnel (−20 sur l'attribut associé)"></label>
+    </div>
+  </header>
+
+  <section class="mu-attributs">
+    {{#each attributs}}
+    <div class="mu-attribut">
+      <button type="button" class="mu-jet" data-action="jetAttribut" data-attribut="{{cle}}" title="Lancer (Maj = jet rapide)">
+        <span class="mu-nom">{{label}}</span>
+        <span class="mu-valeur">{{value}} %</span>
+      </button>
+      <div class="mu-cases">{{#each cases}}<i class="mu-case {{#if cochee}}cochee{{/if}}"></i>{{/each}}</div>
+      <div class="mu-mods">
+        <label>base <input type="number" name="system.attributs.{{cle}}.base" value="{{base}}"></label>
+        <label>race <input type="number" name="system.attributs.{{cle}}.race" value="{{race}}"></label>
+        <label>hand. <input type="number" name="system.attributs.{{cle}}.handicap" value="{{handicap}}"></label>
+        <label>prog. <input type="number" name="system.attributs.{{cle}}.progres" value="{{progres}}"></label>
+        <label>échecs <input type="number" name="system.attributs.{{cle}}.echecs" value="{{echecs}}"></label>
+      </div>
+      {{#if peutMonter}}<button type="button" class="mu-monter" data-action="monterAttribut" data-attribut="{{cle}}">⬆ Monter (+1D10)</button>{{/if}}
+    </div>
+    {{/each}}
+  </section>
+
+  <section class="mu-jauges">
+    <div class="mu-jauge"><span>Santé</span>
+      <input type="number" name="system.pv.value" value="{{system.pv.value}}"> / {{system.pv.max}}
+      <span class="mu-sep">Vies de Chat</span>
+      <input type="number" name="system.vies.value" value="{{system.vies.value}}"> / {{system.vies.max}}</div>
+    <div class="mu-jauge"><span>Magie</span>
+      <input type="number" name="system.pm.value" value="{{system.pm.value}}"> / {{system.pm.max}}</div>
+    <div class="mu-jauge"><span>Folie</span>
+      <input type="number" name="system.pf.value" value="{{system.pf.value}}"> / {{system.pf.max}}
+      <button type="button" data-action="jetFolie" title="Jet de Folie">🎲</button></div>
+    <div class="mu-jauge"><span>XP</span>
+      <input type="number" name="system.xp" value="{{system.xp}}">
+      {{#each achats}}<button type="button" data-action="acheter" data-achat="{{cle}}" {{#unless possible}}disabled{{/unless}} title="{{cout}} XP">{{label}} ({{cout}} XP)</button>{{/each}}</div>
+  </section>
+
+  <section class="mu-pouvoirs">
+    <div class="mu-colonne">
+      <h3>Pouvoirs innés</h3>
+      <ul>
+        {{#each pouvoirsInnes}}
+        <li><a data-action="ouvrirItem" data-item-id="{{id}}">{{name}}</a>
+          <a data-action="supprimerItem" data-item-id="{{id}}" title="Supprimer">✕</a></li>
+        {{/each}}
+      </ul>
+      <p class="mu-aide">Glisser des pouvoirs ici depuis un compendium ou le répertoire d'objets.</p>
+    </div>
+    <div class="mu-colonne">
+      <h3>Pouvoirs temporaires</h3>
+      <ul>
+        {{#each pouvoirsTemporaires}}
+        <li><a data-action="ouvrirItem" data-item-id="{{id}}">{{name}}</a>
+          <a data-action="supprimerItem" data-item-id="{{id}}" title="Supprimer">✕</a></li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+
+  <section class="mu-folie">
+    <h3>Cartes Folie en main</h3>
+    <ul>
+      {{#each cartes}}
+      <li>🃏 {{texte}} <button type="button" data-action="jouerCarte" data-index="{{index}}">Jouer</button></li>
+      {{else}}<li class="mu-aide">Aucune.</li>{{/each}}
+    </ul>
+  </section>
+
+  <section class="mu-notes">
+    <h3>Description et notes</h3>
+    <textarea name="system.description" rows="3" placeholder="Apparence du Chat">{{system.description}}</textarea>
+    <textarea name="system.notes" rows="4" placeholder="Notes">{{system.notes}}</textarea>
+  </section>
+
+  <footer class="mu-pied">
+    <button type="button" data-action="finScenario">Fin de scénario</button>
+  </footer>
+</form>

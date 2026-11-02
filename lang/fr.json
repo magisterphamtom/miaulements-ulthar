@@ -1,0 +1,5 @@
+{
+  "TYPES.Actor.chat": "Chat",
+  "TYPES.Actor.pnj": "PNJ / adversaire",
+  "TYPES.Item.pouvoir": "Pouvoir"
+}

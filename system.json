@@ -1,0 +1,19 @@
+{
+  "id": "miaulements-ulthar",
+  "title": "Les Miaulements d'Ulthar",
+  "description": "Système de jeu Foundry VTT pour « Les Miaulements d'Ulthar » (jeu de rôle de Xaviiiier) : des chats d'Ulthar face à l'horreur lovecraftienne. Projet privé, jeu commercial : ne pas publier sans l'accord de l'auteur.",
+  "version": "0.1.0",
+  "compatibility": { "minimum": "13", "verified": "14.368" },
+  "authors": [{ "name": "magisterphamtom" }],
+  "esmodules": ["module/miaulements-ulthar.mjs"],
+  "styles": ["css/miaulements-ulthar.css"],
+  "languages": [{ "lang": "fr", "name": "Français", "path": "lang/fr.json" }],
+  "documentTypes": {
+    "Actor": { "chat": {}, "pnj": {} },
+    "Item": { "pouvoir": {} }
+  },
+  "packs": [],
+  "grid": { "distance": 1, "units": "m" },
+  "primaryTokenAttribute": "pv",
+  "socket": false
+}

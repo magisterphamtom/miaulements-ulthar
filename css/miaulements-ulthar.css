@@ -1,0 +1,64 @@
+/* Les Miaulements d'Ulthar — thème sombre, tentacules et lune. Lot 1 : mise en page fonctionnelle. */
+:root {
+  --mu-fond: #17141c;
+  --mu-fond2: #221d2b;
+  --mu-bord: #6b5b8a;
+  --mu-texte: #e8e2f0;
+  --mu-accent: #d9b34a;
+  --mu-ok: #6fbf8b;
+  --mu-ko: #d4635f;
+}
+
+.miaulements-ulthar.sheet .window-content { background: var(--mu-fond); color: var(--mu-texte); }
+.mu-fiche { display: flex; flex-direction: column; gap: 10px; padding: 6px; }
+.mu-fiche h3 { margin: 0 0 4px; color: var(--mu-accent); border-bottom: 1px solid var(--mu-bord); }
+.mu-fiche input, .mu-fiche select, .mu-fiche textarea {
+  background: var(--mu-fond2); color: var(--mu-texte); border: 1px solid var(--mu-bord);
+}
+.mu-fiche button {
+  background: var(--mu-fond2); color: var(--mu-texte); border: 1px solid var(--mu-bord); cursor: pointer;
+}
+.mu-fiche button:hover:not(:disabled) { border-color: var(--mu-accent); }
+.mu-fiche button:disabled { opacity: 0.4; cursor: default; }
+
+.mu-entete { display: flex; gap: 10px; align-items: center; }
+.mu-portrait { width: 96px; height: 96px; object-fit: cover; border: 2px solid var(--mu-bord); border-radius: 50%; }
+.mu-identite { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.mu-identite label { display: flex; gap: 6px; align-items: center; }
+.mu-identite input, .mu-identite select { flex: 1; }
+
+.mu-attributs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.mu-attribut { background: var(--mu-fond2); border: 1px solid var(--mu-bord); border-radius: 6px; padding: 6px; display: flex; flex-direction: column; gap: 4px; }
+.mu-jet { display: flex; flex-direction: column; align-items: center; padding: 6px; }
+.mu-nom { font-size: 0.95em; }
+.mu-valeur { font-size: 1.6em; color: var(--mu-accent); font-weight: bold; }
+.mu-cases { display: flex; gap: 3px; justify-content: center; }
+.mu-case { width: 10px; height: 10px; border: 1px solid var(--mu-bord); border-radius: 50%; }
+.mu-case.cochee { background: var(--mu-ko); border-color: var(--mu-ko); }
+.mu-mods { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; font-size: 0.7em; }
+.mu-mods input { width: 100%; height: 20px; padding: 0 2px; }
+.mu-monter { color: var(--mu-accent); }
+
+.mu-jauges { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.mu-jauge { background: var(--mu-fond2); border: 1px solid var(--mu-bord); border-radius: 6px; padding: 6px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.mu-jauge input { width: 52px; text-align: center; }
+.mu-sep { margin-left: 8px; }
+
+.mu-pouvoirs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.mu-pouvoirs ul, .mu-folie ul { list-style: none; margin: 0; padding: 0; }
+.mu-pouvoirs li { display: flex; justify-content: space-between; padding: 2px 0; }
+.mu-aide { opacity: 0.6; font-size: 0.85em; }
+.mu-notes textarea { width: 100%; margin-bottom: 4px; }
+.mu-pied { text-align: right; }
+
+/* Cartes de chat */
+.mu-carte { border: 1px solid var(--mu-bord); border-radius: 6px; background: var(--mu-fond); color: var(--mu-texte); padding: 6px 8px; }
+.mu-carte header { font-weight: bold; color: var(--mu-accent); display: flex; justify-content: space-between; }
+.mu-carte.reussite .mu-verdict { color: var(--mu-ok); }
+.mu-carte.echec .mu-verdict { color: var(--mu-ko); }
+.mu-verdict { font-size: 1.2em; font-weight: bold; margin: 4px 0; }
+.mu-detail, .mu-note { font-size: 0.85em; margin: 2px 0; opacity: 0.85; }
+.mu-carte-folie { background: var(--mu-fond2); border-left: 3px solid var(--mu-ko); padding: 4px 6px; margin: 6px 0; }
+.mu-boutons button { width: 100%; }
+/* Le bloc de dés natif est masqué : la carte contient déjà le résultat. */
+#chat .chat-message .mu-carte ~ .dice-roll { display: none !important; }
