@@ -1,7 +1,7 @@
 {
   "id": "miaulements-ulthar",
   "title": "Les Miaulements d'Ulthar",
-  "description": "Système de jeu Foundry VTT pour « Les Miaulements d'Ulthar » (jeu de rôle de Xaviiiier) : des chats d'Ulthar face à l'horreur lovecraftienne. Projet privé, jeu commercial : ne pas publier sans l'accord de l'auteur.",
+  "description": "Système de jeu Foundry VTT pour « Les Miaulements d'Ulthar » (jeu de rôle de Xaviiiier) : des Chats d'Ulthar face à l'horreur lovecraftienne. Publié avec l'autorisation de l'auteur ; le livre de règles est nécessaire pour jouer.",
   "version": "0.1.0",
   "compatibility": {
     "minimum": "13",
