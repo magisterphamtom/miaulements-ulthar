@@ -2,7 +2,7 @@
  "_id": "PFYW4C3JeQ2Zw36k",
  "name": "Léonard",
  "type": "chat",
- "img": "icons/svg/mystery-man.svg",
+ "img": "systems/miaulements-ulthar/assets/portraits/leonard.png",
  "system": {
   "race": "gouttiere",
   "description": "<p>Léonard est un chat qui aime savoir et comprendre. Cela le met parfois dans quelques ennuis.</p>",
@@ -93,6 +93,9 @@
   "displayBars": 40,
   "bar1": {
    "attribute": "pv"
+  },
+  "texture": {
+   "src": "systems/miaulements-ulthar/assets/portraits/leonard.png"
   }
  },
  "items": [

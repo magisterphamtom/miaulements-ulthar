@@ -2,7 +2,7 @@
  "_id": "G3ZxV0nhxXaneA9s",
  "name": "Chien Dimensionnel",
  "type": "pnj",
- "img": "icons/svg/mystery-man.svg",
+ "img": "systems/miaulements-ulthar/assets/jetons/chien-dimensionnel.png",
  "system": {
   "attaques": [
    {
@@ -26,6 +26,9 @@
   "displayBars": 40,
   "bar1": {
    "attribute": "pv"
+  },
+  "texture": {
+   "src": "systems/miaulements-ulthar/assets/jetons/chien-dimensionnel.png"
   }
  },
  "items": [],

@@ -2,7 +2,7 @@
  "_id": "g3YcvEaXWZMbmTd0",
  "name": "Mafieu",
  "type": "pnj",
- "img": "icons/svg/mystery-man.svg",
+ "img": "systems/miaulements-ulthar/assets/jetons/mafieu.png",
  "system": {
   "attaques": [
    {
@@ -26,6 +26,9 @@
   "displayBars": 40,
   "bar1": {
    "attribute": "pv"
+  },
+  "texture": {
+   "src": "systems/miaulements-ulthar/assets/jetons/mafieu.png"
   }
  },
  "items": [],

@@ -7,6 +7,7 @@ Puis `node tools/compiler-packs.mjs` écrit les packs LevelDB dans packs/."""
 import json, hashlib, os, re, html, shutil, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from donnees_jeu import parse_bestiaire, creature_complete, charger
+from jetons import slug as slug_img
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SORTIE = os.path.join(RACINE, "src", "packs")
@@ -211,6 +212,13 @@ def construire_tables():
     print("tables : 7")
 
 # ---------------------------------------------------------------- bestiaire (Actors pnj)
+def chemin_image(sous_dossier, nom, ext_candidates=("png", "webp")):
+    """Chemin système d'une image de jeton ou de portrait, ou l'icône par défaut si elle n'existe pas."""
+    for ext in ext_candidates:
+        if os.path.exists(os.path.join(RACINE, "assets", sous_dossier, f"{slug_img(nom)}.{ext}")):
+            return f"systems/{SYS}/assets/{sous_dossier}/{slug_img(nom)}.{ext}"
+    return ICONE
+
 def construire_bestiaire():
     pack = "bestiaire"
     out = []
@@ -220,11 +228,12 @@ def construire_bestiaire():
         desc = f"<p>{esc(c['description'])}</p>"
         if c["capacite"]: desc += f"<p><strong>Capacité :</strong> {esc(c['capacite'])}</p>"
         if c["extrait"]: desc += f"<blockquote><p>{esc(c['extrait'])}</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
-        doc = {"_id": aid, "name": c["nom"], "type": "pnj", "img": "icons/svg/mystery-man.svg",
+        img = chemin_image("jetons", c["nom"])
+        doc = {"_id": aid, "name": c["nom"], "type": "pnj", "img": img,
                "system": {"attaques": [{"nom": a["nom"], "pct": a["pct"], "degats": a["degats"]} for a in c["attaques"]],
                           "pouvoir": c["pouvoir"], "capacite": c["capacite"],
                           "pv": {"value": c["pv"], "max": c["pv"]}, "description": desc},
-               "prototypeToken": {"name": c["nom"], "actorLink": False, "disposition": -1, "displayBars": 40, "bar1": {"attribute": "pv"}},
+               "prototypeToken": {"name": c["nom"], "actorLink": False, "disposition": -1, "displayBars": 40, "bar1": {"attribute": "pv"}, "texture": {"src": img}},
                "items": [], "effects": [], "folder": None, "sort": 0, "ownership": {"default": 0}, "flags": {}, "_stats": STATS, "_key": f"!actors!{aid}"}
         ecrire(pack, doc)
         out.append(c)
@@ -277,11 +286,12 @@ def construire_pretires():
         for nom in pr["pouvoirs"]:
             cat, p = tous[nom]
             items.append(item_pouvoir(pack, p["nom"], cat, p["desc"], degats=p.get("degats", ""), gratuit=bool(p.get("gratuit")), parent=aid))
-        doc = {"_id": aid, "name": pr["nom"], "type": "chat", "img": "icons/svg/mystery-man.svg",
+        img = chemin_image("portraits", pr["nom"])
+        doc = {"_id": aid, "name": pr["nom"], "type": "chat", "img": img,
                "system": {"race": pr["race"], "description": f"<p>{esc(pr['desc'])}</p>", "handicap": "", "attributs": attrs,
                           "pv": {"value": pr["pv"]}, "pm": {"value": pr["pm"]}, "pf": {"value": pr["pf"]}, "vies": {"value": pr["vies"]}, "xp": 0,
                           "achats": {"pm": 0, "pv": 0, "vies": 0}, "cartesFolie": [], "notes": ""},
-               "prototypeToken": {"name": pr["nom"], "actorLink": True, "disposition": 1, "displayBars": 40, "bar1": {"attribute": "pv"}},
+               "prototypeToken": {"name": pr["nom"], "actorLink": True, "disposition": 1, "displayBars": 40, "bar1": {"attribute": "pv"}, "texture": {"src": img}},
                "items": items, "effects": [], "folder": None, "sort": 0, "ownership": {"default": 0}, "flags": {}, "_stats": STATS, "_key": f"!actors!{aid}"}
         ecrire(pack, doc)
     print("prétirés :", len(PRETIRES))
@@ -393,6 +403,8 @@ def construire_macros():
          "game.miaulementsUlthar.finDeScenarioGroupe();", "+2 XP, PV, PM et vies remis au maximum, −10 PF par carte Folie non jouée, pour chaque Chat des joueurs."),
         ("Jet de Folie du groupe", "icons/svg/terror.svg",
          "game.miaulementsUlthar.folieDuGroupe(\"Un événement troublant frappe le groupe\");", "Chaque Chat des joueurs fait un jet de Folie (peur, instinct de chasseur…)."),
+        ("Suivi des Chats (ouvrir ou fermer)", "icons/svg/heal.svg",
+         "game.miaulementsUlthar.suiviGroupe();", "Ouvre la fenêtre qui montre Santé, Magie, Folie et vies de tous les Chats."),
         ("Table : événement en ville", "icons/svg/city.svg",
          "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Événements en ville')._id).then(t => t.draw());", "Tire un événement en ville (écran du MJ)."),
         ("Table : réaction humaine", "icons/svg/mystery-man.svg",

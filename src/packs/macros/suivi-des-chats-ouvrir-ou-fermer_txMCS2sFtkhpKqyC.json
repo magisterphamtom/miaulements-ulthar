@@ -1,0 +1,23 @@
+{
+ "_id": "txMCS2sFtkhpKqyC",
+ "name": "Suivi des Chats (ouvrir ou fermer)",
+ "type": "script",
+ "author": null,
+ "img": "icons/svg/heal.svg",
+ "scope": "global",
+ "command": "game.miaulementsUlthar.suiviGroupe();",
+ "folder": null,
+ "sort": 300000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.3.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!macros!txMCS2sFtkhpKqyC"
+}

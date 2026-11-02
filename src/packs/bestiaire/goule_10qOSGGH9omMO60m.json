@@ -2,7 +2,7 @@
  "_id": "10qOSGGH9omMO60m",
  "name": "Goule",
  "type": "pnj",
- "img": "icons/svg/mystery-man.svg",
+ "img": "systems/miaulements-ulthar/assets/jetons/goule.png",
  "system": {
   "attaques": [
    {
@@ -26,6 +26,9 @@
   "displayBars": 40,
   "bar1": {
    "attribute": "pv"
+  },
+  "texture": {
+   "src": "systems/miaulements-ulthar/assets/jetons/goule.png"
   }
  },
  "items": [],

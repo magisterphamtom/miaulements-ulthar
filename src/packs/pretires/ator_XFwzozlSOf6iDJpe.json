@@ -2,7 +2,7 @@
  "_id": "XFwzozlSOf6iDJpe",
  "name": "Ator",
  "type": "chat",
- "img": "icons/svg/mystery-man.svg",
+ "img": "systems/miaulements-ulthar/assets/portraits/ator.png",
  "system": {
   "race": "mainecoon",
   "description": "<p>Ator, avec une prestance physique imposante, incarne la force brute.</p>",
@@ -93,6 +93,9 @@
   "displayBars": 40,
   "bar1": {
    "attribute": "pv"
+  },
+  "texture": {
+   "src": "systems/miaulements-ulthar/assets/portraits/ator.png"
   }
  },
  "items": [

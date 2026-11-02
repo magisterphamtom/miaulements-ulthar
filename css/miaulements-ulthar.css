@@ -133,3 +133,22 @@
 .mu-attaque { display: grid; grid-template-columns: 32px 1fr 56px 14px 90px 18px; gap: 4px; align-items: center; margin: 2px 0; }
 .mu-attaque input { width: 100%; }
 .mu-attaque a { cursor: pointer; opacity: 0.7; }
+
+/* Suivi des Chats */
+.mu-suivi .window-content { background: var(--mu-fond); color: var(--mu-texte); padding: 8px; }
+.mu-suivi-chat { display: flex; gap: 10px; align-items: center; background: var(--mu-fond2); border: 1px solid var(--mu-bord); border-radius: 8px; padding: 6px; margin-bottom: 6px; }
+.mu-suivi-chat img { width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--mu-bord); object-fit: cover; cursor: pointer; }
+.mu-suivi-infos { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.mu-suivi-infos strong { cursor: pointer; color: var(--mu-accent); }
+.mu-pattes i { color: var(--mu-accent); margin-right: 3px; }
+.mu-pattes i.perdue { color: #555; }
+.mu-barre { position: relative; height: 16px; background: #0d0b13; border: 1px solid var(--mu-bord); border-radius: 8px; overflow: hidden; }
+.mu-barre span { position: absolute; inset: 0 auto 0 0; }
+.mu-barre.pv span { background: #a63a3a; }
+.mu-barre.pm span { background: #4f6fd0; }
+.mu-barre.pf span { background: #8f6bd6; }
+.mu-barre.pf.bas span { background: #d4635f; }
+.mu-barre em { position: relative; font-style: normal; font-size: 11px; padding-left: 8px; line-height: 14px; color: #fff; text-shadow: 0 1px 2px #000; }
+
+/* Vision féline : teinte dorée et contraste de la scène */
+body.mu-vision-feline #board { filter: sepia(0.35) saturate(1.3) hue-rotate(-12deg) brightness(1.12) contrast(1.12); }

@@ -2,7 +2,7 @@
  "_id": "7h9dBvKRT8IyctzX",
  "name": "Filou",
  "type": "chat",
- "img": "icons/svg/mystery-man.svg",
+ "img": "systems/miaulements-ulthar/assets/portraits/filou.png",
  "system": {
   "race": "gouttiere",
   "description": "<p>Filou est un chat discret et voleur dans l'âme.</p>",
@@ -93,6 +93,9 @@
   "displayBars": 40,
   "bar1": {
    "attribute": "pv"
+  },
+  "texture": {
+   "src": "systems/miaulements-ulthar/assets/portraits/filou.png"
   }
  },
  "items": [

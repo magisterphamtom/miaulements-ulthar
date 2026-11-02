@@ -4,11 +4,12 @@ import { FeuilleChat, FichePnj } from "./sheet.mjs";
 import { FichePouvoir } from "./item-sheet.mjs";
 import { brancherCartes, ecouterSocket } from "./combat.mjs";
 import { api } from "./outils.mjs";
+import { SuiviGroupe, brancherAmbiance, ajouterBoutons } from "./ambiance.mjs";
 
 Hooks.once("init", () => {
   console.log(`${SYSTEM_ID} | initialisation`);
 
-  game.miaulementsUlthar = api;
+  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer() };
   CONFIG.Actor.dataModels.chat = ChatData;
   CONFIG.Actor.dataModels.pnj = PnjData;
   CONFIG.Item.dataModels.pouvoir = PouvoirData;
@@ -76,8 +77,11 @@ Hooks.once("init", () => {
 
 Hooks.on("renderChatMessageHTML", (message, html) => brancherCartes(message, html));
 
+Hooks.on("getSceneControlButtons", (controls) => ajouterBoutons(controls));
+
 Hooks.once("ready", async () => {
   ecouterSocket();
+  brancherAmbiance();
   const mode = game.settings.get(SYSTEM_ID, "ouvertureWiki");
   if (mode === "jamais") return;
   const cle = `${SYSTEM_ID}.wikiOuvert.${game.world.id}.${game.user.id}`;

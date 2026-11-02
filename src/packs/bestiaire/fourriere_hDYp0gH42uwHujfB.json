@@ -2,7 +2,7 @@
  "_id": "hDYp0gH42uwHujfB",
  "name": "Fourrière",
  "type": "pnj",
- "img": "icons/svg/mystery-man.svg",
+ "img": "systems/miaulements-ulthar/assets/jetons/fourriere.png",
  "system": {
   "attaques": [
    {
@@ -31,6 +31,9 @@
   "displayBars": 40,
   "bar1": {
    "attribute": "pv"
+  },
+  "texture": {
+   "src": "systems/miaulements-ulthar/assets/jetons/fourriere.png"
   }
  },
  "items": [],

@@ -2,7 +2,7 @@
  "_id": "AYWMsf3yA0E67vct",
  "name": "Chiffon",
  "type": "chat",
- "img": "icons/svg/mystery-man.svg",
+ "img": "systems/miaulements-ulthar/assets/portraits/chiffon.webp",
  "system": {
   "race": "gouttiere",
   "description": "<p>Chiffon est astucieux, avec une indépendance farouche et une curiosité insatiable.</p>",
@@ -93,6 +93,9 @@
   "displayBars": 40,
   "bar1": {
    "attribute": "pv"
+  },
+  "texture": {
+   "src": "systems/miaulements-ulthar/assets/portraits/chiffon.webp"
   }
  },
  "items": [

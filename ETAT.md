@@ -2,6 +2,11 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Fait (v0.4.0)
+- **Images** : portraits des Chats prétirés (Orichat, Maya, Isis, Chiffon illustrés par IA ; Ator, Filou, Léonard en jetons dessinés) et 29 jetons d'adversaires (anneau violet et glyphes), dans assets/portraits et assets/jetons ; ils servent d'image et de jeton aux acteurs des compendiums. À remplacer par des illustrations quand le quota du générateur d'images sera revenu.
+- **Suivi des Chats** : fenêtre qui montre Santé, Magie, Folie, vies de Chat et cartes Folie de tous les Chats des joueurs (bouton patte dans la barre des jetons, ou macro).
+- **Vision féline** : bouton œil dans la barre des jetons, teinte dorée et contraste de la scène, réglage propre à chaque joueur.
+
 ## Fait (v0.3.0)
 - **Fiche de Chat fidèle à la fiche papier officielle** : l'image de la fiche (assets/fiche-chat.png) sert de fond, les champs sont posés dessus (surnom, race, description, 8 cercles d'attributs cliquables, 6 petites cases d'échec par attribut, Santé / vies de Chat / Magie / Folie / XP, listes de pouvoirs innés et temporaires).
 - **Assistant de création** (une fenêtre, calcul en direct), tirage des 2 pouvoirs temporaires, pouvoirs lançables depuis la fiche (✦), fin de scénario, achats d'XP.
@@ -26,8 +31,8 @@ Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne 
 
 ## À faire
 - Test en jeu complet, puis corrections.
-- Illustrations : images de jetons et de portraits pour le bestiaire et les prétirés.
-- Idées de modules séparés : « Vision de Chat » (ambiance sonore et filtre de scène), suivi de partie (vies et Folie du groupe en un coup d'œil), cartes Folie illustrées.
+- Illustrations générées par IA pour les 3 Chats et les 29 adversaires aux jetons dessinés.
+- Idées de modules séparés ou d'ajouts : ambiance sonore « Vision de Chat », cartes Folie illustrées, illustrations des adversaires.
 
 ## Reconstruire les compendiums
 `python3 tools/extraire.py <dossier des PDF>`, puis `node tools/export-donnees.mjs`, `python3 tools/construire-contenu.py`, `cd tools && npm install && node compiler-packs.mjs --verifier`.

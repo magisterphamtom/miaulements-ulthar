@@ -2,7 +2,7 @@
   "id": "miaulements-ulthar",
   "title": "Les Miaulements d'Ulthar",
   "description": "Système de jeu Foundry VTT pour « Les Miaulements d'Ulthar » (jeu de rôle de Xaviiiier) : des Chats d'Ulthar face à l'horreur lovecraftienne. Publié avec l'autorisation de l'auteur ; le livre de règles est nécessaire pour jouer.",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "compatibility": {
     "minimum": "13",
     "verified": "14.368"
@@ -132,5 +132,5 @@
   "socket": true,
   "url": "https://github.com/magisterphamtom/miaulements-ulthar",
   "manifest": "https://github.com/magisterphamtom/miaulements-ulthar/releases/latest/download/system.json",
-  "download": "https://github.com/magisterphamtom/miaulements-ulthar/releases/download/v0.3.0/miaulements-ulthar.zip"
+  "download": "https://github.com/magisterphamtom/miaulements-ulthar/releases/download/v0.4.0/miaulements-ulthar.zip"
 }

@@ -2,7 +2,7 @@
  "_id": "WrNwfXD48PedQ9HC",
  "name": "Orichat",
  "type": "chat",
- "img": "icons/svg/mystery-man.svg",
+ "img": "systems/miaulements-ulthar/assets/portraits/orichat.webp",
  "system": {
   "race": "bengal",
   "description": "<p>Orichat excelle dans les mouvements acrobatiques et sa discrétion.</p>",
@@ -93,6 +93,9 @@
   "displayBars": 40,
   "bar1": {
    "attribute": "pv"
+  },
+  "texture": {
+   "src": "systems/miaulements-ulthar/assets/portraits/orichat.webp"
   }
  },
  "items": [

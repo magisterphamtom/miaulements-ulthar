@@ -2,7 +2,7 @@
  "_id": "xNC7SXTHi8q0VPZb",
  "name": "Isis",
  "type": "chat",
- "img": "icons/svg/mystery-man.svg",
+ "img": "systems/miaulements-ulthar/assets/portraits/isis.webp",
  "system": {
   "race": "sphynx",
   "description": "<p>Isis, d'une intelligence vive et subtile, perçoit les subtilités de chaque situation.</p>",
@@ -93,6 +93,9 @@
   "displayBars": 40,
   "bar1": {
    "attribute": "pv"
+  },
+  "texture": {
+   "src": "systems/miaulements-ulthar/assets/portraits/isis.webp"
   }
  },
  "items": [

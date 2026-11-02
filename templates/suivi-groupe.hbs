@@ -1,0 +1,16 @@
+<div class="mu-suivi-liste">
+  {{#each chats}}
+  <div class="mu-suivi-chat">
+    <img src="{{img}}" alt="" data-ouvrir="{{id}}" title="Ouvrir la fiche">
+    <div class="mu-suivi-infos">
+      <strong data-ouvrir="{{id}}">{{nom}}</strong>
+      <div class="mu-pattes" title="Vies de Chat">{{#each pattes}}<i class="fa-solid fa-paw {{#unless vive}}perdue{{/unless}}"></i>{{/each}}</div>
+      <div class="mu-barre pv" title="Santé"><span style="width:{{pvPct}}%"></span><em>Santé {{pv}}/{{pvMax}}</em></div>
+      <div class="mu-barre pm" title="Magie"><span style="width:{{pmPct}}%"></span><em>Magie {{pm}}/{{pmMax}}</em></div>
+      <div class="mu-barre pf {{#if pfBas}}bas{{/if}}" title="Folie"><span style="width:{{pfPct}}%"></span><em>Folie {{pf}}/{{pfMax}}{{#if cartes}} · 🃏 {{cartes}}{{/if}}</em></div>
+    </div>
+  </div>
+  {{else}}
+  <p class="mu-aide">Aucun Chat de joueur.</p>
+  {{/each}}
+</div>

@@ -7,7 +7,7 @@
  "scope": "global",
  "command": "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Événements en ville')._id).then(t => t.draw());",
  "folder": null,
- "sort": 300000,
+ "sort": 400000,
  "ownership": {
   "default": 0
  },
