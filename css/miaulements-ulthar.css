@@ -62,3 +62,25 @@
 .mu-boutons button { width: 100%; }
 /* Le bloc de dés natif est masqué : la carte contient déjà le résultat. */
 #chat .chat-message .mu-carte ~ .dice-roll { display: none !important; }
+
+/* Assistant de création */
+.mu-dialogue .mu-assistant { display: flex; flex-direction: column; gap: 8px; max-height: 70vh; overflow-y: auto; padding-right: 4px; }
+.mu-assistant fieldset { border: 1px solid var(--mu-bord); border-radius: 6px; padding: 6px 10px; }
+.mu-assistant legend { color: var(--mu-accent); font-weight: bold; }
+.mu-assistant legend small { color: var(--mu-texte); font-weight: normal; opacity: 0.7; }
+.mu-assistant .mu-ligne { display: flex; gap: 8px; align-items: center; margin: 2px 0; }
+.mu-assistant .mu-ligne > span { min-width: 100px; }
+.mu-assistant .mu-mod { font-weight: bold; color: var(--mu-accent); }
+.mu-assistant .mu-aide { opacity: 0.7; font-size: 0.85em; margin: 2px 0 4px; }
+.mu-assistant .mu-liste-pouvoirs { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 10px; }
+.mu-assistant .mu-pouvoir { display: block; cursor: help; }
+.mu-assistant .mu-pouvoirs-race { margin-top: 4px; }
+.mu-assistant .mu-grille-resume { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; text-align: center; }
+.mu-assistant .mu-cell { border: 1px solid var(--mu-bord); border-radius: 4px; padding: 2px; }
+.mu-assistant .mu-valeurs-resume { margin-top: 6px; text-align: center; }
+.mu-assistant .mu-erreurs { color: var(--mu-ko); margin: 6px 0 0; padding-left: 18px; font-size: 0.9em; }
+.mu-actions-creation { display: flex; gap: 6px; }
+.mu-actions-creation button { flex: 1; }
+.mu-nom-pouvoir { cursor: pointer; }
+.mu-item section { margin: 6px 0; }
+.mu-item textarea { width: 100%; }

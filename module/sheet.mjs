@@ -1,5 +1,6 @@
 import { ATTRIBUTS, RACES, CASES_ECHEC, ACHATS_XP, CATEGORIES_POUVOIR, SYSTEM_ID } from "./config.mjs";
 import { jetAttribut, jetFolie, monterAttribut } from "./rolls.mjs";
+import { assistantCreation, tirerPouvoirsTemporaires } from "./creation.mjs";
 
 const { HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
@@ -18,6 +19,9 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
       supprimerItem: FeuilleChat.#supprimerItem,
       jouerCarte: FeuilleChat.#jouerCarte,
       finScenario: FeuilleChat.#finScenario,
+      creation: FeuilleChat.#creation,
+      tirerTemporaires: FeuilleChat.#tirerTemporaires,
+      afficherPouvoir: FeuilleChat.#afficherPouvoir,
       acheter: FeuilleChat.#acheter
     }
   };
@@ -55,7 +59,7 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
     });
     const pouvoirs = this.actor.items.filter((i) => i.type === "pouvoir");
     const groupe = (cat) =>
-      pouvoirs.filter((p) => p.system.categorie === cat).map((p) => ({ id: p.id, name: p.name, img: p.img }));
+      pouvoirs.filter((p) => p.system.categorie === cat).map((p) => ({ id: p.id, name: p.name, img: p.img, gratuit: p.system.gratuit }));
     ctx.pouvoirsInnes = [...groupe("inne"), ...groupe("race")];
     ctx.pouvoirsTemporaires = groupe("temporaire");
     ctx.categories = CATEGORIES_POUVOIR;
@@ -66,6 +70,28 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #jetAttribut(event, target) {
     return jetAttribut(this.actor, target.dataset.attribut, { rapide: event.shiftKey });
+  }
+
+  static async #creation() {
+    return assistantCreation(this.actor);
+  }
+
+  static async #tirerTemporaires() {
+    return tirerPouvoirsTemporaires(this.actor);
+  }
+
+  /** Clic sur un pouvoir : sa description est montrée à la table. */
+  static async #afficherPouvoir(event, target) {
+    const item = this.actor.items.get(target.dataset.itemId);
+    if (!item) return;
+    const s = item.system;
+    await ChatMessage.create({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      content: `<div class="mu-carte reussite"><header>${foundry.utils.escapeHTML(item.name)}
+        <span class="mu-pourcent">${CATEGORIES_POUVOIR[s.categorie] ?? ""}</span></header>
+        <div class="mu-detail">${s.description}</div>
+        <p class="mu-note">${s.gratuit ? "0 PM" : "À l'usage : +20 à l'attribut concerné ; perte de PM = unités du dé."}${s.degats ? ` · ${foundry.utils.escapeHTML(s.degats)}` : ""}</p></div>`
+    });
   }
 
   static async #jetFolie() {

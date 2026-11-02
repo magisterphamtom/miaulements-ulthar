@@ -1,0 +1,26 @@
+<form class="mu-fiche mu-item" autocomplete="off">
+  <header class="mu-entete">
+    <img class="mu-portrait" src="{{item.img}}" data-edit="img" alt="">
+    <div class="mu-identite">
+      <label>Nom <input type="text" name="name" value="{{item.name}}"></label>
+      <label>Catégorie
+        <select name="system.categorie">
+          {{#each categories}}<option value="{{cle}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}
+        </select>
+      </label>
+      <label>Attribut lié
+        <select name="system.attribut">
+          {{#each attributs}}<option value="{{cle}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}
+        </select>
+      </label>
+    </div>
+  </header>
+  <section>
+    <label>Dégâts ou dé associé <input type="text" name="system.degats" value="{{system.degats}}" placeholder="ex. 1d6"></label>
+    <label class="mu-case-label"><input type="checkbox" name="system.gratuit" {{#if system.gratuit}}checked{{/if}}> Gratuit (0 PM)</label>
+  </section>
+  <section class="mu-notes">
+    <h3>Description</h3>
+    <textarea name="system.description" rows="8">{{system.description}}</textarea>
+  </section>
+</form>

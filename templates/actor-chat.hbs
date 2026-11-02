@@ -13,6 +13,11 @@
     </div>
   </header>
 
+  <section class="mu-actions-creation">
+    <button type="button" data-action="creation">🐾 Création du Chat</button>
+    <button type="button" data-action="tirerTemporaires">💧 Tirer les pouvoirs temporaires</button>
+  </section>
+
   <section class="mu-attributs">
     {{#each attributs}}
     <div class="mu-attribut">
@@ -53,18 +58,20 @@
       <h3>Pouvoirs innés</h3>
       <ul>
         {{#each pouvoirsInnes}}
-        <li><a data-action="ouvrirItem" data-item-id="{{id}}">{{name}}</a>
-          <a data-action="supprimerItem" data-item-id="{{id}}" title="Supprimer">✕</a></li>
+        <li><a class="mu-nom-pouvoir" data-action="afficherPouvoir" data-item-id="{{id}}" title="Montrer à la table">{{name}}</a>
+          <span><a data-action="ouvrirItem" data-item-id="{{id}}" title="Ouvrir">✎</a>
+          <a data-action="supprimerItem" data-item-id="{{id}}" title="Supprimer">✕</a></span></li>
         {{/each}}
       </ul>
-      <p class="mu-aide">Glisser des pouvoirs ici depuis un compendium ou le répertoire d'objets.</p>
+      <p class="mu-aide">Créés par l'assistant. Clic sur un nom : le pouvoir est montré dans le chat.</p>
     </div>
     <div class="mu-colonne">
       <h3>Pouvoirs temporaires</h3>
       <ul>
         {{#each pouvoirsTemporaires}}
-        <li><a data-action="ouvrirItem" data-item-id="{{id}}">{{name}}</a>
-          <a data-action="supprimerItem" data-item-id="{{id}}" title="Supprimer">✕</a></li>
+        <li><a class="mu-nom-pouvoir" data-action="afficherPouvoir" data-item-id="{{id}}" title="Montrer à la table">{{name}}</a>
+          <span><a data-action="ouvrirItem" data-item-id="{{id}}" title="Ouvrir">✎</a>
+          <a data-action="supprimerItem" data-item-id="{{id}}" title="Supprimer">✕</a></span></li>
         {{/each}}
       </ul>
     </div>

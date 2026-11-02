@@ -1,6 +1,7 @@
 import { SYSTEM_ID, MODES } from "./config.mjs";
 import { ChatData, PnjData, PouvoirData } from "./datamodels.mjs";
 import { FeuilleChat } from "./sheet.mjs";
+import { FichePouvoir } from "./item-sheet.mjs";
 import { brancherCartes } from "./rolls.mjs";
 
 Hooks.once("init", () => {
@@ -19,6 +20,12 @@ Hooks.once("init", () => {
     types: ["chat"],
     makeDefault: true,
     label: "Fiche de Chat"
+  });
+
+  DocumentSheetConfig.registerSheet(Item, SYSTEM_ID, FichePouvoir, {
+    types: ["pouvoir"],
+    makeDefault: true,
+    label: "Fiche de pouvoir"
   });
 
   game.settings.register(SYSTEM_ID, "modeJeu", {
