@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.3.0", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.4.1", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -212,7 +212,7 @@ def construire_tables():
     print("tables : 7")
 
 # ---------------------------------------------------------------- bestiaire (Actors pnj)
-def chemin_image(sous_dossier, nom, ext_candidates=("png", "webp")):
+def chemin_image(sous_dossier, nom, ext_candidates=("webp", "png")):
     """Chemin système d'une image de jeton ou de portrait, ou l'icône par défaut si elle n'existe pas."""
     for ext in ext_candidates:
         if os.path.exists(os.path.join(RACINE, "assets", sous_dossier, f"{slug_img(nom)}.{ext}")):
@@ -288,7 +288,7 @@ def construire_pretires():
             items.append(item_pouvoir(pack, p["nom"], cat, p["desc"], degats=p.get("degats", ""), gratuit=bool(p.get("gratuit")), parent=aid))
         img = chemin_image("portraits", pr["nom"])
         doc = {"_id": aid, "name": pr["nom"], "type": "chat", "img": img,
-               "system": {"race": pr["race"], "description": f"<p>{esc(pr['desc'])}</p>", "handicap": "", "attributs": attrs,
+               "system": {"race": pr["race"], "description": pr["desc"], "handicap": "", "attributs": attrs,
                           "pv": {"value": pr["pv"]}, "pm": {"value": pr["pm"]}, "pf": {"value": pr["pf"]}, "vies": {"value": pr["vies"]}, "xp": 0,
                           "achats": {"pm": 0, "pv": 0, "vies": 0}, "cartesFolie": [], "notes": ""},
                "prototypeToken": {"name": pr["nom"], "actorLink": True, "disposition": 1, "displayBars": 40, "bar1": {"attribute": "pv"}, "texture": {"src": img}},

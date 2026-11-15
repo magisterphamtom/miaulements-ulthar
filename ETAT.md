@@ -2,6 +2,13 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Corrigé (v0.4.1, relecture complète du code)
+- Les gabarits des fiches n'ont plus de balise `<form>` (la fenêtre d'une fiche en est déjà une) : avec un formulaire imbriqué, les champs n'étaient pas enregistrés.
+- Le réglage « vision féline » est enregistré dès `init` (il était lu par la barre d'outils avant d'exister).
+- « Neuf vies » donne bien 9 vies au maximum ; le +20 du pouvoir s'applique aussi aux altérations oniriques.
+- Image de la fiche, des adversaires et des pouvoirs modifiable d'un clic ; descriptions affichées mises en forme.
+- Charge processeur : vision féline en voile fixe (plus de filtre CSS sur le canevas), suivi des Chats rafraîchi une fois par salve de changements et seulement s'il est ouvert, animation limitée à trois battements, positions de la fiche calculées une fois, images en WebP (zip de 9,6 Mo à 2 Mo environ). Aucune minuterie, aucun traitement par image.
+
 ## Fait (v0.4.0)
 - **Images** : portraits des Chats prétirés (Orichat, Maya, Isis, Chiffon illustrés par IA ; Ator, Filou, Léonard en jetons dessinés) et 29 jetons d'adversaires (anneau violet et glyphes), dans assets/portraits et assets/jetons ; ils servent d'image et de jeton aux acteurs des compendiums. À remplacer par des illustrations quand le quota du générateur d'images sera revenu.
 - **Suivi des Chats** : fenêtre qui montre Santé, Magie, Folie, vies de Chat et cartes Folie de tous les Chats des joueurs (bouton patte dans la barre des jetons, ou macro).

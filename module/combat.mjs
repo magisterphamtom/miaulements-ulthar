@@ -207,7 +207,7 @@ async function bulleOnirique(actor, item) {
       rejectClose: false
     });
     if (!alt) break;
-    const r = await jetAttribut(actor, "cha", { difficulte: alt.difficulte, pouvoir: perte, titre: `${item.name} — altération`, note: `<p class="mu-note">${esc(alt.texte)}</p>` });
+    const r = await jetAttribut(actor, "cha", { difficulte: alt.difficulte, pouvoir: true, gratuit: !perte, titre: `${item.name} — altération`, note: `<p class="mu-note">${esc(alt.texte)}</p>` });
     if (r?.reussite) reussites++; else echecs++;
     journal.push(`Altération « ${esc(alt.texte || "—")} » : ${r?.reussite ? "réussite" : "échec"}${r?.critReussite || r?.critEchec ? " (critique : répercussion dans la Contrée du Rêve)" : ""}`);
   }

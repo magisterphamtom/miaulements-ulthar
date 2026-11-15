@@ -1,6 +1,6 @@
-<form class="mu-fiche mu-pnj" autocomplete="off">
+<div class="mu-fiche mu-pnj">
   <header class="mu-entete">
-    <img class="mu-portrait" src="{{actor.img}}" data-edit="img" alt="">
+    <img class="mu-portrait" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="" title="Changer l'image">
     <div class="mu-identite">
       <label>Nom <input type="text" name="name" value="{{actor.name}}"></label>
       <label>PV <input type="number" name="system.pv.value" value="{{system.pv.value}}"> / <input type="number" name="system.pv.max" value="{{system.pv.max}}"></label>
@@ -24,6 +24,9 @@
   </section>
   <section class="mu-notes">
     <h3>Description</h3>
-    <textarea name="system.description" rows="8">{{system.description}}</textarea>
+    <div class="mu-desc">{{{system.description}}}</div>
+    <details><summary>Modifier la description</summary>
+      <textarea name="system.description" rows="8">{{system.description}}</textarea>
+    </details>
   </section>
-</form>
+</div>

@@ -2,7 +2,7 @@
  "_id": "G3ZxV0nhxXaneA9s",
  "name": "Chien Dimensionnel",
  "type": "pnj",
- "img": "systems/miaulements-ulthar/assets/jetons/chien-dimensionnel.png",
+ "img": "systems/miaulements-ulthar/assets/jetons/chien-dimensionnel.webp",
  "system": {
   "attaques": [
    {
@@ -28,7 +28,7 @@
    "attribute": "pv"
   },
   "texture": {
-   "src": "systems/miaulements-ulthar/assets/jetons/chien-dimensionnel.png"
+   "src": "systems/miaulements-ulthar/assets/jetons/chien-dimensionnel.webp"
   }
  },
  "items": [],
@@ -43,7 +43,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.3.0",
+  "systemVersion": "0.4.1",
   "coreVersion": "14.368"
  },
  "_key": "!actors!G3ZxV0nhxXaneA9s"

@@ -2,10 +2,10 @@
  "_id": "XFwzozlSOf6iDJpe",
  "name": "Ator",
  "type": "chat",
- "img": "systems/miaulements-ulthar/assets/portraits/ator.png",
+ "img": "systems/miaulements-ulthar/assets/portraits/ator.webp",
  "system": {
   "race": "mainecoon",
-  "description": "<p>Ator, avec une prestance physique imposante, incarne la force brute.</p>",
+  "description": "Ator, avec une prestance physique imposante, incarne la force brute.",
   "handicap": "",
   "attributs": {
    "chn": {
@@ -95,7 +95,7 @@
    "attribute": "pv"
   },
   "texture": {
-   "src": "systems/miaulements-ulthar/assets/portraits/ator.png"
+   "src": "systems/miaulements-ulthar/assets/portraits/ator.webp"
   }
  },
  "items": [
@@ -122,7 +122,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.3.0",
+    "systemVersion": "0.4.1",
     "coreVersion": "14.368"
    },
    "_key": "!actors.items!XFwzozlSOf6iDJpe.9jOzoL5wMYQ31AzM"
@@ -150,7 +150,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.3.0",
+    "systemVersion": "0.4.1",
     "coreVersion": "14.368"
    },
    "_key": "!actors.items!XFwzozlSOf6iDJpe.AOAHSFZe1J1EEX9j"
@@ -178,7 +178,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.3.0",
+    "systemVersion": "0.4.1",
     "coreVersion": "14.368"
    },
    "_key": "!actors.items!XFwzozlSOf6iDJpe.xHRnFjkSO68ZBwTE"
@@ -206,7 +206,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.3.0",
+    "systemVersion": "0.4.1",
     "coreVersion": "14.368"
    },
    "_key": "!actors.items!XFwzozlSOf6iDJpe.sWbou1LDYJ1MBu8X"
@@ -223,7 +223,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.3.0",
+  "systemVersion": "0.4.1",
   "coreVersion": "14.368"
  },
  "_key": "!actors!XFwzozlSOf6iDJpe"

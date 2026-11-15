@@ -2,7 +2,7 @@
  "_id": "r7Xmk2RhxKgryt6A",
  "name": "Tsathoggua",
  "type": "pnj",
- "img": "systems/miaulements-ulthar/assets/jetons/tsathoggua.png",
+ "img": "systems/miaulements-ulthar/assets/jetons/tsathoggua.webp",
  "system": {
   "attaques": [
    {
@@ -28,7 +28,7 @@
    "attribute": "pv"
   },
   "texture": {
-   "src": "systems/miaulements-ulthar/assets/jetons/tsathoggua.png"
+   "src": "systems/miaulements-ulthar/assets/jetons/tsathoggua.webp"
   }
  },
  "items": [],
@@ -43,7 +43,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.3.0",
+  "systemVersion": "0.4.1",
   "coreVersion": "14.368"
  },
  "_key": "!actors!r7Xmk2RhxKgryt6A"

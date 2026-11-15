@@ -41,6 +41,10 @@ def main():
             pg.set_content(f"<style>{CSS}</style><div class='t'>{contenu}</div>")
             pg.wait_for_timeout(120)
             pg.locator(".t").screenshot(path=chemin, omit_background=True)
+            # WebP : dix fois plus léger que le PNG pour le même rendu
+            from PIL import Image
+            Image.open(chemin).save(chemin[:-4] + ".webp", quality=88, method=6)
+            os.remove(chemin)
         b.close()
     print(len(items), "images écrites")
 

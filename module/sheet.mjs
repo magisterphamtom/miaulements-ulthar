@@ -7,6 +7,33 @@ import { finDeScenario } from "./outils.mjs";
 const { HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
 
+/** Positions (en % de l'image de la fiche papier) : calculées une fois au chargement. */
+const POSITIONS = (() => {
+  const L = FICHE.largeur;
+  const H = FICHE.hauteur;
+  const pctX = (x) => `${((x / L) * 100).toFixed(3)}%`;
+  const pctY = (y) => `${((y / H) * 100).toFixed(3)}%`;
+  const boite = ([x1, y1, x2, y2]) => `left:${pctX(x1)};top:${pctY(y1)};width:${pctX(x2 - x1)};height:${pctY(y2 - y1)};`;
+  const rond = ([x, y], d = 96) => `left:${pctX(x - d / 2)};top:${pctY(y - d / 2)};width:${pctX(d)};height:${pctY(d)};`;
+  const c = FICHE.champs;
+  const attributs = {};
+  for (const [cle, cercle] of Object.entries(FICHE.cercles)) {
+    attributs[cle] = {
+      position: `left:${pctX(cercle.x - 70)};top:${pctY(cercle.y - 66)};width:${pctX(140)};height:${pctY(132)};`,
+      cases: cercle.cases.map(([x, y]) => `left:${pctX(x - 15)};top:${pctY(y - 15)};width:${pctX(30)};height:${pctY(30)};`)
+    };
+  }
+  return {
+    attributs,
+    fiche: {
+      image: FICHE.image,
+      surnom: boite(c.surnom), race: boite(c.race), description: boite(c.description),
+      innes: boite(c.innes), temporaires: boite(c.temporaires),
+      pv: rond(c.pv), vies: rond(c.vies), pm: rond(c.pm), pf: rond(c.pf), xp: rond(c.xp)
+    }
+  };
+})();
+
 export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
     classes: ["miaulements-ulthar", "sheet", "actor", "chat"],
@@ -46,35 +73,13 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
     ctx.system = sys;
     ctx.editable = this.isEditable;
     ctx.races = Object.entries(RACES).map(([cle, r]) => ({ cle, label: r.label, selected: sys.race === cle }));
-    const L = FICHE.largeur;
-    const H = FICHE.hauteur;
-    const pctX = (x) => `${((x / L) * 100).toFixed(3)}%`;
-    const pctY = (y) => `${((y / H) * 100).toFixed(3)}%`;
-    const boite = ([x1, y1, x2, y2]) => `left:${pctX(x1)};top:${pctY(y1)};width:${pctX(x2 - x1)};height:${pctY(y2 - y1)};`;
-    const rond = ([x, y], d = 96) => `left:${pctX(x - d / 2)};top:${pctY(y - d / 2)};width:${pctX(d)};height:${((d / H) * 100).toFixed(3)}%;`;
-    ctx.fiche = {
-      image: FICHE.image,
-      surnom: boite(FICHE.champs.surnom),
-      race: boite(FICHE.champs.race),
-      description: boite(FICHE.champs.description),
-      innes: boite(FICHE.champs.innes),
-      temporaires: boite(FICHE.champs.temporaires),
-      pv: rond(FICHE.champs.pv),
-      vies: rond(FICHE.champs.vies),
-      pm: rond(FICHE.champs.pm),
-      pf: rond(FICHE.champs.pf),
-      xp: rond(FICHE.champs.xp)
-    };
+    ctx.fiche = POSITIONS.fiche;
     ctx.attributs = Object.entries(ATTRIBUTS).map(([cle, def]) => {
       const a = sys.attributs[cle];
-      const cercle = FICHE.cercles[cle];
+      const pos = POSITIONS.attributs[cle];
       return {
-        position: `left:${pctX(cercle.x - 70)};top:${pctY(cercle.y - 66)};width:${pctX(140)};height:${((132 / H) * 100).toFixed(3)}%;`,
-        casesPos: cercle.cases.map(([x, y], i) => ({
-          index: i,
-          cochee: i < a.echecs,
-          style: `left:${pctX(x - 15)};top:${pctY(y - 15)};width:${pctX(30)};height:${((30 / H) * 100).toFixed(3)}%;`
-        })),
+        position: pos.position,
+        casesPos: pos.cases.map((style, index) => ({ index, style, cochee: index < a.echecs })),
         cle,
         label: def.label,
         abbr: def.abbr,

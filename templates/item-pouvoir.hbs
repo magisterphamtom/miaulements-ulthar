@@ -1,6 +1,6 @@
-<form class="mu-fiche mu-item" autocomplete="off">
+<div class="mu-fiche mu-item">
   <header class="mu-entete">
-    <img class="mu-portrait" src="{{item.img}}" data-edit="img" alt="">
+    <img class="mu-portrait" src="{{item.img}}" data-action="editImage" data-edit="img" alt="" title="Changer l'image">
     <div class="mu-identite">
       <label>Nom <input type="text" name="name" value="{{item.name}}"></label>
       <label>Catégorie
@@ -21,6 +21,9 @@
   </section>
   <section class="mu-notes">
     <h3>Description</h3>
-    <textarea name="system.description" rows="8">{{system.description}}</textarea>
+    <div class="mu-desc">{{{system.description}}}</div>
+    <details><summary>Modifier la description</summary>
+      <textarea name="system.description" rows="8">{{system.description}}</textarea>
+    </details>
   </section>
-</form>
+</div>

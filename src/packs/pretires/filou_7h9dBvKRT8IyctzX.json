@@ -2,10 +2,10 @@
  "_id": "7h9dBvKRT8IyctzX",
  "name": "Filou",
  "type": "chat",
- "img": "systems/miaulements-ulthar/assets/portraits/filou.png",
+ "img": "systems/miaulements-ulthar/assets/portraits/filou.webp",
  "system": {
   "race": "gouttiere",
-  "description": "<p>Filou est un chat discret et voleur dans l'âme.</p>",
+  "description": "Filou est un chat discret et voleur dans l'âme.",
   "handicap": "",
   "attributs": {
    "chn": {
@@ -95,7 +95,7 @@
    "attribute": "pv"
   },
   "texture": {
-   "src": "systems/miaulements-ulthar/assets/portraits/filou.png"
+   "src": "systems/miaulements-ulthar/assets/portraits/filou.webp"
   }
  },
  "items": [
@@ -122,7 +122,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.3.0",
+    "systemVersion": "0.4.1",
     "coreVersion": "14.368"
    },
    "_key": "!actors.items!7h9dBvKRT8IyctzX.9jOzoL5wMYQ31AzM"
@@ -150,7 +150,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.3.0",
+    "systemVersion": "0.4.1",
     "coreVersion": "14.368"
    },
    "_key": "!actors.items!7h9dBvKRT8IyctzX.GpBeN920U2fZ5DKm"
@@ -178,7 +178,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.3.0",
+    "systemVersion": "0.4.1",
     "coreVersion": "14.368"
    },
    "_key": "!actors.items!7h9dBvKRT8IyctzX.aY0rnbvr2bFRHSB4"
@@ -206,7 +206,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.3.0",
+    "systemVersion": "0.4.1",
     "coreVersion": "14.368"
    },
    "_key": "!actors.items!7h9dBvKRT8IyctzX.X1NuceHx3RDGJvd4"
@@ -223,7 +223,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.3.0",
+  "systemVersion": "0.4.1",
   "coreVersion": "14.368"
  },
  "_key": "!actors!7h9dBvKRT8IyctzX"

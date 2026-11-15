@@ -99,7 +99,7 @@
 .mu-page .mu-attr { display: flex; align-items: center; justify-content: center; }
 .mu-page .mu-attr-jet { width: 100%; height: 100%; border-radius: 50%; font-family: "Georgia", serif; font-size: 6.2cqw; font-weight: bold; color: #151515; cursor: pointer; line-height: 1; padding: 0; }
 .mu-page .mu-attr-jet:hover { background: rgba(217, 179, 74, 0.28); }
-.mu-page .mu-attr-monter { position: absolute; right: -1.2cqw; top: -1.2cqw; width: 4.2cqw; height: 4.2cqw; border-radius: 50%; background: #d9b34a; color: #111; font-size: 2.6cqw; cursor: pointer; padding: 0; line-height: 1; animation: mu-pulse 1.4s infinite; }
+.mu-page .mu-attr-monter { position: absolute; right: -1.2cqw; top: -1.2cqw; width: 4.2cqw; height: 4.2cqw; border-radius: 50%; background: #d9b34a; color: #111; font-size: 2.6cqw; cursor: pointer; padding: 0; line-height: 1; animation: mu-pulse 1.4s 3; }
 @keyframes mu-pulse { 50% { transform: scale(1.18); } }
 .mu-page .mu-case-echec { border-radius: 50%; cursor: pointer; padding: 0; }
 .mu-page .mu-case-echec:hover { background: rgba(217, 179, 74, 0.35); }
@@ -150,5 +150,12 @@
 .mu-barre.pf.bas span { background: #d4635f; }
 .mu-barre em { position: relative; font-style: normal; font-size: 11px; padding-left: 8px; line-height: 14px; color: #fff; text-shadow: 0 1px 2px #000; }
 
-/* Vision féline : teinte dorée et contraste de la scène */
-body.mu-vision-feline #board { filter: sepia(0.35) saturate(1.3) hue-rotate(-12deg) brightness(1.12) contrast(1.12); }
+/* Vision féline : voile doré fixe au-dessus de la scène (pas de filtre CSS sur le canevas) */
+#mu-vision-feline { position: fixed; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(ellipse at center, rgba(255, 205, 90, 0.08) 0%, rgba(255, 175, 50, 0.14) 55%, rgba(30, 15, 0, 0.4) 100%); }
+
+/* Portrait dans la barre d'actions, descriptions mises en forme */
+.mu-portrait-mini { width: 34px; height: 34px; flex: 0 0 34px; border-radius: 50%; border: 2px solid var(--mu-bord); object-fit: cover; cursor: pointer; }
+.mu-portrait { cursor: pointer; }
+.mu-desc { background: var(--mu-fond2); border: 1px solid var(--mu-bord); border-radius: 6px; padding: 4px 8px; max-height: 220px; overflow-y: auto; }
+.mu-notes details summary { cursor: pointer; opacity: 0.7; font-size: 0.85em; margin-top: 4px; }
+.mu-page .mu-liste .mu-outils { white-space: nowrap; flex: 0 0 auto; }

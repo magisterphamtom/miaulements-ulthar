@@ -2,7 +2,7 @@
  "_id": "4X4YkpgSa0AhuIFc",
  "name": "Loup-Garou",
  "type": "pnj",
- "img": "systems/miaulements-ulthar/assets/jetons/loup-garou.png",
+ "img": "systems/miaulements-ulthar/assets/jetons/loup-garou.webp",
  "system": {
   "attaques": [
    {
@@ -28,7 +28,7 @@
    "attribute": "pv"
   },
   "texture": {
-   "src": "systems/miaulements-ulthar/assets/jetons/loup-garou.png"
+   "src": "systems/miaulements-ulthar/assets/jetons/loup-garou.webp"
   }
  },
  "items": [],
@@ -43,7 +43,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.3.0",
+  "systemVersion": "0.4.1",
   "coreVersion": "14.368"
  },
  "_key": "!actors!4X4YkpgSa0AhuIFc"

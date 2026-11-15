@@ -52,17 +52,35 @@ export class SuiviGroupe extends HandlebarsApplicationMixin(ApplicationV2) {
 
 /** Vision féline : teinte dorée et contraste de la scène, réglage propre à chaque joueur. */
 export function appliquerVision(active) {
-  document.body.classList.toggle("mu-vision-feline", Boolean(active));
+  let voile = document.getElementById("mu-vision-feline");
+  if (active && !voile) {
+    // Un simple voile fixe au-dessus de la scène : pas de filtre recalculé à chaque image.
+    voile = document.createElement("div");
+    voile.id = "mu-vision-feline";
+    document.body.append(voile);
+  } else if (!active && voile) {
+    voile.remove();
+  }
 }
 
 export function brancherAmbiance() {
-  game.settings.register(SYSTEM_ID, "visionFeline", { scope: "client", config: false, type: Boolean, default: false });
   appliquerVision(game.settings.get(SYSTEM_ID, "visionFeline"));
 
-  // Le suivi du groupe se met à jour quand un Chat change.
-  Hooks.on("updateActor", (actor) => {
-    if (actor.type === "chat" && SuiviGroupe.instance?.rendered) SuiviGroupe.instance.render();
+  // Le suivi du groupe se met à jour quand une valeur affichée change : un seul rafraîchissement
+  // groupé (200 ms), et rien du tout quand la fenêtre est fermée.
+  const rafraichir = foundry.utils.debounce(() => {
+    if (SuiviGroupe.instance?.rendered) SuiviGroupe.instance.render();
+  }, 200);
+  const AFFICHE = ["pv", "pm", "pf", "vies", "cartesFolie", "attributs", "achats"];
+  Hooks.on("updateActor", (actor, changes) => {
+    if (actor.type !== "chat" || !SuiviGroupe.instance?.rendered) return;
+    if ("name" in changes || "img" in changes || AFFICHE.some((k) => changes.system && k in changes.system)) rafraichir();
   });
+  for (const hook of ["createItem", "deleteItem", "createActor", "deleteActor"]) {
+    Hooks.on(hook, (doc) => {
+      if (SuiviGroupe.instance?.rendered && (doc.type === "chat" || doc.parent?.type === "chat")) rafraichir();
+    });
+  }
 }
 
 /** Deux boutons dans la barre d'outils des jetons : suivi des Chats et vision féline. */

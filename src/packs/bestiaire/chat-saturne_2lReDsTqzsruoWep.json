@@ -2,7 +2,7 @@
  "_id": "2lReDsTqzsruoWep",
  "name": "Chat Saturne",
  "type": "pnj",
- "img": "systems/miaulements-ulthar/assets/jetons/chat-saturne.png",
+ "img": "systems/miaulements-ulthar/assets/jetons/chat-saturne.webp",
  "system": {
   "attaques": [
    {
@@ -33,7 +33,7 @@
    "attribute": "pv"
   },
   "texture": {
-   "src": "systems/miaulements-ulthar/assets/jetons/chat-saturne.png"
+   "src": "systems/miaulements-ulthar/assets/jetons/chat-saturne.webp"
   }
  },
  "items": [],
@@ -48,7 +48,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.3.0",
+  "systemVersion": "0.4.1",
   "coreVersion": "14.368"
  },
  "_key": "!actors!2lReDsTqzsruoWep"

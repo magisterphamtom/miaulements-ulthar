@@ -80,7 +80,7 @@ export async function jetAttribut(actor, cle, options = {}) {
     `= <strong>${modifie}</strong> contre ${attr.value} %`
   ].filter(Boolean).join(" · ");
   const notes = [
-    choix.pouvoir ? `<p class="mu-note">${options.gratuit ? "Pouvoir gratuit (0 PM)" : `Pouvoir : −${perte} PM`}</p>` : "",
+    choix.pouvoir ? `<p class="mu-note">${options.gratuit ? "Pouvoir : aucune perte de PM" : `Pouvoir : −${perte} PM`}</p>` : "",
     coche ? `<p class="mu-note">Case d'échec cochée (${Math.min(attr.echecs + 1, CASES_ECHEC)}/${CASES_ECHEC})</p>` : "",
     critEchec && mode === MODES.pulp ? `<p class="mu-note">Pulp : un autre joueur peut tenter de rattraper cet échec critique.</p>` : "",
     !reussite && !critEchec && mode === MODES.pulp ? `<p class="mu-note">Pulp : le joueur peut retenter, mais cette fois l'échec sera flagrant.</p>` : "",

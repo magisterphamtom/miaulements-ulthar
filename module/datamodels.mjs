@@ -56,7 +56,9 @@ export class ChatData extends foundry.abstract.TypeDataModel {
     this.pv.max = pvDepuisTable(a.phy.value + a.agi.value) + this.achats.pv;
     this.pf.max = Math.round((a.per.value + a.cha.value) / 2); // 52,5 -> 53 comme sur les fiches prétirées
     this.pm.max = a.int.value + this.achats.pm;
-    this.vies.max = 3 + this.achats.vies;
+    // Pouvoir « Neuf vies » : neuf vies au lieu de trois.
+    const neufVies = this.parent?.items?.some((i) => i.type === "pouvoir" && /neuf vies/i.test(i.name));
+    this.vies.max = (neufVies ? 9 : 3) + this.achats.vies;
   }
 }
 

@@ -2,7 +2,7 @@
  "_id": "Oq2qvPDIPVdd387C",
  "name": "Yith",
  "type": "pnj",
- "img": "systems/miaulements-ulthar/assets/jetons/yith.png",
+ "img": "systems/miaulements-ulthar/assets/jetons/yith.webp",
  "system": {
   "attaques": [
    {
@@ -33,7 +33,7 @@
    "attribute": "pv"
   },
   "texture": {
-   "src": "systems/miaulements-ulthar/assets/jetons/yith.png"
+   "src": "systems/miaulements-ulthar/assets/jetons/yith.webp"
   }
  },
  "items": [],
@@ -48,7 +48,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.3.0",
+  "systemVersion": "0.4.1",
   "coreVersion": "14.368"
  },
  "_key": "!actors!Oq2qvPDIPVdd387C"

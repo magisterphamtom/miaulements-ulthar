@@ -101,7 +101,7 @@ export const ACHATS_XP = {
 export const FICHE = {
   "largeur": 1716,
   "hauteur": 2492,
-  "image": "systems/miaulements-ulthar/assets/fiche-chat.png",
+  "image": "systems/miaulements-ulthar/assets/fiche-chat.webp",
   "cercles": {
     "chn": {
       "x": 559,

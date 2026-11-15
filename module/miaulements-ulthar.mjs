@@ -65,6 +65,8 @@ Hooks.once("init", () => {
     default: "premiere"
   });
 
+  game.settings.register(SYSTEM_ID, "visionFeline", { scope: "client", config: false, type: Boolean, default: false });
+
   game.settings.register(SYSTEM_ID, "cocherAuto", {
     name: "Cocher automatiquement les échecs",
     hint: "Chaque échec d'un jet d'attribut coche une case sur la fiche.",
