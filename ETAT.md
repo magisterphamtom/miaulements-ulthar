@@ -10,7 +10,7 @@ Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne 
 - **Infobulles** (Foundry `data-tooltip`) : attributs (définition du livre), cases d'échec, ronds de la page papier, pastilles, noms des pouvoirs (début de la description).
 - **Écriture manuscrite** sur la page papier (police Caveat, encre bleu-noir), réglage « Écriture manuscrite sur la fiche » propre à chaque joueur.
 - **Menu « ⋮ » de la fenêtre** : Assistant de création et Tirer les pouvoirs temporaires (comme Zombiology).
-- **Échec marqué d'une petite patte** au lieu du rond rouge (style à choisir parmi six propositions).
+- **Échec marqué d'une petite patte** au lieu du rond rouge (patte rouge sang, choix A validé).
 - **Race** : texte plus petit et sans flèche, les noms longs (Chat de gouttière, Scottish Fold) tiennent ; liste déroulante à taille normale.
 - **Zoom de la page papier** : Ctrl + molette (60 % à 250 %), Ctrl + clic molette pour revenir à 100 %.
 
