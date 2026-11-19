@@ -2,6 +2,11 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Thèmes de la fiche (v0.8.0, branche `fonction/themes-fiche`)
+- Menu déroulant 🎨 dans la barre du haut de la fiche de Chat : quatre thèmes repris des maquettes du wiki pour le contenu des onglets — **Nuit d'Arkham** (nuit violette et or, défaut), **Grimoire d'Ulthar** (parchemin, encre brune, rouge), **Contrée du Rêve** (lavande et violet), **Journal d'Arkham, 1921** (papier journal, encre noire, comme le wiki).
+- Le choix est propre à chaque joueur (réglage « utilisateur ») et s'applique à toutes ses fiches ouvertes, sans redessiner la fiche. Le Gardien fixe le thème par défaut dans les réglages du système.
+- La page papier de l'onglet Fiche garde son image. Polices libres (OFL) embarquées : Cinzel Decorative, IM Fell English, Mystery Quest, Spectral, Henny Penny, Cormorant Garamond ; le navigateur ne charge que celles du thème affiché. Styles dans `css/themes-fiche.css`.
+
 ## Fiche de Chat à onglets (v0.7.0, branche `fonction/fiche-onglets`)
 - Barre fixe en haut (portrait, nom, Création, Attaquer, Folie) et quatre onglets : **Fiche** (la fiche papier), **Pouvoirs** (une carte par pouvoir : description, coût en PM, attribut lié, dégâts, bulle onirique, boutons Lancer / Montrer / Modifier / Supprimer, tirage des pouvoirs temporaires), **Folie et progression** (jauge de Folie, cartes en main, vies de Chat, XP et achats, fin de scénario, tableau des attributs avec base, race, handicap, progrès, échecs et montée), **Notes** (apparence et notes).
 - L'onglet choisi est conservé quand la fiche se redessine. Gabarits dans `templates/chat/`.

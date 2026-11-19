@@ -1,6 +1,9 @@
 <header class="mu-barre-actions">
   <img class="mu-portrait-mini" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="" title="Changer le portrait">
   <span class="mu-nom-barre">{{actor.name}}</span>
+  <label class="mu-choix-theme" title="Thème du contenu des onglets (votre choix, pour toutes vos fiches)"><i class="fa-solid fa-palette"></i>
+    <select>{{#each themes}}<option value="{{cle}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+  </label>
   <button type="button" data-action="creation" title="Assistant de création">🐾 Création</button>
   <button type="button" data-action="attaquer" title="Attaquer">⚔ Attaquer</button>
   <button type="button" data-action="jetFolie" title="Jet de Folie">🎲 Folie</button>

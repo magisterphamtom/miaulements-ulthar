@@ -1,6 +1,6 @@
 import { SYSTEM_ID, MODES } from "./config.mjs";
 import { ChatData, PnjData, PouvoirData } from "./datamodels.mjs";
-import { FeuilleChat, FichePnj } from "./sheet.mjs";
+import { FeuilleChat, FichePnj, enregistrerParametresThemes } from "./sheet.mjs";
 import { FichePouvoir } from "./item-sheet.mjs";
 import { brancherCartes, ecouterSocket } from "./combat.mjs";
 import { api } from "./outils.mjs";
@@ -60,6 +60,7 @@ Hooks.once("init", () => {
 
   enregistrerParametresWiki();
   enregistrerParametresAccueil();
+  enregistrerParametresThemes();
 
   game.settings.register(SYSTEM_ID, "visionFeline", { scope: "client", config: false, type: Boolean, default: false });
 

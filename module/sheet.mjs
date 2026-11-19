@@ -34,6 +34,35 @@ const POSITIONS = (() => {
   };
 })();
 
+/** Thèmes du contenu de la fiche (repris des maquettes du wiki). */
+export const THEMES_FICHE = {
+  nuit: "Nuit d'Arkham",
+  grimoire: "Grimoire d'Ulthar",
+  reve: "Contrée du Rêve",
+  journal: "Journal d'Arkham, 1921"
+};
+
+/** Réglages : thème par défaut (choisi par le Gardien) et choix de chaque joueur (enregistré pour lui seul). */
+export function enregistrerParametresThemes() {
+  const rafraichir = () => FeuilleChat.appliquerThemePartout();
+  game.settings.register(SYSTEM_ID, "themeFicheDefaut", {
+    name: "Thème des fiches par défaut",
+    hint: "Thème du contenu des onglets de la fiche de Chat pour les joueurs qui n'en ont pas choisi un dans le menu au-dessus de la fiche.",
+    scope: "world", config: true, type: String, choices: THEMES_FICHE, default: "nuit", onChange: rafraichir
+  });
+  game.settings.register(SYSTEM_ID, "themeFiche", {
+    scope: "user", config: false, type: String, default: "", onChange: rafraichir
+  });
+}
+
+function themeChoisi() {
+  let t = "";
+  try { t = game.settings.get(SYSTEM_ID, "themeFiche"); } catch (err) { /* réglage absent */ }
+  if (THEMES_FICHE[t]) return t;
+  try { t = game.settings.get(SYSTEM_ID, "themeFicheDefaut"); } catch (err) { /* réglage absent */ }
+  return THEMES_FICHE[t] ? t : "nuit";
+}
+
 export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
     classes: ["miaulements-ulthar", "sheet", "actor", "chat"],
@@ -138,10 +167,43 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
     ];
 
     // Onglet « Folie et progression »
+    // Thème choisi par ce joueur
+    const theme = themeChoisi();
+    ctx.themes = Object.entries(THEMES_FICHE).map(([cle, label]) => ({ cle, label, selected: cle === theme }));
+
     ctx.foliePct = sys.pf.max > 0 ? Math.max(0, Math.min(100, Math.round((sys.pf.value / sys.pf.max) * 100))) : 0;
     ctx.folieBasse = sys.pf.value < 20;
     ctx.pattes = Array.from({ length: Math.max(sys.vies.max, sys.vies.value) }, (_, i) => ({ vive: i < sys.vies.value }));
     return ctx;
+  }
+
+  /** Pose la classe du thème sur la fenêtre (sans nouveau rendu). */
+  appliquerTheme(theme = themeChoisi()) {
+    const el = this.element;
+    if (!el) return;
+    for (const cle of Object.keys(THEMES_FICHE)) el.classList.toggle(`mu-theme-${cle}`, cle === theme);
+    const select = el.querySelector(".mu-choix-theme select");
+    if (select && select.value !== theme) select.value = theme;
+  }
+
+  static appliquerThemePartout() {
+    const theme = themeChoisi();
+    for (const app of foundry.applications.instances.values()) if (app instanceof FeuilleChat) app.appliquerTheme(theme);
+  }
+
+  _onRender(context, options) {
+    super._onRender?.(context, options);
+    this.appliquerTheme();
+    const select = this.element.querySelector(".mu-choix-theme select");
+    if (select && !select.dataset.lie) {
+      select.dataset.lie = "1";
+      select.addEventListener("change", (event) => {
+        event.stopPropagation(); // pas d'enregistrement de l'acteur : c'est une préférence du joueur
+        const theme = event.currentTarget.value;
+        game.settings.set(SYSTEM_ID, "themeFiche", theme);
+        for (const app of foundry.applications.instances.values()) if (app instanceof FeuilleChat) app.appliquerTheme(theme);
+      });
+    }
   }
 
   /** Changement d'onglet : on garde l'onglet choisi d'un rendu à l'autre. */

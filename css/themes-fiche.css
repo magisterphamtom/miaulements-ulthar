@@ -1,0 +1,113 @@
+/* Les Miaulements d'Ulthar — thèmes du contenu de la fiche de Chat (repris des maquettes du wiki).
+   Le thème se pose par une classe sur la fenêtre : mu-theme-nuit (défaut), mu-theme-grimoire, mu-theme-reve, mu-theme-journal.
+   La page papier de l'onglet « Fiche » garde son image : seul ce qui l'entoure change.
+   Les polices ne sont téléchargées par le navigateur que pour le thème affiché. */
+@font-face { font-family: 'Cinzel Decorative'; font-style: normal; font-weight: 700; font-display: swap; src: url('../assets/fonts/cinzel-decorative-latin-700-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Cinzel Decorative'; font-style: normal; font-weight: 700; font-display: swap; src: url('../assets/fonts/cinzel-decorative-latin-ext-700-normal.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 400; font-display: swap; src: url('../assets/fonts/cormorant-garamond-latin-400-italic.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/cormorant-garamond-latin-400-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 600; font-display: swap; src: url('../assets/fonts/cormorant-garamond-latin-600-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 400; font-display: swap; src: url('../assets/fonts/cormorant-garamond-latin-ext-400-italic.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/cormorant-garamond-latin-ext-400-normal.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 600; font-display: swap; src: url('../assets/fonts/cormorant-garamond-latin-ext-600-normal.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Henny Penny'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/henny-penny-latin-400-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'IM Fell English'; font-style: italic; font-weight: 400; font-display: swap; src: url('../assets/fonts/im-fell-english-latin-400-italic.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'IM Fell English'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/im-fell-english-latin-400-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Mystery Quest'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/mystery-quest-latin-400-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Mystery Quest'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/mystery-quest-latin-ext-400-normal.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Spectral'; font-style: italic; font-weight: 400; font-display: swap; src: url('../assets/fonts/spectral-latin-400-italic.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Spectral'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/spectral-latin-400-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Spectral'; font-style: normal; font-weight: 600; font-display: swap; src: url('../assets/fonts/spectral-latin-600-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Spectral'; font-style: italic; font-weight: 400; font-display: swap; src: url('../assets/fonts/spectral-latin-ext-400-italic.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Spectral'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/spectral-latin-ext-400-normal.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Spectral'; font-style: normal; font-weight: 600; font-display: swap; src: url('../assets/fonts/spectral-latin-ext-600-normal.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+
+/* ---------- Règles communes, pilotées par des variables ---------- */
+.miaulements-ulthar.sheet.chat {
+  --mu-papier: var(--mu-fond);
+  --mu-creux: #0d0b13;
+  --mu-perdue: #444;
+  --mu-jauge: #8f6bd6;
+  --mu-titre: Georgia, serif;
+  --mu-nom: var(--mu-titre);
+  --mu-onglet-police: inherit;
+  --mu-corps: inherit;
+  --mu-rayon: 6px;
+  --mu-style-bord: solid;
+}
+.miaulements-ulthar.sheet.chat .window-content { background: var(--mu-papier); color: var(--mu-texte); font-family: var(--mu-corps); }
+.miaulements-ulthar.sheet.chat .mu-barre-actions .mu-nom-barre { min-width: 90px; font-family: var(--mu-nom); font-weight: normal; font-size: 1.45em; }
+.miaulements-ulthar.sheet.chat .mu-onglets .item { font-family: var(--mu-onglet-police); }
+.miaulements-ulthar.sheet.chat .mu-onglet h3 { font-family: var(--mu-titre); font-weight: normal; font-size: 1.3em; }
+.miaulements-ulthar.sheet.chat .mu-onglet h3::before { content: "\f1b0"; font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free"; font-weight: 900; font-size: .75em; margin-right: .45em; vertical-align: .1em; }
+.miaulements-ulthar.sheet.chat .mu-carte-pouvoir-titre strong { font-family: var(--mu-titre); font-weight: normal; font-size: 1.2em; }
+.miaulements-ulthar.sheet.chat .mu-bloc, .miaulements-ulthar.sheet.chat .mu-carte-pouvoir { border-radius: var(--mu-rayon); border-style: var(--mu-style-bord); }
+.miaulements-ulthar.sheet.chat .mu-jauge-barre { background: var(--mu-creux); }
+.miaulements-ulthar.sheet.chat .mu-jauge-barre span { background: var(--mu-jauge); }
+.miaulements-ulthar.sheet.chat .mu-jauge-barre.bas span { background: var(--mu-ko); }
+.miaulements-ulthar.sheet.chat .mu-pattes-fiche i.perdue { color: var(--mu-perdue); }
+.miaulements-ulthar.sheet.chat .mu-entete-t { background: var(--mu-entete-fond, transparent); color: var(--mu-entete-texte, inherit); }
+.miaulements-ulthar.sheet.chat .mu-onglet textarea, .miaulements-ulthar.sheet.chat .mu-onglet input { font-family: var(--mu-corps); }
+.miaulements-ulthar.sheet.chat .mu-onglet ::placeholder { color: var(--mu-texte); opacity: .45; }
+
+/* Menu déroulant du thème, dans la barre du haut */
+.mu-choix-theme { display: flex; align-items: center; gap: 4px; flex: 0 0 auto; font-size: .85em; opacity: .85; }
+.mu-choix-theme select { max-width: 150px; height: 24px; padding: 0 4px; background: var(--mu-fond2); color: var(--mu-texte); border: 1px solid var(--mu-bord); border-radius: 4px; font-family: inherit; }
+.mu-choix-theme i { color: var(--mu-accent); }
+
+/* ---------- B. Nuit d'Arkham (défaut) : nuit violette, or ---------- */
+.miaulements-ulthar.sheet.chat.mu-theme-nuit {
+  --mu-fond: #17141c; --mu-fond2: #221d2b; --mu-bord: #6b5b8a; --mu-texte: #e8e2f0; --mu-accent: #d9b34a; --mu-ok: #6fbf8b; --mu-ko: #d4635f;
+  --mu-papier: radial-gradient(ellipse at top, #2a2238 0%, #17141c 60%);
+  --mu-titre: 'Mystery Quest', Georgia, serif; --mu-onglet-police: 'Spectral', Georgia, serif; --mu-corps: 'Spectral', Georgia, serif;
+  --mu-entete-fond: #3a2f55; --mu-entete-texte: #e8e2f0;
+}
+.mu-theme-nuit .mu-bloc, .mu-theme-nuit .mu-carte-pouvoir { border-left: 3px solid var(--mu-accent); }
+.mu-theme-nuit .mu-onglet h3 { color: #b9a6f0; }
+.mu-theme-nuit .mu-onglet h3::before, .mu-theme-nuit .mu-nom-barre { color: var(--mu-accent); }
+
+/* ---------- A. Grimoire d'Ulthar : parchemin, encre brune, rouge sang ---------- */
+.miaulements-ulthar.sheet.chat.mu-theme-grimoire {
+  --mu-fond: #efe0bf; --mu-fond2: rgba(255, 249, 232, .72); --mu-bord: #9a6a3a; --mu-texte: #2b1d12; --mu-accent: #7a1f1a; --mu-ok: #3d7a3a; --mu-ko: #a3241c;
+  --mu-papier: radial-gradient(ellipse at 30% 10%, #f7ecd2 0%, #ead6ad 55%, #d9bd88 100%);
+  --mu-creux: #d8c39a; --mu-perdue: #c4ab7f; --mu-jauge: #7a1f1a;
+  --mu-titre: 'Cinzel Decorative', Georgia, serif; --mu-onglet-police: 'IM Fell English', Georgia, serif; --mu-corps: 'IM Fell English', Georgia, serif;
+  --mu-entete-fond: #6b4a24; --mu-entete-texte: #f7ecd2;
+}
+.mu-theme-grimoire .mu-onglet h3 { text-transform: uppercase; letter-spacing: .03em; font-weight: 700 !important; font-size: 1.1em !important; border-bottom-color: #b89466; }
+.mu-theme-grimoire .mu-nom-barre { font-weight: 700 !important; text-transform: uppercase; }
+.mu-theme-grimoire .mu-bloc, .mu-theme-grimoire .mu-carte-pouvoir { border-left: 4px solid var(--mu-accent); box-shadow: 0 1px 3px rgba(80, 50, 20, .25); }
+.mu-theme-grimoire .mu-onglets .item.active { background: rgba(255, 249, 232, .85); }
+.mu-theme-grimoire .mu-pattes-fiche { color: #7a1f1a; }
+
+/* ---------- C. Contrée du Rêve : lavande, violet, or pâle ---------- */
+.miaulements-ulthar.sheet.chat.mu-theme-reve {
+  --mu-fond: #f1ecfa; --mu-fond2: rgba(255, 255, 255, .78); --mu-bord: #b9a6e0; --mu-texte: #2e2546; --mu-accent: #5b3fb5; --mu-ok: #3f8a63; --mu-ko: #c0465e;
+  --mu-papier: linear-gradient(180deg, #f6f2fd 0%, #e6def7 70%, #dde6f6 100%);
+  --mu-creux: #e4dcf5; --mu-perdue: #d3c8ec; --mu-jauge: linear-gradient(90deg, #8f6bd6, #c9a1f0);
+  --mu-titre: 'Henny Penny', Georgia, serif; --mu-onglet-police: 'Cormorant Garamond', Georgia, serif; --mu-corps: 'Cormorant Garamond', Georgia, serif;
+  --mu-entete-fond: #5b3fb5; --mu-entete-texte: #fff;
+  --mu-rayon: 12px; --mu-style-bord: dashed;
+}
+.mu-theme-reve .window-content { font-size: 1.08em; }
+.mu-theme-reve .mu-onglet h3::before { color: #d9a520; }
+.mu-theme-reve .mu-pattes-fiche { color: #d9a520; }
+.mu-theme-reve .mu-onglets .item { font-weight: 600; }
+
+/* ---------- D. Journal d'Arkham, 1921 : papier journal, encre noire ---------- */
+.miaulements-ulthar.sheet.chat.mu-theme-journal {
+  --mu-fond: #ece6d8; --mu-fond2: #f5f0e4; --mu-bord: #1c1a17; --mu-texte: #1c1a17; --mu-accent: #7a1f1a; --mu-ok: #2f5f2f; --mu-ko: #7a1f1a;
+  --mu-papier: repeating-linear-gradient(0deg, rgba(0, 0, 0, .025) 0 1px, transparent 1px 4px), #ece6d8;
+  --mu-creux: #ddd5c3; --mu-perdue: #b9b09c; --mu-jauge: #1c1a17;
+  --mu-titre: 'Playfair Display SC', Georgia, serif; --mu-nom: 'Grenze Gotisch', Georgia, serif; --mu-onglet-police: 'Playfair Display SC', Georgia, serif; --mu-corps: 'Old Standard TT', Georgia, serif;
+  --mu-entete-fond: #1c1a17; --mu-entete-texte: #ece6d8;
+  --mu-rayon: 2px;
+}
+.mu-theme-journal .mu-onglet h3 { font-weight: 700 !important; font-size: 1.05em !important; letter-spacing: .04em; border-bottom: 2px solid #1c1a17; }
+.mu-theme-journal .mu-nom-barre { color: #1c1a17 !important; font-size: 1.9em !important; }
+.mu-theme-journal .mu-bloc, .mu-theme-journal .mu-carte-pouvoir { border: 3px double #1c1a17; }
+.mu-theme-journal .mu-onglets { border-bottom: 2px solid #1c1a17; }
+.mu-theme-journal .mu-onglets .item { font-weight: 700; font-size: .85em; letter-spacing: .03em; }
+.mu-theme-journal .mu-onglets .item.active { background: #1c1a17; color: #ece6d8; border-color: #1c1a17; }
+.mu-theme-journal .mu-portrait-mini { border-radius: 2px; border-color: #1c1a17; filter: grayscale(.4); }
+.mu-theme-journal .mu-pattes-fiche { color: #1c1a17; }
