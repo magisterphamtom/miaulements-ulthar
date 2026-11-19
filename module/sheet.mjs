@@ -243,6 +243,17 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
   _onRender(context, options) {
     super._onRender?.(context, options);
     this.appliquerTheme();
+    // Champs repris dans un second onglet (XP, apparence) : hors du formulaire pour éviter deux valeurs sous le même nom.
+    for (const champ of this.element.querySelectorAll("[data-champ]")) {
+      if (champ.dataset.lie) continue;
+      champ.dataset.lie = "1";
+      champ.addEventListener("change", (event) => {
+        event.stopPropagation();
+        const el = event.currentTarget;
+        const valeur = el.type === "number" ? Number(el.value) || 0 : el.value;
+        if (this.isEditable) this.actor.update({ [el.dataset.champ]: valeur });
+      });
+    }
   }
 
   /** Changement d'onglet : on garde l'onglet choisi d'un rendu à l'autre. */

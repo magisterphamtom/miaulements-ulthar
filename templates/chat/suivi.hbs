@@ -16,7 +16,7 @@
       <div class="mu-pattes-fiche">{{#each pattes}}<i class="fa-solid fa-paw {{#unless vive}}perdue{{/unless}}"></i>{{/each}}</div>
       <p class="mu-aide">{{system.vies.value}} / {{system.vies.max}} — à 0 PV, Bast ressuscite le Chat contre une vie.</p>
       <h3>Expérience</h3>
-      <p class="mu-xp"><label>XP <input type="number" name="system.xp" value="{{system.xp}}"></label></p>
+      <p class="mu-xp"><label>XP <input type="number" data-champ="system.xp" value="{{system.xp}}"></label></p>
       <div class="mu-achats">{{#each achats}}<button type="button" data-action="acheter" data-achat="{{cle}}" {{#unless possible}}disabled{{/unless}}>{{label}} <small>({{cout}} XP)</small></button>{{/each}}</div>
       <p class="mu-aide">4 XP : un pouvoir temporaire devient permanent (passer sa catégorie à « inné » dans sa fiche).</p>
       <button type="button" class="mu-fin" data-action="finScenario">Fin de scénario</button>

@@ -2,6 +2,9 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Correction des champs en double (v0.9.2, branche `correction/champs-doubles`)
+- L'XP (page papier et onglet Folie et progression) et l'apparence (page papier et onglet Notes) avaient deux champs du même nom : Foundry refusait l'enregistrement (« xp: must be a number »). Les champs des onglets s'enregistrent désormais eux-mêmes.
+
 ## Fiche réorganisée, onglets sur le côté (v0.9.0, branche `fonction/fiche-cote`)
 - En-tête plus haut : grand portrait (clic pour le changer), nom, race et handicap, pastilles Santé, Magie, Folie (rouge sous 20), vies de Chat et XP.
 - Onglets à la verticale sur le côté droit, avec des icônes dessinées sur le thème des chats : **Fiche** (panier), **Création** (arbre à chat), **Pouvoirs** (pelote de laine), **Folie et progression** (griffoir), **Notes** (litière).
