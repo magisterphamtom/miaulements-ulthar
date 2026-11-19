@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.6.1", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.6.2", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -475,6 +475,67 @@ def aide_memoire_joueur():
     h += "<h2>Progression</h2><p>Chaque échec à un jet d'attribut coche une case (6 par attribut). Toutes les cases cochées : +1D10 à l'attribut. En fin de scénario : 2 XP (2 XP = +10 PM ou +1 Santé ; 4 XP = pouvoir temporaire permanent ou +1 vie de Chat).</p>"
     return h
 
+def panneau(titre, contenu, large=False, note=""):
+    return (f'<section class="mu-panneau{" mu-large" if large else ""}"><h4 class="mu-panneau-titre">{esc(titre)}</h4>'
+            f'<div class="mu-panneau-corps">{contenu}</div>{f"<p class=mu-panneau-note>{note}</p>" if note else ""}</section>')
+
+def lien_table(nom, texte="🎲 Ouvrir la table pour la lancer"):
+    return f'<p class="mu-lancer">@UUID[Compendium.{SYS}.tables.RollTable.{ident("tables", "table", nom)}]{{{texte}}}</p>'
+
+def mini_table(entetes, lignes, classe=""):
+    h = f'<table class="mu-mini {classe}">' + ("<thead><tr>" + "".join(f"<th>{esc(e)}</th>" for e in entetes) + "</tr></thead>" if entetes else "") + "<tbody>"
+    for l in lignes: h += "<tr>" + "".join(f"<td>{c}</td>" for c in l) + "</tr>"
+    return h + "</tbody></table>"
+
+def ecran_du_mj(bestiaire):
+    """Écran du Maître de Jeu (écran papier v20250825) : trois pages de panneaux."""
+    noms_best = {c["nom"].lower(): c["nom"] for c in bestiaire}
+    def fiche(nom, alias=None):
+        cle = (alias or nom).lower()
+        if cle in noms_best:
+            return f'@UUID[Compendium.{SYS}.bestiaire.Actor.{ident("bestiaire", "Actor", noms_best[cle])}]{{{esc(nom)}}}'
+        return esc(nom)
+    # ---- page 1 : jets et règles
+    p1 = '<div class="mu-ecran">'
+    p1 += panneau("Le jet", "<p><strong>D100 ≤ attribut</strong> : réussite. La difficulté s'ajoute au dé ; un pouvoir retire 20 au dé.</p>" +
+                  mini_table(["Difficulté", "Au dé"], [["Très facile", "−40"], ["Facile", "−20"], ["Normal", "0"], ["Difficile", "+20"], ["Très difficile", "+40"]]))
+    p1 += panneau("Critiques (jet brut)", mini_table(["Mode", "Réussite", "Échec"], [["Pulp", "01–09", "91–00"], ["Serious Cat", "01–05", "96–00"], ["Co-investigation", "01–05", "96–00"]]),
+                  note="Pulp : un autre joueur peut rattraper un échec critique ; un échec simple peut être retenté (l'échec suivant est flagrant).")
+    p1 += panneau("Pouvoirs", "<ul><li>+20 à l'attribut lié (−20 au dé).</li><li>Perte de PM = <strong>chiffre des unités</strong> du dé ; un 0 ne coûte rien.</li><li>À 0 PM : plus de pouvoir avant un sommeil de 20 h.</li><li>Plusieurs pouvoirs dans une action : un jet et une perte chacun.</li></ul>")
+    p1 += panneau("Folie", "<ul><li>Jet de Folie : D100 ≤ PF.</li><li>Échec : une carte Folie, jouée tout de suite ou gardée.</li><li>Fin de scénario : −10 PF par carte non jouée.</li><li>Sous 20 PF : le Chat est injouable.</li></ul>")
+    p1 += panneau("Dégâts", mini_table([], [["Coup de griffe", "1D4"], ["Chute", "1D4 par étage (max 6D4)"], ["Objet tranchant", "1D6"], ["Pistolet", "1D6+1"], ["Fusil", "2D6"], ["Explosion", "4D6"], ["Feu", "2D6 par tour"], ["Choc par véhicule", "1D6"]], "mu-deux-col"))
+    p1 += panneau("Mort et vies de Chat", "<ul><li>À 0 PV : le Chat meurt, puis Bast le ressuscite à la fin du round.</li><li>Chaque résurrection coûte <strong>une vie de Chat</strong> (3 au départ, 9 avec « Neuf vies »).</li><li>Plus de vie : mort définitive.</li></ul>")
+    p1 += panneau("Création d'un Chat", "<ol><li><strong>Surnom</strong></li><li><strong>Attributs</strong> : 50 % chacun ; ajustements +20, +10, +5, −5, −10, −20 (entre 30 et 70 %)</li><li><strong>Race</strong> : bonus et malus, un pouvoir de race</li><li><strong>Deux pouvoirs innés</strong> (+1 avec un handicap à −20 %)</li><li><strong>Calculs</strong> : Santé (tableau), Folie = (PER + CHA) / 2, Magie = INT</li><li><strong>Vies de Chat</strong> : 3</li></ol>")
+    p1 += panneau("Points de Santé", mini_table(["PHY + AGI", "PV"], [["0–39", "1"], ["40–59", "2"], ["60–89", "3"], ["90–109", "4"], ["110–119", "5"], ["120–139", "6"], ["140+", "7"]], "mu-deux-col"))
+    p1 += panneau("Progression et XP", "<ul><li>Chaque échec coche une case ; 6 cases cochées : +1D10 à l'attribut.</li><li>Fin de scénario : <strong>2 XP</strong>.</li><li>2 XP : +10 PM ou +1 Santé · 4 XP : pouvoir temporaire permanent ou +1 vie de Chat.</li><li>Santé, Magie et vies reviennent au maximum ; la Folie, non.</li></ul>", large=True)
+    p1 += "</div>"
+    # ---- page 2 : tables de l'écran
+    villes = ["Circulation automobile dense", "Animaux errants agressifs", "Déchets dangereux", "Chasseurs de chats", "Pièges à rongeurs empoisonnés", "Bouche d'aération qui expulse de la vapeur", "Personnes hostiles", "Pollution sonore", "Fourrière", "Mauvaises conditions météorologiques"]
+    humains = [("1–2", "Ignore le chat"), ("3", "Caresse le chat"), ("4", "Joue avec le chat"), ("5", "Alimente le chat"), ("6", "Prend le chat dans les bras"), ("7", "Tente de chasser le chat"), ("8", "Intimide le chat"), ("9", "Lance des objets au chat"), ("10", "Maltraite le chat")]
+    animaux = [("Chat", "Chat", "Ignore"), ("Chat", "Chien", "Curieux"), ("Chien", "Rongeur", "Amitié"), ("Chien", "Oiseau", "Dominant"), ("Rongeur", "Loup / Renard", "Fuite"), ("Rongeur", "Chèvre / Mouton", "Hostile"), ("Oiseau", "Cochon", "Soumission"), ("Oiseau", "Vache / Cheval", "Jeu"), ("Insecte", "Insecte", "Se cache"), ("Insecte", "Sanglier", "Ignore")]
+    surnoms = ["Bella", "Luna", "Oliver", "Charlie", "Max", "Rosie", "Cléo", "Milo", "Ruby", "Daisy", "Mimolette", "Simba", "Felix", "Misty", "Teddy", "Jasper", "Nala", "Whiskers", "Leo", "Olive", "Willow"]
+    p2 = '<div class="mu-ecran">'
+    p2 += panneau("Événements en ville (1D10)", mini_table(["D10", "Événement"], [[str(i + 1), esc(t)] for i, t in enumerate(villes)]) + lien_table("Événements en ville"))
+    p2 += panneau("Réactions humaines (1D10)", mini_table(["D10", "Réaction"], [[d, esc(t)] for d, t in humains]) + lien_table("Réactions humaines"))
+    p2 += panneau("Réactions des animaux (1D10)", mini_table(["D10", "En ville", "À la campagne", "Réaction"], [[str(i + 1), v, c, f"<em>{r}</em>"] for i, (v, c, r) in enumerate(animaux)]) + lien_table("Réactions des animaux"), large=True)
+    p2 += panneau("Surnoms (1D21)", '<p class="mu-surnoms">' + " · ".join(esc(n) for n in surnoms) + "</p>" + lien_table("Surnoms"))
+    p2 += panneau("Pouvoirs temporaires (1D100)", "<p>Deux tirages par Chat au début de l'aventure ; doublon : on relance. Macro du Gardien « Début d'aventure » pour tout le groupe.</p>" + lien_table("Pouvoirs temporaires"))
+    p2 += panneau("Cartes Folie (1D20)", "<ol class='mu-folies'>" + "".join(f"<li>{esc(t)}</li>" for t in D["ACTIONS_FOLIE"]) + "</ol>" + lien_table("Cartes Folie"), large=True)
+    p2 += "</div>"
+    # ---- page 3 : adversaires et comportements
+    adv = [("Chat", "50 %", "1d4", "5", None), ("Chien", "60 %", "1d6", "10", None), ("Oiseau", "40 %", "1d4", "4", "Corbeau"), ("Homme", "50 %", "1d6", "10", None),
+           ("Mafieu", "60 %", "1d8", "12", None), ("Rat", "50 %", "1d4", "3", None), ("Serpent", "60 %", "1d6", "6", None), ("Abhoth", "60 %", "2d8", "60", None),
+           ("Chat Saturne", "70 %", "1d6", "8", None), ("Goule", "65 %", "1d8", "13", None), ("Loup-garou", "75 %", "2d8+2", "35", "Loup-Garou"), ("Migo", "70 %", "1d6", "8", None),
+           ("Profond", "70 %", "2d10", "35", None), ("Rhan-Tegoth", "80 %", "2d10", "70", None), ("Chien de Tindalos", "75 %", "2d6+3", "60", "Chien Dimensionnel"), ("Zoog", "30 %", "1d4", "5", None)]
+    p3 = '<div class="mu-ecran">'
+    p3 += panneau("Adversaires (écran)", mini_table(["Adversaire", "Attaque", "Dégâts", "PV"], [[fiche(n, a), at, dg, pv] for n, at, dg, pv, a in adv]), large=True,
+                  note="Clic sur un nom : fiche de l'adversaire dans le bestiaire (à glisser sur la scène). Les valeurs de l'écran peuvent différer un peu du bestiaire.")
+    p3 += panneau("Bulle onirique", "<ol><li><strong>Connexion mentale</strong> : jet de Charisme +20 ; seule étape qui coûte des PM.</li><li><strong>Objectif</strong> défini avec le Gardien.</li><li><strong>Scène initiale</strong> dans l'esprit de la cible.</li><li><strong>Altérations</strong> : deux réussites atteignent l'objectif ; deux échecs font éclater la bulle.</li><li><strong>État final</strong> ; sur un critique, la Contrée du Rêve change vraiment.</li></ol>")
+    p3 += panneau("Comportements félins", "<ul><li><strong>Langage corporel</strong> : queue, oreilles, yeux, pattes.</li><li><strong>Vocalisations</strong> : miaulements, ronronnements, gémissements.</li><li><strong>Comportement</strong> : chasseur, joueur, territoire, indifférent, peur.</li><li><strong>Affection</strong> : frottements, câlins, ronronnements, clignements des yeux, offrandes, léchouilles.</li></ul>")
+    p3 += panneau("Conseils de table", "<ul><li>Un joueur passif ? Décris ce qui attire son instinct et demande un jet de Folie.</li><li>L'horreur par petites touches : symboles, rats qui fuient, lumières qui vacillent.</li><li>Les Chats ne parlent pas aux humains sans pouvoir : ils observent, écoutent, lisent les pensées.</li></ul>", large=True)
+    p3 += "</div>"
+    return [("Jets et règles", p1), ("Tables de l'écran", p2), ("Adversaires et comportements", p3)]
+
 def construire_wikis(bestiaire):
     R = charger("regles")
     # --- wiki joueur
@@ -503,13 +564,8 @@ def construire_wikis(bestiaire):
     mj["Guide du maître de jeu"] = page_blocs("regles", 114, 129, "Guide du maître de jeu")
     mj["L'univers de Lovecraft"] = page_blocs("regles", 67, 92, "L'univers de Lovecraft")
     mj["Scénario d'initiation : les chiens dimensionnels"] = page_blocs("regles", 131, 143, "Les chiens dimensionnels")
-    ecran = "<h2>Création d'un Chat</h2><p>1. Surnom · 2. Attributs (50 % + ajustements) · 3. Race (bonus/malus, pouvoir de race) · 4. Deux pouvoirs innés · 5. Calculs · 6. Vies de Chat : 3.</p>"
-    ecran += "<h2>Difficulté</h2>" + table_html(["Difficulté", "Modificateur"], [["Très difficile", "+40"], ["Difficile", "+20"], ["Normal", "0"], ["Facile", "−20"], ["Très facile", "−40"]])
-    ecran += "<h2>Dégâts</h2>" + table_html(["Source", "Dégâts"], [["Coup de griffe", "1D4"], ["Chute", "1D4 par étage"], ["Objet tranchant", "1D6"], ["Pistolet", "1D6+1"], ["Fusil", "2D6"], ["Explosion", "4D6"], ["Feu", "2D6 par tour"], ["Choc par véhicule", "1D6"]])
-    ecran += "<h2>Étapes oniriques</h2><ol><li>Connexion mentale avec le sujet.</li><li>Définition de l'objectif par le lanceur.</li><li>Établissement de la scène onirique initiale dans l'esprit du sujet.</li><li>Phases d'altération (deux réussites ou deux échecs terminent la bulle).</li><li>État final de la cible.</li></ol>"
-    ecran += "<h2>Comportements</h2><ul><li>Langage corporel : queue, oreilles, yeux, pattes.</li><li>Vocalisations : miaulements, ronronnements, gémissements.</li><li>Comportement : chasseur, joueur, territoire, indifférent, peur.</li><li>Expressions d'affection : frottements, câlins, ronronnements, clignements des yeux, offrandes, léchouilles.</li></ul>"
-    ecran += f"<h2>Tables</h2><p>Les tables de l'écran (événements en ville, réactions humaines, réactions des animaux, surnoms, cartes Folie, pouvoirs temporaires) sont dans le compendium « Tables » : clic droit › Lancer.</p>"
-    mj["Écran du MJ"] = [("Écran du Maître de Jeu", ecran)]
+    ecran_pages = ecran_du_mj(bestiaire)
+    mj["Écran du MJ"] = ecran_pages
     bestiaire_pages = []
     for c in sorted(bestiaire, key=lambda x: x["nom"]):
         att = "".join(f"<li>{esc(a['nom'])} : {a['pct']} % / {esc(a['degats'])}</li>" if a["degats"] else f"<li>{esc(a['nom'])} : {a['pct']} %</li>" for a in c["attaques"])

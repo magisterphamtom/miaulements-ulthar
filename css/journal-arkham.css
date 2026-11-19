@@ -14,6 +14,7 @@
 
 .mu-journal {
   --mu-papier: #ece6d8; --mu-papier-2: #f6f1e4; --mu-encre: #1c1a17; --mu-gris: #6b645a; --mu-filet: #9a927f; --mu-rouge: #7a1f1a;
+  --mu-patte: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22%237a1f1a%22%3E%3Cpath%20d%3D%22M50%2046c-15%200-28%2013-28%2026%200%2010%208%2015%2017%2013%205-1%207-3%2011-3s6%202%2011%203c9%202%2017-3%2017-13%200-13-13-26-28-26z%22/%3E%3Cellipse%20cx%3D%2223%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%28-25%2023%2039%29%22/%3E%3Cellipse%20cx%3D%2240%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%28-8%2040%2023%29%22/%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%288%2060%2023%29%22/%3E%3Cellipse%20cx%3D%2277%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%2825%2077%2039%29%22/%3E%3C/g%3E%3C/svg%3E");
   --mu-titre: 'Grenze Gotisch', 'Old English Text MT', serif; --mu-sc: 'Playfair Display SC', Georgia, serif; --mu-texte: 'Old Standard TT', Georgia, serif;
 }
 /* Fond « papier journal » : un dégradé et une fine trame, sans image ni filtre (rien à recalculer). */
@@ -86,3 +87,24 @@
 .mu-journal .journal-page-content blockquote.mu-coupure { font-style: normal; background: var(--mu-papier-2); border: 1px solid var(--mu-encre); border-left: 6px double var(--mu-encre); padding: 8px 14px; column-count: 2; column-gap: 18px; text-align: justify; }
 .mu-journal .journal-page-content blockquote.mu-coupure strong:first-child { display: block; column-span: all; font-family: var(--mu-titre); font-size: 1.6em; text-align: center; }
 .mu-journal .journal-page-content .mu-ou { text-align: center; font-family: var(--mu-sc); letter-spacing: .2em; color: var(--mu-gris); margin: .2em 0; }
+
+/* Écran du Maître de Jeu : panneaux en grille, comme l'écran papier */
+.mu-journal .journal-page-content .mu-ecran { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; align-items: start; }
+.mu-journal .journal-page-content .mu-panneau { background: var(--mu-papier-2); border: 1px solid var(--mu-encre); box-shadow: 3px 3px 0 rgba(0,0,0,.18); }
+.mu-journal .journal-page-content .mu-panneau.mu-large { grid-column: 1 / -1; }
+.mu-journal .journal-page-content .mu-panneau-titre { margin: 0; padding: 4px 10px; background: var(--mu-encre); color: var(--mu-papier); font-family: var(--mu-sc); font-size: 1em; letter-spacing: .08em; }
+.mu-journal .journal-page-content .mu-panneau-titre::before { content: ""; display: inline-block; width: .85em; height: .85em; margin-right: .4em; vertical-align: -.05em; background: currentColor; -webkit-mask: var(--mu-patte) center / contain no-repeat; mask: var(--mu-patte) center / contain no-repeat; }
+.mu-journal .journal-page-content .mu-panneau-corps { padding: 6px 10px; font-size: .93em; line-height: 1.35; }
+.mu-journal .journal-page-content .mu-panneau-corps p, .mu-journal .journal-page-content .mu-panneau-corps li { text-align: left; margin: .2em 0; }
+.mu-journal .journal-page-content .mu-panneau-corps ul, .mu-journal .journal-page-content .mu-panneau-corps ol { margin: .2em 0; padding-left: 1.3em; }
+.mu-journal .journal-page-content .mu-panneau-note { margin: 0; padding: 4px 10px 6px; font-size: .82em; font-style: italic; color: var(--mu-gris); border-top: 1px dotted var(--mu-filet); }
+.mu-journal .journal-page-content table.mu-mini { margin: 4px 0; font-size: .95em; border: none; background: transparent; }
+.mu-journal .journal-page-content table.mu-mini th { padding: 2px 6px; font-size: .85em; background: #3a3630; }
+.mu-journal .journal-page-content table.mu-mini td { padding: 2px 6px; }
+.mu-journal .journal-page-content table.mu-mini td:first-child { font-family: var(--mu-sc); font-weight: 700; white-space: nowrap; }
+.mu-journal .journal-page-content table.mu-mini.mu-deux-col td:last-child { text-align: right; font-family: var(--mu-sc); font-weight: 700; }
+.mu-journal .journal-page-content .mu-lancer { margin: 6px 0 2px; text-align: right; }
+.mu-journal .journal-page-content .mu-lancer a { font-family: var(--mu-sc); font-weight: 700; border: 1px solid var(--mu-encre); border-bottom: 1px solid var(--mu-encre); padding: 1px 8px; background: var(--mu-papier); color: var(--mu-encre); }
+.mu-journal .journal-page-content .mu-surnoms { font-style: italic; text-align: center; }
+.mu-journal .journal-page-content ol.mu-folies { columns: 2; column-gap: 24px; }
+.mu-journal .journal-page-content ol.mu-folies li { break-inside: avoid; }

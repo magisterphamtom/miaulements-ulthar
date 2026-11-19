@@ -2,6 +2,9 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Écran du Maître de Jeu (v0.6.2, branche `fonction/ecran-gardien`)
+- L'entrée « Écran du MJ » du wiki du Gardien est refaite en trois pages de panneaux, comme l'écran papier : « Jets et règles » (jet, difficulté, critiques par mode, pouvoirs, Folie, dégâts, mort et vies, création, Santé, progression), « Tables de l'écran » (événements en ville, réactions humaines et animales, surnoms, pouvoirs temporaires, 20 cartes Folie, chaque table avec un lien pour la lancer), « Adversaires et comportements » (16 adversaires de l'écran reliés aux fiches du bestiaire, bulle onirique, comportements, conseils de table).
+
 ## Textes des wikis corrigés (v0.6.1, branche `correction/textes-wikis`, partie de la branche du thème)
 - Nouvelle extraction des PDF par blocs de mise en page (`tools/extraire_blocs.py`, pdfminer) : colonnes lues dans l'ordre, notes grises des marges isolées en encadrés « Note », titres en biais et mini-fiches dessinées retirés, gras du livre conservé, cases ☐ des indices en listes, lignes « Tags » mises à part, coupure de journal « Mort mystérieuse » reconstituée, notes d'imprimeur et 4e de couverture retirées, mots coupés en fin de ligne recollés, nouvelle remise dans l'ordre (livret imposé).
 - `tools/verifier-textes.py` repère les défauts restants ; il ne reste que des cas normaux.

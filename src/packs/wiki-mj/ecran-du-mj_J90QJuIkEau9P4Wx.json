@@ -3,8 +3,8 @@
  "name": "Écran du MJ",
  "pages": [
   {
-   "_id": "7HFgcNZTtpkwGIPn",
-   "name": "Écran du Maître de Jeu",
+   "_id": "mwOeJ1XuK39xkhjv",
+   "name": "Jets et règles",
    "type": "text",
    "title": {
     "show": true,
@@ -13,7 +13,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<h2>Création d'un Chat</h2><p>1. Surnom · 2. Attributs (50 % + ajustements) · 3. Race (bonus/malus, pouvoir de race) · 4. Deux pouvoirs innés · 5. Calculs · 6. Vies de Chat : 3.</p><h2>Difficulté</h2><table><thead><tr><th>Difficulté</th><th>Modificateur</th></tr></thead><tbody><tr><td>Très difficile</td><td>+40</td></tr><tr><td>Difficile</td><td>+20</td></tr><tr><td>Normal</td><td>0</td></tr><tr><td>Facile</td><td>−20</td></tr><tr><td>Très facile</td><td>−40</td></tr></tbody></table><h2>Dégâts</h2><table><thead><tr><th>Source</th><th>Dégâts</th></tr></thead><tbody><tr><td>Coup de griffe</td><td>1D4</td></tr><tr><td>Chute</td><td>1D4 par étage</td></tr><tr><td>Objet tranchant</td><td>1D6</td></tr><tr><td>Pistolet</td><td>1D6+1</td></tr><tr><td>Fusil</td><td>2D6</td></tr><tr><td>Explosion</td><td>4D6</td></tr><tr><td>Feu</td><td>2D6 par tour</td></tr><tr><td>Choc par véhicule</td><td>1D6</td></tr></tbody></table><h2>Étapes oniriques</h2><ol><li>Connexion mentale avec le sujet.</li><li>Définition de l'objectif par le lanceur.</li><li>Établissement de la scène onirique initiale dans l'esprit du sujet.</li><li>Phases d'altération (deux réussites ou deux échecs terminent la bulle).</li><li>État final de la cible.</li></ol><h2>Comportements</h2><ul><li>Langage corporel : queue, oreilles, yeux, pattes.</li><li>Vocalisations : miaulements, ronronnements, gémissements.</li><li>Comportement : chasseur, joueur, territoire, indifférent, peur.</li><li>Expressions d'affection : frottements, câlins, ronronnements, clignements des yeux, offrandes, léchouilles.</li></ul><h2>Tables</h2><p>Les tables de l'écran (événements en ville, réactions humaines, réactions des animaux, surnoms, cartes Folie, pouvoirs temporaires) sont dans le compendium « Tables » : clic droit › Lancer.</p>"
+    "content": "<div class=\"mu-ecran\"><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Le jet</h4><div class=\"mu-panneau-corps\"><p><strong>D100 ≤ attribut</strong> : réussite. La difficulté s'ajoute au dé ; un pouvoir retire 20 au dé.</p><table class=\"mu-mini \"><thead><tr><th>Difficulté</th><th>Au dé</th></tr></thead><tbody><tr><td>Très facile</td><td>−40</td></tr><tr><td>Facile</td><td>−20</td></tr><tr><td>Normal</td><td>0</td></tr><tr><td>Difficile</td><td>+20</td></tr><tr><td>Très difficile</td><td>+40</td></tr></tbody></table></div></section><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Critiques (jet brut)</h4><div class=\"mu-panneau-corps\"><table class=\"mu-mini \"><thead><tr><th>Mode</th><th>Réussite</th><th>Échec</th></tr></thead><tbody><tr><td>Pulp</td><td>01–09</td><td>91–00</td></tr><tr><td>Serious Cat</td><td>01–05</td><td>96–00</td></tr><tr><td>Co-investigation</td><td>01–05</td><td>96–00</td></tr></tbody></table></div><p class=mu-panneau-note>Pulp : un autre joueur peut rattraper un échec critique ; un échec simple peut être retenté (l'échec suivant est flagrant).</p></section><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Pouvoirs</h4><div class=\"mu-panneau-corps\"><ul><li>+20 à l'attribut lié (−20 au dé).</li><li>Perte de PM = <strong>chiffre des unités</strong> du dé ; un 0 ne coûte rien.</li><li>À 0 PM : plus de pouvoir avant un sommeil de 20 h.</li><li>Plusieurs pouvoirs dans une action : un jet et une perte chacun.</li></ul></div></section><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Folie</h4><div class=\"mu-panneau-corps\"><ul><li>Jet de Folie : D100 ≤ PF.</li><li>Échec : une carte Folie, jouée tout de suite ou gardée.</li><li>Fin de scénario : −10 PF par carte non jouée.</li><li>Sous 20 PF : le Chat est injouable.</li></ul></div></section><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Dégâts</h4><div class=\"mu-panneau-corps\"><table class=\"mu-mini mu-deux-col\"><tbody><tr><td>Coup de griffe</td><td>1D4</td></tr><tr><td>Chute</td><td>1D4 par étage (max 6D4)</td></tr><tr><td>Objet tranchant</td><td>1D6</td></tr><tr><td>Pistolet</td><td>1D6+1</td></tr><tr><td>Fusil</td><td>2D6</td></tr><tr><td>Explosion</td><td>4D6</td></tr><tr><td>Feu</td><td>2D6 par tour</td></tr><tr><td>Choc par véhicule</td><td>1D6</td></tr></tbody></table></div></section><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Mort et vies de Chat</h4><div class=\"mu-panneau-corps\"><ul><li>À 0 PV : le Chat meurt, puis Bast le ressuscite à la fin du round.</li><li>Chaque résurrection coûte <strong>une vie de Chat</strong> (3 au départ, 9 avec « Neuf vies »).</li><li>Plus de vie : mort définitive.</li></ul></div></section><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Création d'un Chat</h4><div class=\"mu-panneau-corps\"><ol><li><strong>Surnom</strong></li><li><strong>Attributs</strong> : 50 % chacun ; ajustements +20, +10, +5, −5, −10, −20 (entre 30 et 70 %)</li><li><strong>Race</strong> : bonus et malus, un pouvoir de race</li><li><strong>Deux pouvoirs innés</strong> (+1 avec un handicap à −20 %)</li><li><strong>Calculs</strong> : Santé (tableau), Folie = (PER + CHA) / 2, Magie = INT</li><li><strong>Vies de Chat</strong> : 3</li></ol></div></section><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Points de Santé</h4><div class=\"mu-panneau-corps\"><table class=\"mu-mini mu-deux-col\"><thead><tr><th>PHY + AGI</th><th>PV</th></tr></thead><tbody><tr><td>0–39</td><td>1</td></tr><tr><td>40–59</td><td>2</td></tr><tr><td>60–89</td><td>3</td></tr><tr><td>90–109</td><td>4</td></tr><tr><td>110–119</td><td>5</td></tr><tr><td>120–139</td><td>6</td></tr><tr><td>140+</td><td>7</td></tr></tbody></table></div></section><section class=\"mu-panneau mu-large\"><h4 class=\"mu-panneau-titre\">Progression et XP</h4><div class=\"mu-panneau-corps\"><ul><li>Chaque échec coche une case ; 6 cases cochées : +1D10 à l'attribut.</li><li>Fin de scénario : <strong>2 XP</strong>.</li><li>2 XP : +10 PM ou +1 Santé · 4 XP : pouvoir temporaire permanent ou +1 vie de Chat.</li><li>Santé, Magie et vies reviennent au maximum ; la Folie, non.</li></ul></div></section></div>"
    },
    "video": {
     "controls": true,
@@ -30,10 +30,76 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.1",
+    "systemVersion": "0.6.2",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!J90QJuIkEau9P4Wx.7HFgcNZTtpkwGIPn"
+   "_key": "!journal.pages!J90QJuIkEau9P4Wx.mwOeJ1XuK39xkhjv"
+  },
+  {
+   "_id": "dKWm7JTT2dHWvc5W",
+   "name": "Tables de l'écran",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<div class=\"mu-ecran\"><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Événements en ville (1D10)</h4><div class=\"mu-panneau-corps\"><table class=\"mu-mini \"><thead><tr><th>D10</th><th>Événement</th></tr></thead><tbody><tr><td>1</td><td>Circulation automobile dense</td></tr><tr><td>2</td><td>Animaux errants agressifs</td></tr><tr><td>3</td><td>Déchets dangereux</td></tr><tr><td>4</td><td>Chasseurs de chats</td></tr><tr><td>5</td><td>Pièges à rongeurs empoisonnés</td></tr><tr><td>6</td><td>Bouche d'aération qui expulse de la vapeur</td></tr><tr><td>7</td><td>Personnes hostiles</td></tr><tr><td>8</td><td>Pollution sonore</td></tr><tr><td>9</td><td>Fourrière</td></tr><tr><td>10</td><td>Mauvaises conditions météorologiques</td></tr></tbody></table><p class=\"mu-lancer\">@UUID[Compendium.miaulements-ulthar.tables.RollTable.WcqWNInmYo2yWAa7]{🎲 Ouvrir la table pour la lancer}</p></div></section><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Réactions humaines (1D10)</h4><div class=\"mu-panneau-corps\"><table class=\"mu-mini \"><thead><tr><th>D10</th><th>Réaction</th></tr></thead><tbody><tr><td>1–2</td><td>Ignore le chat</td></tr><tr><td>3</td><td>Caresse le chat</td></tr><tr><td>4</td><td>Joue avec le chat</td></tr><tr><td>5</td><td>Alimente le chat</td></tr><tr><td>6</td><td>Prend le chat dans les bras</td></tr><tr><td>7</td><td>Tente de chasser le chat</td></tr><tr><td>8</td><td>Intimide le chat</td></tr><tr><td>9</td><td>Lance des objets au chat</td></tr><tr><td>10</td><td>Maltraite le chat</td></tr></tbody></table><p class=\"mu-lancer\">@UUID[Compendium.miaulements-ulthar.tables.RollTable.YiNS7egvgMlTkyf9]{🎲 Ouvrir la table pour la lancer}</p></div></section><section class=\"mu-panneau mu-large\"><h4 class=\"mu-panneau-titre\">Réactions des animaux (1D10)</h4><div class=\"mu-panneau-corps\"><table class=\"mu-mini \"><thead><tr><th>D10</th><th>En ville</th><th>À la campagne</th><th>Réaction</th></tr></thead><tbody><tr><td>1</td><td>Chat</td><td>Chat</td><td><em>Ignore</em></td></tr><tr><td>2</td><td>Chat</td><td>Chien</td><td><em>Curieux</em></td></tr><tr><td>3</td><td>Chien</td><td>Rongeur</td><td><em>Amitié</em></td></tr><tr><td>4</td><td>Chien</td><td>Oiseau</td><td><em>Dominant</em></td></tr><tr><td>5</td><td>Rongeur</td><td>Loup / Renard</td><td><em>Fuite</em></td></tr><tr><td>6</td><td>Rongeur</td><td>Chèvre / Mouton</td><td><em>Hostile</em></td></tr><tr><td>7</td><td>Oiseau</td><td>Cochon</td><td><em>Soumission</em></td></tr><tr><td>8</td><td>Oiseau</td><td>Vache / Cheval</td><td><em>Jeu</em></td></tr><tr><td>9</td><td>Insecte</td><td>Insecte</td><td><em>Se cache</em></td></tr><tr><td>10</td><td>Insecte</td><td>Sanglier</td><td><em>Ignore</em></td></tr></tbody></table><p class=\"mu-lancer\">@UUID[Compendium.miaulements-ulthar.tables.RollTable.O3K8tpBnR6cODMBn]{🎲 Ouvrir la table pour la lancer}</p></div></section><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Surnoms (1D21)</h4><div class=\"mu-panneau-corps\"><p class=\"mu-surnoms\">Bella · Luna · Oliver · Charlie · Max · Rosie · Cléo · Milo · Ruby · Daisy · Mimolette · Simba · Felix · Misty · Teddy · Jasper · Nala · Whiskers · Leo · Olive · Willow</p><p class=\"mu-lancer\">@UUID[Compendium.miaulements-ulthar.tables.RollTable.rfYQ6fTUYGckMGZs]{🎲 Ouvrir la table pour la lancer}</p></div></section><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Pouvoirs temporaires (1D100)</h4><div class=\"mu-panneau-corps\"><p>Deux tirages par Chat au début de l'aventure ; doublon : on relance. Macro du Gardien « Début d'aventure » pour tout le groupe.</p><p class=\"mu-lancer\">@UUID[Compendium.miaulements-ulthar.tables.RollTable.oPJ2wvwGwPJWZdDp]{🎲 Ouvrir la table pour la lancer}</p></div></section><section class=\"mu-panneau mu-large\"><h4 class=\"mu-panneau-titre\">Cartes Folie (1D20)</h4><div class=\"mu-panneau-corps\"><ol class='mu-folies'><li>Chasser une ombre inexistante.</li><li>Fixer intensément un mur blanc comme s'il y avait quelque chose.</li><li>Courir frénétiquement d'une pièce à l'autre sans raison apparente.</li><li>Sursauter brusquement en réaction à un son imperceptible pour les autres.</li><li>Se cacher dans des endroits insolites comme des boîtes trop petites.</li><li>Miauler de manière excessive sans aucune provocation.</li><li>Avaler des objets non comestibles, comme des élastiques ou des bouts de plastique.</li><li>Essayer de grimper sur un mur lisse frénétiquement.</li><li>Gratter frénétiquement un objet.</li><li>Se toiletter de manière excessive.</li><li>Se mettre en position de chasse et feindre une attaque contre des objets.</li><li>Fixer longuement son propre reflet dans un miroir.</li><li>Se coucher sur le dos et se comporter comme s'il était mort.</li><li>Agir agressivement envers d'autres chats.</li><li>Courir en rond en poursuivant sa propre queue.</li><li>Attraper et jouer avec des proies imaginaires.</li><li>Refuser catégoriquement de marcher sur certaines surfaces comme les tapis, le carrelage…</li><li>Chercher frénétiquement quelque chose de perdu qui n'existe pas.</li><li>Passer de la joie à la terreur sans raison apparente.</li><li>Communiquer avec des entités invisibles.</li></ol><p class=\"mu-lancer\">@UUID[Compendium.miaulements-ulthar.tables.RollTable.kFYZWVDha6zh9Hcx]{🎲 Ouvrir la table pour la lancer}</p></div></section></div>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 200000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.6.2",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!J90QJuIkEau9P4Wx.dKWm7JTT2dHWvc5W"
+  },
+  {
+   "_id": "0ra66cz9RThDPOLK",
+   "name": "Adversaires et comportements",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<div class=\"mu-ecran\"><section class=\"mu-panneau mu-large\"><h4 class=\"mu-panneau-titre\">Adversaires (écran)</h4><div class=\"mu-panneau-corps\"><table class=\"mu-mini \"><thead><tr><th>Adversaire</th><th>Attaque</th><th>Dégâts</th><th>PV</th></tr></thead><tbody><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.JjIpVhlgH7Itd75u]{Chat}</td><td>50 %</td><td>1d4</td><td>5</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.RrtMXyH22gfslcIl]{Chien}</td><td>60 %</td><td>1d6</td><td>10</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.SymKTCdx0lnfJy22]{Oiseau}</td><td>40 %</td><td>1d4</td><td>4</td></tr><tr><td>Homme</td><td>50 %</td><td>1d6</td><td>10</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.g3YcvEaXWZMbmTd0]{Mafieu}</td><td>60 %</td><td>1d8</td><td>12</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.7PacPju44FimpeAo]{Rat}</td><td>50 %</td><td>1d4</td><td>3</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.i5QjEEnnYqVvubtv]{Serpent}</td><td>60 %</td><td>1d6</td><td>6</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.rDpTwDlKxXNcsSun]{Abhoth}</td><td>60 %</td><td>2d8</td><td>60</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.2lReDsTqzsruoWep]{Chat Saturne}</td><td>70 %</td><td>1d6</td><td>8</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.10qOSGGH9omMO60m]{Goule}</td><td>65 %</td><td>1d8</td><td>13</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.4X4YkpgSa0AhuIFc]{Loup-garou}</td><td>75 %</td><td>2d8+2</td><td>35</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.ULIpetwBZH7nIoo2]{Migo}</td><td>70 %</td><td>1d6</td><td>8</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.8ZtHncK4MvMLmcrZ]{Profond}</td><td>70 %</td><td>2d10</td><td>35</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.qvU0aSFuhgDFcSZZ]{Rhan-Tegoth}</td><td>80 %</td><td>2d10</td><td>70</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.G3ZxV0nhxXaneA9s]{Chien de Tindalos}</td><td>75 %</td><td>2d6+3</td><td>60</td></tr><tr><td>@UUID[Compendium.miaulements-ulthar.bestiaire.Actor.mkaIpfJlFS9nELiV]{Zoog}</td><td>30 %</td><td>1d4</td><td>5</td></tr></tbody></table></div><p class=mu-panneau-note>Clic sur un nom : fiche de l'adversaire dans le bestiaire (à glisser sur la scène). Les valeurs de l'écran peuvent différer un peu du bestiaire.</p></section><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Bulle onirique</h4><div class=\"mu-panneau-corps\"><ol><li><strong>Connexion mentale</strong> : jet de Charisme +20 ; seule étape qui coûte des PM.</li><li><strong>Objectif</strong> défini avec le Gardien.</li><li><strong>Scène initiale</strong> dans l'esprit de la cible.</li><li><strong>Altérations</strong> : deux réussites atteignent l'objectif ; deux échecs font éclater la bulle.</li><li><strong>État final</strong> ; sur un critique, la Contrée du Rêve change vraiment.</li></ol></div></section><section class=\"mu-panneau\"><h4 class=\"mu-panneau-titre\">Comportements félins</h4><div class=\"mu-panneau-corps\"><ul><li><strong>Langage corporel</strong> : queue, oreilles, yeux, pattes.</li><li><strong>Vocalisations</strong> : miaulements, ronronnements, gémissements.</li><li><strong>Comportement</strong> : chasseur, joueur, territoire, indifférent, peur.</li><li><strong>Affection</strong> : frottements, câlins, ronronnements, clignements des yeux, offrandes, léchouilles.</li></ul></div></section><section class=\"mu-panneau mu-large\"><h4 class=\"mu-panneau-titre\">Conseils de table</h4><div class=\"mu-panneau-corps\"><ul><li>Un joueur passif ? Décris ce qui attire son instinct et demande un jet de Folie.</li><li>L'horreur par petites touches : symboles, rats qui fuient, lumières qui vacillent.</li><li>Les Chats ne parlent pas aux humains sans pouvoir : ils observent, écoutent, lisent les pensées.</li></ul></div></section></div>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 300000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.6.2",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!J90QJuIkEau9P4Wx.0ra66cz9RThDPOLK"
   }
  ],
  "folder": null,
@@ -50,7 +116,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.6.1",
+  "systemVersion": "0.6.2",
   "coreVersion": "14.368"
  },
  "_key": "!journal!J90QJuIkEau9P4Wx"
