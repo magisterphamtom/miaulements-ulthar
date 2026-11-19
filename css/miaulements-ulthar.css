@@ -11,15 +11,15 @@
 
 .miaulements-ulthar.sheet .window-content { background: var(--mu-fond); color: var(--mu-texte); }
 .mu-fiche { display: flex; flex-direction: column; gap: 10px; padding: 6px; }
-.mu-fiche h3 { margin: 0 0 4px; color: var(--mu-accent); border-bottom: 1px solid var(--mu-bord); }
-.mu-fiche input, .mu-fiche select, .mu-fiche textarea {
+.mu-fiche h3, .mu-onglet h3 { margin: 0 0 4px; color: var(--mu-accent); border-bottom: 1px solid var(--mu-bord); }
+.mu-fiche input, .mu-fiche select, .mu-fiche textarea, .mu-onglet input, .mu-onglet textarea, .mu-onglet select {
   background: var(--mu-fond2); color: var(--mu-texte); border: 1px solid var(--mu-bord);
 }
-.mu-fiche button {
+.mu-fiche button, .mu-onglet button, .mu-barre-actions button {
   background: var(--mu-fond2); color: var(--mu-texte); border: 1px solid var(--mu-bord); cursor: pointer;
 }
-.mu-fiche button:hover:not(:disabled) { border-color: var(--mu-accent); }
-.mu-fiche button:disabled { opacity: 0.4; cursor: default; }
+.mu-fiche button:hover:not(:disabled), .mu-onglet button:hover:not(:disabled), .mu-barre-actions button:hover { border-color: var(--mu-accent); }
+.mu-fiche button:disabled, .mu-onglet button:disabled { opacity: 0.4; cursor: default; }
 
 .mu-entete { display: flex; gap: 10px; align-items: center; }
 .mu-portrait { width: 96px; height: 96px; object-fit: cover; border: 2px solid var(--mu-bord); border-radius: 50%; }
@@ -169,3 +169,56 @@
 #pause.mu-pause img { animation: mu-respire 3s ease-in-out infinite !important; filter: drop-shadow(0 0 12px rgba(155, 134, 232, 0.6)); }
 #pause.mu-pause figcaption, #pause.mu-pause h3 { font-family: Georgia, serif; letter-spacing: 0.05em; }
 @keyframes mu-respire { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+
+
+/* Fiche de Chat à onglets */
+.miaulements-ulthar.sheet.chat .window-content { display: flex; flex-direction: column; gap: 6px; padding: 6px 8px; overflow: hidden; }
+.mu-barre-actions { display: flex; gap: 6px; align-items: center; flex: 0 0 auto; }
+.mu-barre-actions .mu-nom-barre { flex: 1; font-family: Georgia, serif; font-size: 1.25em; font-weight: bold; color: var(--mu-accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mu-barre-actions button { flex: 0 0 auto; padding: 2px 10px; }
+.mu-onglets { display: flex; flex: 0 0 auto; gap: 2px; border-bottom: 2px solid var(--mu-bord); margin: 0; }
+.mu-onglets .item { flex: 1; text-align: center; padding: 5px 4px; color: var(--mu-texte); opacity: .65; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; cursor: pointer; font-size: .95em; white-space: nowrap; }
+.mu-onglets .item:hover { opacity: 1; }
+.mu-onglets .item.active { opacity: 1; color: var(--mu-accent); background: var(--mu-fond2); border-color: var(--mu-bord); font-weight: bold; }
+.miaulements-ulthar.sheet.chat .mu-onglet { flex: 1 1 auto; overflow-y: auto; min-height: 0; padding-right: 2px; }
+.miaulements-ulthar.sheet.chat .mu-onglet:not(.active) { display: none; }
+.mu-onglet h3 { margin: 10px 0 6px; }
+.mu-onglet-actions { display: flex; gap: 10px; align-items: center; margin-bottom: 4px; }
+.mu-onglet-actions .mu-aide { flex: 1; }
+
+.mu-titre-groupe small { opacity: .6; font-weight: normal; }
+.mu-carte-pouvoir { background: var(--mu-fond2); border: 1px solid var(--mu-bord); border-radius: 6px; margin: 6px 0; }
+.mu-carte-pouvoir header { display: flex; gap: 8px; align-items: center; padding: 6px 8px; border-bottom: 1px solid var(--mu-bord); }
+.mu-carte-pouvoir header img { width: 32px; height: 32px; border: none; border-radius: 4px; }
+.mu-carte-pouvoir-titre { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.mu-carte-pouvoir-titre strong { color: var(--mu-accent); font-size: 1.05em; }
+.mu-etiquettes { display: flex; flex-wrap: wrap; gap: 4px; }
+.mu-etiquettes span { font-size: .78em; padding: 0 6px; border: 1px solid var(--mu-bord); border-radius: 10px; opacity: .85; }
+.mu-carte-pouvoir-boutons { display: flex; gap: 8px; align-items: center; }
+.mu-carte-pouvoir-boutons a { cursor: pointer; opacity: .7; }
+.mu-carte-pouvoir-boutons a:hover { opacity: 1; color: var(--mu-accent); }
+.mu-carte-pouvoir-desc { padding: 4px 10px 6px; font-size: .92em; line-height: 1.35; }
+.mu-carte-pouvoir-desc p { margin: .2em 0; }
+
+.mu-colonnes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.mu-bloc { background: var(--mu-fond2); border: 1px solid var(--mu-bord); border-radius: 6px; padding: 4px 10px 10px; }
+.mu-bloc h3 { margin-top: 6px; }
+.mu-bloc h4 { margin: 10px 0 4px; color: var(--mu-texte); } .mu-bloc h4 small { opacity: .6; font-weight: normal; }
+.mu-jauge-barre { position: relative; height: 20px; background: #0d0b13; border: 1px solid var(--mu-bord); border-radius: 10px; overflow: hidden; margin: 4px 0 8px; }
+.mu-jauge-barre span { position: absolute; inset: 0 auto 0 0; background: #8f6bd6; }
+.mu-jauge-barre.bas span { background: var(--mu-ko); }
+.mu-jauge-barre em { position: relative; font-style: normal; padding-left: 10px; line-height: 18px; color: #fff; text-shadow: 0 1px 2px #000; }
+.mu-alerte { color: var(--mu-ko); font-weight: bold; margin: 0 0 6px; }
+.mu-cartes-folie { list-style: none; margin: 0; padding: 0; }
+.mu-cartes-folie li { display: flex; justify-content: space-between; gap: 6px; align-items: center; padding: 3px 0; border-bottom: 1px dotted var(--mu-bord); }
+.mu-pattes-fiche { font-size: 1.6em; color: var(--mu-accent); display: flex; gap: 6px; flex-wrap: wrap; }
+.mu-pattes-fiche i.perdue { color: #444; }
+.mu-xp input { width: 60px; text-align: center; }
+.mu-achats { display: flex; flex-direction: column; gap: 4px; }
+.mu-fin { width: 100%; margin-top: 10px; }
+.mu-onglet .mu-ligne-t { grid-template-columns: 1.4fr repeat(4, 1fr) .8fr 1fr; }
+.mu-echecs { text-align: center; white-space: nowrap; }
+.mu-echecs button { padding: 0 6px; color: var(--mu-accent); }
+.mu-ligne-handicap { display: flex; gap: 8px; align-items: center; margin-top: 8px; }
+.mu-ligne-handicap input { flex: 1; }
+.mu-notes-onglet textarea { width: 100%; resize: vertical; font-family: Georgia, serif; font-size: 1em; }

@@ -1,7 +1,7 @@
 import { ATTRIBUTS, RACES, CASES_ECHEC, ACHATS_XP, CATEGORIES_POUVOIR, FICHE, SYSTEM_ID } from "./config.mjs";
 import { jetAttribut, jetFolie, monterAttribut } from "./rolls.mjs";
 import { assistantCreation, tirerPouvoirsTemporaires } from "./creation.mjs";
-import { attaquerChat, attaquerPnj, lancerPouvoir } from "./combat.mjs";
+import { attaquerChat, attaquerPnj, lancerPouvoir, attributPourPouvoir, estOnirique } from "./combat.mjs";
 import { finDeScenario } from "./outils.mjs";
 
 const { HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
@@ -54,13 +54,28 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
       creation: FeuilleChat.#creation,
       tirerTemporaires: FeuilleChat.#tirerTemporaires,
       afficherPouvoir: FeuilleChat.#afficherPouvoir,
-      acheter: FeuilleChat.#acheter
+      acheter: FeuilleChat.#acheter,
+      tab: FeuilleChat.#onglet
     }
   };
 
   static PARTS = {
-    corps: { template: `systems/${SYSTEM_ID}/templates/actor-chat.hbs` }
+    entete: { template: `systems/${SYSTEM_ID}/templates/chat/entete.hbs` },
+    onglets: { template: `systems/${SYSTEM_ID}/templates/chat/onglets.hbs` },
+    fiche: { template: `systems/${SYSTEM_ID}/templates/chat/fiche.hbs`, scrollable: [""] },
+    pouvoirs: { template: `systems/${SYSTEM_ID}/templates/chat/pouvoirs.hbs`, scrollable: [""] },
+    suivi: { template: `systems/${SYSTEM_ID}/templates/chat/suivi.hbs`, scrollable: [""] },
+    notes: { template: `systems/${SYSTEM_ID}/templates/chat/notes.hbs` }
   };
+
+  static ONGLETS = [
+    { id: "fiche", label: "Fiche", icon: "fa-solid fa-scroll" },
+    { id: "pouvoirs", label: "Pouvoirs", icon: "fa-solid fa-wand-sparkles" },
+    { id: "suivi", label: "Folie et progression", icon: "fa-solid fa-brain" },
+    { id: "notes", label: "Notes", icon: "fa-solid fa-feather" }
+  ];
+
+  tabGroups = { primary: "fiche" };
 
   get title() {
     return `${this.actor.name} — Chat d'Ulthar`;
@@ -100,7 +115,44 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
     ctx.categories = CATEGORIES_POUVOIR;
     ctx.achats = Object.entries(ACHATS_XP).map(([cle, a]) => ({ cle, ...a, possible: sys.xp >= a.cout }));
     ctx.cartes = sys.cartesFolie.map((texte, index) => ({ texte, index }));
+
+    // Onglets
+    const actif = this.tabGroups.primary ?? "fiche";
+    ctx.tabs = Object.fromEntries(FeuilleChat.ONGLETS.map((t) => [t.id, { ...t, cssClass: t.id === actif ? "active" : "" }]));
+
+    // Onglet « Pouvoirs » : cartes détaillées
+    const TE = foundry.applications?.ux?.TextEditor?.implementation ?? globalThis.TextEditor;
+    const carte = async (p) => ({
+      id: p.id, name: p.name, img: p.img,
+      description: await TE.enrichHTML(p.system.description ?? "", { relativeTo: p }),
+      cout: p.system.gratuit ? "0 PM" : "PM : unités du dé",
+      attribut: ATTRIBUTS[attributPourPouvoir(p)]?.label ?? "",
+      degats: p.system.degats,
+      onirique: estOnirique(p)
+    });
+    const parCat = (cat) => pouvoirs.filter((p) => p.system.categorie === cat);
+    ctx.groupesPouvoirs = [
+      { titre: "Pouvoirs innés", pouvoirs: await Promise.all(parCat("inne").map(carte)) },
+      { titre: "Pouvoir de race", pouvoirs: await Promise.all(parCat("race").map(carte)) },
+      { titre: "Pouvoirs temporaires", pouvoirs: await Promise.all(parCat("temporaire").map(carte)) }
+    ];
+
+    // Onglet « Folie et progression »
+    ctx.foliePct = sys.pf.max > 0 ? Math.max(0, Math.min(100, Math.round((sys.pf.value / sys.pf.max) * 100))) : 0;
+    ctx.folieBasse = sys.pf.value < 20;
+    ctx.pattes = Array.from({ length: Math.max(sys.vies.max, sys.vies.value) }, (_, i) => ({ vive: i < sys.vies.value }));
     return ctx;
+  }
+
+  /** Changement d'onglet : on garde l'onglet choisi d'un rendu à l'autre. */
+  changeTab(tab, group, options) {
+    try { super.changeTab?.(tab, group, options); } catch (err) { /* bascule faite à la main ci-dessous */ }
+    this.tabGroups[group] = tab;
+    this.element?.querySelectorAll(`[data-group="${group}"][data-tab]`).forEach((el) => el.classList.toggle("active", el.dataset.tab === tab));
+  }
+
+  static #onglet(event, target) {
+    this.changeTab(target.dataset.tab, target.dataset.group ?? "primary");
   }
 
   static async #jetAttribut(event, target) {

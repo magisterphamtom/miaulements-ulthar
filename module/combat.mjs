@@ -137,7 +137,11 @@ const ATTRIBUT_PAR_MOT = [
   [/vision|[ée]coute|perception|sens|pr[ée]monition|aubaine|sixi[eè]me|instinct|thermique|magn[ée]tique/i, "per"]
 ];
 
-function attributPourPouvoir(item) {
+export function estOnirique(item) {
+  return ONIRIQUES.test(item.name);
+}
+
+export function attributPourPouvoir(item) {
   if (item.system.attribut) return item.system.attribut;
   return ATTRIBUT_PAR_MOT.find(([re]) => re.test(item.name))?.[1] ?? "int";
 }

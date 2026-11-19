@@ -2,6 +2,10 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Fiche de Chat à onglets (v0.7.0, branche `fonction/fiche-onglets`)
+- Barre fixe en haut (portrait, nom, Création, Attaquer, Folie) et quatre onglets : **Fiche** (la fiche papier), **Pouvoirs** (une carte par pouvoir : description, coût en PM, attribut lié, dégâts, bulle onirique, boutons Lancer / Montrer / Modifier / Supprimer, tirage des pouvoirs temporaires), **Folie et progression** (jauge de Folie, cartes en main, vies de Chat, XP et achats, fin de scénario, tableau des attributs avec base, race, handicap, progrès, échecs et montée), **Notes** (apparence et notes).
+- L'onglet choisi est conservé quand la fiche se redessine. Gabarits dans `templates/chat/`.
+
 ## Écran du Maître de Jeu (v0.6.2, branche `fonction/ecran-gardien`)
 - L'entrée « Écran du MJ » du wiki du Gardien est refaite en trois pages de panneaux, comme l'écran papier : « Jets et règles » (jet, difficulté, critiques par mode, pouvoirs, Folie, dégâts, mort et vies, création, Santé, progression), « Tables de l'écran » (événements en ville, réactions humaines et animales, surnoms, pouvoirs temporaires, 20 cartes Folie, chaque table avec un lien pour la lancer), « Adversaires et comportements » (16 adversaires de l'écran reliés aux fiches du bestiaire, bulle onirique, comportements, conseils de table).
 

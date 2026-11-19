@@ -1,13 +1,4 @@
-<div class="mu-fiche">
-  <section class="mu-actions-creation">
-    <img class="mu-portrait-mini" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="" title="Changer le portrait">
-    <button type="button" data-action="creation">🐾 Création du Chat</button>
-    <button type="button" data-action="tirerTemporaires">💧 Tirer les pouvoirs temporaires</button>
-    <button type="button" data-action="attaquer">⚔ Attaquer</button>
-    <button type="button" data-action="jetFolie">🎲 Jet de Folie</button>
-  </section>
-
-  {{!-- La fiche papier officielle : tous les champs sont posés sur l'image. --}}
+<section class="tab mu-onglet {{tabs.fiche.cssClass}}" data-group="primary" data-tab="fiche">
   <div class="mu-page">
     <img class="mu-fond" src="{{fiche.image}}" alt="">
 
@@ -53,45 +44,4 @@
       </ul>
     </div>
   </div>
-
-  <details class="mu-details">
-    <summary>Détail des attributs (base, race, handicap, progrès)</summary>
-    <div class="mu-tableau">
-      <div class="mu-ligne-t mu-entete-t"><span></span><span>Base</span><span>Race</span><span>Handicap</span><span>Progrès</span><span>Total</span></div>
-      {{#each attributs}}
-      <div class="mu-ligne-t">
-        <span>{{label}}</span>
-        <input type="number" name="system.attributs.{{cle}}.base" value="{{base}}">
-        <input type="number" name="system.attributs.{{cle}}.race" value="{{race}}">
-        <input type="number" name="system.attributs.{{cle}}.handicap" value="{{handicap}}">
-        <input type="number" name="system.attributs.{{cle}}.progres" value="{{progres}}">
-        <strong>{{value}} %</strong>
-      </div>
-      {{/each}}
-    </div>
-    <label class="mu-ligne-t"><span>Handicap</span><input type="text" name="system.handicap" value="{{system.handicap}}" placeholder="optionnel"></label>
-  </details>
-
-  <section class="mu-jauges">
-    <div class="mu-jauge"><span>XP</span>
-      {{#each achats}}<button type="button" data-action="acheter" data-achat="{{cle}}" {{#unless possible}}disabled{{/unless}} title="{{cout}} XP">{{label}} ({{cout}} XP)</button>{{/each}}</div>
-  </section>
-
-  <section class="mu-folie">
-    <h3>Cartes Folie en main</h3>
-    <ul>
-      {{#each cartes}}
-      <li>🃏 {{texte}} <button type="button" data-action="jouerCarte" data-index="{{index}}">Jouer</button></li>
-      {{else}}<li class="mu-aide">Aucune.</li>{{/each}}
-    </ul>
-  </section>
-
-  <section class="mu-notes">
-    <h3>Notes</h3>
-    <textarea name="system.notes" rows="4" placeholder="Notes">{{system.notes}}</textarea>
-  </section>
-
-  <footer class="mu-pied">
-    <button type="button" data-action="finScenario">Fin de scénario</button>
-  </footer>
-</div>
+</section>

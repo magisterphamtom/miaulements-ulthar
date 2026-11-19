@@ -1,0 +1,41 @@
+<section class="tab mu-onglet mu-suivi-onglet {{tabs.suivi.cssClass}}" data-group="primary" data-tab="suivi">
+  <div class="mu-colonnes">
+    <div class="mu-bloc">
+      <h3>Folie</h3>
+      <div class="mu-jauge-barre {{#if folieBasse}}bas{{/if}}"><span style="width:{{foliePct}}%"></span><em>{{system.pf.value}} / {{system.pf.max}} PF</em></div>
+      {{#if folieBasse}}<p class="mu-alerte">Folie sous 20 : le Chat devient injouable.</p>{{/if}}
+      <button type="button" data-action="jetFolie">🎲 Jet de Folie</button>
+      <h4>Cartes Folie en main <small>(−10 PF chacune en fin de scénario)</small></h4>
+      <ul class="mu-cartes-folie">
+        {{#each cartes}}<li><span>🃏 {{texte}}</span> <button type="button" data-action="jouerCarte" data-index="{{index}}">Jouer</button></li>
+        {{else}}<li class="mu-aide">Aucune.</li>{{/each}}
+      </ul>
+    </div>
+    <div class="mu-bloc">
+      <h3>Vies de Chat</h3>
+      <div class="mu-pattes-fiche">{{#each pattes}}<i class="fa-solid fa-paw {{#unless vive}}perdue{{/unless}}"></i>{{/each}}</div>
+      <p class="mu-aide">{{system.vies.value}} / {{system.vies.max}} — à 0 PV, Bast ressuscite le Chat contre une vie.</p>
+      <h3>Expérience</h3>
+      <p class="mu-xp"><label>XP <input type="number" name="system.xp" value="{{system.xp}}"></label></p>
+      <div class="mu-achats">{{#each achats}}<button type="button" data-action="acheter" data-achat="{{cle}}" {{#unless possible}}disabled{{/unless}}>{{label}} <small>({{cout}} XP)</small></button>{{/each}}</div>
+      <p class="mu-aide">4 XP : un pouvoir temporaire devient permanent (passer sa catégorie à « inné » dans sa fiche).</p>
+      <button type="button" class="mu-fin" data-action="finScenario">Fin de scénario</button>
+    </div>
+  </div>
+  <h3>Attributs et progression</h3>
+  <div class="mu-tableau">
+    <div class="mu-ligne-t mu-entete-t"><span></span><span>Base</span><span>Race</span><span>Handicap</span><span>Progrès</span><span>Total</span><span>Échecs</span></div>
+    {{#each attributs}}
+    <div class="mu-ligne-t">
+      <span>{{label}}</span>
+      <input type="number" name="system.attributs.{{cle}}.base" value="{{base}}">
+      <input type="number" name="system.attributs.{{cle}}.race" value="{{race}}">
+      <input type="number" name="system.attributs.{{cle}}.handicap" value="{{handicap}}">
+      <input type="number" name="system.attributs.{{cle}}.progres" value="{{progres}}">
+      <strong>{{value}} %</strong>
+      <span class="mu-echecs">{{echecs}} / 6 {{#if peutMonter}}<button type="button" data-action="monterAttribut" data-attribut="{{cle}}" title="+1D10">⬆</button>{{/if}}</span>
+    </div>
+    {{/each}}
+  </div>
+  <label class="mu-ligne-handicap"><span>Handicap</span><input type="text" name="system.handicap" value="{{system.handicap}}" placeholder="optionnel (−20 % sur l'attribut associé)"></label>
+</section>

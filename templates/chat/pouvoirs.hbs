@@ -1,0 +1,27 @@
+<section class="tab mu-onglet mu-pouvoirs-onglet {{tabs.pouvoirs.cssClass}}" data-group="primary" data-tab="pouvoirs">
+  <div class="mu-onglet-actions">
+    <button type="button" data-action="tirerTemporaires">💧 Tirer les pouvoirs temporaires</button>
+    <span class="mu-aide">Magie : <strong>{{system.pm.value}} / {{system.pm.max}}</strong> PM · à l'usage, +20 à l'attribut et perte de PM = chiffre des unités du dé.</span>
+  </div>
+  {{#each groupesPouvoirs}}
+  <h3 class="mu-titre-groupe">{{titre}} <small>({{pouvoirs.length}})</small></h3>
+  {{#each pouvoirs}}
+  <article class="mu-carte-pouvoir">
+    <header>
+      <img src="{{img}}" alt="">
+      <div class="mu-carte-pouvoir-titre"><strong>{{name}}</strong>
+        <span class="mu-etiquettes"><span>{{cout}}</span>{{#if attribut}}<span>{{attribut}} +20</span>{{/if}}{{#if degats}}<span>{{degats}}</span>{{/if}}{{#if onirique}}<span>bulle onirique</span>{{/if}}</span></div>
+      <div class="mu-carte-pouvoir-boutons">
+        <button type="button" data-action="lancerPouvoir" data-item-id="{{id}}" title="Lancer le pouvoir">✦ Lancer</button>
+        <a data-action="afficherPouvoir" data-item-id="{{id}}" title="Montrer à la table"><i class="fa-solid fa-comment"></i></a>
+        <a data-action="ouvrirItem" data-item-id="{{id}}" title="Modifier"><i class="fa-solid fa-pen"></i></a>
+        <a data-action="supprimerItem" data-item-id="{{id}}" title="Supprimer"><i class="fa-solid fa-trash"></i></a>
+      </div>
+    </header>
+    <div class="mu-carte-pouvoir-desc">{{{description}}}</div>
+  </article>
+  {{else}}<p class="mu-aide">Aucun.</p>
+  {{/each}}
+  {{/each}}
+  <p class="mu-aide">Astuce : glisser un pouvoir depuis le compendium « Pouvoirs » sur la fiche pour l'ajouter.</p>
+</section>
