@@ -53,7 +53,7 @@ export function enregistrerParametresThemes() {
   game.settings.register(SYSTEM_ID, "styleOnglets", {
     name: "Style des onglets de la fiche",
     hint: "Apparence des onglets sur le côté droit de la fiche de Chat (pour vous seul).",
-    scope: "user", config: true, type: String, choices: STYLES_ONGLETS, default: "arbre",
+    scope: "user", config: true, type: String, choices: STYLES_ONGLETS, default: "oreilles",
     onChange: () => { for (const app of foundry.applications.instances.values()) if (app instanceof FeuilleChat) app.render(); }
   });
   game.settings.register(SYSTEM_ID, "themeFiche", {
@@ -62,11 +62,11 @@ export function enregistrerParametresThemes() {
 }
 
 /** Style des onglets sur le côté (à choisir parmi les propositions). */
-export const STYLES_ONGLETS = { arbre: "Arbre à chat", griffoir: "Griffoir", oreilles: "Marque-pages oreilles", gamelles: "Gamelles" };
+export const STYLES_ONGLETS = { oreilles: "Marque-pages oreilles de chat", arbre: "Arbre à chat", griffoir: "Griffoir", gamelles: "Gamelles" };
 function styleOnglets() {
   let s = "";
   try { s = game.settings.get(SYSTEM_ID, "styleOnglets"); } catch (err) { /* réglage absent */ }
-  return STYLES_ONGLETS[s] ? s : "arbre";
+  return STYLES_ONGLETS[s] ? s : "oreilles";
 }
 
 function themeChoisi() {

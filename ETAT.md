@@ -8,7 +8,7 @@ Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne 
 - Nouvel onglet **Création** : explication des étapes, boutons « Lancer l'assistant de création », « Tirer les pouvoirs temporaires », « Voir les Chats prétirés », récapitulatif de la race (bonus, malus, pouvoir de race) et des attributs.
 - **Attaquer** et **Jet de Folie** passent dans une barre en bas de la fiche.
 - Le menu des thèmes est dans la barre de titre de la fenêtre, à côté du bouton « ⋮ ».
-- Quatre styles d'onglets proposés (réglage « Style des onglets de la fiche », propre à chaque joueur) : Arbre à chat (défaut), Griffoir, Marque-pages oreilles de chat, Gamelles.
+- Quatre styles d'onglets proposés (réglage « Style des onglets de la fiche », propre à chaque joueur) : Marque-pages oreilles de chat (défaut depuis la 0.9.1, branche `fonction/onglets-oreilles`), Arbre à chat, Griffoir, Gamelles.
 
 ## Thèmes de la fiche (v0.8.0, branche `fonction/themes-fiche`)
 - Menu déroulant 🎨 dans la barre du haut de la fiche de Chat : quatre thèmes repris des maquettes du wiki pour le contenu des onglets — **Nuit d'Arkham** (nuit violette et or, défaut), **Grimoire d'Ulthar** (parchemin, encre brune, rouge), **Contrée du Rêve** (lavande et violet), **Journal d'Arkham, 1921** (papier journal, encre noire, comme le wiki).
