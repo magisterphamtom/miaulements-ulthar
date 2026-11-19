@@ -6,6 +6,7 @@ import { brancherCartes, ecouterSocket } from "./combat.mjs";
 import { api } from "./outils.mjs";
 import { SuiviGroupe, brancherAmbiance, ajouterBoutons } from "./ambiance.mjs";
 import { enregistrerParametresWiki, enregistrerHooksWiki, ouvrirWiki } from "./wiki.mjs";
+import { enregistrerParametresAccueil, enregistrerHooksAccueil } from "./accueil.mjs";
 
 Hooks.once("init", () => {
   console.log(`${SYSTEM_ID} | initialisation`);
@@ -57,6 +58,7 @@ Hooks.once("init", () => {
   });
 
   enregistrerParametresWiki();
+  enregistrerParametresAccueil();
 
   game.settings.register(SYSTEM_ID, "visionFeline", { scope: "client", config: false, type: Boolean, default: false });
 
@@ -75,6 +77,7 @@ Hooks.on("renderChatMessageHTML", (message, html) => brancherCartes(message, htm
 Hooks.on("getSceneControlButtons", (controls) => ajouterBoutons(controls));
 
 enregistrerHooksWiki();
+enregistrerHooksAccueil();
 
 Hooks.once("ready", async () => {
   ecouterSocket();

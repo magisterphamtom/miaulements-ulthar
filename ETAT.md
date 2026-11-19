@@ -2,6 +2,10 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Accueil et pause (v0.5.0)
+- Image d'accueil `assets/images/accueil_foundry.webp` : fond de la tuile du système sur l'écran de configuration de Foundry (`media` type setup), fond par défaut des mondes créés avec le système (`background`), et scène « Accueil » (compendium Scènes) importée et activée une fois par monde par le Gardien (si aucune scène n'est déjà active).
+- Pause : patte de chat au lieu de l'horloge, au choix dans les réglages (patte noire à l'œil par défaut, patte violette, médaillon doré, cercle d'empreintes, ou horloge d'origine), légende « Le Chat fait la sieste… ». Les mondes déjà créés gardent leur fond : il se change dans « Modifier le monde ».
+
 ## Wikis (v0.4.2)
 - Ouverture automatique **à chaque lancement du jeu** par défaut (réglage client : à chaque lancement / première connexion / jamais) : le Gardien voit s'ouvrir le wiki du Gardien, chaque joueur le wiki des joueurs quand il arrive dans le jeu. Même principe que Brindlewood Bay, Tindalos et Night Prowler (`module/wiki.mjs`) : ouverture 0,6 s après `ready`, drapeau d'utilisateur `wikiVu` pour le mode « première connexion ».
 - Boutons « 📖 Wiki du Gardien » (Gardien seulement) et « 📖 Wiki des joueurs » en haut des onglets Acteurs et Journaux. Macro ou console : `game.miaulementsUlthar.wiki("joueur")`.

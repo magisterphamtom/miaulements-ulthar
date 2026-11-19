@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.4.1", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.5.0", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -416,6 +416,18 @@ def construire_macros():
                       "ownership": {"default": 0}, "flags": {}, "_stats": STATS, "_key": f"!macros!{mid}"})
     print("macros :", len(macros))
 
+def construire_scenes():
+    pack = "scenes"
+    sid = ident(pack, "Scene", "Accueil")
+    img = f"systems/{SYS}/assets/images/accueil_foundry.webp"
+    ecrire(pack, {"_id": sid, "name": "Accueil — Les Miaulements d'Ulthar", "active": False, "navigation": True, "navOrder": 0, "navName": "Accueil",
+        "background": {"src": img, "fit": "fill"}, "width": 2335, "height": 851, "padding": 0, "backgroundColor": "#0b0a10",
+        "grid": {"type": 0, "size": 100, "distance": 1, "units": "m"}, "tokenVision": False, "fog": {"exploration": False},
+        "environment": {"globalLight": {"enabled": True}}, "initial": None, "thumb": img,
+        "tokens": [], "lights": [], "notes": [], "sounds": [], "templates": [], "tiles": [], "walls": [], "drawings": [], "regions": [],
+        "folder": None, "sort": 0, "ownership": {"default": 0}, "flags": {SYS: {"accueil": True}}, "_stats": STATS, "_key": f"!scenes!{sid}"})
+    print("scènes : 1")
+
 if __name__ == "__main__":
     if os.path.isdir(SORTIE): shutil.rmtree(SORTIE)
     construire_pouvoirs()
@@ -425,3 +437,4 @@ if __name__ == "__main__":
     construire_wikis(best)
     construire_scenarios()
     construire_macros()
+    construire_scenes()

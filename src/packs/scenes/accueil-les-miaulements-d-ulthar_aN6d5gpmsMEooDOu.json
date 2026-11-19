@@ -1,0 +1,60 @@
+{
+ "_id": "aN6d5gpmsMEooDOu",
+ "name": "Accueil — Les Miaulements d'Ulthar",
+ "active": false,
+ "navigation": true,
+ "navOrder": 0,
+ "navName": "Accueil",
+ "background": {
+  "src": "systems/miaulements-ulthar/assets/images/accueil_foundry.webp",
+  "fit": "fill"
+ },
+ "width": 2335,
+ "height": 851,
+ "padding": 0,
+ "backgroundColor": "#0b0a10",
+ "grid": {
+  "type": 0,
+  "size": 100,
+  "distance": 1,
+  "units": "m"
+ },
+ "tokenVision": false,
+ "fog": {
+  "exploration": false
+ },
+ "environment": {
+  "globalLight": {
+   "enabled": true
+  }
+ },
+ "initial": null,
+ "thumb": "systems/miaulements-ulthar/assets/images/accueil_foundry.webp",
+ "tokens": [],
+ "lights": [],
+ "notes": [],
+ "sounds": [],
+ "templates": [],
+ "tiles": [],
+ "walls": [],
+ "drawings": [],
+ "regions": [],
+ "folder": null,
+ "sort": 0,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "miaulements-ulthar": {
+   "accueil": true
+  }
+ },
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.5.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!scenes!aN6d5gpmsMEooDOu"
+}

@@ -164,3 +164,8 @@
 .mu-boutons-wiki { display: flex; gap: 4px; width: 100%; margin-top: 4px; }
 .mu-boutons-wiki .mu-bouton-wiki { flex: 1; background: #221d2b; color: #e8e2f0; border: 1px solid #6b5b8a; border-radius: 4px; padding: 2px 6px; font-size: 0.85em; white-space: nowrap; }
 .mu-boutons-wiki .mu-bouton-wiki:hover { border-color: #d9b34a; }
+
+/* Pause : patte de chat qui « respire » doucement au lieu de l'horloge qui tourne (animation transform, peu coûteuse) */
+#pause.mu-pause img { animation: mu-respire 3s ease-in-out infinite !important; filter: drop-shadow(0 0 12px rgba(155, 134, 232, 0.6)); }
+#pause.mu-pause figcaption, #pause.mu-pause h3 { font-family: Georgia, serif; letter-spacing: 0.05em; }
+@keyframes mu-respire { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.08); } }

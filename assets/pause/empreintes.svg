@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs><g id="p"><path d="M0 4c-8 0-14 6-14 12 0 5 4 7 8 6 3-.5 4-2 6-2s3 1.5 6 2c4 1 8-1 8-6 0-6-6-12-14-12z"/>
+<ellipse cx="-12" cy="-2" rx="4" ry="5.5"/><ellipse cx="-4.5" cy="-9" rx="4.2" ry="6"/><ellipse cx="4.5" cy="-9" rx="4.2" ry="6"/><ellipse cx="12" cy="-2" rx="4" ry="5.5"/></g></defs>
+<g fill="#b9a6f2">
+<use href="#p" transform="translate(100 22) rotate(90)" opacity="1"/>
+<use href="#p" transform="translate(155 45) rotate(135)" opacity=".9"/>
+<use href="#p" transform="translate(178 100) rotate(180)" opacity=".8"/>
+<use href="#p" transform="translate(155 155) rotate(225)" opacity=".7"/>
+<use href="#p" transform="translate(100 178) rotate(270)" opacity=".6"/>
+<use href="#p" transform="translate(45 155) rotate(315)" opacity=".5"/>
+<use href="#p" transform="translate(22 100) rotate(0)" opacity=".4"/>
+<use href="#p" transform="translate(45 45) rotate(45)" opacity=".3"/></g>
+<g fill="#e8e2f0"><use href="#p" transform="translate(100 100) scale(2.6)"/></g></svg>
