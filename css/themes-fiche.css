@@ -111,7 +111,7 @@
 /* ================= Styles des onglets « chat » (côté droit) ================= */
 
 /* 1. Arbre à chat : un poteau de sisal, chaque onglet est une plateforme coussinée */
-nav.mu-style-arbre { background: repeating-linear-gradient(170deg, #c9a46a 0 3px, #a77e46 3px 6px) 50% 0 / 14px 100% no-repeat; padding-right: 8px; }
+nav.mu-style-arbre { background: repeating-linear-gradient(170deg, #c9a46a 0 3px, #a77e46 3px 6px) 50% 0 / 14px 100% no-repeat; padding-left: 8px; }
 .mu-style-arbre .item { background: var(--mu-fond2); border: 2px solid var(--mu-bord); border-radius: 20px; box-shadow: 0 4px 0 var(--mu-bord), 0 6px 8px rgba(0, 0, 0, .25); }
 .mu-style-arbre .item.active { background: var(--mu-accent); color: var(--mu-fond); border-color: var(--mu-accent); box-shadow: 0 4px 0 color-mix(in srgb, var(--mu-accent) 60%, #000), 0 6px 10px rgba(0, 0, 0, .3); font-weight: bold; }
 .mu-style-arbre .item.active::after { content: "\f1b0"; font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free"; font-weight: 900; position: absolute; top: -9px; right: -2px; font-size: 14px; color: var(--mu-accent); text-shadow: 0 0 2px var(--mu-fond); }
@@ -119,14 +119,14 @@ nav.mu-style-arbre { background: repeating-linear-gradient(170deg, #c9a46a 0 3px
 /* 2. Griffoir : des blocs de corde de sisal, l'onglet actif porte trois griffures */
 .mu-style-griffoir .item { background: repeating-linear-gradient(-32deg, #d7b77f 0 4px, #b28a52 4px 7px); color: #3a2810; border: 2px solid #7d5a2c; border-radius: 4px; box-shadow: inset 0 0 6px rgba(60, 35, 10, .35); }
 .mu-style-griffoir .mu-libelle { background: var(--mu-fond2); color: var(--mu-texte); padding: 1px 5px; border-radius: 3px; border: 1px solid #7d5a2c; }
-.mu-style-griffoir .item.active { transform: translateX(-8px); border-color: var(--mu-accent); box-shadow: 0 0 0 2px var(--mu-accent), inset 0 0 6px rgba(60, 35, 10, .35); }
+.mu-style-griffoir .item.active { transform: translateX(8px); border-color: var(--mu-accent); box-shadow: 0 0 0 2px var(--mu-accent), inset 0 0 6px rgba(60, 35, 10, .35); }
 .mu-style-griffoir .item.active::after { content: ""; position: absolute; top: 6px; right: 6px; width: 18px; height: 22px; background: linear-gradient(105deg, transparent 20%, #5a1a10 20% 28%, transparent 28% 45%, #5a1a10 45% 53%, transparent 53% 70%, #5a1a10 70% 78%, transparent 78%); opacity: .8; }
 
 /* 3. Marque-pages oreilles de chat : des signets qui sortent de la page, deux oreilles en haut */
-nav.mu-style-oreilles { gap: 20px; padding-top: 16px; padding-right: 0; }
-.mu-style-oreilles .item { background: var(--mu-fond2); border: 2px solid var(--mu-bord); border-left: none; border-radius: 0 10px 10px 0; margin-left: -2px; padding-top: 10px; }
+nav.mu-style-oreilles { gap: 22px; padding-top: 18px; width: 96px; }
+.mu-style-oreilles .item { background: var(--mu-fond2); border: 2px solid var(--mu-bord); border-left: none; border-radius: 0 12px 12px 0; margin-right: 8px; padding: 10px 6px 8px 4px; }
 .mu-style-oreilles .item::before { content: ""; position: absolute; left: 10%; right: 10%; top: -14px; height: 14px; background: var(--mu-bord); clip-path: polygon(0 100%, 18% 0, 40% 100%, 60% 100%, 82% 0, 100% 100%); }
-.mu-style-oreilles .item.active { background: var(--mu-accent); color: var(--mu-fond); border-color: var(--mu-accent); margin-left: -14px; font-weight: bold; }
+.mu-style-oreilles .item.active { background: var(--mu-accent); color: var(--mu-fond); border-color: var(--mu-accent); margin-right: 0; font-weight: bold; }
 .mu-style-oreilles .item.active::before { background: var(--mu-accent); }
 
 /* 4. Gamelles : chaque onglet est une gamelle ronde, l'active est remplie */
@@ -138,3 +138,4 @@ nav.mu-style-oreilles { gap: 20px; padding-top: 16px; padding-right: 0; }
 .mu-style-gamelles .item.active .mu-icone { color: var(--mu-fond); }
 .mu-style-gamelles .item.active .mu-libelle { color: var(--mu-accent); font-weight: bold; }
 .mu-theme-nuit .mu-onglet h3::before { color: var(--mu-accent); }
+.mu-style-gamelles .mu-libelle { background: var(--mu-fond2); border: 1px solid var(--mu-bord); border-radius: 8px; padding: 0 5px; }

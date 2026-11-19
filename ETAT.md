@@ -2,6 +2,11 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Onglets à l'extérieur de la fiche (v0.10.0, branche `fonction/onglets-exterieurs`)
+- Les onglets ne prennent plus de place dans la fiche : ils dépassent du bord droit de la fenêtre, comme de vrais marque-pages (style oreilles de chat par défaut), et suivent la fenêtre quand on la déplace ; ils disparaissent quand la fenêtre est réduite.
+- Le contenu récupère toute la largeur ; largeur de la fenêtre ramenée à 760 px.
+- Idée reprise de Zombiology (étiquettes collées au bord droit), en version sortie de la fenêtre.
+
 ## Correction des champs en double (v0.9.2, branche `correction/champs-doubles`)
 - L'XP (page papier et onglet Folie et progression) et l'apparence (page papier et onglet Notes) avaient deux champs du même nom : Foundry refusait l'enregistrement (« xp: must be a number »). Les champs des onglets s'enregistrent désormais eux-mêmes.
 

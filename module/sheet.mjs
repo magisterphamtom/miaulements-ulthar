@@ -80,7 +80,7 @@ function themeChoisi() {
 export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
     classes: ["miaulements-ulthar", "sheet", "actor", "chat"],
-    position: { width: 820, height: 920 },
+    position: { width: 760, height: 920 },
     window: { resizable: true },
     form: { submitOnChange: true },
     actions: {

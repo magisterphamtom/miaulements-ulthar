@@ -173,10 +173,12 @@
 
 /* Fiche de Chat : en-tête, contenu + onglets sur le côté droit, pied (grille) */
 .miaulements-ulthar.sheet.chat .window-content {
-  display: grid; grid-template-columns: minmax(0, 1fr) 108px; grid-template-rows: auto minmax(0, 1fr) auto;
-  grid-template-areas: "entete entete" "contenu nav" "pied pied"; gap: 8px 0; padding: 0; overflow: hidden;
+  display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-areas: "entete" "contenu" "pied"; gap: 8px 0; padding: 0; overflow: hidden; position: static;
 }
-.mu-entete-chat { grid-area: entete; display: flex; gap: 18px; align-items: center; padding: 12px 18px 12px; border-bottom: 2px solid var(--mu-bord); }
+/* Les onglets dépassent de la fenêtre, sur son bord droit : la fenêtre ne doit pas les rogner */
+.miaulements-ulthar.sheet.chat:not(.minimized) { overflow: visible; }
+.mu-entete-chat { grid-area: entete; display: flex; gap: 18px; align-items: center; padding: 12px 18px 12px; overflow: hidden; border-bottom: 2px solid var(--mu-bord); }
 .mu-grand-portrait { flex: 0 0 128px; width: 128px; height: 128px; border-radius: 50%; border: 3px solid var(--mu-accent); object-fit: cover; box-shadow: 0 3px 10px rgba(0, 0, 0, .45); cursor: pointer; }
 .mu-entete-infos { flex: 1; min-width: 0; }
 .mu-entete-nom { font-family: var(--mu-nom, Georgia, serif); font-size: 2.5em; line-height: 1.05; color: var(--mu-accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -186,7 +188,7 @@
 .mu-entete-jauges span i { color: var(--mu-accent); margin-right: 3px; }
 .mu-entete-jauges span small { opacity: .6; font-weight: normal; }
 .mu-entete-jauges span.bas { color: var(--mu-ko); border-color: var(--mu-ko); }
-.miaulements-ulthar.sheet.chat .mu-onglet { grid-area: contenu; overflow-y: auto; min-height: 0; padding: 0 12px 4px 16px; }
+.miaulements-ulthar.sheet.chat .mu-onglet { grid-area: contenu; overflow-y: auto; min-height: 0; padding: 0 16px 4px 16px; }
 .miaulements-ulthar.sheet.chat .mu-onglet:not(.active) { display: none; }
 .mu-pied { grid-area: pied; display: flex; gap: 12px; justify-content: center; padding: 8px 16px 10px; border-top: 2px solid var(--mu-bord); }
 .miaulements-ulthar.sheet.chat .mu-pied button { flex: 0 1 240px; padding: 6px 12px; font-size: 1.1em; background: var(--mu-fond2); color: var(--mu-texte); border: 2px solid var(--mu-bord); border-radius: 8px; cursor: pointer; font-family: var(--mu-onglet-police, inherit); }
@@ -194,9 +196,11 @@
 .mu-pied button i { color: var(--mu-accent); }
 
 /* Onglets sur le côté droit (structure commune ; les styles « chat » sont dans themes-fiche.css) */
-nav.mu-onglets-cote { grid-area: nav; display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 6px 10px 6px 0; border: none; overflow-y: auto; overflow-x: hidden; }
+nav.mu-onglets-cote { position: absolute; left: 100%; top: 176px; z-index: 1; width: 104px; display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 6px 0; border: none; overflow: visible; }
+.miaulements-ulthar.sheet.chat.minimized nav.mu-onglets-cote { display: none; }
 nav.mu-onglets-cote .item { position: relative; flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 8px 4px 7px; text-align: center; cursor: pointer; color: var(--mu-texte); font-size: .8em; line-height: 1.1; white-space: normal; opacity: 1; transition: transform .15s; }
-nav.mu-onglets-cote .item:hover { transform: translateX(-2px); }
+nav.mu-onglets-cote .item:hover { transform: translateX(3px); }
+nav.mu-onglets-cote .item { box-shadow: 4px 3px 8px rgba(0, 0, 0, .35); }
 nav.mu-onglets-cote .mu-icone { width: 36px; height: 36px; background: currentColor; -webkit-mask: center / contain no-repeat; mask: center / contain no-repeat; }
 .mu-icone-panier { -webkit-mask-image: url("../assets/onglets/panier.svg") !important; mask-image: url("../assets/onglets/panier.svg") !important; }
 .mu-icone-arbre { -webkit-mask-image: url("../assets/onglets/arbre.svg") !important; mask-image: url("../assets/onglets/arbre.svg") !important; }
