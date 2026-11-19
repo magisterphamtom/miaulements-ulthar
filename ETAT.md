@@ -2,6 +2,12 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Wiki des joueurs remis en forme (v0.11.0, branche `correction/wiki-joueur`)
+- **Création des personnages** réécrite à la main d'après le livre (p. 13-22) : la colonne d'exemple (Mimolette) n'est plus mélangée aux règles ; une page par étape, surnoms et attributs en tableaux, exemple suivi en encadrés, Mimolette terminée en fin de chapitre (PF corrigés : 55, le livre se trompe de Charisme).
+- **Système de jeu** : « Test de compétence » et « Bonus et malus » réécrits (exemple remis à sa place, page en double supprimée, tableau des difficultés) ; exemple de création égaré retiré de « Gestion de la folie » ; liste des 20 cartes Folie ajoutée sous « Gestion de la peur » ; fin d'exemple recollée dans « Utilisation des pouvoirs mystiques » ; dégâts courants en tableau ; liste incomplète des pouvoirs temporaires remplacée par la table D100 complète ; débris de fiche retirés.
+- **Jouer un Chat** : page en double supprimée, note sur l'agilité remise à sa place. **Bien débuter** : liste du matériel en puces.
+- Partout : listes à puces, notes encadrées, définitions en liste (« Libellé : … »), plus d'espace entre paragraphes, titres et encadrés. Outils : `tools/wiki_joueur_retouches.py`, `tools/wiki-joueur/*.html`.
+
 ## Onglets à l'extérieur de la fiche (v0.10.0, branche `fonction/onglets-exterieurs`)
 - Les onglets ne prennent plus de place dans la fiche : ils dépassent du bord droit de la fenêtre, comme de vrais marque-pages (style oreilles de chat par défaut), et suivent la fenêtre quand on la déplace ; ils disparaissent quand la fenêtre est réduite.
 - Le contenu récupère toute la largeur ; largeur de la fenêtre ramenée à 760 px.

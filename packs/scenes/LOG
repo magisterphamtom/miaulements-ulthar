@@ -1,5 +1,3 @@
-2026/11/19-13:17:52.472372 7fd20ebfd6c0 Delete type=3 #1
-2026/11/19-13:17:52.473245 7fd20dbfb6c0 Level-0 table #5: started
-2026/11/19-13:17:52.473599 7fd20dbfb6c0 Level-0 table #5: 835 bytes OK
-2026/11/19-13:17:52.473868 7fd20dbfb6c0 Delete type=0 #3
-2026/11/19-13:17:52.473932 7fd20dbfb6c0 Manual compaction at level-0 from '!scenes!aN6d5gpmsMEooDOu' @ 72057594037927935 : 1 .. '!scenes!aN6d5gpmsMEooDOu' @ 0 : 0; will stop at (end)
+2026/11/19-14:50:22.066868 7f69923fd6c0 Recovering log #4
+2026/11/19-14:50:22.068428 7f69923fd6c0 Delete type=3 #2
+2026/11/19-14:50:22.069407 7f69923fd6c0 Delete type=0 #4

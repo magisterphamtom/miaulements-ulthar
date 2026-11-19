@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.6.2", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.11.0", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -553,6 +553,12 @@ def construire_wikis(bestiaire):
     nouv = charger("nouvelle")
     pj["Lecture : la nouvelle des Chats d'Ulthar"] = page_blocs("nouvelle", 1, 2, "Les Chats d'Ulthar")
     pj["Aide-mémoire du joueur"] = [("Aide-mémoire", aide_memoire_joueur())]
+    # Retouches (v0.11.0) : chapitre Création remis en forme à la main, pages abîmées corrigées, listes et notes
+    import importlib.util as _u
+    _spec = _u.spec_from_file_location("wiki_joueur_retouches", os.path.join(os.path.dirname(os.path.abspath(__file__)), "wiki_joueur_retouches.py"))
+    _r = _u.module_from_spec(_spec); _spec.loader.exec_module(_r)
+    _innes = next((h for t, h in crea if t.startswith("Pouvoirs innés")), "")
+    pj = _r.retoucher(pj, D, table_html, esc, tableau_races(), _innes)
     ordre = ["Bien débuter un jeu de rôle", "Création des personnages", "Races des Chats", "Système de jeu", "Les Chats d'Ulthar", "Jouer un Chat", "Lecture : la nouvelle des Chats d'Ulthar", "Aide-mémoire du joueur"]
     pj_acc = une("Édition spéciale pour les Chats d'Ulthar", "Wiki des joueurs", "Arkham, 1921") + "<p>Bienvenue dans <strong>Les Miaulements d'Ulthar</strong>, un jeu de rôle de Xaviiiier où vous incarnez des Chats d'Ulthar, dotés de pouvoirs mystiques par la déesse Bast, face à l'horreur lovecraftienne.</p><p>Ce wiki est celui des joueurs. Il suit le livre des règles ; le Gardien (meneur de jeu) a son propre wiki.</p><ul>" + "".join(f"<li>{lien(PJ, 'JournalEntry', n, n)}</li>" for n in ordre) + "</ul><h2>Sur la fiche de Chat</h2><ul><li>Bouton « Création du Chat » : l'assistant vous guide pas à pas.</li><li>Clic sur un attribut : jet (Maj = jet rapide). Clic sur une petite case : coche un échec.</li><li>Clic sur le nom d'un pouvoir : il est montré à la table.</li></ul>"
     journal(PJ, "Accueil du wiki des joueurs", [("Accueil", pj_acc)], tri=0, ownership=OBS)

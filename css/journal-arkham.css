@@ -37,28 +37,28 @@
 .mu-journal .journal-page-header h1::after { content: "Les Miaulements d'Ulthar · Arkham, 1921"; display: block; font-family: var(--mu-sc); font-size: .26em; letter-spacing: .25em; font-weight: 700; margin-top: 4px; color: var(--mu-gris); }
 
 /* Texte */
-.mu-journal .journal-page-content { font-family: var(--mu-texte); font-size: 15.5px; line-height: 1.5; color: var(--mu-encre); }
-.mu-journal .journal-page-content p { text-align: justify; hyphens: auto; margin: 0 0 .7em; }
+.mu-journal .journal-page-content { font-family: var(--mu-texte); font-size: 15.5px; line-height: 1.6; color: var(--mu-encre); }
+.mu-journal .journal-page-content p { text-align: justify; hyphens: auto; margin: 0 0 1.05em; }
 .mu-journal .journal-page-content strong { font-weight: 700; }
 .mu-journal .journal-page-content a, .mu-journal .journal-page-content a.content-link { color: var(--mu-rouge); background: transparent; border: none; border-bottom: 1px dotted var(--mu-rouge); }
 
 /* Intertitres : h2 en gothique avec une trace de pattes, h3 en petites capitales précédées d'une patte */
 .mu-journal .journal-page-content h1, .mu-journal .journal-page-content h2 { font-family: var(--mu-titre); font-weight: 600; font-size: 1.9em; color: var(--mu-encre); border: none; margin: .8em 0 .2em; text-align: center; }
 .mu-journal .journal-page-content h2::after { content: ""; display: block; height: 18px; margin-top: 4px; background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2060%2024%22%3E%3Cg%20fill%3D%22%236b645a%22%20transform%3D%22translate%2812%2013%29%20rotate%2890%29%20scale%28.16%29%20translate%28-50%20-55%29%22%3E%3Cpath%20d%3D%22M50%2046c-15%200-28%2013-28%2026%200%2010%208%2015%2017%2013%205-1%207-3%2011-3s6%202%2011%203c9%202%2017-3%2017-13%200-13-13-26-28-26z%22/%3E%3Cellipse%20cx%3D%2223%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%28-25%2023%2039%29%22/%3E%3Cellipse%20cx%3D%2240%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%28-8%2040%2023%29%22/%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%288%2060%2023%29%22/%3E%3Cellipse%20cx%3D%2277%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%2825%2077%2039%29%22/%3E%3C/g%3E%3Cg%20fill%3D%22%236b645a%22%20transform%3D%22translate%2842%207%29%20rotate%2890%29%20scale%28.16%29%20translate%28-50%20-55%29%22%3E%3Cpath%20d%3D%22M50%2046c-15%200-28%2013-28%2026%200%2010%208%2015%2017%2013%205-1%207-3%2011-3s6%202%2011%203c9%202%2017-3%2017-13%200-13-13-26-28-26z%22/%3E%3Cellipse%20cx%3D%2223%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%28-25%2023%2039%29%22/%3E%3Cellipse%20cx%3D%2240%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%28-8%2040%2023%29%22/%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%288%2060%2023%29%22/%3E%3Cellipse%20cx%3D%2277%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%2825%2077%2039%29%22/%3E%3C/g%3E%3C/svg%3E") center / 60px 24px repeat-x; opacity: .7; }
-.mu-journal .journal-page-content h3 { font-family: var(--mu-sc); font-weight: 700; font-size: 1.15em; letter-spacing: .06em; color: var(--mu-encre); border-bottom: 2px solid var(--mu-encre); padding-bottom: 2px; margin: 1em 0 .4em; }
+.mu-journal .journal-page-content h3 { font-family: var(--mu-sc); font-weight: 700; font-size: 1.15em; letter-spacing: .06em; color: var(--mu-encre); border-bottom: 2px solid var(--mu-encre); padding-bottom: 2px; margin: 1.7em 0 .7em; }
 .mu-journal .journal-page-content h3::before { content: ""; display: inline-block; width: .9em; height: .9em; margin-right: .35em; vertical-align: -.08em; background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22%237a1f1a%22%3E%3Cpath%20d%3D%22M50%2046c-15%200-28%2013-28%2026%200%2010%208%2015%2017%2013%205-1%207-3%2011-3s6%202%2011%203c9%202%2017-3%2017-13%200-13-13-26-28-26z%22/%3E%3Cellipse%20cx%3D%2223%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%28-25%2023%2039%29%22/%3E%3Cellipse%20cx%3D%2240%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%28-8%2040%2023%29%22/%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%288%2060%2023%29%22/%3E%3Cellipse%20cx%3D%2277%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%2825%2077%2039%29%22/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; }
 .mu-journal .journal-page-content h4, .mu-journal .journal-page-content h5, .mu-journal .journal-page-content h6 { font-family: var(--mu-sc); font-weight: 700; letter-spacing: .08em; color: var(--mu-encre); border: none; margin: .8em 0 .3em; }
 
 /* Lettrine au début de chaque section */
-.mu-journal .journal-page-content h2 + p:not([class])::first-letter, .mu-journal .journal-page-content h3 + p:not([class])::first-letter { float: left; font-family: var(--mu-titre); font-size: 3.3em; line-height: .8; margin: .08em .1em 0 0; color: var(--mu-encre); }
+.mu-journal .journal-page-content h2 + p:not([class])::first-letter, .mu-journal .journal-page-content > p:first-child:not([class])::first-letter { float: left; font-family: var(--mu-titre); font-size: 3.3em; line-height: .8; margin: .08em .1em 0 0; color: var(--mu-encre); }
 
 /* Listes à pattes */
 .mu-journal .journal-page-content ul { list-style: none; padding-left: 1.4em; }
-.mu-journal .journal-page-content ul li { position: relative; margin: .2em 0; }
+.mu-journal .journal-page-content ul li { position: relative; margin: .45em 0; }
 .mu-journal .journal-page-content ul li::before { content: ""; position: absolute; left: -1.25em; top: .3em; width: .8em; height: .8em; background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22%236b645a%22%3E%3Cpath%20d%3D%22M50%2046c-15%200-28%2013-28%2026%200%2010%208%2015%2017%2013%205-1%207-3%2011-3s6%202%2011%203c9%202%2017-3%2017-13%200-13-13-26-28-26z%22/%3E%3Cellipse%20cx%3D%2223%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%28-25%2023%2039%29%22/%3E%3Cellipse%20cx%3D%2240%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%28-8%2040%2023%29%22/%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%288%2060%2023%29%22/%3E%3Cellipse%20cx%3D%2277%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%2825%2077%2039%29%22/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; }
 
 /* Encadrés « Exemple » (marges du livre) et citations du Journal d'Arkham */
-.mu-journal .journal-page-content .mu-exemple { background: var(--mu-papier-2); border: 1px solid var(--mu-encre); outline: 1px solid var(--mu-encre); outline-offset: 3px; padding: 8px 12px; margin: 14px 4px; }
+.mu-journal .journal-page-content .mu-exemple { background: var(--mu-papier-2); border: 1px solid var(--mu-encre); outline: 1px solid var(--mu-encre); outline-offset: 3px; padding: 10px 14px; margin: 22px 4px; }
 .mu-journal .journal-page-content .mu-exemple > .mu-exemple-titre { font-family: var(--mu-sc); font-weight: 700; letter-spacing: .12em; margin-bottom: 2px; }
 .mu-journal .journal-page-content blockquote { font-style: italic; border: none; border-left: 3px solid var(--mu-rouge); background: transparent; color: var(--mu-encre); margin: 12px 0; padding: 2px 12px; }
 .mu-journal .journal-page-content blockquote em { font-family: var(--mu-sc); font-style: normal; font-size: .8em; letter-spacing: .1em; color: var(--mu-gris); }
@@ -108,3 +108,19 @@
 .mu-journal .journal-page-content .mu-surnoms { font-style: italic; text-align: center; }
 .mu-journal .journal-page-content ol.mu-folies { columns: 2; column-gap: 24px; }
 .mu-journal .journal-page-content ol.mu-folies li { break-inside: avoid; }
+
+/* Aération du texte (v0.11.0) : listes de définitions, phrases à retenir, notes, tableaux, listes numérotées */
+.mu-journal .journal-page-content ul, .mu-journal .journal-page-content ol { margin: .4em 0 1.2em; }
+.mu-journal .journal-page-content ol { padding-left: 1.8em; }
+.mu-journal .journal-page-content ol li { margin: .4em 0; padding-left: .2em; }
+.mu-journal .journal-page-content ul.mu-definitions { padding-left: 1.4em; }
+.mu-journal .journal-page-content ul.mu-definitions li { margin: 0 0 .85em; text-align: justify; }
+.mu-journal .journal-page-content ul.mu-definitions li strong:first-child { font-family: var(--mu-sc); letter-spacing: .03em; }
+.mu-journal .journal-page-content .mu-a-retenir { text-align: center; font-family: var(--mu-sc); font-weight: 700; font-size: 1.08em; letter-spacing: .04em; margin: 1.2em 0; padding: 6px 0; border-top: 1px solid var(--mu-filet); border-bottom: 1px solid var(--mu-filet); }
+.mu-journal .journal-page-content .mu-note { margin: 18px 0; padding: 8px 12px; line-height: 1.5; }
+.mu-journal .journal-page-content table { margin: 12px 0 18px; }
+.mu-journal .journal-page-content .mu-exemple p:last-child, .mu-journal .journal-page-content .mu-exemple table:last-child { margin-bottom: 0; }
+.mu-journal .journal-page-content .mu-exemple p { margin-bottom: .6em; }
+.mu-journal .journal-page-content ol.mu-colonnes-liste { columns: 2; column-gap: 28px; }
+.mu-journal .journal-page-content ol.mu-colonnes-liste li { break-inside: avoid; }
+.mu-journal .journal-page-content h2 + p:not([class]), .mu-journal .journal-page-content > p:first-child:not([class]) { display: flow-root; }
