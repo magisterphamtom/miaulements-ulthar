@@ -2,6 +2,14 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Fiche réorganisée, onglets sur le côté (v0.9.0, branche `fonction/fiche-cote`)
+- En-tête plus haut : grand portrait (clic pour le changer), nom, race et handicap, pastilles Santé, Magie, Folie (rouge sous 20), vies de Chat et XP.
+- Onglets à la verticale sur le côté droit, avec des icônes dessinées sur le thème des chats : **Fiche** (panier), **Création** (arbre à chat), **Pouvoirs** (pelote de laine), **Folie et progression** (griffoir), **Notes** (litière).
+- Nouvel onglet **Création** : explication des étapes, boutons « Lancer l'assistant de création », « Tirer les pouvoirs temporaires », « Voir les Chats prétirés », récapitulatif de la race (bonus, malus, pouvoir de race) et des attributs.
+- **Attaquer** et **Jet de Folie** passent dans une barre en bas de la fiche.
+- Le menu des thèmes est dans la barre de titre de la fenêtre, à côté du bouton « ⋮ ».
+- Quatre styles d'onglets proposés (réglage « Style des onglets de la fiche », propre à chaque joueur) : Arbre à chat (défaut), Griffoir, Marque-pages oreilles de chat, Gamelles.
+
 ## Thèmes de la fiche (v0.8.0, branche `fonction/themes-fiche`)
 - Menu déroulant 🎨 dans la barre du haut de la fiche de Chat : quatre thèmes repris des maquettes du wiki pour le contenu des onglets — **Nuit d'Arkham** (nuit violette et or, défaut), **Grimoire d'Ulthar** (parchemin, encre brune, rouge), **Contrée du Rêve** (lavande et violet), **Journal d'Arkham, 1921** (papier journal, encre noire, comme le wiki).
 - Le choix est propre à chaque joueur (réglage « utilisateur ») et s'applique à toutes ses fiches ouvertes, sans redessiner la fiche. Le Gardien fixe le thème par défaut dans les réglages du système.

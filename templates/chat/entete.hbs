@@ -1,10 +1,14 @@
-<header class="mu-barre-actions">
-  <img class="mu-portrait-mini" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="" title="Changer le portrait">
-  <span class="mu-nom-barre">{{actor.name}}</span>
-  <label class="mu-choix-theme" title="Thème du contenu des onglets (votre choix, pour toutes vos fiches)"><i class="fa-solid fa-palette"></i>
-    <select>{{#each themes}}<option value="{{cle}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
-  </label>
-  <button type="button" data-action="creation" title="Assistant de création">🐾 Création</button>
-  <button type="button" data-action="attaquer" title="Attaquer">⚔ Attaquer</button>
-  <button type="button" data-action="jetFolie" title="Jet de Folie">🎲 Folie</button>
+<header class="mu-entete-chat">
+  <img class="mu-grand-portrait" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="" title="Changer le portrait">
+  <div class="mu-entete-infos">
+    <div class="mu-entete-nom">{{actor.name}}</div>
+    <div class="mu-entete-race">{{#if raceLabel}}{{raceLabel}}{{else}}Race à choisir (onglet Création){{/if}}{{#if system.handicap}} · {{system.handicap}}{{/if}}</div>
+    <div class="mu-entete-jauges">
+      <span title="Santé"><i class="fa-solid fa-heart"></i> {{system.pv.value}}<small>/{{system.pv.max}}</small></span>
+      <span title="Magie"><i class="fa-solid fa-wand-sparkles"></i> {{system.pm.value}}<small>/{{system.pm.max}}</small></span>
+      <span title="Folie" class="{{#if folieBasse}}bas{{/if}}"><i class="fa-solid fa-brain"></i> {{system.pf.value}}<small>/{{system.pf.max}}</small></span>
+      <span title="Vies de Chat"><i class="fa-solid fa-paw"></i> {{system.vies.value}}<small>/{{system.vies.max}}</small></span>
+      <span title="Expérience"><i class="fa-solid fa-star"></i> {{system.xp}} XP</span>
+    </div>
+  </div>
 </header>

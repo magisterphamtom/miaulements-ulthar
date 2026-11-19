@@ -1,0 +1,28 @@
+<section class="tab mu-onglet mu-creation-onglet {{tabs.creation.cssClass}}" data-group="primary" data-tab="creation">
+  <div class="mu-colonnes">
+    <div class="mu-bloc">
+      <h3>Créer le Chat</h3>
+      <p>L'assistant fait tout dans une seule fenêtre et calcule en direct :</p>
+      <ol class="mu-etapes">
+        <li>six modificateurs (+20, +10, +5, −5, −10, −20) répartis sur les attributs, entre 30 et 70 % ;</li>
+        <li>la race, avec son bonus, son malus et son pouvoir de race ;</li>
+        <li>un handicap si on le souhaite (−20 % et un pouvoir inné de plus) ;</li>
+        <li>les pouvoirs innés (« Comprendre et lire l'humain » est offert) ;</li>
+        <li>au début de l'aventure, deux pouvoirs temporaires tirés au D100.</li>
+      </ol>
+      <button type="button" class="mu-gros-bouton" data-action="creation"><i class="fa-solid fa-paw"></i> Lancer l'assistant de création</button>
+      <button type="button" class="mu-gros-bouton" data-action="tirerTemporaires">💧 Tirer les pouvoirs temporaires</button>
+      <button type="button" class="mu-gros-bouton" data-action="pretires"><i class="fa-solid fa-cat"></i> Voir les Chats prétirés</button>
+    </div>
+    <div class="mu-bloc">
+      <h3>Le Chat aujourd'hui</h3>
+      <p><strong>Race :</strong> {{#if raceLabel}}{{raceLabel}}{{else}}pas encore choisie{{/if}}</p>
+      {{#if raceInfo}}<p class="mu-aide">{{raceInfo}}</p>{{/if}}
+      <p><strong>Handicap :</strong> {{#if system.handicap}}{{system.handicap}}{{else}}aucun{{/if}}</p>
+      <ul class="mu-recap">
+        {{#each attributs}}<li><span>{{label}}</span><span>{{base}}{{#if race}} {{race}}{{/if}}{{#if handicap}} {{handicap}}{{/if}}{{#if progres}} +{{progres}}{{/if}}</span><strong>{{value}} %</strong></li>{{/each}}
+      </ul>
+      <p class="mu-aide">Santé, Magie et Folie se calculent toutes seules à partir des attributs.</p>
+    </div>
+  </div>
+</section>

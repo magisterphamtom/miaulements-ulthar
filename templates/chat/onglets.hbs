@@ -1,3 +1,3 @@
-<nav class="mu-onglets sheet-tabs tabs" data-group="primary">
-  {{#each tabs}}<a class="item {{cssClass}}" data-action="tab" data-group="primary" data-tab="{{id}}"><i class="{{icon}}"></i> {{label}}</a>{{/each}}
+<nav class="mu-onglets mu-onglets-cote mu-style-{{styleOnglets}} sheet-tabs tabs" data-group="primary">
+  {{#each tabs}}<a class="item {{cssClass}}" data-action="tab" data-group="primary" data-tab="{{id}}" title="{{label}}"><span class="mu-icone mu-icone-{{icone}}"></span><span class="mu-libelle">{{label}}</span></a>{{/each}}
 </nav>

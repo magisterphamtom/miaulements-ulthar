@@ -171,17 +171,52 @@
 @keyframes mu-respire { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.08); } }
 
 
-/* Fiche de Chat à onglets */
-.miaulements-ulthar.sheet.chat .window-content { display: flex; flex-direction: column; gap: 6px; padding: 6px 8px; overflow: hidden; }
-.mu-barre-actions { display: flex; gap: 6px; align-items: center; flex: 0 0 auto; }
-.mu-barre-actions .mu-nom-barre { flex: 1; font-family: Georgia, serif; font-size: 1.25em; font-weight: bold; color: var(--mu-accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.mu-barre-actions button { flex: 0 0 auto; padding: 2px 10px; }
-.mu-onglets { display: flex; flex: 0 0 auto; gap: 2px; border-bottom: 2px solid var(--mu-bord); margin: 0; }
-.mu-onglets .item { flex: 1; text-align: center; padding: 5px 4px; color: var(--mu-texte); opacity: .65; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; cursor: pointer; font-size: .95em; white-space: nowrap; }
-.mu-onglets .item:hover { opacity: 1; }
-.mu-onglets .item.active { opacity: 1; color: var(--mu-accent); background: var(--mu-fond2); border-color: var(--mu-bord); font-weight: bold; }
-.miaulements-ulthar.sheet.chat .mu-onglet { flex: 1 1 auto; overflow-y: auto; min-height: 0; padding-right: 2px; }
+/* Fiche de Chat : en-tête, contenu + onglets sur le côté droit, pied (grille) */
+.miaulements-ulthar.sheet.chat .window-content {
+  display: grid; grid-template-columns: minmax(0, 1fr) 108px; grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-areas: "entete entete" "contenu nav" "pied pied"; gap: 8px 0; padding: 0; overflow: hidden;
+}
+.mu-entete-chat { grid-area: entete; display: flex; gap: 18px; align-items: center; padding: 12px 18px 12px; border-bottom: 2px solid var(--mu-bord); }
+.mu-grand-portrait { flex: 0 0 128px; width: 128px; height: 128px; border-radius: 50%; border: 3px solid var(--mu-accent); object-fit: cover; box-shadow: 0 3px 10px rgba(0, 0, 0, .45); cursor: pointer; }
+.mu-entete-infos { flex: 1; min-width: 0; }
+.mu-entete-nom { font-family: var(--mu-nom, Georgia, serif); font-size: 2.5em; line-height: 1.05; color: var(--mu-accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mu-entete-race { font-style: italic; opacity: .8; margin: 2px 0 10px; }
+.mu-entete-jauges { display: flex; flex-wrap: wrap; gap: 6px; }
+.mu-entete-jauges span { border: 1px solid var(--mu-bord); border-radius: 14px; padding: 2px 11px; background: var(--mu-fond2); font-weight: bold; white-space: nowrap; }
+.mu-entete-jauges span i { color: var(--mu-accent); margin-right: 3px; }
+.mu-entete-jauges span small { opacity: .6; font-weight: normal; }
+.mu-entete-jauges span.bas { color: var(--mu-ko); border-color: var(--mu-ko); }
+.miaulements-ulthar.sheet.chat .mu-onglet { grid-area: contenu; overflow-y: auto; min-height: 0; padding: 0 12px 4px 16px; }
 .miaulements-ulthar.sheet.chat .mu-onglet:not(.active) { display: none; }
+.mu-pied { grid-area: pied; display: flex; gap: 12px; justify-content: center; padding: 8px 16px 10px; border-top: 2px solid var(--mu-bord); }
+.miaulements-ulthar.sheet.chat .mu-pied button { flex: 0 1 240px; padding: 6px 12px; font-size: 1.1em; background: var(--mu-fond2); color: var(--mu-texte); border: 2px solid var(--mu-bord); border-radius: 8px; cursor: pointer; font-family: var(--mu-onglet-police, inherit); }
+.miaulements-ulthar.sheet.chat .mu-pied button:hover { border-color: var(--mu-accent); color: var(--mu-accent); }
+.mu-pied button i { color: var(--mu-accent); }
+
+/* Onglets sur le côté droit (structure commune ; les styles « chat » sont dans themes-fiche.css) */
+nav.mu-onglets-cote { grid-area: nav; display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 6px 10px 6px 0; border: none; overflow-y: auto; overflow-x: hidden; }
+nav.mu-onglets-cote .item { position: relative; flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 8px 4px 7px; text-align: center; cursor: pointer; color: var(--mu-texte); font-size: .8em; line-height: 1.1; white-space: normal; opacity: 1; transition: transform .15s; }
+nav.mu-onglets-cote .item:hover { transform: translateX(-2px); }
+nav.mu-onglets-cote .mu-icone { width: 36px; height: 36px; background: currentColor; -webkit-mask: center / contain no-repeat; mask: center / contain no-repeat; }
+.mu-icone-panier { -webkit-mask-image: url("../assets/onglets/panier.svg") !important; mask-image: url("../assets/onglets/panier.svg") !important; }
+.mu-icone-arbre { -webkit-mask-image: url("../assets/onglets/arbre.svg") !important; mask-image: url("../assets/onglets/arbre.svg") !important; }
+.mu-icone-pelote { -webkit-mask-image: url("../assets/onglets/pelote.svg") !important; mask-image: url("../assets/onglets/pelote.svg") !important; }
+.mu-icone-griffoir { -webkit-mask-image: url("../assets/onglets/griffoir.svg") !important; mask-image: url("../assets/onglets/griffoir.svg") !important; }
+.mu-icone-litiere { -webkit-mask-image: url("../assets/onglets/litiere.svg") !important; mask-image: url("../assets/onglets/litiere.svg") !important; }
+
+/* Onglet Création */
+.mu-etapes { margin: 4px 0 10px; padding-left: 20px; line-height: 1.35; }
+.mu-gros-bouton { display: block; width: 100%; margin: 6px 0; padding: 6px; font-size: 1.05em; }
+.mu-recap { list-style: none; margin: 6px 0; padding: 0; }
+.mu-recap li { display: grid; grid-template-columns: 1.3fr 1fr .6fr; gap: 6px; padding: 3px 0; border-bottom: 1px dotted var(--mu-bord); }
+.mu-recap li span:nth-child(2) { opacity: .65; font-size: .9em; }
+.mu-recap li strong { text-align: right; color: var(--mu-accent); }
+
+/* Menu des thèmes dans la barre de titre de la fenêtre */
+.window-header .mu-choix-theme { display: flex; align-items: center; gap: 4px; flex: 0 0 auto; margin: 0 4px; font-size: 12px; }
+.window-header .mu-choix-theme select { height: 22px; max-width: 160px; padding: 0 4px; font-size: 12px; background: rgba(0, 0, 0, .35); color: inherit; border: 1px solid rgba(255, 255, 255, .25); border-radius: 4px; }
+.window-header .mu-choix-theme i { opacity: .8; }
+
 .mu-onglet h3 { margin: 10px 0 6px; }
 .mu-onglet-actions { display: flex; gap: 10px; align-items: center; margin-bottom: 4px; }
 .mu-onglet-actions .mu-aide { flex: 1; }

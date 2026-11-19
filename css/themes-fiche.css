@@ -36,8 +36,6 @@
   --mu-style-bord: solid;
 }
 .miaulements-ulthar.sheet.chat .window-content { background: var(--mu-papier); color: var(--mu-texte); font-family: var(--mu-corps); }
-.miaulements-ulthar.sheet.chat .mu-barre-actions .mu-nom-barre { min-width: 90px; font-family: var(--mu-nom); font-weight: normal; font-size: 1.45em; }
-.miaulements-ulthar.sheet.chat .mu-onglets .item { font-family: var(--mu-onglet-police); }
 .miaulements-ulthar.sheet.chat .mu-onglet h3 { font-family: var(--mu-titre); font-weight: normal; font-size: 1.3em; }
 .miaulements-ulthar.sheet.chat .mu-onglet h3::before { content: "\f1b0"; font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free"; font-weight: 900; font-size: .75em; margin-right: .45em; vertical-align: .1em; }
 .miaulements-ulthar.sheet.chat .mu-carte-pouvoir-titre strong { font-family: var(--mu-titre); font-weight: normal; font-size: 1.2em; }
@@ -50,10 +48,6 @@
 .miaulements-ulthar.sheet.chat .mu-onglet textarea, .miaulements-ulthar.sheet.chat .mu-onglet input { font-family: var(--mu-corps); }
 .miaulements-ulthar.sheet.chat .mu-onglet ::placeholder { color: var(--mu-texte); opacity: .45; }
 
-/* Menu déroulant du thème, dans la barre du haut */
-.mu-choix-theme { display: flex; align-items: center; gap: 4px; flex: 0 0 auto; font-size: .85em; opacity: .85; }
-.mu-choix-theme select { max-width: 150px; height: 24px; padding: 0 4px; background: var(--mu-fond2); color: var(--mu-texte); border: 1px solid var(--mu-bord); border-radius: 4px; font-family: inherit; }
-.mu-choix-theme i { color: var(--mu-accent); }
 
 /* ---------- B. Nuit d'Arkham (défaut) : nuit violette, or ---------- */
 .miaulements-ulthar.sheet.chat.mu-theme-nuit {
@@ -64,7 +58,6 @@
 }
 .mu-theme-nuit .mu-bloc, .mu-theme-nuit .mu-carte-pouvoir { border-left: 3px solid var(--mu-accent); }
 .mu-theme-nuit .mu-onglet h3 { color: #b9a6f0; }
-.mu-theme-nuit .mu-onglet h3::before, .mu-theme-nuit .mu-nom-barre { color: var(--mu-accent); }
 
 /* ---------- A. Grimoire d'Ulthar : parchemin, encre brune, rouge sang ---------- */
 .miaulements-ulthar.sheet.chat.mu-theme-grimoire {
@@ -75,9 +68,7 @@
   --mu-entete-fond: #6b4a24; --mu-entete-texte: #f7ecd2;
 }
 .mu-theme-grimoire .mu-onglet h3 { text-transform: uppercase; letter-spacing: .03em; font-weight: 700 !important; font-size: 1.1em !important; border-bottom-color: #b89466; }
-.mu-theme-grimoire .mu-nom-barre { font-weight: 700 !important; text-transform: uppercase; }
 .mu-theme-grimoire .mu-bloc, .mu-theme-grimoire .mu-carte-pouvoir { border-left: 4px solid var(--mu-accent); box-shadow: 0 1px 3px rgba(80, 50, 20, .25); }
-.mu-theme-grimoire .mu-onglets .item.active { background: rgba(255, 249, 232, .85); }
 .mu-theme-grimoire .mu-pattes-fiche { color: #7a1f1a; }
 
 /* ---------- C. Contrée du Rêve : lavande, violet, or pâle ---------- */
@@ -92,7 +83,6 @@
 .mu-theme-reve .window-content { font-size: 1.08em; }
 .mu-theme-reve .mu-onglet h3::before { color: #d9a520; }
 .mu-theme-reve .mu-pattes-fiche { color: #d9a520; }
-.mu-theme-reve .mu-onglets .item { font-weight: 600; }
 
 /* ---------- D. Journal d'Arkham, 1921 : papier journal, encre noire ---------- */
 .miaulements-ulthar.sheet.chat.mu-theme-journal {
@@ -104,10 +94,47 @@
   --mu-rayon: 2px;
 }
 .mu-theme-journal .mu-onglet h3 { font-weight: 700 !important; font-size: 1.05em !important; letter-spacing: .04em; border-bottom: 2px solid #1c1a17; }
-.mu-theme-journal .mu-nom-barre { color: #1c1a17 !important; font-size: 1.9em !important; }
 .mu-theme-journal .mu-bloc, .mu-theme-journal .mu-carte-pouvoir { border: 3px double #1c1a17; }
-.mu-theme-journal .mu-onglets { border-bottom: 2px solid #1c1a17; }
-.mu-theme-journal .mu-onglets .item { font-weight: 700; font-size: .85em; letter-spacing: .03em; }
-.mu-theme-journal .mu-onglets .item.active { background: #1c1a17; color: #ece6d8; border-color: #1c1a17; }
-.mu-theme-journal .mu-portrait-mini { border-radius: 2px; border-color: #1c1a17; filter: grayscale(.4); }
 .mu-theme-journal .mu-pattes-fiche { color: #1c1a17; }
+
+/* Bandeau de l'en-tête et portrait selon le thème */
+.mu-theme-nuit .mu-entete-chat { background: linear-gradient(180deg, rgba(155, 134, 232, .16), transparent); }
+.mu-theme-grimoire .mu-entete-chat { background: linear-gradient(180deg, rgba(122, 31, 26, .10), transparent); }
+.mu-theme-grimoire .mu-entete-nom { font-weight: 700; text-transform: uppercase; font-size: 2.1em; }
+.mu-theme-reve .mu-entete-chat { background: linear-gradient(180deg, rgba(217, 165, 32, .14), transparent); }
+.mu-theme-reve .mu-grand-portrait { border-color: #d9a520; }
+.mu-theme-journal .mu-entete-chat { border-bottom: 3px double #1c1a17; }
+.mu-theme-journal .mu-entete-nom { color: #1c1a17; font-size: 3em; }
+.mu-theme-journal .mu-grand-portrait { border-radius: 4px; border-color: #1c1a17; filter: grayscale(.35); }
+.mu-theme-journal .mu-entete-jauges span { border-radius: 2px; }
+
+/* ================= Styles des onglets « chat » (côté droit) ================= */
+
+/* 1. Arbre à chat : un poteau de sisal, chaque onglet est une plateforme coussinée */
+nav.mu-style-arbre { background: repeating-linear-gradient(170deg, #c9a46a 0 3px, #a77e46 3px 6px) 50% 0 / 14px 100% no-repeat; padding-right: 8px; }
+.mu-style-arbre .item { background: var(--mu-fond2); border: 2px solid var(--mu-bord); border-radius: 20px; box-shadow: 0 4px 0 var(--mu-bord), 0 6px 8px rgba(0, 0, 0, .25); }
+.mu-style-arbre .item.active { background: var(--mu-accent); color: var(--mu-fond); border-color: var(--mu-accent); box-shadow: 0 4px 0 color-mix(in srgb, var(--mu-accent) 60%, #000), 0 6px 10px rgba(0, 0, 0, .3); font-weight: bold; }
+.mu-style-arbre .item.active::after { content: "\f1b0"; font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free"; font-weight: 900; position: absolute; top: -9px; right: -2px; font-size: 14px; color: var(--mu-accent); text-shadow: 0 0 2px var(--mu-fond); }
+
+/* 2. Griffoir : des blocs de corde de sisal, l'onglet actif porte trois griffures */
+.mu-style-griffoir .item { background: repeating-linear-gradient(-32deg, #d7b77f 0 4px, #b28a52 4px 7px); color: #3a2810; border: 2px solid #7d5a2c; border-radius: 4px; box-shadow: inset 0 0 6px rgba(60, 35, 10, .35); }
+.mu-style-griffoir .mu-libelle { background: var(--mu-fond2); color: var(--mu-texte); padding: 1px 5px; border-radius: 3px; border: 1px solid #7d5a2c; }
+.mu-style-griffoir .item.active { transform: translateX(-8px); border-color: var(--mu-accent); box-shadow: 0 0 0 2px var(--mu-accent), inset 0 0 6px rgba(60, 35, 10, .35); }
+.mu-style-griffoir .item.active::after { content: ""; position: absolute; top: 6px; right: 6px; width: 18px; height: 22px; background: linear-gradient(105deg, transparent 20%, #5a1a10 20% 28%, transparent 28% 45%, #5a1a10 45% 53%, transparent 53% 70%, #5a1a10 70% 78%, transparent 78%); opacity: .8; }
+
+/* 3. Marque-pages oreilles de chat : des signets qui sortent de la page, deux oreilles en haut */
+nav.mu-style-oreilles { gap: 20px; padding-top: 16px; padding-right: 0; }
+.mu-style-oreilles .item { background: var(--mu-fond2); border: 2px solid var(--mu-bord); border-left: none; border-radius: 0 10px 10px 0; margin-left: -2px; padding-top: 10px; }
+.mu-style-oreilles .item::before { content: ""; position: absolute; left: 10%; right: 10%; top: -14px; height: 14px; background: var(--mu-bord); clip-path: polygon(0 100%, 18% 0, 40% 100%, 60% 100%, 82% 0, 100% 100%); }
+.mu-style-oreilles .item.active { background: var(--mu-accent); color: var(--mu-fond); border-color: var(--mu-accent); margin-left: -14px; font-weight: bold; }
+.mu-style-oreilles .item.active::before { background: var(--mu-accent); }
+
+/* 4. Gamelles : chaque onglet est une gamelle ronde, l'active est remplie */
+.mu-style-gamelles .item { padding-top: 6px; }
+.mu-style-gamelles .item::before { content: ""; position: absolute; top: 2px; left: 50%; width: 52px; height: 52px; margin-left: -26px; border-radius: 50%; background: var(--mu-fond2); border: 2px solid var(--mu-bord); box-shadow: 0 5px 0 -1px var(--mu-bord); z-index: 0; }
+.mu-style-gamelles .mu-icone { position: relative; z-index: 1; margin: 6px 0 12px; width: 32px; height: 32px; }
+.mu-style-gamelles .mu-libelle { position: relative; z-index: 1; }
+.mu-style-gamelles .item.active::before { background: var(--mu-accent); border-color: var(--mu-accent); box-shadow: 0 5px 0 -1px color-mix(in srgb, var(--mu-accent) 60%, #000); }
+.mu-style-gamelles .item.active .mu-icone { color: var(--mu-fond); }
+.mu-style-gamelles .item.active .mu-libelle { color: var(--mu-accent); font-weight: bold; }
+.mu-theme-nuit .mu-onglet h3::before { color: var(--mu-accent); }
