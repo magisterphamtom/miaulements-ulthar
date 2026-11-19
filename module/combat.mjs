@@ -1,5 +1,6 @@
 import { ATTRIBUTS, SYSTEM_ID } from "./config.mjs";
 import { jetAttribut, demanderJet, modeCourant, esc } from "./rolls.mjs";
+import { saisir, cartesDifficulte } from "./dialogues.mjs";
 
 const { DialogV2 } = foundry.applications.api;
 
@@ -91,11 +92,9 @@ async function lancerDegats(actor, formule, { soin = false, double = false } = {
 
 /** Attaque d'un Chat : jet d'attribut puis dégâts en cas de réussite. */
 export async function attaquerChat(actor) {
-  const attributs = ["phy", "pre", "agi"].map((k) => `<option value="${k}">${ATTRIBUTS[k].label}</option>`).join("");
-  const degats = Object.entries(DEGATS_COURANTS).map(([f, l]) => `<option value="${f}">${l}</option>`).join("");
-  const options = `<div class="form-group"><label>Attribut</label><select name="attribut">${attributs}</select></div>
-    <div class="form-group"><label>Dégâts</label><select name="degats">${degats}</select></div>`;
-  const choix = await demanderJet(`${actor.name} — Attaque`, { pouvoirPossible: false, options });
+  const cles = ["phy", "pre", "agi"];
+  const valeurs = Object.fromEntries(cles.map((k) => [k, actor.system.attributs[k].value]));
+  const choix = await demanderJet(`${actor.name} — Attaque`, { pouvoirPossible: false, image: "attaque", attributs: cles, valeurs, valeur: valeurs.phy, degats: DEGATS_COURANTS, titreRond: "Attaque" });
   if (!choix) return;
   const res = await jetAttribut(actor, choix.attribut, { difficulte: choix.difficulte, titre: "Attaque" });
   if (res?.reussite) await lancerDegats(actor, choix.degats);
@@ -105,7 +104,7 @@ export async function attaquerChat(actor) {
 export async function attaquerPnj(actor, index) {
   const att = actor.system.attaques[index];
   if (!att) return;
-  const choix = await demanderJet(`${actor.name} — ${att.nom}`, { pouvoirPossible: false });
+  const choix = await demanderJet(`${actor.name} — ${att.nom}`, { pouvoirPossible: false, image: "attaque", valeur: att.pct, titreRond: att.nom });
   if (!choix) return;
   const mode = modeCourant();
   const roll = await new Roll("1d100").evaluate();
@@ -150,10 +149,9 @@ export function attributPourPouvoir(item) {
 export async function lancerPouvoir(actor, item) {
   if (ONIRIQUES.test(item.name)) return bulleOnirique(actor, item);
   const cle = attributPourPouvoir(item);
-  const attributs = Object.entries(ATTRIBUTS)
-    .map(([k, a]) => `<option value="${k}" ${k === cle ? "selected" : ""}>${a.label}</option>`).join("");
-  const options = `<div class="form-group"><label>Attribut du jet (+20 avec le pouvoir)</label><select name="attribut">${attributs}</select></div>`;
-  const choix = await demanderJet(`${actor.name} — ${item.name}`, { pouvoirPossible: false, options });
+  const cles = [cle, ...Object.keys(ATTRIBUTS).filter((k) => k !== cle)];
+  const valeurs = Object.fromEntries(cles.map((k) => [k, actor.system.attributs[k].value + 20]));
+  const choix = await demanderJet(`${actor.name} — ${item.name}`, { pouvoirPossible: false, image: cle, attributs: cles, valeurs, valeur: valeurs[cle], titreRond: `${item.name} (+20)` });
   if (!choix) return;
   const gratuit = item.system.gratuit;
   const note = `<p class="mu-note">${item.system.description.replace(/<\/?p>/g, "")}</p>`;
@@ -177,7 +175,7 @@ async function bulleOnirique(actor, item) {
   };
 
   // 1. Connexion mentale
-  const choix = await demanderJet(`${item.name} — connexion mentale`, { pouvoirPossible: false });
+  const choix = await demanderJet(`${item.name} — connexion mentale`, { pouvoirPossible: false, image: "bulle", valeur: actor.system.attributs.cha.value + 20, titreRond: "Charisme +20" });
   if (!choix) return;
   const connexion = await jetAttribut(actor, "cha", { difficulte: choix.difficulte, pouvoir: true, titre: `${item.name} — connexion mentale` });
   if (!connexion?.reussite) {
@@ -187,12 +185,13 @@ async function bulleOnirique(actor, item) {
   journal.push("Connexion mentale établie.");
 
   // 2 et 3. Objectif et scène initiale
-  const cadre = await DialogV2.prompt({
-    window: { title: `${item.name} — objectif et scène` },
-    content: `<div class="form-group"><label>Objectif du pouvoir (à accorder avec le MJ)</label><input type="text" name="objectif"></div>
-      <div class="form-group"><label>Scène initiale dans l'esprit de la cible</label><textarea name="scene" rows="3"></textarea></div>`,
-    ok: { label: "Entrer dans la bulle", callback: (e, b) => ({ objectif: b.form.querySelector("[name=objectif]").value, scene: b.form.querySelector("[name=scene]").value }) },
-    rejectClose: false
+  const cadre = await saisir({
+    titre: `${item.name} — objectif et scène`,
+    html: `<h4 class="mu-dlg-titre">Entrer dans la bulle onirique</h4>
+      <div class="mu-ligne-choix colonne"><label>Objectif du pouvoir (à accorder avec le MJ)</label><input type="text" name="objectif"></div>
+      <div class="mu-ligne-choix colonne"><label>Scène initiale dans l'esprit de la cible</label><textarea name="scene" rows="3"></textarea></div>`,
+    ok: "Entrer dans la bulle",
+    callback: (e, b) => ({ objectif: b.form.querySelector("[name=objectif]").value, scene: b.form.querySelector("[name=scene]").value })
   });
   if (!cadre) return fin("Le lanceur renonce", "echec");
   journal.push(`Objectif : ${esc(cadre.objectif || "—")}. Scène : ${esc(cadre.scene || "—")}`);
@@ -202,13 +201,15 @@ async function bulleOnirique(actor, item) {
   let echecs = 0;
   const perte = game.settings.get(SYSTEM_ID, "perteAlteration");
   while (reussites < 2 && echecs < 2) {
-    const alt = await DialogV2.prompt({
-      window: { title: `${item.name} — altération ${reussites + echecs + 1}` },
-      content: `<p>Réussites : ${reussites}/2 · Échecs : ${echecs}/2. Le joueur décrit ce qui change dans la scène sans dicter les actes de la cible.</p>
-        <div class="form-group"><label>Altération</label><textarea name="texte" rows="3"></textarea></div>
-        <div class="form-group"><label>Difficulté</label><select name="difficulte"><option value="-20">Facile (−20)</option><option value="0" selected>Normal (0)</option><option value="20">Difficile (+20)</option><option value="40">Très difficile (+40)</option></select></div>`,
-      ok: { label: "Tenter l'altération", callback: (e, b) => ({ texte: b.form.querySelector("[name=texte]").value, difficulte: Number(b.form.querySelector("[name=difficulte]").value) }) },
-      rejectClose: false
+    const pips = (n, cls) => [0, 1].map((i) => `<i class="fa-solid fa-paw ${i < n ? cls : "vide"}"></i>`).join("");
+    const alt = await saisir({
+      titre: `${item.name} — altération ${reussites + echecs + 1}`,
+      html: `<div class="mu-compteur-bulle"><span>Réussites ${pips(reussites, "reussie")}</span><span>Échecs ${pips(echecs, "ratee")}</span></div>
+        <p class="mu-aide-dlg">Décris ce qui change dans la scène, sans dicter les actes de la cible.</p>
+        <div class="mu-ligne-choix colonne"><label>Altération</label><textarea name="texte" rows="3"></textarea></div>
+        <h4 class="mu-dlg-titre">Choisis la difficulté</h4>${cartesDifficulte("0")}`,
+      ok: "Tenter l'altération",
+      callback: (e, b) => ({ texte: b.form.querySelector("[name=texte]").value, difficulte: Number(b.form.querySelector("[name=difficulte]:checked")?.value ?? 0) })
     });
     if (!alt) break;
     const r = await jetAttribut(actor, "cha", { difficulte: alt.difficulte, pouvoir: true, gratuit: !perte, titre: `${item.name} — altération`, note: `<p class="mu-note">${esc(alt.texte)}</p>` });

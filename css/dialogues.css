@@ -1,0 +1,86 @@
+/* Les Miaulements d'Ulthar — boîtes de dialogue de la fiche (v0.13.0) : « cartes à piocher », thème du joueur,
+   chat en ombre chinoise en filigrane (assets/dialogues/*.webp, masque coloré par le thème). */
+.miaulements-ulthar.mu-dialogue .window-content { position: relative; isolation: isolate; background: var(--mu-papier); color: var(--mu-texte); font-family: var(--mu-corps); padding: 14px 16px 12px; }
+.miaulements-ulthar.mu-dialogue .window-content::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 260px; z-index: -1; pointer-events: none; display: none;
+  background: var(--mu-accent); opacity: .2; -webkit-mask: center top / 112% auto no-repeat; mask: center top / 112% auto no-repeat; }
+.miaulements-ulthar.mu-dialogue.mu-avec-image .window-content::before { display: block; }
+.mu-dialogue.mu-theme-grimoire .window-content::before { background: #6b4a24; }
+.mu-dialogue.mu-theme-journal .window-content::before { background: #1c1a17; opacity: .14; }
+.mu-dialogue.mu-img-agi .window-content::before { -webkit-mask-image: url("../assets/dialogues/agi.webp"); mask-image: url("../assets/dialogues/agi.webp"); }
+.mu-dialogue.mu-img-phy .window-content::before { -webkit-mask-image: url("../assets/dialogues/phy.webp"); mask-image: url("../assets/dialogues/phy.webp"); }
+.mu-dialogue.mu-img-dis .window-content::before { -webkit-mask-image: url("../assets/dialogues/dis.webp"); mask-image: url("../assets/dialogues/dis.webp"); }
+.mu-dialogue.mu-img-pre .window-content::before { -webkit-mask-image: url("../assets/dialogues/pre.webp"); mask-image: url("../assets/dialogues/pre.webp"); }
+.mu-dialogue.mu-img-per .window-content::before { -webkit-mask-image: url("../assets/dialogues/per.webp"); mask-image: url("../assets/dialogues/per.webp"); }
+.mu-dialogue.mu-img-int .window-content::before { -webkit-mask-image: url("../assets/dialogues/int.webp"); mask-image: url("../assets/dialogues/int.webp"); }
+.mu-dialogue.mu-img-cha .window-content::before { -webkit-mask-image: url("../assets/dialogues/cha.webp"); mask-image: url("../assets/dialogues/cha.webp"); }
+.mu-dialogue.mu-img-chn .window-content::before { -webkit-mask-image: url("../assets/dialogues/chn.webp"); mask-image: url("../assets/dialogues/chn.webp"); }
+.mu-dialogue.mu-img-attaque .window-content::before { -webkit-mask-image: url("../assets/dialogues/attaque.webp"); mask-image: url("../assets/dialogues/attaque.webp"); }
+.mu-dialogue.mu-img-folie .window-content::before { -webkit-mask-image: url("../assets/dialogues/folie.webp"); mask-image: url("../assets/dialogues/folie.webp"); }
+.mu-dialogue.mu-img-bulle .window-content::before { -webkit-mask-image: url("../assets/dialogues/bulle.webp"); mask-image: url("../assets/dialogues/bulle.webp"); }
+.mu-dialogue.mu-img-creation .window-content::before { -webkit-mask-image: url("../assets/dialogues/creation.webp"); mask-image: url("../assets/dialogues/creation.webp"); }
+
+/* Grand rond : score à faire */
+.mu-dialogue .mu-rond-cible { margin: 2px auto 6px; width: 128px; height: 128px; border-radius: 50%; border: 4px double var(--mu-accent); display: flex; flex-direction: column; align-items: center; justify-content: center; background: color-mix(in srgb, var(--mu-fond2) 40%, transparent); text-align: center; }
+.mu-dialogue .mu-rond-cible b { font-family: var(--mu-titre); font-weight: normal; font-size: 2.7em; color: var(--mu-accent); line-height: 1; }
+.mu-dialogue .mu-rond-cible small, .mu-dialogue .mu-rond-cible .mu-attr-rond { font-size: .78em; opacity: .8; max-width: 110px; line-height: 1.15; }
+.mu-dialogue.mu-theme-journal .mu-rond-cible { border-radius: 2px; border: 3px double #1c1a17; }
+.mu-dialogue.mu-theme-grimoire .mu-rond-cible { border-color: #7a1f1a; }
+.mu-dialogue .mu-dlg-titre { text-align: center; font-family: var(--mu-titre); font-weight: normal; color: var(--mu-accent); font-size: 1.2em; margin: 10px 0 8px; border: none; }
+.mu-dialogue.mu-theme-grimoire .mu-dlg-titre { text-transform: uppercase; font-weight: 700; font-size: 1.05em; }
+.mu-dialogue.mu-theme-journal .mu-dlg-titre { font-weight: 700; font-size: 1em; letter-spacing: .04em; }
+
+/* Cartes à piocher */
+.mu-dialogue .mu-cartes-diff { display: flex; gap: 6px; justify-content: center; margin: 4px 0 12px; }
+.mu-dialogue .mu-carte-diff { position: relative; flex: 0 0 66px; height: 98px; border-radius: 7px; border: 2px solid var(--mu-bord); background: var(--mu-fond2); display: flex; flex-direction: column; align-items: center; justify-content: flex-end; padding: 4px 2px 6px; text-align: center; font-size: .72em; line-height: 1.1; cursor: pointer; transition: transform .15s, box-shadow .15s; color: var(--mu-texte); }
+.mu-dialogue .mu-carte-diff:hover { transform: translateY(-3px); }
+.mu-dialogue .mu-carte-diff input { position: absolute; opacity: 0; pointer-events: none; }
+.mu-dialogue .mu-carte-diff .mu-coin { position: absolute; top: 3px; left: 5px; font-size: .85em; font-weight: bold; opacity: .6; }
+.mu-dialogue .mu-carte-diff .mu-pattes-carte { position: absolute; top: 16px; left: 0; right: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 1px 3px; padding: 0 6px; color: var(--mu-accent); opacity: .8; font-size: .9em; }
+.mu-dialogue .mu-carte-diff b { font-family: var(--mu-titre); font-weight: normal; font-size: 1.7em; color: var(--mu-accent); margin-bottom: 2px; }
+.mu-dialogue .mu-carte-diff.on { transform: translateY(-9px) rotate(-2deg); border-color: var(--mu-accent); box-shadow: 0 8px 14px rgba(0, 0, 0, .45); }
+.mu-dialogue.mu-theme-nuit .mu-carte-diff { background: linear-gradient(160deg, #2b2340, #1b1724); }
+.mu-dialogue.mu-theme-nuit .mu-carte-diff.on { box-shadow: 0 8px 14px rgba(0, 0, 0, .5), 0 0 12px rgba(217, 179, 74, .55); }
+.mu-dialogue.mu-theme-grimoire .mu-carte-diff { background: radial-gradient(circle at 50% 35%, #fbf3dc, #e6cf9f); border-color: #8b5a2b; border-radius: 4px; outline: 1px solid #8b5a2b; outline-offset: -5px; }
+.mu-dialogue.mu-theme-grimoire .mu-carte-diff.on { border-color: #7a1f1a; outline-color: #7a1f1a; }
+.mu-dialogue.mu-theme-reve .mu-carte-diff { background: linear-gradient(170deg, #fff, #ece4fb); border-style: dashed; border-radius: 14px; }
+.mu-dialogue.mu-theme-reve .mu-carte-diff .mu-pattes-carte { color: #d9a520; }
+.mu-dialogue.mu-theme-reve .mu-carte-diff.on { border-style: solid; box-shadow: 0 8px 16px rgba(91, 63, 181, .35); }
+.mu-dialogue.mu-theme-journal .mu-carte-diff { background: #f5f0e4; border: 1px solid #1c1a17; border-radius: 1px; box-shadow: 2px 2px 0 #1c1a17; }
+.mu-dialogue.mu-theme-journal .mu-carte-diff .mu-pattes-carte { color: #1c1a17; }
+.mu-dialogue.mu-theme-journal .mu-carte-diff.on { background: #1c1a17; color: #ece6d8; transform: translateY(-9px); }
+.mu-dialogue.mu-theme-journal .mu-carte-diff.on b, .mu-dialogue.mu-theme-journal .mu-carte-diff.on .mu-pattes-carte { color: #ece6d8; }
+
+/* Interrupteur du pouvoir, choix (attribut, dégâts), champs */
+.mu-dialogue .mu-interrupteur { display: flex; align-items: center; gap: 10px; margin: 0 auto 4px; width: fit-content; max-width: 100%; border: 1px dashed var(--mu-bord); border-radius: 16px; padding: 5px 14px; font-size: .92em; cursor: pointer; }
+.mu-dialogue .mu-interrupteur input { position: absolute; opacity: 0; pointer-events: none; }
+.mu-dialogue .mu-interrupteur .mu-bascule { flex: 0 0 34px; height: 18px; border-radius: 9px; background: var(--mu-bord); position: relative; transition: background .15s; }
+.mu-dialogue .mu-interrupteur .mu-bascule::after { content: ""; position: absolute; left: 2px; top: 2px; width: 14px; height: 14px; border-radius: 50%; background: var(--mu-fond); transition: left .15s; }
+.mu-dialogue .mu-interrupteur.on { border-color: var(--mu-accent); color: var(--mu-accent); border-style: solid; }
+.mu-dialogue .mu-interrupteur.on .mu-bascule { background: var(--mu-accent); }
+.mu-dialogue .mu-interrupteur.on .mu-bascule::after { left: 18px; }
+.mu-dialogue .mu-interrupteur small { opacity: .75; color: var(--mu-texte); }
+.mu-dialogue .mu-ligne-choix { display: flex; align-items: center; gap: 10px; margin: 6px 0; }
+.mu-dialogue .mu-ligne-choix.colonne { flex-direction: column; align-items: stretch; gap: 3px; }
+.mu-dialogue .mu-ligne-choix label { flex: 0 0 70px; font-weight: bold; color: var(--mu-accent); }
+.mu-dialogue .mu-ligne-choix select, .mu-dialogue .mu-ligne-choix input, .mu-dialogue .mu-ligne-choix textarea { flex: 1; background: var(--mu-fond2); color: var(--mu-texte); border: 1px solid var(--mu-bord); border-radius: 6px; font-family: var(--mu-corps); }
+.mu-dialogue .mu-aide-dlg { font-size: .85em; opacity: .75; text-align: center; margin: 2px 0 6px; }
+.mu-dialogue .mu-dlg-confirmer { text-align: center; padding: 4px 0 2px; }
+.mu-dialogue .mu-dlg-confirmer ul { list-style: none; padding: 0; margin: 6px 0; }
+.mu-dialogue .mu-dlg-confirmer ul li { margin: 3px 0; }
+.mu-dialogue .mu-dlg-confirmer ul li::before { content: "\f1b0"; font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free"; font-weight: 900; color: var(--mu-accent); margin-right: 6px; font-size: .8em; }
+.mu-dialogue.mu-avec-image .mu-dlg-confirmer, .mu-dialogue.mu-avec-image .mu-dlg-saisie { padding-top: 70px; }
+.mu-dialogue .mu-compteur-bulle { display: flex; justify-content: center; gap: 22px; font-weight: bold; margin: 2px 0 4px; }
+.mu-dialogue .mu-compteur-bulle i { margin-left: 3px; }
+.mu-dialogue .mu-compteur-bulle i.reussie { color: var(--mu-ok); }
+.mu-dialogue .mu-compteur-bulle i.ratee { color: var(--mu-ko); }
+.mu-dialogue .mu-compteur-bulle i.vide { opacity: .25; }
+
+/* Boutons du bas */
+.miaulements-ulthar.mu-dialogue .form-footer { gap: 10px; }
+.miaulements-ulthar.mu-dialogue .form-footer button { flex: 1; padding: 7px; font-size: 1.05em; border-radius: 8px; border: 2px solid var(--mu-bord); background: var(--mu-fond2); color: var(--mu-texte); font-family: var(--mu-onglet-police, inherit); }
+.miaulements-ulthar.mu-dialogue .form-footer button:hover { border-color: var(--mu-accent); }
+.miaulements-ulthar.mu-dialogue .form-footer button[data-action="ok"], .miaulements-ulthar.mu-dialogue .form-footer button[data-action="yes"], .miaulements-ulthar.mu-dialogue .form-footer button.default { background: var(--mu-accent); border-color: var(--mu-accent); color: var(--mu-fond); font-weight: bold; }
+.mu-dialogue.mu-theme-journal .form-footer button { border-radius: 2px; }
+/* Assistant de création : le thème s'applique, le filigrane reste discret derrière le formulaire */
+.mu-dialogue.mu-dlg-creation .window-content::before { opacity: .1; }
+.mu-dialogue.mu-dlg-creation fieldset { background: color-mix(in srgb, var(--mu-fond2) 70%, transparent); }

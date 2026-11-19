@@ -23,7 +23,7 @@
 @font-face { font-family: 'Spectral'; font-style: normal; font-weight: 600; font-display: swap; src: url('../assets/fonts/spectral-latin-ext-600-normal.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
 
 /* ---------- Règles communes, pilotées par des variables ---------- */
-.miaulements-ulthar.sheet.chat {
+.miaulements-ulthar.sheet.chat, .miaulements-ulthar.mu-dialogue {
   --mu-papier: var(--mu-fond);
   --mu-creux: #0d0b13;
   --mu-perdue: #444;
@@ -50,7 +50,7 @@
 
 
 /* ---------- B. Nuit d'Arkham (défaut) : nuit violette, or ---------- */
-.miaulements-ulthar.sheet.chat.mu-theme-nuit {
+.miaulements-ulthar.sheet.chat.mu-theme-nuit, .miaulements-ulthar.mu-dialogue.mu-theme-nuit {
   --mu-fond: #17141c; --mu-fond2: #221d2b; --mu-bord: #6b5b8a; --mu-texte: #e8e2f0; --mu-accent: #d9b34a; --mu-ok: #6fbf8b; --mu-ko: #d4635f;
   --mu-papier: radial-gradient(ellipse at top, #2a2238 0%, #17141c 60%);
   --mu-titre: 'Mystery Quest', Georgia, serif; --mu-onglet-police: 'Spectral', Georgia, serif; --mu-corps: 'Spectral', Georgia, serif;
@@ -60,7 +60,7 @@
 .mu-theme-nuit .mu-onglet h3 { color: #b9a6f0; }
 
 /* ---------- A. Grimoire d'Ulthar : parchemin, encre brune, rouge sang ---------- */
-.miaulements-ulthar.sheet.chat.mu-theme-grimoire {
+.miaulements-ulthar.sheet.chat.mu-theme-grimoire, .miaulements-ulthar.mu-dialogue.mu-theme-grimoire {
   --mu-fond: #efe0bf; --mu-fond2: rgba(255, 249, 232, .72); --mu-bord: #9a6a3a; --mu-texte: #2b1d12; --mu-accent: #7a1f1a; --mu-ok: #3d7a3a; --mu-ko: #a3241c;
   --mu-papier: radial-gradient(ellipse at 30% 10%, #f7ecd2 0%, #ead6ad 55%, #d9bd88 100%);
   --mu-creux: #d8c39a; --mu-perdue: #c4ab7f; --mu-jauge: #7a1f1a;
@@ -72,7 +72,7 @@
 .mu-theme-grimoire .mu-pattes-fiche { color: #7a1f1a; }
 
 /* ---------- C. Contrée du Rêve : lavande, violet, or pâle ---------- */
-.miaulements-ulthar.sheet.chat.mu-theme-reve {
+.miaulements-ulthar.sheet.chat.mu-theme-reve, .miaulements-ulthar.mu-dialogue.mu-theme-reve {
   --mu-fond: #f1ecfa; --mu-fond2: rgba(255, 255, 255, .78); --mu-bord: #b9a6e0; --mu-texte: #2e2546; --mu-accent: #5b3fb5; --mu-ok: #3f8a63; --mu-ko: #c0465e;
   --mu-papier: linear-gradient(180deg, #f6f2fd 0%, #e6def7 70%, #dde6f6 100%);
   --mu-creux: #e4dcf5; --mu-perdue: #d3c8ec; --mu-jauge: linear-gradient(90deg, #8f6bd6, #c9a1f0);
@@ -85,7 +85,7 @@
 .mu-theme-reve .mu-pattes-fiche { color: #d9a520; }
 
 /* ---------- D. Journal d'Arkham, 1921 : papier journal, encre noire ---------- */
-.miaulements-ulthar.sheet.chat.mu-theme-journal {
+.miaulements-ulthar.sheet.chat.mu-theme-journal, .miaulements-ulthar.mu-dialogue.mu-theme-journal {
   --mu-fond: #ece6d8; --mu-fond2: #f5f0e4; --mu-bord: #1c1a17; --mu-texte: #1c1a17; --mu-accent: #7a1f1a; --mu-ok: #2f5f2f; --mu-ko: #7a1f1a;
   --mu-papier: repeating-linear-gradient(0deg, rgba(0, 0, 0, .025) 0 1px, transparent 1px 4px), #ece6d8;
   --mu-creux: #ddd5c3; --mu-perdue: #b9b09c; --mu-jauge: #1c1a17;

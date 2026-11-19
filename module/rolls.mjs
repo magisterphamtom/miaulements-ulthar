@@ -9,34 +9,9 @@ export function modeCourant() {
 
 export const esc = (texte) => foundry.utils.escapeHTML(String(texte ?? ""));
 
-/** Fenêtre de jet : difficulté, et pouvoir si le jet en autorise un. */
-export async function demanderJet(titre, { pouvoirPossible = true, options = "" } = {}) {
-  const diff = Object.entries(DIFFICULTES)
-    .map(([v, l]) => `<option value="${v}" ${v === "0" ? "selected" : ""}>${l}</option>`)
-    .join("");
-  const pouvoir = pouvoirPossible
-    ? `<div class="form-group"><label>Utiliser un pouvoir (+20, coûte les unités du dé en PM)</label><input type="checkbox" name="pouvoir"></div>`
-    : "";
-  return DialogV2.prompt({
-    window: { title: titre },
-    content: `${options}<div class="form-group"><label>Difficulté</label><select name="difficulte">${diff}</select></div>${pouvoir}`,
-    ok: {
-      label: "Lancer",
-      icon: "fa-solid fa-dice-d20",
-      callback: (event, button) => {
-        const f = button.form;
-        const val = (n) => f.querySelector(`[name="${n}"]`);
-        return {
-          difficulte: Number(val("difficulte")?.value ?? 0),
-          pouvoir: Boolean(val("pouvoir")?.checked),
-          attribut: val("attribut")?.value,
-          degats: val("degats")?.value
-        };
-      }
-    },
-    rejectClose: false
-  });
-}
+/** Fenêtre de jet : voir module/dialogues.mjs (cartes à piocher, thème du joueur, chat en filigrane). */
+export { demanderJet } from "./dialogues.mjs";
+import { demanderJet as _demanderJet } from "./dialogues.mjs";
 
 /**
  * Jet d'attribut : D100 <= valeur, difficulté ajoutée au dé, pouvoir −20 au dé et perte de PM.
@@ -47,7 +22,7 @@ export async function jetAttribut(actor, cle, options = {}) {
   if (!attr) return null;
   let choix = { difficulte: options.difficulte ?? 0, pouvoir: options.pouvoir ?? false };
   if (!options.rapide && options.difficulte === undefined) {
-    choix = await demanderJet(`${actor.name} — ${ATTRIBUTS[cle].label}`);
+    choix = await _demanderJet(`${actor.name} — ${ATTRIBUTS[cle].label}`, { valeur: attr.value, image: cle, pm: actor.system.pm?.value, titreRond: `${ATTRIBUTS[cle].label} ${attr.value} %` });
     if (!choix) return null;
   }
   const mode = modeCourant();

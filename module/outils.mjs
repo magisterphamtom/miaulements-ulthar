@@ -1,5 +1,6 @@
 import { SYSTEM_ID } from "./config.mjs";
 import { jetFolie, esc } from "./rolls.mjs";
+import { confirmer } from "./dialogues.mjs";
 import { tirerPouvoirsTemporaires } from "./creation.mjs";
 
 const { DialogV2 } = foundry.applications.api;
@@ -14,9 +15,9 @@ export async function finDeScenario(actor, { confirmer = true } = {}) {
   const sys = actor.system;
   const perte = sys.cartesFolie.length * 10;
   if (confirmer) {
-    const ok = await DialogV2.confirm({
-      window: { title: "Fin de scénario" },
-      content: `<p>${esc(actor.name)} : +2 XP, PV, PM et vies de Chat remis au maximum. ${perte ? `Cartes Folie non jouées : −${perte} PF.` : ""}</p>`
+    const ok = await confirmer({
+      titre: "Fin de scénario", oui: "Terminer le scénario", icone: "fa-solid fa-flag-checkered",
+      html: `<p><strong>${esc(actor.name)}</strong></p><ul><li>+2 XP</li><li>Santé, Magie et vies de Chat remises au maximum</li>${perte ? `<li>Cartes Folie non jouées : −${perte} PF</li>` : ""}</ul>`
     });
     if (!ok) return false;
   }
@@ -50,9 +51,9 @@ export async function debutAventure() {
 export async function finDeScenarioGroupe() {
   if (!(await reserveGardien())) return;
   const chats = chatsDesJoueurs();
-  const ok = await DialogV2.confirm({
-    window: { title: "Fin de scénario" },
-    content: `<p>Fin de scénario pour ${chats.length} Chat${chats.length > 1 ? "s" : ""} : ${chats.map((c) => esc(c.name)).join(", ")}.</p>`
+  const ok = await confirmer({
+    titre: "Fin de scénario", oui: "Terminer le scénario", icone: "fa-solid fa-flag-checkered",
+    html: `<p>Fin de scénario pour ${chats.length} Chat${chats.length > 1 ? "s" : ""} : <strong>${chats.map((c) => esc(c.name)).join(", ")}</strong>.</p>`
   });
   if (!ok) return;
   for (const c of chats) await finDeScenario(c, { confirmer: false });

@@ -2,6 +2,15 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Boîtes de dialogue « cartes à piocher » (v0.13.0, branche `fonction/dialogues`)
+- Toutes les fenêtres ouvertes depuis la fiche (jet d'attribut, attaque, pouvoir, connexion mentale et altérations de la bulle onirique, jet de Folie, assistant de création, confirmations) suivent le thème choisi par le joueur pour sa fiche.
+- Jet : grand rond avec le score à faire au D100, recalculé en direct ; difficulté en cinq cartes (les pattes indiquent la facilité) ; pouvoir en interrupteur avec les PM restants ; attribut et dégâts en listes pour l'attaque.
+- Jet de Folie : la raison se choisit en cartes (Peur, Instinct de chasseur, Curiosité, Horreur indicible) ; Maj + clic pour lancer directement.
+- Bulle onirique : compteur de réussites et d'échecs en pattes, difficulté en cartes.
+- Suppression d'un pouvoir : confirmation ajoutée (Maj + clic pour supprimer directement).
+- Chat en ombre chinoise en filigrane (masque coloré par le thème, `assets/dialogues/`) : Agilité, Physique, Discrétion, Précision, Perception, Intelligence. **À générer** (quota d'images épuisé le 19/11) : Charisme, Chance, Attaque, Folie, Bulle onirique, Création — retirer leur clé de `MANQUANTES` dans `module/dialogues.mjs` une fois l'image ajoutée.
+- Code : `module/dialogues.mjs`, styles `css/dialogues.css`.
+
 ## Déplacer la fiche zoomée (v0.12.1, branche `fonction/fiche-deplacement`)
 - Quand la page papier est zoomée, le curseur devient une main : clic gauche maintenu sur une zone vide (ou clic molette n'importe où) pour faire glisser la fiche. Les champs, boutons et pouvoirs restent cliquables normalement.
 

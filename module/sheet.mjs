@@ -3,6 +3,7 @@ import { jetAttribut, jetFolie, monterAttribut } from "./rolls.mjs";
 import { assistantCreation, tirerPouvoirsTemporaires } from "./creation.mjs";
 import { attaquerChat, attaquerPnj, lancerPouvoir, attributPourPouvoir, estOnirique, appliquerDegats } from "./combat.mjs";
 import { finDeScenario } from "./outils.mjs";
+import { demanderFolie, confirmer } from "./dialogues.mjs";
 
 const { HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
@@ -440,8 +441,11 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
     });
   }
 
-  static async #jetFolie() {
-    return jetFolie(this.actor);
+  static async #jetFolie(event) {
+    if (event?.shiftKey) return jetFolie(this.actor);
+    const raison = await demanderFolie(this.actor);
+    if (raison === null || raison === undefined) return;
+    return jetFolie(this.actor, { raison });
   }
 
   static async #monterAttribut(event, target) {
@@ -453,7 +457,13 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #supprimerItem(event, target) {
-    await this.actor.items.get(target.dataset.itemId)?.delete();
+    const item = this.actor.items.get(target.dataset.itemId);
+    if (!item) return;
+    const ok = event?.shiftKey || await confirmer({
+      titre: "Supprimer le pouvoir ?", oui: "Supprimer", icone: "fa-solid fa-trash",
+      html: `<p>Le pouvoir <strong>${foundry.utils.escapeHTML(item.name)}</strong> sera retiré de la fiche de ${foundry.utils.escapeHTML(this.actor.name)}.</p><p class="mu-aide-dlg">Maj + clic sur la croix : supprimer sans confirmation.</p>`
+    });
+    if (ok) await item.delete();
   }
 
   static async #jouerCarte(event, target) {

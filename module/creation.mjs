@@ -3,6 +3,7 @@ import { POUVOIRS_INNES, POUVOIRS_RACE, pouvoirTemporaireParDe } from "./pouvoir
 import { pvDepuisTable } from "./datamodels.mjs";
 
 const { DialogV2 } = foundry.applications.api;
+import { confirmer, habillage } from "./dialogues.mjs";
 const esc = (t) => foundry.utils.escapeHTML(String(t));
 
 // Les six modificateurs du livre (p.15) : chacun sert une fois, sur l'attribut de son choix,
@@ -190,9 +191,9 @@ function donneesPouvoir(def, categorie) {
 export async function assistantCreation(actor) {
   const dejaCree = actor.items.some((i) => i.type === "pouvoir" && ["inne", "race"].includes(i.system.categorie));
   if (dejaCree) {
-    const ok = await DialogV2.confirm({
-      window: { title: "Recommencer la création ?" },
-      content: "<p>Ce Chat a déjà des pouvoirs innés. Recommencer remplace ses attributs, sa race et ses pouvoirs innés.</p>"
+    const ok = await confirmer({
+      titre: "Recommencer la création ?", oui: "Recommencer", icone: "fa-solid fa-rotate-left",
+      html: "<p>Ce Chat a déjà des pouvoirs innés.</p><p>Recommencer remplace ses <strong>attributs</strong>, sa <strong>race</strong> et ses <strong>pouvoirs innés</strong>.</p>"
     });
     if (!ok) return;
   }
@@ -200,7 +201,7 @@ export async function assistantCreation(actor) {
   const resultat = await DialogV2.prompt({
     window: { title: "Création d'un Chat", resizable: true },
     position: { width: 640 },
-    classes: ["miaulements-ulthar", "mu-dialogue"],
+    classes: [...habillage("creation"), "mu-dlg-creation"],
     content: formulaire(actor),
     render: (event, dialog) => {
       const form = dialog.element.querySelector(".mu-assistant");
@@ -254,9 +255,9 @@ export async function tirerPouvoirsTemporaires(actor, { confirmer = true } = {})
   const anciens = actor.items.filter((i) => i.type === "pouvoir" && i.system.categorie === "temporaire");
   if (anciens.length) {
     if (confirmer) {
-      const ok = await DialogV2.confirm({
-        window: { title: "Nouveaux pouvoirs temporaires" },
-        content: "<p>Les pouvoirs temporaires actuels seront remplacés par deux nouveaux tirages.</p>"
+      const ok = await confirmer({
+        titre: "Nouveaux pouvoirs temporaires", oui: "Tirer", icone: "fa-solid fa-droplet", image: "bulle",
+        html: "<p>Le Chat lape de nouveau l'eau enchantée de la fontaine.</p><p>Les pouvoirs temporaires actuels seront <strong>remplacés</strong> par deux nouveaux tirages.</p>"
       });
       if (!ok) return;
     }
