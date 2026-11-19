@@ -2,6 +2,12 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Thème « Journal d'Arkham, 1921 » des wikis (v0.6.0, branche `fonction/wiki-journal-arkham`)
+- Wikis et scénarios habillés en coupure de presse : papier journal, titres en Grenze Gotisch, petites capitales en Playfair Display SC, texte en Old Standard TT (polices libres SIL OFL embarquées dans `assets/fonts`, fonctionne sans internet).
+- Intertitres à patte, trace de pattes sous les grands titres, lettrine en début de section, listes à pattes, tableaux et citations du Journal d'Arkham mis en forme, sommaire assorti.
+- 20 encadrés « Exemple » (repris des marges du livre), badges qualité / défaut sur les 10 pages de race, « une » de journal sur les accueils.
+- `module/journal.mjs` ajoute la classe `.mu-journal` aux journaux du système (compendium ou copie importée grâce au drapeau `journal`) ; `css/journal-arkham.css`.
+
 ## Accueil et pause (v0.5.0)
 - Image d'accueil `assets/images/accueil_foundry.webp` : fond de la tuile du système sur l'écran de configuration de Foundry (`media` type setup), fond par défaut des mondes créés avec le système (`background`), et scène « Accueil » (compendium Scènes) importée et activée une fois par monde par le Gardien (si aucune scène n'est déjà active).
 - Pause : patte de chat au lieu de l'horloge, au choix dans les réglages (patte noire à l'œil par défaut, patte violette, médaillon doré, cercle d'empreintes, ou horloge d'origine), légende « Le Chat fait la sieste… ». Les mondes déjà créés gardent leur fond : il se change dans « Modifier le monde ».

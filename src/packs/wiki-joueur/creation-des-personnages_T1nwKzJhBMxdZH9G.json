@@ -30,7 +30,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!T1nwKzJhBMxdZH9G.qeNjjZaaYKB7dEDX"
@@ -46,7 +46,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Voici une sélection de surnoms pour les Chats. Inventez-en un ou aidez-vous de la liste suivante et notez-le sur votre feuille de personnage.</p>\n<h4>Exemple de création</h4>\n<p>Comme, je suis une joueuse débutante, je me sens plus à l'aise de prendre le nom de mon chat : Mimolette.</p>\n<p>Mimolette</p>"
+    "content": "<p>Voici une sélection de surnoms pour les Chats. Inventez-en un ou aidez-vous de la liste suivante et notez-le sur votre feuille de personnage.</p>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple de création</div><p>Comme, je suis une joueuse débutante, je me sens plus à l'aise de prendre le nom de mon chat : Mimolette.</p>\n<p>Mimolette</p></div>"
    },
    "video": {
     "controls": true,
@@ -63,7 +63,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!T1nwKzJhBMxdZH9G.glqZZzLo6GEAPKSB"
@@ -96,7 +96,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!T1nwKzJhBMxdZH9G.oy3vAQEGEQ8AN81M"
@@ -129,7 +129,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!T1nwKzJhBMxdZH9G.b95CkZsk0ILy0LYL"
@@ -162,7 +162,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!T1nwKzJhBMxdZH9G.lF2qqvxGZIQZBq6r"
@@ -195,7 +195,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!T1nwKzJhBMxdZH9G.7Wbpg2s67ZJpP4rJ"
@@ -228,7 +228,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!T1nwKzJhBMxdZH9G.lWIo4fs39Q6BQGM5"
@@ -261,7 +261,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!T1nwKzJhBMxdZH9G.gJjrJl2IN6nfxHEO"
@@ -294,7 +294,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!T1nwKzJhBMxdZH9G.V9pJEQLUe8B8yBuh"
@@ -305,12 +305,16 @@
  "ownership": {
   "default": 2
  },
- "flags": {},
+ "flags": {
+  "miaulements-ulthar": {
+   "journal": true
+  }
+ },
  "_stats": {
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.5.0",
+  "systemVersion": "0.6.0",
   "coreVersion": "14.368"
  },
  "_key": "!journal!T1nwKzJhBMxdZH9G"

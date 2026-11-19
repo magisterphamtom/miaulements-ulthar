@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.5.0", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.6.0", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -105,6 +105,24 @@ def lignes_vers_html(lignes):
         res.append(x)
     return "\n".join(res)
 
+def habiller(html_page):
+    """Thème Journal d'Arkham : encadrés « Exemple » et badges des races."""
+    # « Exemple » suivi de ses paragraphes jusqu'au prochain intertitre -> encadré
+    def encadre(m):
+        titre = re.sub(r"<[^>]+>", "", m.group(1)).strip()
+        return f'<div class="mu-exemple"><div class="mu-exemple-titre">{titre}</div>{m.group(2)}</div>'
+    html_page = re.sub(r"<h4>(Exemple[^<]*)</h4>\s*((?:<p>.*?</p>\s*|<ul>.*?</ul>\s*)+?)(?=<h[2-4]>|$)", encadre, html_page, flags=re.S)
+    # « Attribut qualité : X Attribut défaut : Y » -> badges
+    def badges(m):
+        return f'<div class="mu-badges"><span class="mu-plus">Qualité : {m.group(1).strip()}</span><span class="mu-moins">Défaut : {m.group(2).strip()}</span></div>'
+    html_page = re.sub(r"<p>Attribut qualité\s*:\s*(.+?)\s*Attribut défaut\s*:\s*(.+?)</p>", badges, html_page)
+    return html_page
+
+def une(sous_titre, gauche, droite):
+    """Bandeau « une » de journal pour les pages d'accueil."""
+    return (f'<div class="mu-une"><div class="mu-une-titre">Le Journal d\'Arkham</div><div>{esc(sous_titre)}</div>'
+            f'<div class="mu-une-bandeau"><span>{esc(gauche)}</span><span>Les Miaulements d\'Ulthar</span><span>{esc(droite)}</span></div></div>')
+
 def sections(pages, p1, p2, titre_chapitre, coupures=()):
     """Découpe les pages p1..p2 en sections (une par intertitre de niveau 2), regroupe les trop courtes."""
     lignes = [l for p in pages if p1 <= p["page"] <= p2 for l in p["lignes"]]
@@ -151,7 +169,7 @@ def journal(pack, nom, pages, tri=0, ownership=None, dossier=None):
         docs.append({"_id": pid, "name": titre, "type": "text", "title": {"show": True, "level": 1}, "image": {}, "text": {"format": 1, "content": contenu},
                      "video": {"controls": True, "volume": 0.5}, "src": None, "system": {}, "sort": (k + 1) * 100000,
                      "ownership": {"default": -1}, "flags": {}, "_stats": STATS, "_key": f"!journal.pages!{eid}.{pid}"})
-    doc = {"_id": eid, "name": nom, "pages": docs, "folder": dossier, "sort": tri, "ownership": ownership or {"default": 0}, "flags": {}, "_stats": STATS, "_key": f"!journal!{eid}"}
+    doc = {"_id": eid, "name": nom, "pages": docs, "folder": dossier, "sort": tri, "ownership": ownership or {"default": 0}, "flags": {SYS: {"journal": True}}, "_stats": STATS, "_key": f"!journal!{eid}"}
     ecrire(pack, doc)
     return eid
 
@@ -303,7 +321,7 @@ OBS = {"default": 2}
 NONE = {"default": 0}
 
 def page_chapitre(pages_json, p1, p2, titre_chap, coupures=()):
-    return [(s["titre"], lignes_vers_html(s["lignes"])) for s in sections(pages_json, p1, p2, titre_chap, coupures)]
+    return [(s["titre"], habiller(lignes_vers_html(s["lignes"]))) for s in sections(pages_json, p1, p2, titre_chap, coupures)]
 
 RACES_MAJ = ("BENGAL", "CHAT DE GOUTTIERE", "CHAT DE GOUTTIÈRE", "CORNISH REX", "MAINE COON", "NORVÉGIEN", "NORVEGIEN", "PERSAN", "SAVANNAH", "SCOTTISH FOLD", "SIAMOIS", "SPHYNX")
 
@@ -346,7 +364,7 @@ def construire_wikis(bestiaire):
     pj["Lecture : la nouvelle des Chats d'Ulthar"] = page_chapitre(nouv, 1, 2, "Les Chats d'Ulthar")
     pj["Aide-mémoire du joueur"] = [("Aide-mémoire", aide_memoire_joueur())]
     ordre = ["Bien débuter un jeu de rôle", "Création des personnages", "Races des Chats", "Système de jeu", "Les Chats d'Ulthar", "Jouer un Chat", "Lecture : la nouvelle des Chats d'Ulthar", "Aide-mémoire du joueur"]
-    pj_acc = "<p>Bienvenue dans <strong>Les Miaulements d'Ulthar</strong>, un jeu de rôle de Xaviiiier où vous incarnez des Chats d'Ulthar, dotés de pouvoirs mystiques par la déesse Bast, face à l'horreur lovecraftienne.</p><p>Ce wiki est celui des joueurs. Il suit le livre des règles ; le Gardien (meneur de jeu) a son propre wiki.</p><ul>" + "".join(f"<li>{lien(PJ, 'JournalEntry', n, n)}</li>" for n in ordre) + "</ul><h2>Sur la fiche de Chat</h2><ul><li>Bouton « Création du Chat » : l'assistant vous guide pas à pas.</li><li>Clic sur un attribut : jet (Maj = jet rapide). Clic sur une petite case : coche un échec.</li><li>Clic sur le nom d'un pouvoir : il est montré à la table.</li></ul>"
+    pj_acc = une("Édition spéciale pour les Chats d'Ulthar", "Wiki des joueurs", "Arkham, 1921") + "<p>Bienvenue dans <strong>Les Miaulements d'Ulthar</strong>, un jeu de rôle de Xaviiiier où vous incarnez des Chats d'Ulthar, dotés de pouvoirs mystiques par la déesse Bast, face à l'horreur lovecraftienne.</p><p>Ce wiki est celui des joueurs. Il suit le livre des règles ; le Gardien (meneur de jeu) a son propre wiki.</p><ul>" + "".join(f"<li>{lien(PJ, 'JournalEntry', n, n)}</li>" for n in ordre) + "</ul><h2>Sur la fiche de Chat</h2><ul><li>Bouton « Création du Chat » : l'assistant vous guide pas à pas.</li><li>Clic sur un attribut : jet (Maj = jet rapide). Clic sur une petite case : coche un échec.</li><li>Clic sur le nom d'un pouvoir : il est montré à la table.</li></ul>"
     journal(PJ, "Accueil du wiki des joueurs", [("Accueil", pj_acc)], tri=0, ownership=OBS)
     for k, nom in enumerate(ordre):
         journal(PJ, nom, pj[nom], tri=(k + 1) * 100000, ownership=OBS)
@@ -374,7 +392,7 @@ def construire_wikis(bestiaire):
         bestiaire_pages.append((c["nom"], h))
     mj["Bestiaire"] = bestiaire_pages
     ordre_mj = ["Guide du maître de jeu", "L'univers de Lovecraft", "Scénario d'initiation : les chiens dimensionnels", "Écran du MJ", "Bestiaire"]
-    mj_acc = "<p>Wiki du <strong>Gardien</strong> (meneur de jeu). Il n'est visible que par le MJ.</p><ul>" + "".join(f"<li>{lien(MJ, 'JournalEntry', n, n)}</li>" for n in ordre_mj) + f"</ul><h2>Autres compendiums</h2><ul><li>« Scénarios » : le livre des scénarios (enquêtes émergentes guidées, campagne « Les Clefs Interdites », aides de jeu) et le scénario Sommilius.</li><li>« Bestiaire » : {len(bestiaire)} adversaires prêts à jouer (glisser sur la scène).</li><li>« Prétirés » : 7 Chats prêts à jouer.</li><li>« Tables » : cartes Folie, pouvoirs temporaires, événements, réactions.</li></ul><h2>Wiki des joueurs</h2><p>{lien(PJ, 'JournalEntry', 'Accueil du wiki des joueurs', 'Ouvrir le wiki des joueurs')}</p>"
+    mj_acc = une("Édition réservée au Gardien", "Wiki du Gardien", "Arkham, 1921") + "<p>Wiki du <strong>Gardien</strong> (meneur de jeu). Il n'est visible que par le MJ.</p><ul>" + "".join(f"<li>{lien(MJ, 'JournalEntry', n, n)}</li>" for n in ordre_mj) + f"</ul><h2>Autres compendiums</h2><ul><li>« Scénarios » : le livre des scénarios (enquêtes émergentes guidées, campagne « Les Clefs Interdites », aides de jeu) et le scénario Sommilius.</li><li>« Bestiaire » : {len(bestiaire)} adversaires prêts à jouer (glisser sur la scène).</li><li>« Prétirés » : 7 Chats prêts à jouer.</li><li>« Tables » : cartes Folie, pouvoirs temporaires, événements, réactions.</li></ul><h2>Wiki des joueurs</h2><p>{lien(PJ, 'JournalEntry', 'Accueil du wiki des joueurs', 'Ouvrir le wiki des joueurs')}</p>"
     journal(MJ, "Accueil du wiki du Gardien", [("Accueil", mj_acc)], tri=0, ownership=NONE)
     for k, nom in enumerate(ordre_mj):
         journal(MJ, nom, mj[nom], tri=(k + 1) * 100000, ownership=NONE)
@@ -390,7 +408,7 @@ def construire_scenarios():
         journal("scenarios", nom, page_chapitre(S, a, b, nom), tri=(k + 1) * 100000, ownership=NONE)
     som = charger("sommilius")
     journal("scenarios", "Sommilius (scénario)", page_chapitre(som, 1, 6, "Sommilius"), tri=(len(plan) + 1) * 100000, ownership=NONE)
-    idx = "<p>Livre des scénarios des Miaulements d'Ulthar : cinq scénarios en « enquête émergente guidée », la campagne « Les Clefs Interdites » et les aides de jeu. Le texte est repris du PDF : les tableaux et encadrés en colonnes peuvent perdre un peu de leur mise en page.</p><ul>" + "".join(f"<li>{lien('scenarios', 'JournalEntry', n, n)}</li>" for n, _, _ in plan) + f"<li>{lien('scenarios', 'JournalEntry', 'Sommilius (scénario)', 'Sommilius (scénario)')}</li></ul>"
+    idx = une("Les affaires en cours", "Scénarios", "Arkham, 1921") + "<p>Livre des scénarios des Miaulements d'Ulthar : cinq scénarios en « enquête émergente guidée », la campagne « Les Clefs Interdites » et les aides de jeu. Le texte est repris du PDF : les tableaux et encadrés en colonnes peuvent perdre un peu de leur mise en page.</p><ul>" + "".join(f"<li>{lien('scenarios', 'JournalEntry', n, n)}</li>" for n, _, _ in plan) + f"<li>{lien('scenarios', 'JournalEntry', 'Sommilius (scénario)', 'Sommilius (scénario)')}</li></ul>"
     journal("scenarios", "Index des scénarios", [("Index", idx)], tri=0, ownership=NONE)
     print("scénarios :", len(plan) + 2, "entrées")
 

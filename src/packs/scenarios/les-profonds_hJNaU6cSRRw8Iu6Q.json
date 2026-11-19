@@ -30,7 +30,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.SAs7K3FBEB8ZEf7t"
@@ -63,7 +63,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.wPGDG5BhbYV0TbWw"
@@ -96,7 +96,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.CFyal5rTL7lxK8m0"
@@ -129,7 +129,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.KVkR4tQpmW9d00iP"
@@ -162,7 +162,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.IOWc8pexusMTiFQZ"
@@ -195,7 +195,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.Qkl5fdS9TbFUYEzr"
@@ -228,7 +228,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.TzpHmEAIzgzLQjsg"
@@ -239,12 +239,16 @@
  "ownership": {
   "default": 0
  },
- "flags": {},
+ "flags": {
+  "miaulements-ulthar": {
+   "journal": true
+  }
+ },
  "_stats": {
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.5.0",
+  "systemVersion": "0.6.0",
   "coreVersion": "14.368"
  },
  "_key": "!journal!hJNaU6cSRRw8Iu6Q"

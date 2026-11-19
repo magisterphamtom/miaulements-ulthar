@@ -30,7 +30,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.g9vEVvYr4UJmMdZc"
@@ -46,7 +46,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Lorsque vous entreprenez une action dans le jeu, vous effectuez un jet de dé pour déterminer si elle réussit ou échoue. Cependant, la complexité de certaines actions</p>\n<h4>Exemple</h4>\n<p>Supposons que votre personnage Chat Peluche tente de crocheter une porte verrouillée avec ses griffes. L'attribut \"Précision\" du personnage est choisi pour déterminer le succès de cette action. Le joueur lance un D100 et obtient 85. Son score est supérieur à son attribut de 60. C'est un échec. Dans ce cas, la porte reste bloquée.</p>\n<h3>Test de compétence</h3>"
+    "content": "<p>Lorsque vous entreprenez une action dans le jeu, vous effectuez un jet de dé pour déterminer si elle réussit ou échoue. Cependant, la complexité de certaines actions</p>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple</div><p>Supposons que votre personnage Chat Peluche tente de crocheter une porte verrouillée avec ses griffes. L'attribut \"Précision\" du personnage est choisi pour déterminer le succès de cette action. Le joueur lance un D100 et obtient 85. Son score est supérieur à son attribut de 60. C'est un échec. Dans ce cas, la porte reste bloquée.</p>\n</div><h3>Test de compétence</h3>"
    },
    "video": {
     "controls": true,
@@ -63,7 +63,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.yf2TnkdIRgglPnwE"
@@ -79,7 +79,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Lorsque vous entreprenez une action dans le jeu, vous effectuez un jet de dé pour déterminer si elle réussit ou échoue. Cependant, la complexité de certaines actions ou les circonstances qui les entourent peuvent les rendre plus faciles ou plus difficiles. C'est à ce moment que les bonus ou les malus interviennent. Les modificateurs s’ajoutent ou se soustraient à votre jet de dé pour refléter la difficulté de l'action. Voici les modificateurs les plus couramment utilisés : Très facile : si une action est considérée comme très facile, vous appliquez un modificateur de -40 à votre jet de dé, ce qui augmente significativement vos chances de réussite. Facile : pour une action jugée facile, vous appliquez un modificateur de -20 à votre jet de dé, ce qui vous donne un léger avantage tout en introduisant une légère difficulté supplémentaire par rapport à une action très facile. Normal : pour une action de difficulté normale, aucun modificateur n'est appliqué. Vous effectuez simplement votre jet de dé sans ajustement particulier. Difficile : si une action est considérée comme difficile, vous appliquez un modificateur de +20 à votre jet de dé, ce qui ajoute un défi supplémentaire à surmonter pour réussir.</p>\n<h4>Exemple</h4>\n<p>Reprenons l'exemple avec Peluche, un chat qui possède un attribut de Perception de 60. Dans une forêt dense, Peluche reste immobile depuis quelques minutes, se fondant dans l'ombre. Elle souhaite repérer une créature furtive en mouvement. Le maître de jeu considère que la présence immobile de Peluche facilite l'action et décide d'appliquer un bonus de -20 au jet de dé. Le joueur lance un D100 pour tenter de repérer la créature. Il obtient un résultat de 70. Avec le bonus de -20, le score final devient 50 (70 - 20). Grâce à son acuité sensorielle (Perception de 60) et à son jet de 50, Peluche réussit à repérer la créature malgré sa discrétion.</p>\n<p>Très difficile : lorsqu'une action est qualifiée de très difficile, vous appliquez un modificateur de +40 à votre jet de dé. Cette difficulté accrue nécessite une grande habileté et une dose de chance pour réussir. Il est important de tenir compte de ces modificateurs lors de vos actions, car ils peuvent avoir un impact considérable sur vos chances de succès. Adaptez votre stratégie en fonction de la difficulté et utilisez vos compétences pour maximiser vos chances de réussite. +40 : Très difficile +20 : Difficile 0 : Normal -20 : Facile -40 : Très facile</p>"
+    "content": "<p>Lorsque vous entreprenez une action dans le jeu, vous effectuez un jet de dé pour déterminer si elle réussit ou échoue. Cependant, la complexité de certaines actions ou les circonstances qui les entourent peuvent les rendre plus faciles ou plus difficiles. C'est à ce moment que les bonus ou les malus interviennent. Les modificateurs s’ajoutent ou se soustraient à votre jet de dé pour refléter la difficulté de l'action. Voici les modificateurs les plus couramment utilisés : Très facile : si une action est considérée comme très facile, vous appliquez un modificateur de -40 à votre jet de dé, ce qui augmente significativement vos chances de réussite. Facile : pour une action jugée facile, vous appliquez un modificateur de -20 à votre jet de dé, ce qui vous donne un léger avantage tout en introduisant une légère difficulté supplémentaire par rapport à une action très facile. Normal : pour une action de difficulté normale, aucun modificateur n'est appliqué. Vous effectuez simplement votre jet de dé sans ajustement particulier. Difficile : si une action est considérée comme difficile, vous appliquez un modificateur de +20 à votre jet de dé, ce qui ajoute un défi supplémentaire à surmonter pour réussir.</p>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple</div><p>Reprenons l'exemple avec Peluche, un chat qui possède un attribut de Perception de 60. Dans une forêt dense, Peluche reste immobile depuis quelques minutes, se fondant dans l'ombre. Elle souhaite repérer une créature furtive en mouvement. Le maître de jeu considère que la présence immobile de Peluche facilite l'action et décide d'appliquer un bonus de -20 au jet de dé. Le joueur lance un D100 pour tenter de repérer la créature. Il obtient un résultat de 70. Avec le bonus de -20, le score final devient 50 (70 - 20). Grâce à son acuité sensorielle (Perception de 60) et à son jet de 50, Peluche réussit à repérer la créature malgré sa discrétion.</p>\n<p>Très difficile : lorsqu'une action est qualifiée de très difficile, vous appliquez un modificateur de +40 à votre jet de dé. Cette difficulté accrue nécessite une grande habileté et une dose de chance pour réussir. Il est important de tenir compte de ces modificateurs lors de vos actions, car ils peuvent avoir un impact considérable sur vos chances de succès. Adaptez votre stratégie en fonction de la difficulté et utilisez vos compétences pour maximiser vos chances de réussite. +40 : Très difficile +20 : Difficile 0 : Normal -20 : Facile -40 : Très facile</p></div>"
    },
    "video": {
     "controls": true,
@@ -96,7 +96,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.sjr0on2Y4ukUrLEK"
@@ -129,7 +129,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.8tSS4R31la8rzAfO"
@@ -145,7 +145,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Lors des affrontements épiques et des situations périlleuses, les personnages peuvent subir des blessures et des dégâts qui mettent à l'épreuve leur résistance et leur endurance. Chaque fois qu'un personnage est touché ou subit une attaque, il perd des points de vie qui représentent sa santé. Les blessures peuvent aller de légères égratignures à des blessures graves qui affectent sa capacité à agir.</p>\n<h4>Exemple:</h4>\n<p>Prenons l'exemple d'un chat avec 5 points de vie qui est touché par une attaque lui infligeant 3 points de dégâts. Il lui reste alors 2 points de vie. En tentant de s'échapper en sautant d'un toit, le chat échoue à son jet d'Agilité et chute, subissant de nouveau 3 points de dégâts. Ses points de vies étant inférieurs ou égaux à zéro, il succombera de ses blessures.</p>\n<p>Les dégâts infligés sont déterminés par les attaques réussies des adversaires. Ils sont souvent calculés en utilisant des dés spécifiques, tels que des dés d4, d6 ou d10 qui représentent la force et l'impact des attaques. Il est essentiel de gérer avec soin les blessures et les dégâts. Lorsque les points de vie d'un personnage atteignent un seuil critique proche de zéro, il est en danger de mort. Dans une telle situation, des décisions stratégiques doivent être prises pour assurer la survie du personnage que ce soit par la fuite, l'utilisation de compétences de guérison ou l'aide de ses compagnons. Àzéro point de vie, le chat meurt de ses blessures.</p>\n<p>Aperçu de dégâts communs :</p>\n<p>Coup de griffe : 1D4 Chute : 1D4 par étage (max 6D4) Coup avec objets tranchants : 1D6 Coup de pistolet : 1D6+1</p>\n<p>Coup de fusil : 2D6 Explosion : 4D6 Feu : 2D6 par tour Choc par véhicule : 1D6</p>"
+    "content": "<p>Lors des affrontements épiques et des situations périlleuses, les personnages peuvent subir des blessures et des dégâts qui mettent à l'épreuve leur résistance et leur endurance. Chaque fois qu'un personnage est touché ou subit une attaque, il perd des points de vie qui représentent sa santé. Les blessures peuvent aller de légères égratignures à des blessures graves qui affectent sa capacité à agir.</p>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple:</div><p>Prenons l'exemple d'un chat avec 5 points de vie qui est touché par une attaque lui infligeant 3 points de dégâts. Il lui reste alors 2 points de vie. En tentant de s'échapper en sautant d'un toit, le chat échoue à son jet d'Agilité et chute, subissant de nouveau 3 points de dégâts. Ses points de vies étant inférieurs ou égaux à zéro, il succombera de ses blessures.</p>\n<p>Les dégâts infligés sont déterminés par les attaques réussies des adversaires. Ils sont souvent calculés en utilisant des dés spécifiques, tels que des dés d4, d6 ou d10 qui représentent la force et l'impact des attaques. Il est essentiel de gérer avec soin les blessures et les dégâts. Lorsque les points de vie d'un personnage atteignent un seuil critique proche de zéro, il est en danger de mort. Dans une telle situation, des décisions stratégiques doivent être prises pour assurer la survie du personnage que ce soit par la fuite, l'utilisation de compétences de guérison ou l'aide de ses compagnons. Àzéro point de vie, le chat meurt de ses blessures.</p>\n<p>Aperçu de dégâts communs :</p>\n<p>Coup de griffe : 1D4 Chute : 1D4 par étage (max 6D4) Coup avec objets tranchants : 1D6 Coup de pistolet : 1D6+1</p>\n<p>Coup de fusil : 2D6 Explosion : 4D6 Feu : 2D6 par tour Choc par véhicule : 1D6</p></div>"
    },
    "video": {
     "controls": true,
@@ -162,7 +162,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.ipVtVVGzfS4A5aed"
@@ -195,7 +195,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.HLqzOmgkKrcVWmHJ"
@@ -211,7 +211,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Les points de Folie représentent l'intégrité psychique du Chat et la maîtrise de ses instincts primaires dans les différentes situations. Ils reflètent son équilibre mental et sa capacité à faire face aux événements avec sérénité et clarté d'esprit.</p>\n<h4>Exemple:</h4>\n<p>Je souhaite renforcer l'Agilité, la Perception en utilisant les bonus +20% et +10%. J'annule le +5% et -5%. Je rends mon Chat plus faible en Chance et Charisme.</p>"
+    "content": "<p>Les points de Folie représentent l'intégrité psychique du Chat et la maîtrise de ses instincts primaires dans les différentes situations. Ils reflètent son équilibre mental et sa capacité à faire face aux événements avec sérénité et clarté d'esprit.</p>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple:</div><p>Je souhaite renforcer l'Agilité, la Perception en utilisant les bonus +20% et +10%. J'annule le +5% et -5%. Je rends mon Chat plus faible en Chance et Charisme.</p></div>"
    },
    "video": {
     "controls": true,
@@ -228,7 +228,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.B7CxHpfTBrOIoWma"
@@ -261,7 +261,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.HfcEqUQ2X09sQZxP"
@@ -277,7 +277,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Dans l'univers Lovecraftien, les chats sont également confrontés à des épreuves qui peuvent ébranler leur santé mentale. Lors de rencontres avec l'inconnu, l'horreur ou l’angoisse par exemple, le joueur doit faire un jet de Folie. En cas d’échec (score du dé supérieur), le joueur tire une carte de Folie et décide s’il l’utilise immédiatement ou plus tard.</p>\n<h4>Exemple:</h4>\n<p>Prenons l'exemple de Peluche, dont le score de folie est de</p>\n<ul><li>Alors qu'elle s'approche d'un groupe d'oiseaux pour les écouter et les interroger, son instinct de chasseur peut prendre le dessus. Le joueur lance un D100 et obtient un résultat de 72, ce qui dépasse son score de Folie. Peluche est submergée par son instinct de chasseur. Le joueur pioche une carte folie « Attraper sa queue ». Le joueur peut préférer la garder pour plus tard et continuer à interroger les oiseaux.</li></ul>\n<h4>Exemple:</h4>\n<p>Imaginez un chat joueur, se promenant dans une ruelle sombre. Soudain, il rencontre une créature cauchemardesque tel un chien de Tindalos. Le joueur fait un jet de Folie (score actuel : 57). Il lance un D100 et obtient un résultat de 74. L'échec indique que la Folie s'empare du Chat. La vision terrifiante est si intense que le chat en est paralysé. Il tire une carte Folie « Rentrer dans des boîtes trop petites ». Depuis le début de la partie, le joueur a accumulé trois cartes Folie. Il décide d’utiliser maintenant la carte « Folie Hyperactive » et dans quelques instants la carte Folie « Rentrer dans des boîtes trop petites » pour prévenir la fin de partie.</p>\n<h3>Action de folies</h3>"
+    "content": "<p>Dans l'univers Lovecraftien, les chats sont également confrontés à des épreuves qui peuvent ébranler leur santé mentale. Lors de rencontres avec l'inconnu, l'horreur ou l’angoisse par exemple, le joueur doit faire un jet de Folie. En cas d’échec (score du dé supérieur), le joueur tire une carte de Folie et décide s’il l’utilise immédiatement ou plus tard.</p>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple:</div><p>Prenons l'exemple de Peluche, dont le score de folie est de</p>\n<ul><li>Alors qu'elle s'approche d'un groupe d'oiseaux pour les écouter et les interroger, son instinct de chasseur peut prendre le dessus. Le joueur lance un D100 et obtient un résultat de 72, ce qui dépasse son score de Folie. Peluche est submergée par son instinct de chasseur. Le joueur pioche une carte folie « Attraper sa queue ». Le joueur peut préférer la garder pour plus tard et continuer à interroger les oiseaux.</li></ul>\n</div><div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple:</div><p>Imaginez un chat joueur, se promenant dans une ruelle sombre. Soudain, il rencontre une créature cauchemardesque tel un chien de Tindalos. Le joueur fait un jet de Folie (score actuel : 57). Il lance un D100 et obtient un résultat de 74. L'échec indique que la Folie s'empare du Chat. La vision terrifiante est si intense que le chat en est paralysé. Il tire une carte Folie « Rentrer dans des boîtes trop petites ». Depuis le début de la partie, le joueur a accumulé trois cartes Folie. Il décide d’utiliser maintenant la carte « Folie Hyperactive » et dans quelques instants la carte Folie « Rentrer dans des boîtes trop petites » pour prévenir la fin de partie.</p>\n</div><h3>Action de folies</h3>"
    },
    "video": {
     "controls": true,
@@ -294,7 +294,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.EsEnXLLV69pEcOaT"
@@ -310,7 +310,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Lors de la partie, les joueurs et certains personnages non joués auront la possibilité d'utiliser les pouvoirs mystiques. Les pouvoirs peuvent être activés instantanément, offrant aux joueurs des avantages uniques dans certaines situations. Il faut néanmoins diminuer la jauge de points de Magie (PM). Àzéro point de Magie, il n'est plus possible d'utiliser aucun pouvoir jusqu'au prochain sommeil de 20h du Chat. Chaque utilisation d’un pouvoir apporte systématiquement un bonus de +20 à l’attribut en lien. Lorsque vous lancez le D100 pour résoudre l’utilisation du pouvoir, les unités correspondent aux points de Magie perdus. Un zéro sur le dé d’unité permet d’éviter la perte de PM. Il est possible de combiner plusieurs pouvoirs pendant une même action. Chaque pouvoir nécessite un jet et la diminution des unités des points de Magie.</p>\n<p>*Les Pouvoirs Mystiques sont des pouvoirs magiques innés ou temporaires transmis aux Chats d’Ulthar par la déesse Bast.</p>\n<h4>Exemple:</h4>\n<p>Lorsque le Chat Pantouffle, doté d'une perception aiguisée avec un attribut de 40, décide d'utiliser son pouvoir \"Écoute perçante\". Il se concentre intensément et grâce à cette capacité, il devient capable de capter les moindres vibrations émises par une personne qui s'approcherait à proximité. Pour ré- soudre l'utilisation de ce pouvoir, le joueur lance un D100 et soustrait 20 au résultat obtenu. Si le résultat est supérieur ou égal à la valeur de perception de 40, le chat est en mesure de détecter la présence de l'individu s'approchant discrètement. Dans cet exemple, le chat obtient un résultat de 46 au lancer de dé. L'activation de cette compétence mystique lui coûte 6 points de Magie.</p>"
+    "content": "<p>Lors de la partie, les joueurs et certains personnages non joués auront la possibilité d'utiliser les pouvoirs mystiques. Les pouvoirs peuvent être activés instantanément, offrant aux joueurs des avantages uniques dans certaines situations. Il faut néanmoins diminuer la jauge de points de Magie (PM). Àzéro point de Magie, il n'est plus possible d'utiliser aucun pouvoir jusqu'au prochain sommeil de 20h du Chat. Chaque utilisation d’un pouvoir apporte systématiquement un bonus de +20 à l’attribut en lien. Lorsque vous lancez le D100 pour résoudre l’utilisation du pouvoir, les unités correspondent aux points de Magie perdus. Un zéro sur le dé d’unité permet d’éviter la perte de PM. Il est possible de combiner plusieurs pouvoirs pendant une même action. Chaque pouvoir nécessite un jet et la diminution des unités des points de Magie.</p>\n<p>*Les Pouvoirs Mystiques sont des pouvoirs magiques innés ou temporaires transmis aux Chats d’Ulthar par la déesse Bast.</p>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple:</div><p>Lorsque le Chat Pantouffle, doté d'une perception aiguisée avec un attribut de 40, décide d'utiliser son pouvoir \"Écoute perçante\". Il se concentre intensément et grâce à cette capacité, il devient capable de capter les moindres vibrations émises par une personne qui s'approcherait à proximité. Pour ré- soudre l'utilisation de ce pouvoir, le joueur lance un D100 et soustrait 20 au résultat obtenu. Si le résultat est supérieur ou égal à la valeur de perception de 40, le chat est en mesure de détecter la présence de l'individu s'approchant discrètement. Dans cet exemple, le chat obtient un résultat de 46 au lancer de dé. L'activation de cette compétence mystique lui coûte 6 points de Magie.</p></div>"
    },
    "video": {
     "controls": true,
@@ -327,7 +327,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.vbkWDpTm3sBFw5vm"
@@ -343,7 +343,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Les pouvoirs innés tels que \"cauchemar mental\" , \"distorsion onirique\", \"manipulation d'un souvenir\" et \"recherche d'un souvenir\" suivent des règles particulières. Les chats d'Ulthar, originaires de la Contrée du Rêve, possèdent la capacité de modeler, de modifier ou d'altérer la mémoire et la perception des êtres vivants. Bien que le pouvoir semble immédiat vu de l'extérieur, pour le chat lanceur et sa cible, le temps paraît beaucoup plus long. La cible se retrouve projetée dans une bulle onirique que le Chat peut modifier afin d'interagir avec son comportement, sa perception ou ses réactions. Par exemple, pour \"rechercher un souvenir\", le chat pourra projeter la cible dans la bulle et y faire apparaître son épouse, dans l'espoir que la cible se confie à elle. Pour créer une illusion, il modifiera la réalité dans la bulle, remplaçant par exemple un monstre par un mannequin inoffensif. L'idée est de partir d'une scène initiale impliquant la cible, puis de modifier progressivement l'environnement onirique afin de provoquer l'effet escompté du pouvoir. La création d'une bulle onirique, l'altération ou la recherche de souvenirs suivent un processus en cinq étapes précises :</p>\n<p>Voici les explications détaillées de chacune des cinq étapes :</p>\n<h3>1. Connexion mentale</h3>\n<p>Pour initier le pouvoir, le chat doit créer une bulle onirique dans l'esprit de la cible. Il effectue un jet de Charisme, en y ajoutant son bonus magique. En cas de réussite, la connexion mentale est établie. Cependant, si le jet échoue, le pouvoir ne peut être déclenché. La perte de points de pouvoir ne s'applique qu'à cette première étape de création de la bulle onirique, que le jet soit réussi ou non. Exemple : Pantoufle, un chat d'Ulthar, veut utiliser son pouvoir \"recherche d'un souvenir\" sur un policier. Il s'approche discrètement et tente une connexion mentale. Il effectue un jet de Charisme et obtient une réussite avec un résultat de 24. La bulle onirique est créée au prix de 4 points de pouvoir.</p>\n<h3>2. Définition de l'objectif</h3>\n<p>Avant de plonger dans l’esprit de la cible, le lanceur doit clairement définir le but recherché. Le maître du jeu peut proposer d'adapter la demande si le pouvoir semble mal utilisé ou mal compris par le joueur. L'essentiel est que le maître et le joueur s'accordent sur l'objectif attendu avant de poursuivre.</p>\n<h3>3. Scène initiale</h3>\n<p>Une fois la connexion mentale établie avec la cible, une scène onirique de départ se forme dans son esprit, avec elle comme acteur principal. Cette scène peut être une réplique de la réalité ou un environnement complètement irréel. Dans cette bulle onirique, les lois physiques n'existent pas et tout est possible. L'initiation de la scène dépend du pouvoir utilisé : \"Cauchemar mental\" ou \"distorsion onirique\" La scène de départ représente une vision de la réalité actuelle de la cible. Le chat pourra ensuite progressivement l'altérer pour créer une illusion ou une vision d’horreur aux yeux de la cible. Celle-ci pourra y croire jusqu’à sa prochaine nuit de sommeil. \"Manipulation d'un souvenir\" ou \"recherche d'un souvenir\" La scène initiale est une projection fictive, réelle ou onirique, reflétant les pensées, préoccupations ou souvenirs de la cible, passés ou futurs. Cela peut être l'anniversaire de son épouse, un restaurant bruyant, ses prochaines vacances à la plage... Des éléments surnaturels peuvent y être ajoutés sans surprendre la cible tant qu'ils correspondent à son état d'esprit.</p>\n<h3>4. Phases d'altération</h3>\n<p>Le joueur proposera des modifications à apporter à la scène initiale, dans le but d'atteindre progressivement son objectif du pouvoir. Àchaque altération suggérée, il effectuera un jet. Pour parvenir à son objectif, le joueur doit réussir deux jets d'altération. Cependant, à chaque échec, la cible résistera et introduira un élément fictif de protection dans la bulle onirique. Si deux échecs surviennent, la bulle onirique éclatera, laissant la cible dans son état mental altéré à ce stade. Le joueur bénéficie d'une totale liberté pour proposer des altérations au sein de la bulle onirique. Néanmoins, il ne peut pas dicter les actions de la cible. C'est le maître du jeu qui déterminera, à la suite des jets de dés, si la cible agit ou non dans le sens des modifications apportées. Par exemple, le joueur ne peut pas affirmer \"la cible va vers la porte que je viens de créer\". Cependant, il peut faire apparaître une porte ouverte avec une lumière attirante. Le résultat du jet indiquera alors si cette lumière attire effectivement la cible. De même, s'il souhaite que la cible se rappelle un événement, il peut faire apparaître un livre qui s'ouvre de lui-même sur une page comportant les mots évocateurs comme \"Hier, en observant la voiture, j'ai vu...\".</p>\n<h4>Exemple:</h4>\n<p>Pantoufle souhaite utiliser son pouvoir \"recherche d'un souvenir\" afin d'explorer la mémoire du policier et connaître les échanges que celui-ci vient d'avoir avec le barman. Le joueur et le maître s’accordent sur l’idée que la recherche va consister à modifier les scènes pour amener la cible à répondre, visualiser ou réentendre le souvenir de son échange avec le barman.</p>\n<p>Le principe reste toujours le même : l'altération doit inciter la cible dans une direction particulière, sans la contrôler directement. Le jet de dés déterminera si elle suit ou non cette impulsion onirique.</p>\n<h3>5. État final</h3>\n<p>Après deux réussites ou deux échecs, la bulle onirique éclate, laissant la cible dans son état psychique. Parfois, un échec peut introduire des éléments narratifs imprévus, venant compliquer la scène onirique de manière défavorable pour le groupe.</p>\n<h3>Note:</h3>\n<p>Lors des premières utilisations de ces pouvoirs oniriques complexes, prenez le temps d'expliquer clairement chaque étape aux joueurs. En mode \"Serious Cat\", les autres Chats ne peuvent ni conseiller, ni participer, conjointement avec le lanceur du pouvoir. Celui-ci doit mener seul les altérations.</p>\n<p>ration é lt 'a d s e s a h p e d le Exemp dans la bulle onirique. La un téléphone qui sonne Pantoufle fait apparaître n mari en disant \"C'est so à eil ar pp l'a nd te et he femme du policier décroc il ton chef\". valider cette altération et ur po e ism ar Ch de jet Pantoufle effectue un est donc acceptée. réussit. La modification policier e à nouveau la scène. Le èr alt fle ou nt Pa e, nt iva ite de Pour la phase su mander le rapport à la su de i lu ef ch n so de ix vo entend désormais la an. du sa discussion avec le barm ue cette fois. La réaction ho éc fle ou nt Pa de on ati ra son Cependant, le jet d'altér é. Celui-ci répond qu'il fe pt m co es ns se le ns da s policier ne va pa demain matin. rapport par écrit dès le len oufle pour ative d'altération à Pant nt te e ièr rn de ne 'u qu us Il ne reste pl ns quoi la bulle onirique sa f, cti je ob n so e dr ein att rs apparaître un éclatera. Pantoufle fait alo table. collègue qui s'assoit à la hine à écrire et Ce dernier sort une mac pport. Il commence à taper un ra répéter mot demande au policier de avec le pour mot ses échanges , le chef barman. En arrière-plan fait des gestes pressants. Pantoufle réussit son jet ier, pris d'altération final. Le polic relater en au piège, se met alors à ec le détail sa conversation av barman.</p>"
+    "content": "<p>Les pouvoirs innés tels que \"cauchemar mental\" , \"distorsion onirique\", \"manipulation d'un souvenir\" et \"recherche d'un souvenir\" suivent des règles particulières. Les chats d'Ulthar, originaires de la Contrée du Rêve, possèdent la capacité de modeler, de modifier ou d'altérer la mémoire et la perception des êtres vivants. Bien que le pouvoir semble immédiat vu de l'extérieur, pour le chat lanceur et sa cible, le temps paraît beaucoup plus long. La cible se retrouve projetée dans une bulle onirique que le Chat peut modifier afin d'interagir avec son comportement, sa perception ou ses réactions. Par exemple, pour \"rechercher un souvenir\", le chat pourra projeter la cible dans la bulle et y faire apparaître son épouse, dans l'espoir que la cible se confie à elle. Pour créer une illusion, il modifiera la réalité dans la bulle, remplaçant par exemple un monstre par un mannequin inoffensif. L'idée est de partir d'une scène initiale impliquant la cible, puis de modifier progressivement l'environnement onirique afin de provoquer l'effet escompté du pouvoir. La création d'une bulle onirique, l'altération ou la recherche de souvenirs suivent un processus en cinq étapes précises :</p>\n<p>Voici les explications détaillées de chacune des cinq étapes :</p>\n<h3>1. Connexion mentale</h3>\n<p>Pour initier le pouvoir, le chat doit créer une bulle onirique dans l'esprit de la cible. Il effectue un jet de Charisme, en y ajoutant son bonus magique. En cas de réussite, la connexion mentale est établie. Cependant, si le jet échoue, le pouvoir ne peut être déclenché. La perte de points de pouvoir ne s'applique qu'à cette première étape de création de la bulle onirique, que le jet soit réussi ou non. Exemple : Pantoufle, un chat d'Ulthar, veut utiliser son pouvoir \"recherche d'un souvenir\" sur un policier. Il s'approche discrètement et tente une connexion mentale. Il effectue un jet de Charisme et obtient une réussite avec un résultat de 24. La bulle onirique est créée au prix de 4 points de pouvoir.</p>\n<h3>2. Définition de l'objectif</h3>\n<p>Avant de plonger dans l’esprit de la cible, le lanceur doit clairement définir le but recherché. Le maître du jeu peut proposer d'adapter la demande si le pouvoir semble mal utilisé ou mal compris par le joueur. L'essentiel est que le maître et le joueur s'accordent sur l'objectif attendu avant de poursuivre.</p>\n<h3>3. Scène initiale</h3>\n<p>Une fois la connexion mentale établie avec la cible, une scène onirique de départ se forme dans son esprit, avec elle comme acteur principal. Cette scène peut être une réplique de la réalité ou un environnement complètement irréel. Dans cette bulle onirique, les lois physiques n'existent pas et tout est possible. L'initiation de la scène dépend du pouvoir utilisé : \"Cauchemar mental\" ou \"distorsion onirique\" La scène de départ représente une vision de la réalité actuelle de la cible. Le chat pourra ensuite progressivement l'altérer pour créer une illusion ou une vision d’horreur aux yeux de la cible. Celle-ci pourra y croire jusqu’à sa prochaine nuit de sommeil. \"Manipulation d'un souvenir\" ou \"recherche d'un souvenir\" La scène initiale est une projection fictive, réelle ou onirique, reflétant les pensées, préoccupations ou souvenirs de la cible, passés ou futurs. Cela peut être l'anniversaire de son épouse, un restaurant bruyant, ses prochaines vacances à la plage... Des éléments surnaturels peuvent y être ajoutés sans surprendre la cible tant qu'ils correspondent à son état d'esprit.</p>\n<h3>4. Phases d'altération</h3>\n<p>Le joueur proposera des modifications à apporter à la scène initiale, dans le but d'atteindre progressivement son objectif du pouvoir. Àchaque altération suggérée, il effectuera un jet. Pour parvenir à son objectif, le joueur doit réussir deux jets d'altération. Cependant, à chaque échec, la cible résistera et introduira un élément fictif de protection dans la bulle onirique. Si deux échecs surviennent, la bulle onirique éclatera, laissant la cible dans son état mental altéré à ce stade. Le joueur bénéficie d'une totale liberté pour proposer des altérations au sein de la bulle onirique. Néanmoins, il ne peut pas dicter les actions de la cible. C'est le maître du jeu qui déterminera, à la suite des jets de dés, si la cible agit ou non dans le sens des modifications apportées. Par exemple, le joueur ne peut pas affirmer \"la cible va vers la porte que je viens de créer\". Cependant, il peut faire apparaître une porte ouverte avec une lumière attirante. Le résultat du jet indiquera alors si cette lumière attire effectivement la cible. De même, s'il souhaite que la cible se rappelle un événement, il peut faire apparaître un livre qui s'ouvre de lui-même sur une page comportant les mots évocateurs comme \"Hier, en observant la voiture, j'ai vu...\".</p>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple:</div><p>Pantoufle souhaite utiliser son pouvoir \"recherche d'un souvenir\" afin d'explorer la mémoire du policier et connaître les échanges que celui-ci vient d'avoir avec le barman. Le joueur et le maître s’accordent sur l’idée que la recherche va consister à modifier les scènes pour amener la cible à répondre, visualiser ou réentendre le souvenir de son échange avec le barman.</p>\n<p>Le principe reste toujours le même : l'altération doit inciter la cible dans une direction particulière, sans la contrôler directement. Le jet de dés déterminera si elle suit ou non cette impulsion onirique.</p>\n</div><h3>5. État final</h3>\n<p>Après deux réussites ou deux échecs, la bulle onirique éclate, laissant la cible dans son état psychique. Parfois, un échec peut introduire des éléments narratifs imprévus, venant compliquer la scène onirique de manière défavorable pour le groupe.</p>\n<h3>Note:</h3>\n<p>Lors des premières utilisations de ces pouvoirs oniriques complexes, prenez le temps d'expliquer clairement chaque étape aux joueurs. En mode \"Serious Cat\", les autres Chats ne peuvent ni conseiller, ni participer, conjointement avec le lanceur du pouvoir. Celui-ci doit mener seul les altérations.</p>\n<p>ration é lt 'a d s e s a h p e d le Exemp dans la bulle onirique. La un téléphone qui sonne Pantoufle fait apparaître n mari en disant \"C'est so à eil ar pp l'a nd te et he femme du policier décroc il ton chef\". valider cette altération et ur po e ism ar Ch de jet Pantoufle effectue un est donc acceptée. réussit. La modification policier e à nouveau la scène. Le èr alt fle ou nt Pa e, nt iva ite de Pour la phase su mander le rapport à la su de i lu ef ch n so de ix vo entend désormais la an. du sa discussion avec le barm ue cette fois. La réaction ho éc fle ou nt Pa de on ati ra son Cependant, le jet d'altér é. Celui-ci répond qu'il fe pt m co es ns se le ns da s policier ne va pa demain matin. rapport par écrit dès le len oufle pour ative d'altération à Pant nt te e ièr rn de ne 'u qu us Il ne reste pl ns quoi la bulle onirique sa f, cti je ob n so e dr ein att rs apparaître un éclatera. Pantoufle fait alo table. collègue qui s'assoit à la hine à écrire et Ce dernier sort une mac pport. Il commence à taper un ra répéter mot demande au policier de avec le pour mot ses échanges , le chef barman. En arrière-plan fait des gestes pressants. Pantoufle réussit son jet ier, pris d'altération final. Le polic relater en au piège, se met alors à ec le détail sa conversation av barman.</p>"
    },
    "video": {
     "controls": true,
@@ -360,7 +360,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.nYOkTI7LnyDTuw0c"
@@ -393,7 +393,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.TIkSi1rBqpSE8ayO"
@@ -426,7 +426,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.7Tbyb8lfyYaXstVi"
@@ -459,7 +459,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.RJCWPcL29Yqmt5aD"
@@ -492,7 +492,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.YwMOV0VCukh28GiL"
@@ -525,7 +525,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.kqnW615Z2bRoPYbL"
@@ -536,12 +536,16 @@
  "ownership": {
   "default": 2
  },
- "flags": {},
+ "flags": {
+  "miaulements-ulthar": {
+   "journal": true
+  }
+ },
  "_stats": {
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.5.0",
+  "systemVersion": "0.6.0",
   "coreVersion": "14.368"
  },
  "_key": "!journal!9e5vCTMFhONva2Dr"

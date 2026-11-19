@@ -7,6 +7,7 @@ import { api } from "./outils.mjs";
 import { SuiviGroupe, brancherAmbiance, ajouterBoutons } from "./ambiance.mjs";
 import { enregistrerParametresWiki, enregistrerHooksWiki, ouvrirWiki } from "./wiki.mjs";
 import { enregistrerParametresAccueil, enregistrerHooksAccueil } from "./accueil.mjs";
+import { enregistrerHooksJournal } from "./journal.mjs";
 
 Hooks.once("init", () => {
   console.log(`${SYSTEM_ID} | initialisation`);
@@ -78,6 +79,7 @@ Hooks.on("getSceneControlButtons", (controls) => ajouterBoutons(controls));
 
 enregistrerHooksWiki();
 enregistrerHooksAccueil();
+enregistrerHooksJournal();
 
 Hooks.once("ready", async () => {
   ecouterSocket();

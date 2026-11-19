@@ -13,7 +13,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Wiki du <strong>Gardien</strong> (meneur de jeu). Il n'est visible que par le MJ.</p><ul><li>@UUID[Compendium.miaulements-ulthar.wiki-mj.JournalEntry.RFMAV9zhzzcc4LdE]{Guide du maître de jeu}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-mj.JournalEntry.XesvLJ1ATFOHzoxm]{L'univers de Lovecraft}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-mj.JournalEntry.l9rZLtyFqjaW89OU]{Scénario d'initiation : les chiens dimensionnels}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-mj.JournalEntry.J90QJuIkEau9P4Wx]{Écran du MJ}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-mj.JournalEntry.ogSu2g7PX0tjHNFF]{Bestiaire}</li></ul><h2>Autres compendiums</h2><ul><li>« Scénarios » : le livre des scénarios (enquêtes émergentes guidées, campagne « Les Clefs Interdites », aides de jeu) et le scénario Sommilius.</li><li>« Bestiaire » : 29 adversaires prêts à jouer (glisser sur la scène).</li><li>« Prétirés » : 7 Chats prêts à jouer.</li><li>« Tables » : cartes Folie, pouvoirs temporaires, événements, réactions.</li></ul><h2>Wiki des joueurs</h2><p>@UUID[Compendium.miaulements-ulthar.wiki-joueur.JournalEntry.TuiWXSQBkPoA34Du]{Ouvrir le wiki des joueurs}</p>"
+    "content": "<div class=\"mu-une\"><div class=\"mu-une-titre\">Le Journal d'Arkham</div><div>Édition réservée au Gardien</div><div class=\"mu-une-bandeau\"><span>Wiki du Gardien</span><span>Les Miaulements d'Ulthar</span><span>Arkham, 1921</span></div></div><p>Wiki du <strong>Gardien</strong> (meneur de jeu). Il n'est visible que par le MJ.</p><ul><li>@UUID[Compendium.miaulements-ulthar.wiki-mj.JournalEntry.RFMAV9zhzzcc4LdE]{Guide du maître de jeu}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-mj.JournalEntry.XesvLJ1ATFOHzoxm]{L'univers de Lovecraft}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-mj.JournalEntry.l9rZLtyFqjaW89OU]{Scénario d'initiation : les chiens dimensionnels}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-mj.JournalEntry.J90QJuIkEau9P4Wx]{Écran du MJ}</li><li>@UUID[Compendium.miaulements-ulthar.wiki-mj.JournalEntry.ogSu2g7PX0tjHNFF]{Bestiaire}</li></ul><h2>Autres compendiums</h2><ul><li>« Scénarios » : le livre des scénarios (enquêtes émergentes guidées, campagne « Les Clefs Interdites », aides de jeu) et le scénario Sommilius.</li><li>« Bestiaire » : 29 adversaires prêts à jouer (glisser sur la scène).</li><li>« Prétirés » : 7 Chats prêts à jouer.</li><li>« Tables » : cartes Folie, pouvoirs temporaires, événements, réactions.</li></ul><h2>Wiki des joueurs</h2><p>@UUID[Compendium.miaulements-ulthar.wiki-joueur.JournalEntry.TuiWXSQBkPoA34Du]{Ouvrir le wiki des joueurs}</p>"
    },
    "video": {
     "controls": true,
@@ -30,7 +30,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!REq2AfWPM492O6K6.CVntEfKdIVA4lt21"
@@ -41,12 +41,16 @@
  "ownership": {
   "default": 0
  },
- "flags": {},
+ "flags": {
+  "miaulements-ulthar": {
+   "journal": true
+  }
+ },
  "_stats": {
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.5.0",
+  "systemVersion": "0.6.0",
   "coreVersion": "14.368"
  },
  "_key": "!journal!REq2AfWPM492O6K6"

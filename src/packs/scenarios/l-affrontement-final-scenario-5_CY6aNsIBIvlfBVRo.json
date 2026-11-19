@@ -30,7 +30,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!CY6aNsIBIvlfBVRo.5BbcbvRHwJVSlrxV"
@@ -63,7 +63,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!CY6aNsIBIvlfBVRo.1wsoRMdHiM19rTV8"
@@ -96,7 +96,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!CY6aNsIBIvlfBVRo.vQnUa7hmtkwZmy4J"
@@ -129,7 +129,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!CY6aNsIBIvlfBVRo.IXula1wkWSSGnips"
@@ -162,7 +162,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!CY6aNsIBIvlfBVRo.GJsNcCEYPmnGhpTP"
@@ -195,7 +195,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!CY6aNsIBIvlfBVRo.vL0dZO29fWuyTEsF"
@@ -228,7 +228,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!CY6aNsIBIvlfBVRo.AGQy1t261ZaHVYqD"
@@ -261,7 +261,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.6.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!CY6aNsIBIvlfBVRo.Hm9HXwSpSA4qJSFs"
@@ -272,12 +272,16 @@
  "ownership": {
   "default": 0
  },
- "flags": {},
+ "flags": {
+  "miaulements-ulthar": {
+   "journal": true
+  }
+ },
  "_stats": {
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.5.0",
+  "systemVersion": "0.6.0",
   "coreVersion": "14.368"
  },
  "_key": "!journal!CY6aNsIBIvlfBVRo"

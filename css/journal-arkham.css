@@ -1,0 +1,79 @@
+/* Les Miaulements d'Ulthar — thème « Journal d'Arkham, 1921 » des wikis et scénarios.
+   Polices embarquées (SIL OFL, assets/fonts/LICENCES-OFL.txt) : le wiki fonctionne sans internet.
+   S'applique aux fenêtres de journal qui portent la classe .mu-journal (ajoutée par module/journal.mjs). */
+@font-face { font-family: 'Grenze Gotisch'; font-style: normal; font-weight: 600; font-display: swap; src: url('../assets/fonts/grenze-gotisch-latin-600-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Grenze Gotisch'; font-style: normal; font-weight: 600; font-display: swap; src: url('../assets/fonts/grenze-gotisch-latin-ext-600-normal.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Playfair Display SC'; font-style: normal; font-weight: 700; font-display: swap; src: url('../assets/fonts/playfair-display-sc-latin-700-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Playfair Display SC'; font-style: normal; font-weight: 700; font-display: swap; src: url('../assets/fonts/playfair-display-sc-latin-ext-700-normal.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Old Standard TT'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/old-standard-tt-latin-400-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Old Standard TT'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/old-standard-tt-latin-ext-400-normal.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Old Standard TT'; font-style: italic; font-weight: 400; font-display: swap; src: url('../assets/fonts/old-standard-tt-latin-400-italic.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Old Standard TT'; font-style: italic; font-weight: 400; font-display: swap; src: url('../assets/fonts/old-standard-tt-latin-ext-400-italic.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Old Standard TT'; font-style: normal; font-weight: 700; font-display: swap; src: url('../assets/fonts/old-standard-tt-latin-700-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Old Standard TT'; font-style: normal; font-weight: 700; font-display: swap; src: url('../assets/fonts/old-standard-tt-latin-ext-700-normal.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+
+.mu-journal {
+  --mu-papier: #ece6d8; --mu-papier-2: #f6f1e4; --mu-encre: #1c1a17; --mu-gris: #6b645a; --mu-filet: #9a927f; --mu-rouge: #7a1f1a;
+  --mu-titre: 'Grenze Gotisch', 'Old English Text MT', serif; --mu-sc: 'Playfair Display SC', Georgia, serif; --mu-texte: 'Old Standard TT', Georgia, serif;
+}
+/* Fond « papier journal » : un dégradé et une fine trame, sans image ni filtre (rien à recalculer). */
+.mu-journal .window-content { background: var(--mu-papier) repeating-linear-gradient(0deg, rgba(0,0,0,.016) 0 2px, transparent 2px 4px); color: var(--mu-encre); }
+.mu-journal .journal-entry-content, .mu-journal .journal-entry-pages, .mu-journal .journal-entry-page { background: transparent; color: var(--mu-encre); }
+
+/* Sommaire (colonne de gauche) */
+.mu-journal .journal-sidebar, .mu-journal aside.sidebar { background: #e3dccb; border-right: 2px solid var(--mu-encre); color: var(--mu-encre); }
+.mu-journal .journal-sidebar .toc li, .mu-journal aside.sidebar .toc li { font-family: var(--mu-texte); color: var(--mu-encre); border-bottom: 1px dotted var(--mu-filet); }
+.mu-journal .journal-sidebar .toc li.active, .mu-journal aside.sidebar .toc li.active { background: var(--mu-encre); color: var(--mu-papier); }
+.mu-journal .journal-sidebar .toc li.active *, .mu-journal aside.sidebar .toc li.active * { color: var(--mu-papier); }
+.mu-journal .journal-sidebar input, .mu-journal aside.sidebar input { background: var(--mu-papier-2); color: var(--mu-encre); border: 1px solid var(--mu-filet); }
+
+/* Titre de l'entrée et des pages */
+.mu-journal .journal-header input.title, .mu-journal .journal-header .title { font-family: var(--mu-titre); font-size: 2.2em; color: var(--mu-encre); background: transparent; border: none; text-align: center; }
+.mu-journal .journal-page-header h1, .mu-journal article.journal-entry-page > header h1 {
+  font-family: var(--mu-titre); font-weight: 600; font-size: 2.6em; color: var(--mu-encre); text-align: center; line-height: 1.05;
+  border-top: 3px double var(--mu-encre); border-bottom: 1px solid var(--mu-encre); padding: 6px 0 4px; margin: 0 0 4px;
+}
+.mu-journal .journal-page-header h1::after { content: "Les Miaulements d'Ulthar · Arkham, 1921"; display: block; font-family: var(--mu-sc); font-size: .26em; letter-spacing: .25em; font-weight: 700; margin-top: 4px; color: var(--mu-gris); }
+
+/* Texte */
+.mu-journal .journal-page-content { font-family: var(--mu-texte); font-size: 15.5px; line-height: 1.5; color: var(--mu-encre); }
+.mu-journal .journal-page-content p { text-align: justify; hyphens: auto; margin: 0 0 .7em; }
+.mu-journal .journal-page-content strong { font-weight: 700; }
+.mu-journal .journal-page-content a, .mu-journal .journal-page-content a.content-link { color: var(--mu-rouge); background: transparent; border: none; border-bottom: 1px dotted var(--mu-rouge); }
+
+/* Intertitres : h2 en gothique avec une trace de pattes, h3 en petites capitales précédées d'une patte */
+.mu-journal .journal-page-content h1, .mu-journal .journal-page-content h2 { font-family: var(--mu-titre); font-weight: 600; font-size: 1.9em; color: var(--mu-encre); border: none; margin: .8em 0 .2em; text-align: center; }
+.mu-journal .journal-page-content h2::after { content: ""; display: block; height: 18px; margin-top: 4px; background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2060%2024%22%3E%3Cg%20fill%3D%22%236b645a%22%20transform%3D%22translate%2812%2013%29%20rotate%2890%29%20scale%28.16%29%20translate%28-50%20-55%29%22%3E%3Cpath%20d%3D%22M50%2046c-15%200-28%2013-28%2026%200%2010%208%2015%2017%2013%205-1%207-3%2011-3s6%202%2011%203c9%202%2017-3%2017-13%200-13-13-26-28-26z%22/%3E%3Cellipse%20cx%3D%2223%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%28-25%2023%2039%29%22/%3E%3Cellipse%20cx%3D%2240%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%28-8%2040%2023%29%22/%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%288%2060%2023%29%22/%3E%3Cellipse%20cx%3D%2277%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%2825%2077%2039%29%22/%3E%3C/g%3E%3Cg%20fill%3D%22%236b645a%22%20transform%3D%22translate%2842%207%29%20rotate%2890%29%20scale%28.16%29%20translate%28-50%20-55%29%22%3E%3Cpath%20d%3D%22M50%2046c-15%200-28%2013-28%2026%200%2010%208%2015%2017%2013%205-1%207-3%2011-3s6%202%2011%203c9%202%2017-3%2017-13%200-13-13-26-28-26z%22/%3E%3Cellipse%20cx%3D%2223%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%28-25%2023%2039%29%22/%3E%3Cellipse%20cx%3D%2240%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%28-8%2040%2023%29%22/%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%288%2060%2023%29%22/%3E%3Cellipse%20cx%3D%2277%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%2825%2077%2039%29%22/%3E%3C/g%3E%3C/svg%3E") center / 60px 24px repeat-x; opacity: .7; }
+.mu-journal .journal-page-content h3 { font-family: var(--mu-sc); font-weight: 700; font-size: 1.15em; letter-spacing: .06em; color: var(--mu-encre); border-bottom: 2px solid var(--mu-encre); padding-bottom: 2px; margin: 1em 0 .4em; }
+.mu-journal .journal-page-content h3::before { content: ""; display: inline-block; width: .9em; height: .9em; margin-right: .35em; vertical-align: -.08em; background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22%237a1f1a%22%3E%3Cpath%20d%3D%22M50%2046c-15%200-28%2013-28%2026%200%2010%208%2015%2017%2013%205-1%207-3%2011-3s6%202%2011%203c9%202%2017-3%2017-13%200-13-13-26-28-26z%22/%3E%3Cellipse%20cx%3D%2223%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%28-25%2023%2039%29%22/%3E%3Cellipse%20cx%3D%2240%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%28-8%2040%2023%29%22/%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%288%2060%2023%29%22/%3E%3Cellipse%20cx%3D%2277%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%2825%2077%2039%29%22/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; }
+.mu-journal .journal-page-content h4, .mu-journal .journal-page-content h5, .mu-journal .journal-page-content h6 { font-family: var(--mu-sc); font-weight: 700; letter-spacing: .08em; color: var(--mu-encre); border: none; margin: .8em 0 .3em; }
+
+/* Lettrine au début de chaque section */
+.mu-journal .journal-page-content h2 + p::first-letter, .mu-journal .journal-page-content h3 + p::first-letter { float: left; font-family: var(--mu-titre); font-size: 3.3em; line-height: .8; margin: .08em .1em 0 0; color: var(--mu-encre); }
+
+/* Listes à pattes */
+.mu-journal .journal-page-content ul { list-style: none; padding-left: 1.4em; }
+.mu-journal .journal-page-content ul li { position: relative; margin: .2em 0; }
+.mu-journal .journal-page-content ul li::before { content: ""; position: absolute; left: -1.25em; top: .3em; width: .8em; height: .8em; background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22%236b645a%22%3E%3Cpath%20d%3D%22M50%2046c-15%200-28%2013-28%2026%200%2010%208%2015%2017%2013%205-1%207-3%2011-3s6%202%2011%203c9%202%2017-3%2017-13%200-13-13-26-28-26z%22/%3E%3Cellipse%20cx%3D%2223%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%28-25%2023%2039%29%22/%3E%3Cellipse%20cx%3D%2240%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%28-8%2040%2023%29%22/%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%2223%22%20rx%3D%229%22%20ry%3D%2212.5%22%20transform%3D%22rotate%288%2060%2023%29%22/%3E%3Cellipse%20cx%3D%2277%22%20cy%3D%2239%22%20rx%3D%228.5%22%20ry%3D%2211.5%22%20transform%3D%22rotate%2825%2077%2039%29%22/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; }
+
+/* Encadrés « Exemple » (marges du livre) et citations du Journal d'Arkham */
+.mu-journal .journal-page-content .mu-exemple { background: var(--mu-papier-2); border: 1px solid var(--mu-encre); outline: 1px solid var(--mu-encre); outline-offset: 3px; padding: 8px 12px; margin: 14px 4px; }
+.mu-journal .journal-page-content .mu-exemple > .mu-exemple-titre { font-family: var(--mu-sc); font-weight: 700; letter-spacing: .12em; margin-bottom: 2px; }
+.mu-journal .journal-page-content blockquote { font-style: italic; border: none; border-left: 3px solid var(--mu-rouge); background: transparent; color: var(--mu-encre); margin: 12px 0; padding: 2px 12px; }
+.mu-journal .journal-page-content blockquote em { font-family: var(--mu-sc); font-style: normal; font-size: .8em; letter-spacing: .1em; color: var(--mu-gris); }
+
+/* Badges des races */
+.mu-journal .journal-page-content .mu-badges { display: flex; gap: 8px; justify-content: center; margin: 2px 0 10px; }
+.mu-journal .journal-page-content .mu-badges span { font-family: var(--mu-sc); font-weight: 700; font-size: .85em; letter-spacing: .05em; padding: 1px 10px; border: 1px solid var(--mu-encre); background: var(--mu-papier-2); }
+.mu-journal .journal-page-content .mu-badges .mu-moins { color: var(--mu-rouge); border-color: var(--mu-rouge); }
+
+/* Bandeau « une » des pages d'accueil */
+.mu-journal .journal-page-content .mu-une { text-align: center; border-top: 4px double var(--mu-encre); border-bottom: 4px double var(--mu-encre); padding: 6px 0; margin-bottom: 12px; }
+.mu-journal .journal-page-content .mu-une .mu-une-titre { font-family: var(--mu-titre); font-size: 2.6em; line-height: 1; }
+.mu-journal .journal-page-content .mu-une .mu-une-bandeau { display: flex; justify-content: space-between; font-family: var(--mu-sc); font-size: .75em; letter-spacing: .15em; border-top: 1px solid var(--mu-encre); margin-top: 4px; padding-top: 3px; }
+
+/* Tableaux */
+.mu-journal .journal-page-content table { border-collapse: collapse; width: 100%; border: 1px solid var(--mu-encre); background: var(--mu-papier-2); margin: 8px 0; }
+.mu-journal .journal-page-content th { background: var(--mu-encre); color: var(--mu-papier); font-family: var(--mu-sc); font-weight: 700; letter-spacing: .04em; text-align: left; padding: 4px 8px; }
+.mu-journal .journal-page-content td { border-bottom: 1px solid var(--mu-filet); padding: 4px 8px; vertical-align: top; }
+.mu-journal .journal-page-content tr:nth-child(even) td { background: rgba(0,0,0,.03); }
