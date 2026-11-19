@@ -3,8 +3,8 @@
  "name": "Les Clefs Interdites (campagne)",
  "pages": [
   {
-   "_id": "SBD3NDxJ8Af1aJE2",
-   "name": "Campagne Les Clefs Interdites Co-scénariste : Silkinael Intrigue générale",
+   "_id": "snKH6o2fGBN4IQS4",
+   "name": "Intrigue générale",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!BYxuDmseullWNs16.SBD3NDxJ8Af1aJE2"
+   "_key": "!journal.pages!BYxuDmseullWNs16.snKH6o2fGBN4IQS4"
   }
  ],
  "folder": null,

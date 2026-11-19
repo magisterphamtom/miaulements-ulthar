@@ -3,8 +3,8 @@
  "name": "L'univers de Lovecraft",
  "pages": [
   {
-   "_id": "gdeK5xb63EBFnEs9",
-   "name": "L'univers de Lovecraft L'univers de Lovecraft",
+   "_id": "0UcyRcCZFTivkUI4",
+   "name": "L'univers de Lovecraft",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!XesvLJ1ATFOHzoxm.gdeK5xb63EBFnEs9"
+   "_key": "!journal.pages!XesvLJ1ATFOHzoxm.0UcyRcCZFTivkUI4"
   },
   {
    "_id": "tJSovKaor9N2SQKT",

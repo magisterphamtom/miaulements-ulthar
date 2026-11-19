@@ -3,8 +3,8 @@
  "name": "Les peintures maudites",
  "pages": [
   {
-   "_id": "LD7K4q3uvJVmWrcK",
-   "name": "Scénario Les peintures maudites Intrigue générale",
+   "_id": "SYQHQ7LqBDfx0mFd",
+   "name": "Intrigue générale",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!ceb9wOsoMWY2vYqv.LD7K4q3uvJVmWrcK"
+   "_key": "!journal.pages!ceb9wOsoMWY2vYqv.SYQHQ7LqBDfx0mFd"
   },
   {
    "_id": "58PCu25gL9rRHG5p",

@@ -3,8 +3,8 @@
  "name": "Les Profonds",
  "pages": [
   {
-   "_id": "QUHYgO00I7CCGZVC",
-   "name": "Scénario Les Profonds Intrigue générale",
+   "_id": "SAs7K3FBEB8ZEf7t",
+   "name": "Intrigue générale",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.QUHYgO00I7CCGZVC"
+   "_key": "!journal.pages!hJNaU6cSRRw8Iu6Q.SAs7K3FBEB8ZEf7t"
   },
   {
    "_id": "wPGDG5BhbYV0TbWw",

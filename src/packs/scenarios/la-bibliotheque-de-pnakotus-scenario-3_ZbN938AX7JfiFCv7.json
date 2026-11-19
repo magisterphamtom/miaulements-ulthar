@@ -3,8 +3,8 @@
  "name": "La bibliothèque de Pnakotus (scénario 3)",
  "pages": [
   {
-   "_id": "iVDxODnMvAS9c6Q2",
-   "name": "Scénario 3 La Bibliothéque de Pnakotus Intrigue générale",
+   "_id": "ARn0umpkBLNOVrHV",
+   "name": "Intrigue générale",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!ZbN938AX7JfiFCv7.iVDxODnMvAS9c6Q2"
+   "_key": "!journal.pages!ZbN938AX7JfiFCv7.ARn0umpkBLNOVrHV"
   },
   {
    "_id": "7mZFLysFAG9nt05N",

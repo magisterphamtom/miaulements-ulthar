@@ -3,8 +3,8 @@
  "name": "L'affrontement final (scénario 5)",
  "pages": [
   {
-   "_id": "O00xG7vHbKbqMtIr",
-   "name": "Scénario 5 L’affrontement final Intrigue générale",
+   "_id": "5BbcbvRHwJVSlrxV",
+   "name": "Intrigue générale",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!CY6aNsIBIvlfBVRo.O00xG7vHbKbqMtIr"
+   "_key": "!journal.pages!CY6aNsIBIvlfBVRo.5BbcbvRHwJVSlrxV"
   },
   {
    "_id": "1wsoRMdHiM19rTV8",

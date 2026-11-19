@@ -13,7 +13,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<h3>Système de jeu Système de jeu</h3>\n<p>Le système de règles dans un jeu de rôle occupe une place importante. Il permet d’avoir un cadre cohérent pour déterminer le succès ou l'échec des actions des joueurs et des personnages non-joueurs, que ce soit entre eux ou sur l'environnement.</p>\n<p>Lorsque vous réalisez <strong>un jet de D100, utilisez deux dés à dix faces</strong>. Le premier dé représente les dizaines et le second dé représente les unités. Ensuite, combinez les résultats pour obtenir un nombre compris entre 1 et 100. Notez que le résultat \"00\" correspond à la valeur de 100.</p>\n<p>Par exemple, si vous obtenez un 4 sur le premier dé et un 9 sur le second dé, combinez les deux résultats pour obtenir le nombre 49.</p>\n<p><strong>Les dégâts seront calculés en utilisant des dés de différentes tailles, tels que </strong> <strong>D4, D6 et D10</strong>. Lorsqu'il est nécessaire de lancer plusieurs dés du même type, cela est indiqué sous la forme \"4D10\" pour représenter le lancer de quatre dés à dix faces.</p>"
+    "content": "<h3>Système de jeu</h3>\n<p>Le système de règles dans un jeu de rôle occupe une place importante. Il permet d’avoir un cadre cohérent pour déterminer le succès ou l'échec des actions des joueurs et des personnages non-joueurs, que ce soit entre eux ou sur l'environnement.</p>\n<p>Lorsque vous réalisez <strong>un jet de D100, utilisez deux dés à dix faces</strong>. Le premier dé représente les dizaines et le second dé représente les unités. Ensuite, combinez les résultats pour obtenir un nombre compris entre 1 et 100. Notez que le résultat \"00\" correspond à la valeur de 100.</p>\n<p>Par exemple, si vous obtenez un 4 sur le premier dé et un 9 sur le second dé, combinez les deux résultats pour obtenir le nombre 49.</p>\n<p><strong>Les dégâts seront calculés en utilisant des dés de différentes tailles, tels que </strong> <strong>D4, D6 et D10</strong>. Lorsqu'il est nécessaire de lancer plusieurs dés du même type, cela est indiqué sous la forme \"4D10\" pour représenter le lancer de quatre dés à dix faces.</p>"
    },
    "video": {
     "controls": true,
@@ -310,7 +310,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Dans l'univers Lovecraftien, les chats sont également confrontés à des épreuves qui peuvent ébranler leur santé mentale. Lors de rencontres avec l'inconnu, l'horreur ou l’angoisse par exemple, le joueur doit faire un jet de Folie. En cas d’échec (score du dé supérieur), le joueur tire une carte de Folie et décide s’il l’utilise immédiatement ou plus tard.</p>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple</div><p>Imaginez un chat joueur, se promenant dans une ruelle sombre. Soudain, il rencontre une créature cauchemardesque tel un chien de Tindalos. Le joueur fait un jet de Folie (score actuel : 57). Il lance un D100 et obtient un résultat de 74. L'échec indique que la Folie s'empare du Chat. La vision terrifiante est si intense que le chat en est paralysé. Il tire une carte Folie « Rentrer dans des boîtes trop petites ». Depuis le début de la partie, le joueur a accumulé trois cartes Folie. Il décide d’utiliser maintenant la carte « Folie Hyperactive » et dans quelques instants la carte Folie « Rentrer dans des boîtes trop petites » pour prévenir la fin de partie.</p></div>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple</div><p>Prenons l'exemple de Peluche, dont le score de folie est de 45. Alors qu'elle s'approche d'un groupe d'oiseaux pour les écouter et les interroger, son instinct de chasseur peut prendre le dessus. Le joueur lance un D100 et obtient un résultat de 72, ce qui dépasse son score de Folie. Peluche est submergée par son instinct de chasseur. Le joueur pioche une carte folie « Attraper sa queue ». Le joueur peut préférer la garder pour plus tard et continuer à interroger les oiseaux.</p></div>"
+    "content": "<p>Dans l'univers Lovecraftien, les chats sont également confrontés à des épreuves qui peuvent ébranler leur santé mentale. Lors de rencontres avec l'inconnu, l'horreur ou l’angoisse par exemple, le joueur doit faire un jet de Folie. En cas d’échec (score du dé supérieur), le joueur tire une carte de Folie et décide s’il l’utilise immédiatement ou plus tard.</p>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple</div><p>Imaginez un chat joueur, se promenant dans une ruelle sombre. Soudain, il rencontre une créature cauchemardesque tel un chien de Tindalos. Le joueur fait un jet de Folie (score actuel : 57). Il lance un D100 et obtient un résultat de 74. L'échec indique que la Folie s'empare du Chat. La vision terrifiante est si intense que le chat en est paralysé. Il tire une carte Folie « Rentrer dans des boîtes trop petites ». Depuis le début de la partie, le joueur a accumulé trois cartes Folie. Il décide d’utiliser maintenant la carte « Folie Hyperactive » et dans quelques instants la carte Folie « Rentrer dans des boîtes trop petites » pour prévenir la fin de partie.</p></div>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple</div><p>Prenons l'exemple de Peluche, dont le score de folie est de 45. Alors qu'elle s'approche d'un groupe d'oiseaux pour les écouter et les interroger, son instinct de chasseur peut prendre le dessus. Le joueur lance un D100 et obtient un résultat de 72, ce qui dépasse son score de Folie. Peluche est submergée par son instinct de chasseur. Le joueur pioche une carte folie « Attraper sa queue ». Le joueur peut préférer la garder pour plus tard et continuer à interroger les oiseaux.</p></div>\n<h3>Action de folies</h3>"
    },
    "video": {
     "controls": true,
@@ -333,8 +333,8 @@
    "_key": "!journal.pages!9e5vCTMFhONva2Dr.0KraxnzdymscVkzz"
   },
   {
-   "_id": "Yt91RqdzcrXstD0s",
-   "name": "Action de folies Utilisation des pouvoirs mystiques*",
+   "_id": "ZXAetCRGXAU3AlJ4",
+   "name": "Utilisation des pouvoirs mystiques*",
    "type": "text",
    "title": {
     "show": true,
@@ -363,7 +363,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!9e5vCTMFhONva2Dr.Yt91RqdzcrXstD0s"
+   "_key": "!journal.pages!9e5vCTMFhONva2Dr.ZXAetCRGXAU3AlJ4"
   },
   {
    "_id": "LwzusOpzD2QCK5aN",

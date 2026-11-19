@@ -3,8 +3,8 @@
  "name": "Bien débuter un jeu de rôle",
  "pages": [
   {
-   "_id": "60o4CmLIL6SVeMWn",
-   "name": "Bien débuter un jeu de rôle Bien débuter un jeu de rôle ?",
+   "_id": "w0oN5bnCrpjrbwWJ",
+   "name": "Bien débuter un jeu de rôle ?",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!dtBSS3FaYu6NrCYy.60o4CmLIL6SVeMWn"
+   "_key": "!journal.pages!dtBSS3FaYu6NrCYy.w0oN5bnCrpjrbwWJ"
   },
   {
    "_id": "4KHLMdpq6039Tz5W",

@@ -3,8 +3,8 @@
  "name": "Enquête émergente guidée (EEG)",
  "pages": [
   {
-   "_id": "UGy5oWuKercVsgoK",
-   "name": "Enquête Emergente Guidée Comprendre l'EEG",
+   "_id": "TTIGXK3xc9b867m8",
+   "name": "Comprendre l'EEG",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!zs2TXxSgCRr5amDK.UGy5oWuKercVsgoK"
+   "_key": "!journal.pages!zs2TXxSgCRr5amDK.TTIGXK3xc9b867m8"
   },
   {
    "_id": "xstbIzi39iFf3myt",

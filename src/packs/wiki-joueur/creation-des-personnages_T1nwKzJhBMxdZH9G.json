@@ -3,8 +3,8 @@
  "name": "Création des personnages",
  "pages": [
   {
-   "_id": "4kmDDnUQCkl89TGs",
-   "name": "Création des personnages Création des personnages",
+   "_id": "qeNjjZaaYKB7dEDX",
+   "name": "Création des personnages",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!T1nwKzJhBMxdZH9G.4kmDDnUQCkl89TGs"
+   "_key": "!journal.pages!T1nwKzJhBMxdZH9G.qeNjjZaaYKB7dEDX"
   },
   {
    "_id": "FlhHzyTlOdRnFyBu",

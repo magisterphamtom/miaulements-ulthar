@@ -428,7 +428,7 @@ def page_blocs(nom_livre, p1, p2, titre_chap):
     secs, cour = [], {"titre": titre_chap, "blocs": []}
     prec_h2 = False
     for b in blocs:
-        if b["type"] == "h2" and prec_h2 and not cour["blocs"]:
+        if b["type"] == "h2" and prec_h2 and not cour["blocs"] and re.search(r"\b(de|du|des|la|le|les|et|aux|à)$", cour["titre"]):
             cour["titre"] += " " + titre_propre(b["html"])        # titre de chapitre sur deux blocs (« Idées de » + « scénarios »)
             continue
         prec_h2 = b["type"] == "h2"

@@ -3,8 +3,8 @@
  "name": "Étranges souvenirs",
  "pages": [
   {
-   "_id": "xpPLY84oYsII7GGf",
-   "name": "Scénario Etranges souvenirs Intrigue générale",
+   "_id": "bvQPIogc2CUu12GN",
+   "name": "Intrigue générale",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!tkKB6c44sGR9ZPES.xpPLY84oYsII7GGf"
+   "_key": "!journal.pages!tkKB6c44sGR9ZPES.bvQPIogc2CUu12GN"
   },
   {
    "_id": "aCi2V2YibwNu3oop",

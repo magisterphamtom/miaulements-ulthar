@@ -3,8 +3,8 @@
  "name": "Guide du maître de jeu",
  "pages": [
   {
-   "_id": "whNtkPjNMOt2Ld2n",
-   "name": "Guide du maître du jeu L’Horreur",
+   "_id": "HhSPG8ef0JVtZU2Z",
+   "name": "L’Horreur",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!RFMAV9zhzzcc4LdE.whNtkPjNMOt2Ld2n"
+   "_key": "!journal.pages!RFMAV9zhzzcc4LdE.HhSPG8ef0JVtZU2Z"
   },
   {
    "_id": "WCTKopTSgrHBIg33",

@@ -112,7 +112,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Les chats sont des chasseurs innés, dotés d'instincts aiguisés et de comportements prédateurs. Lorsque vous décrivez l'environnement perçu, les envies des joueurs ou les réactions des rencontres, prenez en considération cette facette profondément enracinée dans la nature des chats. N'hésitez pas à leur faire lancer un petit jet de folie pour « stimuler » leur instinct primaire. Plus la partie est pulp, plus leurs instincts prendront le dessus sur leurs actions.</p>\n<p><strong>L'instinct de chasseur : </strong>les chats ont une prédisposition naturelle à chasser et à traquer leur proie. Ce comportement est ancré dans leurs gènes et peut se manifester même chez les chats domestiques. Ils utilisent leur agilité, leur patience et leur intelligence pour traquer et attraper leurs cibles, qu'il s'agisse de jouets, d'insectes ou d'autres animaux.</p>\n<p><strong>Le jeu et l'apprentissage : </strong>les chatons apprennent les bases de la chasse en jouant avec leurs frères et sœurs. Ces séances de jeu leur permettent de développer leurs compétences de chasseur tout en renforçant les liens sociaux avec leurs compagnons de portée.</p>\n<p><strong>Le territoire et la chasse : </strong>les chats sont également très territoriaux et peuvent défendre leur espace vital avec détermination. Lorsqu'un chat perçoit un autre animal comme une menace pour son territoire, il peut adopter un comportement agressif ou chasser l'intrus.</p>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple</div><p>Les joueurs interrogent une souris qui semble avoir vu un événement important pour l'enquête. Faites lancer un jet de Folie (instinct chasseur) au joueur qui ne parle pas durant cette scène.S'il échoue à son jet, il bondit dessus et l'attaque. Son instinct chasseur a pris le dessus.</p></div>"
+    "content": "<p>Les chats sont des chasseurs innés, dotés d'instincts aiguisés et de comportements prédateurs. Lorsque vous décrivez l'environnement perçu, les envies des joueurs ou les réactions des rencontres, prenez en considération cette facette profondément enracinée dans la nature des chats. N'hésitez pas à leur faire lancer un petit jet de folie pour « stimuler » leur instinct primaire. Plus la partie est pulp, plus leurs instincts prendront le dessus sur leurs actions.</p>\n<p><strong>L'instinct de chasseur : </strong>les chats ont une prédisposition naturelle à chasser et à traquer leur proie. Ce comportement est ancré dans leurs gènes et peut se manifester même chez les chats domestiques. Ils utilisent leur agilité, leur patience et leur intelligence pour traquer et attraper leurs cibles, qu'il s'agisse de jouets, d'insectes ou d'autres animaux.</p>\n<p><strong>Le jeu et l'apprentissage : </strong>les chatons apprennent les bases de la chasse en jouant avec leurs frères et sœurs. Ces séances de jeu leur permettent de développer leurs compétences de chasseur tout en renforçant les liens sociaux avec leurs compagnons de portée.</p>\n<p><strong>Le territoire et la chasse : </strong>les chats sont également très territoriaux et peuvent défendre leur espace vital avec détermination. Lorsqu'un chat perçoit un autre animal comme une menace pour son territoire, il peut adopter un comportement agressif ou chasser l'intrus.</p>\n<div class=\"mu-exemple\"><div class=\"mu-exemple-titre\">Exemple</div><p>Les joueurs interrogent une souris qui semble avoir vu un événement important pour l'enquête. Faites lancer un jet de Folie (instinct chasseur) au joueur qui ne parle pas durant cette scène.S'il échoue à son jet, il bondit dessus et l'attaque. Son instinct chasseur a pris le dessus.</p></div>\n<h3>Miaulements,</h3>"
    },
    "video": {
     "controls": true,
@@ -135,8 +135,8 @@
    "_key": "!journal.pages!pchtML2aAcuPxGQd.cyJwt3YatyGR5i4C"
   },
   {
-   "_id": "9GASGxBLadz85Fjg",
-   "name": "Miaulements, ronronnements et autres vocalises",
+   "_id": "LMGwVEcnEg2fdVKO",
+   "name": "ronronnements et autres vocalises",
    "type": "text",
    "title": {
     "show": true,
@@ -165,7 +165,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!pchtML2aAcuPxGQd.9GASGxBLadz85Fjg"
+   "_key": "!journal.pages!pchtML2aAcuPxGQd.LMGwVEcnEg2fdVKO"
   },
   {
    "_id": "dbYwan6gYPz9nNwr",

@@ -3,8 +3,8 @@
  "name": "À la recherche d'Ester (scénario 2)",
  "pages": [
   {
-   "_id": "6cZSVeYqcE6L0O21",
-   "name": "Scénario 2 A la recherche d'Ester Intrigue générale",
+   "_id": "6OZpoPLg53pzOTvw",
+   "name": "Intrigue générale",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!HSFd00G0guqgHsK9.6cZSVeYqcE6L0O21"
+   "_key": "!journal.pages!HSFd00G0guqgHsK9.6OZpoPLg53pzOTvw"
   },
   {
    "_id": "ibpCihPvPS4eznws",
