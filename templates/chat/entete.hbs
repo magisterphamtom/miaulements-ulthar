@@ -4,11 +4,11 @@
     <div class="mu-entete-nom">{{actor.name}}</div>
     <div class="mu-entete-race">{{#if raceLabel}}{{raceLabel}}{{else}}Race à choisir (onglet Création){{/if}}{{#if system.handicap}} · {{system.handicap}}{{/if}}</div>
     <div class="mu-entete-jauges">
-      <span title="Santé"><i class="fa-solid fa-heart"></i> {{system.pv.value}}<small>/{{system.pv.max}}</small></span>
-      <span title="Magie"><i class="fa-solid fa-wand-sparkles"></i> {{system.pm.value}}<small>/{{system.pm.max}}</small></span>
-      <span title="Folie" class="{{#if folieBasse}}bas{{/if}}"><i class="fa-solid fa-brain"></i> {{system.pf.value}}<small>/{{system.pf.max}}</small></span>
-      <span title="Vies de Chat"><i class="fa-solid fa-paw"></i> {{system.vies.value}}<small>/{{system.vies.max}}</small></span>
-      <span title="Expérience"><i class="fa-solid fa-star"></i> {{system.xp}} XP</span>
+      <a class="mu-pastille" data-action="ajuster" data-champ="pv" data-tooltip="Santé (Points de Vie) — clic : −1 · clic droit : +1. À 0 PV, Bast ressuscite le Chat contre une vie."><i class="fa-solid fa-heart"></i> {{system.pv.value}}<small>/{{system.pv.max}}</small></a>
+      <a class="mu-pastille" data-action="ajuster" data-champ="pm" data-tooltip="Magie (Points de Magie) — clic : −1 · clic droit : +1. Un pouvoir coûte le chiffre des unités du dé."><i class="fa-solid fa-wand-sparkles"></i> {{system.pm.value}}<small>/{{system.pm.max}}</small></a>
+      <a class="mu-pastille {{#if folieBasse}}bas{{/if}}" data-action="ajuster" data-champ="pf" data-tooltip="Folie (Points de Folie) — clic : −1 · clic droit : +1. Sous 20, le Chat devient injouable."><i class="fa-solid fa-brain"></i> {{system.pf.value}}<small>/{{system.pf.max}}</small></a>
+      <a class="mu-pastille" data-action="ajuster" data-champ="vies" data-tooltip="Vies de Chat — clic : −1 · clic droit : +1."><i class="fa-solid fa-paw"></i> {{system.vies.value}}<small>/{{system.vies.max}}</small></a>
+      <span class="mu-pastille mu-fixe" data-tooltip="Expérience : 2 XP par scénario, à dépenser dans l'onglet Folie et progression."><i class="fa-solid fa-star"></i> {{system.xp}} XP</span>
     </div>
   </div>
 </header>

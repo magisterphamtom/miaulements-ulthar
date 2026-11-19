@@ -1,7 +1,7 @@
 import { ATTRIBUTS, RACES, CASES_ECHEC, ACHATS_XP, CATEGORIES_POUVOIR, FICHE, SYSTEM_ID } from "./config.mjs";
 import { jetAttribut, jetFolie, monterAttribut } from "./rolls.mjs";
 import { assistantCreation, tirerPouvoirsTemporaires } from "./creation.mjs";
-import { attaquerChat, attaquerPnj, lancerPouvoir, attributPourPouvoir, estOnirique } from "./combat.mjs";
+import { attaquerChat, attaquerPnj, lancerPouvoir, attributPourPouvoir, estOnirique, appliquerDegats } from "./combat.mjs";
 import { finDeScenario } from "./outils.mjs";
 
 const { HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
@@ -34,6 +34,24 @@ const POSITIONS = (() => {
   };
 })();
 
+/** Infobulles des attributs (livre des règles, p. 14-15). */
+const AIDE_ATTRIBUTS = {
+  agi: "Dextérité et souplesse : mouvements, esquive.",
+  chn: "Quand une situation peut basculer en bien ou en mal.",
+  cha: "Charme et influence sociale : convaincre, séduire, apaiser.",
+  dis: "Se déplacer et agir de manière furtive et silencieuse.",
+  int: "Raisonner, résoudre des énigmes, comprendre des informations complexes.",
+  per: "Sens aiguisés, vigilance, repérer les détails.",
+  phy: "Force physique : se battre, encaisser, porter, tenir un effort.",
+  pre: "Finesse et délicatesse des gestes."
+};
+
+/** Texte brut court d'une description (pour une infobulle). */
+function resume(html, max = 260) {
+  const t = String(html ?? "").replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
+  return t.length > max ? `${t.slice(0, max - 1).trimEnd()}…` : t || "Pas encore de description.";
+}
+
 /** Thèmes du contenu de la fiche (repris des maquettes du wiki). */
 export const THEMES_FICHE = {
   nuit: "Nuit d'Arkham",
@@ -56,6 +74,12 @@ export function enregistrerParametresThemes() {
     scope: "user", config: true, type: String, choices: STYLES_ONGLETS, default: "oreilles",
     onChange: () => { for (const app of foundry.applications.instances.values()) if (app instanceof FeuilleChat) app.render(); }
   });
+  game.settings.register(SYSTEM_ID, "plume", {
+    name: "Écriture manuscrite sur la fiche",
+    hint: "Les valeurs de la page papier sont écrites à la plume, comme une vraie fiche remplie à la main (pour vous seul).",
+    scope: "user", config: true, type: Boolean, default: true,
+    onChange: () => { for (const app of foundry.applications.instances.values()) if (app instanceof FeuilleChat) app.element?.classList.toggle("mu-plume", plumeActive()); }
+  });
   game.settings.register(SYSTEM_ID, "themeFiche", {
     scope: "user", config: false, type: String, default: "", onChange: rafraichir
   });
@@ -67,6 +91,10 @@ function styleOnglets() {
   let s = "";
   try { s = game.settings.get(SYSTEM_ID, "styleOnglets"); } catch (err) { /* réglage absent */ }
   return STYLES_ONGLETS[s] ? s : "oreilles";
+}
+
+function plumeActive() {
+  try { return game.settings.get(SYSTEM_ID, "plume") !== false; } catch (err) { return true; }
 }
 
 function themeChoisi() {
@@ -99,7 +127,8 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
       afficherPouvoir: FeuilleChat.#afficherPouvoir,
       acheter: FeuilleChat.#acheter,
       tab: FeuilleChat.#onglet,
-      pretires: FeuilleChat.#pretires
+      pretires: FeuilleChat.#pretires,
+      ajuster: FeuilleChat.#ajuster
     }
   };
 
@@ -145,6 +174,7 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
         cle,
         label: def.label,
         abbr: def.abbr,
+        aide: AIDE_ATTRIBUTS[cle] ?? "",
         value: a.value,
         base: a.base,
         race: a.race,
@@ -156,7 +186,7 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
     });
     const pouvoirs = this.actor.items.filter((i) => i.type === "pouvoir");
     const groupe = (cat) =>
-      pouvoirs.filter((p) => p.system.categorie === cat).map((p) => ({ id: p.id, name: p.name, img: p.img, gratuit: p.system.gratuit }));
+      pouvoirs.filter((p) => p.system.categorie === cat).map((p) => ({ id: p.id, name: p.name, img: p.img, gratuit: p.system.gratuit, aide: resume(p.system.description) }));
     ctx.pouvoirsInnes = [...groupe("inne"), ...groupe("race")];
     ctx.pouvoirsTemporaires = groupe("temporaire");
     ctx.categories = CATEGORIES_POUVOIR;
@@ -201,6 +231,22 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
     return ctx;
   }
 
+  /** Zoom de la page papier : on change sa largeur (tout est en unités relatives à la page). */
+  appliquerZoom(afficher = false) {
+    const page = this.element?.querySelector(".mu-page");
+    if (!page) return;
+    const z = this._muZoom ?? 1;
+    page.style.width = z === 1 ? "" : `${z * 100}%`;
+    page.classList.toggle("mu-zoomee", z !== 1);
+    const info = this.element.querySelector(".mu-zoom-info");
+    if (info && afficher) {
+      info.textContent = `Zoom ${Math.round(z * 100)} %`;
+      info.classList.add("visible");
+      clearTimeout(this._muZoomMinuteur);
+      this._muZoomMinuteur = setTimeout(() => info.classList.remove("visible"), 900);
+    }
+  }
+
   /** Pose la classe du thème sur la fenêtre (sans nouveau rendu). */
   appliquerTheme(theme = themeChoisi()) {
     const el = this.element;
@@ -213,6 +259,34 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
   static appliquerThemePartout() {
     const theme = themeChoisi();
     for (const app of foundry.applications.instances.values()) if (app instanceof FeuilleChat) app.appliquerTheme(theme);
+  }
+
+  /** Menu « ⋮ » de la fenêtre : assistant de création et pouvoirs temporaires (comme Zombiology). */
+  _getHeaderControls() {
+    const controls = super._getHeaderControls();
+    if (this.isEditable) {
+      controls.unshift(
+        { icon: "fa-solid fa-paw", label: "Assistant de création", action: "creation" },
+        { icon: "fa-solid fa-droplet", label: "Tirer les pouvoirs temporaires", action: "tirerTemporaires" }
+      );
+    }
+    return controls;
+  }
+
+  /** Pastilles de l'en-tête : clic −1, clic droit +1. La santé passe par les dégâts (carte dans le chat, mort et Bast à 0). */
+  async ajusterJauge(champ, delta) {
+    if (!this.isEditable) return;
+    const sys = this.actor.system;
+    const jauge = sys[champ];
+    if (!jauge) return;
+    if (champ === "pv") return appliquerDegats(this.actor.uuid, Math.abs(delta), { soin: delta > 0 });
+    const max = jauge.max ?? Infinity;
+    const val = Math.max(0, Math.min(max, (jauge.value ?? 0) + delta));
+    if (val !== jauge.value) await this.actor.update({ [`system.${champ}.value`]: val });
+  }
+
+  static async #ajuster(event, target) {
+    return this.ajusterJauge(target.dataset.champ, -1);
   }
 
   /** Menu des thèmes dans la barre de titre de la fenêtre, à côté du bouton « ⋮ ». */
@@ -243,6 +317,37 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
   _onRender(context, options) {
     super._onRender?.(context, options);
     this.appliquerTheme();
+    this.element.classList.toggle("mu-plume", plumeActive());
+    this.appliquerZoom();
+    // Ctrl + molette sur la page papier : zoom (60 % à 250 %) ; Ctrl + clic molette : retour à 100 %
+    if (!this._muZoomLie) {
+      this._muZoomLie = true;
+      this.element.addEventListener("wheel", (event) => {
+        if (!event.ctrlKey || !event.target.closest?.(".mu-onglet[data-tab='fiche']")) return;
+        event.preventDefault();
+        event.stopPropagation();
+        const pas = event.deltaY < 0 ? 0.1 : -0.1;
+        this._muZoom = Math.round(Math.min(2.5, Math.max(0.6, (this._muZoom ?? 1) + pas)) * 10) / 10;
+        this.appliquerZoom(true);
+      }, { passive: false });
+      this.element.addEventListener("auxclick", (event) => {
+        if (event.button !== 1 || !event.ctrlKey || !event.target.closest?.(".mu-onglet[data-tab='fiche']")) return;
+        event.preventDefault();
+        this._muZoom = 1;
+        this.appliquerZoom(true);
+      });
+    }
+    // clic droit sur une pastille : +1 (écouteur posé une seule fois sur la fenêtre)
+    if (!this._muClicDroit) {
+      this._muClicDroit = true;
+      this.element.addEventListener("contextmenu", (event) => {
+        const pastille = event.target.closest?.('[data-action="ajuster"]');
+        if (!pastille) return;
+        event.preventDefault();
+        event.stopPropagation();
+        this.ajusterJauge(pastille.dataset.champ, +1);
+      });
+    }
     // Champs repris dans un second onglet (XP, apparence) : hors du formulaire pour éviter deux valeurs sous le même nom.
     for (const champ of this.element.querySelectorAll("[data-champ]")) {
       if (champ.dataset.lie) continue;

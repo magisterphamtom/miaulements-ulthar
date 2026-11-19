@@ -27,7 +27,7 @@
     <div class="mu-ligne-t mu-entete-t"><span></span><span>Base</span><span>Race</span><span>Handicap</span><span>Progrès</span><span>Total</span><span>Échecs</span></div>
     {{#each attributs}}
     <div class="mu-ligne-t">
-      <span>{{label}}</span>
+      <span data-tooltip="{{aide}}">{{label}}</span>
       <input type="number" name="system.attributs.{{cle}}.base" value="{{base}}">
       <input type="number" name="system.attributs.{{cle}}.race" value="{{race}}">
       <input type="number" name="system.attributs.{{cle}}.handicap" value="{{handicap}}">

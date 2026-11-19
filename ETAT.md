@@ -2,6 +2,15 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Confort de la fiche (v0.12.0, branche `fonction/fiche-confort`)
+- **Pastilles de l'en-tête cliquables** : clic −1, clic droit +1 sur Santé, Magie, Folie et vies de Chat (la Santé passe par les dégâts : carte dans le chat, mort et Bast à 0 PV).
+- **Infobulles** (Foundry `data-tooltip`) : attributs (définition du livre), cases d'échec, ronds de la page papier, pastilles, noms des pouvoirs (début de la description).
+- **Écriture manuscrite** sur la page papier (police Caveat, encre bleu-noir), réglage « Écriture manuscrite sur la fiche » propre à chaque joueur.
+- **Menu « ⋮ » de la fenêtre** : Assistant de création et Tirer les pouvoirs temporaires (comme Zombiology).
+- **Échec marqué d'une petite patte** au lieu du rond rouge (style à choisir parmi six propositions).
+- **Race** : texte plus petit et sans flèche, les noms longs (Chat de gouttière, Scottish Fold) tiennent ; liste déroulante à taille normale.
+- **Zoom de la page papier** : Ctrl + molette (60 % à 250 %), Ctrl + clic molette pour revenir à 100 %.
+
 ## Wiki des joueurs remis en forme (v0.11.0, branche `correction/wiki-joueur`)
 - **Création des personnages** réécrite à la main d'après le livre (p. 13-22) : la colonne d'exemple (Mimolette) n'est plus mélangée aux règles ; une page par étape, surnoms et attributs en tableaux, exemple suivi en encadrés, Mimolette terminée en fin de chapitre (PF corrigés : 55, le livre se trompe de Charisme).
 - **Système de jeu** : « Test de compétence » et « Bonus et malus » réécrits (exemple remis à sa place, page en double supprimée, tableau des difficultés) ; exemple de création égaré retiré de « Gestion de la folie » ; liste des 20 cartes Folie ajoutée sous « Gestion de la peur » ; fin d'exemple recollée dans « Utilisation des pouvoirs mystiques » ; dégâts courants en tableau ; liste incomplète des pouvoirs temporaires remplacée par la table D100 complète ; débris de fiche retirés.

@@ -261,3 +261,38 @@ nav.mu-onglets-cote .mu-icone { width: 36px; height: 36px; background: currentCo
 .mu-ligne-handicap { display: flex; gap: 8px; align-items: center; margin-top: 8px; }
 .mu-ligne-handicap input { flex: 1; }
 .mu-notes-onglet textarea { width: 100%; resize: vertical; font-family: Georgia, serif; font-size: 1em; }
+
+/* ---------- v0.12.0 : confort de la fiche ---------- */
+/* Race : texte plus petit pour les noms longs, liste déroulante à taille normale */
+.mu-page select.mu-texte[name="system.race"] { font-size: 2.1cqw; padding: 0 .4cqw; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: none; cursor: pointer; }
+.mu-page select.mu-texte option { font-family: Georgia, serif; font-size: 14px; font-weight: normal; color: #111; background: #fff; }
+/* Échec : une petite patte d'encre à la place du rond rouge */
+.mu-page .mu-case-echec.cochee {
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22%237a1f1a%22%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2266%22%20rx%3D%2222%22%20ry%3D%2219%22/%3E%3Cellipse%20cx%3D%2222%22%20cy%3D%2242%22%20rx%3D%229%22%20ry%3D%2212%22/%3E%3Cellipse%20cx%3D%2240%22%20cy%3D%2226%22%20rx%3D%229%22%20ry%3D%2212%22/%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%2226%22%20rx%3D%229%22%20ry%3D%2212%22/%3E%3Cellipse%20cx%3D%2278%22%20cy%3D%2242%22%20rx%3D%229%22%20ry%3D%2212%22/%3E%3C/g%3E%3C/svg%3E") center / 88% no-repeat;
+  transform: rotate(-12deg);
+}
+.mu-page .mu-case-echec.cochee:nth-of-type(even) { transform: rotate(14deg); }
+/* Pastilles de l'en-tête : cliquables */
+.mu-entete-jauges .mu-pastille { border: 1px solid var(--mu-bord); border-radius: 14px; padding: 2px 11px; background: var(--mu-fond2); font-weight: bold; white-space: nowrap; color: var(--mu-texte); cursor: pointer; user-select: none; text-decoration: none; transition: border-color .12s, transform .12s; }
+.mu-entete-jauges .mu-pastille:hover { border-color: var(--mu-accent); transform: translateY(-1px); }
+.mu-entete-jauges .mu-pastille.mu-fixe { cursor: help; }
+.mu-entete-jauges .mu-pastille.mu-fixe:hover { transform: none; }
+.mu-entete-jauges .mu-pastille i { color: var(--mu-accent); margin-right: 3px; }
+.mu-entete-jauges .mu-pastille small { opacity: .6; font-weight: normal; }
+.mu-entete-jauges .mu-pastille.bas { color: var(--mu-ko); border-color: var(--mu-ko); }
+/* Écriture manuscrite (réglage « Écriture manuscrite sur la fiche ») : encre bleu-noir, police Caveat */
+@font-face { font-family: 'Caveat'; font-style: normal; font-weight: 600; font-display: swap; src: url('../assets/fonts/caveat-latin-600-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Caveat'; font-style: normal; font-weight: 600; font-display: swap; src: url('../assets/fonts/caveat-latin-ext-600-normal.woff2') format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+.mu-plume .mu-page .mu-texte, .mu-plume .mu-page .mu-attr-jet, .mu-plume .mu-page .mu-rond input, .mu-plume .mu-page .mu-liste li, .mu-plume .mu-page .mu-liste .mu-nom-pouvoir { font-family: 'Caveat', 'Segoe Script', cursive; font-weight: 600; color: #1f2a55; }
+.mu-plume .mu-page .mu-texte { font-size: 3.3cqw; }
+.mu-plume .mu-page select.mu-texte[name="system.race"] { font-size: 2.6cqw; }
+.mu-plume .mu-page .mu-texte.mu-petit { font-size: 2.6cqw; line-height: 1.05; }
+.mu-plume .mu-page .mu-attr-jet { font-size: 7.2cqw; transform: rotate(-3deg); }
+.mu-plume .mu-page .mu-rond input { font-size: 5cqw; }
+.mu-plume .mu-page .mu-liste li { font-size: 2.9cqw; }
+.mu-plume .mu-page .mu-liste .mu-nom-pouvoir:hover { color: #7a1f1f; }
+/* Zoom de la page papier (Ctrl + molette) : la largeur de la page est multipliée, tout suit (unités cqw) */
+.miaulements-ulthar.sheet.chat .mu-onglet[data-tab="fiche"] { overflow: auto; }
+.mu-page.mu-zoomee { max-width: none; flex: none; }
+.mu-zoom-info { position: sticky; top: 4px; float: right; z-index: 3; margin: 0 4px -26px 0; padding: 1px 8px; border-radius: 10px; font-size: 12px; background: rgba(0, 0, 0, .65); color: #fff; pointer-events: none; opacity: 0; transition: opacity .3s; }
+.mu-zoom-info.visible { opacity: 1; }

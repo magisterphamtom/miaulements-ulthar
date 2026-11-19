@@ -289,3 +289,4 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 Polices ajoutées en 0.8.0 pour les thèmes de la fiche (SIL Open Font License 1.1, fichiers @fontsource) :
 Cinzel Decorative (Natanael Gama), IM Fell English (Igino Marini), Mystery Quest (Sideshow),
 Spectral (Production Type), Henny Penny (Brownfox), Cormorant Garamond (Christian Thalmann).
+Ajoutée en 0.12.0 pour l'écriture manuscrite de la fiche : Caveat (Impallari Type), SIL Open Font License 1.1.
