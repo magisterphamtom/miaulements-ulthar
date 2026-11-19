@@ -4,6 +4,7 @@ import { assistantCreation, tirerPouvoirsTemporaires } from "./creation.mjs";
 import { attaquerChat, attaquerPnj, lancerPouvoir, attributPourPouvoir, estOnirique, appliquerDegats } from "./combat.mjs";
 import { finDeScenario } from "./outils.mjs";
 import { demanderFolie, confirmer } from "./dialogues.mjs";
+import { appliquerThemeCorps } from "./cartes.mjs";
 
 const { HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
@@ -259,6 +260,7 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static appliquerThemePartout() {
+    appliquerThemeCorps();
     const theme = themeChoisi();
     for (const app of foundry.applications.instances.values()) if (app instanceof FeuilleChat) app.appliquerTheme(theme);
   }
@@ -307,7 +309,7 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
       select.addEventListener("change", (event) => {
         event.stopPropagation();
         const choix = event.currentTarget.value;
-        game.settings.set(SYSTEM_ID, "themeFiche", choix);
+        game.settings.set(SYSTEM_ID, "themeFiche", choix).then(() => appliquerThemeCorps());
         for (const app of foundry.applications.instances.values()) if (app instanceof FeuilleChat) app.appliquerTheme(choix);
       });
       const bouton = this.window?.controls ?? entete.querySelector('[data-action="toggleControls"]');

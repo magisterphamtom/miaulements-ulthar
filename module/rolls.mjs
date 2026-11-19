@@ -1,3 +1,4 @@
+import { carteJet } from "./cartes.mjs";
 import { ATTRIBUTS, DIFFICULTES, MODES, ACTIONS_FOLIE, CASES_ECHEC, SYSTEM_ID } from "./config.mjs";
 
 const { DialogV2 } = foundry.applications.api;
@@ -65,10 +66,10 @@ export async function jetAttribut(actor, cle, options = {}) {
   await ChatMessage.create({
     speaker: ChatMessage.getSpeaker({ actor }),
     rolls: [roll],
-    content: `<div class="mu-carte ${reussite ? "reussite" : "echec"}">
-      <header>${esc(options.titre ?? ATTRIBUTS[cle].label)} <span class="mu-pourcent">${attr.value} %</span></header>
-      <p class="mu-verdict">${verdict}</p>
-      <p class="mu-detail">${detail}</p>${notes}</div>`
+    content: carteJet({
+      actor, quoi: options.titre ?? ATTRIBUTS[cle].label, cible: attr.value, brut, reussite, critReussite, critEchec, verdict, detail, notes,
+      cle: options.titre === "Attaque" ? "attaque" : choix.pouvoir && options.titre ? "pouvoir" : cle
+    })
   });
   return { reussite, critReussite, critEchec, brut, modifie, perte, pouvoir: choix.pouvoir };
 }
@@ -89,12 +90,12 @@ export async function jetFolie(actor, { raison = "" } = {}) {
   await ChatMessage.create({
     speaker: ChatMessage.getSpeaker({ actor }),
     rolls: [roll],
-    content: `<div class="mu-carte ${reussite ? "reussite" : "echec folie"}">
-      <header>Jet de Folie <span class="mu-pourcent">${pf} %</span></header>
-      ${raison ? `<p class="mu-detail">${esc(raison)}</p>` : ""}
-      <p class="mu-verdict">${reussite ? "Le Chat garde son calme" : "La Folie s'empare du Chat"}</p>
-      <p class="mu-detail">Dé <strong>${roll.total}</strong> contre ${pf} %</p>
-      ${carte ? `<p class="mu-carte-folie">🃏 ${esc(carte)}</p>${boutons}` : ""}</div>`
+    content: carteJet({
+      actor, quoi: raison ? `Folie (${raison})` : "Folie", cible: pf, brut: roll.total, reussite, cle: "folie", classe: reussite ? "" : "folie",
+      verdict: reussite ? "Le Chat garde son calme" : "La Folie s'empare du Chat",
+      detail: `Dé <strong>${roll.total}</strong> contre ${pf} %`,
+      extra: carte ? `<p class="mu-carte-folie">🃏 ${esc(carte)}</p>${boutons}` : ""
+    })
   });
 }
 

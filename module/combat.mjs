@@ -1,6 +1,7 @@
 import { ATTRIBUTS, SYSTEM_ID } from "./config.mjs";
 import { jetAttribut, demanderJet, modeCourant, esc } from "./rolls.mjs";
 import { saisir, cartesDifficulte } from "./dialogues.mjs";
+import { carteJet } from "./cartes.mjs";
 
 const { DialogV2 } = foundry.applications.api;
 
@@ -116,9 +117,11 @@ export async function attaquerPnj(actor, index) {
   await ChatMessage.create({
     speaker: ChatMessage.getSpeaker({ actor }),
     rolls: [roll],
-    content: `<div class="mu-carte ${reussite ? "reussite" : "echec"}"><header>${esc(att.nom)} <span class="mu-pourcent">${att.pct} %</span></header>
-      <p class="mu-verdict">${critReussite ? "Réussite critique !" : critEchec ? "Échec critique !" : reussite ? "Touché" : "Raté"}</p>
-      <p class="mu-detail">Dé <strong>${brut}</strong>${choix.difficulte ? ` · difficulté ${choix.difficulte > 0 ? "+" : ""}${choix.difficulte}` : ""} = <strong>${modifie}</strong> contre ${att.pct} %</p></div>`
+    content: carteJet({
+      actor, quoi: att.nom, cible: att.pct, brut, reussite, critReussite, critEchec, cle: "attaque",
+      verdict: critReussite ? "Réussite critique !" : critEchec ? "Échec critique !" : reussite ? "Touché" : "Raté",
+      detail: `Dé <strong>${brut}</strong>${choix.difficulte ? ` · difficulté ${choix.difficulte > 0 ? "+" : ""}${choix.difficulte}` : ""} = <strong>${modifie}</strong> contre ${att.pct} %`
+    })
   });
   if (reussite && att.degats) await lancerDegats(actor, att.degats);
 }

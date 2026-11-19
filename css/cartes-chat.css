@@ -1,0 +1,78 @@
+/* Les Miaulements d'Ulthar — cartes de résultat dans la messagerie (v0.14.0).
+   Chaque joueur voit l'habillage du thème de SA fiche : classe mu-chat-<thème> posée sur <body> par module/cartes.mjs. */
+.mu-carte-jet { position: relative; text-align: center; padding: 10px 12px 8px; overflow: visible; }
+.mu-carte-jet header { display: flex; align-items: center; gap: 8px; justify-content: flex-start; text-align: left; }
+.mu-carte-jet .mu-c-portrait { width: 40px; height: 40px; flex: 0 0 40px; border-radius: 50%; object-fit: cover; border: 2px solid var(--mu-accent); }
+.mu-carte-jet .mu-c-ident { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
+.mu-carte-jet .mu-c-nom { font-weight: bold; color: var(--mu-texte); }
+.mu-carte-jet .mu-c-attr { font-size: .8em; opacity: .75; font-weight: normal; }
+.mu-carte-jet .mu-c-phrase { margin: 6px 0 4px; }
+.mu-carte-jet .mu-c-de { margin: 4px auto; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.mu-carte-jet .mu-c-de b { line-height: 1; }
+.mu-carte-jet .mu-c-de small { font-size: .72em; opacity: .75; }
+.mu-carte-jet .mu-verdict { margin: 2px 0; font-weight: bold; }
+.mu-carte-jet .mu-detail { font-size: .78em; opacity: .75; margin: 2px 0; }
+.mu-carte-jet .mu-note { font-size: .8em; text-align: left; }
+.mu-carte-jet .mu-c-oreilles { display: none; }
+
+/* ---------- Nuit d'Arkham : médaillon à oreilles, dé dans le coussinet d'une patte ---------- */
+body.mu-chat-nuit .mu-carte { --mu-fond: #17141c; --mu-fond2: #221d2b; --mu-bord: #6b5b8a; --mu-texte: #e8e2f0; --mu-accent: #d9b34a; --mu-ok: #6fbf8b; --mu-ko: #d4635f; }
+body.mu-chat-nuit .mu-carte-jet { margin-top: 14px; background: radial-gradient(ellipse at top, #2e2540, #17141c 75%); border: 2px solid #6b5b8a; border-radius: 14px; font-family: 'Spectral', Georgia, serif; }
+body.mu-chat-nuit .mu-carte-jet .mu-c-oreilles { display: block; position: absolute; left: 16px; right: 16px; top: -14px; height: 15px; background: #6b5b8a; clip-path: polygon(0 100%, 10% 0, 22% 100%, 78% 100%, 90% 0, 100% 100%); }
+body.mu-chat-nuit .mu-carte-jet .mu-c-phrase { font-family: 'Mystery Quest', Georgia, serif; font-size: 1.3em; line-height: 1.15; color: #d9b34a; }
+body.mu-chat-nuit .mu-carte-jet.echec .mu-c-phrase { color: #d4635f; }
+body.mu-chat-nuit .mu-carte-jet .mu-c-de { position: relative; width: 104px; height: 104px; color: #fff; }
+body.mu-chat-nuit .mu-carte-jet .mu-c-de::before { content: ""; position: absolute; inset: 0; background: #4d3f70; -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22%23000%22%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2266%22%20rx%3D%2224%22%20ry%3D%2220%22/%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%2240%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3Cellipse%20cx%3D%2239%22%20cy%3D%2222%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3Cellipse%20cx%3D%2261%22%20cy%3D%2222%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3Cellipse%20cx%3D%2280%22%20cy%3D%2240%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22%23000%22%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2266%22%20rx%3D%2224%22%20ry%3D%2220%22/%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%2240%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3Cellipse%20cx%3D%2239%22%20cy%3D%2222%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3Cellipse%20cx%3D%2261%22%20cy%3D%2222%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3Cellipse%20cx%3D%2280%22%20cy%3D%2240%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; z-index: 0; }
+body.mu-chat-nuit .mu-carte-jet .mu-c-de b, body.mu-chat-nuit .mu-carte-jet .mu-c-de small { position: relative; z-index: 1; top: 16px; }
+body.mu-chat-nuit .mu-carte-jet .mu-c-de b { font-size: 1.7em; }
+body.mu-chat-nuit .mu-carte-jet.echec .mu-c-de b { color: #ffb3ae; }
+body.mu-chat-nuit .mu-carte-jet .mu-verdict { font-size: .8em; letter-spacing: .15em; text-transform: uppercase; }
+body.mu-chat-nuit .mu-carte-jet.critique { box-shadow: 0 0 14px rgba(217, 179, 74, .6); }
+
+/* ---------- Grimoire d'Ulthar : collier rayé et médaille gravée ---------- */
+body.mu-chat-grimoire .mu-carte { --mu-fond: #efe0bf; --mu-fond2: #fbf3dc; --mu-bord: #8b5a2b; --mu-texte: #2b1d12; --mu-accent: #7a1f1a; --mu-ok: #3d7a3a; --mu-ko: #a3241c; background: radial-gradient(ellipse at 30% 10%, #f7ecd2, #e6cf9f); font-family: 'IM Fell English', Georgia, serif; }
+body.mu-chat-grimoire .mu-carte-jet { padding: 0 12px 10px; border: 1px solid #8b5a2b; border-radius: 8px; overflow: hidden; }
+body.mu-chat-grimoire .mu-carte-jet header { margin: 0 -12px; padding: 5px 10px; justify-content: center; background: repeating-linear-gradient(90deg, #8f1d1d 0 10px, #a52a2a 10px 20px); color: #fff; }
+body.mu-chat-grimoire .mu-carte-jet .mu-c-portrait { display: none; }
+body.mu-chat-grimoire .mu-carte-jet .mu-c-ident { flex-direction: row; gap: 6px; align-items: baseline; }
+body.mu-chat-grimoire .mu-carte-jet .mu-c-nom, body.mu-chat-grimoire .mu-carte-jet .mu-c-attr { color: #fff; opacity: 1; }
+body.mu-chat-grimoire .mu-carte-jet .mu-c-phrase { display: none; }
+body.mu-chat-grimoire .mu-carte-jet .mu-c-de { position: relative; width: 78px; height: 78px; margin: 12px auto 6px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ffe9a8, #d9b34a 55%, #8a6a1c); color: #3a2a05; box-shadow: 0 3px 6px rgba(0, 0, 0, .5); }
+body.mu-chat-grimoire .mu-carte-jet .mu-c-de::before { content: ""; position: absolute; top: -11px; left: 50%; width: 10px; height: 14px; margin-left: -5px; border: 3px solid #c9a23a; border-radius: 6px; }
+body.mu-chat-grimoire .mu-carte-jet .mu-c-de b { font-size: 1.8em; font-family: 'Cinzel Decorative', Georgia, serif; }
+body.mu-chat-grimoire .mu-carte-jet.echec .mu-c-de { background: radial-gradient(circle at 35% 30%, #eee, #9a9a9a 55%, #555); color: #222; }
+body.mu-chat-grimoire .mu-carte-jet .mu-verdict { font-family: 'Cinzel Decorative', Georgia, serif; font-size: 1.15em; }
+body.mu-chat-grimoire .mu-carte > header { color: #7a1f1a; }
+
+/* ---------- Contrée du Rêve : grande empreinte en filigrane, griffures sur l'échec ---------- */
+body.mu-chat-reve .mu-carte { --mu-fond: #f6f2fd; --mu-fond2: #fff; --mu-bord: #b9a6e0; --mu-texte: #2e2546; --mu-accent: #5b3fb5; --mu-ok: #3f8a63; --mu-ko: #c0465e; background: linear-gradient(180deg, #f8f5fe, #e6def7); font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.05em; border-radius: 12px; }
+body.mu-chat-reve .mu-carte-jet { text-align: left; overflow: hidden; border: 1px dashed #b9a6e0; }
+body.mu-chat-reve .mu-carte-jet::after { content: ""; position: absolute; right: -16px; bottom: -20px; width: 140px; height: 140px; transform: rotate(-18deg); background: rgba(91, 63, 181, .12); -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22%23000%22%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2266%22%20rx%3D%2224%22%20ry%3D%2220%22/%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%2240%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3Cellipse%20cx%3D%2239%22%20cy%3D%2222%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3Cellipse%20cx%3D%2261%22%20cy%3D%2222%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3Cellipse%20cx%3D%2280%22%20cy%3D%2240%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20fill%3D%22%23000%22%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2266%22%20rx%3D%2224%22%20ry%3D%2220%22/%3E%3Cellipse%20cx%3D%2220%22%20cy%3D%2240%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3Cellipse%20cx%3D%2239%22%20cy%3D%2222%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3Cellipse%20cx%3D%2261%22%20cy%3D%2222%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3Cellipse%20cx%3D%2280%22%20cy%3D%2240%22%20rx%3D%2210%22%20ry%3D%2213%22/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; pointer-events: none; }
+body.mu-chat-reve .mu-carte-jet.echec::before { content: ""; position: absolute; right: 22px; top: 8px; width: 56px; height: 70px; background: linear-gradient(110deg, transparent 20%, #c0465e 20% 25%, transparent 25% 45%, #c0465e 45% 50%, transparent 50% 70%, #c0465e 70% 75%, transparent 75%); opacity: .7; pointer-events: none; }
+body.mu-chat-reve .mu-carte-jet .mu-c-portrait { width: 30px; height: 30px; flex-basis: 30px; border-color: #d9a520; }
+body.mu-chat-reve .mu-carte-jet .mu-c-phrase { display: none; }
+body.mu-chat-reve .mu-carte-jet .mu-c-de { flex-direction: row; align-items: baseline; justify-content: flex-start; gap: 6px; margin: 4px 0 0; }
+body.mu-chat-reve .mu-carte-jet .mu-c-de b { font-family: 'Henny Penny', Georgia, serif; font-size: 2.5em; color: #5b3fb5; }
+body.mu-chat-reve .mu-carte-jet.echec .mu-c-de b { color: #c0465e; }
+body.mu-chat-reve .mu-carte-jet .mu-verdict { text-transform: uppercase; letter-spacing: .2em; font-size: .82em; }
+
+/* ---------- Journal d'Arkham, 1921 : la Gazette d'Ulthar ---------- */
+body.mu-chat-journal .mu-carte { --mu-fond: #ece6d8; --mu-fond2: #f5f0e4; --mu-bord: #1c1a17; --mu-texte: #1c1a17; --mu-accent: #7a1f1a; --mu-ok: #2f5f2f; --mu-ko: #7a1f1a; background: #ece6d8; border: 1px solid #1c1a17; border-radius: 0; box-shadow: 3px 3px 0 #000; font-family: 'Old Standard TT', Georgia, serif; }
+body.mu-chat-journal .mu-carte-jet { padding: 6px 10px 8px; display: grid; grid-template-columns: 52px 1fr; grid-template-areas: "band band" "titre titre" "photo detail" "photo de" "verdict verdict" "notes notes"; column-gap: 8px; text-align: left; }
+body.mu-chat-journal .mu-carte-jet::before { content: "LA GAZETTE D'ULTHAR · ÉDITION DU SOIR"; grid-area: band; font-family: 'Playfair Display SC', Georgia, serif; font-size: .6em; letter-spacing: .12em; text-align: center; border-bottom: 3px double #1c1a17; padding-bottom: 3px; }
+body.mu-chat-journal .mu-carte-jet header { grid-area: photo; align-self: start; margin-top: 4px; }
+body.mu-chat-journal .mu-carte-jet .mu-c-portrait { width: 52px; height: 52px; flex-basis: 52px; border-radius: 0; border: 1px solid #1c1a17; filter: grayscale(1) contrast(1.2); }
+body.mu-chat-journal .mu-carte-jet .mu-c-ident { display: none; }
+body.mu-chat-journal .mu-carte-jet .mu-c-phrase { grid-area: titre; font-family: 'Grenze Gotisch', Georgia, serif; font-size: 1.3em; line-height: 1.05; text-align: center; text-transform: uppercase; margin: 5px 0; }
+body.mu-chat-journal .mu-carte-jet.echec .mu-c-phrase { color: #7a1f1a; }
+body.mu-chat-journal .mu-carte-jet .mu-detail { grid-area: detail; font-size: .8em; opacity: 1; text-align: justify; margin-top: 4px; }
+body.mu-chat-journal .mu-carte-jet .mu-c-de { grid-area: de; flex-direction: row; gap: 5px; align-items: baseline; justify-content: flex-start; margin: 0; }
+body.mu-chat-journal .mu-carte-jet .mu-c-de b { font-family: 'Playfair Display SC', Georgia, serif; font-size: 1.4em; }
+body.mu-chat-journal .mu-carte-jet .mu-verdict { grid-area: verdict; font-family: 'Playfair Display SC', Georgia, serif; letter-spacing: .08em; text-align: center; border-top: 1px solid #1c1a17; margin-top: 4px; padding-top: 2px; font-size: .85em; }
+body.mu-chat-journal .mu-carte-jet > .mu-note, body.mu-chat-journal .mu-carte-jet > .mu-carte-folie, body.mu-chat-journal .mu-carte-jet > .mu-boutons { grid-column: 1 / -1; }
+body.mu-chat-journal .mu-carte > header { font-family: 'Playfair Display SC', Georgia, serif; }
+
+/* Les autres cartes (dégâts, mort, pouvoirs montrés…) prennent au moins les couleurs et polices du thème */
+body[class*="mu-chat-"] .mu-carte { color: var(--mu-texte); }
+body[class*="mu-chat-"] .mu-carte > header { color: var(--mu-accent); }
+body.mu-chat-nuit .mu-carte:not(.mu-carte-jet) { background: #17141c; font-family: 'Spectral', Georgia, serif; }

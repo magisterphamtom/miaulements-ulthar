@@ -1,6 +1,7 @@
 import { SYSTEM_ID, MODES } from "./config.mjs";
 import { ChatData, PnjData, PouvoirData } from "./datamodels.mjs";
 import { FeuilleChat, FichePnj, enregistrerParametresThemes } from "./sheet.mjs";
+import { appliquerThemeCorps } from "./cartes.mjs";
 import { FichePouvoir } from "./item-sheet.mjs";
 import { brancherCartes, ecouterSocket } from "./combat.mjs";
 import { api } from "./outils.mjs";
@@ -83,6 +84,7 @@ enregistrerHooksAccueil();
 enregistrerHooksJournal();
 
 Hooks.once("ready", async () => {
+  appliquerThemeCorps();
   ecouterSocket();
   brancherAmbiance();
 });

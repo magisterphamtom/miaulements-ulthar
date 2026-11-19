@@ -2,6 +2,11 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Cartes de résultat dans la messagerie (v0.14.0, branche `fonction/cartes-chat`)
+- Les cartes de jet (attribut, pouvoir, attaque d'un Chat ou d'un adversaire, Folie) ont une nouvelle structure : portrait, nom, attribut et cible, phrase selon le résultat (« Orichat retombe sur ses pattes ! »), dé, verdict, détail.
+- Chaque joueur les voit dans l'habillage du thème de SA fiche (classe `mu-chat-<thème>` sur la page, posée au lancement et à chaque changement de thème) : **Nuit** = médaillon à oreilles, dé dans le coussinet d'une patte ; **Grimoire** = collier rayé et médaille gravée (dorée ou argentée) ; **Rêve** = grand chiffre et empreinte en filigrane, griffures sur l'échec ; **Journal** = la Gazette d'Ulthar (manchette, photo en noir et blanc).
+- Les autres cartes (dégâts, mort, pouvoir montré…) prennent les couleurs et polices du thème. Code : `module/cartes.mjs`, `css/cartes-chat.css`.
+
 ## Boîtes de dialogue « cartes à piocher » (v0.13.0, branche `fonction/dialogues`)
 - Toutes les fenêtres ouvertes depuis la fiche (jet d'attribut, attaque, pouvoir, connexion mentale et altérations de la bulle onirique, jet de Folie, assistant de création, confirmations) suivent le thème choisi par le joueur pour sa fiche.
 - Jet : grand rond avec le score à faire au D100, recalculé en direct ; difficulté en cinq cartes (les pattes indiquent la facilité) ; pouvoir en interrupteur avec les PM restants ; attribut et dégâts en listes pour l'attaque.
