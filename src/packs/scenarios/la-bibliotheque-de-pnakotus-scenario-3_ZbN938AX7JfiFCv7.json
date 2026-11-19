@@ -3,8 +3,8 @@
  "name": "La bibliothèque de Pnakotus (scénario 3)",
  "pages": [
   {
-   "_id": "ARn0umpkBLNOVrHV",
-   "name": "Intrigue générale",
+   "_id": "iVDxODnMvAS9c6Q2",
+   "name": "Scénario 3 La Bibliothéque de Pnakotus Intrigue générale",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!ZbN938AX7JfiFCv7.ARn0umpkBLNOVrHV"
+   "_key": "!journal.pages!ZbN938AX7JfiFCv7.iVDxODnMvAS9c6Q2"
   },
   {
    "_id": "7mZFLysFAG9nt05N",
@@ -46,7 +46,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<h3>Texte à lire</h3>\n<p>Après une soirée passée à discuter de la triste nouvelle et de la croissante, Ester confie qu’il est désormais indispensable de saisir les fonctionnements précis de la Clef Interdite. Ces informations existent ! Elles sont conservées en un lieu redoutable : la Bibliothèque de Pnakotus. Vous devez comprendre que la vile d'Ulthar n’a pas été choisie au hasard pour accueillir les Gardiens, explique Ester. Il existe ici un lieu précieux et singulier : la Bibliothèque d’Ulthar, porte d'entrée de toutes les autres... à condition d’en trouver le passage. Vous allez devoir y pénétrer, la traverser et trouver le chemin vers la Bibliothèque de Pnakotus, où vous pourrez peut-être consulter les Livres du Savoir. Que faites-vous ? ...\"</p>"
+    "content": "<h3>Texte à lire</h3>\n<p>Après une soirée passée à discuter de la triste nouvelle et de la menace croissante, Ester confie qu’il est désormais indispensable de saisir les fonctionnements précis de la Clef Interdite. Ces informations existent ! Elles sont conservées en un lieu redoutable : la Bibliothèque de Pnakotus. Vous devez comprendre que la vile d'Ulthar n’a pas été choisie au hasard pour accueillir les Gardiens, explique Ester. Il existe ici un lieu précieux et singulier : la Bibliothèque d’Ulthar, porte d'entrée de toutes les autres... à condition d’en trouver le passage. Vous allez devoir y pénétrer, la traverser et trouver le chemin vers la Bibliothèque de Pnakotus, où vous pourrez peut-être consulter les Livres du Savoir. Que faites-vous ? ...\"</p>"
    },
    "video": {
     "controls": true,

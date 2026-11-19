@@ -145,7 +145,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Les joueurs traversent un parc pour enfants, où de nombreux enfants jouent. Quand ils apercoivent les chats ils tentent de les a(cid:47)raper. Un <strong>[ Jet d'Agilité ] </strong>pour éviter les enfants.</p>\n<p>S'ils sont a(cid:47)rapés, les enfants leur font des câlins, et les joueurs doivent effectuer un <strong>[ jet de Physique ] </strong>pour s'échapper.\"</p>\n<h3>La recherche du</h3>\n<p>À la sor(cid:46)e du parc, les joueurs doivent trouver la bonne rue avec les indica(cid:46)ons quelque peu vagues fournies par les chats rencontrés. <strong>Un [ Jet intelligence ] pour trouver le bon chemin.</strong></p>"
+    "content": "<p>Les joueurs traversent un parc pour enfants, où de nombreux enfants jouent. Quand ils apercoivent les chats ils tentent de les a(cid:47)raper. Un <strong>[ Jet d'Agilité ] </strong>pour éviter les enfants.</p>\n<p>S'ils sont a(cid:47)rapés, les enfants leur font des câlins, et les joueurs doivent effectuer un <strong>[ jet de Physique ] </strong>pour s'échapper.\"</p>\n<h3>La recherche du laboratoire</h3>\n<p>À la sor(cid:46)e du parc, les joueurs doivent trouver la bonne rue avec les indica(cid:46)ons quelque peu vagues fournies par les chats rencontrés. <strong>Un [ Jet intelligence ] pour trouver le bon chemin.</strong></p>"
    },
    "video": {
     "controls": true,
@@ -211,7 +211,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Maintenant, il faut rechercher la bonne pièce pour trouver le bureau du professeur qui travaille sur ce somnifère. U(cid:46)lisez le plan pour décrire la progression des joueurs. À chaque changement de pièce, le personnel a <strong>30% de chance </strong>de remarquer les chats. Si les joueurs sont vus, le personnel tentera de les a(cid:47)raper et d'appeler le gardien, qui se montrera plus brutal avec eux.</p>\n<h3>Destruction de la formule.</h3>\n<p>La formule est posée sur un bureau, entourée de fioles, de et de toutes sortes d'objets de laboratoire. La destruc(cid:46)on peut être effectuée selon les souhaits des joueurs, cependant, il faudra que les écrits deviennent illisibles, rendant ainsi la formule incompréhensible.</p>\n<h3>Retour dans la contrée</h3>\n<p>Lorsque les joueurs ont détruit la formule, le portail magique réapparaît, et le vieux Ether leur fait signe de revenir.</p>\n<p>Il les félicite pour avoir écarté ce danger en disant :</p>\n<p><strong>« Vous êtes maintenant de vrais gardiens d'Ulthar. »</strong></p>\n<p>Un jeu de role de xaviiiier.</p>"
+    "content": "<p>Maintenant, il faut rechercher la bonne pièce pour trouver le bureau du professeur qui travaille sur ce somnifère. U(cid:46)lisez le plan pour décrire la progression des joueurs. À chaque changement de pièce, le personnel a <strong>30% de chance </strong>de remarquer les chats. Si les joueurs sont vus, le personnel tentera de les a(cid:47)raper et d'appeler le gardien, qui se montrera plus brutal avec eux.</p>"
    },
    "video": {
     "controls": true,
@@ -232,6 +232,39 @@
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!Z1oVFCkTF5XYoiWM.XNiXwLGzgE0XgN4y"
+  },
+  {
+   "_id": "S2k7yWI9V0setc9B",
+   "name": "Destruction de la formule.",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>La formule est posée sur un bureau, entourée de fioles, de pipe(cid:47)es, et de toutes sortes d'objets de laboratoire. La destruc(cid:46)on peut être effectuée selon les souhaits des joueurs, cependant, il faudra que les écrits deviennent illisibles, rendant ainsi la formule incompréhensible.</p>\n<h3>Retour dans la contrée</h3>\n<p>Lorsque les joueurs ont détruit la formule, le portail magique réapparaît, et le vieux Ether leur fait signe de revenir.</p>\n<p>Il les félicite pour avoir écarté ce danger en disant :</p>\n<p><strong>« Vous êtes maintenant de vrais gardiens d'Ulthar. »</strong></p>\n<p>Un jeu de role de xaviiiier.</p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 800000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.6.1",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!Z1oVFCkTF5XYoiWM.S2k7yWI9V0setc9B"
   }
  ],
  "folder": null,

@@ -426,7 +426,12 @@ def page_blocs(nom_livre, p1, p2, titre_chap):
     """Pages p1..p2 d'un livre -> [(titre de page, html)], une page par intertitre de niveau 2 (sections courtes fusionnées)."""
     blocs = [b for p in charger_blocs(nom_livre) if p1 <= p["page"] <= p2 for b in p["blocs"]]
     secs, cour = [], {"titre": titre_chap, "blocs": []}
+    prec_h2 = False
     for b in blocs:
+        if b["type"] == "h2" and prec_h2 and not cour["blocs"]:
+            cour["titre"] += " " + titre_propre(b["html"])        # titre de chapitre sur deux blocs (« Idées de » + « scénarios »)
+            continue
+        prec_h2 = b["type"] == "h2"
         if b["type"] == "h2":
             if cour["blocs"] or secs: secs.append(cour)
             cour = {"titre": titre_propre(b["html"]), "blocs": []}

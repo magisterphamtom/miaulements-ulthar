@@ -3,8 +3,8 @@
  "name": "Les Chats d'Ulthar",
  "pages": [
   {
-   "_id": "aP1EUnzU4EOSKDOJ",
-   "name": "La légende des Chats l'Ulthar",
+   "_id": "8BwhAxO5Sh4S3KDf",
+   "name": "Les Chats d'Ulthar La légende des Chats l'Ulthar",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!9rVm5mxFkDmO4YaC.aP1EUnzU4EOSKDOJ"
+   "_key": "!journal.pages!9rVm5mxFkDmO4YaC.8BwhAxO5Sh4S3KDf"
   },
   {
    "_id": "pE97kM0Y0e13YovT",
@@ -79,7 +79,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Les gardiens occupent une place unique. Contrairement à ce que l'on pourrait imaginer, ce ne sont pas les humains, mais les félins qui portent une noble responsabilité. Ils sont les gardiens désignés par Bast pour préserver l'équilibre entre les mondes et protéger l'humanité des Grands Anciens. Ces félins sacrés, dotés d'une conscience supérieure et d'une sagesse ancestrale, ont la capacité de se déplacer entre le monde réel et la Contrée du Rêve. Leurs sens aiguisés et leur intuition innée leur permettent de détecter les signes avant-coureurs des forces obscures qui cherchent à s'infiltrer dans les deux mondes. Chaque gardien d'Ulthar appartient à une lignée raciale ancestrale. Les vieux Chats de chaque lignée jouent un rôle crucial au sein des gardiens. En tant qu’anciens, ils sont détenteurs de connaissances ancestrales et d’une sagesse incommensurable. Ils guident les Chats dans leurs combats contre les forces obscures.</p>\n<p>Leurs rôles sont multiples :</p>\n<p><strong>Surveillance et détection : </strong>les gardiens possèdent des sens aiguisés, une intuition innée et une capacité à détecter les signes avant-coureurs des perturbations et des menaces émanant des Grands Anciens ou d'autres forces obscures. Ils sont constamment en alerte, surveillant les moindres recoins dans les 2 mondes.</p>\n<p><strong>Enquête et compréhension </strong>: lorsqu'ils détectent des anomalies ou des signes de déséquilibre, les gardiens mènent des enquêtes approfondies pour identifier la source du problème. Cela peut impliquer de suivre des pistes mystérieuses, d'interagir avec d'autres entités de la Contrée du Rêve ou de rassembler des informations pour comprendre la nature de la menace.</p>\n<p><strong>Intervention et protection </strong>: en cas de menace imminente ou de critique, les gardiens interviennent. Cela peut prendre différentes formes, de la dissuasion des intrusions à l'arrêt des rituels occultes ou à la neutralisation de créatures malveillantes.</p>\n<p><strong>Transfert des savoirs </strong>: les anciens de lignée jouent un rôle crucial en partageant leurs connaissances. La transmission des informations et des connaissances est d'une importance capitale pour la protection des mondes.</p>\n<p><strong>Préservation de l'équilibre : </strong>en fin de compte, le but ultime des gardiens est de préserver l'équilibre fragile entre la Contrée du Rêve et le monde réel. Leur dévouement à cette tâche est sans faille, car l'avenir de ces deux mondes en dépend.</p>"
+    "content": "<p>Les gardiens occupent une place unique. Contrairement à ce que l'on pourrait imaginer, ce ne sont pas les humains, mais les félins qui portent une noble responsabilité. Ils sont les gardiens désignés par Bast pour préserver l'équilibre entre les mondes et protéger l'humanité des Grands Anciens. Ces félins sacrés, dotés d'une conscience supérieure et d'une sagesse ancestrale, ont la capacité de se déplacer entre le monde réel et la Contrée du Rêve. Leurs sens aiguisés et leur intuition innée leur permettent de détecter les signes avant-coureurs des forces obscures qui cherchent à s'infiltrer dans les deux mondes. Chaque gardien d'Ulthar appartient à une lignée raciale ancestrale. Les vieux Chats de chaque lignée jouent un rôle crucial au sein des gardiens. En tant qu’anciens, ils sont détenteurs de connaissances ancestrales et d’une sagesse incommensurable. Ils guident les Chats dans leurs combats contre les forces obscures.</p>\n<p>Leurs rôles sont multiples :</p>\n<p><strong>Surveillance et détection : </strong>les gardiens possèdent des sens aiguisés, une intuition innée et une capacité à détecter les signes avant-coureurs des perturbations et des menaces émanant des Grands Anciens ou d'autres forces obscures. Ils sont constamment en alerte, surveillant les moindres recoins dans les 2 mondes.</p>\n<p><strong>Enquête et compréhension </strong>: lorsqu'ils détectent des anomalies ou des signes de déséquilibre, les gardiens mènent des enquêtes approfondies pour identifier la source du problème. Cela peut impliquer de suivre des pistes mystérieuses, d'interagir avec d'autres entités de la Contrée du Rêve ou de rassembler des informations pour comprendre la nature de la menace.</p>\n<p><strong>Intervention et protection </strong>: en cas de menace imminente ou de déséquilibre critique, les gardiens interviennent. Cela peut prendre différentes formes, de la dissuasion des intrusions à l'arrêt des rituels occultes ou à la neutralisation de créatures malveillantes.</p>\n<p><strong>Transfert des savoirs </strong>: les anciens de chaque lignée jouent un rôle crucial en partageant leurs connaissances. La transmission des informations et des connaissances est d'une importance capitale pour la protection des mondes.</p>\n<p><strong>Préservation de l'équilibre : </strong>en fin de compte, le but ultime des gardiens est de préserver l'équilibre fragile entre la Contrée du Rêve et le monde réel. Leur dévouement à cette tâche est sans faille, car l'avenir de ces deux mondes en dépend.</p>"
    },
    "video": {
     "controls": true,

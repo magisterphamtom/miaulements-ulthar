@@ -86,7 +86,7 @@ def blocs_page(page):
             blocs.append({"type": "note", "html": re.sub(r"^\s*(<strong>)?\s*Note\s*(</strong>)?\s*:\s*", "", norm(" ".join(x[0] for x in lignes)))}); continue
         premiere = texte_brut(lignes[0][0]).strip()
         debut = 1
-        if len(lignes) > 1 and re.search(r"\b(de|de la|la|du)$", premiere):
+        if len(lignes) > 1 and re.match(r"^(Exemples?|Suite)\b", premiere) and re.search(r"\b(de|de la|la|du)$", premiere):
             suite = texte_brut(lignes[1][0]).strip()
             mot = suite.split(" ", 1)[0]
             premiere += " " + mot
@@ -133,6 +133,7 @@ def blocs_page(page):
                 vider()
             para.append(h)
         vider()
+        for x in blocs: x["ferme"] = True       # un titre ne se prolonge jamais dans le bloc suivant
     # marque la fin des titres (évite de coller deux titres de blocs différents)
     for x in blocs: x["ferme"] = True
     # suite d'une ligne « Tags » passée dans un autre bloc ; paragraphes faits seulement de chiffres (mini-fiches dessinées)

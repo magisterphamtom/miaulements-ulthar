@@ -3,8 +3,8 @@
  "name": "Le Sanctuaire aux Crabes (scénario 1)",
  "pages": [
   {
-   "_id": "0I8I6j0BMZkWWjAO",
-   "name": "Intrigue générale",
+   "_id": "Fb7NRr23K0ynvRxi",
+   "name": "Scénario 1 Le Sanctuaire aux Crabes Intrigue générale",
    "type": "text",
    "title": {
     "show": true,
@@ -33,7 +33,7 @@
     "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!gtfcABRU36HnYENz.0I8I6j0BMZkWWjAO"
+   "_key": "!journal.pages!gtfcABRU36HnYENz.Fb7NRr23K0ynvRxi"
   },
   {
    "_id": "njmsmRJpELLDnMf2",
