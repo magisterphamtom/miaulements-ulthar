@@ -5,11 +5,12 @@ import { FichePouvoir } from "./item-sheet.mjs";
 import { brancherCartes, ecouterSocket } from "./combat.mjs";
 import { api } from "./outils.mjs";
 import { SuiviGroupe, brancherAmbiance, ajouterBoutons } from "./ambiance.mjs";
+import { enregistrerParametresWiki, enregistrerHooksWiki, ouvrirWiki } from "./wiki.mjs";
 
 Hooks.once("init", () => {
   console.log(`${SYSTEM_ID} | initialisation`);
 
-  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer() };
+  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer(), wiki: ouvrirWiki };
   CONFIG.Actor.dataModels.chat = ChatData;
   CONFIG.Actor.dataModels.pnj = PnjData;
   CONFIG.Item.dataModels.pouvoir = PouvoirData;
@@ -55,15 +56,7 @@ Hooks.once("init", () => {
     default: false
   });
 
-  game.settings.register(SYSTEM_ID, "ouvertureWiki", {
-    name: "Ouverture automatique du wiki",
-    hint: "Le joueur ouvre le wiki des joueurs, le Gardien ouvre le wiki du Gardien.",
-    scope: "client",
-    config: true,
-    type: String,
-    choices: { premiere: "À la première connexion dans ce monde", toujours: "À chaque connexion", jamais: "Jamais" },
-    default: "premiere"
-  });
+  enregistrerParametresWiki();
 
   game.settings.register(SYSTEM_ID, "visionFeline", { scope: "client", config: false, type: Boolean, default: false });
 
@@ -81,18 +74,9 @@ Hooks.on("renderChatMessageHTML", (message, html) => brancherCartes(message, htm
 
 Hooks.on("getSceneControlButtons", (controls) => ajouterBoutons(controls));
 
+enregistrerHooksWiki();
+
 Hooks.once("ready", async () => {
   ecouterSocket();
   brancherAmbiance();
-  const mode = game.settings.get(SYSTEM_ID, "ouvertureWiki");
-  if (mode === "jamais") return;
-  const cle = `${SYSTEM_ID}.wikiOuvert.${game.world.id}.${game.user.id}`;
-  if (mode === "premiere" && localStorage.getItem(cle)) return;
-  // Joueur : wiki des joueurs. Gardien : wiki du Gardien (qui renvoie vers celui des joueurs).
-  const pack = game.packs.get(`${SYSTEM_ID}.${game.user.isGM ? "wiki-mj" : "wiki-joueur"}`);
-  const entree = pack?.index.find((e) => e.name.startsWith("Accueil"));
-  if (!entree) return;
-  const doc = await pack.getDocument(entree._id);
-  doc?.sheet.render(true);
-  localStorage.setItem(cle, "1");
 });

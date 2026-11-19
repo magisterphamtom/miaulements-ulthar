@@ -159,3 +159,8 @@
 .mu-desc { background: var(--mu-fond2); border: 1px solid var(--mu-bord); border-radius: 6px; padding: 4px 8px; max-height: 220px; overflow-y: auto; }
 .mu-notes details summary { cursor: pointer; opacity: 0.7; font-size: 0.85em; margin-top: 4px; }
 .mu-page .mu-liste .mu-outils { white-space: nowrap; flex: 0 0 auto; }
+
+/* Boutons des wikis dans les onglets Acteurs et Journaux */
+.mu-boutons-wiki { display: flex; gap: 4px; width: 100%; margin-top: 4px; }
+.mu-boutons-wiki .mu-bouton-wiki { flex: 1; background: #221d2b; color: #e8e2f0; border: 1px solid #6b5b8a; border-radius: 4px; padding: 2px 6px; font-size: 0.85em; white-space: nowrap; }
+.mu-boutons-wiki .mu-bouton-wiki:hover { border-color: #d9b34a; }

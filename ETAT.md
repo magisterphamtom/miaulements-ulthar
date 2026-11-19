@@ -2,6 +2,10 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Wikis (v0.4.2)
+- Ouverture automatique **à chaque lancement du jeu** par défaut (réglage client : à chaque lancement / première connexion / jamais) : le Gardien voit s'ouvrir le wiki du Gardien, chaque joueur le wiki des joueurs quand il arrive dans le jeu. Même principe que Brindlewood Bay, Tindalos et Night Prowler (`module/wiki.mjs`) : ouverture 0,6 s après `ready`, drapeau d'utilisateur `wikiVu` pour le mode « première connexion ».
+- Boutons « 📖 Wiki du Gardien » (Gardien seulement) et « 📖 Wiki des joueurs » en haut des onglets Acteurs et Journaux. Macro ou console : `game.miaulementsUlthar.wiki("joueur")`.
+
 ## Corrigé (v0.4.1, relecture complète du code)
 - Les gabarits des fiches n'ont plus de balise `<form>` (la fenêtre d'une fiche en est déjà une) : avec un formulaire imbriqué, les champs n'étaient pas enregistrés.
 - Le réglage « vision féline » est enregistré dès `init` (il était lu par la barre d'outils avant d'exister).
