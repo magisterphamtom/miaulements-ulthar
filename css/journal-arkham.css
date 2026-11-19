@@ -49,7 +49,7 @@
 .mu-journal .journal-page-content h4, .mu-journal .journal-page-content h5, .mu-journal .journal-page-content h6 { font-family: var(--mu-sc); font-weight: 700; letter-spacing: .08em; color: var(--mu-encre); border: none; margin: .8em 0 .3em; }
 
 /* Lettrine au début de chaque section */
-.mu-journal .journal-page-content h2 + p::first-letter, .mu-journal .journal-page-content h3 + p::first-letter { float: left; font-family: var(--mu-titre); font-size: 3.3em; line-height: .8; margin: .08em .1em 0 0; color: var(--mu-encre); }
+.mu-journal .journal-page-content h2 + p:not([class])::first-letter, .mu-journal .journal-page-content h3 + p:not([class])::first-letter { float: left; font-family: var(--mu-titre); font-size: 3.3em; line-height: .8; margin: .08em .1em 0 0; color: var(--mu-encre); }
 
 /* Listes à pattes */
 .mu-journal .journal-page-content ul { list-style: none; padding-left: 1.4em; }
@@ -77,3 +77,12 @@
 .mu-journal .journal-page-content th { background: var(--mu-encre); color: var(--mu-papier); font-family: var(--mu-sc); font-weight: 700; letter-spacing: .04em; text-align: left; padding: 4px 8px; }
 .mu-journal .journal-page-content td { border-bottom: 1px solid var(--mu-filet); padding: 4px 8px; vertical-align: top; }
 .mu-journal .journal-page-content tr:nth-child(even) td { background: rgba(0,0,0,.03); }
+
+/* Notes du Gardien (encadrés gris du livre), lignes « Tags », coupures de presse */
+.mu-journal .journal-page-content .mu-note { background: #e3dccb; border-left: 4px solid var(--mu-gris); padding: 6px 10px; margin: 10px 0; font-size: .95em; }
+.mu-journal .journal-page-content .mu-note .mu-note-titre { font-family: var(--mu-sc); font-weight: 700; letter-spacing: .1em; margin-right: .4em; }
+.mu-journal .journal-page-content .mu-tags { font-style: italic; color: var(--mu-gris); text-align: left; }
+.mu-journal .journal-page-content .mu-tags strong { font-style: normal; font-family: var(--mu-sc); color: var(--mu-encre); }
+.mu-journal .journal-page-content blockquote.mu-coupure { font-style: normal; background: var(--mu-papier-2); border: 1px solid var(--mu-encre); border-left: 6px double var(--mu-encre); padding: 8px 14px; column-count: 2; column-gap: 18px; text-align: justify; }
+.mu-journal .journal-page-content blockquote.mu-coupure strong:first-child { display: block; column-span: all; font-family: var(--mu-titre); font-size: 1.6em; text-align: center; }
+.mu-journal .journal-page-content .mu-ou { text-align: center; font-family: var(--mu-sc); letter-spacing: .2em; color: var(--mu-gris); margin: .2em 0; }

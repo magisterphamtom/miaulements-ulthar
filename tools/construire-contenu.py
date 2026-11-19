@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.6.0", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.6.1", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -116,6 +116,7 @@ def habiller(html_page):
     def badges(m):
         return f'<div class="mu-badges"><span class="mu-plus">Qualité : {m.group(1).strip()}</span><span class="mu-moins">Défaut : {m.group(2).strip()}</span></div>'
     html_page = re.sub(r"<p>Attribut qualité\s*:\s*(.+?)\s*Attribut défaut\s*:\s*(.+?)</p>", badges, html_page)
+    html_page = re.sub(r"<p><strong>Attribut qualité\s*</strong>\s*:\s*(.+?)</p>\s*<p><strong>Attribut défaut\s*</strong>\s*:\s*(.+?)</p>", badges, html_page)
     return html_page
 
 def une(sous_titre, gauche, droite):
@@ -242,6 +243,8 @@ def construire_bestiaire():
     out = []
     for nom, corps in parse_bestiaire():
         c = creature_complete(nom, corps)
+        for k in ("description", "extrait", "pouvoir", "capacite"): c[k] = nettoyer(c[k])
+        c["description"] = c["description"][:1].upper() + c["description"][1:]
         aid = ident(pack, "Actor", c["nom"])
         desc = f"<p>{esc(c['description'])}</p>"
         if c["capacite"]: desc += f"<p><strong>Capacité :</strong> {esc(c['capacite'])}</p>"
@@ -320,6 +323,127 @@ MJ = "wiki-mj"
 OBS = {"default": 2}
 NONE = {"default": 0}
 
+GARDER_TIRET_APRES = {"là", "ci", "vous", "nous", "moi", "toi", "lui", "elle", "elles", "eux", "même", "mêmes", "il", "ils", "on", "t", "y", "en", "le", "la", "les"}
+GARDER_TIRET_AVANT = {"semi", "demi", "mi", "anti", "sous", "arrière", "avant", "après", "contre", "non", "grand", "grande", "petit", "petite", "porte", "garde", "haut", "bas", "chef", "post", "pré", "ex", "vice", "néo", "auto", "extra", "ultra", "inter", "super", "sur", "outre", "quasi", "beaux", "belle", "Saint", "saint", "Sainte", "sainte", "rez", "c'est", "est", "peut", "faut", "dit", "vis"}
+
+def nettoyer(t):
+    """Retouches de typographie sur un texte extrait (HTML accepté)."""
+    t = re.sub(r"\bÀ(?=[a-zé])", "À ", t)
+    t = re.sub(r"\bYa-t-il\b", "Y a-t-il", t)
+    t = re.sub(r",\s*,", ",", t)
+    # mots coupés en fin de ligne : « s'ac- compagne » -> « s'accompagne », « nuit- là » -> « nuit-là »
+    def tiret(m):
+        avant, apres = m.group(1), m.group(2)
+        mot_avant = re.split(r"[\s'’>(«\"]", avant)[-1]
+        if mot_avant.startswith("#") or apres.lower() in GARDER_TIRET_APRES or mot_avant.lower() in GARDER_TIRET_AVANT or "-" in mot_avant:
+            return f"{avant}-{apres}"
+        return f"{avant}{apres}"
+    t = re.sub(r"([#\w'’]*\w)- ([a-zà-ÿ]\w*)", tiret, t)
+    t = re.sub(r"\s+,(?=\s)", ",", t)
+    t = re.sub(r"^l est ", "Il est ", t)          # lettrine « I » imprimée en image
+    return t
+
+def charger_blocs(nom):
+    return json.load(open(f"/tmp/ulthar-txt/{nom}-blocs.json"))
+
+def recoller(blocs):
+    """Une phrase coupée par une note de marge ou un encadré reprend en minuscule : on la recolle au paragraphe d'avant."""
+    res = []
+    for b in blocs:
+        if re.search(r"ISBN|Dépôt légal|UNIQUEMENT POUR|upscal|polyrize|\bv20\d{6}\b", b["html"]):
+            continue
+        brut = html.unescape(re.sub(r"<[^>]+>", "", b["html"])).strip()
+        if b["type"] == "p" and brut[:1].islower():
+            for k in range(len(res) - 1, max(-1, len(res) - 5), -1):
+                if res[k]["type"] in ("h2",): break
+                if res[k]["type"] in ("p", "li", "exemple", "note"):
+                    fin = html.unescape(re.sub(r"<[^>]+>", "", res[k]["html"])).strip()
+                    if fin and not FIN.search(fin):
+                        res[k] = dict(res[k], html=res[k]["html"].rstrip() + " " + b["html"].lstrip()); b = None
+                        break
+            if b is None: continue
+        res.append(b)
+    return res
+
+def blocs_vers_html(blocs):
+    """Blocs de mise en page (tools/extraire_blocs.py) -> HTML du wiki."""
+    blocs = recoller([dict(b, html=nettoyer(b["html"])) for b in blocs])
+    h, liste = [], []
+    def fin_liste():
+        if liste: h.append("<ul>" + "".join(f"<li>{x}</li>" for x in liste) + "</ul>"); liste.clear()
+    for b in blocs:
+        t, x = b["type"], b["html"]
+        if t == "li": liste.append(x); continue
+        fin_liste()
+        if t == "h3": h.append(f"<h3>{x}</h3>")
+        elif t == "h4": h.append(f"<h4>{x}</h4>")
+        elif t == "p" and re.sub(r"<[^>]+>", "", x).strip() == "ou": h.append('<p class="mu-ou">— ou —</p>')
+        elif t == "p": h.append(f"<p>{x}</p>")
+        elif t == "tags": h.append(f'<p class="mu-tags"><strong>Tags :</strong> {x}</p>')
+        elif t == "note": h.append(f'<div class="mu-note"><span class="mu-note-titre">Note</span> {x}</div>')
+        elif t == "exemple": h.append(f'<div class="mu-exemple"><div class="mu-exemple-titre">{esc(b.get("titre", "Exemple"))}</div><p>{x}</p></div>')
+        elif t == "journal": h.append(f'<blockquote class="mu-coupure"><p>{x}</p><p><em>Coupure de presse</em></p></blockquote>')
+    fin_liste()
+    # recolle les paragraphes coupés par un changement de page ou de colonne
+    res = []
+    for x in h:
+        if res and x.startswith("<p>") and res[-1].startswith("<p>") and not res[-1].startswith('<p class'):
+            fin = html.unescape(re.sub(r"<[^>]+>", "", res[-1])); deb = html.unescape(re.sub(r"<[^>]+>", "", x))
+            if not FIN.search(fin) and deb[:1].islower():
+                res[-1] = res[-1][:-4] + " " + x[3:]; continue
+        res.append(x)
+    # suite des tags : « <p>#xxx, …</p> » ou « <p><strong>#xxx.</strong> Description… » après une ligne Tags ou une ligne finie par une virgule
+    res2 = []
+    for x in res:
+        prec = res2[-1] if res2 else ""
+        suite = bool(prec.startswith("<p") and re.search(r"[,\-]\s*</p>$", prec))
+        m = re.match(r"<p><strong>(#[^<]+)</strong>\s*(.*)</p>$", x, flags=re.S)
+        if suite and m:
+            res2[-1] = re.sub(r"\s*</p>$", " " + m.group(1).strip() + "</p>", prec)
+            if m.group(2).strip(): res2.append("<p>" + m.group(2).strip() + "</p>")
+            continue
+        if suite and x.startswith("<p>#"):
+            res2[-1] = re.sub(r"\s*</p>$", " " + x[3:], prec)
+            continue
+        res2.append(x)
+    res = res2
+    # une ligne de tags qui contient déjà la description : on coupe après la fin des tags
+    res = [re.sub(r'^(<p class="mu-tags">.*?#[^<]*?\.)\s+(?!#)([^<]+)</p>$', r'\1</p>\n<p>\2</p>', x, flags=re.S) for x in res]
+    # « … phrase. <strong>Étiquette : </strong>suite » : nouvelle ligne pour chaque étiquette en gras
+    res = [re.sub(r'([.!?])\s+(<strong>[^<#]{2,40}:\s*</strong>)', r'\1</p>\n<p>\2', x) if x.startswith("<p>") else x for x in res]
+    sortie = "\n".join(res)
+    sortie = re.sub(r"#([\wÀ-ÿ'’]+)- +(?=[\wÀ-ÿ])", r"#\1-", sortie)       # tags coupés en fin de ligne
+    sortie = re.sub(r"\s+([,.])(?=\s|<)", r"\1", sortie)                  # « mot , » -> « mot, »
+    sortie = re.sub(r"(?<!\.)\.\.(?!\.)", ".", sortie)
+    return sortie
+
+def titre_propre(t):
+    t = html.unescape(re.sub(r"<[^>]+>", "", t)).strip()
+    if t.upper() in NOMS_RACES: return NOMS_RACES[t.upper()]
+    return t[:1] + t[1:].lower() if t.isupper() else t
+
+def page_blocs(nom_livre, p1, p2, titre_chap):
+    """Pages p1..p2 d'un livre -> [(titre de page, html)], une page par intertitre de niveau 2 (sections courtes fusionnées)."""
+    blocs = [b for p in charger_blocs(nom_livre) if p1 <= p["page"] <= p2 for b in p["blocs"]]
+    secs, cour = [], {"titre": titre_chap, "blocs": []}
+    for b in blocs:
+        if b["type"] == "h2":
+            if cour["blocs"] or secs: secs.append(cour)
+            cour = {"titre": titre_propre(b["html"]), "blocs": []}
+        else:
+            cour["blocs"].append(b)
+    secs.append(cour)
+    res = []
+    for s in secs:
+        longueur = sum(len(b["html"]) for b in s["blocs"])
+        if res and longueur < 280:
+            res[-1]["blocs"] += [{"type": "h3", "html": esc(s["titre"])}] + s["blocs"]
+        else:
+            res.append(s)
+    if len(res) > 1 and sum(len(b["html"]) for b in res[0]["blocs"]) < 280:
+        res[1]["blocs"] = [{"type": "h3", "html": esc(res[0]["titre"])}] + res[0]["blocs"] + res[1]["blocs"]; res = res[1:]
+    return [(s["titre"], habiller(blocs_vers_html(s["blocs"]))) for s in res]
+
 def page_chapitre(pages_json, p1, p2, titre_chap, coupures=()):
     return [(s["titre"], habiller(lignes_vers_html(s["lignes"]))) for s in sections(pages_json, p1, p2, titre_chap, coupures)]
 
@@ -350,18 +474,18 @@ def construire_wikis(bestiaire):
     R = charger("regles")
     # --- wiki joueur
     pj = {}
-    pj["Bien débuter un jeu de rôle"] = page_chapitre(R, 8, 11, "Bien débuter un jeu de rôle")
-    crea = page_chapitre(R, 12, 22, "Création des personnages")
+    pj["Bien débuter un jeu de rôle"] = page_blocs("regles", 8, 11, "Bien débuter un jeu de rôle")
+    crea = page_blocs("regles", 12, 22, "Création des personnages")
     crea.append(("Les races en un coup d'œil", tableau_races()))
     pj["Création des personnages"] = crea
-    pj["Races des Chats"] = page_chapitre(R, 23, 43, "Races des Chats", RACES_MAJ)
-    sysj = page_chapitre(R, 44, 66, "Système de jeu")
+    pj["Races des Chats"] = page_blocs("regles", 23, 43, "Races des Chats")
+    sysj = page_blocs("regles", 44, 66, "Système de jeu")
     sysj.append(("Les pouvoirs temporaires (table D100)", tableau_temporaires()))
     pj["Système de jeu"] = sysj
-    pj["Les Chats d'Ulthar"] = page_chapitre(R, 93, 103, "Les Chats d'Ulthar")
-    pj["Jouer un Chat"] = page_chapitre(R, 104, 113, "Jouer un Chat")
+    pj["Les Chats d'Ulthar"] = page_blocs("regles", 93, 103, "Les Chats d'Ulthar")
+    pj["Jouer un Chat"] = page_blocs("regles", 104, 113, "Jouer un Chat")
     nouv = charger("nouvelle")
-    pj["Lecture : la nouvelle des Chats d'Ulthar"] = page_chapitre(nouv, 1, 2, "Les Chats d'Ulthar")
+    pj["Lecture : la nouvelle des Chats d'Ulthar"] = page_blocs("nouvelle", 1, 2, "Les Chats d'Ulthar")
     pj["Aide-mémoire du joueur"] = [("Aide-mémoire", aide_memoire_joueur())]
     ordre = ["Bien débuter un jeu de rôle", "Création des personnages", "Races des Chats", "Système de jeu", "Les Chats d'Ulthar", "Jouer un Chat", "Lecture : la nouvelle des Chats d'Ulthar", "Aide-mémoire du joueur"]
     pj_acc = une("Édition spéciale pour les Chats d'Ulthar", "Wiki des joueurs", "Arkham, 1921") + "<p>Bienvenue dans <strong>Les Miaulements d'Ulthar</strong>, un jeu de rôle de Xaviiiier où vous incarnez des Chats d'Ulthar, dotés de pouvoirs mystiques par la déesse Bast, face à l'horreur lovecraftienne.</p><p>Ce wiki est celui des joueurs. Il suit le livre des règles ; le Gardien (meneur de jeu) a son propre wiki.</p><ul>" + "".join(f"<li>{lien(PJ, 'JournalEntry', n, n)}</li>" for n in ordre) + "</ul><h2>Sur la fiche de Chat</h2><ul><li>Bouton « Création du Chat » : l'assistant vous guide pas à pas.</li><li>Clic sur un attribut : jet (Maj = jet rapide). Clic sur une petite case : coche un échec.</li><li>Clic sur le nom d'un pouvoir : il est montré à la table.</li></ul>"
@@ -371,9 +495,9 @@ def construire_wikis(bestiaire):
 
     # --- wiki MJ (Gardien)
     mj = {}
-    mj["Guide du maître de jeu"] = page_chapitre(R, 114, 129, "Guide du maître de jeu")
-    mj["L'univers de Lovecraft"] = page_chapitre(R, 67, 92, "L'univers de Lovecraft")
-    mj["Scénario d'initiation : les chiens dimensionnels"] = page_chapitre(R, 130, 148, "Les chiens dimensionnels")
+    mj["Guide du maître de jeu"] = page_blocs("regles", 114, 129, "Guide du maître de jeu")
+    mj["L'univers de Lovecraft"] = page_blocs("regles", 67, 92, "L'univers de Lovecraft")
+    mj["Scénario d'initiation : les chiens dimensionnels"] = page_blocs("regles", 131, 143, "Les chiens dimensionnels")
     ecran = "<h2>Création d'un Chat</h2><p>1. Surnom · 2. Attributs (50 % + ajustements) · 3. Race (bonus/malus, pouvoir de race) · 4. Deux pouvoirs innés · 5. Calculs · 6. Vies de Chat : 3.</p>"
     ecran += "<h2>Difficulté</h2>" + table_html(["Difficulté", "Modificateur"], [["Très difficile", "+40"], ["Difficile", "+20"], ["Normal", "0"], ["Facile", "−20"], ["Très facile", "−40"]])
     ecran += "<h2>Dégâts</h2>" + table_html(["Source", "Dégâts"], [["Coup de griffe", "1D4"], ["Chute", "1D4 par étage"], ["Objet tranchant", "1D6"], ["Pistolet", "1D6+1"], ["Fusil", "2D6"], ["Explosion", "4D6"], ["Feu", "2D6 par tour"], ["Choc par véhicule", "1D6"]])
@@ -405,9 +529,9 @@ def construire_scenarios():
             ("La bibliothèque de Pnakotus (scénario 3)", 64, 73), ("L'Île aux Quatre Colonnes (scénario 4)", 74, 79), ("L'affrontement final (scénario 5)", 80, 88),
             ("Aides de jeu", 89, 103)]
     for k, (nom, a, b) in enumerate(plan):
-        journal("scenarios", nom, page_chapitre(S, a, b, nom), tri=(k + 1) * 100000, ownership=NONE)
+        journal("scenarios", nom, page_blocs("scenarios", a, b, nom), tri=(k + 1) * 100000, ownership=NONE)
     som = charger("sommilius")
-    journal("scenarios", "Sommilius (scénario)", page_chapitre(som, 1, 6, "Sommilius"), tri=(len(plan) + 1) * 100000, ownership=NONE)
+    journal("scenarios", "Sommilius (scénario)", page_blocs("sommilius", 1, 6, "Sommilius"), tri=(len(plan) + 1) * 100000, ownership=NONE)
     idx = une("Les affaires en cours", "Scénarios", "Arkham, 1921") + "<p>Livre des scénarios des Miaulements d'Ulthar : cinq scénarios en « enquête émergente guidée », la campagne « Les Clefs Interdites » et les aides de jeu. Le texte est repris du PDF : les tableaux et encadrés en colonnes peuvent perdre un peu de leur mise en page.</p><ul>" + "".join(f"<li>{lien('scenarios', 'JournalEntry', n, n)}</li>" for n, _, _ in plan) + f"<li>{lien('scenarios', 'JournalEntry', 'Sommilius (scénario)', 'Sommilius (scénario)')}</li></ul>"
     journal("scenarios", "Index des scénarios", [("Index", idx)], tri=0, ownership=NONE)
     print("scénarios :", len(plan) + 2, "entrées")

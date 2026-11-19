@@ -13,7 +13,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Pour en savoir plus sur Les Miaulements d'Ulthar, son univers cap vant, l'évolu on de créa on, son financement par cipa f et sa sor e, nous vous invitons à nous rejoindre sur les réseaux sociaux aux adresses suivantes : twi er : h ps://twi er.com/xaviiiierjdr facebook : h ps://www.facebook.com/xaviiiierjdr instagram : h ps://www.instagram.com/xaviiiierjdr site web : h ps://www.xaviiiier.com</p>"
+    "content": "<p>Pour en savoir plus sur <strong>Les Miaulements d'Ulthar</strong>, son univers cap(cid:46)vant, l'évolu(cid:46)on de créa(cid:46)on, son financement par(cid:46)cipa(cid:46)f et sa sor(cid:46)e, nous vous invitons à nous rejoindre sur les réseaux sociaux aux adresses suivantes :</p>\n<p><strong>twi(cid:47)er </strong>: h(cid:47)ps://twi(cid:47)er.com/xaviiiierjdr <strong>facebook </strong>: h(cid:47)ps://www.facebook.com/xaviiiierjdr <strong>instagram </strong>: h(cid:47)ps://www.instagram.com/xaviiiierjdr <strong>site web </strong>: h(cid:47)ps://www.xaviiiier.com</p>"
    },
    "video": {
     "controls": true,
@@ -30,7 +30,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!Z1oVFCkTF5XYoiWM.J3LocJGGyifyvGJq"
@@ -46,7 +46,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>L'histoire se passe à Arkham, Massachuse s, au début des années 1920. Les joueurs incarnent des Chats gardiens d'Ulthar et se lancent dans une enquête pour détruire la formule d'un médicament inventé par le laboratoire Kitkat médical. Ce médicament permet d'endormir profondément une personne et lui ouvre un passage vers la contrée des rêves. Ce e découverte présente un véritable danger pour la contrée des rêves.</p>"
+    "content": "<p>L'histoire se passe à Arkham, Massachuse(cid:47)s, au début des années 1920. Les joueurs incarnent des Chats gardiens d'Ulthar et se lancent dans une enquête pour détruire la formule d'un médicament inventé par le laboratoire Kitkat médical. Ce médicament permet d'endormir profondément une personne et lui ouvre un passage vers la contrée des rêves. Ce(cid:47)e découverte présente un véritable danger pour la contrée des rêves.</p>"
    },
    "video": {
     "controls": true,
@@ -63,7 +63,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!Z1oVFCkTF5XYoiWM.i3MXwPuTyYfVmPq4"
@@ -79,7 +79,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>L'aventure commence dans la contrée des rêves. Avec une démarche feutrée, un vieux Chat Gardien d'Ulthar nommé Ester explique aux joueurs qu'un danger menace la tranquillité de la contrée des rêves. Un scien fique nommé le Professeur Glisgard a confec onné un médicament perme ant d'induire un sommeil profond chez un pa ent. Malheureusement, ce sommeil profond permet au « malade » d'accéder à la contrée des rêves, créant ainsi un véritable danger pour l'équilibre des deux mondes. Ester leur dit : « Vous devez vous rendre au laboratoire, trouver la formule et la détruire. »\"</p>\n<h3>Passage vers Arkham</h3>\n<p>D'un geste magique, le vieux Ester ouvre un passage vers une ruelle sombre d'Arkham pour y envoyer les joueurs.</p>"
+    "content": "<p>L'aventure commence dans la contrée des rêves. Avec une démarche feutrée, un vieux Chat Gardien d'Ulthar nommé Ester explique aux joueurs qu'un danger menace la tranquillité de la contrée des rêves. Un scien(cid:46)fique nommé le Professeur Glisgard a confec(cid:46)onné un médicament perme(cid:47)ant d'induire un sommeil profond chez un pa(cid:46)ent. Malheureusement, ce sommeil profond permet au « malade » d'accéder à la contrée des rêves, créant ainsi un véritable danger pour l'équilibre des deux mondes.</p>\n<p>Ester leur dit : « <strong>Vous devez vous </strong> <strong>rendre au laboratoire, trouver la </strong> <strong>formule et la détruire. </strong>»\"</p>\n<h3>Passage vers Arkham</h3>\n<p>D'un geste magique, le vieux Ester ouvre un passage vers une ruelle sombre d'Arkham pour y envoyer les joueurs.</p>"
    },
    "video": {
     "controls": true,
@@ -96,14 +96,14 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!Z1oVFCkTF5XYoiWM.SikFwpFToRzIZy7x"
   },
   {
-   "_id": "E0z7dZeBetALuIFJ",
-   "name": "Arrivée à Arkham : La ruelle",
+   "_id": "fYOCmbRj2oflvoCW",
+   "name": "Arrivée à Arkham La ruelle",
    "type": "text",
    "title": {
     "show": true,
@@ -112,7 +112,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Les joueurs arrivent dans une ruelle sombre. Sur place, trois chats se disputent pour a raper des rats. Les chats sont très joueurs et ne pensent qu'au jeu. Ils n'aideront à trouver le chemin pour aller au laboratoire que s'ils réussissent à remporter une chasse de rats. Un [Jet d'Agilité] permet de sauter près d'un rat. Il faut ensuite un [Jet de Précision] pour réussir à saisir le rat et gagner le jeu. Avec une victoire, les trois chats donnent des indica ons aux joueurs pour se rendre au laboratoire. « Il faut traverser le parc, passer</p>"
+    "content": "<p>Les joueurs arrivent dans une ruelle sombre. Sur place, trois chats se disputent pour a(cid:47)raper des rats. Les chats sont très joueurs et ne pensent qu'au jeu. Ils n'aideront à trouver le chemin pour aller au laboratoire que s'ils réussissent à remporter une chasse de rats.</p>\n<p>Un [Jet d'Agilité] permet de sauter près d'un rat. Il faut ensuite un <strong>[Jet de Précision] </strong>pour réussir à saisir le rat et gagner le jeu. Avec une victoire, les trois chats donnent des indica(cid:46)ons aux joueurs pour se rendre au laboratoire.</p>\n<p>« Il faut traverser le parc, passer</p>"
    },
    "video": {
     "controls": true,
@@ -129,10 +129,10 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!Z1oVFCkTF5XYoiWM.E0z7dZeBetALuIFJ"
+   "_key": "!journal.pages!Z1oVFCkTF5XYoiWM.fYOCmbRj2oflvoCW"
   },
   {
    "_id": "gxuuAHHS020kMlcS",
@@ -145,7 +145,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Les joueurs traversent un parc pour enfants, où de nombreux enfants jouent. Quand ils apercoivent les chats ils tentent de les a raper. Un [ Jet d'Agilité ] pour éviter les enfants. S'ils sont a rapés, les enfants leur font des câlins, et les joueurs doivent effectuer un [ jet de Physique ] pour s'échapper.\"</p>\n<h3>La recherche du laboratoire</h3>\n<p>Àla sor e du parc, les joueurs doivent trouver la bonne rue avec les indica ons quelque peu vagues fournies par les chats rencontrés. Un [ Jet intelligence ] pour trouver le bon chemin.</p>\n<h3>Le Laboratoire</h3>\n<p>Le laboratoire Kitkat se trouve dans un vieux bâ ment coincé entre deux immeubles. Àl'entrée, un homme assure la fonc on de gardien et d'accueil, tandis qu'à ses pieds, un vieux chien dort. Un [ Jet de Discré on ] est nécessaire pour ne pas réveiller le chien.</p>"
+    "content": "<p>Les joueurs traversent un parc pour enfants, où de nombreux enfants jouent. Quand ils apercoivent les chats ils tentent de les a(cid:47)raper. Un <strong>[ Jet d'Agilité ] </strong>pour éviter les enfants.</p>\n<p>S'ils sont a(cid:47)rapés, les enfants leur font des câlins, et les joueurs doivent effectuer un <strong>[ jet de Physique ] </strong>pour s'échapper.\"</p>\n<h3>La recherche du</h3>\n<p>À la sor(cid:46)e du parc, les joueurs doivent trouver la bonne rue avec les indica(cid:46)ons quelque peu vagues fournies par les chats rencontrés. <strong>Un [ Jet intelligence ] pour trouver le bon chemin.</strong></p>"
    },
    "video": {
     "controls": true,
@@ -162,14 +162,14 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!Z1oVFCkTF5XYoiWM.gxuuAHHS020kMlcS"
   },
   {
-   "_id": "3NfHb3BRnNf7Uc92",
-   "name": "La recherche de la formule",
+   "_id": "jFA779EMGzfKb6Iv",
+   "name": "Le Laboratoire",
    "type": "text",
    "title": {
     "show": true,
@@ -178,7 +178,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Maintenant, il faut rechercher la bonne pièce pour trouver le bureau du professeur qui travaille sur ce somnifère. Ulisez le plan pour décrire la progression des joueurs. Àchaque changement de pièce, le personnel a 30% de chance de remarquer les chats. Si les joueurs sont vus, le personnel tentera de les a raper et d'appeler le gardien, qui se montrera plus brutal avec eux.</p>"
+    "content": "<p>Le laboratoire Kitkat se trouve dans un vieux bâ(cid:46)ment coincé entre deux immeubles. À l'entrée, un homme assure la fonc(cid:46)on de gardien et d'accueil, tandis qu'à ses pieds, un vieux chien dort. Un <strong>[ Jet de Discré(cid:46)on ] </strong>est nécessaire pour ne pas réveiller le chien.</p>"
    },
    "video": {
     "controls": true,
@@ -195,14 +195,14 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!Z1oVFCkTF5XYoiWM.3NfHb3BRnNf7Uc92"
+   "_key": "!journal.pages!Z1oVFCkTF5XYoiWM.jFA779EMGzfKb6Iv"
   },
   {
-   "_id": "Mvfcd3iRILao2HRS",
-   "name": "Destruction de la formule.",
+   "_id": "XNiXwLGzgE0XgN4y",
+   "name": "La recherche de la formule",
    "type": "text",
    "title": {
     "show": true,
@@ -211,7 +211,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>La formule est posée sur un bureau, entourée de fioles, de pipe es, et de toutes sortes d'objets de laboratoire. La destruc on peut être effectuée selon les souhaits des joueurs, cependant, il faudra que les écrits deviennent illisibles, rendant ainsi la formule incompréhensible.</p>\n<h3>Retour dans la contrée</h3>\n<p>Lorsque les joueurs ont détruit la formule, le portail magique réapparaît, et le vieux Ether leur fait signe de revenir. Il les félicite pour avoir écarté ce danger en disant : « Vous êtes maintenant de vrais gardiens d'Ulthar. »</p>\n<p>Un jeu de role de xaviiiier.</p>"
+    "content": "<p>Maintenant, il faut rechercher la bonne pièce pour trouver le bureau du professeur qui travaille sur ce somnifère. U(cid:46)lisez le plan pour décrire la progression des joueurs. À chaque changement de pièce, le personnel a <strong>30% de chance </strong>de remarquer les chats. Si les joueurs sont vus, le personnel tentera de les a(cid:47)raper et d'appeler le gardien, qui se montrera plus brutal avec eux.</p>\n<h3>Destruction de la formule.</h3>\n<p>La formule est posée sur un bureau, entourée de fioles, de et de toutes sortes d'objets de laboratoire. La destruc(cid:46)on peut être effectuée selon les souhaits des joueurs, cependant, il faudra que les écrits deviennent illisibles, rendant ainsi la formule incompréhensible.</p>\n<h3>Retour dans la contrée</h3>\n<p>Lorsque les joueurs ont détruit la formule, le portail magique réapparaît, et le vieux Ether leur fait signe de revenir.</p>\n<p>Il les félicite pour avoir écarté ce danger en disant :</p>\n<p><strong>« Vous êtes maintenant de vrais gardiens d'Ulthar. »</strong></p>\n<p>Un jeu de role de xaviiiier.</p>"
    },
    "video": {
     "controls": true,
@@ -228,10 +228,10 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!Z1oVFCkTF5XYoiWM.Mvfcd3iRILao2HRS"
+   "_key": "!journal.pages!Z1oVFCkTF5XYoiWM.XNiXwLGzgE0XgN4y"
   }
  ],
  "folder": null,
@@ -248,7 +248,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.6.0",
+  "systemVersion": "0.6.1",
   "coreVersion": "14.368"
  },
  "_key": "!journal!Z1oVFCkTF5XYoiWM"

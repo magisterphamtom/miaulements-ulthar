@@ -2,6 +2,10 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Textes des wikis corrigés (v0.6.1, branche `correction/textes-wikis`, partie de la branche du thème)
+- Nouvelle extraction des PDF par blocs de mise en page (`tools/extraire_blocs.py`, pdfminer) : colonnes lues dans l'ordre, notes grises des marges isolées en encadrés « Note », titres en biais et mini-fiches dessinées retirés, gras du livre conservé, cases ☐ des indices en listes, lignes « Tags » mises à part, coupure de journal « Mort mystérieuse » reconstituée, notes d'imprimeur et 4e de couverture retirées, mots coupés en fin de ligne recollés, nouvelle remise dans l'ordre (livret imposé).
+- `tools/verifier-textes.py` repère les défauts restants ; il ne reste que des cas normaux.
+
 ## Thème « Journal d'Arkham, 1921 » des wikis (v0.6.0, branche `fonction/wiki-journal-arkham`)
 - Wikis et scénarios habillés en coupure de presse : papier journal, titres en Grenze Gotisch, petites capitales en Playfair Display SC, texte en Old Standard TT (polices libres SIL OFL embarquées dans `assets/fonts`, fonctionne sans internet).
 - Intertitres à patte, trace de pattes sous les grands titres, lettrine en début de section, listes à pattes, tableaux et citations du Journal d'Arkham mis en forme, sommaire assorti.

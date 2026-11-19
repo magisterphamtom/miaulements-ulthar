@@ -17,7 +17,7 @@
    "value": 3,
    "max": 3
   },
-  "description": "<p>connu pour son intelligence, sa curiosité et sa capacité à s'adapter. Souvent considéré comme un nuisible, le rat se faufile dans toutes les lieux à travers les canalisations ou divers petits passages.</p><p><strong>Capacité :</strong> rassemblement en groupe</p><blockquote><p>Des habitants ont signalé avoir observé des groupes de rats se rassemblant en cercle autour d'un vieux puits, émettant des cris étranges et semblant communiquer entre eux dans une sorte de langage incompréhensible</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
+  "description": "<p>Connu pour son intelligence, sa curiosité et sa capacité à s'adapter. Souvent considéré comme un nuisible, le rat se faufile dans toutes les lieux à travers les canalisations ou divers petits passages.</p><p><strong>Capacité :</strong> rassemblement en groupe</p><blockquote><p>Des habitants ont signalé avoir observé des groupes de rats se rassemblant en cercle autour d'un vieux puits, émettant des cris étranges et semblant communiquer entre eux dans une sorte de langage incompréhensible</p><p><em>Extrait du Journal d'Arkham, Scotty, 1921</em></p></blockquote>"
  },
  "prototypeToken": {
   "name": "Rat",
@@ -43,7 +43,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.6.0",
+  "systemVersion": "0.6.1",
   "coreVersion": "14.368"
  },
  "_key": "!actors!7PacPju44FimpeAo"

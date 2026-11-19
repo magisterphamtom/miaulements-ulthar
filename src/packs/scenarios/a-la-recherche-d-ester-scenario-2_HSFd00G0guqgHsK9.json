@@ -13,7 +13,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<h3>Àla recherche d'Ester (scénario 2)</h3>\n<p>Scénario 2 : r e t</p>\n<p>'E h c r e Ala rech</p>\n<p>Ce scénario est prévu pour une courte séance. Il invite les joueurs à retrouver Ester qui semble avoir disparu. Au travers de cette mission, ils vont pouvoir explorer les lieux emblématiques d’Ulthar : la bibliothèque, le marché, les commerces ou encore l’auberge animée. Au coeur de cette ville rode également un groupe d’individus, engagé par le mystérieux Dr Corbius, à la recherche également d'Ester afin de le kidnaper. Déterminés, ils sont prêts à se battre avec les Chats d'Ulthar. Ainsi, dans un climat de quête et de tension, méchants comme gentils sont tous à la recherche de notre Ester !... Vos joueurs seront ils assez forts et malins pour leur faire face et retrouver Ester avant eux ?...</p>"
+    "content": "<p>Ce scénario est prévu pour une courte séance. Il invite les joueurs à retrouver Ester qui semble avoir disparu. Au travers de cette mission, ils vont pouvoir explorer les lieux emblématiques d’Ulthar : la bibliothèque, le marché, les commerces ou encore l’auberge animée. Au coeur de cette ville rode également un groupe d’individus, engagé par le mystérieux Dr Corbius, à la recherche également d'Ester afin de le kidnaper. Déterminés, ils sont prêts à se battre avec les Chats d'Ulthar. Ainsi, dans un climat de quête et de tension, méchants comme gentils sont tous à la recherche de notre Ester !... Vos joueurs seront ils assez forts et malins pour leur faire face et retrouver Ester avant eux ?...</p>"
    },
    "video": {
     "controls": true,
@@ -30,7 +30,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!HSFd00G0guqgHsK9.6OZpoPLg53pzOTvw"
@@ -46,7 +46,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<h3>Texte à lire :</h3>\n<p>Alors que vous revenez d’un voyage éprouvant, porteurs de mauvaises nouvelles, votre arrivée à Ulthar coïncide avec le lever d’un des soleils de la Contrée du Rêve. Les reflets violets des toitures éblouissent vos yeux, baignant la ville d’une lumière irréelle. Au loin, un groupe d’oiseaux s’envole brusquement des toits. Leur départ semble porter un présage funeste, comme si quelque chose d’invisible avait troublé leur quiétude. De retour devant la statue de Bast, vous ne trouvez pas Ester. Seuls quelques Chats profitent du lever du soleil. Que faites-vous ?... \"</p>\n<p>Note : Le début étant différent, donnez rapidement quelques indices pour éviter que la phase de recherche ne s’enlise. Dans mes parties, ce scénario dure généralement deux heures.</p>"
+    "content": "<h3>Texte à lire</h3>\n<p>Alors que vous revenez d’un voyage éprouvant, porteurs de mauvaises nouvelles, votre arrivée à Ulthar coïncide avec le lever d’un des soleils de la Contrée du Rêve. Les reflets violets des toitures éblouissent vos yeux, baignant la ville d’une lumière irréelle. Au loin, un groupe d’oiseaux s’envole brusquement des toits. Leur départ semble porter un présage funeste, comme si quelque chose d’invisible avait troublé leur quiétude. De retour devant la statue de Bast, vous ne trouvez pas Ester. Seuls quelques Chats profitent du lever du soleil. Que faites-vous ?... \"</p>\n<div class=\"mu-note\"><span class=\"mu-note-titre\">Note</span> Le début étant différent, donnez rapidement quelques indices pour éviter que la phase de recherche ne s’enlise. Dans mes parties, ce scénario dure généralement deux heures.</div>"
    },
    "video": {
     "controls": true,
@@ -63,7 +63,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!HSFd00G0guqgHsK9.ibpCihPvPS4eznws"
@@ -79,7 +79,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<h3>Passants, promeneurs, habitants, ...</h3>\n<p>Voici une liste de surnoms afin d'inviter les Chats à interpeller les passants et provoquer de nombreuses rencontres et déplacement dans la ville d’Ulthar.</p>\n<h3>Individus engagés par Corbius</h3>\n<p>Corbius sait que les Gardiens d’Ulthar vont tenter de lui barrer la route. Il envoie donc un groupe pour tenter de kidnapper leur tête pensante: Ester. Le groupe va poser des questions aux habitants d’Ulthar et leur rencontre avec les Chats promet de belles bagarres ! □ Kevin, le costaud : #mâchoire-serrée, #borgne, # voix-brusque Il domine par sa puissance. □ Patcho, le rusé: #longiligne, #regards-obliques, #yeux-pinçés Il compense son physique par sa ruse et sa provocation. □ Paulo, le nerveux : #craque-ses-doigts, #en-mouvement, # soupirs Il déclenche souvent le conflit. □ Lou, le peureux : #regarde-ses-pieds, #voix-aiguë Le premier à s'enfuir durant la bagarre. □ Stuart, le rebelle: #tape-du-pied, #piercings-tatouages, #regard-froid Il est l'acteur indépendant du groupe. Caractéristiques: Att 70% / Dég 1d4 / 5 PV</p>"
+    "content": "<h3>Passants, promeneurs, habitants, ...</h3>\n<p>Voici une liste de surnoms afin d'inviter les Chats à interpeller les passants et provoquer de nombreuses rencontres et déplacement dans la ville d’Ulthar.</p>\n<h3>Individus engagés par Corbius</h3>\n<p>Corbius sait que les Gardiens d’Ulthar vont tenter de lui barrer la route. Il envoie donc un groupe pour tenter de kidnapper leur tête pensante: Ester. Le groupe va poser des questions aux habitants d’Ulthar et leur rencontre avec les Chats promet de belles bagarres !</p>\n<ul><li><strong>Kevin, le costaud </strong>: #mâchoire-serrée, #borgne, # voix-brusque Il domine par sa puissance.</li><li><strong>Patcho, le rusé</strong>: #longiligne, #regards-obliques, #yeux-pinçés Il compense son physique par sa ruse et sa provocation<strong>.</strong></li><li><strong>Paulo, le nerveux </strong>: #craque-ses-doigts, #en-mouvement, # soupirs Il déclenche souvent le conflit.</li><li><strong>Lou, le peureux </strong>: #regarde-ses-pieds, #voix-aiguë Le premier à s'enfuir durant la bagarre.</li><li><strong>Stuart, le rebelle</strong>: #tape-du-pied, #piercings-tatouages, #regard-froid Il est l'acteur indépendant du groupe. <strong>Caractéristiques</strong>: Att 70% / Dég 1d4 / 5 PV</li></ul>"
    },
    "video": {
     "controls": true,
@@ -96,7 +96,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!HSFd00G0guqgHsK9.t9z8VhvKMaxGhRPo"
@@ -112,7 +112,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>□ Statue de Bast: #Sérénité, #Protection La statue de Bast se dresse dans un endroit paisible d'Ulthar. La lumière des soleils semblent faire onduler sa robe. Ester n’est pas présent. □ Rues d'Ulthar: #Sinueuses, #Maisons-Anciennes, #Ambiance-Familiale Les rues d'Ulthar sont bordées de maisons anciennes qui semblent avoir des histoires à raconter. L'atmosphère est paisible et tout le monde connait tout le monde. □ Auberge du Pain Blanc : #Accueil-chaleureux, #Odeur-Pain-Chaud L'Auberge du Pain Blanc est un lieu chaleureux où l'on sent l'odeur du pain fraîchement cuit. Son propriétaire, Thalor Le Jovial, porte un amour prononcé pour les récits de Note : Gardez à l'esprit qu’Ester est voyages extraordinaires. En gage très connu à Ulthar. Pour les de gratitude envers ceux qui besoins de l’aventure, decrivez des habitants partagent leurs histoires, il leur qui disent ne pas l'avoir vu depuis plusieurs jours ou seulement de loin.Il semblait pressé offre gracieusement un repas. avec un comportement très inhabituel.</p>\n<p>□ Centre des archives de la ville d'Ulthar Tags: #savoirs-anciens, #livres-poussiéreux, #silence Le centre des archives de la ville d'Ulthar est un sanctuaire riche de connaissances où des documents archaîques contiennent des secrets oubliés. Le silence y est révérencieux. Lothaire est l’un des responsable charger de classer les archives et d'en prendre soin.</p>"
+    "content": "<ul><li><strong>Statue de Bast</strong>: #Sérénité, #Protection La statue de Bast se dresse dans un endroit paisible d'Ulthar. La lumière des soleils semblent faire onduler sa robe. Ester n’est pas présent.</li><li><strong>Rues d'Ulthar</strong>: #Sinueuses, #Maisons-Anciennes, #Ambiance-Familiale Les rues d'Ulthar sont bordées de maisons anciennes qui semblent avoir des histoires à raconter. L'atmosphère est paisible et tout le monde connait tout le monde.</li><li><strong>Auberge du Pain Blanc </strong>: #Accueil-chaleureux, #Odeur-Pain-Chaud L'Auberge du Pain Blanc est un lieu chaleureux où l'on sent l'odeur du pain fraîchement cuit. Son propriétaire, Thalor Le Jovial, porte un amour prononcé pour les récits de voyages extraordinaires. En gage de gratitude envers ceux qui partagent leurs histoires, il leur offre gracieusement un repas.</li></ul>\n<div class=\"mu-note\"><span class=\"mu-note-titre\">Note</span> Gardez à l'esprit qu’Ester est très connu à Ulthar. Pour les besoins de l’aventure, decrivez des habitants qui disent ne pas l'avoir vu depuis plusieurs jours ou seulement de loin.Il semblait pressé avec un comportement très inhabituel.</div>\n<ul><li><strong>Centre des archives de la ville d'Ulthar</strong></li></ul>\n<p class=\"mu-tags\"><strong>Tags :</strong> #savoirs-anciens, #livres-poussiéreux, #silence Le centre des archives de la ville d'Ulthar est un sanctuaire riche de connaissances où des documents archaîques contiennent des secrets oubliés.</p>\n<p>Le silence y est révérencieux. Lothaire est l’un des responsable charger de classer les archives et d'en prendre soin.</p>"
    },
    "video": {
     "controls": true,
@@ -129,7 +129,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!HSFd00G0guqgHsK9.iYe405ceaYnyP5sh"
@@ -145,7 +145,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>□ Personne n'a vu Ester depuis le départ des Chats d'Ulthar. □ Avant sa disparition, l'inquiétude se lisait sur son visage. □ Des voyageurs terrifiants recherchent Esther. □ Ester s'interrogeait sur les missions précises des Protecteurs d’Ulthar. □ Des villageois l'ont vu courir sur la place du village vers la statue de Bast. □ Ester a emprunté beaucoup de documents au Centre des archives . □ Ester a été vu entrant dans l'Auberge du Pain Blanc ;</p>"
+    "content": "<ul><li><strong>Personne n'a vu Ester </strong>depuis le départ des Chats d'Ulthar.</li><li><strong></strong>Avant sa disparition, <strong>l'inquiétude se lisait sur son visage</strong>.</li><li><strong>Des voyageurs terrifiants recherchent Esthe</strong>r.</li><li><strong>Ester </strong>s'interrogeait sur les <strong>missions précises des Protecteurs </strong>d’Ulthar.</li><li><strong></strong>Des villageois l'ont vu <strong>courir sur la place du village </strong>vers la statue de Bast.</li><li><strong>Ester </strong>a emprunté beaucoup de documents <strong>au Centre des archives.</strong></li><li><strong>Ester </strong>a été vu entrant dans <strong>l'Auberge du Pain Blanc </strong>;</li></ul>"
    },
    "video": {
     "controls": true,
@@ -162,7 +162,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!HSFd00G0guqgHsK9.OfKwijgsMmlR4XBd"
@@ -178,7 +178,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Tags: #inquiet, #sérieux, #fatigué De part sa dispaition, Ester a suscité toutes les inquiétudes possibles au sein du village. Il est retrouvé, fortuitement, attablé au fin fond de l'Auberge. La tête entre ses pattes, Ester est plongé dans la lecture de documents qu'il a empruntés au Centre des archives afin d'approfondir ses connaissances autour du rôle des Chats Protecteurs d'Ulthar. Son visage est marqué par l'inquiétude et la fatigue. Deplus, l'annonce des trois décès et d'artefacts volés ne fait que décupler ses craintes. Ester, suite à ses trois jours d'investigations, explique aux joueurs que les Protecteurs d'Ulthar ont pour mission de préserver certains artefacts contre toute utilisation abusive. Parmi eux, l'artefact connu sous le nom de \"Clef Interdite\" joue un rôle crucial : il est conçu pour enfermer des êtres innommables hors de la Contrée du Rêve. Cependant, Ester est troublé par un détail qui lui manque. Il prend la parole: \"Corbius a donc volé cet artefact mais...rien ne semble avoir perturbé la Contrée du Rêve jusqu'à présent ?...Pourquoi ne l'a-t-il pas encore utilisé ?... \"</p>\n<p>Note : Dans mes parties, le plan d’Ulthar est toujours posé devant les joueurs qui choisissent directement les lieux à visiter. C'est une vraie occasion d’explorer la ville. Utilisez le livre de règles pour décrire les différents lieux disponibles.</p>\n<h3>ULTHAR</h3>"
+    "content": "<p class=\"mu-tags\"><strong>Tags :</strong> #inquiet, #sérieux, #fatigué De part sa dispaition, Ester a suscité toutes les inquiétudes possibles au sein du village.</p>\n<p>Il est retrouvé, fortuitement, attablé au fin fond de l'Auberge. La tête entre ses pattes, Ester est plongé dans la lecture de documents qu'il a empruntés au Centre des archives afin d'approfondir ses connaissances autour du rôle des Chats Protecteurs d'Ulthar. Son visage est marqué par l'inquiétude et la fatigue. Deplus, l'annonce des trois décès et d'artefacts volés ne fait que décupler ses craintes. Ester, suite à ses trois jours d'investigations, explique aux joueurs que les Protecteurs d'Ulthar ont pour mission de préserver certains artefacts contre toute utilisation abusive. Parmi eux, l'artefact connu sous le nom de \"Clef Interdite\" joue un rôle crucial : il est conçu pour enfermer des êtres innommables hors de la Contrée du Rêve. Cependant, Ester est troublé par un détail qui lui manque. Il prend la parole: \"Corbius a donc volé cet artefact mais...rien ne semble avoir perturbé la Contrée du Rêve jusqu'à présent ?...Pourquoi ne l'a-t-il pas encore utilisé ?... \"</p>\n<div class=\"mu-note\"><span class=\"mu-note-titre\">Note</span> Dans mes parties, le plan d’Ulthar est toujours posé devant les joueurs qui choisissent directement les lieux à visiter. C'est une vraie occasion d’explorer la ville. Utilisez le livre de règles pour décrire les différents lieux disponibles.</div>\n<h3>Ulthar</h3>"
    },
    "video": {
     "controls": true,
@@ -195,7 +195,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.6.0",
+    "systemVersion": "0.6.1",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!HSFd00G0guqgHsK9.X3rUPGCdIhPAba3c"
@@ -215,7 +215,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.6.0",
+  "systemVersion": "0.6.1",
   "coreVersion": "14.368"
  },
  "_key": "!journal!HSFd00G0guqgHsK9"
