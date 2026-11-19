@@ -296,3 +296,7 @@ nav.mu-onglets-cote .mu-icone { width: 36px; height: 36px; background: currentCo
 .mu-page.mu-zoomee { max-width: none; flex: none; }
 .mu-zoom-info { position: sticky; top: 4px; float: right; z-index: 3; margin: 0 4px -26px 0; padding: 1px 8px; border-radius: 10px; font-size: 12px; background: rgba(0, 0, 0, .65); color: #fff; pointer-events: none; opacity: 0; transition: opacity .3s; }
 .mu-zoom-info.visible { opacity: 1; }
+/* Fiche zoomée : main pour la déplacer (les champs et boutons gardent leur curseur) */
+.mu-onglet.mu-deplacable, .mu-onglet.mu-deplacable .mu-page, .mu-onglet.mu-deplacable .mu-fond { cursor: grab; }
+.mu-onglet.mu-deplacable.mu-glisse, .mu-onglet.mu-deplacable.mu-glisse * { cursor: grabbing !important; user-select: none; }
+.mu-onglet.mu-deplacable .mu-fond { -webkit-user-drag: none; user-select: none; pointer-events: none; }

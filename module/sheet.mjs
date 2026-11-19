@@ -238,6 +238,7 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
     const z = this._muZoom ?? 1;
     page.style.width = z === 1 ? "" : `${z * 100}%`;
     page.classList.toggle("mu-zoomee", z !== 1);
+    page.closest(".mu-onglet")?.classList.toggle("mu-deplacable", z > 1);
     const info = this.element.querySelector(".mu-zoom-info");
     if (info && afficher) {
       info.textContent = `Zoom ${Math.round(z * 100)} %`;
@@ -330,6 +331,23 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
         this._muZoom = Math.round(Math.min(2.5, Math.max(0.6, (this._muZoom ?? 1) + pas)) * 10) / 10;
         this.appliquerZoom(true);
       }, { passive: false });
+      // Fiche zoomée : la faire glisser à la main (clic gauche sur une zone vide, ou clic molette n'importe où)
+      this.element.addEventListener("pointerdown", (event) => {
+        const zone = event.target.closest?.(".mu-onglet[data-tab='fiche']");
+        if (!zone || (this._muZoom ?? 1) <= 1 || event.ctrlKey) return;
+        const champ = event.target.closest("input, select, textarea, button, a, [data-action]");
+        if (event.button === 0 && champ) return;
+        if (event.button !== 0 && event.button !== 1) return;
+        event.preventDefault();
+        const depart = { x: event.clientX, y: event.clientY, gauche: zone.scrollLeft, haut: zone.scrollTop };
+        zone.classList.add("mu-glisse");
+        zone.setPointerCapture?.(event.pointerId);
+        const bouger = (e) => { zone.scrollLeft = depart.gauche - (e.clientX - depart.x); zone.scrollTop = depart.haut - (e.clientY - depart.y); };
+        const lacher = () => { zone.classList.remove("mu-glisse"); zone.removeEventListener("pointermove", bouger); zone.removeEventListener("pointerup", lacher); zone.removeEventListener("pointercancel", lacher); };
+        zone.addEventListener("pointermove", bouger);
+        zone.addEventListener("pointerup", lacher);
+        zone.addEventListener("pointercancel", lacher);
+      });
       this.element.addEventListener("auxclick", (event) => {
         if (event.button !== 1 || !event.ctrlKey || !event.target.closest?.(".mu-onglet[data-tab='fiche']")) return;
         event.preventDefault();

@@ -2,6 +2,9 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Déplacer la fiche zoomée (v0.12.1, branche `fonction/fiche-deplacement`)
+- Quand la page papier est zoomée, le curseur devient une main : clic gauche maintenu sur une zone vide (ou clic molette n'importe où) pour faire glisser la fiche. Les champs, boutons et pouvoirs restent cliquables normalement.
+
 ## Confort de la fiche (v0.12.0, branche `fonction/fiche-confort`)
 - **Pastilles de l'en-tête cliquables** : clic −1, clic droit +1 sur Santé, Magie, Folie et vies de Chat (la Santé passe par les dégâts : carte dans le chat, mort et Bast à 0 PV).
 - **Infobulles** (Foundry `data-tooltip`) : attributs (définition du livre), cases d'échec, ronds de la page papier, pastilles, noms des pouvoirs (début de la description).
