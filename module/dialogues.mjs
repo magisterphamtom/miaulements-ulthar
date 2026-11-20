@@ -10,7 +10,7 @@ const esc = (t) => foundry.utils.escapeHTML(String(t ?? ""));
 const THEMES = ["nuit", "grimoire", "reve", "journal"];
 /** Images disponibles (les autres fenêtres n'ont pas de filigrane tant que l'image n'existe pas). */
 export const IMAGES = new Set(["agi", "phy", "dis", "pre", "per", "int", "cha", "chn", "attaque", "folie", "bulle", "creation"]);
-const MANQUANTES = new Set(["cha", "chn", "attaque", "folie", "bulle", "creation"]); // à générer (quota d'images)
+const MANQUANTES = new Set(); // toutes les images sont présentes depuis la 0.15.1
 
 function theme() {
   let t = "";

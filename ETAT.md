@@ -17,7 +17,7 @@ Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne 
 - Jet de Folie : la raison se choisit en cartes (Peur, Instinct de chasseur, Curiosité, Horreur indicible) ; Maj + clic pour lancer directement.
 - Bulle onirique : compteur de réussites et d'échecs en pattes, difficulté en cartes.
 - Suppression d'un pouvoir : confirmation ajoutée (Maj + clic pour supprimer directement).
-- Chat en ombre chinoise en filigrane (masque coloré par le thème, `assets/dialogues/`) : Agilité, Physique, Discrétion, Précision, Perception, Intelligence. **À générer** (quota d'images épuisé le 19/11) : Charisme, Chance, Attaque, Folie, Bulle onirique, Création — retirer leur clé de `MANQUANTES` dans `module/dialogues.mjs` une fois l'image ajoutée.
+- Chat en ombre chinoise en filigrane (masque coloré par le thème, `assets/dialogues/`) : les douze images sont présentes depuis la 0.15.1 (branche `fonction/images-dialogues`) : Agilité, Physique, Discrétion, Précision, Perception, Intelligence, Charisme, Chance, Attaque, Folie, Bulle onirique, Création.
 - Code : `module/dialogues.mjs`, styles `css/dialogues.css`.
 
 ## Déplacer la fiche zoomée (v0.12.1, branche `fonction/fiche-deplacement`)
