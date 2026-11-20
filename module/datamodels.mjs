@@ -73,6 +73,7 @@ export class PnjData extends foundry.abstract.TypeDataModel {
           degats: new fields.StringField({ initial: "1d4", blank: true })
         })
       ),
+      surnom: new fields.StringField({ initial: "", blank: true }),
       pouvoir: new fields.StringField({ initial: "", blank: true }),
       capacite: new fields.StringField({ initial: "", blank: true }),
       pv: new fields.SchemaField({ value: nombre(5, { min: 0 }), max: nombre(5, { min: 0 }) }),

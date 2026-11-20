@@ -300,3 +300,54 @@ nav.mu-onglets-cote .mu-icone { width: 36px; height: 36px; background: currentCo
 .mu-onglet.mu-deplacable, .mu-onglet.mu-deplacable .mu-page, .mu-onglet.mu-deplacable .mu-fond { cursor: grab; }
 .mu-onglet.mu-deplacable.mu-glisse, .mu-onglet.mu-deplacable.mu-glisse * { cursor: grabbing !important; user-select: none; }
 .mu-onglet.mu-deplacable .mu-fond { -webkit-user-drag: none; user-select: none; pointer-events: none; }
+
+/* ---------- v0.15.0 : fiche PNJ « Avis de recherche » (style Journal d'Arkham, 1921) ---------- */
+.miaulements-ulthar.sheet.pnj.mu-fiche-avis .window-content { padding: 0; background: repeating-linear-gradient(0deg, rgba(0, 0, 0, .025) 0 1px, transparent 1px 4px), #ece6d8; color: #1c1a17; }
+.mu-avis { padding: 14px 20px 12px; font-family: 'Old Standard TT', Georgia, serif; font-size: 14.5px; color: #1c1a17; }
+.mu-avis input, .mu-avis textarea { font-family: inherit; color: #1c1a17; background: transparent; border: none; border-bottom: 1px dotted #8a8273; border-radius: 0; box-shadow: none; padding: 0 2px; height: auto; }
+.mu-avis input:focus, .mu-avis textarea:focus { outline: none; border-bottom: 1px solid #7a1f1a; background: rgba(255, 255, 255, .45); }
+.mu-avis a { color: #1c1a17; cursor: pointer; }
+.mu-avis-titre { text-align: center; font-family: 'Grenze Gotisch', Georgia, serif; font-size: 2.7em; line-height: 1; letter-spacing: .03em; }
+.mu-avis-sous { text-align: center; font-family: 'Playfair Display SC', Georgia, serif; font-size: .78em; letter-spacing: .14em; border-top: 3px double #1c1a17; border-bottom: 3px double #1c1a17; padding: 2px 0; margin: 4px 0 12px; }
+.mu-avis-haut { display: flex; gap: 16px; align-items: flex-start; }
+.mu-avis-photo { position: relative; flex: 0 0 140px; }
+.mu-avis-photo img { width: 140px; height: 160px; object-fit: cover; filter: grayscale(1) contrast(1.2); border: 5px solid #fff; outline: 1px solid #1c1a17; transform: rotate(-2deg); box-shadow: 3px 3px 0 rgba(0, 0, 0, .3); cursor: pointer; background: #222; }
+.mu-avis-punaise { position: absolute; top: -6px; left: 62px; width: 14px; height: 14px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #e36a63, #7a1f1a); box-shadow: 1px 2px 2px rgba(0, 0, 0, .4); }
+.mu-avis-ident { flex: 1; min-width: 0; }
+.mu-avis .mu-avis-nom { width: 100%; font-family: 'Playfair Display SC', Georgia, serif; font-size: 1.7em; font-weight: bold; border-bottom-style: solid; border-bottom-color: transparent; }
+.mu-avis .mu-avis-nom:hover { border-bottom-color: #8a8273; }
+.mu-avis-dit { display: flex; align-items: baseline; gap: 3px; font-style: italic; margin: 2px 0 6px; }
+.mu-avis-dit input { flex: 1; font-style: italic; }
+.mu-avis-danger { display: inline-block; color: #ece6d8; padding: 1px 10px; font-family: 'Playfair Display SC', Georgia, serif; font-size: .82em; letter-spacing: .08em; margin: 2px 0 8px; background: #7a1f1a; }
+.mu-avis-danger.faible { background: #5c574d; }
+.mu-avis-danger.moyen { background: #8a5a1a; }
+.mu-avis-danger.extreme { background: #1c1a17; box-shadow: 0 0 0 2px #7a1f1a; }
+.mu-avis-pv { display: flex; align-items: center; gap: 5px; font-family: 'Playfair Display SC', Georgia, serif; }
+.mu-avis-pv input { width: 44px; text-align: center; font-size: 1.15em; font-weight: bold; }
+.mu-avis-pv-bouton { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border: 1px solid #1c1a17; font-size: .75em; }
+.mu-avis-pv-bouton:hover { background: #1c1a17; color: #ece6d8 !important; }
+.mu-avis-jauge { height: 8px; margin-top: 6px; border: 1px solid #1c1a17; background: #ddd5c3; }
+.mu-avis-jauge i { display: block; height: 100%; background: #7a1f1a; }
+.mu-avis-rubrique { font-family: 'Playfair Display SC', Georgia, serif; font-weight: bold; font-size: 1.05em; border-bottom: 1px solid #1c1a17; margin: 14px 0 6px; padding-bottom: 1px; display: flex; justify-content: space-between; align-items: baseline; }
+.mu-avis-rubrique a { font-size: .8em; }
+.mu-avis-armes { list-style: none; margin: 0; padding: 0; }
+.mu-avis-armes li { display: flex; align-items: center; gap: 5px; padding: 3px 0; }
+.mu-avis-jet { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 24px; height: 24px; border-radius: 50%; background: #1c1a17; color: #ece6d8 !important; font-size: .8em; }
+.mu-avis-jet:hover { background: #7a1f1a; }
+.mu-avis .mu-avis-arme-nom { flex: 1; min-width: 0; font-weight: bold; }
+.mu-avis .mu-avis-pct { width: 40px; text-align: center; }
+.mu-avis .mu-avis-deg { width: 70px; text-align: center; }
+.mu-avis-sep { opacity: .5; }
+.mu-avis-suppr { opacity: .4; margin-left: 4px; }
+.mu-avis-suppr:hover { opacity: 1; color: #7a1f1a !important; }
+.mu-avis-vide { font-style: italic; opacity: .6; }
+.mu-avis-champ { display: flex; align-items: baseline; gap: 8px; margin: 4px 0; }
+.mu-avis-champ span { flex: 0 0 70px; font-variant: small-caps; font-weight: bold; }
+.mu-avis-champ input { flex: 1; }
+.mu-avis-temoignages { text-align: justify; line-height: 1.5; }
+.mu-avis-temoignages p { margin: 0 0 .6em; }
+.mu-avis-temoignages blockquote { margin: 8px 0; padding: 6px 12px; border: 1px solid #1c1a17; background: #f5f0e4; font-style: italic; }
+.mu-avis-modifier { margin-top: 6px; font-size: .9em; }
+.mu-avis-modifier summary { cursor: pointer; opacity: .7; }
+.mu-avis-modifier textarea { width: 100%; border: 1px solid #8a8273; background: #f5f0e4; margin-top: 4px; }
+.mu-avis-pied { margin-top: 14px; padding-top: 4px; border-top: 3px double #1c1a17; text-align: center; font-family: 'Playfair Display SC', Georgia, serif; font-size: .72em; letter-spacing: .06em; opacity: .8; }

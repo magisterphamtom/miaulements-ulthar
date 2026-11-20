@@ -2,6 +2,10 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Fiche PNJ « Avis de recherche » (v0.15.0, branche `fonction/fiche-pnj-avis`)
+- La fiche des adversaires devient un avis de recherche du commissariat d'Ulthar (style Journal d'Arkham, 1921, pour tous) : photo en noir et blanc épinglée (clic pour la changer), nom, surnom (nouveau champ `surnom`), niveau de danger calculé d'après les PV maximum (peu dangereux ≤ 5, dangereux ≤ 15, très dangereux ≤ 40, extrêmement dangereux au-delà), PV avec boutons −1 / +1 (la perte passe par les dégâts) et jauge.
+- « Armes connues » : les attaques, modifiables, avec bouton de jet (fenêtre « cartes à piocher »), ajout et suppression. « Signes particuliers » : pouvoir et capacité. « Témoignages » : la description mise en forme (liens et citations), modifiable dans un volet.
+
 ## Cartes de résultat dans la messagerie (v0.14.0, branche `fonction/cartes-chat`)
 - Les cartes de jet (attribut, pouvoir, attaque d'un Chat ou d'un adversaire, Folie) ont une nouvelle structure : portrait, nom, attribut et cible, phrase selon le résultat (« Orichat retombe sur ses pattes ! »), dé, verdict, détail.
 - Chaque joueur les voit dans l'habillage du thème de SA fiche (classe `mu-chat-<thème>` sur la page, posée au lancement et à chaque changement de thème) : **Nuit** = médaillon à oreilles, dé dans le coussinet d'une patte ; **Grimoire** = parchemin déroulé entre deux bâtons de bois, dé à l'encre rouge (barré sur l'échec ; depuis la 0.14.1, branche `fonction/carte-parchemin`) ; **Rêve** = grand chiffre et empreinte en filigrane, griffures sur l'échec ; **Journal** = la Gazette d'Ulthar (manchette, photo en noir et blanc).

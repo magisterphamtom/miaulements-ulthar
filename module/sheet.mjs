@@ -500,21 +500,22 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
 /** Fiche d'adversaire : PV, attaques cliquables, pouvoir et capacité, description. */
 export class FichePnj extends HandlebarsApplicationMixin(ActorSheetV2) {
   static DEFAULT_OPTIONS = {
-    classes: ["miaulements-ulthar", "sheet", "actor", "pnj"],
-    position: { width: 480, height: 560 },
+    classes: ["miaulements-ulthar", "sheet", "actor", "pnj", "mu-fiche-avis"],
+    position: { width: 520, height: 720 },
     window: { resizable: true },
     form: { submitOnChange: true },
     actions: {
       attaquerPnj: FichePnj.#attaquer,
       ajouterAttaque: FichePnj.#ajouter,
-      supprimerAttaque: FichePnj.#supprimer
+      supprimerAttaque: FichePnj.#supprimer,
+      ajusterPv: FichePnj.#ajusterPv
     }
   };
 
   static PARTS = { corps: { template: `systems/${SYSTEM_ID}/templates/actor-pnj.hbs` } };
 
   get title() {
-    return `${this.actor.name} — Adversaire`;
+    return `${this.actor.name} — Avis de recherche`;
   }
 
   async _prepareContext(options) {
@@ -522,11 +523,25 @@ export class FichePnj extends HandlebarsApplicationMixin(ActorSheetV2) {
     ctx.actor = this.actor;
     ctx.system = this.actor.system;
     ctx.attaques = this.actor.system.attaques.map((a, index) => ({ ...a, index }));
+    const { value, max } = this.actor.system.pv;
+    ctx.pvPct = max ? Math.round(Math.min(100, Math.max(0, (value / max) * 100))) : 0;
+    ctx.danger = max > 40 ? { label: "Extrêmement dangereux", classe: "extreme" }
+      : max > 15 ? { label: "Très dangereux", classe: "tres" }
+      : max > 5 ? { label: "Dangereux", classe: "moyen" }
+      : { label: "Peu dangereux", classe: "faible" };
+    const TE = foundry.applications?.ux?.TextEditor?.implementation ?? globalThis.TextEditor;
+    ctx.descriptionHTML = await TE.enrichHTML(this.actor.system.description ?? "", { relativeTo: this.actor });
     return ctx;
   }
 
   static async #attaquer(event, target) {
     return attaquerPnj(this.actor, Number(target.dataset.index));
+  }
+
+  /** PV −1 / +1 : la perte passe par les dégâts (carte dans le chat, hors de combat à 0). */
+  static async #ajusterPv(event, target) {
+    const delta = Number(target.dataset.delta);
+    return appliquerDegats(this.actor.uuid, Math.abs(delta), { soin: delta > 0 });
   }
 
   static async #ajouter() {

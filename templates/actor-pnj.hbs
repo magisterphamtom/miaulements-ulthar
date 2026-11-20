@@ -1,32 +1,43 @@
-<div class="mu-fiche mu-pnj">
-  <header class="mu-entete">
-    <img class="mu-portrait" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="" title="Changer l'image">
-    <div class="mu-identite">
-      <label>Nom <input type="text" name="name" value="{{actor.name}}"></label>
-      <label>PV <input type="number" name="system.pv.value" value="{{system.pv.value}}"> / <input type="number" name="system.pv.max" value="{{system.pv.max}}"></label>
+<div class="mu-fiche mu-pnj mu-avis">
+  <div class="mu-avis-titre">Avis de recherche</div>
+  <div class="mu-avis-sous">Commissariat d'Ulthar · Section des affaires étranges</div>
+
+  <div class="mu-avis-haut">
+    <div class="mu-avis-photo"><img src="{{actor.img}}" data-action="editImage" data-edit="img" alt="" data-tooltip="Changer la photo"><span class="mu-avis-punaise"></span></div>
+    <div class="mu-avis-ident">
+      <input class="mu-avis-nom" type="text" name="name" value="{{actor.name}}" placeholder="Nom">
+      <label class="mu-avis-dit">dit « <input type="text" name="system.surnom" value="{{system.surnom}}" placeholder="surnom"> »</label>
+      <div class="mu-avis-danger {{danger.classe}}" data-tooltip="Niveau de danger d'après les PV maximum">{{danger.label}}</div>
+      <div class="mu-avis-pv">
+        <a class="mu-avis-pv-bouton" data-action="ajusterPv" data-delta="-1" data-tooltip="−1 PV"><i class="fa-solid fa-minus"></i></a>
+        <span>PV</span><input type="number" name="system.pv.value" value="{{system.pv.value}}"><span>/</span><input type="number" name="system.pv.max" value="{{system.pv.max}}">
+        <a class="mu-avis-pv-bouton" data-action="ajusterPv" data-delta="1" data-tooltip="+1 PV"><i class="fa-solid fa-plus"></i></a>
+      </div>
+      <div class="mu-avis-jauge"><i style="width:{{pvPct}}%"></i></div>
     </div>
-  </header>
-  <section>
-    <h3>Attaques <button type="button" data-action="ajouterAttaque" title="Ajouter une attaque">＋</button></h3>
+  </div>
+
+  <h4 class="mu-avis-rubrique">Armes connues <a data-action="ajouterAttaque" data-tooltip="Ajouter une attaque"><i class="fa-solid fa-plus"></i></a></h4>
+  <ul class="mu-avis-armes">
     {{#each attaques}}
-    <div class="mu-attaque">
-      <button type="button" data-action="attaquerPnj" data-index="{{index}}" title="Attaquer">⚔</button>
-      <input type="text" name="system.attaques.{{index}}.nom" value="{{nom}}">
-      <input type="number" name="system.attaques.{{index}}.pct" value="{{pct}}"> %
-      <input type="text" name="system.attaques.{{index}}.degats" value="{{degats}}" placeholder="dégâts">
-      <a data-action="supprimerAttaque" data-index="{{index}}" title="Supprimer">✕</a>
-    </div>
-    {{/each}}
-  </section>
-  <section>
-    <label>Pouvoir <input type="text" name="system.pouvoir" value="{{system.pouvoir}}"></label>
-    <label>Capacité <input type="text" name="system.capacite" value="{{system.capacite}}"></label>
-  </section>
-  <section class="mu-notes">
-    <h3>Description</h3>
-    <div class="mu-desc">{{{system.description}}}</div>
-    <details><summary>Modifier la description</summary>
-      <textarea name="system.description" rows="8">{{system.description}}</textarea>
-    </details>
-  </section>
+    <li>
+      <a class="mu-avis-jet" data-action="attaquerPnj" data-index="{{index}}" data-tooltip="Attaquer"><i class="fa-solid fa-dice-d20"></i></a>
+      <input class="mu-avis-arme-nom" type="text" name="system.attaques.{{index}}.nom" value="{{nom}}">
+      <span class="mu-avis-sep">·</span><input class="mu-avis-pct" type="number" name="system.attaques.{{index}}.pct" value="{{pct}}"><span>%</span>
+      <span class="mu-avis-sep">·</span><input class="mu-avis-deg" type="text" name="system.attaques.{{index}}.degats" value="{{degats}}" placeholder="dégâts">
+      <a class="mu-avis-suppr" data-action="supprimerAttaque" data-index="{{index}}" data-tooltip="Supprimer l'attaque"><i class="fa-solid fa-xmark"></i></a>
+    </li>
+    {{else}}<li class="mu-avis-vide">Aucune arme connue.</li>{{/each}}
+  </ul>
+
+  <h4 class="mu-avis-rubrique">Signes particuliers</h4>
+  <label class="mu-avis-champ"><span>Pouvoir</span><input type="text" name="system.pouvoir" value="{{system.pouvoir}}" placeholder="—"></label>
+  <label class="mu-avis-champ"><span>Capacité</span><input type="text" name="system.capacite" value="{{system.capacite}}" placeholder="—"></label>
+
+  <h4 class="mu-avis-rubrique">Témoignages</h4>
+  <div class="mu-avis-temoignages">{{{descriptionHTML}}}</div>
+  <details class="mu-avis-modifier"><summary>Modifier les témoignages</summary>
+    <textarea name="system.description" rows="8">{{system.description}}</textarea>
+  </details>
+  <div class="mu-avis-pied">Toute information est à transmettre au Gardien. Récompense : une boîte de sardines.</div>
 </div>
