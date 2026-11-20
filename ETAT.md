@@ -4,7 +4,7 @@ Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne 
 
 ## Cartes de résultat dans la messagerie (v0.14.0, branche `fonction/cartes-chat`)
 - Les cartes de jet (attribut, pouvoir, attaque d'un Chat ou d'un adversaire, Folie) ont une nouvelle structure : portrait, nom, attribut et cible, phrase selon le résultat (« Orichat retombe sur ses pattes ! »), dé, verdict, détail.
-- Chaque joueur les voit dans l'habillage du thème de SA fiche (classe `mu-chat-<thème>` sur la page, posée au lancement et à chaque changement de thème) : **Nuit** = médaillon à oreilles, dé dans le coussinet d'une patte ; **Grimoire** = collier rayé et médaille gravée (dorée ou argentée) ; **Rêve** = grand chiffre et empreinte en filigrane, griffures sur l'échec ; **Journal** = la Gazette d'Ulthar (manchette, photo en noir et blanc).
+- Chaque joueur les voit dans l'habillage du thème de SA fiche (classe `mu-chat-<thème>` sur la page, posée au lancement et à chaque changement de thème) : **Nuit** = médaillon à oreilles, dé dans le coussinet d'une patte ; **Grimoire** = parchemin déroulé entre deux bâtons de bois, dé à l'encre rouge (barré sur l'échec ; depuis la 0.14.1, branche `fonction/carte-parchemin`) ; **Rêve** = grand chiffre et empreinte en filigrane, griffures sur l'échec ; **Journal** = la Gazette d'Ulthar (manchette, photo en noir et blanc).
 - Les autres cartes (dégâts, mort, pouvoir montré…) prennent les couleurs et polices du thème. Code : `module/cartes.mjs`, `css/cartes-chat.css`.
 
 ## Boîtes de dialogue « cartes à piocher » (v0.13.0, branche `fonction/dialogues`)
