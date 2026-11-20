@@ -30,10 +30,16 @@ export function enregistrerParametresAccueil() {
 /** Une seule fois par monde : le Gardien importe la scène d'accueil et l'active. */
 async function installerSceneAccueil() {
   if (game.users.activeGM?.id !== game.user.id) return;
-  if (game.settings.get(SYSTEM_ID, "sceneAccueilImportee")) return;
   const pack = game.packs.get(`${SYSTEM_ID}.scenes`);
   const ligne = (await pack?.getIndex())?.find((e) => e.name.startsWith("Accueil"));
   if (!ligne) return;
+  // Réparation (v0.17.2) : une scène d'accueil importée avant la 0.17.2 n'a pas de fond en v14 (fond porté par un niveau).
+  const existante = game.scenes.find((s) => s.getFlag(SYSTEM_ID, "accueil"));
+  if (existante && !existante.levels?.size) {
+    const modele = (await pack.getDocument(ligne._id))?.toObject();
+    if (modele?.levels?.length) await existante.update({ levels: modele.levels, initialLevel: modele.initialLevel });
+  }
+  if (game.settings.get(SYSTEM_ID, "sceneAccueilImportee")) return;
   let scene = game.scenes.find((s) => s.getFlag(SYSTEM_ID, "accueil"));
   if (!scene) scene = await game.scenes.importFromCompendium(pack, ligne._id, {}, { keepId: true });
   // Une scène déjà active (monde existant) n'est pas remplacée.

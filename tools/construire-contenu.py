@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.17.1", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.17.2", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -676,12 +676,22 @@ def construire_macros():
                       "ownership": {"default": 0}, "flags": {}, "_stats": STATS, "_key": f"!macros!{mid}"})
     print("macros :", len(macros))
 
+def niveau_scene(pack, sid, nom, src, fit="fill"):
+    """Foundry v14 : le fond d'une scène est porté par un niveau (Scene.levels), l'ancien champ background est ignoré."""
+    lid = ident(pack, "Level", nom)
+    return lid, [{"_id": lid, "name": "Fond", "background": {"src": src, "color": "#0b0a10", "tint": "#ffffff", "alphaThreshold": 0.75},
+                  "elevation": {"bottom": 0, "top": None}, "foreground": {"src": None, "tint": "#ffffff", "alphaThreshold": 0.75}, "fog": {"src": None},
+                  "textures": {"anchorX": 0.5, "anchorY": 0.5, "offsetX": 0, "offsetY": 0, "fit": fit, "scaleX": 1, "scaleY": 1, "rotation": 0},
+                  "visibility": {"levels": []}, "sort": 0, "flags": {}, "_key": f"!scenes.levels!{sid}.{lid}"}]
+
+
 def construire_scenes():
     pack = "scenes"
     sid = ident(pack, "Scene", "Accueil")
     img = f"systems/{SYS}/assets/images/accueil_foundry.webp"
+    lid, niveaux = niveau_scene(pack, sid, "Accueil", img)
     ecrire(pack, {"_id": sid, "name": "Accueil — Les Miaulements d'Ulthar", "active": False, "navigation": True, "navOrder": 0, "navName": "Accueil",
-        "background": {"src": img, "fit": "fill"}, "width": 2335, "height": 851, "padding": 0, "backgroundColor": "#0b0a10",
+        "background": {"src": img, "fit": "fill"}, "levels": niveaux, "initialLevel": lid, "width": 2335, "height": 851, "padding": 0, "backgroundColor": "#0b0a10",
         "grid": {"type": 0, "size": 100, "distance": 1, "units": "m"}, "tokenVision": False, "fog": {"exploration": False},
         "environment": {"globalLight": {"enabled": True}}, "initial": None, "thumb": img,
         "tokens": [], "lights": [], "notes": [], "sounds": [], "templates": [], "tiles": [], "walls": [], "drawings": [], "regions": [],
@@ -691,8 +701,9 @@ def construire_scenes():
         src = f"systems/{SYS}/assets/cartes/{fichier}.webp"
         w, h = _Im.open(os.path.join(RACINE, "assets", "cartes", f"{fichier}.webp")).size
         sid = ident(pack, "Scene", "Carte " + titre)
+        lid, niveaux = niveau_scene(pack, sid, "Carte " + titre, src)
         ecrire(pack, {"_id": sid, "name": f"Carte — {titre}", "active": False, "navigation": False, "navOrder": k + 1, "navName": titre,
-            "background": {"src": src, "fit": "fill"}, "width": w, "height": h, "padding": 0.1, "backgroundColor": "#0b0a10",
+            "background": {"src": src, "fit": "fill"}, "levels": niveaux, "initialLevel": lid, "width": w, "height": h, "padding": 0.1, "backgroundColor": "#0b0a10",
             "grid": {"type": 0, "size": 100, "distance": 1, "units": "m"}, "tokenVision": False, "fog": {"exploration": False},
             "environment": {"globalLight": {"enabled": True}}, "initial": None, "thumb": src,
             "tokens": [], "lights": [], "notes": [], "sounds": [], "templates": [], "tiles": [], "walls": [], "drawings": [], "regions": [],

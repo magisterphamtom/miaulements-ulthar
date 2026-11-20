@@ -9,6 +9,47 @@
   "src": "systems/miaulements-ulthar/assets/cartes/contree-du-reve.webp",
   "fit": "fill"
  },
+ "levels": [
+  {
+   "_id": "HOzBswwvz8eTAFvB",
+   "name": "Fond",
+   "background": {
+    "src": "systems/miaulements-ulthar/assets/cartes/contree-du-reve.webp",
+    "color": "#0b0a10",
+    "tint": "#ffffff",
+    "alphaThreshold": 0.75
+   },
+   "elevation": {
+    "bottom": 0,
+    "top": null
+   },
+   "foreground": {
+    "src": null,
+    "tint": "#ffffff",
+    "alphaThreshold": 0.75
+   },
+   "fog": {
+    "src": null
+   },
+   "textures": {
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "offsetX": 0,
+    "offsetY": 0,
+    "fit": "fill",
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "visibility": {
+    "levels": []
+   },
+   "sort": 0,
+   "flags": {},
+   "_key": "!scenes.levels!UubGEVV68GxZZh9L.HOzBswwvz8eTAFvB"
+  }
+ ],
+ "initialLevel": "HOzBswwvz8eTAFvB",
  "width": 1926,
  "height": 1314,
  "padding": 0.1,
@@ -53,7 +94,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.17.1",
+  "systemVersion": "0.17.2",
   "coreVersion": "14.368"
  },
  "_key": "!scenes!UubGEVV68GxZZh9L"
