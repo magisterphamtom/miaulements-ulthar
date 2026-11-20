@@ -1,0 +1,60 @@
+{
+ "_id": "rQ5BIdhK2ejZB4V5",
+ "name": "Carte — Arkham",
+ "active": false,
+ "navigation": false,
+ "navOrder": 2,
+ "navName": "Arkham",
+ "background": {
+  "src": "systems/miaulements-ulthar/assets/cartes/arkham.webp",
+  "fit": "fill"
+ },
+ "width": 1959,
+ "height": 1313,
+ "padding": 0.1,
+ "backgroundColor": "#0b0a10",
+ "grid": {
+  "type": 0,
+  "size": 100,
+  "distance": 1,
+  "units": "m"
+ },
+ "tokenVision": false,
+ "fog": {
+  "exploration": false
+ },
+ "environment": {
+  "globalLight": {
+   "enabled": true
+  }
+ },
+ "initial": null,
+ "thumb": "systems/miaulements-ulthar/assets/cartes/arkham.webp",
+ "tokens": [],
+ "lights": [],
+ "notes": [],
+ "sounds": [],
+ "templates": [],
+ "tiles": [],
+ "walls": [],
+ "drawings": [],
+ "regions": [],
+ "folder": null,
+ "sort": 200000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {
+  "miaulements-ulthar": {
+   "carte": "arkham"
+  }
+ },
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.17.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!scenes!rQ5BIdhK2ejZB4V5"
+}

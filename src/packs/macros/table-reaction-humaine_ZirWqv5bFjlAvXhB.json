@@ -7,7 +7,7 @@
  "scope": "global",
  "command": "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Réactions humaines')._id).then(t => t.draw());",
  "folder": null,
- "sort": 500000,
+ "sort": 600000,
  "ownership": {
   "default": 0
  },
@@ -16,7 +16,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.16.0",
+  "systemVersion": "0.17.0",
   "coreVersion": "14.368"
  },
  "_key": "!macros!ZirWqv5bFjlAvXhB"

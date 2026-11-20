@@ -84,3 +84,25 @@
 /* Assistant de création : le thème s'applique, le filigrane reste discret derrière le formulaire */
 .mu-dialogue.mu-dlg-creation .window-content::before { opacity: .1; }
 .mu-dialogue.mu-dlg-creation fieldset { background: color-mix(in srgb, var(--mu-fond2) 70%, transparent); }
+
+/* ---------- Suivi de campagne (v0.17.0) ---------- */
+.mu-suivi-campagne .window-content { padding: 10px 14px; display: flex; flex-direction: column; }
+.mu-suivi { display: flex; flex-direction: column; height: 100%; min-height: 0; }
+.mu-suivi-onglets { display: flex; gap: 6px; border-bottom: 2px solid var(--mu-bord); margin-bottom: 8px; }
+.mu-suivi-onglets a { padding: 5px 14px; border: 1px solid var(--mu-bord); border-bottom: none; border-radius: 8px 8px 0 0; background: var(--mu-fond2); cursor: pointer; font-family: var(--mu-onglet-police, inherit); color: var(--mu-texte); }
+.mu-suivi-onglets a.active { background: var(--mu-accent); color: var(--mu-fond); border-color: var(--mu-accent); font-weight: bold; }
+.mu-suivi-aide { margin: 0 0 8px; font-style: italic; opacity: .8; }
+.mu-suivi-liste { flex: 1; overflow-y: auto; min-height: 0; padding-right: 4px; }
+.mu-suivi-carte { border: 1px solid var(--mu-bord); border-radius: 8px; background: color-mix(in srgb, var(--mu-fond2) 80%, transparent); padding: 8px 10px; margin-bottom: 8px; }
+.mu-suivi-ligne { display: flex; gap: 10px; align-items: center; margin-bottom: 6px; }
+.mu-suivi-ligne label { flex: 1; display: flex; align-items: center; gap: 6px; font-weight: bold; color: var(--mu-accent); }
+.mu-suivi-ligne label.large { flex: 3; }
+.mu-suivi-ligne input, .mu-suivi-carte textarea { flex: 1; width: 100%; background: var(--mu-fond); color: var(--mu-texte); border: 1px solid var(--mu-bord); border-radius: 6px; font-family: var(--mu-corps, inherit); font-weight: normal; padding: 3px 6px; }
+.mu-suivi-carte textarea { resize: vertical; }
+.mu-suivi-num { flex: 0 0 28px; height: 28px; border-radius: 50%; border: 2px solid var(--mu-accent); display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--mu-accent); }
+.mu-suivi-suppr { opacity: .5; cursor: pointer; }
+.mu-suivi-suppr:hover { opacity: 1; color: var(--mu-ko); }
+.mu-suivi-vide { text-align: center; opacity: .6; font-style: italic; margin: 20px 0; }
+.mu-suivi-boutons { display: flex; gap: 8px; padding-top: 8px; border-top: 1px solid var(--mu-bord); }
+.mu-suivi-boutons button { flex: 1; padding: 6px; border-radius: 8px; border: 2px solid var(--mu-bord); background: var(--mu-fond2); color: var(--mu-texte); font-family: var(--mu-onglet-police, inherit); }
+.mu-suivi-boutons button:hover { border-color: var(--mu-accent); }

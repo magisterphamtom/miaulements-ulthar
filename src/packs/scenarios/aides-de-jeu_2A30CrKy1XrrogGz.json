@@ -13,7 +13,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Pour vous aider à vivre pleinement vos campagnes, plusieurs outils pratiques sont à votre disposition : fiche de suivi de campagne, fiche de suivi des personnages et cartes des lieux. Les aventures émergentes invitent le maître de jeu à garder en mémoire les choix, les conséquences et les événements marquants. Ces ressources sont conçues pour vous accompagner dans la gestion et la cohérence de votre histoire.</p>"
+    "content": "<div class=\"mu-une\"><div class=\"mu-une-titre\">Le Journal d'Arkham</div><div>Pour le Gardien</div><div class=\"mu-une-bandeau\"><span>Aides de jeu</span><span>Les Miaulements d'Ulthar</span><span>Arkham, 1921</span></div></div><p>Pour vous aider à vivre pleinement vos campagnes, plusieurs outils pratiques sont à votre disposition : une <strong>fiche de suivi de campagne</strong>, une <strong>fiche de suivi des personnages</strong> et les <strong>cartes des lieux</strong>.</p><p>Les aventures émergentes invitent le maître de jeu à garder en mémoire les choix, les conséquences et les événements marquants. Ces ressources sont conçues pour vous accompagner dans la gestion et la cohérence de votre histoire.</p><h3>Dans ce journal</h3><ul><li><strong>Fiches de suivi</strong> : à remplir en jeu dans la fenêtre « Suivi de campagne », ou dans les tableaux de ce journal.</li><li><strong>Cartes des lieux</strong> : Massachusetts, Arkham, Contrée du Rêve et Ulthar (aussi en scènes dans le compendium « Scènes »).</li><li><strong>Continuer l'aventure</strong> : où suivre les Miaulements d'Ulthar.</li></ul>"
    },
    "video": {
     "controls": true,
@@ -30,14 +30,14 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.16.0",
+    "systemVersion": "0.17.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!2A30CrKy1XrrogGz.9vEHhbM0Bl7ZloRK"
   },
   {
-   "_id": "1KYIPWk4TypHCB14",
-   "name": "Fiche de suivi des PERSONNAGES",
+   "_id": "sTWc9UqQfbuobS4G",
+   "name": "Suivi de campagne en jeu",
    "type": "text",
    "title": {
     "show": true,
@@ -46,7 +46,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Cette fiche de suivi, conçue pour les campagnes, vous permettra de consigner des éléments concernant chaque personnage. Elle sert à conserver toutes les informations susceptibles d’influencer la suite de l’aventure.</p>\n<p>Joueur :</p>\n<p><strong>Surnom :</strong> <strong>Notes : </strong></p>\n<p>Joueur :</p>\n<p><strong>Surnom :</strong> <strong>Notes : </strong></p>\n<p>Joueur :</p>\n<p><strong>Surnom :</strong> <strong>Notes : </strong></p>\n<p>Joueur :</p>\n<p><strong>Surnom :</strong> <strong>Notes : </strong></p>"
+    "content": "<p>Les deux fiches de suivi du livre sont réunies dans une fenêtre réservée au Gardien. Tout ce que vous y écrivez est enregistré dans le monde, d'une partie à l'autre.</p><p class=\"mu-a-retenir\">@UUID[Compendium.miaulements-ulthar.macros.Macro.QNQQjSszP1XNvHq4]{Ouvrir le suivi de campagne}</p><ul><li>Aussi depuis la barre d'outils de la scène : icône <strong>livre ouvert</strong> (Suivi de campagne).</li><li>Onglet <strong>Personnages</strong> : joueur, surnom du Chat et notes. Le bouton « Ajouter les Chats du monde » crée une ligne pour chaque Chat d'un joueur.</li><li>Onglet <strong>Épisodes</strong> : un bloc de notes par scénario joué.</li></ul><div class=\"mu-note\"><span class=\"mu-note-titre\">Préférez le papier ?</span> Importez ce journal dans votre monde : les deux pages suivantes sont des tableaux à remplir directement dans Foundry.</div>"
    },
    "video": {
     "controls": true,
@@ -63,14 +63,14 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.16.0",
+    "systemVersion": "0.17.0",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!2A30CrKy1XrrogGz.1KYIPWk4TypHCB14"
+   "_key": "!journal.pages!2A30CrKy1XrrogGz.sTWc9UqQfbuobS4G"
   },
   {
-   "_id": "V1t8vannjutyYD72",
-   "name": "Fiche de suivi de la CAMPAGNE",
+   "_id": "8ent0q5XIl6gGDJM",
+   "name": "Fiche de suivi des personnages",
    "type": "text",
    "title": {
     "show": true,
@@ -79,7 +79,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Cette fiche de suivi de campagne, à l’usage du meneur de jeu, permet de consigner l’évolution de l’intrigue et les événements majeurs impactant l’ensemble du groupe ou la campagne.</p>\n<p>Episode :</p>\n<p><strong>Notes : </strong></p>\n<p>Episode :</p>\n<p><strong>Notes : </strong></p>\n<p>Episode :</p>\n<p><strong>Notes : </strong></p>\n<p>Episode :</p>\n<p><strong>Notes : </strong></p>"
+    "content": "<p>Cette fiche de suivi, conçue pour les campagnes, vous permettra de consigner des éléments concernant chaque personnage. Elle sert à conserver toutes les informations susceptibles d'influencer la suite de l'aventure.</p><table class=\"mu-fiche-suivi\"><thead><tr><th style=\"width:22%\">Joueur</th><th style=\"width:22%\">Surnom</th><th>Notes</th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>"
    },
    "video": {
     "controls": true,
@@ -96,14 +96,14 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.16.0",
+    "systemVersion": "0.17.0",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!2A30CrKy1XrrogGz.V1t8vannjutyYD72"
+   "_key": "!journal.pages!2A30CrKy1XrrogGz.8ent0q5XIl6gGDJM"
   },
   {
-   "_id": "0XnbPb4tWzJ0wKQu",
-   "name": "Continuer l'aventure",
+   "_id": "2JNVH6SuaDU5D8Lz",
+   "name": "Fiche de suivi de la campagne",
    "type": "text",
    "title": {
     "show": true,
@@ -112,7 +112,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Envie de poursuivre l'aventure des <strong>Miaulements d'Ulthar </strong> ? Suivez nos prochaines sorties sur les réseaux sociaux <strong>site web </strong> : https://www.xaviiiier.com <strong>facebook </strong> : https://www.facebook.com/xaviiiierjdr <strong>instagram </strong> : https://www.instagram.com/xaviiiierjdr <strong>twitter </strong> : https://twitter.com/xaviiiierjdr</p>\n<h3>Miaourci et à miaoutôt !</h3>\n<h3>Xaviiiier</h3>"
+    "content": "<p>Cette fiche de suivi de campagne, à l'usage du meneur de jeu, permet de consigner l'évolution de l'intrigue et les événements majeurs impactant l'ensemble du groupe ou la campagne.</p><table class=\"mu-fiche-suivi\"><thead><tr><th style=\"width:8%\">N°</th><th style=\"width:30%\">Épisode</th><th>Notes</th></tr></thead><tbody><tr><td>1</td><td></td><td></td></tr><tr><td>2</td><td></td><td></td></tr><tr><td>3</td><td></td><td></td></tr><tr><td>4</td><td></td><td></td></tr><tr><td>5</td><td></td><td></td></tr><tr><td>6</td><td></td><td></td></tr><tr><td>7</td><td></td><td></td></tr><tr><td>8</td><td></td><td></td></tr></tbody></table>"
    },
    "video": {
     "controls": true,
@@ -129,10 +129,183 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.16.0",
+    "systemVersion": "0.17.0",
     "coreVersion": "14.368"
    },
-   "_key": "!journal.pages!2A30CrKy1XrrogGz.0XnbPb4tWzJ0wKQu"
+   "_key": "!journal.pages!2A30CrKy1XrrogGz.2JNVH6SuaDU5D8Lz"
+  },
+  {
+   "_id": "lKiL3qDLd8qJ9N4H",
+   "name": "Carte : Massachusetts",
+   "type": "image",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {
+    "caption": "La côte du Massachusetts : Arkham, Innsmouth, Salem, Ipswich…"
+   },
+   "text": {
+    "format": 1,
+    "content": ""
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": "systems/miaulements-ulthar/assets/cartes/massachusetts.webp",
+   "system": {},
+   "sort": 500000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.17.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!2A30CrKy1XrrogGz.lKiL3qDLd8qJ9N4H"
+  },
+  {
+   "_id": "IIokVMLNPee0I5d9",
+   "name": "Carte : Arkham",
+   "type": "image",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {
+    "caption": "Plan d'Arkham : asile, musée, université, hôpital, docks, cimetière…"
+   },
+   "text": {
+    "format": 1,
+    "content": ""
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": "systems/miaulements-ulthar/assets/cartes/arkham.webp",
+   "system": {},
+   "sort": 600000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.17.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!2A30CrKy1XrrogGz.IIokVMLNPee0I5d9"
+  },
+  {
+   "_id": "GpO7WaJpElS50Dvu",
+   "name": "Carte : Contrée du Rêve",
+   "type": "image",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {
+    "caption": "La Contrée du Rêve : Ulthar, la mer de Cerenaria, l'Île aux Quatre Colonnes, la Ville aux Deux Ports…"
+   },
+   "text": {
+    "format": 1,
+    "content": ""
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": "systems/miaulements-ulthar/assets/cartes/contree-du-reve.webp",
+   "system": {},
+   "sort": 700000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.17.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!2A30CrKy1XrrogGz.GpO7WaJpElS50Dvu"
+  },
+  {
+   "_id": "QojdIz1WwzUCBJlv",
+   "name": "Carte : Ulthar",
+   "type": "image",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {
+    "caption": "Plan d'Ulthar : la librairie, l'auberge du Pain Blanc, le temple de Bast, la rivière Skai…"
+   },
+   "text": {
+    "format": 1,
+    "content": ""
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": "systems/miaulements-ulthar/assets/cartes/ulthar.webp",
+   "system": {},
+   "sort": 800000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.17.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!2A30CrKy1XrrogGz.QojdIz1WwzUCBJlv"
+  },
+  {
+   "_id": "4AYIhM3pZRqRX0g4",
+   "name": "Continuer l'aventure",
+   "type": "text",
+   "title": {
+    "show": true,
+    "level": 1
+   },
+   "image": {},
+   "text": {
+    "format": 1,
+    "content": "<p>Envie de poursuivre l'aventure des <strong>Miaulements d'Ulthar</strong> ? Suivez nos prochaines sorties sur les réseaux sociaux :</p><ul class=\"mu-definitions\"><li><strong>Site web</strong> : <a href=\"https://www.xaviiiier.com\" target=\"_blank\" rel=\"noopener\">xaviiiier.com</a></li><li><strong>Facebook</strong> : <a href=\"https://www.facebook.com/xaviiiierjdr\" target=\"_blank\" rel=\"noopener\">facebook.com/xaviiiierjdr</a></li><li><strong>Instagram</strong> : <a href=\"https://www.instagram.com/xaviiiierjdr\" target=\"_blank\" rel=\"noopener\">instagram.com/xaviiiierjdr</a></li><li><strong>Twitter</strong> : <a href=\"https://twitter.com/xaviiiierjdr\" target=\"_blank\" rel=\"noopener\">twitter.com/xaviiiierjdr</a></li></ul><p class=\"mu-a-retenir\">Miaourci et à miaoutôt !</p><p style=\"text-align:center\"><em>Xaviiiier</em></p>"
+   },
+   "video": {
+    "controls": true,
+    "volume": 0.5
+   },
+   "src": null,
+   "system": {},
+   "sort": 900000,
+   "ownership": {
+    "default": -1
+   },
+   "flags": {},
+   "_stats": {
+    "createdTime": 1762100000000,
+    "modifiedTime": 1762100000000,
+    "systemId": "miaulements-ulthar",
+    "systemVersion": "0.17.0",
+    "coreVersion": "14.368"
+   },
+   "_key": "!journal.pages!2A30CrKy1XrrogGz.4AYIhM3pZRqRX0g4"
   }
  ],
  "folder": null,
@@ -149,7 +322,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.16.0",
+  "systemVersion": "0.17.0",
   "coreVersion": "14.368"
  },
  "_key": "!journal!2A30CrKy1XrrogGz"

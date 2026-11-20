@@ -91,6 +91,10 @@ export function ajouterBoutons(controls) {
     name: "mu-suivi", title: "Suivi des Chats", icon: "fa-solid fa-paw", order: 90, button: true, visible: true,
     onChange: () => SuiviGroupe.basculer()
   };
+  outils["mu-campagne"] = {
+    name: "mu-campagne", title: "Suivi de campagne (Gardien)", icon: "fa-solid fa-book-open", order: 92, button: true, visible: game.user.isGM,
+    onChange: () => game.miaulementsUlthar?.suiviCampagne?.()
+  };
   outils["mu-vision"] = {
     name: "mu-vision", title: "Vision féline", icon: "fa-solid fa-eye", order: 91, toggle: true, visible: true,
     active: game.settings.get(SYSTEM_ID, "visionFeline"),

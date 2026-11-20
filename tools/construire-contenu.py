@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.16.0", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.17.0", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -167,6 +167,11 @@ def journal(pack, nom, pages, tri=0, ownership=None, dossier=None):
         if titre == prec: titre = titre + " (suite)"
         prec = titre.replace(" (suite)", "")
         pid = ident(pack, "page", nom, titre, str(k))
+        if isinstance(contenu, dict) and contenu.get("type") == "image":
+            docs.append({"_id": pid, "name": titre, "type": "image", "title": {"show": True, "level": 1}, "image": {"caption": contenu.get("legende", "")}, "text": {"format": 1, "content": ""},
+                         "video": {"controls": True, "volume": 0.5}, "src": contenu["src"], "system": {}, "sort": (k + 1) * 100000,
+                         "ownership": {"default": -1}, "flags": {}, "_stats": STATS, "_key": f"!journal.pages!{eid}.{pid}"})
+            continue
         docs.append({"_id": pid, "name": titre, "type": "text", "title": {"show": True, "level": 1}, "image": {}, "text": {"format": 1, "content": contenu},
                      "video": {"controls": True, "volume": 0.5}, "src": None, "system": {}, "sort": (k + 1) * 100000,
                      "ownership": {"default": -1}, "flags": {}, "_stats": STATS, "_key": f"!journal.pages!{eid}.{pid}"})
@@ -589,6 +594,43 @@ def construire_wikis(bestiaire):
         journal(MJ, nom, mj[nom], tri=(k + 1) * 100000, ownership=NONE)
     print("wiki joueur :", len(ordre) + 1, "entrées ; wiki MJ :", len(ordre_mj) + 1, "entrées")
 
+CARTES = [("Massachusetts", "massachusetts", "La côte du Massachusetts : Arkham, Innsmouth, Salem, Ipswich…"),
+          ("Arkham", "arkham", "Plan d'Arkham : asile, musée, université, hôpital, docks, cimetière…"),
+          ("Contrée du Rêve", "contree-du-reve", "La Contrée du Rêve : Ulthar, la mer de Cerenaria, l'Île aux Quatre Colonnes, la Ville aux Deux Ports…"),
+          ("Ulthar", "ulthar", "Plan d'Ulthar : la librairie, l'auberge du Pain Blanc, le temple de Bast, la rivière Skai…")]
+
+
+def aides_de_jeu():
+    """Aides de jeu du livre des scénarios (v0.17.0) : présentation, fiches de suivi (fenêtre en jeu + versions à remplir), cartes, réseaux."""
+    macro = lien("macros", "Macro", "Suivi de campagne (Gardien)", "Ouvrir le suivi de campagne")
+    lignes_chats = "".join("<tr><td></td><td></td><td></td></tr>" for _ in range(6))
+    lignes_ep = "".join(f"<tr><td>{i}</td><td></td><td></td></tr>" for i in range(1, 9))
+    pages = [
+        ("Aides de jeu", une("Pour le Gardien", "Aides de jeu", "Arkham, 1921")
+         + "<p>Pour vous aider à vivre pleinement vos campagnes, plusieurs outils pratiques sont à votre disposition : une <strong>fiche de suivi de campagne</strong>, une <strong>fiche de suivi des personnages</strong> et les <strong>cartes des lieux</strong>.</p>"
+         + "<p>Les aventures émergentes invitent le maître de jeu à garder en mémoire les choix, les conséquences et les événements marquants. Ces ressources sont conçues pour vous accompagner dans la gestion et la cohérence de votre histoire.</p>"
+         + "<h3>Dans ce journal</h3><ul><li><strong>Fiches de suivi</strong> : à remplir en jeu dans la fenêtre « Suivi de campagne », ou dans les tableaux de ce journal.</li><li><strong>Cartes des lieux</strong> : Massachusetts, Arkham, Contrée du Rêve et Ulthar (aussi en scènes dans le compendium « Scènes »).</li><li><strong>Continuer l'aventure</strong> : où suivre les Miaulements d'Ulthar.</li></ul>"),
+        ("Suivi de campagne en jeu", "<p>Les deux fiches de suivi du livre sont réunies dans une fenêtre réservée au Gardien. Tout ce que vous y écrivez est enregistré dans le monde, d'une partie à l'autre.</p>"
+         + f'<p class="mu-a-retenir">{macro}</p>'
+         + "<ul><li>Aussi depuis la barre d'outils de la scène : icône <strong>livre ouvert</strong> (Suivi de campagne).</li><li>Onglet <strong>Personnages</strong> : joueur, surnom du Chat et notes. Le bouton « Ajouter les Chats du monde » crée une ligne pour chaque Chat d'un joueur.</li><li>Onglet <strong>Épisodes</strong> : un bloc de notes par scénario joué.</li></ul>"
+         + '<div class="mu-note"><span class="mu-note-titre">Préférez le papier ?</span> Importez ce journal dans votre monde : les deux pages suivantes sont des tableaux à remplir directement dans Foundry.</div>'),
+        ("Fiche de suivi des personnages", "<p>Cette fiche de suivi, conçue pour les campagnes, vous permettra de consigner des éléments concernant chaque personnage. Elle sert à conserver toutes les informations susceptibles d'influencer la suite de l'aventure.</p>"
+         + f'<table class="mu-fiche-suivi"><thead><tr><th style="width:22%">Joueur</th><th style="width:22%">Surnom</th><th>Notes</th></tr></thead><tbody>{lignes_chats}</tbody></table>'),
+        ("Fiche de suivi de la campagne", "<p>Cette fiche de suivi de campagne, à l'usage du meneur de jeu, permet de consigner l'évolution de l'intrigue et les événements majeurs impactant l'ensemble du groupe ou la campagne.</p>"
+         + f'<table class="mu-fiche-suivi"><thead><tr><th style="width:8%">N°</th><th style="width:30%">Épisode</th><th>Notes</th></tr></thead><tbody>{lignes_ep}</tbody></table>'),
+    ]
+    for titre, fichier, legende in CARTES:
+        pages.append((f"Carte : {titre}", {"type": "image", "src": f"systems/{SYS}/assets/cartes/{fichier}.webp", "legende": legende}))
+    pages.append(("Continuer l'aventure", "<p>Envie de poursuivre l'aventure des <strong>Miaulements d'Ulthar</strong> ? Suivez nos prochaines sorties sur les réseaux sociaux :</p>"
+        + '<ul class="mu-definitions">'
+        + '<li><strong>Site web</strong> : <a href="https://www.xaviiiier.com" target="_blank" rel="noopener">xaviiiier.com</a></li>'
+        + '<li><strong>Facebook</strong> : <a href="https://www.facebook.com/xaviiiierjdr" target="_blank" rel="noopener">facebook.com/xaviiiierjdr</a></li>'
+        + '<li><strong>Instagram</strong> : <a href="https://www.instagram.com/xaviiiierjdr" target="_blank" rel="noopener">instagram.com/xaviiiierjdr</a></li>'
+        + '<li><strong>Twitter</strong> : <a href="https://twitter.com/xaviiiierjdr" target="_blank" rel="noopener">twitter.com/xaviiiierjdr</a></li></ul>'
+        + '<p class="mu-a-retenir">Miaourci et à miaoutôt !</p><p style="text-align:center"><em>Xaviiiier</em></p>'))
+    return pages
+
+
 def construire_scenarios():
     # Retouches (v0.16.0) : fautes, ligatures, typographie, tags, listes, notes de marge
     import importlib.util as _u
@@ -600,6 +642,9 @@ def construire_scenarios():
             ("La bibliothèque de Pnakotus (scénario 3)", 64, 73), ("L'Île aux Quatre Colonnes (scénario 4)", 74, 79), ("L'affrontement final (scénario 5)", 80, 88),
             ("Aides de jeu", 89, 103)]
     for k, (nom, a, b) in enumerate(plan):
+        if nom == "Aides de jeu":
+            journal("scenarios", nom, aides_de_jeu(), tri=(k + 1) * 100000, ownership=NONE)
+            continue
         journal("scenarios", nom, _sr.retoucher(page_blocs("scenarios", a, b, nom), nom), tri=(k + 1) * 100000, ownership=NONE)
     som = charger("sommilius")
     journal("scenarios", "Sommilius (scénario)", _sr.retoucher(page_blocs("sommilius", 1, 6, "Sommilius")), tri=(len(plan) + 1) * 100000, ownership=NONE)
@@ -618,6 +663,8 @@ def construire_macros():
          "game.miaulementsUlthar.folieDuGroupe(\"Un événement troublant frappe le groupe\");", "Chaque Chat des joueurs fait un jet de Folie (peur, instinct de chasseur…)."),
         ("Suivi des Chats (ouvrir ou fermer)", "icons/svg/heal.svg",
          "game.miaulementsUlthar.suiviGroupe();", "Ouvre la fenêtre qui montre Santé, Magie, Folie et vies de tous les Chats."),
+        ("Suivi de campagne (Gardien)", "icons/svg/book.svg",
+         "game.miaulementsUlthar.suiviCampagne();", "Ouvre les fiches de suivi des personnages et de la campagne (aides de jeu du livre des scénarios)."),
         ("Table : événement en ville", "icons/svg/city.svg",
          "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Événements en ville')._id).then(t => t.draw());", "Tire un événement en ville (écran du MJ)."),
         ("Table : réaction humaine", "icons/svg/mystery-man.svg",
@@ -639,7 +686,18 @@ def construire_scenes():
         "environment": {"globalLight": {"enabled": True}}, "initial": None, "thumb": img,
         "tokens": [], "lights": [], "notes": [], "sounds": [], "templates": [], "tiles": [], "walls": [], "drawings": [], "regions": [],
         "folder": None, "sort": 0, "ownership": {"default": 0}, "flags": {SYS: {"accueil": True}}, "_stats": STATS, "_key": f"!scenes!{sid}"})
-    print("scènes : 1")
+    from PIL import Image as _Im
+    for k, (titre, fichier, legende) in enumerate(CARTES):
+        src = f"systems/{SYS}/assets/cartes/{fichier}.webp"
+        w, h = _Im.open(os.path.join(RACINE, "assets", "cartes", f"{fichier}.webp")).size
+        sid = ident(pack, "Scene", "Carte " + titre)
+        ecrire(pack, {"_id": sid, "name": f"Carte — {titre}", "active": False, "navigation": False, "navOrder": k + 1, "navName": titre,
+            "background": {"src": src, "fit": "fill"}, "width": w, "height": h, "padding": 0.1, "backgroundColor": "#0b0a10",
+            "grid": {"type": 0, "size": 100, "distance": 1, "units": "m"}, "tokenVision": False, "fog": {"exploration": False},
+            "environment": {"globalLight": {"enabled": True}}, "initial": None, "thumb": src,
+            "tokens": [], "lights": [], "notes": [], "sounds": [], "templates": [], "tiles": [], "walls": [], "drawings": [], "regions": [],
+            "folder": None, "sort": (k + 1) * 100000, "ownership": {"default": 0}, "flags": {SYS: {"carte": fichier}}, "_stats": STATS, "_key": f"!scenes!{sid}"})
+    print("scènes :", 1 + len(CARTES))
 
 if __name__ == "__main__":
     if os.path.isdir(SORTIE): shutil.rmtree(SORTIE)

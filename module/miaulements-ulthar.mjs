@@ -2,6 +2,7 @@ import { SYSTEM_ID, MODES } from "./config.mjs";
 import { ChatData, PnjData, PouvoirData } from "./datamodels.mjs";
 import { FeuilleChat, FichePnj, enregistrerParametresThemes } from "./sheet.mjs";
 import { appliquerThemeCorps } from "./cartes.mjs";
+import { SuiviCampagne, enregistrerParametresSuivi } from "./suivi.mjs";
 import { FichePouvoir } from "./item-sheet.mjs";
 import { brancherCartes, ecouterSocket } from "./combat.mjs";
 import { api } from "./outils.mjs";
@@ -13,7 +14,7 @@ import { enregistrerHooksJournal } from "./journal.mjs";
 Hooks.once("init", () => {
   console.log(`${SYSTEM_ID} | initialisation`);
 
-  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer(), wiki: ouvrirWiki };
+  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer(), suiviCampagne: () => SuiviCampagne.ouvrir(), wiki: ouvrirWiki };
   CONFIG.Actor.dataModels.chat = ChatData;
   CONFIG.Actor.dataModels.pnj = PnjData;
   CONFIG.Item.dataModels.pouvoir = PouvoirData;
@@ -62,6 +63,7 @@ Hooks.once("init", () => {
   enregistrerParametresWiki();
   enregistrerParametresAccueil();
   enregistrerParametresThemes();
+  enregistrerParametresSuivi();
 
   game.settings.register(SYSTEM_ID, "visionFeline", { scope: "client", config: false, type: Boolean, default: false });
 

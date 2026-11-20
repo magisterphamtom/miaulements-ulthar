@@ -124,3 +124,8 @@
 .mu-journal .journal-page-content ol.mu-colonnes-liste { columns: 2; column-gap: 28px; }
 .mu-journal .journal-page-content ol.mu-colonnes-liste li { break-inside: avoid; }
 .mu-journal .journal-page-content h2 + p:not([class]), .mu-journal .journal-page-content > p:first-child:not([class]) { display: flow-root; }
+/* Fiches de suivi à remplir (aides de jeu, v0.17.0) */
+.mu-journal .journal-page-content table.mu-fiche-suivi { width: 100%; table-layout: fixed; }
+.mu-journal .journal-page-content table.mu-fiche-suivi td { height: 3.2em; vertical-align: top; border: 1px solid var(--mu-filet); }
+.mu-journal .journal-page-content table.mu-fiche-suivi td:first-child { text-align: center; }
+.mu-journal .journal-entry-page.image figcaption, .mu-journal .journal-entry-page.image .caption { font-style: italic; text-align: center; }

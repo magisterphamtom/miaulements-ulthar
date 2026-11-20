@@ -1,0 +1,43 @@
+<div class="mu-suivi">
+  <nav class="mu-suivi-onglets">
+    <a class="{{#if (eq onglet "chats")}}active{{/if}}" data-action="onglet" data-onglet="chats"><i class="fa-solid fa-cat"></i> Personnages</a>
+    <a class="{{#if (eq onglet "episodes")}}active{{/if}}" data-action="onglet" data-onglet="episodes"><i class="fa-solid fa-book"></i> Épisodes</a>
+  </nav>
+
+  {{#if (eq onglet "chats")}}
+  <p class="mu-suivi-aide">Tout ce qui peut influencer la suite de l'aventure, Chat par Chat.</p>
+  <div class="mu-suivi-liste">
+    {{#each chats}}
+    <div class="mu-suivi-carte">
+      <div class="mu-suivi-ligne">
+        <label>Joueur <input type="text" data-liste="chats" data-index="{{index}}" data-champ="joueur" value="{{joueur}}"></label>
+        <label>Surnom <input type="text" data-liste="chats" data-index="{{index}}" data-champ="surnom" value="{{surnom}}"></label>
+        <a class="mu-suivi-suppr" data-action="supprimer" data-liste="chats" data-index="{{index}}" data-tooltip="Supprimer"><i class="fa-solid fa-trash"></i></a>
+      </div>
+      <textarea rows="3" placeholder="Notes" data-liste="chats" data-index="{{index}}" data-champ="notes">{{notes}}</textarea>
+    </div>
+    {{else}}<p class="mu-suivi-vide">Aucun Chat pour l'instant.</p>{{/each}}
+  </div>
+  <div class="mu-suivi-boutons">
+    <button type="button" data-action="ajouterChatsMonde"><i class="fa-solid fa-users"></i> Ajouter les Chats du monde</button>
+    <button type="button" data-action="ajouterChat"><i class="fa-solid fa-plus"></i> Ajouter une ligne</button>
+  </div>
+  {{else}}
+  <p class="mu-suivi-aide">L'évolution de l'intrigue et les événements qui touchent tout le groupe, épisode par épisode.</p>
+  <div class="mu-suivi-liste">
+    {{#each episodes}}
+    <div class="mu-suivi-carte">
+      <div class="mu-suivi-ligne">
+        <span class="mu-suivi-num">{{numero}}</span>
+        <label class="large">Épisode <input type="text" data-liste="episodes" data-index="{{index}}" data-champ="titre" value="{{titre}}" placeholder="ex. Le Sanctuaire aux Crabes"></label>
+        <a class="mu-suivi-suppr" data-action="supprimer" data-liste="episodes" data-index="{{index}}" data-tooltip="Supprimer"><i class="fa-solid fa-trash"></i></a>
+      </div>
+      <textarea rows="4" placeholder="Notes" data-liste="episodes" data-index="{{index}}" data-champ="notes">{{notes}}</textarea>
+    </div>
+    {{else}}<p class="mu-suivi-vide">Aucun épisode pour l'instant.</p>{{/each}}
+  </div>
+  <div class="mu-suivi-boutons">
+    <button type="button" data-action="ajouterEpisode"><i class="fa-solid fa-plus"></i> Ajouter un épisode</button>
+  </div>
+  {{/if}}
+</div>
