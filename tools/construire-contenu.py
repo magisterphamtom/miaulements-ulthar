@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.17.0", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.17.1", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -655,7 +655,7 @@ def construire_scenarios():
 def construire_macros():
     pack = "macros"
     macros = [
-        ("Début d'aventure : pouvoirs temporaires", "icons/svg/water.svg",
+        ("Début d'aventure : pouvoirs temporaires", "icons/svg/waterfall.svg",
          "game.miaulementsUlthar.debutAventure();", "Tire deux pouvoirs temporaires pour chaque Chat des joueurs (la fontaine enchantée)."),
         ("Fin de scénario : tous les Chats", "icons/svg/sleep.svg",
          "game.miaulementsUlthar.finDeScenarioGroupe();", "+2 XP, PV, PM et vies remis au maximum, −10 PF par carte Folie non jouée, pour chaque Chat des joueurs."),
@@ -663,7 +663,7 @@ def construire_macros():
          "game.miaulementsUlthar.folieDuGroupe(\"Un événement troublant frappe le groupe\");", "Chaque Chat des joueurs fait un jet de Folie (peur, instinct de chasseur…)."),
         ("Suivi des Chats (ouvrir ou fermer)", "icons/svg/heal.svg",
          "game.miaulementsUlthar.suiviGroupe();", "Ouvre la fenêtre qui montre Santé, Magie, Folie et vies de tous les Chats."),
-        ("Suivi de campagne (Gardien)", "icons/svg/book.svg",
+        ("Suivi de campagne (Gardien)", f"systems/{SYS}/assets/icones/suivi-campagne.svg",
          "game.miaulementsUlthar.suiviCampagne();", "Ouvre les fiches de suivi des personnages et de la campagne (aides de jeu du livre des scénarios)."),
         ("Table : événement en ville", "icons/svg/city.svg",
          "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Événements en ville')._id).then(t => t.draw());", "Tire un événement en ville (écran du MJ)."),

@@ -3,7 +3,7 @@
  "name": "Début d'aventure : pouvoirs temporaires",
  "type": "script",
  "author": null,
- "img": "icons/svg/water.svg",
+ "img": "icons/svg/waterfall.svg",
  "scope": "global",
  "command": "game.miaulementsUlthar.debutAventure();",
  "folder": null,
@@ -16,7 +16,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.17.0",
+  "systemVersion": "0.17.1",
   "coreVersion": "14.368"
  },
  "_key": "!macros!uRtum21jgFx6YnYT"

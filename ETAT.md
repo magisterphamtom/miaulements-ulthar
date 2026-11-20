@@ -2,6 +2,9 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Icônes des macros (v0.17.1, branche `correction/icone-macro`)
+- La macro « Début d'aventure : pouvoirs temporaires » pointait vers une icône absente de Foundry (`icons/svg/water.svg`) : remplacée par `waterfall.svg` (la fontaine). La macro « Suivi de campagne » a sa propre icône (livre et patte, `assets/icones/suivi-campagne.svg`). Toutes les autres icônes de Foundry utilisées ont été vérifiées sur l'installation.
+
 ## Aides de jeu (v0.17.0, branche `fonction/aides-de-jeu`)
 - **Suivi de campagne** : nouvelle fenêtre réservée au Gardien (macro « Suivi de campagne (Gardien) », icône livre ouvert dans la barre d'outils de la scène, `game.miaulementsUlthar.suiviCampagne()`). Onglet Personnages (joueur, surnom, notes ; bouton « Ajouter les Chats du monde ») et onglet Épisodes (titre, notes). Enregistré dans le monde (réglage caché `suiviCampagne`), à la saisie, sans redessiner. Suit le thème du Gardien. Code : `module/suivi.mjs`, `templates/suivi-campagne.hbs`.
 - **Entrée « Aides de jeu »** du compendium Scénarios réécrite : présentation, mode d'emploi du suivi, deux fiches de suivi en tableaux à remplir (une fois le journal importé), les **4 cartes des lieux** du livre en pages image (Massachusetts, Arkham, Contrée du Rêve, Ulthar), « Continuer l'aventure » avec liens cliquables.

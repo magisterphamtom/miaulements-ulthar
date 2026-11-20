@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="14" fill="#17141c"/>
+  <!-- livre ouvert -->
+  <path d="M14 30 Q32 24 50 32 Q68 24 86 30 V78 Q68 72 50 80 Q32 72 14 78 Z" fill="#f3e3bd" stroke="#d9b34a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M50 32 V80" stroke="#8b5a2b" stroke-width="2.5"/>
+  <path d="M21 42 Q32 39 43 43 M21 51 Q32 48 43 52 M21 60 Q32 57 43 61" stroke="#8b5a2b" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- patte -->
+  <g fill="#7a1f1a"><ellipse cx="68" cy="60" rx="8" ry="7"/><ellipse cx="58" cy="50" rx="3.4" ry="4.4"/><ellipse cx="64.5" cy="44.5" rx="3.4" ry="4.4"/><ellipse cx="71.5" cy="44.5" rx="3.4" ry="4.4"/><ellipse cx="78" cy="50" rx="3.4" ry="4.4"/></g>
+</svg>
