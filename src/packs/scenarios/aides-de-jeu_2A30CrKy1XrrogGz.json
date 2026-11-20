@@ -30,7 +30,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.11.0",
+    "systemVersion": "0.16.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!2A30CrKy1XrrogGz.9vEHhbM0Bl7ZloRK"
@@ -63,7 +63,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.11.0",
+    "systemVersion": "0.16.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!2A30CrKy1XrrogGz.1KYIPWk4TypHCB14"
@@ -96,7 +96,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.11.0",
+    "systemVersion": "0.16.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!2A30CrKy1XrrogGz.V1t8vannjutyYD72"
@@ -112,7 +112,7 @@
    "image": {},
    "text": {
     "format": 1,
-    "content": "<p>Envie de poursuivre l'aventure des <strong>Miaulements d'Ulthar </strong>? Suivez nos prochaines sorties sur les réseaux sociaux <strong>site web </strong>: https://www.xaviiiier.com <strong>facebook </strong>: https://www.facebook.com/xaviiiierjdr <strong>instagram </strong>: https://www.instagram.com/xaviiiierjdr <strong>twitter </strong>: https://twitter.com/xaviiiierjdr</p>\n<h3>Miaourci et à miaoutôt !</h3>\n<h3>Xaviiiier</h3>"
+    "content": "<p>Envie de poursuivre l'aventure des <strong>Miaulements d'Ulthar </strong> ? Suivez nos prochaines sorties sur les réseaux sociaux <strong>site web </strong> : https://www.xaviiiier.com <strong>facebook </strong> : https://www.facebook.com/xaviiiierjdr <strong>instagram </strong> : https://www.instagram.com/xaviiiierjdr <strong>twitter </strong> : https://twitter.com/xaviiiierjdr</p>\n<h3>Miaourci et à miaoutôt !</h3>\n<h3>Xaviiiier</h3>"
    },
    "video": {
     "controls": true,
@@ -129,7 +129,7 @@
     "createdTime": 1762100000000,
     "modifiedTime": 1762100000000,
     "systemId": "miaulements-ulthar",
-    "systemVersion": "0.11.0",
+    "systemVersion": "0.16.0",
     "coreVersion": "14.368"
    },
    "_key": "!journal.pages!2A30CrKy1XrrogGz.0XnbPb4tWzJ0wKQu"
@@ -149,7 +149,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.11.0",
+  "systemVersion": "0.16.0",
   "coreVersion": "14.368"
  },
  "_key": "!journal!2A30CrKy1XrrogGz"

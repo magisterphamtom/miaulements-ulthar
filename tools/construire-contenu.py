@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.11.0", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.16.0", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -590,15 +590,19 @@ def construire_wikis(bestiaire):
     print("wiki joueur :", len(ordre) + 1, "entrées ; wiki MJ :", len(ordre_mj) + 1, "entrées")
 
 def construire_scenarios():
+    # Retouches (v0.16.0) : fautes, ligatures, typographie, tags, listes, notes de marge
+    import importlib.util as _u
+    _spec = _u.spec_from_file_location("scenarios_retouches", os.path.join(os.path.dirname(os.path.abspath(__file__)), "scenarios_retouches.py"))
+    _sr = _u.module_from_spec(_spec); _spec.loader.exec_module(_sr)
     S = charger("scenarios")
     plan = [("Enquête émergente guidée (EEG)", 6, 15), ("Les Profonds", 16, 25), ("Les peintures maudites", 26, 34), ("Étranges souvenirs", 35, 45),
             ("Les Clefs Interdites (campagne)", 46, 49), ("Le Sanctuaire aux Crabes (scénario 1)", 50, 57), ("À la recherche d'Ester (scénario 2)", 58, 63),
             ("La bibliothèque de Pnakotus (scénario 3)", 64, 73), ("L'Île aux Quatre Colonnes (scénario 4)", 74, 79), ("L'affrontement final (scénario 5)", 80, 88),
             ("Aides de jeu", 89, 103)]
     for k, (nom, a, b) in enumerate(plan):
-        journal("scenarios", nom, page_blocs("scenarios", a, b, nom), tri=(k + 1) * 100000, ownership=NONE)
+        journal("scenarios", nom, _sr.retoucher(page_blocs("scenarios", a, b, nom), nom), tri=(k + 1) * 100000, ownership=NONE)
     som = charger("sommilius")
-    journal("scenarios", "Sommilius (scénario)", page_blocs("sommilius", 1, 6, "Sommilius"), tri=(len(plan) + 1) * 100000, ownership=NONE)
+    journal("scenarios", "Sommilius (scénario)", _sr.retoucher(page_blocs("sommilius", 1, 6, "Sommilius")), tri=(len(plan) + 1) * 100000, ownership=NONE)
     idx = une("Les affaires en cours", "Scénarios", "Arkham, 1921") + "<p>Livre des scénarios des Miaulements d'Ulthar : cinq scénarios en « enquête émergente guidée », la campagne « Les Clefs Interdites » et les aides de jeu. Le texte est repris du PDF : les tableaux et encadrés en colonnes peuvent perdre un peu de leur mise en page.</p><ul>" + "".join(f"<li>{lien('scenarios', 'JournalEntry', n, n)}</li>" for n, _, _ in plan) + f"<li>{lien('scenarios', 'JournalEntry', 'Sommilius (scénario)', 'Sommilius (scénario)')}</li></ul>"
     journal("scenarios", "Index des scénarios", [("Index", idx)], tri=0, ownership=NONE)
     print("scénarios :", len(plan) + 2, "entrées")

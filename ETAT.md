@@ -2,6 +2,14 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Scénarios relus et corrigés (v0.16.0, branche `correction/scenarios`)
+- Caractères mal décodés du PDF réparés : « (cid:46) » = « ti », « (cid:47) » = « tt » (Sommilius surtout : « captivant », « https », « pipettes »…).
+- Fautes corrigées, souvent présentes dans le livre : llvre, shéma réccurent, pièçe, inquiètude, envouté, brullées, narrrative, appeuré, provennant, herrissent, île, « À » en début de phrase, « Sanctuaire aux Crabes », « est tout aussi », « peut-être »… ; mot perdu à l'extraction rétabli (« éclairée de lumières »).
+- Typographie française : plus d'espace avant le point ou la virgule, espace avant « : ; ! ? », guillemets « » appariés (ouvrant ajouté aux « Textes à lire » qui n'avaient que le fermant).
+- Mise en forme : Tags séparés du texte (et réparés : « #a#b », « #Tags », tag collé au mot suivant), listes en ligne converties, notes de marge regroupées en fin de rubrique au lieu de couper les listes.
+- L'Île aux Quatre Colonnes : page des PNJ en double supprimée (sa rubrique « Sur l'Île » rejoint les indices), caractéristiques de combat du Chef et des Gardes Profonds remises en liste.
+- Outils : `tools/scenarios_retouches.py`, appelé par `construire_scenarios()`.
+
 ## Fiche PNJ « Avis de recherche » (v0.15.0, branche `fonction/fiche-pnj-avis`)
 - La fiche des adversaires devient un avis de recherche du commissariat d'Ulthar (style Journal d'Arkham, 1921, pour tous) : photo en noir et blanc épinglée (clic pour la changer), nom, surnom (nouveau champ `surnom`), niveau de danger calculé d'après les PV maximum (peu dangereux ≤ 5, dangereux ≤ 15, très dangereux ≤ 40, extrêmement dangereux au-delà), PV avec boutons −1 / +1 (la perte passe par les dégâts) et jauge.
 - « Armes connues » : les attaques, modifiables, avec bouton de jet (fenêtre « cartes à piocher »), ajout et suppression. « Signes particuliers » : pouvoir et capacité. « Témoignages » : la description mise en forme (liens et citations), modifiable dans un volet.
