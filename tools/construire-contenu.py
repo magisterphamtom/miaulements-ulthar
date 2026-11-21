@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.19.3", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.20.0", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -673,6 +673,8 @@ def construire_macros():
          "game.miaulementsUlthar.paquetFolie();", "Ouvre le paquet de cartes Folie : cartes restantes, défausse, main de chaque Chat, remélanger."),
         ("La Gazette (Gardien)", "icons/svg/book.svg",
          "game.miaulementsUlthar.gazette();", "Rédige ou tire au hasard une une de journal (Arkham années 20 ou parchemin d'Ulthar, selon le lieu) et la montre à toute la table."),
+        ("Visite guidée", "icons/svg/eye.svg",
+         "game.miaulementsUlthar.visite();", "Relance la visite guidée : celle des joueurs (wiki, fiche, jets, réglages) ou, pour le Gardien, celle de ses outils."),
         ("Table : événement en ville", "icons/svg/city.svg",
          "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Événements en ville')._id).then(t => t.draw());", "Tire un événement en ville (écran du MJ)."),
         ("Table : réaction humaine", "icons/svg/mystery-man.svg",

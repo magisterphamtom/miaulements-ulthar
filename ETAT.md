@@ -2,6 +2,14 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Visites guidées (v0.20.0, branche `fonction/visite-guidee`)
+- Sur le modèle des visites de Foundry (`foundry.nue.Tour`), deux visites du système, habillées en **parchemin à sceau** (style A choisi par Stéphane : bulle de parchemin bordée de rouge, titre en Cinzel, sceau de cire à la patte, progression en points).
+- **Découvrir les Miaulements d'Ulthar** (joueurs, 11 étapes) : bienvenue, wiki des joueurs, fiche de Chat, menu des thèmes, oreilles de chat, lancer un jet, pastilles, menu ⋮ (assistant de création, pouvoirs temporaires), fenêtre Les Chats, réglages, fin.
+- **Les outils du Gardien** (Gardien seulement, 9 étapes) : wiki du Gardien, bouton et contenu du tableau du Gardien (rencontre, Gazette, paquet Folie…), voile de rêve, suivi de campagne, compendiums.
+- Chaque étape ouvre d'abord ce dont elle parle (wiki, fiche du Chat du joueur, tableau) puis éclaire l'élément ; si l'élément manque (pas de Chat, par exemple), l'étape s'affiche au centre de l'écran.
+- Lancée toute seule à la **première connexion** de chaque utilisateur (réglage `visiteVue`, propre à l'utilisateur), relançable depuis **Paramètres › Visites guidées**, la macro « Visite guidée » ou `game.miaulementsUlthar.visite("joueur"|"gardien")`.
+- Testé : `s-miaulements-visite.mjs` (`ETAPE=gardien` : démarrage automatique et 9 étapes ; `ETAPE=joueur` : 11 étapes ; lisibilité de la bulle).
+
 ## Onde de choc des critiques (v0.19.3, branche `fonction/onde-de-choc`)
 - Variante B choisie par Stéphane : au moment de l'impact du coup de patte, la scène tremble 0,35 s et une onde dorée part du centre avec un halo ; sur un échec critique, au moment des griffes, la scène tremble et le bord de l'écran rougit en pulsant.
 - Seul le canevas tremble (les fenêtres restent immobiles) ; transformations et opacité seulement. Réglage par joueur « Secousse des critiques » pour couper la secousse en gardant l'effet ; rien ne bouge si le système demande moins d'animations.

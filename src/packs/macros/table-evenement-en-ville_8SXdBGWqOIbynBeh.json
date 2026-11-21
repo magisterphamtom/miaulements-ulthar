@@ -7,7 +7,7 @@
  "scope": "global",
  "command": "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Événements en ville')._id).then(t => t.draw());",
  "folder": null,
- "sort": 900000,
+ "sort": 1000000,
  "ownership": {
   "default": 0
  },
@@ -16,7 +16,7 @@
   "createdTime": 1762100000000,
   "modifiedTime": 1762100000000,
   "systemId": "miaulements-ulthar",
-  "systemVersion": "0.19.3",
+  "systemVersion": "0.20.0",
   "coreVersion": "14.368"
  },
  "_key": "!macros!8SXdBGWqOIbynBeh"

@@ -189,3 +189,21 @@ body .mu-carte.mu-carte-gazette.mu-gazette-ulthar .mu-boutons button { backgroun
 @keyframes mu-onde { 0% { opacity: .95; transform: scale(.5); } 100% { opacity: 0; transform: scale(9); } }
 @keyframes mu-choc-pouls { 0% { opacity: 0; } 20% { opacity: .9; } 45% { opacity: .35; } 65% { opacity: .65; } 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { #board.mu-secousse, .mu-effet-choc * { animation: none !important; } }
+
+/* Visites guidées « parchemin à sceau » (v0.20.0) — couleurs fixes, lisibles sur tous les fonds */
+#tooltip.tour.mu-visite, .tour-center-step.mu-visite { background: #e9dcbc; color: #3a2a1a; border: 2px solid #7a1f2b; border-radius: 8px; box-shadow: 0 0 0 4px #e9dcbc, 0 0 0 5px #7a1f2b, 0 8px 28px rgba(0, 0, 0, .55); padding: 12px 16px 14px; max-width: 380px; font-family: 'IM Fell English', Georgia, serif; font-size: 15px; overflow: visible; }
+.tour-center-step.mu-visite { max-width: 460px; }
+.mu-visite .step-header { border-bottom: 1px solid #7a1f2b; padding-bottom: 4px; margin-bottom: 8px; }
+.mu-visite .step-header::after { display: none; }
+.mu-visite .step-title { font-family: 'Cinzel Decorative', Georgia, serif; font-size: 18px; font-weight: 700; color: #5a1520; margin: 0; }
+.mu-visite p.content { color: #3a2a1a; margin: 0 0 7px; line-height: 1.45; }
+.mu-visite p.content b { color: #5a1520; }
+.mu-visite .step-button, .mu-visite .step-button > i { color: #7a1f2b; font-size: 22px; }
+.mu-visite .step-button:hover > i { color: #3a2a1a; text-shadow: none; }
+.mu-visite [data-action="exit"] > i { font-size: 18px; }
+.mu-visite .step-controls { align-items: center; margin-top: 6px; padding-right: 54px; }
+.mu-visite .progress { display: flex; flex-direction: column; align-items: center; gap: 2px; color: #4a3420; font-size: 12px; }
+.mu-visite-points { display: flex; gap: 5px; }
+.mu-visite-points i { width: 8px; height: 8px; border-radius: 50%; background: #7a1f2b; opacity: .28; }
+.mu-visite-points i.fait { opacity: 1; }
+.mu-visite-sceau { position: absolute; right: -14px; bottom: -14px; width: 50px; height: 50px; border-radius: 50%; background: #7a1f2b; color: #e8c9a0; display: flex; align-items: center; justify-content: center; font-size: 22px; box-shadow: 0 0 0 3px #9a2a38, 0 3px 8px rgba(0, 0, 0, .45); transform: rotate(-12deg); pointer-events: none; }
