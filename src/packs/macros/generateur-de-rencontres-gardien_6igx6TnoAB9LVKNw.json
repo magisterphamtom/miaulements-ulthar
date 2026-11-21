@@ -1,0 +1,23 @@
+{
+ "_id": "6igx6TnoAB9LVKNw",
+ "name": "Générateur de rencontres (Gardien)",
+ "type": "script",
+ "author": null,
+ "img": "icons/svg/combat.svg",
+ "scope": "global",
+ "command": "game.miaulementsUlthar.rencontre();",
+ "folder": null,
+ "sort": 600000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.18.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!macros!6igx6TnoAB9LVKNw"
+}

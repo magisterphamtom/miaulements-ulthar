@@ -36,3 +36,18 @@
 .mu-tab-jet.crit-reussite { border-left-color: #d9b45a; } .mu-tab-jet.crit-reussite .mu-tab-verdict { color: var(--mu-accent); font-weight: bold; }
 .mu-tab-jet.crit-echec { border-left-color: #e0413a; } .mu-tab-jet.crit-echec .mu-tab-verdict { font-weight: bold; }
 .mu-tab-vide { text-align: center; font-style: italic; color: var(--mu-texte); opacity: .8; margin: 8px 0; }
+
+/* Générateur de rencontres : choix du lieu et du danger (pastilles), carte dans le chat */
+.mu-dialogue .mu-r-choix { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-bottom: 6px; }
+.mu-dialogue .mu-r-pastille { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 14px; border: 2px solid var(--mu-bord); background: var(--mu-fond2); color: var(--mu-texte); font-size: 13px; cursor: pointer; }
+.mu-dialogue .mu-r-pastille input { display: none; }
+.mu-dialogue .mu-r-pastille:has(input:checked) { border-color: var(--mu-accent); background: var(--mu-accent); color: var(--mu-fond); font-weight: bold; }
+.mu-carte.mu-carte-rencontre header { font-family: var(--mu-titre, inherit); color: var(--mu-accent); }
+.mu-carte-rencontre .mu-r-danger { margin: 2px 0; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--mu-texte); }
+.mu-carte-rencontre .mu-r-situation { font-style: italic; color: var(--mu-texte); margin: 4px 0 6px; }
+.mu-carte-rencontre .mu-r-creature { display: flex; gap: 8px; align-items: center; padding: 4px; border: 1px solid var(--mu-bord); border-radius: 6px; background: var(--mu-fond2); }
+.mu-carte-rencontre .mu-r-creature img { width: 44px; height: 44px; border-radius: 6px; object-fit: cover; border: none; }
+.mu-carte-rencontre .mu-r-creature strong { display: block; color: var(--mu-texte); }
+.mu-carte-rencontre .mu-r-creature small { display: block; color: var(--mu-texte); font-size: 11px; }
+.mu-carte-rencontre .mu-r-complication { color: var(--mu-texte); font-size: 13px; margin: 6px 0; }
+.mu-carte-rencontre .mu-r-complication b { color: var(--mu-accent); }

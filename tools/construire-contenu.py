@@ -667,6 +667,8 @@ def construire_macros():
          "game.miaulementsUlthar.suiviCampagne();", "Ouvre les fiches de suivi des personnages et de la campagne (aides de jeu du livre des scénarios)."),
         ("Tableau du Gardien", f"systems/{SYS}/assets/icones/tableau-gardien.svg",
          "game.miaulementsUlthar.tableau();", "Ouvre ou ferme le tableau de bord du Gardien : Chats, adversaires de la scène, derniers jets et outils."),
+        ("Générateur de rencontres (Gardien)", "icons/svg/combat.svg",
+         "game.miaulementsUlthar.rencontre();", "Tire un adversaire du bestiaire, une situation et une complication selon le lieu et le danger choisis."),
         ("Table : événement en ville", "icons/svg/city.svg",
          "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Événements en ville')._id).then(t => t.draw());", "Tire un événement en ville (écran du MJ)."),
         ("Table : réaction humaine", "icons/svg/mystery-man.svg",

@@ -2,6 +2,14 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Générateur de rencontres (v0.18.0, branche `fonction/rencontres`)
+- Gardien seulement : macro « Générateur de rencontres (Gardien) », bouton Rencontre du tableau, `game.miaulementsUlthar.rencontre()`.
+- Fenêtre en pastilles : **lieu** (ville éveillée, campagne, souterrains, Ulthar, Contrée du Rêve sauvage) et **danger** (faible ≤ 15 PV, sérieux 16–45, terrible > 45, au hasard). Le dernier choix est retenu.
+- Tirage : un adversaire du bestiaire propre au lieu (les petits animaux en groupe de 1 à 3), une situation d'ambiance (8 par lieu, textes originaux), une complication (10). Carte dans le chat, chuchotée au Gardien.
+- **Poser sur la scène** : importe l'adversaire une seule fois (dossier « Rencontres ») et pose ses jetons **cachés** au centre de la vue, à révéler au bon moment. **Relancer** : nouvelle rencontre avec les mêmes choix.
+- Correction trouvée au passage par le contrôle de lisibilité : les boutons des cartes du chat (« Garder la carte », etc.) étaient noirs sur fond sombre en thème Nuit ; ils prennent maintenant les couleurs du thème.
+- Testé : `s-miaulements-rencontres.mjs` (120 tirages, fenêtre, carte, pose des jetons, relance, lisibilité dans les 4 thèmes).
+
 ## Tableau du Gardien (v0.18.0, branche `fonction/tableau-de-bord`)
 - Fenêtre réservée au Gardien (bouton chat dans la barre des jetons, macro « Tableau du Gardien », `game.miaulementsUlthar.tableau()`).
 - **Les Chats** des joueurs : Santé, Magie, Folie (jauges), vies, cartes Folie en main, jet de Folie en un clic, clic sur le portrait pour la fiche.

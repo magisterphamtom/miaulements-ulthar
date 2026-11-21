@@ -60,6 +60,10 @@
 .mu-detail, .mu-note { font-size: 0.85em; margin: 2px 0; opacity: 0.85; }
 .mu-carte-folie { background: var(--mu-fond2); border-left: 3px solid var(--mu-ko); padding: 4px 6px; margin: 6px 0; }
 .mu-boutons button { width: 100%; }
+/* Boutons des cartes du chat : couleurs du thème (sinon texte noir de Foundry sur fond sombre en thème Nuit). */
+.mu-carte .mu-boutons button { color: var(--mu-texte); background: var(--mu-fond2); border: 1px solid var(--mu-bord); }
+.mu-carte .mu-boutons button:hover { border-color: var(--mu-accent); color: var(--mu-accent); }
+.mu-carte .mu-boutons button:disabled { opacity: .7; }
 /* Le bloc de dés natif est masqué : la carte contient déjà le résultat. */
 #chat .chat-message .mu-carte ~ .dice-roll { display: none !important; }
 
