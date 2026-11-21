@@ -13,6 +13,7 @@ import { enregistrerHooksJournal } from "./journal.mjs";
 import { TableauGardien, brancherTableau } from "./tableau.mjs";
 import { rencontre, enregistrerParametresRencontres, brancherRencontres } from "./rencontres.mjs";
 import { brancherJournalChat } from "./journal-chat.mjs";
+import { enregistrerParametresJetons, brancherJetons } from "./jetons.mjs";
 import { FenetrePaquet, enregistrerParametresPaquet, assurerPaquet, brancherPaquet } from "./paquet.mjs";
 
 Hooks.once("init", () => {
@@ -71,6 +72,8 @@ Hooks.once("init", () => {
   enregistrerParametresRencontres();
   enregistrerParametresPaquet();
   brancherJournalChat();
+  enregistrerParametresJetons();
+  brancherJetons();
   brancherRencontres();
 
   game.settings.register(SYSTEM_ID, "visionFeline", { scope: "client", config: false, type: Boolean, default: false });

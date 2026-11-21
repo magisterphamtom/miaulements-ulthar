@@ -2,6 +2,11 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Vies de Chat sur le jeton (v0.19.0, branche `fonction/vies-jeton`)
+- Couronne de petites pattes autour du jeton de chaque Chat (proposition A choisie par Stéphane) : une patte par vie possible, en partant du haut ; les vies perdues s'effacent (22 % d'opacité).
+- Réglage par joueur « Vies de Chat sur les jetons » (activé par défaut). Redessiné seulement quand le nombre de vies ou la taille du jeton change.
+- Testé : `s-miaulements-visuels.mjs` (étape `vies`), avec capture.
+
 ## Journal du Chat (v0.18.0, branche `fonction/journal-du-chat`)
 - Onglet **Notes** de la fiche : « Journal du Chat », les plus récents en haut, avec l'épisode en cours (dernier épisode du suivi de campagne) et la date.
 - Rempli tout seul : réussites et échecs critiques, vie perdue ou regagnée, chute à 0 PV, attribut qui progresse, pouvoir appris ou temporaire reçu, carte Folie gardée ou jouée, XP, fin de scénario (une seule ligne).
