@@ -2,6 +2,12 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Voile de rêve (v0.19.0, branche `fonction/voile-de-reve`)
+- « Cadre de lune » (proposition B) : pendant une bulle onirique, le centre de la scène reste net et les bords passent en nuit bleu-violet, avec une lune en haut et une ligne de vagues en bas.
+- Posé tout seul à l'entrée dans la bulle (après l'objectif et la scène initiale) et retiré à sa fin, chez toute la table (socket). Le Gardien peut l'allumer ou l'éteindre à la main : bouton lune dans la barre des jetons, ou `game.miaulementsUlthar.voileDeReve(true|false)`.
+- Calque fixe sans animation en boucle ni filtre (un seul fondu d'entrée), il ne bloque pas les clics.
+- Testé : `s-miaulements-visuels.mjs` (étape `voile`), bulle onirique jouée de bout en bout, avec capture.
+
 ## Effets de critique (v0.19.0, branche `fonction/effets-critiques`)
 - « Coup de patte » (proposition A) : sur une réussite critique, une grande patte dorée tamponne l'écran avec « Réussite critique ! » et le nom du Chat ; sur un échec critique, trois griffures rouges lacèrent l'écran (« Échec critique… »).
 - Vu par tous ceux qui voient le jet (pas sur les jets chuchotés aux autres). Animation CSS de 1,8 s (transformation et opacité seulement, sans filtre), retirée ensuite, une seule à la fois ; rien pour les jets ordinaires.

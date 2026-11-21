@@ -99,6 +99,11 @@ export function ajouterBoutons(controls) {
     name: "mu-tableau", title: "Tableau du Gardien", icon: "fa-solid fa-cat", order: 89, button: true, visible: game.user.isGM,
     onChange: () => game.miaulementsUlthar?.tableau?.()
   };
+  outils["mu-voile"] = {
+    name: "mu-voile", title: "Voile de rêve (bulle onirique, pour toute la table)", icon: "fa-solid fa-moon", order: 93, toggle: true, visible: game.user.isGM,
+    active: game.miaulementsUlthar?.voileActif?.() ?? false,
+    onChange: (event, active) => game.miaulementsUlthar?.voileDeReve?.(Boolean(active))
+  };
   outils["mu-vision"] = {
     name: "mu-vision", title: "Vision féline", icon: "fa-solid fa-eye", order: 91, toggle: true, visible: true,
     active: game.settings.get(SYSTEM_ID, "visionFeline"),

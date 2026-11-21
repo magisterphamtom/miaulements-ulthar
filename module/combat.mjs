@@ -1,3 +1,4 @@
+import { voileDeReve, voileActif } from "./voile.mjs";
 import { ATTRIBUTS, SYSTEM_ID } from "./config.mjs";
 import { jetAttribut, demanderJet, modeCourant, esc } from "./rolls.mjs";
 import { saisir, cartesDifficulte } from "./dialogues.mjs";
@@ -169,6 +170,7 @@ export async function lancerPouvoir(actor, item) {
 async function bulleOnirique(actor, item) {
   const journal = [];
   const fin = async (verdict, classe) => {
+    if (voileActif()) voileDeReve(false);
     await ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor }),
       content: `<div class="mu-carte ${classe}"><header>${esc(item.name)} — bulle onirique</header><p class="mu-verdict">${verdict}</p>
@@ -197,6 +199,7 @@ async function bulleOnirique(actor, item) {
     callback: (e, b) => ({ objectif: b.form.querySelector("[name=objectif]").value, scene: b.form.querySelector("[name=scene]").value })
   });
   if (!cadre) return fin("Le lanceur renonce", "echec");
+  voileDeReve(true); // la scène entre dans le rêve
   journal.push(`Objectif : ${esc(cadre.objectif || "—")}. Scène : ${esc(cadre.scene || "—")}`);
 
   // 4. Altérations : deux réussites ou deux échecs

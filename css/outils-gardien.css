@@ -88,3 +88,12 @@
 @keyframes mu-griffe { to { stroke-dashoffset: 0; } }
 @keyframes mu-fondu { 0%, 65% { opacity: 1; } 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .mu-effet-critique * { animation-duration: .01s !important; } }
+
+/* Voile de rêve « cadre de lune » (v0.19.0) : calque fixe, fondu d'entrée unique, aucune animation en boucle */
+#mu-voile-reve { position: fixed; inset: 0; z-index: 1; pointer-events: none; opacity: 0; transition: opacity .8s ease;
+  background: radial-gradient(ellipse 72% 68% at 50% 52%, rgba(20, 12, 50, 0) 55%, rgba(28, 18, 66, .55) 78%, rgba(14, 8, 36, .9) 100%);
+  box-shadow: inset 0 0 0 10px rgba(44, 32, 80, .55), inset 0 0 0 12px rgba(154, 134, 216, .45); }
+#mu-voile-reve.on { opacity: 1; }
+#mu-voile-reve .mu-voile-lune { position: absolute; top: 4vh; right: 22vw; width: 9vh; height: 9vh; border: none; opacity: .9; }
+#mu-voile-reve .mu-voile-vagues { position: absolute; left: 0; right: 0; bottom: 8vh; width: 100%; height: 34px; }
+#mu-voile-reve .mu-voile-vagues path { fill: none; stroke: rgba(154, 134, 216, .65); stroke-width: 2; }
