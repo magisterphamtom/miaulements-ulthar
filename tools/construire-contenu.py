@@ -673,6 +673,8 @@ def construire_macros():
          "game.miaulementsUlthar.paquetFolie();", "Ouvre le paquet de cartes Folie : cartes restantes, défausse, main de chaque Chat, remélanger."),
         ("La Gazette (Gardien)", "icons/svg/book.svg",
          "game.miaulementsUlthar.gazette();", "Rédige ou tire au hasard une une de journal (Arkham années 20 ou parchemin d'Ulthar, selon le lieu) et la montre à toute la table."),
+        ("Écran d'accueil", "icons/svg/book.svg",
+         "game.miaulementsUlthar.accueil();", "Rouvre l'écran d'accueil « tableau d'enquête » : mon Chat, le wiki, mon thème et, pour le Gardien, la préparation de la partie."),
         ("Visite guidée", "icons/svg/eye.svg",
          "game.miaulementsUlthar.visite();", "Relance la visite guidée : celle des joueurs (wiki, fiche, jets, réglages) ou, pour le Gardien, celle de ses outils."),
         ("Table : événement en ville", "icons/svg/city.svg",

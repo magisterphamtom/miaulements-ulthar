@@ -45,6 +45,8 @@ export async function ouvrirWiki(quel = game.user.isGM ? "gardien" : "joueur") {
 }
 
 async function ouvrirAuLancement() {
+  // L'écran d'accueil (v0.20.0) remplace l'ouverture automatique du wiki quand il est activé.
+  try { if (game.settings.get(SYSTEM_ID, "ecranAccueil")) return; } catch { /* réglage absent */ }
   let mode = "toujours";
   try { mode = game.settings.get(SYSTEM_ID, "ouvertureWiki"); } catch { /* réglage absent */ }
   if (mode === "jamais") return;
@@ -87,7 +89,7 @@ function ajouterBoutons(app, html) {
 }
 
 export function enregistrerHooksWiki() {
-  Hooks.on("renderActorDirectory", ajouterBoutons);
-  Hooks.on("renderJournalDirectory", ajouterBoutons);
+  // Les boutons « 📖 » des onglets Acteurs et Journaux sont retirés (v0.20.0) : le wiki s'ouvre depuis l'écran d'accueil.
+  void ajouterBoutons;
   Hooks.once("ready", ouvrirAuLancement);
 }

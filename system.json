@@ -21,7 +21,8 @@
     "css/themes-fiche.css",
     "css/dialogues.css",
     "css/cartes-chat.css",
-    "css/outils-gardien.css"
+    "css/outils-gardien.css",
+    "css/ecran-accueil.css"
   ],
   "languages": [
     {

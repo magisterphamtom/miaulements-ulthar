@@ -2,6 +2,17 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Écran d'accueil « tableau d'enquête » (v0.20.0, branche `fonction/ecran-accueil`)
+- Demande de Stéphane : un vrai écran d'accueil de jeu vidéo, à **chaque session**, où l'on agit directement. Style B choisi : un panneau de liège avec des coupures de l'Arkham Advertiser punaisées et reliées par un fil rouge (plus la carte d'Arkham et la photo du Chat en décor). Chaque coupure ouvre une page de journal :
+  - **Mon Chat** : un créateur complet (carrousel des 10 races et pouvoir de race, six modificateurs à poser d'un clic avec calcul en direct de Santé, Folie et Magie, deux pouvoirs innés, portrait, surnom) qui crée vraiment le Chat (même logique que l'assistant : `appliquerCreation` partagé dans `creation.mjs`), puis la page du Chat (attributs, pouvoirs, changer de portrait, ouvrir la fiche). Un joueur sans droit de création passe par le Gardien connecté (socket `creerChat`) ; le Chat lui est attribué comme personnage.
+  - **Le wiki** : lu dans l'écran (entrées, pages, mise en forme « Journal d'Arkham »), onglets joueurs / Gardien pour le Gardien, « Ouvrir le wiki en grand ».
+  - **La mode d'Arkham** : choix du thème, appliqué en direct et gardé.
+  - **Gardien** : « Préparer la partie » (cocher les compendiums à importer, dossiers à leur nom, « déjà dans le monde ») et « Le tableau du Gardien ».
+  - **Entrer à Ulthar** (ou Échap) : l'écran s'efface. Bouton journal dans la barre des jetons et macro « Écran d'accueil » pour le rouvrir.
+- Réglage du monde « Écran d'accueil à chaque session » (activé par défaut) : il remplace l'ouverture automatique du wiki. Les boutons 📖 des onglets Acteurs et Journaux sont retirés. Les visites guidées ne démarrent plus seules (toujours dans « Visites guidées »).
+- Nouveau contrôle automatique de **mise en page** dans l'instance de test (`miseenpage.mjs` : textes qui débordent, boîtes qui se chevauchent) : il a trouvé les boutons écrasés par le style des boutons de Foundry, corrigés.
+- Testé : `s-miaulements-accueil.mjs` (`ETAPE=creation` : 16 vérifications, création réelle d'un Chat ; `ETAPE=reste` : wiki, thème, import, sortie).
+
 ## Visites guidées (v0.20.0, branche `fonction/visite-guidee`)
 - Sur le modèle des visites de Foundry (`foundry.nue.Tour`), deux visites du système, habillées en **parchemin à sceau** (style A choisi par Stéphane : bulle de parchemin bordée de rouge, titre en Cinzel, sceau de cire à la patte, progression en points).
 - **Découvrir les Miaulements d'Ulthar** (joueurs, 11 étapes) : bienvenue, wiki des joueurs, fiche de Chat, menu des thèmes, oreilles de chat, lancer un jet, pastilles, menu ⋮ (assistant de création, pouvoirs temporaires), fenêtre Les Chats, réglages, fin.

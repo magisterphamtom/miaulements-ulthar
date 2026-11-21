@@ -17,13 +17,14 @@ import { enregistrerParametresJetons, brancherJetons } from "./jetons.mjs";
 import { enregistrerParametresEffets, brancherEffets, effetCritique } from "./effets.mjs";
 import { voileDeReve, voileActif, brancherVoile } from "./voile.mjs";
 import { gazette, brancherGazette } from "./gazette.mjs";
-import { enregistrerParametresVisite, enregistrerVisites, lancerPremiereVisite, visite } from "./visite.mjs";
+import { enregistrerParametresVisite, enregistrerVisites, visite } from "./visite.mjs";
+import { EcranAccueil, enregistrerParametresEcran, brancherEcran, ouvrirEcranAuLancement } from "./ecran-accueil.mjs";
 import { FenetrePaquet, enregistrerParametresPaquet, assurerPaquet, brancherPaquet } from "./paquet.mjs";
 
 Hooks.once("init", () => {
   console.log(`${SYSTEM_ID} | initialisation`);
 
-  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer(), suiviCampagne: () => SuiviCampagne.ouvrir(), wiki: ouvrirWiki, tableau: () => TableauGardien.basculer(), rencontre, paquetFolie: () => FenetrePaquet.ouvrir(), effetCritique, voileDeReve, voileActif, gazette, visite };
+  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer(), suiviCampagne: () => SuiviCampagne.ouvrir(), wiki: ouvrirWiki, tableau: () => TableauGardien.basculer(), rencontre, paquetFolie: () => FenetrePaquet.ouvrir(), effetCritique, voileDeReve, voileActif, gazette, visite, accueil: (vue) => EcranAccueil.ouvrir(vue) };
   CONFIG.Actor.dataModels.chat = ChatData;
   CONFIG.Actor.dataModels.pnj = PnjData;
   CONFIG.Item.dataModels.pouvoir = PouvoirData;
@@ -76,6 +77,7 @@ Hooks.once("init", () => {
   enregistrerParametresRencontres();
   enregistrerParametresPaquet();
   enregistrerParametresVisite();
+  enregistrerParametresEcran();
   brancherJournalChat();
   enregistrerParametresJetons();
   brancherJetons();
@@ -112,6 +114,7 @@ Hooks.once("ready", async () => {
   brancherVoile();
   brancherGazette();
   assurerPaquet();
-  await enregistrerVisites();
-  lancerPremiereVisite();
+  await enregistrerVisites(); // visites guidées : relançables depuis « Visites guidées », plus de démarrage automatique
+  brancherEcran();
+  ouvrirEcranAuLancement();
 });

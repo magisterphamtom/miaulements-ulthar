@@ -219,11 +219,20 @@ export async function assistantCreation(actor) {
   if (!resultat || resultat.erreurs.length) return;
 
   const { data, attrs, handicap, choisis } = resultat;
-  const maj = { name: data.surnom.trim(), "system.race": data.race, "system.handicap": handicap };
+  await appliquerCreation(actor, { surnom: data.surnom, race: data.race, pouvoirRace: data.pouvoirRace, handicap, attrs, innes: choisis });
+}
+
+/**
+ * Enregistre une création sur un Chat (assistant de la fiche et créateur de l'écran d'accueil).
+ * attrs : { cle: { base, race, handicap } } ; innes : clés de POUVOIRS_INNES ; pouvoirRace : index du pouvoir de race.
+ */
+export async function appliquerCreation(actor, { surnom, race, pouvoirRace, handicap = "", attrs, innes, img }) {
+  const maj = { name: String(surnom).trim(), "system.race": race, "system.handicap": handicap };
+  if (img) { maj.img = img; maj["prototypeToken.texture.src"] = img; }
   for (const [k, a] of Object.entries(attrs)) {
     maj[`system.attributs.${k}.base`] = a.base;
     maj[`system.attributs.${k}.race`] = a.race;
-    maj[`system.attributs.${k}.handicap`] = a.handicap;
+    maj[`system.attributs.${k}.handicap`] = a.handicap ?? 0;
     maj[`system.attributs.${k}.progres`] = 0;
     maj[`system.attributs.${k}.echecs`] = 0;
   }
@@ -234,8 +243,8 @@ export async function assistantCreation(actor) {
   if (anciens.length) await actor.deleteEmbeddedDocuments("Item", anciens);
   const nouveaux = [
     donneesPouvoir(POUVOIRS_INNES.comprendre_humain, "inne"),
-    ...choisis.map((k) => donneesPouvoir(POUVOIRS_INNES[k], "inne")),
-    donneesPouvoir(POUVOIRS_RACE[data.race][Number(data.pouvoirRace)], "race")
+    ...innes.map((k) => donneesPouvoir(POUVOIRS_INNES[k], "inne")),
+    donneesPouvoir(POUVOIRS_RACE[race][Number(pouvoirRace)], "race")
   ];
   await actor.createEmbeddedDocuments("Item", nouveaux);
 
