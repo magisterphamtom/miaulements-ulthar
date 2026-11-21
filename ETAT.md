@@ -2,6 +2,10 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Vitrine du dépôt (branche `presentation/vitrine-github`)
+- README refait en page de présentation : installation par le manifeste, captures (dans `docs/vitrine/`), fiche, règles, wikis et contenu, outils du Gardien, à la table, crédits (accord de Xavier Laporte) et mention honnête de l'aide de l'IA, résumé en anglais.
+- Pas d'inscription sur foundryvtt.com : la politique IA de Foundry (18 mars 2026) interdit les images et textes préparés générés par IA et le code non maîtrisé ; la distribution passe par GitHub (autorisée hors liste officielle).
+
 ## La Gazette (v0.19.0, branche `fonction/gazette`)
 - Deux styles selon le lieu (proposition C) : **Arkham, années 20** (« The Arkham Advertiser » : titre gothique, filets, manchette, deux colonnes, lettrine, photo sépia) et **parchemin d'Ulthar** (« Le Miaulement d'Ulthar » : cadre rouge, lettrine, sceau de cire à la patte). Le style est proposé d'après la scène affichée (Ulthar, Rêve, Contrée… → Ulthar), le Gardien le change d'un clic.
 - Rédaction (macro « La Gazette (Gardien) », bouton du tableau, `game.miaulementsUlthar.gazette()`) : nom du journal, date, manchette, sous-titre, article (un paragraphe par ligne), image facultative avec sélecteur de fichiers et légende, « Une au hasard » (6 unes originales par style), « Garder pour moi ».
