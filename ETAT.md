@@ -2,6 +2,12 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Effets de critique (v0.19.0, branche `fonction/effets-critiques`)
+- « Coup de patte » (proposition A) : sur une réussite critique, une grande patte dorée tamponne l'écran avec « Réussite critique ! » et le nom du Chat ; sur un échec critique, trois griffures rouges lacèrent l'écran (« Échec critique… »).
+- Vu par tous ceux qui voient le jet (pas sur les jets chuchotés aux autres). Animation CSS de 1,8 s (transformation et opacité seulement, sans filtre), retirée ensuite, une seule à la fois ; rien pour les jets ordinaires.
+- Réglage par joueur « Effets de critique » ; `game.miaulementsUlthar.effetCritique(true|false, nom)` pour le déclencher à la main.
+- Testé : `s-miaulements-visuels.mjs` (étape `critiques`), avec captures.
+
 ## Vies de Chat sur le jeton (v0.19.0, branche `fonction/vies-jeton`)
 - Couronne de petites pattes autour du jeton de chaque Chat (proposition A choisie par Stéphane) : une patte par vie possible, en partant du haut ; les vies perdues s'effacent (22 % d'opacité).
 - Réglage par joueur « Vies de Chat sur les jetons » (activé par défaut). Redessiné seulement quand le nombre de vies ou la taille du jeton change.

@@ -14,12 +14,13 @@ import { TableauGardien, brancherTableau } from "./tableau.mjs";
 import { rencontre, enregistrerParametresRencontres, brancherRencontres } from "./rencontres.mjs";
 import { brancherJournalChat } from "./journal-chat.mjs";
 import { enregistrerParametresJetons, brancherJetons } from "./jetons.mjs";
+import { enregistrerParametresEffets, brancherEffets, effetCritique } from "./effets.mjs";
 import { FenetrePaquet, enregistrerParametresPaquet, assurerPaquet, brancherPaquet } from "./paquet.mjs";
 
 Hooks.once("init", () => {
   console.log(`${SYSTEM_ID} | initialisation`);
 
-  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer(), suiviCampagne: () => SuiviCampagne.ouvrir(), wiki: ouvrirWiki, tableau: () => TableauGardien.basculer(), rencontre, paquetFolie: () => FenetrePaquet.ouvrir() };
+  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer(), suiviCampagne: () => SuiviCampagne.ouvrir(), wiki: ouvrirWiki, tableau: () => TableauGardien.basculer(), rencontre, paquetFolie: () => FenetrePaquet.ouvrir(), effetCritique };
   CONFIG.Actor.dataModels.chat = ChatData;
   CONFIG.Actor.dataModels.pnj = PnjData;
   CONFIG.Item.dataModels.pouvoir = PouvoirData;
@@ -74,6 +75,8 @@ Hooks.once("init", () => {
   brancherJournalChat();
   enregistrerParametresJetons();
   brancherJetons();
+  enregistrerParametresEffets();
+  brancherEffets();
   brancherRencontres();
 
   game.settings.register(SYSTEM_ID, "visionFeline", { scope: "client", config: false, type: Boolean, default: false });
