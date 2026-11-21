@@ -3,7 +3,7 @@
 .mu-tableau .window-content { padding: 8px 12px; display: flex; flex-direction: column; color: var(--mu-texte); }
 .mu-tab { display: flex; flex-direction: column; height: 100%; min-height: 0; gap: 8px; }
 .mu-tab-outils { display: flex; flex-wrap: wrap; gap: 6px; padding-bottom: 8px; border-bottom: 2px solid var(--mu-bord); }
-.mu-tab-outils button { flex: 1 1 120px; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 5px 8px; border-radius: 8px; border: 2px solid var(--mu-bord); background: var(--mu-fond2); color: var(--mu-texte); font-family: var(--mu-onglet-police, inherit); font-size: 13px; }
+.mu-tab-outils button { flex: 1 1 150px; white-space: nowrap; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 5px 8px; border-radius: 8px; border: 2px solid var(--mu-bord); background: var(--mu-fond2); color: var(--mu-texte); font-family: var(--mu-onglet-police, inherit); font-size: 13px; }
 .mu-tab-outils button:hover { border-color: var(--mu-accent); color: var(--mu-accent); }
 .mu-tab-defile { flex: 1; overflow-y: auto; min-height: 0; padding-right: 4px; }
 .mu-tab-bloc { margin-bottom: 12px; }
