@@ -1,16 +1,20 @@
-<div class="mu-suivi-liste">
+<div class="mu-sg">
   {{#each chats}}
-  <div class="mu-suivi-chat">
-    <img src="{{img}}" alt="" data-ouvrir="{{id}}" title="Ouvrir la fiche">
-    <div class="mu-suivi-infos">
-      <strong data-ouvrir="{{id}}">{{nom}}</strong>
-      <div class="mu-pattes" title="Vies de Chat">{{#each pattes}}<i class="fa-solid fa-paw {{#unless vive}}perdue{{/unless}}"></i>{{/each}}</div>
-      <div class="mu-barre pv" title="Santé"><span style="width:{{pvPct}}%"></span><em>Santé {{pv}}/{{pvMax}}</em></div>
-      <div class="mu-barre pm" title="Magie"><span style="width:{{pmPct}}%"></span><em>Magie {{pm}}/{{pmMax}}</em></div>
-      <div class="mu-barre pf {{#if pfBas}}bas{{/if}}" title="Folie"><span style="width:{{pfPct}}%"></span><em>Folie {{pf}}/{{pfMax}}{{#if cartes}} · 🃏 {{cartes}}{{/if}}</em></div>
+  <div class="mu-sg-chat" style="--mu-joueur: {{couleur}}">
+    <img src="{{img}}" alt="" data-ouvrir="{{id}}" data-tooltip="Ouvrir la fiche">
+    <div class="mu-sg-infos">
+      <div class="mu-sg-tete"><strong data-ouvrir="{{id}}">{{nom}}</strong><span class="mu-sg-joueur"><i class="fa-solid fa-circle"></i> {{joueur}}</span></div>
+      <div class="mu-sg-ligne">
+        <span class="mu-sg-pattes" data-tooltip="Vies de Chat">{{#each pattes}}<i class="fa-solid fa-paw {{#unless vive}}perdue{{/unless}}"></i>{{/each}}</span>
+        {{#if cartes}}<span class="mu-sg-cartes" data-tooltip="Cartes Folie en main"><i class="fa-solid fa-layer-group"></i> {{cartes}}</span>{{/if}}
+      </div>
+      <div class="mu-sg-jauge pv {{#if pvBas}}bas{{/if}}" data-tooltip="Santé"><span style="width:{{pvPct}}%"></span><em><i class="fa-solid fa-heart"></i> {{pv}} / {{pvMax}}</em></div>
+      <div class="mu-sg-jauge pm" data-tooltip="Magie"><span style="width:{{pmPct}}%"></span><em><i class="fa-solid fa-wand-magic-sparkles"></i> {{pm}} / {{pmMax}}</em></div>
+      <div class="mu-sg-jauge pf {{#if pfBas}}bas{{/if}}" data-tooltip="Folie"><span style="width:{{pfPct}}%"></span><em><i class="fa-solid fa-brain"></i> {{pf}} / {{pfMax}}</em></div>
     </div>
   </div>
   {{else}}
-  <p class="mu-aide">Aucun Chat de joueur.</p>
+  <p class="mu-sg-vide">Aucun joueur connecté pour l'instant.<br>Les Chats apparaîtront ici à mesure que les joueurs arrivent.</p>
   {{/each}}
+  {{#if absents}}<p class="mu-sg-absents"><i class="fa-solid fa-moon"></i> {{absents}} Chat{{#if (gt absents 1)}}s{{/if}} dont le joueur est absent</p>{{/if}}
 </div>

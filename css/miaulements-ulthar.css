@@ -141,11 +141,6 @@
 .mu-attaque a { cursor: pointer; opacity: 0.7; }
 
 /* Suivi des Chats */
-.mu-suivi .window-content { background: var(--mu-fond); color: var(--mu-texte); padding: 8px; }
-.mu-suivi-chat { display: flex; gap: 10px; align-items: center; background: var(--mu-fond2); border: 1px solid var(--mu-bord); border-radius: 8px; padding: 6px; margin-bottom: 6px; }
-.mu-suivi-chat img { width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--mu-bord); object-fit: cover; cursor: pointer; }
-.mu-suivi-infos { flex: 1; display: flex; flex-direction: column; gap: 3px; }
-.mu-suivi-infos strong { cursor: pointer; color: var(--mu-accent); }
 .mu-pattes i { color: var(--mu-accent); margin-right: 3px; }
 .mu-pattes i.perdue { color: #555; }
 .mu-barre { position: relative; height: 16px; background: #0d0b13; border: 1px solid var(--mu-bord); border-radius: 8px; overflow: hidden; }

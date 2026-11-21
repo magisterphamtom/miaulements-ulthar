@@ -2,6 +2,11 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Fenêtre « Les Chats » refaite (v0.19.2, branche `correction/suivi-des-chats`)
+- Défaut signalé par Stéphane : la fenêtre s'ouvrait sur toute la hauteur de l'écran avec un seul Chat. Cause : elle portait la classe `mu-suivi`, dont la règle (suivi de campagne) impose `height: 100%`. Elle a maintenant sa propre classe (`mu-suivi-groupe`) et une hauteur automatique.
+- N'affiche que les Chats dont le joueur est **connecté** : elle grandit à chaque connexion et se resserre quand un joueur part (mention du nombre de Chats absents). Liseré et pastille à la couleur du joueur, habillage au thème de chaque joueur.
+- Testé : `s-miaulements-suivi-chats.mjs` (141 → 194 → 294 px avec 0, 1, 2 joueurs ; lisibilité dans les 4 thèmes).
+
 ## Pattes du jeton plus visibles (v0.19.1, branche `correction/pattes-jeton-visibles`)
 - Demande de Stéphane : pattes plus grosses et plus marquées. Chaque vie est un médaillon sombre bordé d'or (deux fois plus grand, environ la moitié du rayon du jeton) avec la patte dedans ; une vie perdue passe en médaillon gris, patte pâle. Image de la patte en haute définition.
 

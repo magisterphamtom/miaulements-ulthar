@@ -153,3 +153,24 @@ body .mu-carte.mu-carte-gazette.mu-gazette-ulthar .mu-boutons button { backgroun
 .mu-dialogue .mu-gz-image input { flex: 1; }
 .mu-dialogue .mu-gz-image button, .mu-dialogue .mu-gz-hasard { width: auto; flex: 0 0 auto; background: var(--mu-fond2); color: var(--mu-texte); border: 1px solid var(--mu-bord); border-radius: 6px; }
 .mu-dialogue .mu-gz-form label.mu-gz-case { flex-direction: row; align-items: center; gap: 6px; font-weight: normal; color: var(--mu-texte); }
+
+/* Suivi des Chats (refait en v0.19.2) : hauteur automatique, une ligne par Chat de joueur connecté */
+.mu-suivi-groupe .window-content { padding: 8px 10px; color: var(--mu-texte); max-height: 80vh; overflow-y: auto; }
+.mu-sg-chat { display: flex; gap: 10px; align-items: center; padding: 6px 8px; margin-bottom: 6px; border: 1px solid var(--mu-bord); border-left: 4px solid var(--mu-joueur, var(--mu-accent)); border-radius: 8px; background: color-mix(in srgb, var(--mu-fond2) 85%, transparent); }
+.mu-sg-chat img { flex: 0 0 52px; width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid var(--mu-accent); cursor: pointer; }
+.mu-sg-infos { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.mu-sg-tete { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; }
+.mu-sg-tete strong { color: var(--mu-texte); cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 15px; }
+.mu-sg-joueur { font-size: 11px; color: var(--mu-texte); white-space: nowrap; }
+.mu-sg-joueur i { color: var(--mu-joueur, var(--mu-accent)); font-size: 8px; vertical-align: 1px; }
+.mu-sg-ligne { display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+.mu-sg-pattes i { color: var(--mu-accent); margin-right: 2px; }
+.mu-sg-pattes i.perdue { color: var(--mu-texte); opacity: .3; }
+.mu-sg-cartes { color: var(--mu-texte); font-size: 12px; }
+.mu-sg-jauge { position: relative; height: 16px; border-radius: 8px; background: var(--mu-fond); border: 1px solid var(--mu-bord); overflow: hidden; }
+.mu-sg-jauge span { position: absolute; inset: 0 auto 0 0; opacity: .6; }
+.mu-sg-jauge.pv span { background: #b23a3a; } .mu-sg-jauge.pm span { background: #4a6fc2; } .mu-sg-jauge.pf span { background: #7d4fb0; }
+.mu-sg-jauge.bas { border-color: var(--mu-ko, #c0392b); }
+.mu-sg-jauge em { position: relative; display: block; padding-left: 8px; font-style: normal; font-size: 11px; line-height: 14px; color: var(--mu-texte); text-shadow: 0 0 3px var(--mu-fond), 0 0 3px var(--mu-fond); }
+.mu-sg-vide { text-align: center; font-style: italic; color: var(--mu-texte); opacity: .85; margin: 10px 4px; line-height: 1.5; }
+.mu-sg-absents { margin: 2px 0 0; text-align: center; font-size: 12px; color: var(--mu-texte); opacity: .8; }
