@@ -2,6 +2,9 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Pattes du jeton plus visibles (v0.19.1, branche `correction/pattes-jeton-visibles`)
+- Demande de Stéphane : pattes plus grosses et plus marquées. Chaque vie est un médaillon sombre bordé d'or (deux fois plus grand, environ la moitié du rayon du jeton) avec la patte dedans ; une vie perdue passe en médaillon gris, patte pâle. Image de la patte en haute définition.
+
 ## Vitrine du dépôt (branche `presentation/vitrine-github`)
 - README refait en page de présentation : installation par le manifeste, captures (dans `docs/vitrine/`), fiche, règles, wikis et contenu, outils du Gardien, à la table, crédits (accord de Xavier Laporte) et mention honnête de l'aide de l'IA, résumé en anglais.
 - Pas d'inscription sur foundryvtt.com : la politique IA de Foundry (18 mars 2026) interdit les images et textes préparés générés par IA et le code non maîtrisé ; la distribution passe par GitHub (autorisée hors liste officielle).

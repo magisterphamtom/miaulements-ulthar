@@ -33,16 +33,28 @@ function dessiner(token, forcer = false) {
   c.muCle = cle;
   c.eventMode = "none";
   const rayon = Math.max(token.w, token.h) / 2;
-  const taille = Math.max(12, Math.min(26, rayon * 0.32));
+  const taille = Math.max(22, Math.min(46, rayon * 0.5)); // diamètre du médaillon
+  const ecart = rayon + taille * 0.3;
   for (let i = 0; i < max; i++) {
+    const vive = i < vies;
     const angle = -Math.PI / 2 + (i * 2 * Math.PI) / max; // départ en haut, sens des aiguilles d'une montre
+    const m = new PIXI.Container();
+    m.position.set(token.w / 2 + Math.cos(angle) * ecart, token.h / 2 + Math.sin(angle) * ecart);
+    // Médaillon : fond sombre bordé d'or (vie restante) ou de gris (vie perdue), lisible sur tous les fonds
+    const fond = new PIXI.Graphics();
+    fond.lineStyle(Math.max(2, taille * 0.09), vive ? 0xd9b34a : 0x6b6670, 1);
+    fond.beginFill(vive ? 0x1d1a24 : 0x2a2730, vive ? 0.92 : 0.7);
+    fond.drawCircle(0, 0, taille / 2);
+    fond.endFill();
+    m.addChild(fond);
     const s = new PIXI.Sprite(texture);
     s.anchor.set(0.5);
-    s.width = s.height = taille;
-    s.position.set(token.w / 2 + Math.cos(angle) * (rayon + taille * 0.15), token.h / 2 + Math.sin(angle) * (rayon + taille * 0.15));
+    s.width = s.height = taille * 0.72;
     s.rotation = angle + Math.PI / 2;
-    s.alpha = i < vies ? 1 : 0.22;
-    c.addChild(s);
+    s.alpha = vive ? 1 : 0.28;
+    if (!vive) s.tint = 0x8a8590;
+    m.addChild(s);
+    c.addChild(m);
   }
   token.muVies = c;
   token.addChild(c);
