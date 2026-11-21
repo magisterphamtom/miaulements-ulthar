@@ -10,11 +10,12 @@ import { SuiviGroupe, brancherAmbiance, ajouterBoutons } from "./ambiance.mjs";
 import { enregistrerParametresWiki, enregistrerHooksWiki, ouvrirWiki } from "./wiki.mjs";
 import { enregistrerParametresAccueil, enregistrerHooksAccueil } from "./accueil.mjs";
 import { enregistrerHooksJournal } from "./journal.mjs";
+import { TableauGardien, brancherTableau } from "./tableau.mjs";
 
 Hooks.once("init", () => {
   console.log(`${SYSTEM_ID} | initialisation`);
 
-  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer(), suiviCampagne: () => SuiviCampagne.ouvrir(), wiki: ouvrirWiki };
+  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer(), suiviCampagne: () => SuiviCampagne.ouvrir(), wiki: ouvrirWiki, tableau: () => TableauGardien.basculer() };
   CONFIG.Actor.dataModels.chat = ChatData;
   CONFIG.Actor.dataModels.pnj = PnjData;
   CONFIG.Item.dataModels.pouvoir = PouvoirData;
@@ -89,4 +90,5 @@ Hooks.once("ready", async () => {
   appliquerThemeCorps();
   ecouterSocket();
   brancherAmbiance();
+  brancherTableau();
 });

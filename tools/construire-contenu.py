@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.17.3", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.18.0", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -665,6 +665,8 @@ def construire_macros():
          "game.miaulementsUlthar.suiviGroupe();", "Ouvre la fenêtre qui montre Santé, Magie, Folie et vies de tous les Chats."),
         ("Suivi de campagne (Gardien)", f"systems/{SYS}/assets/icones/suivi-campagne.svg",
          "game.miaulementsUlthar.suiviCampagne();", "Ouvre les fiches de suivi des personnages et de la campagne (aides de jeu du livre des scénarios)."),
+        ("Tableau du Gardien", f"systems/{SYS}/assets/icones/tableau-gardien.svg",
+         "game.miaulementsUlthar.tableau();", "Ouvre ou ferme le tableau de bord du Gardien : Chats, adversaires de la scène, derniers jets et outils."),
         ("Table : événement en ville", "icons/svg/city.svg",
          "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Événements en ville')._id).then(t => t.draw());", "Tire un événement en ville (écran du MJ)."),
         ("Table : réaction humaine", "icons/svg/mystery-man.svg",

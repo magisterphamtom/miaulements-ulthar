@@ -2,6 +2,15 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Tableau du Gardien (v0.18.0, branche `fonction/tableau-de-bord`)
+- Fenêtre réservée au Gardien (bouton chat dans la barre des jetons, macro « Tableau du Gardien », `game.miaulementsUlthar.tableau()`).
+- **Les Chats** des joueurs : Santé, Magie, Folie (jauges), vies, cartes Folie en main, jet de Folie en un clic, clic sur le portrait pour la fiche.
+- **Adversaires sur la scène** (jetons PNJ) : PV −/+ (passent par les dégâts, carte dans le chat), boutons d'attaque, clic sur le portrait pour centrer la vue et sélectionner le jeton, mention « caché ».
+- **Derniers jets** : les 8 derniers jets du chat (heure, Chat, attribut, dé, verdict, couleur selon réussite / critique).
+- **Outils** : Folie du groupe, début d'aventure, fin de scénario, suivi de campagne, wiki du Gardien (et rencontre, Gazette, paquet Folie dès qu'ils existent).
+- Les cartes de jet portent maintenant leurs données (`data-actor`, `data-cle`, `data-brut`, `data-cible`) ; `lireJet(message)` dans `cartes.mjs` les relit.
+- Rafraîchi une fois par salve de changements (300 ms), seulement quand la fenêtre est ouverte. Testé : `s-miaulements-outils.mjs` (13 vérifications, lisibilité dans les 4 thèmes).
+
 ## Menu des thèmes lisible (v0.17.3, branche `correction/menu-themes-lisible`)
 - La liste déroulée du menu des thèmes (barre de titre de la fiche) était crème sur blanc sous Windows : les options ont maintenant un fond sombre et un texte clair.
 - Contrôle automatique de lisibilité (`lisibilite.mjs` de l'instance de test) : il a trouvé les titres de rubriques de la fiche PNJ invisibles (« Armes connues », « Signes particuliers », « Témoignages », crème sur papier) et le texte indicatif « Apparence du Chat » blanc sur blanc en thème Nuit. Corrigés.

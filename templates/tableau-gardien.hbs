@@ -1,0 +1,53 @@
+<div class="mu-tab">
+  <div class="mu-tab-outils">
+    {{#each outils}}<button type="button" data-action="outil" data-outil="{{cle}}" data-tooltip="{{label}}"><i class="{{icone}}"></i><span>{{label}}</span></button>{{/each}}
+  </div>
+  <div class="mu-tab-defile">
+    <section class="mu-tab-bloc">
+      <h3 class="mu-tab-titre"><i class="fa-solid fa-paw"></i> Les Chats</h3>
+      {{#each chats}}
+      <div class="mu-tab-chat" data-uuid="{{uuid}}">
+        <img src="{{img}}" alt="" data-action="ouvrir" data-tooltip="Ouvrir la fiche">
+        <div class="mu-tab-ident"><strong data-action="ouvrir">{{nom}}</strong>{{#if joueur}}<small>{{joueur}}</small>{{/if}}</div>
+        <div class="mu-tab-jauges">
+          <div class="mu-tab-jauge pv {{#if pvBas}}bas{{/if}}" data-tooltip="Santé"><span style="width:{{pvPct}}%"></span><em><i class="fa-solid fa-heart"></i> {{pv}}/{{pvMax}}</em></div>
+          <div class="mu-tab-jauge pm" data-tooltip="Magie"><span style="width:{{pmPct}}%"></span><em><i class="fa-solid fa-wand-magic-sparkles"></i> {{pm}}/{{pmMax}}</em></div>
+          <div class="mu-tab-jauge pf {{#if pfBas}}bas{{/if}}" data-tooltip="Folie"><span style="width:{{pfPct}}%"></span><em><i class="fa-solid fa-brain"></i> {{pf}}/{{pfMax}}</em></div>
+        </div>
+        <div class="mu-tab-vies" data-tooltip="Vies de Chat"><i class="fa-solid fa-paw"></i> {{vies}}/{{viesMax}}</div>
+        <div class="mu-tab-vies" data-tooltip="Cartes Folie en main"><i class="fa-solid fa-layer-group"></i> {{cartes}}</div>
+        <button type="button" class="mu-tab-mini" data-action="folie" data-tooltip="Jet de Folie"><i class="fa-solid fa-brain"></i></button>
+      </div>
+      {{else}}<p class="mu-tab-vide">Aucun Chat de joueur dans ce monde.</p>{{/each}}
+    </section>
+
+    <section class="mu-tab-bloc">
+      <h3 class="mu-tab-titre"><i class="fa-solid fa-skull"></i> Adversaires sur la scène <small>{{scene}}</small></h3>
+      {{#each adversaires}}
+      <div class="mu-tab-adv {{#if hors}}hors{{/if}}" data-uuid="{{uuid}}" data-token="{{tokenId}}">
+        <img src="{{img}}" alt="" data-action="cibler" data-tooltip="Centrer la vue sur le jeton">
+        <div class="mu-tab-ident"><strong data-action="ouvrir">{{nom}}</strong>{{#if cache}}<small><i class="fa-solid fa-eye-slash"></i> caché</small>{{/if}}</div>
+        <div class="mu-tab-pv">
+          <button type="button" class="mu-tab-mini" data-action="pv" data-delta="-1" aria-label="Retirer un PV">−</button>
+          <div class="mu-tab-jauge pv"><span style="width:{{pvPct}}%"></span><em>{{pv}}/{{pvMax}} PV</em></div>
+          <button type="button" class="mu-tab-mini" data-action="pv" data-delta="1" aria-label="Rendre un PV">+</button>
+        </div>
+        <div class="mu-tab-attaques">{{#each attaques}}<button type="button" data-action="attaque" data-index="{{index}}" data-tooltip="{{degats}}"><i class="fa-solid fa-dice-d20"></i> {{nom}} {{pct}} %</button>{{/each}}</div>
+      </div>
+      {{else}}<p class="mu-tab-vide">Aucun adversaire sur cette scène. Glissez une fiche du bestiaire ou lancez une rencontre.</p>{{/each}}
+    </section>
+
+    <section class="mu-tab-bloc">
+      <h3 class="mu-tab-titre"><i class="fa-solid fa-dice"></i> Derniers jets</h3>
+      {{#each jets}}
+      <div class="mu-tab-jet {{etat}}">
+        <span class="mu-tab-heure">{{heure}}</span>
+        <strong>{{nom}}</strong>
+        <span class="mu-tab-quoi">{{quoi}}</span>
+        <span class="mu-tab-de">{{brut}} / {{cible}}</span>
+        <span class="mu-tab-verdict">{{verdict}}</span>
+      </div>
+      {{else}}<p class="mu-tab-vide">Aucun jet pour l'instant.</p>{{/each}}
+    </section>
+  </div>
+</div>

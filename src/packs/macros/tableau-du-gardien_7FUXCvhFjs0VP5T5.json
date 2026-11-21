@@ -1,0 +1,23 @@
+{
+ "_id": "7FUXCvhFjs0VP5T5",
+ "name": "Tableau du Gardien",
+ "type": "script",
+ "author": null,
+ "img": "systems/miaulements-ulthar/assets/icones/tableau-gardien.svg",
+ "scope": "global",
+ "command": "game.miaulementsUlthar.tableau();",
+ "folder": null,
+ "sort": 500000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.18.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!macros!7FUXCvhFjs0VP5T5"
+}

@@ -43,11 +43,40 @@ export function carteJet(o) {
   const crit = o.critReussite ? " de façon spectaculaire" : o.critEchec ? " lamentablement" : "";
   const phrase = `${nom} ${o.reussite ? bien : mal}${crit}${o.reussite ? " !" : "…"}`;
   const classes = ["mu-carte", "mu-carte-jet", o.reussite ? "reussite" : "echec", o.critReussite ? "critique" : "", o.critEchec ? "critique" : "", o.classe ?? ""].filter(Boolean).join(" ");
-  return `<div class="${classes}">
+  const donnees = `data-actor="${esc(o.actor?.uuid ?? "")}" data-cle="${esc(o.cle ?? "")}" data-brut="${o.brut}" data-cible="${o.cible}"`;
+  return `<div class="${classes}" ${donnees}>
     <div class="mu-c-oreilles"></div>
     <header><img class="mu-c-portrait" src="${esc(img)}" alt=""><span class="mu-c-ident"><span class="mu-c-nom">${esc(nom)}</span><span class="mu-c-attr">${esc(o.quoi)} · ${o.cible} %</span></span></header>
     <p class="mu-c-phrase">${esc(phrase)}</p>
     <div class="mu-c-de"><b>${o.brut}</b><small>sur ${o.cible}</small></div>
     <p class="mu-verdict">${esc(o.verdict)}</p>
     <p class="mu-detail">${o.detail ?? ""}</p>${o.notes ?? ""}${o.extra ?? ""}</div>`;
+}
+
+/**
+ * Relit une carte de jet déjà envoyée dans le chat (tableau du Gardien, journal du Chat, effets de critique).
+ * Renvoie null si le message n'est pas une carte de jet.
+ */
+export function lireJet(message) {
+  const html = message?.content ?? "";
+  if (!html.includes("mu-carte-jet")) return null;
+  const el = new DOMParser().parseFromString(html, "text/html").querySelector(".mu-carte-jet");
+  if (!el) return null;
+  const t = (s) => el.querySelector(s)?.textContent.trim() ?? "";
+  const c = el.classList;
+  return {
+    actorUuid: el.dataset.actor || null,
+    cle: el.dataset.cle || "",
+    nom: t(".mu-c-nom"),
+    quoi: t(".mu-c-attr").replace(/\s*·.*$/, ""),
+    brut: Number(el.dataset.brut ?? t(".mu-c-de b")),
+    cible: Number(el.dataset.cible ?? 0),
+    verdict: t(".mu-verdict"),
+    reussite: c.contains("reussite"),
+    critique: c.contains("critique"),
+    critReussite: c.contains("critique") && c.contains("reussite"),
+    critEchec: c.contains("critique") && c.contains("echec"),
+    img: el.querySelector(".mu-c-portrait")?.getAttribute("src") ?? "",
+    date: message.timestamp
+  };
 }

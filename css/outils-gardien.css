@@ -1,0 +1,38 @@
+/* Outils du Gardien (v0.18.0) : tableau de bord, rencontres, paquet Folie, journal du Chat.
+   Toutes les couleurs viennent des variables de thème --mu-* (dialogues.css) ; aucune couleur héritée du thème sombre de Foundry. */
+.mu-tableau .window-content { padding: 8px 12px; display: flex; flex-direction: column; color: var(--mu-texte); }
+.mu-tab { display: flex; flex-direction: column; height: 100%; min-height: 0; gap: 8px; }
+.mu-tab-outils { display: flex; flex-wrap: wrap; gap: 6px; padding-bottom: 8px; border-bottom: 2px solid var(--mu-bord); }
+.mu-tab-outils button { flex: 1 1 120px; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 5px 8px; border-radius: 8px; border: 2px solid var(--mu-bord); background: var(--mu-fond2); color: var(--mu-texte); font-family: var(--mu-onglet-police, inherit); font-size: 13px; }
+.mu-tab-outils button:hover { border-color: var(--mu-accent); color: var(--mu-accent); }
+.mu-tab-defile { flex: 1; overflow-y: auto; min-height: 0; padding-right: 4px; }
+.mu-tab-bloc { margin-bottom: 12px; }
+.mu-tab-titre { color: var(--mu-accent); font-family: var(--mu-titre, inherit); font-size: 16px; margin: 4px 0 6px; border-bottom: 1px solid var(--mu-bord); padding-bottom: 2px; }
+.mu-tab-titre small { color: var(--mu-texte); font-size: 12px; font-weight: normal; font-style: italic; margin-left: 6px; }
+.mu-tab-chat, .mu-tab-adv { display: flex; align-items: center; gap: 8px; padding: 5px 6px; margin-bottom: 4px; border: 1px solid var(--mu-bord); border-radius: 8px; background: color-mix(in srgb, var(--mu-fond2) 85%, transparent); }
+.mu-tab-chat img, .mu-tab-adv img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 2px solid var(--mu-accent); cursor: pointer; flex: 0 0 auto; }
+.mu-tab-ident { flex: 0 0 120px; display: flex; flex-direction: column; min-width: 0; }
+.mu-tab-ident strong { color: var(--mu-texte); cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mu-tab-ident small { color: var(--mu-texte); opacity: .85; font-size: 11px; }
+.mu-tab-jauges { flex: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; }
+.mu-tab-jauge { position: relative; height: 20px; border-radius: 10px; background: var(--mu-fond); border: 1px solid var(--mu-bord); overflow: hidden; flex: 1; }
+.mu-tab-jauge span { position: absolute; inset: 0 auto 0 0; background: var(--mu-accent); opacity: .55; }
+.mu-tab-jauge.pv span { background: #b23a3a; } .mu-tab-jauge.pm span { background: #4a6fc2; } .mu-tab-jauge.pf span { background: #7d4fb0; }
+.mu-tab-jauge.bas { border-color: var(--mu-ko, #c0392b); }
+.mu-tab-jauge em { position: relative; display: block; text-align: center; font-style: normal; font-size: 12px; line-height: 18px; color: var(--mu-texte); text-shadow: 0 0 3px var(--mu-fond), 0 0 3px var(--mu-fond); }
+.mu-tab-vies { flex: 0 0 auto; font-size: 12px; color: var(--mu-texte); white-space: nowrap; }
+.mu-tab-mini { flex: 0 0 26px; width: 26px; height: 26px; padding: 0; line-height: 1; border-radius: 6px; border: 1px solid var(--mu-bord); background: var(--mu-fond); color: var(--mu-texte); }
+.mu-tab-mini:hover { border-color: var(--mu-accent); color: var(--mu-accent); }
+.mu-tab-adv.hors { opacity: .55; }
+.mu-tab-pv { flex: 0 0 170px; display: flex; align-items: center; gap: 4px; }
+.mu-tab-attaques { flex: 1; display: flex; flex-wrap: wrap; gap: 4px; }
+.mu-tab-attaques button { padding: 2px 8px; font-size: 12px; border-radius: 6px; border: 1px solid var(--mu-bord); background: var(--mu-fond); color: var(--mu-texte); width: auto; }
+.mu-tab-attaques button:hover { border-color: var(--mu-accent); }
+.mu-tab-jet { display: grid; grid-template-columns: 44px 120px minmax(0, 1fr) 70px 150px; gap: 6px; align-items: center; padding: 3px 6px; border-left: 4px solid var(--mu-bord); margin-bottom: 3px; font-size: 13px; color: var(--mu-texte); background: color-mix(in srgb, var(--mu-fond2) 70%, transparent); }
+.mu-tab-jet strong { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mu-tab-jet .mu-tab-heure { opacity: .8; font-size: 11px; }
+.mu-tab-jet .mu-tab-de { text-align: right; font-variant-numeric: tabular-nums; }
+.mu-tab-jet.reussite { border-left-color: #3f8f4f; } .mu-tab-jet.echec { border-left-color: #9a3b3b; }
+.mu-tab-jet.crit-reussite { border-left-color: #d9b45a; } .mu-tab-jet.crit-reussite .mu-tab-verdict { color: var(--mu-accent); font-weight: bold; }
+.mu-tab-jet.crit-echec { border-left-color: #e0413a; } .mu-tab-jet.crit-echec .mu-tab-verdict { font-weight: bold; }
+.mu-tab-vide { text-align: center; font-style: italic; color: var(--mu-texte); opacity: .8; margin: 8px 0; }
