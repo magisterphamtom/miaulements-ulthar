@@ -2,6 +2,9 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Menu des thèmes lisible (v0.17.3, branche `correction/menu-themes-lisible`)
+- La liste déroulée du menu des thèmes (barre de titre de la fiche) était crème sur blanc sous Windows : les options ont maintenant un fond sombre et un texte clair.
+
 ## Scènes au format Foundry v14 (v0.17.2, branche `correction/scenes-v14`)
 - Trouvé par les tests automatiques : en v14, le fond d'une scène est porté par un **niveau** (`Scene.levels`) ; l'ancien champ `background` est ignoré, si bien que la scène d'accueil et les 4 cartes s'importaient **sans image**. Les scènes du compendium ont maintenant un niveau « Fond » avec l'image (`niveau_scene()` dans `construire-contenu.py`).
 - La scène d'accueil déjà importée dans un monde est réparée automatiquement au lancement (si elle n'a pas de niveau, elle reçoit celui du compendium).
