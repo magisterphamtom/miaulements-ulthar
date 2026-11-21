@@ -1,0 +1,12 @@
+<article class="mu-gz">
+  <header class="mu-gz-tete">
+    <div class="mu-gz-filet"><span>{{date}}</span><span>{{prix}}</span></div>
+    <h1 class="mu-gz-journal">{{journal}}</h1>
+    <div class="mu-gz-filet bas"><span>Édition spéciale</span><span>Toutes les nouvelles qui méritent d'être miaulées</span></div>
+  </header>
+  <h2 class="mu-gz-manchette">{{manchette}}</h2>
+  {{#if sousTitre}}<p class="mu-gz-sous">{{sousTitre}}</p>{{/if}}
+  {{#if image}}<figure class="mu-gz-figure"><img src="{{image}}" alt="">{{#if legende}}<figcaption>{{legende}}</figcaption>{{/if}}</figure>{{/if}}
+  <div class="mu-gz-article">{{#each paragraphes}}<p>{{this}}</p>{{/each}}</div>
+  <footer class="mu-gz-pied"><span class="mu-gz-sceau"><i class="fa-solid fa-paw"></i></span></footer>
+</article>

@@ -2,6 +2,13 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## La Gazette (v0.19.0, branche `fonction/gazette`)
+- Deux styles selon le lieu (proposition C) : **Arkham, années 20** (« The Arkham Advertiser » : titre gothique, filets, manchette, deux colonnes, lettrine, photo sépia) et **parchemin d'Ulthar** (« Le Miaulement d'Ulthar » : cadre rouge, lettrine, sceau de cire à la patte). Le style est proposé d'après la scène affichée (Ulthar, Rêve, Contrée… → Ulthar), le Gardien le change d'un clic.
+- Rédaction (macro « La Gazette (Gardien) », bouton du tableau, `game.miaulementsUlthar.gazette()`) : nom du journal, date, manchette, sous-titre, article (un paragraphe par ligne), image facultative avec sélecteur de fichiers et légende, « Une au hasard » (6 unes originales par style), « Garder pour moi ».
+- Publier : carte dans le chat aux couleurs du journal (« Lire la Gazette » la rouvre à tout moment) et fenêtre ouverte chez toute la table.
+- Testé : `s-miaulements-visuels.mjs` (étape `gazette`), avec captures et lisibilité (rédaction, deux journaux, cartes dans le chat).
+- L'outil de contrôle de lisibilité lit maintenant aussi les couleurs calculées au format `color(srgb …)` (fausse alerte sur les textes indicatifs).
+
 ## Voile de rêve (v0.19.0, branche `fonction/voile-de-reve`)
 - « Cadre de lune » (proposition B) : pendant une bulle onirique, le centre de la scène reste net et les bords passent en nuit bleu-violet, avec une lune en haut et une ligne de vagues en bas.
 - Posé tout seul à l'entrée dans la bulle (après l'objectif et la scène initiale) et retiré à sa fin, chez toute la table (socket). Le Gardien peut l'allumer ou l'éteindre à la main : bouton lune dans la barre des jetons, ou `game.miaulementsUlthar.voileDeReve(true|false)`.

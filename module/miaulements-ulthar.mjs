@@ -16,12 +16,13 @@ import { brancherJournalChat } from "./journal-chat.mjs";
 import { enregistrerParametresJetons, brancherJetons } from "./jetons.mjs";
 import { enregistrerParametresEffets, brancherEffets, effetCritique } from "./effets.mjs";
 import { voileDeReve, voileActif, brancherVoile } from "./voile.mjs";
+import { gazette, brancherGazette } from "./gazette.mjs";
 import { FenetrePaquet, enregistrerParametresPaquet, assurerPaquet, brancherPaquet } from "./paquet.mjs";
 
 Hooks.once("init", () => {
   console.log(`${SYSTEM_ID} | initialisation`);
 
-  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer(), suiviCampagne: () => SuiviCampagne.ouvrir(), wiki: ouvrirWiki, tableau: () => TableauGardien.basculer(), rencontre, paquetFolie: () => FenetrePaquet.ouvrir(), effetCritique, voileDeReve, voileActif };
+  game.miaulementsUlthar = { ...api, suiviGroupe: () => SuiviGroupe.basculer(), suiviCampagne: () => SuiviCampagne.ouvrir(), wiki: ouvrirWiki, tableau: () => TableauGardien.basculer(), rencontre, paquetFolie: () => FenetrePaquet.ouvrir(), effetCritique, voileDeReve, voileActif, gazette };
   CONFIG.Actor.dataModels.chat = ChatData;
   CONFIG.Actor.dataModels.pnj = PnjData;
   CONFIG.Item.dataModels.pouvoir = PouvoirData;
@@ -107,5 +108,6 @@ Hooks.once("ready", async () => {
   brancherTableau();
   brancherPaquet();
   brancherVoile();
+  brancherGazette();
   assurerPaquet();
 });

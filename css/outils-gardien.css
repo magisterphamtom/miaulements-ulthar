@@ -97,3 +97,59 @@
 #mu-voile-reve .mu-voile-lune { position: absolute; top: 4vh; right: 22vw; width: 9vh; height: 9vh; border: none; opacity: .9; }
 #mu-voile-reve .mu-voile-vagues { position: absolute; left: 0; right: 0; bottom: 8vh; width: 100%; height: 34px; }
 #mu-voile-reve .mu-voile-vagues path { fill: none; stroke: rgba(154, 134, 216, .65); stroke-width: 2; }
+
+/* La Gazette (v0.19.0) — couleurs fixes (papier), indépendantes du thème de Foundry */
+.mu-gazette-fenetre .window-content { padding: 0; background: #1b1814; }
+.mu-gz { margin: 10px; padding: 18px 24px 22px; overflow-y: auto; max-height: 82vh; box-sizing: border-box; }
+.mu-gz p { margin: 0 0 .7em; }
+.mu-gz-filet { display: flex; justify-content: space-between; gap: 10px; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; padding: 3px 0; }
+.mu-gz-journal { margin: 4px 0; text-align: center; line-height: 1; border: none; }
+.mu-gz-manchette { margin: 12px 0 4px; text-align: center; line-height: 1.1; border: none; }
+.mu-gz-sous { text-align: center; font-style: italic; margin-bottom: 12px !important; }
+.mu-gz-figure { margin: 0 auto 12px; text-align: center; }
+.mu-gz-figure img { max-width: 100%; max-height: 280px; border: none; }
+.mu-gz-figure figcaption { font-size: 12px; font-style: italic; margin-top: 3px; }
+.mu-gz-article { text-align: justify; hyphens: auto; }
+.mu-gz-article p:first-child::first-letter { float: left; font-size: 3.2em; line-height: .85; padding: 4px 6px 0 0; }
+.mu-gz-pied { display: flex; justify-content: center; margin-top: 10px; }
+/* Arkham, années 20 */
+.mu-gazette-arkham .mu-gz { background: #ece3cc; color: #1c1a17; font-family: 'Old Standard TT', Georgia, serif; font-size: 15px; box-shadow: 0 0 0 1px #8a7f66; }
+.mu-gazette-arkham .mu-gz-filet { border-top: 1px solid #1c1a17; border-bottom: 1px solid #1c1a17; color: #1c1a17; }
+.mu-gazette-arkham .mu-gz-filet.bas { border-top: 3px double #1c1a17; border-bottom: 3px double #1c1a17; }
+.mu-gazette-arkham .mu-gz-journal { font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 600; font-size: 52px; color: #1c1a17; }
+.mu-gazette-arkham .mu-gz-manchette { font-family: 'Playfair Display SC', Georgia, serif; font-weight: 700; font-size: 30px; color: #1c1a17; }
+.mu-gazette-arkham .mu-gz-sous { color: #2e2a24; }
+.mu-gazette-arkham .mu-gz-figure img { filter: grayscale(1) sepia(.45) contrast(1.05); box-shadow: 0 0 0 1px #1c1a17; }
+.mu-gazette-arkham .mu-gz-figure figcaption { color: #2e2a24; }
+.mu-gazette-arkham .mu-gz-article { columns: 2; column-gap: 22px; column-rule: 1px solid #8a7f66; }
+.mu-gazette-arkham .mu-gz-article p:first-child::first-letter { font-family: 'Playfair Display SC', Georgia, serif; color: #1c1a17; }
+.mu-gazette-arkham .mu-gz-sceau { font-size: 14px; color: #5a5245; border-top: 1px solid #1c1a17; padding-top: 4px; width: 100%; text-align: center; }
+/* Ulthar, parchemin du crieur */
+.mu-gazette-ulthar .mu-gz { background: #dcc28e; color: #3a2a1a; font-family: 'IM Fell English', Georgia, serif; font-size: 16px; box-shadow: inset 0 0 0 3px #7a1f2b, inset 0 0 0 7px #dcc28e, inset 0 0 0 8px #7a1f2b; }
+.mu-gazette-ulthar .mu-gz-filet { color: #5a1520; justify-content: center; gap: 24px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 13px; }
+.mu-gazette-ulthar .mu-gz-journal { font-family: 'Cinzel Decorative', Georgia, serif; font-weight: 700; font-size: 38px; color: #5a1520; }
+.mu-gazette-ulthar .mu-gz-manchette { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 30px; color: #3a2a1a; }
+.mu-gazette-ulthar .mu-gz-sous { color: #4a3420; }
+.mu-gazette-ulthar .mu-gz-figure img { border-radius: 4px; box-shadow: 0 0 0 2px #7a1f2b; }
+.mu-gazette-ulthar .mu-gz-figure figcaption { color: #4a3420; }
+.mu-gazette-ulthar .mu-gz-article p:first-child::first-letter { font-family: 'Cinzel Decorative', Georgia, serif; color: #7a1f2b; }
+.mu-gazette-ulthar .mu-gz-sceau { width: 54px; height: 54px; border-radius: 50%; background: #7a1f2b; color: #e8c9a0; display: flex; align-items: center; justify-content: center; font-size: 24px; box-shadow: 0 0 0 4px #9a2a38; }
+/* Carte dans le chat */
+.mu-carte.mu-carte-gazette { text-align: center; padding: 8px 10px; }
+body .mu-carte.mu-carte-gazette.mu-gazette-arkham { background: #ece3cc; color: #1c1a17; border: 1px solid #1c1a17; border-radius: 0; font-family: 'Old Standard TT', Georgia, serif; }
+body .mu-carte.mu-carte-gazette.mu-gazette-arkham .mu-gz-mini-titre { font-family: 'Grenze Gotisch', Georgia, serif; font-size: 22px; border-bottom: 3px double #1c1a17; }
+body .mu-carte.mu-carte-gazette.mu-gazette-arkham .mu-gz-mini-une { font-family: 'Playfair Display SC', Georgia, serif; font-weight: 700; margin: 6px 0; color: #1c1a17; }
+body .mu-carte.mu-carte-gazette.mu-gazette-ulthar { background: #dcc28e; color: #3a2a1a; border: 2px solid #7a1f2b; font-family: 'IM Fell English', Georgia, serif; }
+body .mu-carte.mu-carte-gazette.mu-gazette-ulthar .mu-gz-mini-titre { font-family: 'Cinzel Decorative', Georgia, serif; font-size: 17px; color: #5a1520; }
+body .mu-carte.mu-carte-gazette.mu-gazette-ulthar .mu-gz-mini-une { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 17px; margin: 6px 0; color: #3a2a1a; }
+body .mu-carte.mu-carte-gazette.mu-gazette-arkham .mu-boutons button { background: #1c1a17; color: #ece3cc; border-color: #1c1a17; }
+body .mu-carte.mu-carte-gazette.mu-gazette-ulthar .mu-boutons button { background: #7a1f2b; color: #f3e3c4; border-color: #5a1520; }
+/* Formulaire de rédaction */
+.mu-dialogue .mu-gz-form { display: flex; flex-direction: column; gap: 6px; }
+.mu-dialogue .mu-gz-form label { display: flex; flex-direction: column; gap: 2px; font-size: 13px; font-weight: bold; color: var(--mu-accent); }
+.mu-dialogue .mu-gz-form input[type=text], .mu-dialogue .mu-gz-form textarea { background: var(--mu-fond); color: var(--mu-texte); border: 1px solid var(--mu-bord); border-radius: 6px; padding: 3px 6px; font-weight: normal; font-size: 14px; }
+.mu-dialogue .mu-gz-form ::placeholder { color: var(--mu-texte); opacity: .7; }
+.mu-dialogue .mu-gz-image { display: flex; gap: 4px; }
+.mu-dialogue .mu-gz-image input { flex: 1; }
+.mu-dialogue .mu-gz-image button, .mu-dialogue .mu-gz-hasard { width: auto; flex: 0 0 auto; background: var(--mu-fond2); color: var(--mu-texte); border: 1px solid var(--mu-bord); border-radius: 6px; }
+.mu-dialogue .mu-gz-form label.mu-gz-case { flex-direction: row; align-items: center; gap: 6px; font-weight: normal; color: var(--mu-texte); }

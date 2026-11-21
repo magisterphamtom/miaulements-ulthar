@@ -671,6 +671,8 @@ def construire_macros():
          "game.miaulementsUlthar.rencontre();", "Tire un adversaire du bestiaire, une situation et une complication selon le lieu et le danger choisis."),
         ("Paquet Folie (Gardien)", f"systems/{SYS}/assets/cartes-folie/dos.svg",
          "game.miaulementsUlthar.paquetFolie();", "Ouvre le paquet de cartes Folie : cartes restantes, défausse, main de chaque Chat, remélanger."),
+        ("La Gazette (Gardien)", "icons/svg/book.svg",
+         "game.miaulementsUlthar.gazette();", "Rédige ou tire au hasard une une de journal (Arkham années 20 ou parchemin d'Ulthar, selon le lieu) et la montre à toute la table."),
         ("Table : événement en ville", "icons/svg/city.svg",
          "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Événements en ville')._id).then(t => t.draw());", "Tire un événement en ville (écran du MJ)."),
         ("Table : réaction humaine", "icons/svg/mystery-man.svg",
