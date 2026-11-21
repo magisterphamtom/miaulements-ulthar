@@ -1,0 +1,23 @@
+{
+ "_id": "mQPIL7rC7ygggnab",
+ "name": "Paquet Folie (Gardien)",
+ "type": "script",
+ "author": null,
+ "img": "systems/miaulements-ulthar/assets/cartes-folie/dos.svg",
+ "scope": "global",
+ "command": "game.miaulementsUlthar.paquetFolie();",
+ "folder": null,
+ "sort": 700000,
+ "ownership": {
+  "default": 0
+ },
+ "flags": {},
+ "_stats": {
+  "createdTime": 1762100000000,
+  "modifiedTime": 1762100000000,
+  "systemId": "miaulements-ulthar",
+  "systemVersion": "0.18.0",
+  "coreVersion": "14.368"
+ },
+ "_key": "!macros!mQPIL7rC7ygggnab"
+}

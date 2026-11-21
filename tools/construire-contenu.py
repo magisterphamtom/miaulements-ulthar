@@ -669,6 +669,8 @@ def construire_macros():
          "game.miaulementsUlthar.tableau();", "Ouvre ou ferme le tableau de bord du Gardien : Chats, adversaires de la scène, derniers jets et outils."),
         ("Générateur de rencontres (Gardien)", "icons/svg/combat.svg",
          "game.miaulementsUlthar.rencontre();", "Tire un adversaire du bestiaire, une situation et une complication selon le lieu et le danger choisis."),
+        ("Paquet Folie (Gardien)", f"systems/{SYS}/assets/cartes-folie/dos.svg",
+         "game.miaulementsUlthar.paquetFolie();", "Ouvre le paquet de cartes Folie : cartes restantes, défausse, main de chaque Chat, remélanger."),
         ("Table : événement en ville", "icons/svg/city.svg",
          "game.packs.get('miaulements-ulthar.tables').getDocument(game.packs.get('miaulements-ulthar.tables').index.getName('Événements en ville')._id).then(t => t.draw());", "Tire un événement en ville (écran du MJ)."),
         ("Table : réaction humaine", "icons/svg/mystery-man.svg",

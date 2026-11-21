@@ -2,6 +2,13 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Paquet de cartes Folie (v0.18.0, branche `fonction/paquet-folie`)
+- Au lancement, le Gardien crée (une fois) un vrai paquet Foundry « **Paquet Folie** » (les 20 actions de Folie, face et dos illustrés) et sa « **Défausse Folie** », ouverts aux joueurs pour qu'ils puissent piocher.
+- Un jet de Folie raté **pioche dans le paquet** (vers la défausse) : plus de doublon tant que le paquet n'est pas vide ; vide, il est **remélangé tout seul** (mention sur la carte). « Garder la carte » met toujours la carte dans la main du Chat (fiche).
+- Fenêtre du Gardien (macro « Paquet Folie (Gardien) », bouton du tableau, `game.miaulementsUlthar.paquetFolie()`) : cartes restantes et défaussées (clic = ouvrir la pile Foundry), dernière carte piochée, main de chaque Chat, « Tout remélanger ».
+- Réglage du système « Paquet de cartes Folie » (activé par défaut) ; désactivé, le tirage au hasard d'avant revient.
+- Testé : `s-miaulements-paquet.mjs` (14 vérifications). À essayer à la table : la pioche depuis le compte d'un joueur.
+
 ## Générateur de rencontres (v0.18.0, branche `fonction/rencontres`)
 - Gardien seulement : macro « Générateur de rencontres (Gardien) », bouton Rencontre du tableau, `game.miaulementsUlthar.rencontre()`.
 - Fenêtre en pastilles : **lieu** (ville éveillée, campagne, souterrains, Ulthar, Contrée du Rêve sauvage) et **danger** (faible ≤ 15 PV, sérieux 16–45, terrible > 45, au hasard). Le dernier choix est retenu.

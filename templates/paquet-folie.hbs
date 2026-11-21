@@ -1,0 +1,22 @@
+<div class="mu-paquet-corps">
+  {{#unless actif}}<p class="mu-tab-vide">Le paquet est désactivé dans les réglages du système : les cartes sont tirées au hasard.</p>{{/unless}}
+  <div class="mu-paquet-piles">
+    <div class="mu-paquet-pile" data-action="voirPaquet" data-tooltip="Ouvrir le paquet">
+      <img src="{{dos}}" alt=""><b>{{restantes}}</b><span>dans le paquet</span><small>sur {{total}}</small>
+    </div>
+    <div class="mu-paquet-pile" data-action="voirDefausse" data-tooltip="Ouvrir la défausse">
+      <img src="{{face}}" alt=""><b>{{defausse}}</b><span>défaussées</span>
+    </div>
+  </div>
+  {{#if derniere}}<p class="mu-paquet-derniere"><b>Dernière carte piochée :</b> {{derniere}}</p>{{/if}}
+  <h3 class="mu-tab-titre"><i class="fa-solid fa-hand"></i> Les mains des Chats</h3>
+  <div class="mu-paquet-mains">
+    {{#each mains}}
+    <div class="mu-paquet-main" data-uuid="{{uuid}}">
+      <img src="{{img}}" alt="" data-action="ouvrir" data-tooltip="Ouvrir la fiche"><strong data-action="ouvrir">{{nom}}</strong>
+      {{#if cartes.length}}<ul>{{#each cartes}}<li>{{this}}</li>{{/each}}</ul>{{else}}<em>aucune carte en main</em>{{/if}}
+    </div>
+    {{else}}<p class="mu-tab-vide">Aucun Chat de joueur.</p>{{/each}}
+  </div>
+  <div class="mu-suivi-boutons"><button type="button" data-action="remelanger"><i class="fa-solid fa-shuffle"></i> Tout remélanger</button></div>
+</div>

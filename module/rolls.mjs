@@ -13,6 +13,7 @@ export const esc = (texte) => foundry.utils.escapeHTML(String(texte ?? ""));
 /** Fenêtre de jet : voir module/dialogues.mjs (cartes à piocher, thème du joueur, chat en filigrane). */
 export { demanderJet } from "./dialogues.mjs";
 import { demanderJet as _demanderJet } from "./dialogues.mjs";
+import { piocherFolie } from "./paquet.mjs";
 
 /**
  * Jet d'attribut : D100 <= valeur, difficulté ajoutée au dé, pouvoir −20 au dé et perte de PM.
@@ -81,8 +82,11 @@ export async function jetFolie(actor, { raison = "" } = {}) {
   const reussite = roll.total <= pf;
   let carte = "";
   let boutons = "";
+  let boutonsNote = "";
   if (!reussite) {
-    carte = ACTIONS_FOLIE[Math.floor(Math.random() * ACTIONS_FOLIE.length)];
+    const tiree = await piocherFolie(); // paquet Foundry (sans doublon) ; sinon tirage au hasard
+    carte = tiree?.texte || ACTIONS_FOLIE[Math.floor(Math.random() * ACTIONS_FOLIE.length)];
+    if (tiree?.remelange) boutonsNote = `<p class="mu-note">Le paquet Folie était vide : il a été remélangé.</p>`;
     boutons = `<div class="mu-boutons">
       <button type="button" data-mu="garder-folie" data-actor="${actor.uuid}" data-carte="${esc(carte)}">Garder la carte</button>
     </div>`;
@@ -94,7 +98,7 @@ export async function jetFolie(actor, { raison = "" } = {}) {
       actor, quoi: raison ? `Folie (${raison})` : "Folie", cible: pf, brut: roll.total, reussite, cle: "folie", classe: reussite ? "" : "folie",
       verdict: reussite ? "Le Chat garde son calme" : "La Folie s'empare du Chat",
       detail: `Dé <strong>${roll.total}</strong> contre ${pf} %`,
-      extra: carte ? `<p class="mu-carte-folie">🃏 ${esc(carte)}</p>${boutons}` : ""
+      extra: carte ? `<p class="mu-carte-folie">🃏 ${esc(carte)}</p>${boutonsNote}${boutons}` : ""
     })
   });
 }
