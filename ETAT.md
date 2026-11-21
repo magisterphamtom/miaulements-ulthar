@@ -2,6 +2,11 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Onde de choc des critiques (v0.19.3, branche `fonction/onde-de-choc`)
+- Variante B choisie par Stéphane : au moment de l'impact du coup de patte, la scène tremble 0,35 s et une onde dorée part du centre avec un halo ; sur un échec critique, au moment des griffes, la scène tremble et le bord de l'écran rougit en pulsant.
+- Seul le canevas tremble (les fenêtres restent immobiles) ; transformations et opacité seulement. Réglage par joueur « Secousse des critiques » pour couper la secousse en gardant l'effet ; rien ne bouge si le système demande moins d'animations.
+- Testé : `s-miaulements-onde.mjs` (5 vérifications, captures figées au bon moment).
+
 ## Fenêtre « Les Chats » refaite (v0.19.2, branche `correction/suivi-des-chats`)
 - Défaut signalé par Stéphane : la fenêtre s'ouvrait sur toute la hauteur de l'écran avec un seul Chat. Cause : elle portait la classe `mu-suivi`, dont la règle (suivi de campagne) impose `height: 100%`. Elle a maintenant sa propre classe (`mu-suivi-groupe`) et une hauteur automatique.
 - N'affiche que les Chats dont le joueur est **connecté** : elle grandit à chaque connexion et se resserre quand un joueur part (mention du nombre de Chats absents). Liseré et pastille à la couleur du joueur, habillage au thème de chaque joueur.

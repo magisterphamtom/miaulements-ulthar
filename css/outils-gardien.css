@@ -174,3 +174,18 @@ body .mu-carte.mu-carte-gazette.mu-gazette-ulthar .mu-boutons button { backgroun
 .mu-sg-jauge em { position: relative; display: block; padding-left: 8px; font-style: normal; font-size: 11px; line-height: 14px; color: var(--mu-texte); text-shadow: 0 0 3px var(--mu-fond), 0 0 3px var(--mu-fond); }
 .mu-sg-vide { text-align: center; font-style: italic; color: var(--mu-texte); opacity: .85; margin: 10px 4px; line-height: 1.5; }
 .mu-sg-absents { margin: 2px 0 0; text-align: center; font-size: 12px; color: var(--mu-texte); opacity: .8; }
+
+/* Onde de choc des critiques (v0.19.3, variante B) : transform et opacity seulement */
+#board.mu-secousse { animation: mu-secousse .35s ease-out; }
+@keyframes mu-secousse { 0%, 100% { transform: translate(0, 0); } 15% { transform: translate(-9px, 5px); } 30% { transform: translate(8px, -6px); } 45% { transform: translate(-6px, -4px); } 60% { transform: translate(5px, 6px); } 75% { transform: translate(-3px, 2px); } }
+.mu-effet-choc { position: fixed; inset: 0; z-index: 9998; pointer-events: none; opacity: 0; }
+.mu-effet-choc.mu-choc-reussite { background: radial-gradient(circle at 50% 46%, rgba(255, 215, 106, .38), rgba(255, 215, 106, 0) 55%); }
+.mu-effet-choc.mu-choc-reussite.on { animation: mu-choc-flash .7s ease-out forwards; }
+.mu-effet-choc .mu-onde { position: absolute; left: 50%; top: 46%; width: 12vh; height: 12vh; margin: -6vh 0 0 -6vh; border-radius: 50%; border: 6px solid #f6d77a; opacity: 0; }
+.mu-effet-choc.on .mu-onde { animation: mu-onde .8s ease-out forwards; }
+.mu-effet-choc.mu-choc-echec { background: radial-gradient(ellipse at center, rgba(140, 10, 20, 0) 45%, rgba(140, 10, 20, .85) 100%); }
+.mu-effet-choc.mu-choc-echec.on { animation: mu-choc-pouls 1.3s ease-out forwards; }
+@keyframes mu-choc-flash { 0% { opacity: 0; } 15% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes mu-onde { 0% { opacity: .95; transform: scale(.5); } 100% { opacity: 0; transform: scale(9); } }
+@keyframes mu-choc-pouls { 0% { opacity: 0; } 20% { opacity: .9; } 45% { opacity: .35; } 65% { opacity: .65; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { #board.mu-secousse, .mu-effet-choc * { animation: none !important; } }
