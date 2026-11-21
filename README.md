@@ -4,11 +4,12 @@
 
 <p align="center">
   <b>Incarnez les Chats d'Ulthar face à l'horreur lovecraftienne, sur Foundry Virtual Tabletop.</b><br>
-  Foundry VTT v14 (vérifié sur 14.368) · version 0.19.0 · en français
+  Foundry VTT v14 (vérifié sur 14.368) · version 0.20.0 · en français
 </p>
 
 <p align="center">
   <a href="#installation">Installation</a> ·
+  <a href="#lécran-daccueil">L'écran d'accueil</a> ·
   <a href="#la-fiche-de-chat">La fiche</a> ·
   <a href="#les-règles-automatisées">Les règles</a> ·
   <a href="#les-wikis-et-le-contenu">Wikis et contenu</a> ·
@@ -32,7 +33,28 @@ Dans Foundry : **Systèmes de jeu › Installer un système**, puis collez ce li
 https://github.com/magisterphamtom/miaulements-ulthar/releases/latest/download/system.json
 ```
 
-Créez ensuite un monde avec le système « Les Miaulements d'Ulthar ». Au premier lancement, chaque joueur voit s'ouvrir le wiki des joueurs et le Gardien le wiki du Gardien.
+Créez ensuite un monde avec le système « Les Miaulements d'Ulthar ». À chaque session, l'écran d'accueil s'ouvre pour chaque joueur et pour le Gardien.
+
+## L'écran d'accueil
+
+<img src="docs/vitrine/accueil-tableau.webp" alt="L'écran d'accueil : le tableau d'enquête">
+
+À chaque session, un **tableau d'enquête** couvre l'écran : des coupures de l'Arkham Advertiser punaisées sur du liège, reliées par un fil rouge. Chaque coupure ouvre une page de journal où l'on agit directement, sans fenêtre à chercher.
+
+<table>
+<tr>
+<td width="50%"><img src="docs/vitrine/accueil-createur.webp" alt="Le créateur de Chat"></td>
+<td>
+
+- **Un nouveau Chat arrive à Ulthar** : un créateur façon jeu vidéo. On fait défiler les dix races, on pose ses six modificateurs d'un clic (Santé, Folie et Magie se calculent en direct), on choisit ses pouvoirs, son portrait et son surnom… et le Chat est créé. Ensuite, la même coupure ouvre sa page et sa fiche.
+- **Tout savoir sur la ville des chats** : le wiki se lit dans l'écran (le Gardien a aussi le sien).
+- **La mode d'Arkham** : le thème de la fiche, appliqué en direct.
+- **Pour le Gardien** : « Préparer la partie » importe les compendiums choisis dans le monde, rangés en dossiers ; « Le tableau du Gardien » ouvre son tableau de bord.
+- **Entrer à Ulthar** : l'écran s'efface. Un bouton journal le rouvre à tout moment.
+
+</td>
+</tr>
+</table>
 
 ## La fiche de Chat
 
@@ -134,14 +156,16 @@ La fiche reprend **la fiche de personnage officielle** du livre : les champs son
 <table>
 <tr>
 <td align="center"><img src="docs/vitrine/vies.webp" alt="Les vies de Chat sur le jeton" width="220"><br><sub>Les vies de Chat en couronne de pattes autour du jeton.</sub></td>
-<td align="center"><img src="docs/vitrine/critique-reussite.webp" alt="Réussite critique" width="300"><br><sub>Réussite critique : un coup de patte doré.</sub></td>
-<td align="center"><img src="docs/vitrine/critique-echec.webp" alt="Échec critique" width="300"><br><sub>Échec critique : trois griffures.</sub></td>
+<td align="center"><img src="docs/vitrine/critique-reussite.webp" alt="Réussite critique" width="300"><br><sub>Réussite critique : coup de patte doré, la scène tremble, une onde dorée part du centre.</sub></td>
+<td align="center"><img src="docs/vitrine/critique-echec.webp" alt="Échec critique" width="300"><br><sub>Échec critique : trois griffures et un bord d'écran rouge qui pulse.</sub></td>
 </tr>
 </table>
 
 - **Voile de rêve** : pendant une bulle onirique, les bords de la scène passent en nuit, avec une lune, chez toute la table.
 - **Journal du Chat** : les moments marquants s'inscrivent tout seuls dans l'onglet Notes (critiques, vies perdues, pouvoirs, progrès, cartes Folie, XP).
-- **Vision féline**, **suivi des Chats**, image d'accueil et pause « Le chat fait la sieste ».
+- **Les Chats** : Santé, Magie, Folie et vies des Chats des joueurs connectés, dans une fenêtre qui grandit à chaque arrivée.
+- **Vision féline**, image d'accueil et pause « Le chat fait la sieste ».
+- **Visites guidées** pour les joueurs et pour le Gardien (Paramètres › Visites guidées).
 - Chaque effet visuel peut être désactivé par le joueur ; tout est pensé pour peser le moins possible sur l'ordinateur.
 
 <img src="docs/vitrine/voile.webp" alt="Le voile de rêve pendant une bulle onirique">
@@ -159,4 +183,4 @@ Pour suivre l'avancement : [ETAT.md](ETAT.md). Pour signaler un problème : l'on
 
 ## In English
 
-**Les Miaulements d'Ulthar** is an unofficial Foundry VTT v14 game system for the French tabletop RPG by Xavier Laporte (Xaviiiier), where players are the Cats of Ulthar facing Lovecraftian horror. It is published with the author's permission. Everything is in French: a character sheet based on the official one, a creation wizard, automated D100 rolls, Madness with a real card deck, combat and Cat lives, dream bubbles, two auto-opening wikis, the bestiary, the scenarios and a set of Game Master tools. Install it with the manifest URL above. Parts of the code, added texts and some images were made with the help of AI.
+**Les Miaulements d'Ulthar** is an unofficial Foundry VTT v14 game system for the French tabletop RPG by Xavier Laporte (Xaviiiier), where players are the Cats of Ulthar facing Lovecraftian horror. It is published with the author's permission. Everything is in French: a video-game-like start screen at each session (investigation board with a Cat creator, the wiki and theme choice), a character sheet based on the official one, a creation wizard, automated D100 rolls, Madness with a real card deck, combat and Cat lives, dream bubbles, two auto-opening wikis, the bestiary, the scenarios and a set of Game Master tools. Install it with the manifest URL above. Parts of the code, added texts and some images were made with the help of AI.
