@@ -2,6 +2,13 @@
 
 Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne sont jamais dans le dépôt ; les textes du livre repris dans les wikis et compendiums le sont avec son accord.
 
+## Journal du Chat (v0.18.0, branche `fonction/journal-du-chat`)
+- Onglet **Notes** de la fiche : « Journal du Chat », les plus récents en haut, avec l'épisode en cours (dernier épisode du suivi de campagne) et la date.
+- Rempli tout seul : réussites et échecs critiques, vie perdue ou regagnée, chute à 0 PV, attribut qui progresse, pouvoir appris ou temporaire reçu, carte Folie gardée ou jouée, XP, fin de scénario (une seule ligne).
+- Le joueur ajoute ses souvenirs (« Ajouter ») et efface une ligne (confirmation, Maj + clic pour aller vite). 300 lignes au plus par Chat.
+- Écrit par le client qui fait le changement, dans la même mise à jour que le changement lui-même (aucune requête de plus) ; une file par Chat évite que deux lignes simultanées s'écrasent.
+- Testé : `s-miaulements-journal.mjs` (15 vérifications, lisibilité dans les 4 thèmes).
+
 ## Paquet de cartes Folie (v0.18.0, branche `fonction/paquet-folie`)
 - Au lancement, le Gardien crée (une fois) un vrai paquet Foundry « **Paquet Folie** » (les 20 actions de Folie, face et dos illustrés) et sa « **Défausse Folie** », ouverts aux joueurs pour qu'ils puissent piocher.
 - Un jet de Folie raté **pioche dans le paquet** (vers la défausse) : plus de doublon tant que le paquet n'est pas vide ; vide, il est **remélangé tout seul** (mention sur la carte). « Garder la carte » met toujours la carte dans la main du Chat (fiche).

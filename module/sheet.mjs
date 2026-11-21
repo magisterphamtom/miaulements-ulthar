@@ -3,7 +3,8 @@ import { jetAttribut, jetFolie, monterAttribut } from "./rolls.mjs";
 import { assistantCreation, tirerPouvoirsTemporaires } from "./creation.mjs";
 import { attaquerChat, attaquerPnj, lancerPouvoir, attributPourPouvoir, estOnirique, appliquerDegats } from "./combat.mjs";
 import { finDeScenario } from "./outils.mjs";
-import { demanderFolie, confirmer } from "./dialogues.mjs";
+import { demanderFolie, confirmer, saisir } from "./dialogues.mjs";
+import { lignesPourFiche, ajouterEntree, supprimerEntree } from "./journal-chat.mjs";
 import { appliquerThemeCorps } from "./cartes.mjs";
 
 const { HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
@@ -130,7 +131,9 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
       acheter: FeuilleChat.#acheter,
       tab: FeuilleChat.#onglet,
       pretires: FeuilleChat.#pretires,
-      ajuster: FeuilleChat.#ajuster
+      ajuster: FeuilleChat.#ajuster,
+      ajouterJournal: FeuilleChat.#ajouterJournal,
+      supprimerJournal: FeuilleChat.#supprimerJournal
     }
   };
 
@@ -141,7 +144,7 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
     creation: { template: `systems/${SYSTEM_ID}/templates/chat/creation.hbs`, scrollable: [""] },
     pouvoirs: { template: `systems/${SYSTEM_ID}/templates/chat/pouvoirs.hbs`, scrollable: [""] },
     suivi: { template: `systems/${SYSTEM_ID}/templates/chat/suivi.hbs`, scrollable: [""] },
-    notes: { template: `systems/${SYSTEM_ID}/templates/chat/notes.hbs` },
+    notes: { template: `systems/${SYSTEM_ID}/templates/chat/notes.hbs`, scrollable: [""] },
     pied: { template: `systems/${SYSTEM_ID}/templates/chat/pied.hbs` }
   };
 
@@ -165,6 +168,7 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
     ctx.actor = this.actor;
     ctx.system = sys;
     ctx.editable = this.isEditable;
+    ctx.journal = lignesPourFiche(this.actor);
     ctx.races = Object.entries(RACES).map(([cle, r]) => ({ cle, label: r.label, selected: sys.race === cle }));
     ctx.fiche = POSITIONS.fiche;
     ctx.attributs = Object.entries(ATTRIBUTS).map(([cle, def]) => {
@@ -466,6 +470,25 @@ export class FeuilleChat extends HandlebarsApplicationMixin(ActorSheetV2) {
       html: `<p>Le pouvoir <strong>${foundry.utils.escapeHTML(item.name)}</strong> sera retiré de la fiche de ${foundry.utils.escapeHTML(this.actor.name)}.</p><p class="mu-aide-dlg">Maj + clic sur la croix : supprimer sans confirmation.</p>`
     });
     if (ok) await item.delete();
+  }
+
+  static async #ajouterJournal() {
+    const texte = await saisir({
+      titre: `Journal de ${this.actor.name}`, image: "creation", ok: "Inscrire",
+      html: `<p class="mu-dlg-titre">Un souvenir à garder</p><textarea name="souvenir" rows="4" placeholder="Ce soir-là, sur les toits d'Arkham…" style="width:100%"></textarea>`,
+      callback: (event, button) => button.form.elements.souvenir.value.trim()
+    });
+    if (texte) await ajouterEntree(this.actor, "note", texte);
+  }
+
+  static async #supprimerJournal(event, target) {
+    const t = Number(target.closest("[data-t]")?.dataset.t);
+    if (!t) return;
+    if (!event.shiftKey) {
+      const ok = await confirmer({ titre: "Effacer cette ligne du journal ?", html: "<p>Elle disparaît du journal de ce Chat. (Maj + clic pour effacer sans confirmer.)</p>", oui: "Effacer", icone: "fa-solid fa-xmark" });
+      if (!ok) return;
+    }
+    await supprimerEntree(this.actor, t);
   }
 
   static async #jouerCarte(event, target) {

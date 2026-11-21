@@ -1,6 +1,19 @@
 <section class="tab mu-onglet mu-notes-onglet {{tabs.notes.cssClass}}" data-group="primary" data-tab="notes">
   <h3>Apparence</h3>
   <textarea data-champ="system.description" rows="5" placeholder="Pelage, yeux, allure…">{{system.description}}</textarea>
+  <h3 class="mu-journal-titre">Journal du Chat
+    {{#if editable}}<a data-action="ajouterJournal" data-tooltip="Ajouter un souvenir"><i class="fa-solid fa-feather"></i> Ajouter</a>{{/if}}</h3>
+  <p class="mu-aide">Les moments marquants s'y inscrivent tout seuls : critiques, vies perdues, pouvoirs, progrès, cartes Folie, XP.</p>
+  <ol class="mu-journal-chat">
+    {{#each journal}}
+    <li class="mu-jc-{{type}}" data-t="{{t}}">
+      <i class="{{icone}}" data-tooltip="{{label}}"></i>
+      <span class="mu-jc-texte">{{texte}}</span>
+      <span class="mu-jc-quand">{{#if ep}}{{ep}} · {{/if}}{{date}}</span>
+      {{#if ../editable}}<a class="mu-jc-suppr" data-action="supprimerJournal" data-tooltip="Effacer cette ligne"><i class="fa-solid fa-xmark"></i></a>{{/if}}
+    </li>
+    {{else}}<li class="mu-jc-vide">Rien encore : l'histoire de ce Chat reste à écrire.</li>{{/each}}
+  </ol>
   <h3>Notes</h3>
   <textarea name="system.notes" rows="16" placeholder="Indices, PNJ rencontrés, souvenirs de la Contrée du Rêve…">{{system.notes}}</textarea>
 </section>
