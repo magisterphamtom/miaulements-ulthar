@@ -4,6 +4,7 @@ Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne 
 
 ## Menu des thèmes lisible (v0.17.3, branche `correction/menu-themes-lisible`)
 - La liste déroulée du menu des thèmes (barre de titre de la fiche) était crème sur blanc sous Windows : les options ont maintenant un fond sombre et un texte clair.
+- Contrôle automatique de lisibilité (`lisibilite.mjs` de l'instance de test) : il a trouvé les titres de rubriques de la fiche PNJ invisibles (« Armes connues », « Signes particuliers », « Témoignages », crème sur papier) et le texte indicatif « Apparence du Chat » blanc sur blanc en thème Nuit. Corrigés.
 
 ## Scènes au format Foundry v14 (v0.17.2, branche `correction/scenes-v14`)
 - Trouvé par les tests automatiques : en v14, le fond d'une scène est porté par un **niveau** (`Scene.levels`) ; l'ancien champ `background` est ignoré, si bien que la scène d'accueil et les 4 cartes s'importaient **sans image**. Les scènes du compendium ont maintenant un niveau « Fond » avec l'image (`niveau_scene()` dans `construire-contenu.py`).
