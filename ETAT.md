@@ -222,7 +222,9 @@ Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne 
 - **Deux wikis** : Wiki des joueurs (règles, races, système de jeu, Chats d'Ulthar, jouer un Chat, nouvelle, aide-mémoire) et Wiki du Gardien (guide du MJ, univers, scénario d'initiation, écran du MJ, bestiaire). Le joueur ouvre le wiki des joueurs, le Gardien ouvre le wiki du Gardien, automatiquement (réglage : première connexion / toujours / jamais). Le wiki du Gardien n'est visible que par le Gardien.
 - Macros du Gardien : début d'aventure (pouvoirs temporaires pour tous les Chats), fin de scénario de groupe, jet de Folie du groupe, tirages d'événements.
 
-## 0.20.3 — compatibilité (branche `correction/compatibilite-v14`)
+## 0.20.4 — compatibilité (branche `correction/compatibilite-v14`)
+
+- Publiée en 0.20.4 : la release v0.20.3 avait été faite avant la fusion, depuis un `main` encore en 0.20.2 (minimum v13 dans son manifeste).
 
 - Le manifeste annonçait Foundry v13 comme minimum ; le système utilise des fonctions de la v14 (fond des scènes porté par les niveaux, etc.). Minimum passé à 14, avant la demande d'inscription sur foundryvtt.com.
 
