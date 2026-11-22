@@ -12,6 +12,7 @@ import { enregistrerParametresAccueil, enregistrerHooksAccueil } from "./accueil
 import { enregistrerHooksJournal } from "./journal.mjs";
 import { TableauGardien, brancherTableau } from "./tableau.mjs";
 import { rencontre, enregistrerParametresRencontres, brancherRencontres } from "./rencontres.mjs";
+import { brancherImagesRaces } from "./creation.mjs";
 import { brancherJournalChat } from "./journal-chat.mjs";
 import { enregistrerParametresJetons, brancherJetons } from "./jetons.mjs";
 import { enregistrerParametresEffets, brancherEffets, effetCritique } from "./effets.mjs";
@@ -79,6 +80,7 @@ Hooks.once("init", () => {
   enregistrerParametresVisite();
   enregistrerParametresEcran();
   brancherJournalChat();
+  brancherImagesRaces();
   enregistrerParametresJetons();
   brancherJetons();
   enregistrerParametresEffets();

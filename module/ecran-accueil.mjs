@@ -11,14 +11,15 @@
  */
 import { SYSTEM_ID, ATTRIBUTS, RACES } from "./config.mjs";
 import { POUVOIRS_INNES, POUVOIRS_RACE } from "./pouvoirs.mjs";
-import { appliquerCreation } from "./creation.mjs";
+import { appliquerCreation, imageRace, jetonPour } from "./creation.mjs";
 import { pvDepuisTable } from "./datamodels.mjs";
 import { appliquerThemeCorps } from "./cartes.mjs";
 
 const esc = (t) => foundry.utils.escapeHTML(String(t ?? ""));
 const sg = (n) => (n > 0 ? `+${n}` : `${n}`);
 const MODS = [20, 10, 5, -5, -10, -20];
-const PORTRAITS = ["ator", "chiffon", "filou", "isis", "leonard", "maya", "orichat"].map((n) => `systems/${SYSTEM_ID}/assets/portraits/${n}.webp`);
+/** Galerie : les dix races et deux Chats du livre des scénarios (Filou, Léonard). */
+const PORTRAITS = [...Object.keys(RACES).map((r) => `systems/${SYSTEM_ID}/assets/races/${r}.webp`), ...["filou", "leonard"].map((n) => `systems/${SYSTEM_ID}/assets/chats/${n}.webp`)];
 const THEMES = [
   ["nuit", "Nuit d'Arkham", "#1d1a24", "#d9b34a"], ["grimoire", "Grimoire d'Ulthar", "#e9dcbc", "#7a1f2b"],
   ["reve", "Contrée du Rêve", "#eee8fb", "#6b4fa0"], ["journal", "Journal d'Arkham, 1921", "#ece6d8", "#1c1a17"]
@@ -38,8 +39,6 @@ function themeActuel() {
 
 /** Silhouette de chat aux couleurs d'une race (portrait par défaut du créateur). */
 const COULEURS = { bengal: "#c8823a", gouttiere: "#8a8170", cornish: "#b7a99a", mainecoon: "#7a5a3a", norvegien: "#a8a8a8", persan: "#efe6da", savannah: "#d6b25a", scottish: "#9aa3ad", siamois: "#e9dcc6", sphynx: "#e8b9a8" };
-/** Illustration de la race, tirée du livre de règles (avec l'accord de Xavier Laporte). */
-const imageRace = (race) => `systems/${SYSTEM_ID}/assets/races/${race}.webp`;
 const silhouette = (c) => `<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 56c0-15 6-25 18-25s18 10 18 25z" fill="${c}"/><circle cx="32" cy="27" r="13" fill="${c}"/><path d="M21 20l-3-12 10 7zM43 20l3-12-10 7z" fill="${c}"/><circle cx="27" cy="26" r="2.2" fill="#2a2433"/><circle cx="37" cy="26" r="2.2" fill="#2a2433"/><path d="M31 31h2l-1 1.5z" fill="#2a2433"/></svg>`;
 
 export class EcranAccueil {
@@ -139,9 +138,9 @@ export class EcranAccueil {
   }
 
   static #galerie(actuel, action, race = null) {
-    const choix = [...(race ? [imageRace(race)] : []), ...PORTRAITS];
+    const choix = [...new Set([...(race ? [imageRace(race)] : []), ...PORTRAITS])];
     const perso = game.user.can("FILES_BROWSE") ? `<button type="button" class="mu-ea-vignette perso" data-ea="${action}-perso" data-tooltip="Image de ton choix"><i class="fa-solid fa-folder-open"></i></button>` : "";
-    return choix.map((src) => `<button type="button" class="mu-ea-vignette ${src === actuel ? "on" : ""} ${src.includes("/races/") ? "race" : ""}" data-ea="${action}" data-src="${src}"><img src="${src}" alt=""></button>`).join("") + perso;
+    return choix.map((src) => `<button type="button" class="mu-ea-vignette ${src === actuel ? "on" : ""} ${/\/(races|chats)\//.test(src) ? "race" : ""}" data-ea="${action}" data-src="${src}"><img src="${src}" alt=""></button>`).join("") + perso;
   }
 
   static #valeurs() {
@@ -248,7 +247,7 @@ export class EcranAccueil {
       case "inne": { const k = t.dataset.cle; c.innes = c.innes.includes(k) ? c.innes.filter((x) => x !== k) : (c.innes.length < 2 ? [...c.innes, k] : c.innes); break; }
       case "portrait-creation": c.img = t.dataset.src; break;
       case "portrait-creation-perso": case "portrait-chat-perso": return EcranAccueil.#choisirImage(a === "portrait-chat-perso");
-      case "portrait-chat": { const ch = monChat(); if (ch) await ch.update({ img: t.dataset.src, "prototypeToken.texture.src": t.dataset.src }); break; }
+      case "portrait-chat": { const ch = monChat(); if (ch) await ch.update({ img: t.dataset.src, "prototypeToken.texture.src": jetonPour(t.dataset.src) }); break; }
       case "creer": return EcranAccueil.#creer();
       case "wiki-quel": EcranAccueil.wiki = { quel: t.dataset.quel, entree: null, page: null }; break;
       case "wiki-entree": EcranAccueil.wiki.entree = t.dataset.id; EcranAccueil.wiki.page = null; break;
@@ -264,7 +263,7 @@ export class EcranAccueil {
   static #choisirImage(pourChat) {
     const FP = foundry.applications.apps.FilePicker.implementation ?? foundry.applications.apps.FilePicker;
     new FP({ type: "image", callback: async (src) => {
-      if (pourChat) { const ch = monChat(); if (ch) await ch.update({ img: src, "prototypeToken.texture.src": src }); }
+      if (pourChat) { const ch = monChat(); if (ch) await ch.update({ img: src, "prototypeToken.texture.src": jetonPour(src) }); }
       else EcranAccueil.creation.img = src;
       EcranAccueil.afficher();
     } }).browse();
@@ -323,7 +322,7 @@ export class EcranAccueil {
 
 /** Crée le Chat d'un utilisateur (lui-même s'il en a le droit, sinon le Gardien actif via la socket). */
 async function creerChatPour(user, choix) {
-  const actor = await Actor.create({ name: choix.surnom, type: "chat", img: choix.img, prototypeToken: { texture: { src: choix.img }, actorLink: true, disposition: 1 },
+  const actor = await Actor.create({ name: choix.surnom, type: "chat", img: choix.img, prototypeToken: { texture: { src: jetonPour(choix.img) }, actorLink: true, disposition: 1 },
     ownership: { default: 0, [user.id]: CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER } });
   await appliquerCreation(actor, choix);
   if (!user.isGM) await user.update({ character: actor.id });

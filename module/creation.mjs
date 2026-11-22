@@ -1,4 +1,4 @@
-import { ATTRIBUTS, RACES } from "./config.mjs";
+import { SYSTEM_ID, ATTRIBUTS, RACES } from "./config.mjs";
 import { POUVOIRS_INNES, POUVOIRS_RACE, pouvoirTemporaireParDe } from "./pouvoirs.mjs";
 import { pvDepuisTable } from "./datamodels.mjs";
 
@@ -222,13 +222,43 @@ export async function assistantCreation(actor) {
   await appliquerCreation(actor, { surnom: data.surnom, race: data.race, pouvoirRace: data.pouvoirRace, handicap, attrs, innes: choisis });
 }
 
+/** Illustrations de races et de Chats tirées des livres (avec l'accord de Xavier Laporte). */
+export const imageRace = (race) => `systems/${SYSTEM_ID}/assets/races/${race}.webp`;
+/** Jeton en médaillon papier correspondant à une illustration ; un portrait personnalisé sert tel quel. */
+export function jetonPour(img) {
+  const m = String(img ?? "").match(/assets\/(races|chats)\/([a-z0-9-]+)\.webp$/);
+  if (!m) return img;
+  return m[1] === "races" ? `systems/${SYSTEM_ID}/assets/races/jeton-${m[2]}.webp` : `systems/${SYSTEM_ID}/assets/portraits/${m[2]}.webp`;
+}
+const estIllustrationRace = (img) => /assets\/races\/(?!jeton-)[a-z]+\.webp$/.test(String(img ?? ""));
+
+/**
+ * Un Chat créé à la main prend l'illustration de sa race ; s'il change de race et porte encore
+ * l'illustration de l'ancienne, l'image et le jeton suivent.
+ */
+export function brancherImagesRaces() {
+  Hooks.on("preCreateActor", (actor, data) => {
+    if (actor.type !== "chat") return;
+    const img = data.img;
+    if (img && !/mystery-man|icons\/svg\//.test(img)) return;
+    const race = data.system?.race || actor.system?.race || "gouttiere";
+    actor.updateSource({ img: imageRace(race), "prototypeToken.texture.src": jetonPour(imageRace(race)) });
+  });
+  Hooks.on("preUpdateActor", (actor, changes) => {
+    const race = changes.system?.race;
+    if (actor.type !== "chat" || !race || race === actor.system.race || changes.img || !estIllustrationRace(actor.img)) return;
+    changes.img = imageRace(race);
+    foundry.utils.setProperty(changes, "prototypeToken.texture.src", jetonPour(imageRace(race)));
+  });
+}
+
 /**
  * Enregistre une création sur un Chat (assistant de la fiche et créateur de l'écran d'accueil).
  * attrs : { cle: { base, race, handicap } } ; innes : clés de POUVOIRS_INNES ; pouvoirRace : index du pouvoir de race.
  */
 export async function appliquerCreation(actor, { surnom, race, pouvoirRace, handicap = "", attrs, innes, img }) {
   const maj = { name: String(surnom).trim(), "system.race": race, "system.handicap": handicap };
-  if (img) { maj.img = img; maj["prototypeToken.texture.src"] = img; }
+  if (img) { maj.img = img; maj["prototypeToken.texture.src"] = jetonPour(img); }
   for (const [k, a] of Object.entries(attrs)) {
     maj[`system.attributs.${k}.base`] = a.base;
     maj[`system.attributs.${k}.race`] = a.race;

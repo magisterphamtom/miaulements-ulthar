@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Jetons des adversaires et portraits de secours des Chats (anneau violet, glyphes), faits avec Chromium.
+"""ANCIEN (avant 0.20.2) : jetons émoji et portraits de secours. Remplacé par tools/jetons_livre.py (illustrations des livres, médaillon papier).
 Usage : python3 tools/jetons.py   (écrit assets/jetons/*.png et assets/portraits/*.png)"""
 import os, re, unicodedata
 from playwright.sync_api import sync_playwright

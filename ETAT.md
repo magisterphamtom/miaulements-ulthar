@@ -222,6 +222,15 @@ Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne 
 - **Deux wikis** : Wiki des joueurs (règles, races, système de jeu, Chats d'Ulthar, jouer un Chat, nouvelle, aide-mémoire) et Wiki du Gardien (guide du MJ, univers, scénario d'initiation, écran du MJ, bestiaire). Le joueur ouvre le wiki des joueurs, le Gardien ouvre le wiki du Gardien, automatiquement (réglage : première connexion / toujours / jamais). Le wiki du Gardien n'est visible que par le Gardien.
 - Macros du Gardien : début d'aventure (pouvoirs temporaires pour tous les Chats), fin de scénario de groupe, jet de Folie du groupe, tirages d'événements.
 
+## 0.20.2 — jetons et portraits tirés des livres (branche `fonction/jetons-livre`)
+
+- **Tous les jetons du bestiaire** (29 créatures, dont Chat et Chat Saturne) remplacent leurs émojis par l'illustration de la créature dans le bestiaire (p. 2 à 59), en **médaillon papier** à anneau noir et or (choix de Stéphane, style B).
+- **Prétirés** : portrait et jeton en médaillon. Orichat, Maya, Isis, Chiffon et Ator prennent l'illustration de leur race ; Filou et Léonard deux chats du livre des scénarios (p. 43 et 58). Les fiches des prétirés n'ont pas de portrait propre.
+- **Chats créés** : image = illustration de la race (`assets/races/<race>.webp`), jeton = médaillon (`assets/races/jeton-<race>.webp`). Un Chat créé à la main prend l'illustration de la gouttière ; s'il change de race en gardant l'illustration, image et jeton suivent. La galerie propose les dix races, Filou et Léonard.
+- Mêmes chemins de fichiers qu'avant pour les jetons du bestiaire et les portraits des prétirés : les acteurs déjà importés se mettent à jour seuls (vider le cache avec Ctrl+Maj+R).
+- Outil : `tools/jetons_livre.py` (l'ancien `tools/jetons.py` à émojis n'est plus utilisé).
+- Tests : `s-miaulements-accueil.mjs` (jetons, image par défaut, changement de race), `s-miaulements-rencontres.mjs` et `s-miaulements-gardien.mjs` (mis à jour pour l'écran d'accueil) : tout passe.
+
 ## 0.20.1 — illustrations de races du livre (branche `fonction/illustrations-races`)
 
 - Le créateur de Chat de l'écran d'accueil montre l'**illustration de chaque race tirée du livre de règles** (10 images détourées, `assets/races/<race>.webp`, extraites des pages 24 à 42) à la place de la silhouette.
