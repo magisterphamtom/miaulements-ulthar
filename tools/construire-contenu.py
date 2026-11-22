@@ -14,7 +14,7 @@ SORTIE = os.path.join(RACINE, "src", "packs")
 SYS = "miaulements-ulthar"
 D = json.load(open(os.path.join(RACINE, "src", "donnees.json")))
 ICONE = "icons/svg/mystery-man.svg"
-STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.20.0", "coreVersion": "14.368"}
+STATS = {"createdTime": 1762100000000, "modifiedTime": 1762100000000, "systemId": SYS, "systemVersion": "0.20.1", "coreVersion": "14.368"}
 
 NOMS_RACES = {"CHAT DE GOUTTIERE": "Chat de gouttière", "CHAT DE GOUTTIÈRE": "Chat de gouttière", "CORNISH REX": "Cornish Rex", "MAINE COON": "Maine Coon", "NORVEGIEN": "Norvégien", "SCOTTISH FOLD": "Scottish Fold"}
 B62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"

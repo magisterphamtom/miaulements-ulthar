@@ -119,3 +119,10 @@
 .mu-ea-deco.photo { padding-bottom: 4px; }
 .mu-ea-deco.photo img { width: min(110px, 8vw); height: min(110px, 8vw); }
 .mu-ea-article.mu-journal { background: transparent; border: none; box-shadow: none; padding: 0; }
+
+/* Illustrations de races du livre (v0.20.1) : détourées, posées sur un médaillon de papier */
+.mu-ea-portrait.race { width: 120px; height: 150px; flex: 0 0 120px; display: flex; align-items: flex-end; justify-content: center; background: radial-gradient(ellipse at 50% 70%, #f6f1e4 0 55%, transparent 56%); }
+.mu-ea-portrait.race img { width: 120px; height: 150px; object-fit: contain; border: none; filter: none; }
+.mu-ea-vignette.race img { object-fit: contain; filter: none; background: #f6f1e4; }
+.mu-ea-vignette.race { border-color: #1c1a17; }
+.mu-ea-portrait img[src*="/races/"], .mu-ea-deco img[src*="/races/"] { object-fit: contain; filter: none; background: #f6f1e4; }

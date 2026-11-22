@@ -38,6 +38,8 @@ function themeActuel() {
 
 /** Silhouette de chat aux couleurs d'une race (portrait par défaut du créateur). */
 const COULEURS = { bengal: "#c8823a", gouttiere: "#8a8170", cornish: "#b7a99a", mainecoon: "#7a5a3a", norvegien: "#a8a8a8", persan: "#efe6da", savannah: "#d6b25a", scottish: "#9aa3ad", siamois: "#e9dcc6", sphynx: "#e8b9a8" };
+/** Illustration de la race, tirée du livre de règles (avec l'accord de Xavier Laporte). */
+const imageRace = (race) => `systems/${SYSTEM_ID}/assets/races/${race}.webp`;
 const silhouette = (c) => `<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 56c0-15 6-25 18-25s18 10 18 25z" fill="${c}"/><circle cx="32" cy="27" r="13" fill="${c}"/><path d="M21 20l-3-12 10 7zM43 20l3-12-10 7z" fill="${c}"/><circle cx="27" cy="26" r="2.2" fill="#2a2433"/><circle cx="37" cy="26" r="2.2" fill="#2a2433"/><path d="M31 31h2l-1 1.5z" fill="#2a2433"/></svg>`;
 
 export class EcranAccueil {
@@ -132,13 +134,14 @@ export class EcranAccueil {
       <div><div class="mu-ea-res"><span>Santé <b>${s.pv.value}/${s.pv.max}</b></span><span>Magie <b>${s.pm.value}/${s.pm.max}</b></span><span>Folie <b>${s.pf.value}/${s.pf.max}</b></span><span>Vies <b>${s.vies.value}/${s.vies.max}</b></span></div>
       <div class="mu-ea-attrs">${attrs}</div>
       <h3>Pouvoirs</h3><ul class="mu-ea-liste">${pouvoirs}</ul></div></div>
-      <h3>Changer de portrait</h3><div class="mu-ea-galerie">${EcranAccueil.#galerie(a.img, "portrait-chat")}</div>
+      <h3>Changer de portrait</h3><div class="mu-ea-galerie">${EcranAccueil.#galerie(a.img, "portrait-chat", s.race || null)}</div>
       <div class="mu-ea-actions"><button type="button" class="mu-ea-bouton" data-ea="ouvrir-fiche"><i class="fa-solid fa-paw"></i> Ouvrir ma fiche</button></div>`;
   }
 
-  static #galerie(actuel, action) {
+  static #galerie(actuel, action, race = null) {
+    const choix = [...(race ? [imageRace(race)] : []), ...PORTRAITS];
     const perso = game.user.can("FILES_BROWSE") ? `<button type="button" class="mu-ea-vignette perso" data-ea="${action}-perso" data-tooltip="Image de ton choix"><i class="fa-solid fa-folder-open"></i></button>` : "";
-    return PORTRAITS.map((src) => `<button type="button" class="mu-ea-vignette ${src === actuel ? "on" : ""}" data-ea="${action}" data-src="${src}"><img src="${src}" alt=""></button>`).join("") + perso;
+    return choix.map((src) => `<button type="button" class="mu-ea-vignette ${src === actuel ? "on" : ""} ${src.includes("/races/") ? "race" : ""}" data-ea="${action}" data-src="${src}"><img src="${src}" alt=""></button>`).join("") + perso;
   }
 
   static #valeurs() {
@@ -163,7 +166,7 @@ export class EcranAccueil {
       `<button type="button" class="mu-ea-puce ${c.innes.includes(k) ? "on" : ""}" data-ea="inne" data-cle="${k}" data-tooltip="${esc(p.desc)}">${esc(p.nom)}</button>`).join("");
     return `<section class="mu-ea-etape"><h3><span>1</span> La race</h3>
       <div class="mu-ea-race"><button type="button" class="mu-ea-fleche" data-ea="race" data-pas="-1" aria-label="Race précédente">‹</button>
-        <div class="mu-ea-portrait rond">${c.img ? `<img src="${esc(c.img)}" alt="">` : silhouette(COULEURS[c.race])}</div>
+        <div class="mu-ea-portrait race"><img src="${esc(c.img || imageRace(c.race))}" alt="${esc(r.label)}"></div>
         <div class="mu-ea-race-texte"><b>${esc(r.label)}</b> <small>${i + 1} / ${cles.length}</small>
           <p>${r.plus ? `+10 % ${ATTRIBUTS[r.plus].label} · −10 % ${ATTRIBUTS[r.moins].label}` : "+5 % et −5 % au choix :"}</p>
           ${c.race === "gouttiere" ? `<p class="mu-ea-goutt"><label>+5 % <select data-ea-champ="gPlus">${optionsAttr(c.gPlus)}</select></label> <label>−5 % <select data-ea-champ="gMoins">${optionsAttr(c.gMoins)}</select></label></p>` : ""}
@@ -175,7 +178,7 @@ export class EcranAccueil {
         return `<button type="button" class="mu-ea-at ${t < 30 || t > 70 ? "hors" : ""}" data-ea="attr" data-cle="${k}"><span>${t}</span>${a.label}<small>${mods.join(" ")}${v[k].race ? ` ${v[k].race > 0 ? "↑" : "↓"}race` : ""}</small></button>`; }).join("")}</div>
       <div class="mu-ea-res"><span>Santé <b>${pv}</b></span><span>Folie <b>${Math.round((v.per.total + v.cha.total) / 2)}</b></span><span>Magie <b>${v.int.total}</b></span><span>Vies <b>3</b></span></div></section>
     <section class="mu-ea-etape"><h3><span>3</span> Deux pouvoirs innés</h3><div class="mu-ea-puces">${innes}</div><p class="mu-ea-consigne">« Comprendre et lire l'humain » est offert à tous les Chats. Le handicap (un pouvoir de plus) se règle ensuite dans l'assistant de la fiche.</p></section>
-    <section class="mu-ea-etape"><h3><span>4</span> Le portrait</h3><div class="mu-ea-galerie">${EcranAccueil.#galerie(c.img, "portrait-creation")}</div></section>
+    <section class="mu-ea-etape"><h3><span>4</span> Le portrait</h3><div class="mu-ea-galerie">${EcranAccueil.#galerie(c.img || imageRace(c.race), "portrait-creation", c.race)}</div><p class="mu-ea-consigne">Par défaut, ton Chat prend l'illustration de sa race (livre de règles).</p></section>
     <section class="mu-ea-etape"><h3><span>5</span> Le surnom</h3><input type="text" name="surnom" value="${esc(c.surnom)}" placeholder="Mimolette" maxlength="40">
       <div class="mu-ea-actions"><button type="button" class="mu-ea-bouton" data-ea="creer"><i class="fa-solid fa-paw"></i> Ce Chat est prêt !</button></div><p class="mu-ea-erreur"></p></section>`;
   }
@@ -234,7 +237,7 @@ export class EcranAccueil {
       case "entrer": return EcranAccueil.fermer();
       case "gardien-tableau": EcranAccueil.fermer(); return game.miaulementsUlthar?.tableau?.();
       case "ouvrir-fiche": { const ch = monChat(); EcranAccueil.fermer(); return ch?.sheet.render(true); }
-      case "race": { const cles = Object.keys(RACES); c.race = cles[(cles.indexOf(c.race) + Number(t.dataset.pas) + cles.length) % cles.length]; c.pouvoirRace = 0; break; }
+      case "race": { const cles = Object.keys(RACES); c.race = cles[(cles.indexOf(c.race) + Number(t.dataset.pas) + cles.length) % cles.length]; c.pouvoirRace = 0; if (c.img?.includes("/races/")) c.img = ""; break; }
       case "pouvoir-race": c.pouvoirRace = Number(t.dataset.k); break;
       case "mod": { const m = t.dataset.m; if (m in c.pose) delete c.pose[m]; else c.arme = String(c.arme) === m ? null : m; break; }
       case "attr": {
@@ -291,7 +294,7 @@ export class EcranAccueil {
     const zone = EcranAccueil.el.querySelector(".mu-ea-erreur");
     if (e.length) { if (zone) zone.textContent = `Encore : ${e.join(", ")}.`; return; }
     const c = EcranAccueil.creation;
-    const choix = { surnom: c.surnom.trim(), race: c.race, pouvoirRace: c.pouvoirRace, attrs: EcranAccueil.#valeurs(), innes: c.innes, img: c.img || PORTRAITS[0] };
+    const choix = { surnom: c.surnom.trim(), race: c.race, pouvoirRace: c.pouvoirRace, attrs: EcranAccueil.#valeurs(), innes: c.innes, img: c.img || imageRace(c.race) };
     if (zone) zone.textContent = "Création en cours…";
     if (game.user.can("ACTOR_CREATE")) await creerChatPour(game.user, choix);
     else if (game.users.activeGM) game.socket.emit(`system.${SYSTEM_ID}`, { type: "creerChat", userId: game.user.id, choix });
