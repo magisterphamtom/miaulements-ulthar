@@ -222,6 +222,13 @@ Publié avec l'autorisation de l'auteur, Xavier Laporte (Xaviiiier). Les PDF ne 
 - **Deux wikis** : Wiki des joueurs (règles, races, système de jeu, Chats d'Ulthar, jouer un Chat, nouvelle, aide-mémoire) et Wiki du Gardien (guide du MJ, univers, scénario d'initiation, écran du MJ, bestiaire). Le joueur ouvre le wiki des joueurs, le Gardien ouvre le wiki du Gardien, automatiquement (réglage : première connexion / toujours / jamais). Le wiki du Gardien n'est visible que par le Gardien.
 - Macros du Gardien : début d'aventure (pouvoirs temporaires pour tous les Chats), fin de scénario de groupe, jet de Folie du groupe, tirages d'événements.
 
+## 0.20.1 — illustrations de races du livre (branche `fonction/illustrations-races`)
+
+- Le créateur de Chat de l'écran d'accueil montre l'**illustration de chaque race tirée du livre de règles** (10 images détourées, `assets/races/<race>.webp`, extraites des pages 24 à 42) à la place de la silhouette.
+- L'illustration est le portrait par défaut du nouveau Chat ; elle apparaît en premier dans la galerie et suit la race quand on change de race (tant qu'on n'a pas choisi un autre portrait).
+- Xavier Laporte a vu la présentation et a laissé **carte blanche** (« fais comme tu veux ») : sur l'usage de ses illustrations et sur les choix de règles faits jusqu'ici, qui restent tels quels.
+- Test automatique `s-miaulements-accueil.mjs` (étape création) : 4 contrôles ajoutés, tout passe.
+
 ## Points incertains
 - Fiches prétirées : leurs valeurs imprimées sont reprises comme valeurs finales (modificateurs de race inclus dans les attributs affichés) ; leurs pouvoirs ne suivent pas toujours la liste des pouvoirs de race du livre (ex. Orichat, un Bengal, a « Guérison réconfortante »). La Folie imprimée d'Orichat (55) ne correspond pas à la formule (53) : on garde 53.
 - Exemple « Mimolette » du livre : le Persan +10 en Charisme devrait donner 50 (Folie 55) et non 40 (Folie 50). Le code suit les règles.
